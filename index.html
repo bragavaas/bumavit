@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BUMAVIT® — Experiências digitais que movem negócios</title>
+  <meta name="description" content="Bumavit é uma software house brasileira. Projetamos e desenvolvemos sites, aplicativos, e-commerces e estratégias digitais sob medida — da ideia ao deploy.">
+  <meta property="og:title" content="BUMAVIT® — Experiências digitais que movem negócios">
+  <meta property="og:description" content="Software house brasileira: web, mobile, e-commerce e SEO sob medida.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23c6f035' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+
+  <link rel="preload" href="fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__logo" id="preloaderLogo">
+      <span class="preloader__char">B</span><span class="preloader__char">U</span><span class="preloader__char">M</span><span class="preloader__char">A</span><span class="preloader__char">V</span><span class="preloader__char">I</span><span class="preloader__char">T</span><span class="preloader__char preloader__char--accent">®</span>
+    </div>
+    <div class="preloader__count"><span id="preCount">0</span></div>
+  </div>
+
+  <!-- Custom cursor (desktop) -->
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel"></span></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav__logo" data-scroll data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a href="#estudio" data-scroll data-hover>Estúdio</a>
+      <a href="#servicos" data-scroll data-hover>Serviços</a>
+      <a href="#projetos" data-scroll data-hover>Projetos</a>
+      <a href="#processo" data-scroll data-hover>Processo</a>
+    </nav>
+    <a href="#contato" class="btn-pill nav__cta" data-scroll data-hover><span>Iniciar projeto</span></a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Fullscreen menu (mobile / burger) -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__links" aria-label="Menu">
+      <a href="#estudio" data-scroll><span class="menu__index">01</span>Estúdio</a>
+      <a href="#servicos" data-scroll><span class="menu__index">02</span>Serviços</a>
+      <a href="#projetos" data-scroll><span class="menu__index">03</span>Projetos</a>
+      <a href="#processo" data-scroll><span class="menu__index">04</span>Processo</a>
+      <a href="#contato" data-scroll><span class="menu__index">05</span>Contato</a>
+    </nav>
+    <div class="menu__footer">
+      <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
+      <p>Brasil — atendendo o mundo</p>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__canvas" id="webgl" aria-hidden="true"></canvas>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-reveal>
+          <span class="hero__dot"></span> Software house — Brasil
+        </p>
+
+        <h1 class="hero__title">
+          <span class="hero__line"><span class="hero__line-inner">CRIAMOS</span></span>
+          <span class="hero__line hero__line--outline"><span class="hero__line-inner">EXPERIÊNCIAS</span></span>
+          <span class="hero__line"><span class="hero__line-inner">DIGITAIS<em class="hero__asterisk">*</em></span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__sub" data-reveal>*Da ideia ao deploy — projetamos e desenvolvemos sites, aplicativos e plataformas sob medida para marcas que querem crescer.</p>
+          <a href="#contato" class="btn-pill btn-pill--accent" data-scroll data-hover data-magnetic><span>Vamos conversar</span></a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <div class="marquee__group">
+          <span>Desenvolvimento Web</span><i>✺</i>
+          <span>Aplicativos</span><i>✺</i>
+          <span>E-commerce</span><i>✺</i>
+          <span>UI/UX Design</span><i>✺</i>
+          <span>SEO &amp; Performance</span><i>✺</i>
+          <span>Automação</span><i>✺</i>
+        </div>
+        <div class="marquee__group">
+          <span>Desenvolvimento Web</span><i>✺</i>
+          <span>Aplicativos</span><i>✺</i>
+          <span>E-commerce</span><i>✺</i>
+          <span>UI/UX Design</span><i>✺</i>
+          <span>SEO &amp; Performance</span><i>✺</i>
+          <span>Automação</span><i>✺</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ MANIFESTO / ESTÚDIO ============ -->
+    <section class="manifesto section" id="estudio">
+      <p class="section__label" data-reveal>( Estúdio )</p>
+      <p class="manifesto__text" id="manifestoText">
+        Não entregamos apenas código. Combinamos engenharia, design e estratégia para construir produtos que geram receita, marcas que ganham presença e experiências que ficam na memória.
+      </p>
+
+      <div class="stats">
+        <div class="stats__item" data-reveal>
+          <span class="stats__num" data-count="50" data-suffix="+">0</span>
+          <span class="stats__desc">Projetos entregues</span>
+        </div>
+        <div class="stats__item" data-reveal>
+          <span class="stats__num" data-count="12" data-suffix="+">0</span>
+          <span class="stats__desc">Setores atendidos</span>
+        </div>
+        <div class="stats__item" data-reveal>
+          <span class="stats__num" data-count="100" data-suffix="%">0</span>
+          <span class="stats__desc">Foco em resultado</span>
+        </div>
+        <div class="stats__item" data-reveal>
+          <span class="stats__num"><span data-count="24">0</span><span class="stats__sep">/</span><span>7</span></span>
+          <span class="stats__desc">Suporte dedicado</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="services section" id="servicos">
+      <header class="section__head">
+        <p class="section__label" data-reveal>( Serviços )</p>
+        <h2 class="section__title" data-split>O que fazemos</h2>
+      </header>
+
+      <ul class="services__list">
+        <li class="services__item" data-hover>
+          <span class="services__num">01</span>
+          <h3 class="services__name">Desenvolvimento Web</h3>
+          <p class="services__desc">Sites, sistemas e plataformas rápidas, seguras e escaláveis.</p>
+          <span class="services__arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="services__item" data-hover>
+          <span class="services__num">02</span>
+          <h3 class="services__name">Aplicativos Mobile</h3>
+          <p class="services__desc">Apps nativos e híbridos com UX impecável para iOS e Android.</p>
+          <span class="services__arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="services__item" data-hover>
+          <span class="services__num">03</span>
+          <h3 class="services__name">E-commerce</h3>
+          <p class="services__desc">Lojas que convertem — da vitrine ao checkout, tudo otimizado para vender.</p>
+          <span class="services__arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="services__item" data-hover>
+          <span class="services__num">04</span>
+          <h3 class="services__name">SEO &amp; Performance</h3>
+          <p class="services__desc">Visibilidade local e global com Core Web Vitals no verde.</p>
+          <span class="services__arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="services__item" data-hover>
+          <span class="services__num">05</span>
+          <h3 class="services__name">Identidade &amp; UI/UX</h3>
+          <p class="services__desc">Interfaces e marcas com personalidade, propósito e consistência.</p>
+          <span class="services__arrow" aria-hidden="true">→</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="work section" id="projetos">
+      <header class="section__head">
+        <p class="section__label" data-reveal>( Projetos )</p>
+        <h2 class="section__title" data-split>Trabalhos selecionados</h2>
+      </header>
+
+      <div class="work__grid">
+        <article class="work__card" data-hover data-cursor="Ver projeto">
+          <div class="work__media work__media--yacht">
+            <span class="work__mono">Y</span>
+          </div>
+          <div class="work__info">
+            <h3>Yacht Day</h3>
+            <p>Plataforma de reservas de iates — Toronto, Canadá</p>
+            <ul class="work__tags"><li>Web</li><li>Booking</li><li>SEO</li></ul>
+          </div>
+        </article>
+
+        <article class="work__card" data-hover data-cursor="Ver projeto">
+          <div class="work__media work__media--cocban">
+            <span class="work__mono">C</span>
+          </div>
+          <div class="work__info">
+            <h3>COCBAN</h3>
+            <p>Portal institucional com presença digital completa</p>
+            <ul class="work__tags"><li>Web</li><li>Institucional</li></ul>
+          </div>
+        </article>
+
+        <article class="work__card" data-hover data-cursor="Em breve">
+          <div class="work__media work__media--fintech">
+            <span class="work__mono">F</span>
+          </div>
+          <div class="work__info">
+            <h3>Projeto confidencial</h3>
+            <p>Dashboard SaaS para fintech em crescimento</p>
+            <ul class="work__tags"><li>Produto</li><li>UI/UX</li></ul>
+          </div>
+        </article>
+
+        <article class="work__card" data-hover data-cursor="Em breve">
+          <div class="work__media work__media--commerce">
+            <span class="work__mono">E</span>
+          </div>
+          <div class="work__info">
+            <h3>Projeto confidencial</h3>
+            <p>E-commerce de moda com checkout otimizado</p>
+            <ul class="work__tags"><li>E-commerce</li><li>Conversão</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROCESSO (horizontal) ============ -->
+    <section class="process" id="processo">
+      <div class="process__pin">
+        <div class="process__track" id="processTrack">
+          <div class="process__panel process__panel--intro">
+            <p class="section__label">( Processo )</p>
+            <h2 class="process__heading">Como a mágica<br>acontece<em>→</em></h2>
+          </div>
+          <div class="process__panel">
+            <span class="process__num">01</span>
+            <h3>Descoberta</h3>
+            <p>Imersão no seu negócio, objetivos e público. Sem achismo: contexto e dados guiam cada decisão.</p>
+          </div>
+          <div class="process__panel">
+            <span class="process__num">02</span>
+            <h3>Estratégia &amp; Design</h3>
+            <p>Arquitetura da informação, protótipos navegáveis e identidade visual — tudo validado com você.</p>
+          </div>
+          <div class="process__panel">
+            <span class="process__num">03</span>
+            <h3>Desenvolvimento</h3>
+            <p>Código limpo, performático e escalável, com entregas contínuas e transparência total.</p>
+          </div>
+          <div class="process__panel">
+            <span class="process__num">04</span>
+            <h3>Lançamento &amp; Evolução</h3>
+            <p>Deploy sem sustos, métricas de verdade e otimização constante depois do go-live.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTATO ============ -->
+    <section class="cta section" id="contato">
+      <p class="section__label" data-reveal>( Contato )</p>
+      <h2 class="cta__title">
+        <span class="cta__line" data-split>Tem uma ideia?</span>
+        <span class="cta__line cta__line--accent" data-split>Vamos tirar do papel.</span>
+      </h2>
+      <a class="cta__btn" href="mailto:contato@bumavit.com.br" data-hover data-magnetic>
+        <span class="cta__btn-text">contato@bumavit.com.br</span>
+        <span class="cta__btn-arrow" aria-hidden="true">↗</span>
+      </a>
+      <p class="cta__note" data-reveal>Respondemos em até 24h — em português ou inglês.</p>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <nav class="footer__col" aria-label="Mapa do site">
+        <h4>Sitemap</h4>
+        <a href="#inicio" data-scroll data-hover>Início</a>
+        <a href="#servicos" data-scroll data-hover>Serviços</a>
+        <a href="#projetos" data-scroll data-hover>Projetos</a>
+        <a href="#contato" data-scroll data-hover>Contato</a>
+      </nav>
+      <nav class="footer__col" aria-label="Redes sociais">
+        <h4>Social</h4>
+        <a href="https://br.linkedin.com/company/bumavit" target="_blank" rel="noopener" data-hover>LinkedIn ↗</a>
+        <a href="https://bumavit.com.br" target="_blank" rel="noopener" data-hover>Blog ↗</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" data-hover>Instagram ↗</a>
+      </nav>
+      <div class="footer__col footer__col--info">
+        <h4>Base</h4>
+        <p>Brasil — atendendo<br>clientes no mundo todo.</p>
+      </div>
+    </div>
+
+    <div class="footer__wordmark" aria-hidden="true">BUMAVIT</div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Bumavit. Todos os direitos reservados.</p>
+      <p>Feito com café ☕ no Brasil</p>
+      <button class="footer__top-btn" id="backToTop" data-hover>Voltar ao topo ↑</button>
+    </div>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script type="module" src="js/scene.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

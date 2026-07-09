@@ -20,7 +20,8 @@
     document.querySelectorAll('.manifesto__text').forEach(function (el) { el.style.opacity = 1; });
     bindMenu(null);
     bindAnchors(null);
-    return; // no scroll-driven motion at all
+    bindLeadForm();
+    return; // no scroll-driven motion at all (FAQ usa <details> nativo)
   }
 
   /* ============ Smooth scroll (Lenis + ScrollTrigger) ============ */
@@ -208,14 +209,50 @@
     });
   }
 
-  /* ============ CTA button entrance ============ */
-  gsap.from('.cta__btn', {
-    opacity: 0,
-    scale: 0.9,
-    duration: 0.9,
-    ease: 'back.out(1.6)',
-    scrollTrigger: { trigger: '.cta__btn', start: 'top 90%' }
+  /* ============ FAQ: acordeão animado ============ */
+  document.querySelectorAll('.faq__item').forEach(function (item) {
+    var summary = item.querySelector('summary');
+    var answer = item.querySelector('.faq__answer');
+    var animating = false;
+    summary.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (animating) return;
+      animating = true;
+      if (item.open) {
+        gsap.to(answer, {
+          height: 0, duration: 0.4, ease: 'power3.inOut',
+          onComplete: function () {
+            item.open = false;
+            gsap.set(answer, { clearProps: 'height' });
+            animating = false;
+            ScrollTrigger.refresh();
+          }
+        });
+      } else {
+        item.open = true;
+        gsap.fromTo(answer, { height: 0 }, {
+          height: 'auto', duration: 0.5, ease: 'power3.out',
+          onComplete: function () {
+            gsap.set(answer, { clearProps: 'height' });
+            animating = false;
+            ScrollTrigger.refresh();
+          }
+        });
+      }
+    });
   });
+
+  /* ============ Formulário: entrada ============ */
+  var leadForm = document.getElementById('leadForm');
+  if (leadForm) {
+    gsap.from(leadForm, {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      ease: 'power3.out',
+      scrollTrigger: { trigger: leadForm, start: 'top 88%' }
+    });
+  }
 
   /* ============ Footer wordmark slide ============ */
   gsap.from('.footer__wordmark', {
@@ -275,9 +312,10 @@
     });
   }
 
-  /* ============ Menu + anchors ============ */
+  /* ============ Menu + anchors + formulário ============ */
   bindMenu(lenis);
   bindAnchors(lenis);
+  bindLeadForm();
 
   /* ---------------------------------------------------------- */
 
@@ -342,5 +380,44 @@
         else window.scrollTo(0, 0);
       });
     }
+  }
+
+  function bindLeadForm() {
+    var form = document.getElementById('leadForm');
+    if (!form) return;
+    var status = document.getElementById('leadStatus');
+    var submitBtn = form.querySelector('.lead__submit');
+
+    function setStatus(msg, cls) {
+      status.textContent = msg;
+      status.className = 'lead__status' + (cls ? ' ' + cls : '');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+
+      if (form.action.indexOf('SEU_FORM_ID') !== -1) {
+        setStatus('Formulário ainda não configurado — por enquanto, chame no WhatsApp ou envie um e-mail. 🙂', 'is-error');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      setStatus('Enviando…');
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        form.reset();
+        setStatus('Mensagem enviada! Respondemos em até 24h. ✦', 'is-ok');
+      }).catch(function () {
+        setStatus('Algo deu errado. Tente de novo ou chame no WhatsApp.', 'is-error');
+      }).finally(function () {
+        submitBtn.disabled = false;
+      });
+    });
   }
 })();

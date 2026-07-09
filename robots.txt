@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bragavaas.github.io/bumavit/sitemap.xml

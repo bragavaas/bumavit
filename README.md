@@ -22,15 +22,29 @@ python -m http.server 4173
 ## Estrutura
 
 ```
-index.html                  — página principal
+index.html                  — página principal (hero, serviços, projetos, clientes, FAQ, contato)
+sobre.html                  — página do estúdio
+404.html                    — página de erro personalizada
 projetos/*.html             — páginas individuais de projeto (geradas)
-scripts/build-projects.mjs  — gerador das páginas de projeto (node scripts/build-projects.mjs)
+blog/*.html                 — blog estático (gerado)
+scripts/build-projects.mjs  — gerador das páginas de projeto
+scripts/build-blog.mjs      — gerador do blog
 css/style.css               — design system + responsivo + reduced-motion
-js/main.js                  — interações GSAP da home (preloader, menu, scroll, cursor)
-js/page.js                  — interações das páginas de projeto
+js/main.js                  — interações GSAP da home (preloader, menu, scroll, cursor, form, FAQ)
+js/page.js                  — interações das páginas internas
 js/scene.js                 — cena Three.js do hero
+og.png / sitemap.xml / robots.txt — SEO
 vendor/                     — bibliotecas locais
 fonts/                      — woff2 auto-hospedadas
 ```
 
-Para editar o conteúdo dos projetos, altere os dados em `scripts/build-projects.mjs` e rode o gerador novamente.
+Para editar projetos ou posts do blog, altere os dados em `scripts/build-projects.mjs` /
+`scripts/build-blog.mjs` e rode o gerador (`node scripts/<arquivo>`).
+
+## Configuração pendente (troque os placeholders)
+
+- **Formulário**: crie um form em [formspree.io](https://formspree.io) e troque `SEU_FORM_ID`
+  no `action` do formulário em `index.html`
+- **WhatsApp**: troque `5511999999999` pelos número real (links `wa.me` em `index.html`)
+- **Google Analytics**: descomente o bloco GA4 no `<head>` de `index.html` e insira seu
+  Measurement ID

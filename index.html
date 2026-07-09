@@ -8,8 +8,78 @@
   <meta property="og:title" content="BUMAVIT® — Experiências digitais que movem negócios">
   <meta property="og:description" content="Software house brasileira: web, mobile, e-commerce e SEO sob medida.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bragavaas.github.io/bumavit/">
+  <meta property="og:image" content="https://bragavaas.github.io/bumavit/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://bragavaas.github.io/bumavit/">
   <meta name="theme-color" content="#0b0b0d">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bragavaas.github.io/bumavit/#org",
+        "name": "Bumavit",
+        "url": "https://bragavaas.github.io/bumavit/",
+        "description": "Software house brasileira: web, mobile, e-commerce e SEO sob medida.",
+        "email": "contato@bumavit.com.br",
+        "sameAs": ["https://br.linkedin.com/company/bumavit", "https://bumavit.com.br"]
+      },
+      {
+        "@type": "WebSite",
+        "name": "BUMAVIT",
+        "url": "https://bragavaas.github.io/bumavit/",
+        "publisher": { "@id": "https://bragavaas.github.io/bumavit/#org" },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quanto custa um projeto com a Bumavit?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Cada projeto é orçado sob medida, de acordo com escopo, prazo e complexidade. Depois de uma conversa inicial gratuita, enviamos uma proposta detalhada em até 48h — sem surpresas no meio do caminho." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo leva para desenvolver um site ou aplicativo?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sites institucionais costumam levar de 3 a 6 semanas; e-commerces e aplicativos, de 2 a 4 meses. O cronograma é definido junto com você na fase de descoberta, com entregas contínuas ao longo do projeto." }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês dão suporte depois do lançamento?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sim. Todo projeto inclui um período de garantia, e oferecemos planos de manutenção e evolução contínua — monitoramento, atualizações, melhorias e novas funcionalidades." }
+          },
+          {
+            "@type": "Question",
+            "name": "Atendem clientes fora do Brasil?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sim — já entregamos projetos para clientes no Canadá e atendemos em português e inglês, com reuniões remotas em qualquer fuso." }
+          },
+          {
+            "@type": "Question",
+            "name": "Como começa um projeto?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Com uma conversa. Você nos conta a ideia pelo formulário ou WhatsApp, fazemos uma call de descoberta sem compromisso e voltamos com proposta, prazo e investimento." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23c6f035' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Analytics 4: descomente e troque G-XXXXXXXXXX pelo seu Measurement ID
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
 
   <link rel="preload" href="fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -40,6 +110,7 @@
       <a href="#servicos" data-scroll data-hover>Serviços</a>
       <a href="#projetos" data-scroll data-hover>Projetos</a>
       <a href="#processo" data-scroll data-hover>Processo</a>
+      <a href="blog/index.html" data-hover>Blog</a>
     </nav>
     <a href="#contato" class="btn-pill nav__cta" data-scroll data-hover><span>Iniciar projeto</span></a>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
@@ -54,10 +125,12 @@
       <a href="#servicos" data-scroll><span class="menu__index">02</span>Serviços</a>
       <a href="#projetos" data-scroll><span class="menu__index">03</span>Projetos</a>
       <a href="#processo" data-scroll><span class="menu__index">04</span>Processo</a>
-      <a href="#contato" data-scroll><span class="menu__index">05</span>Contato</a>
+      <a href="blog/index.html"><span class="menu__index">05</span>Blog</a>
+      <a href="#contato" data-scroll><span class="menu__index">06</span>Contato</a>
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
+      <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp ↗</a>
       <p>Brasil — atendendo o mundo</p>
     </div>
   </div>
@@ -267,6 +340,68 @@
       </div>
     </section>
 
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section class="voices section" id="clientes">
+      <header class="section__head">
+        <p class="section__label" data-reveal>( Clientes )</p>
+        <h2 class="section__title" data-split>Quem já construiu com a gente</h2>
+      </header>
+
+      <div class="voices__grid">
+        <figure class="voices__card" data-reveal>
+          <blockquote>"A Bumavit entendeu o negócio antes de escrever a primeira linha de código. O site virou nosso principal canal de reservas."</blockquote>
+          <figcaption><strong>Equipe Yacht Day</strong><span>Toronto, Canadá</span></figcaption>
+        </figure>
+        <figure class="voices__card" data-reveal>
+          <blockquote>"Centralizamos toda a nossa comunicação em um portal que finalmente parece com a gente. Processo transparente do início ao fim."</blockquote>
+          <figcaption><strong>COCBAN</strong><span>Portal institucional</span></figcaption>
+        </figure>
+        <figure class="voices__card" data-reveal>
+          <blockquote>"Entrega no prazo, código limpo e um painel que o time inteiro consegue usar. Parceria que continua depois do go-live."</blockquote>
+          <figcaption><strong>Cliente confidencial</strong><span>Fintech — SaaS</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="voices__logos" aria-label="Clientes atendidos" data-reveal>
+        <span>Yacht Day</span>
+        <span>COCBAN</span>
+        <span>Fintech SaaS</span>
+        <span>E-commerce de moda</span>
+        <span class="voices__logos-you">sua marca aqui →</span>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq section" id="faq">
+      <header class="section__head">
+        <p class="section__label" data-reveal>( FAQ )</p>
+        <h2 class="section__title" data-split>Perguntas frequentes</h2>
+      </header>
+
+      <div class="faq__list">
+        <details class="faq__item" data-reveal>
+          <summary data-hover>Quanto custa um projeto com a Bumavit?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer"><p>Cada projeto é orçado sob medida, de acordo com escopo, prazo e complexidade. Depois de uma conversa inicial gratuita, enviamos uma proposta detalhada em até 48h — sem surpresas no meio do caminho.</p></div>
+        </details>
+        <details class="faq__item" data-reveal>
+          <summary data-hover>Quanto tempo leva para desenvolver um site ou aplicativo?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer"><p>Sites institucionais costumam levar de 3 a 6 semanas; e-commerces e aplicativos, de 2 a 4 meses. O cronograma é definido junto com você na fase de descoberta, com entregas contínuas ao longo do projeto.</p></div>
+        </details>
+        <details class="faq__item" data-reveal>
+          <summary data-hover>Vocês dão suporte depois do lançamento?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer"><p>Sim. Todo projeto inclui um período de garantia, e oferecemos planos de manutenção e evolução contínua — monitoramento, atualizações, melhorias e novas funcionalidades.</p></div>
+        </details>
+        <details class="faq__item" data-reveal>
+          <summary data-hover>Atendem clientes fora do Brasil?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer"><p>Sim — já entregamos projetos para clientes no Canadá e atendemos em português e inglês, com reuniões remotas em qualquer fuso.</p></div>
+        </details>
+        <details class="faq__item" data-reveal>
+          <summary data-hover>Como começa um projeto?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer"><p>Com uma conversa. Você nos conta a ideia pelo formulário ou WhatsApp, fazemos uma call de descoberta sem compromisso e voltamos com proposta, prazo e investimento.</p></div>
+        </details>
+      </div>
+    </section>
+
     <!-- ============ CTA / CONTATO ============ -->
     <section class="cta section" id="contato">
       <p class="section__label" data-reveal>( Contato )</p>
@@ -274,11 +409,42 @@
         <span class="cta__line" data-split>Tem uma ideia?</span>
         <span class="cta__line cta__line--accent" data-split>Vamos tirar do papel.</span>
       </h2>
-      <a class="cta__btn" href="mailto:contato@bumavit.com.br" data-hover data-magnetic>
-        <span class="cta__btn-text">contato@bumavit.com.br</span>
-        <span class="cta__btn-arrow" aria-hidden="true">↗</span>
-      </a>
-      <p class="cta__note" data-reveal>Respondemos em até 24h — em português ou inglês.</p>
+      <!-- Substitua SEU_FORM_ID pelo ID do seu formulário em formspree.io -->
+      <form class="lead" id="leadForm" action="https://formspree.io/f/SEU_FORM_ID" method="POST" novalidate>
+        <div class="lead__row">
+          <label class="lead__field">
+            <span>Seu nome</span>
+            <input type="text" name="nome" required autocomplete="name" placeholder="Como te chamamos?">
+          </label>
+          <label class="lead__field">
+            <span>Seu e-mail</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="voce@empresa.com.br">
+          </label>
+        </div>
+        <label class="lead__field">
+          <span>Tipo de projeto</span>
+          <select name="tipo" required>
+            <option value="" selected disabled>Selecione…</option>
+            <option>Site institucional</option>
+            <option>E-commerce</option>
+            <option>Aplicativo</option>
+            <option>Sistema / SaaS</option>
+            <option>SEO &amp; Performance</option>
+            <option>Outro</option>
+          </select>
+        </label>
+        <label class="lead__field">
+          <span>Conte a ideia</span>
+          <textarea name="mensagem" rows="4" required placeholder="O que você quer construir?"></textarea>
+        </label>
+        <div class="lead__actions">
+          <button type="submit" class="btn-pill btn-pill--accent lead__submit" data-hover data-magnetic><span>Enviar mensagem</span></button>
+          <a class="btn-pill" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20Bumavit!%20Tenho%20uma%20ideia%20de%20projeto." target="_blank" rel="noopener" data-hover><span>Chamar no WhatsApp</span></a>
+        </div>
+        <p class="lead__status" id="leadStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="cta__note" data-reveal>Ou escreva para <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a> — respondemos em até 24h, em português ou inglês.</p>
     </section>
   </main>
 
@@ -290,6 +456,8 @@
         <a href="#inicio" data-scroll data-hover>Início</a>
         <a href="#servicos" data-scroll data-hover>Serviços</a>
         <a href="#projetos" data-scroll data-hover>Projetos</a>
+        <a href="sobre.html" data-hover>Sobre</a>
+        <a href="blog/index.html" data-hover>Blog</a>
         <a href="#contato" data-scroll data-hover>Contato</a>
       </nav>
       <nav class="footer__col" aria-label="Redes sociais">
@@ -317,6 +485,6 @@
   <script src="vendor/ScrollTrigger.min.js"></script>
   <script src="vendor/lenis.min.js"></script>
   <script type="module" src="js/scene.js"></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=2" defer></script>
 </body>
 </html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monte seu projeto — BUMAVIT®</title>
+  <meta name="description" content="Responda 3 perguntas e receba na hora uma estimativa de investimento e prazo para o seu projeto digital.">
+  <meta property="og:title" content="Monte seu projeto — BUMAVIT®">
+  <meta property="og:description" content="Estimativa de investimento e prazo em 1 minuto.">
+  <meta property="og:image" content="https://bragavaas.github.io/bumavit/og.png">
+  <link rel="canonical" href="https://bragavaas.github.io/bumavit/estimador.html">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23c6f035' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel"></span></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <header class="nav is-scrolled" id="nav">
+    <a href="index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a href="index.html#estudio" data-hover>Estúdio</a>
+      <a href="index.html#servicos" data-hover>Serviços</a>
+      <a href="index.html#projetos" data-hover>Projetos</a>
+      <a href="blog/index.html" data-hover>Blog</a>
+    </nav>
+    <a href="index.html#contato" class="btn-pill nav__cta" data-hover><span>Iniciar projeto</span></a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__links" aria-label="Menu">
+      <a href="index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
+      <a href="index.html#servicos"><span class="menu__index">02</span>Serviços</a>
+      <a href="index.html#projetos"><span class="menu__index">03</span>Projetos</a>
+      <a href="blog/index.html"><span class="menu__index">04</span>Blog</a>
+      <a href="index.html#contato"><span class="menu__index">05</span>Contato</a>
+    </nav>
+    <div class="menu__footer">
+      <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
+      <p>Brasil — atendendo o mundo</p>
+    </div>
+  </div>
+
+  <main>
+    <section class="p-hero section">
+      <p class="section__label" data-reveal>( Estimador )</p>
+      <h1 class="p-hero__title" data-split>Monte seu projeto</h1>
+      <p class="p-hero__tag" data-reveal>Responda 3 perguntas e receba na hora uma estimativa de investimento e prazo — sem compromisso.</p>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="est" id="estimator" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom" style="border-top:0; margin-top:0;">
+      <p>© 2026 Bumavit. Todos os direitos reservados.</p>
+      <a href="index.html" data-hover>← Voltar ao início</a>
+      <button class="footer__top-btn" id="backToTop" data-hover>Voltar ao topo ↑</button>
+    </div>
+  </footer>
+
+  <script>
+  window.__pageI18n = {
+    en: {
+      '.p-hero .section__label': '( Estimator )',
+      '.p-hero__title': 'Build your project',
+      '.p-hero__tag': 'Answer 3 questions and get an instant investment and timeline estimate — no strings attached.'
+    },
+    es: {
+      '.p-hero .section__label': '( Estimador )',
+      '.p-hero__title': 'Arma tu proyecto',
+      '.p-hero__tag': 'Responde 3 preguntas y recibe al instante una estimación de inversión y plazo — sin compromiso.'
+    }
+  };
+  </script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="js/i18n.js?v=1" defer></script>
+  <script src="js/page.js" defer></script>
+  <script src="js/estimator.js" defer></script>
+</body>
+</html>

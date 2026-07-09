@@ -24,6 +24,7 @@ python -m http.server 4173
 ```
 index.html                  — página principal (hero, serviços, projetos, clientes, FAQ, contato)
 sobre.html                  — página do estúdio
+estimador.html              — wizard "Monte seu projeto" (js/estimator.js)
 404.html                    — página de erro personalizada
 projetos/*.html             — páginas individuais de projeto (geradas)
 blog/*.html                 — blog estático (gerado)
@@ -60,3 +61,5 @@ pt-BR; EN/ES vivem em dicionários `seletor CSS → texto`:
 - **WhatsApp**: troque `5511999999999` pelos número real (links `wa.me` em `index.html`)
 - **Google Analytics**: descomente o bloco GA4 no `<head>` de `index.html` e insira seu
   Measurement ID
+- **Estimador**: ajuste a tabela de valores em `PRICING` (e o número de WhatsApp em
+  `WHATSAPP`) no topo de `js/estimator.js`

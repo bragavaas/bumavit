@@ -1032,6 +1032,144 @@ body.menu-open .nav__burger span:last-child { transform: translateY(-4px) rotate
 }
 
 /* ============================================================
+   Estimador ("Monte seu projeto")
+   ============================================================ */
+.est { max-width: 56rem; margin: 0 auto; }
+.est__progress {
+  display: flex; align-items: center; gap: 0.8rem;
+  margin-bottom: clamp(2rem, 5vh, 3.5rem);
+}
+.est__bar {
+  flex: 1;
+  height: 3px;
+  background: var(--faint);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.est__bar-fill {
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.5s var(--ease-out);
+}
+.est__step-label {
+  font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.est__question {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+}
+.est__hint { color: var(--muted); font-size: 0.95rem; margin-bottom: 2rem; }
+.est__options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.est__opt {
+  text-align: left;
+  border: 1px solid var(--faint);
+  border-radius: 14px;
+  padding: 1.4rem 1.5rem;
+  background: linear-gradient(160deg, var(--ink-2) 0%, var(--ink) 100%);
+  transition: border-color 0.3s, transform 0.3s var(--ease-out), background-color 0.3s;
+  display: flex; flex-direction: column; gap: 0.35rem;
+}
+.est__opt:hover { border-color: rgba(198, 240, 53, 0.45); transform: translateY(-3px); }
+.est__opt.is-selected {
+  border-color: var(--accent);
+  background: rgba(198, 240, 53, 0.08);
+}
+.est__opt-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 0.8rem;
+}
+.est__opt-name::after {
+  content: '';
+  flex: 0 0 auto;
+  width: 18px; height: 18px;
+  border: 1.5px solid var(--faint);
+  border-radius: 50%;
+  transition: background-color 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+.est__opt.is-selected .est__opt-name::after {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 3px var(--ink);
+}
+.est__opt-desc { color: var(--muted); font-size: 0.88rem; }
+.est__nav {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 2.5rem; gap: 1rem;
+}
+.est__back {
+  color: var(--muted);
+  font-size: 0.92rem;
+  transition: color 0.3s;
+}
+.est__back:hover { color: var(--paper); }
+.est__back[hidden] { visibility: hidden; display: inline; }
+.est__next[disabled] { opacity: 0.4; pointer-events: none; }
+
+/* resultado */
+.est__result { text-align: center; }
+.est__result-label {
+  font-size: 0.82rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent);
+}
+.est__result-value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  line-height: 1.05;
+  margin: 0.6rem 0 0.4rem;
+}
+.est__result-time { color: var(--muted); font-size: 1.05rem; }
+.est__summary {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+.est__summary li {
+  font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(198, 240, 53, 0.35);
+  border-radius: 100px;
+  padding: 0.35em 1em;
+}
+.est__disclaimer {
+  color: var(--muted);
+  font-size: 0.85rem;
+  max-width: 48ch;
+  margin: 0 auto 2rem;
+}
+.est__ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+.est__restart {
+  display: inline-block;
+  margin-top: 1.6rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s;
+}
+.est__restart:hover { color: var(--accent); }
+
+@media (max-width: 640px) {
+  .est__options { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
    404
    ============================================================ */
 .nf {

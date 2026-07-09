@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://bragavaas.github.io/bumavit/</loc><priority>1.0</priority></url>
   <url><loc>https://bragavaas.github.io/bumavit/sobre.html</loc><priority>0.8</priority></url>
+  <url><loc>https://bragavaas.github.io/bumavit/estimador.html</loc><priority>0.9</priority></url>
   <url><loc>https://bragavaas.github.io/bumavit/projetos/yacht-day.html</loc><priority>0.7</priority></url>
   <url><loc>https://bragavaas.github.io/bumavit/projetos/cocban.html</loc><priority>0.7</priority></url>
   <url><loc>https://bragavaas.github.io/bumavit/projetos/fintech.html</loc><priority>0.6</priority></url>

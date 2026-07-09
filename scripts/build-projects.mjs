@@ -33,7 +33,35 @@ const projects = [
       ['Top 3', 'Nas buscas locais em Toronto'],
       ['2×', 'Mais reservas online']
     ],
-    link: 'https://yachtday.bumavit.com.br/'
+    link: 'https://yachtday.bumavit.com.br/',
+    t: {
+      en: {
+        tag: 'Yacht booking platform — Toronto, Canada',
+        metaValues: ['Yacht Day', '2024', 'Nautical tourism', 'Web design, Development, Local SEO, Booking'],
+        challenge: [
+          'The yacht rental market in Toronto is competitive and seasonal: a few high-season weeks concentrate almost the entire year’s revenue. Yacht Day needed to show up first in local searches and turn visitors into bookings before they opened a competitor’s tab.',
+          'The previous website didn’t reflect the premium nature of the service, and booking depended on back-and-forth messages.'
+        ],
+        solution: [
+          'We designed a fast, visual platform with a vessel catalog, clear availability and a booking flow that gets everything done in a few clicks.',
+          'Behind the storefront, a local SEO strategy positioned the brand for yacht rental searches across the Toronto area — content, structured data and performance in the green.'
+        ],
+        stats: [['+120%', 'Organic traffic in 6 months'], ['Top 3', 'In Toronto local searches'], ['2×', 'More online bookings']]
+      },
+      es: {
+        tag: 'Plataforma de reservas de yates — Toronto, Canadá',
+        metaValues: ['Yacht Day', '2024', 'Turismo náutico', 'Diseño web, Desarrollo, SEO local, Booking'],
+        challenge: [
+          'El mercado de alquiler de yates en Toronto es competitivo y estacional: pocas semanas de temporada alta concentran casi todos los ingresos del año. Yacht Day necesitaba aparecer primero en las búsquedas locales y convertir al visitante en reserva antes de que abriera la pestaña de la competencia.',
+          'El sitio anterior no reflejaba la experiencia premium del servicio y el proceso de reserva dependía de intercambios manuales de mensajes.'
+        ],
+        solution: [
+          'Diseñamos una plataforma rápida y visual, con catálogo de embarcaciones, disponibilidad clara y un flujo de reserva que resuelve todo en pocos clics.',
+          'Detrás del escaparate, una estrategia de SEO local posicionó la marca en las búsquedas de alquiler de yates en la región de Toronto — con contenido, datos estructurados y performance en verde.'
+        ],
+        stats: [['+120%', 'Tráfico orgánico en 6 meses'], ['Top 3', 'En búsquedas locales de Toronto'], ['2×', 'Más reservas online']]
+      }
+    }
   },
   {
     slug: 'cocban',
@@ -61,7 +89,35 @@ const projects = [
       ['<2s', 'Tempo de carregamento das páginas'],
       ['90+', 'Pontuação de performance no Lighthouse']
     ],
-    link: 'https://bumavit.com.br/cocban/'
+    link: 'https://bumavit.com.br/cocban/',
+    t: {
+      en: {
+        tag: 'Institutional portal with a complete digital presence',
+        metaValues: ['COCBAN', '2024', 'Institutional', 'Web design, Development, Digital identity'],
+        challenge: [
+          'COCBAN needed a digital home worthy of the institution: information was fragmented and communication with the public relied on scattered channels.',
+          'The challenge was to centralize everything in a clear, accessible, easy-to-maintain portal — without giving up personality.'
+        ],
+        solution: [
+          'We built a modern institutional portal with information architecture designed for those who search — not for those who publish. Organized content, direct navigation and consistent visual identity across every page.',
+          'The result is a digital presence that conveys credibility and works on any device.'
+        ],
+        stats: [['100%', 'Of the information centralized in one place'], ['<2s', 'Page load time'], ['90+', 'Lighthouse performance score']]
+      },
+      es: {
+        tag: 'Portal institucional con presencia digital completa',
+        metaValues: ['COCBAN', '2024', 'Institucional', 'Diseño web, Desarrollo, Identidad digital'],
+        challenge: [
+          'COCBAN necesitaba una casa digital a la altura de la institución: la información estaba fragmentada y la comunicación con el público dependía de canales dispersos.',
+          'El desafío era centralizar todo en un portal claro, accesible y fácil de mantener — sin renunciar a la personalidad.'
+        ],
+        solution: [
+          'Construimos un portal institucional moderno, con arquitectura de la información pensada para quien busca — no para quien publica. Contenido organizado, navegación directa e identidad visual consistente en todas las páginas.',
+          'El resultado es una presencia digital que transmite credibilidad y funciona en cualquier dispositivo.'
+        ],
+        stats: [['100%', 'De la información centralizada en un solo lugar'], ['<2s', 'Tiempo de carga de las páginas'], ['90+', 'Puntuación de performance en Lighthouse']]
+      }
+    }
   },
   {
     slug: 'fintech',
@@ -89,7 +145,35 @@ const projects = [
       ['99,9%', 'Disponibilidade da plataforma'],
       ['12', 'Módulos integrados em produção']
     ],
-    link: null
+    link: null,
+    t: {
+      en: {
+        tag: 'SaaS dashboard for a fast-growing fintech',
+        metaValues: ['Confidential (NDA)', '2025', 'Financial services', 'Digital product, UI/UX, Development'],
+        challenge: [
+          'A fast-expanding fintech ran critical processes on spreadsheets and disconnected tools. Every new client meant more rework — and more risk.',
+          'The team needed a single dashboard: a real-time view of the operation, with security and an audit trail.'
+        ],
+        solution: [
+          'We designed and built a modular SaaS dashboard: consolidated data, approval flows, and reports that used to take days now ship in minutes.',
+          'The interface favors information density without sacrificing clarity — every screen answers a business question. Out of respect for the NDA, visual details are not public.'
+        ],
+        stats: [['-40%', 'Time spent per task in the dashboard'], ['99.9%', 'Platform availability'], ['12', 'Integrated modules in production']]
+      },
+      es: {
+        tag: 'Dashboard SaaS para una fintech en crecimiento',
+        metaValues: ['Confidencial (NDA)', '2025', 'Servicios financieros', 'Producto digital, UI/UX, Desarrollo'],
+        challenge: [
+          'Una fintech en plena expansión operaba procesos críticos en hojas de cálculo y herramientas desconectadas. Cada nuevo cliente aumentaba el retrabajo — y el riesgo.',
+          'El equipo necesitaba un panel único: visión en tiempo real de la operación, con seguridad y trazabilidad de auditoría.'
+        ],
+        solution: [
+          'Diseñamos y desarrollamos un dashboard SaaS modular: datos consolidados, flujos de aprobación e informes que antes tomaban días y ahora salen en minutos.',
+          'La interfaz prioriza la densidad de información sin sacrificar claridad — cada pantalla responde una pregunta del negocio. Por respeto al acuerdo de confidencialidad, los detalles visuales no son públicos.'
+        ],
+        stats: [['-40%', 'Tiempo por tarea en el panel'], ['99,9%', 'Disponibilidad de la plataforma'], ['12', 'Módulos integrados en producción']]
+      }
+    }
   },
   {
     slug: 'ecommerce',
@@ -117,9 +201,88 @@ const projects = [
       ['-28%', 'Abandono de carrinho'],
       ['3×', 'Mais recompra em 90 dias']
     ],
-    link: null
+    link: null,
+    t: {
+      en: {
+        title: 'Fashion e-commerce',
+        tag: 'Online store with a conversion-optimized checkout',
+        metaValues: ['Confidential (NDA)', '2025', 'Fashion & retail', 'E-commerce, CRO, Development'],
+        challenge: [
+          'The brand sold well on social media but lost customers on the website: slow pages, a long checkout and carts abandoned at the shipping step.',
+          'The goal was clear — turn audience into revenue without leaning on discounts.'
+        ],
+        solution: [
+          'We rebuilt the store around speed and zero friction: product pages that load instantly, a lean checkout, and shipping calculated before the last step.',
+          'Continuous A/B testing guided every interface decision — whatever doesn’t lift conversion gets cut. Brand details remain under NDA.'
+        ],
+        stats: [['+35%', 'Checkout conversion rate'], ['-28%', 'Cart abandonment'], ['3×', 'More repeat purchases in 90 days']]
+      },
+      es: {
+        title: 'E-commerce de moda',
+        tag: 'Tienda online con checkout optimizado para conversión',
+        metaValues: ['Confidencial (NDA)', '2025', 'Moda y retail', 'E-commerce, CRO, Desarrollo'],
+        challenge: [
+          'La marca vendía bien en redes sociales, pero perdía al cliente en el sitio: páginas lentas, checkout largo y carritos abandonados en el paso del envío.',
+          'El objetivo era claro — transformar audiencia en ingresos sin depender de descuentos.'
+        ],
+        solution: [
+          'Reconstruimos la tienda con foco en velocidad y cero fricción: páginas de producto que cargan al instante, checkout ágil y envío calculado antes del último paso.',
+          'Tests A/B continuos guiaron cada decisión de interfaz — lo que no aumenta la conversión, se elimina. Los detalles de la marca permanecen bajo NDA.'
+        ],
+        stats: [['+35%', 'Tasa de conversión en el checkout'], ['-28%', 'Abandono de carrito'], ['3×', 'Más recompra en 90 días']]
+      }
+    }
   }
 ];
+
+/* Rótulos fixos do template por idioma */
+const LABELS = {
+  en: {
+    projLabel: '( Project )',
+    metaLabels: ['Client', 'Year', 'Industry', 'Services'],
+    challengeTitle: 'The challenge',
+    solutionTitle: 'The solution'
+  },
+  es: {
+    projLabel: '( Proyecto )',
+    metaLabels: ['Cliente', 'Año', 'Sector', 'Servicios'],
+    challengeTitle: 'El desafío',
+    solutionTitle: 'La solución'
+  }
+};
+
+/* Monta o dicionário seletor→texto consumido pelo js/i18n.js */
+function pageDict(p, next) {
+  const out = {};
+  for (const lang of ['en', 'es']) {
+    const t = p.t[lang];
+    const L = LABELS[lang];
+    const d = {};
+    d['.p-hero .section__label'] = L.projLabel;
+    if (t.title) d['.p-hero__title'] = t.title;
+    d['.p-hero__tag'] = t.tag;
+    t.metaValues.forEach((v, i) => {
+      d[`.p-meta__item:nth-child(${i + 1}) h5`] = L.metaLabels[i];
+      d[`.p-meta__item:nth-child(${i + 1}) p`] = v;
+    });
+    d['section.p-section:nth-of-type(2) .p-section__label'] = L.challengeTitle;
+    d['section.p-section:nth-of-type(3) .p-section__label'] = L.solutionTitle;
+    t.challenge.forEach((txt, i) => {
+      d[`section.p-section:nth-of-type(2) .p-section__body p:nth-of-type(${i + 1})`] = txt;
+    });
+    t.solution.forEach((txt, i) => {
+      d[`section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(${i + 1})`] = txt;
+    });
+    t.stats.forEach(([num, desc], i) => {
+      d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__num`] = num;
+      d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__desc`] = desc;
+    });
+    const nextT = next.t[lang];
+    d['.next__title'] = (nextT && nextT.title) ? nextT.title : next.title;
+    out[lang] = d;
+  }
+  return out;
+}
 
 const esc = (s) => s; // conteúdo controlado localmente
 
@@ -246,9 +409,11 @@ ${visit}
     </div>
   </footer>
 
+  <script>window.__pageI18n = ${JSON.stringify(pageDict(p, next))};</script>
   <script src="../vendor/gsap.min.js"></script>
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
+  <script src="../js/i18n.js?v=1" defer></script>
   <script src="../js/page.js" defer></script>
 </body>
 </html>

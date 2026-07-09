@@ -252,6 +252,26 @@ body.menu-open .nav {
 }
 .nav__links a:hover { color: var(--paper); }
 .nav__links a:hover::after { transform: scaleX(1); transform-origin: left; }
+.lang {
+  display: flex; align-items: center; gap: 0.45rem;
+  margin-left: auto;
+}
+.lang__btn {
+  display: flex; align-items: center; justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  opacity: 0.45;
+  filter: saturate(0.4);
+  transition: opacity 0.3s, filter 0.3s, transform 0.3s var(--ease-out);
+}
+.lang__btn svg { width: 22px; height: 15px; border-radius: 2px; display: block; }
+.lang__btn:hover { opacity: 0.85; filter: saturate(0.9); transform: translateY(-2px); }
+.lang__btn.is-active {
+  opacity: 1;
+  filter: saturate(1);
+  outline: 1px solid rgba(198, 240, 53, 0.55);
+  outline-offset: 2px;
+}
 .nav__burger {
   display: none;
   flex-direction: column; gap: 6px;

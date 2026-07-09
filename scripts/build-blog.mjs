@@ -67,7 +67,7 @@ const posts = [
   }
 ];
 
-function shell({ title, desc, canonical, content, extraHead = '' }) {
+function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -132,9 +132,11 @@ ${content}
     </div>
   </footer>
 
+  <script>window.__pageI18n = ${JSON.stringify(pageI18n || {})};</script>
   <script src="../vendor/gsap.min.js"></script>
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
+  <script src="../js/i18n.js?v=1" defer></script>
   <script src="../js/page.js" defer></script>
 </body>
 </html>
@@ -156,6 +158,14 @@ writeFileSync(join(root, 'blog', 'index.html'), shell({
   title: 'Blog — BUMAVIT®',
   desc: 'Insights sobre desenvolvimento web, SEO, performance e geração de leads — pela Bumavit, software house brasileira.',
   canonical: `${SITE}/blog/index.html`,
+  pageI18n: {
+    en: {
+      '.p-hero__tag': 'Development, SEO, performance and growth — no fluff. Articles are written in Portuguese.'
+    },
+    es: {
+      '.p-hero__tag': 'Desarrollo, SEO, performance y crecimiento — sin rodeos. Los artículos están escritos en portugués.'
+    }
+  },
   content: `    <section class="p-hero section">
       <p class="section__label" data-reveal>( Blog )</p>
       <h1 class="p-hero__title" data-split>Insights</h1>

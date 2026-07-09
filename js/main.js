@@ -387,6 +387,13 @@
     if (!form) return;
     var status = document.getElementById('leadStatus');
     var submitBtn = form.querySelector('.lead__submit');
+    // strings traduzidas pelo i18n.js (fallback pt-BR)
+    var STR = window.__STR || {
+      formSending: 'Enviando…',
+      formOk: 'Mensagem enviada! Respondemos em até 24h. ✦',
+      formError: 'Algo deu errado. Tente de novo ou chame no WhatsApp.',
+      formUnconfigured: 'Formulário ainda não configurado — por enquanto, chame no WhatsApp ou envie um e-mail. 🙂'
+    };
 
     function setStatus(msg, cls) {
       status.textContent = msg;
@@ -398,12 +405,12 @@
       if (!form.checkValidity()) { form.reportValidity(); return; }
 
       if (form.action.indexOf('SEU_FORM_ID') !== -1) {
-        setStatus('Formulário ainda não configurado — por enquanto, chame no WhatsApp ou envie um e-mail. 🙂', 'is-error');
+        setStatus(STR.formUnconfigured, 'is-error');
         return;
       }
 
       submitBtn.disabled = true;
-      setStatus('Enviando…');
+      setStatus(STR.formSending);
 
       fetch(form.action, {
         method: 'POST',
@@ -412,9 +419,9 @@
       }).then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         form.reset();
-        setStatus('Mensagem enviada! Respondemos em até 24h. ✦', 'is-ok');
+        setStatus(STR.formOk, 'is-ok');
       }).catch(function () {
-        setStatus('Algo deu errado. Tente de novo ou chame no WhatsApp.', 'is-error');
+        setStatus(STR.formError, 'is-error');
       }).finally(function () {
         submitBtn.disabled = false;
       });

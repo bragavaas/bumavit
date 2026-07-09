@@ -22,10 +22,15 @@ python -m http.server 4173
 ## Estrutura
 
 ```
-index.html      — página única
-css/style.css   — design system + responsivo + reduced-motion
-js/main.js      — interações GSAP (preloader, menu, scroll, cursor)
-js/scene.js     — cena Three.js do hero
-vendor/         — bibliotecas locais
-fonts/          — woff2 auto-hospedadas
+index.html                  — página principal
+projetos/*.html             — páginas individuais de projeto (geradas)
+scripts/build-projects.mjs  — gerador das páginas de projeto (node scripts/build-projects.mjs)
+css/style.css               — design system + responsivo + reduced-motion
+js/main.js                  — interações GSAP da home (preloader, menu, scroll, cursor)
+js/page.js                  — interações das páginas de projeto
+js/scene.js                 — cena Three.js do hero
+vendor/                     — bibliotecas locais
+fonts/                      — woff2 auto-hospedadas
 ```
+
+Para editar o conteúdo dos projetos, altere os dados em `scripts/build-projects.mjs` e rode o gerador novamente.

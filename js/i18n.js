@@ -126,6 +126,15 @@
       '.process__panel:nth-child(5) h3': 'Launch & Growth',
       '.process__panel:nth-child(5) p': 'Smooth deploys, real metrics and constant optimization after go-live.',
 
+      /* --- CTA estimador --- */
+      '.estcta__label': '( Estimator )',
+      '.estcta__title': 'How much does your idea cost?',
+      '.estcta__sub': '3 questions, 1 minute — get an instant investment and timeline estimate. No sign-up, no strings.',
+      '.estcta__steps span:nth-of-type(1)': '01 · Project type',
+      '.estcta__steps span:nth-of-type(2)': '02 · Features',
+      '.estcta__steps span:nth-of-type(3)': '03 · Timeline',
+      '.estcta__btn span': 'Build your project',
+
       /* --- clientes --- */
       '#clientes .section__label': '( Clients )',
       '#clientes .section__title': 'Who has built with us',
@@ -268,6 +277,14 @@
       '.process__panel:nth-child(4) p': 'Código limpio, performante y escalable, con entregas continuas y transparencia total.',
       '.process__panel:nth-child(5) h3': 'Lanzamiento y Evolución',
       '.process__panel:nth-child(5) p': 'Deploy sin sustos, métricas reales y optimización constante después del go-live.',
+
+      '.estcta__label': '( Estimador )',
+      '.estcta__title': '¿Cuánto cuesta tu idea?',
+      '.estcta__sub': '3 preguntas, 1 minuto — recibe al instante una estimación de inversión y plazo. Sin registro, sin compromiso.',
+      '.estcta__steps span:nth-of-type(1)': '01 · Tipo de proyecto',
+      '.estcta__steps span:nth-of-type(2)': '02 · Funcionalidades',
+      '.estcta__steps span:nth-of-type(3)': '03 · Plazo',
+      '.estcta__btn span': 'Arma tu proyecto',
 
       '#clientes .section__label': '( Clientes )',
       '#clientes .section__title': 'Quiénes ya construyeron con nosotros',

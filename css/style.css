@@ -809,6 +809,80 @@ body.menu-open .nav__burger span:last-child { transform: translateY(-4px) rotate
 }
 
 /* ============================================================
+   CTA Estimador (faixa lima)
+   ============================================================ */
+.estcta {
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: clamp(4.5rem, 12vh, 8rem) var(--pad);
+  text-align: center;
+}
+.estcta__label {
+  font-size: 0.82rem; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(16, 19, 10, 0.65);
+  margin-bottom: 1.6rem;
+}
+.estcta__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 7.5vw, 6rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  max-width: 14em;
+  margin: 0 auto clamp(1rem, 3vh, 1.6rem);
+}
+.estcta__title .word { display: inline-block; overflow: hidden; vertical-align: top; }
+.estcta__title .word > span { display: inline-block; transform: translateY(110%); }
+.estcta__sub {
+  color: rgba(16, 19, 10, 0.72);
+  font-size: clamp(0.98rem, 1.6vw, 1.15rem);
+  max-width: 52ch;
+  margin: 0 auto clamp(1.8rem, 4vh, 2.6rem);
+}
+.estcta__steps {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 0.6rem 0.9rem;
+  margin-bottom: clamp(2rem, 5vh, 3rem);
+}
+.estcta__steps span {
+  font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  border: 1.5px solid rgba(16, 19, 10, 0.35);
+  border-radius: 100px;
+  padding: 0.5em 1.1em;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.estcta__steps span:hover { background: var(--accent-ink); color: var(--accent); border-color: var(--accent-ink); }
+.estcta__steps i { font-style: normal; font-weight: 700; opacity: 0.55; }
+.estcta__step-result { background: var(--accent-ink); color: var(--accent); border-color: var(--accent-ink) !important; }
+.estcta__btn {
+  display: inline-flex; align-items: center; gap: 0.9rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2.6vw, 1.6rem);
+  background: var(--accent-ink);
+  color: var(--accent);
+  border: 2px solid var(--accent-ink);
+  border-radius: 100px;
+  padding: 0.85em 1.9em;
+  transition: background-color 0.35s var(--ease-out), color 0.35s, box-shadow 0.35s, transform 0.35s var(--ease-out);
+  box-shadow: 0 14px 44px rgba(16, 19, 10, 0.28);
+}
+.estcta__btn:hover {
+  background: transparent;
+  color: var(--accent-ink);
+  box-shadow: 0 20px 56px rgba(16, 19, 10, 0.35);
+}
+.estcta__btn em {
+  font-style: normal;
+  transition: transform 0.35s var(--ease-out);
+}
+.estcta__btn:hover em { transform: translateX(7px); }
+.estcta ::selection { background: var(--accent-ink); color: var(--accent); }
+
+/* ============================================================
    Depoimentos
    ============================================================ */
 .voices__grid {

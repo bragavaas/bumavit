@@ -58,7 +58,7 @@ pt-BR; EN/ES vivem em dicionários `seletor CSS → texto`:
 
 - **Formulário**: crie um form em [formspree.io](https://formspree.io) e troque `SEU_FORM_ID`
   no `action` do formulário em `index.html`
-- **WhatsApp**: troque `5511999999999` pelos número real (links `wa.me` em `index.html`)
+- ~~WhatsApp~~: configurado (+55 21 99723-5420) — links `wa.me` em `index.html` e `WHATSAPP` em `js/estimator.js`
 - **Google Analytics**: descomente o bloco GA4 no `<head>` de `index.html` e insira seu
   Measurement ID
 - **Estimador**: preços calculados por horas × `RATE` (R$90/h). Ajuste `RATE`, as horas/dias

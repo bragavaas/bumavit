@@ -10,7 +10,7 @@
   'use strict';
 
   var LANG = window.__LANG || 'pt';
-  var WHATSAPP = '5511999999999'; // troque pelo número real
+  var WHATSAPP = '5521997235420';
   var RATE = 90;                  // R$/hora
 
   /* ---------- Tabela de preços (edite aqui) ---------- */

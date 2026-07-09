@@ -61,5 +61,7 @@ pt-BR; EN/ES vivem em dicionários `seletor CSS → texto`:
 - **WhatsApp**: troque `5511999999999` pelos número real (links `wa.me` em `index.html`)
 - **Google Analytics**: descomente o bloco GA4 no `<head>` de `index.html` e insira seu
   Measurement ID
-- **Estimador**: ajuste a tabela de valores em `PRICING` (e o número de WhatsApp em
-  `WHATSAPP`) no topo de `js/estimator.js`
+- **Estimador**: preços calculados por horas × `RATE` (R$90/h). Ajuste `RATE`, as horas/dias
+  por tipo em `PRICING`, as horas por funcionalidade em `FEATURES`, o custo de página
+  adicional em `EXTRA_PAGE` e o número de WhatsApp em `WHATSAPP` — tudo no topo de
+  `js/estimator.js`. Site institucional: pacote de 5 páginas, adicionais via slider.

@@ -50,7 +50,7 @@
       '.nav__links a[href$="#servicos"]': 'Services',
       '.nav__links a[href$="#projetos"]': 'Work',
       '.nav__links a[href$="#processo"]': 'Process',
-      '.nav__cta span': 'Start a project',
+      '.fab span': 'Let’s talk',
       '.menu__links a[href$="#estudio"]': { text: 'Studio' },
       '.menu__links a[href$="#servicos"]': { text: 'Services' },
       '.menu__links a[href$="#projetos"]': { text: 'Work' },
@@ -78,7 +78,6 @@
       '.hero__line:nth-child(2) .hero__line-inner': 'DIGITAL',
       '.hero__line:nth-child(3) .hero__line-inner': { html: 'EXPERIENCES<em class="hero__asterisk">*</em>' },
       '.hero__sub': '*From idea to deploy — we design and build websites, apps and platforms tailor-made for brands that want to grow.',
-      '.hero__bottom .btn-pill span': 'Let’s talk',
 
       /* --- marquee --- */
       '.marquee__group': { html: marqueeEN },
@@ -153,6 +152,11 @@
       '.faq__item:nth-child(4) .faq__answer p': 'Yes — we’ve delivered projects for clients in Canada and work in Portuguese, English and Spanish, with remote meetings in any timezone.',
       '.faq__item:nth-child(5) summary': { html: 'How does a project start?' + faqIcon },
       '.faq__item:nth-child(5) .faq__answer p': 'With a conversation. Tell us your idea through the form or WhatsApp, we’ll do a no-strings discovery call and come back with a proposal, timeline and investment.',
+      '.faq__aside h3': 'Still have a question?',
+      '.faq__aside > p': 'Talk to us directly — no bots, no queue. We reply within 24h.',
+      '.faq__aside-actions .btn-pill--accent span': 'Chat on WhatsApp',
+      '.faq__aside-actions a[href$="estimador.html"] span': 'Build your project →',
+      '.faq__aside-note': { html: 'Prefer e-mail? <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>' },
 
       /* --- contato --- */
       '#contato .section__label': '( Contact )',
@@ -197,7 +201,7 @@
       '.nav__links a[href$="#servicos"]': 'Servicios',
       '.nav__links a[href$="#projetos"]': 'Proyectos',
       '.nav__links a[href$="#processo"]': 'Proceso',
-      '.nav__cta span': 'Iniciar proyecto',
+      '.fab span': 'Hablemos',
       '.menu__links a[href$="#estudio"]': { text: 'Estudio' },
       '.menu__links a[href$="#servicos"]': { text: 'Servicios' },
       '.menu__links a[href$="#projetos"]': { text: 'Proyectos' },
@@ -222,7 +226,6 @@
       '.hero__line:nth-child(2) .hero__line-inner': 'EXPERIENCIAS',
       '.hero__line:nth-child(3) .hero__line-inner': { html: 'DIGITALES<em class="hero__asterisk">*</em>' },
       '.hero__sub': '*De la idea al deploy — diseñamos y desarrollamos sitios, aplicaciones y plataformas a medida para marcas que quieren crecer.',
-      '.hero__bottom .btn-pill span': 'Hablemos',
 
       '.marquee__group': { html: marqueeES },
 
@@ -290,6 +293,11 @@
       '.faq__item:nth-child(4) .faq__answer p': 'Sí — ya entregamos proyectos para clientes en Canadá y trabajamos en portugués, inglés y español, con reuniones remotas en cualquier huso horario.',
       '.faq__item:nth-child(5) summary': { html: '¿Cómo empieza un proyecto?' + faqIcon },
       '.faq__item:nth-child(5) .faq__answer p': 'Con una conversación. Cuéntanos tu idea por el formulario o WhatsApp, hacemos una llamada de descubrimiento sin compromiso y volvemos con propuesta, plazo e inversión.',
+      '.faq__aside h3': '¿Te quedó alguna duda?',
+      '.faq__aside > p': 'Habla directo con nosotros — sin bots, sin fila. Respondemos en hasta 24h.',
+      '.faq__aside-actions .btn-pill--accent span': 'Escribir por WhatsApp',
+      '.faq__aside-actions a[href$="estimador.html"] span': 'Arma tu proyecto →',
+      '.faq__aside-note': { html: '¿Prefieres correo? <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>' },
 
       '#contato .section__label': '( Contacto )',
       '.cta__line:nth-child(1)': '¿Tienes una idea?',

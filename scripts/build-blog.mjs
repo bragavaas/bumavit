@@ -100,11 +100,12 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
       <a href="../index.html#projetos" data-hover>Projetos</a>
       <a href="index.html" data-hover>Blog</a>
     </nav>
-    <a href="../index.html#contato" class="btn-pill nav__cta" data-hover><span>Iniciar projeto</span></a>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
       <span></span><span></span>
     </button>
   </header>
+
+  <a href="../index.html#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
@@ -136,7 +137,7 @@ ${content}
   <script src="../vendor/gsap.min.js"></script>
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
-  <script src="../js/i18n.js?v=1" defer></script>
+  <script src="../js/i18n.js?v=2" defer></script>
   <script src="../js/page.js" defer></script>
 </body>
 </html>

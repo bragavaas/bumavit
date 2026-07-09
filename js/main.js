@@ -60,14 +60,14 @@
   if (manifesto) splitWords(manifesto, false, 'm-word');
 
   /* ============ Preloader → hero intro ============ */
-  gsap.set('.hero .btn-pill', { opacity: 0, y: 20 });
   gsap.set('.hero__scroll', { opacity: 0 });
+  gsap.set('#fab', { y: 120, opacity: 0 });
 
   var heroIntro = gsap.timeline({ paused: true });
   heroIntro
     .to('.hero__line-inner', { y: 0, duration: 1.15, ease: 'power4.out', stagger: 0.12 })
     .to('.hero [data-reveal]', { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12 }, '-=0.7')
-    .to('.hero .btn-pill', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.6')
+    .to('#fab', { y: 0, opacity: 1, duration: 0.9, ease: 'back.out(1.4)', clearProps: 'all' }, '-=0.6')
     .to('.hero__scroll', { opacity: 1, duration: 0.8 }, '-=0.4');
 
   var counter = { v: 0 };
@@ -241,6 +241,17 @@
       }
     });
   });
+
+  /* ============ CTA flutuante: some na seção de contato ============ */
+  var fab = document.getElementById('fab');
+  if (fab) {
+    ScrollTrigger.create({
+      trigger: '#contato',
+      start: 'top 75%',
+      end: 'bottom top',
+      onToggle: function (self) { fab.classList.toggle('is-hidden', self.isActive); }
+    });
+  }
 
   /* ============ Formulário: entrada ============ */
   var leadForm = document.getElementById('leadForm');

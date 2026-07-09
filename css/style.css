@@ -861,9 +861,75 @@ body.menu-open .nav__burger span:last-child { transform: translateY(-4px) rotate
 .voices__logos-you { color: var(--accent) !important; }
 
 /* ============================================================
+   CTA flutuante ("Vamos conversar")
+   ============================================================ */
+.fab {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2.2rem);
+  bottom: clamp(1rem, 3vw, 2.2rem);
+  z-index: 7000;
+  display: inline-flex; align-items: center;
+  padding: 0.95em 1.8em;
+  border-radius: 100px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  box-shadow: 0 10px 40px rgba(198, 240, 53, 0.25), 0 4px 14px rgba(0, 0, 0, 0.45);
+  transition: transform 0.45s var(--ease-out), opacity 0.35s, box-shadow 0.35s;
+}
+.fab:hover {
+  box-shadow: 0 14px 52px rgba(198, 240, 53, 0.4), 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+.fab.is-hidden {
+  transform: translateY(180%);
+  opacity: 0;
+  pointer-events: none;
+}
+body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: none; }
+
+/* ============================================================
    FAQ
    ============================================================ */
-.faq__list { border-top: 1px solid var(--faint); max-width: 60rem; }
+.faq__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: start;
+}
+.faq__list { border-top: 1px solid var(--faint); }
+.faq__aside {
+  position: sticky;
+  top: 6.5rem;
+  border: 1px solid var(--faint);
+  border-radius: 16px;
+  padding: clamp(1.6rem, 3vw, 2.2rem);
+  background: linear-gradient(160deg, var(--ink-2) 0%, var(--ink) 100%);
+}
+.faq__aside-dot {
+  display: block;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-bottom: 1.2rem;
+  animation: pulse 2.2s ease-in-out infinite;
+}
+.faq__aside h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  line-height: 1.15;
+  margin-bottom: 0.7rem;
+}
+.faq__aside > p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.6rem; }
+.faq__aside-actions { display: flex; flex-direction: column; gap: 0.7rem; }
+.faq__aside-actions .btn-pill { justify-content: center; }
+.faq__aside-note {
+  margin-top: 1.4rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
 .faq__item { border-bottom: 1px solid var(--faint); }
 .faq__item summary {
   list-style: none;
@@ -1197,6 +1263,8 @@ body.menu-open .nav__burger span:last-child { transform: translateY(-4px) rotate
 
 @media (max-width: 900px) {
   .voices__grid { grid-template-columns: 1fr; }
+  .faq__grid { grid-template-columns: 1fr; }
+  .faq__aside { position: static; }
   .lead__row { grid-template-columns: 1fr; gap: 0; }
   .blog-card { grid-template-columns: 1fr auto; }
   .blog-card__date { grid-column: 1 / -1; }

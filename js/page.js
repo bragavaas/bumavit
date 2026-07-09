@@ -11,8 +11,11 @@
   /* ---- Split helper ---- */
   function splitWords(el) {
     var text = el.textContent.trim();
-    el.setAttribute('aria-label', text);
     el.textContent = '';
+    var sr = document.createElement('span');
+    sr.className = 'sr-only';
+    sr.textContent = text;
+    el.appendChild(sr);
     text.split(/\s+/).forEach(function (word) {
       var w = document.createElement('span');
       w.className = 'word';

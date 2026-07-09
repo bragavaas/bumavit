@@ -262,8 +262,8 @@ function pageDict(p, next) {
     if (t.title) d['.p-hero__title'] = t.title;
     d['.p-hero__tag'] = t.tag;
     t.metaValues.forEach((v, i) => {
-      d[`.p-meta__item:nth-child(${i + 1}) h5`] = L.metaLabels[i];
-      d[`.p-meta__item:nth-child(${i + 1}) p`] = v;
+      d[`.p-meta__item:nth-child(${i + 1}) dt`] = L.metaLabels[i];
+      d[`.p-meta__item:nth-child(${i + 1}) dd`] = v;
     });
     d['section.p-section:nth-of-type(2) .p-section__label'] = L.challengeTitle;
     d['section.p-section:nth-of-type(3) .p-section__label'] = L.solutionTitle;
@@ -289,8 +289,8 @@ const esc = (s) => s; // conteúdo controlado localmente
 function page(p, next) {
   const metaItems = Object.entries(p.meta).map(([k, v]) => `
         <div class="p-meta__item" data-reveal>
-          <h5>${k}</h5>
-          <p>${v}</p>
+          <dt>${k}</dt>
+          <dd>${v}</dd>
         </div>`).join('');
 
   const paras = (arr) => arr.map((t) => `<p>${t}</p>`).join('\n          ');
@@ -368,8 +368,8 @@ function page(p, next) {
       <h1 class="p-hero__title" data-split>${esc(p.title)}</h1>
       <p class="p-hero__tag" data-reveal>${esc(p.tag)}</p>
 
-      <div class="p-meta">${metaItems}
-      </div>
+      <dl class="p-meta">${metaItems}
+      </dl>
 
       <div class="work__media p-banner ${p.mediaClass}" data-reveal>
         <span class="work__mono">${p.mono}</span>
@@ -414,8 +414,8 @@ ${visit}
   <script src="../vendor/gsap.min.js"></script>
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
-  <script src="../js/i18n.js?v=3" defer></script>
-  <script src="../js/page.js" defer></script>
+  <script src="../js/i18n.js?v=4" defer></script>
+  <script src="../js/page.js?v=2" defer></script>
 </body>
 </html>
 `;

@@ -56,8 +56,7 @@ pt-BR; EN/ES vivem em dicionários `seletor CSS → texto`:
 
 ## Configuração pendente (troque os placeholders)
 
-- **Formulário**: crie um form em [formspree.io](https://formspree.io) e troque `SEU_FORM_ID`
-  no `action` do formulário em `index.html`
+- ~~Formulário~~: configurado (Formspree `mbdvvyro`, entrega em bragavaas@gmail.com)
 - ~~WhatsApp~~: configurado (+55 21 99723-5420) — links `wa.me` em `index.html` e `WHATSAPP` em `js/estimator.js`
 - **Google Analytics**: descomente o bloco GA4 no `<head>` de `index.html` e insira seu
   Measurement ID

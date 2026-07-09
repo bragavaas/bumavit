@@ -37,8 +37,12 @@
   /* ============ Split helpers ============ */
   function splitWords(el, inner, wordClass) {
     var text = el.textContent.trim();
-    el.setAttribute('aria-label', text);
     el.textContent = '';
+    // texto real para leitores de tela (aria-label é proibido em p/span sem role)
+    var sr = document.createElement('span');
+    sr.className = 'sr-only';
+    sr.textContent = text;
+    el.appendChild(sr);
     text.split(/\s+/).forEach(function (word, i) {
       var w = document.createElement('span');
       w.className = wordClass || 'word';
@@ -90,7 +94,6 @@
       onUpdate: function () { if (countEl) countEl.textContent = Math.round(counter.v); }
     }, '-=0.5')
     .to('.preloader__char', { y: '-110%', duration: 0.7, ease: 'power4.in', stagger: 0.04 }, '+=0.15')
-    .to('.preloader__count', { opacity: 0, duration: 0.4 }, '<')
     .to('#preloader', { yPercent: -100, duration: 0.9, ease: 'power4.inOut' }, '-=0.25');
 
   /* ============ Nav: shrink + hide on scroll down ============ */

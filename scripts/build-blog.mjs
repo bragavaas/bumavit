@@ -137,8 +137,8 @@ ${content}
   <script src="../vendor/gsap.min.js"></script>
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
-  <script src="../js/i18n.js?v=3" defer></script>
-  <script src="../js/page.js" defer></script>
+  <script src="../js/i18n.js?v=4" defer></script>
+  <script src="../js/page.js?v=2" defer></script>
 </body>
 </html>
 `;

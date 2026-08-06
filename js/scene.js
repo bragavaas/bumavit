@@ -68,7 +68,7 @@ function init() {
       uOpacity: { value: 0 },
       uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
       uPaper: { value: new THREE.Color('#efede6') },
-      uAccent: { value: new THREE.Color('#c6f035') }
+      uAccent: { value: new THREE.Color('#38bdf8') }
     },
     vertexShader: `
       uniform float uTime;
@@ -123,7 +123,7 @@ function init() {
   // subtle wireframe core
   const coreGeo = new THREE.IcosahedronGeometry(RADIUS * 0.52, 1);
   const coreMat = new THREE.MeshBasicMaterial({
-    color: 0xc6f035,
+    color: 0x38bdf8,
     wireframe: true,
     transparent: true,
     opacity: 0.05

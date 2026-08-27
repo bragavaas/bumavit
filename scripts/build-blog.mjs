@@ -85,7 +85,7 @@ const posts = readdirSync(join(root, 'posts'))
   .sort((a, b) => (a.date < b.date ? 1 : -1));
 
 /* ---------- Shell compartilhado (nav/fab/menu/footer do site) ---------- */
-function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null }) {
+function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website' }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -95,7 +95,16 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <meta name="description" content="${desc}">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${desc}">
+  <meta property="og:site_name" content="BUMAVIT">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="${ogType}">
+  <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${SITE}/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="${canonical}">
+  <meta name="twitter:title" content="${title}">
+  <meta name="twitter:description" content="${desc}">
+  <meta name="twitter:image" content="${SITE}/og.png">
   <link rel="canonical" href="${canonical}">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23ff7a29' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
@@ -386,6 +395,7 @@ ${readAlso.map(card).join('\n')}
     title: `${p.title} — BUMAVIT®`,
     desc: p.excerpt,
     canonical: url,
+    ogType: 'article',
     extraHead: ld,
     pageI18n: postI18n,
     content

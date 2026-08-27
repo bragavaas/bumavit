@@ -19,7 +19,7 @@
   <meta name="twitter:image" content="https://bumavit.com.br/og.png">
   <link rel="canonical" href="https://bumavit.com.br/blog/index.html">
   <meta name="theme-color" content="#0b0b0d">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%2338bdf8' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23ff7a29' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/style.css">
@@ -68,30 +68,79 @@
     </section>
 
     <section class="section" style="padding-top:0;">
-      <div class="blog-list">
-
-      <a class="blog-card" href="seo-local.html" data-hover>
-        <span class="blog-card__date">01 Jul 2026</span>
-        <h2>O poder do SEO local: apareça para quem está perto de comprar</h2>
-        <span class="blog-card__arrow" aria-hidden="true">→</span>
-        <p>A maioria das buscas com intenção de compra tem contexto local. Veja como colocar seu negócio na frente de quem já está procurando por você.</p>
+      <a class="bfeat" href="seo-local.html" data-hover data-reveal>
+        <div class="bcov bcov--seo bfeat__cover">
+          <span class="bcat" data-c="seo">SEO</span>
+        </div>
+        <div class="bfeat__info">
+          <span class="bcard__date">01 Jul 2026 · <span class="bmin" data-min="1">1 min de leitura</span></span>
+          <h2>O poder do SEO local: apareça para quem está perto de comprar</h2>
+          <p>A maioria das buscas com intenção de compra tem contexto local. Veja como colocar seu negócio na frente de quem já está procurando por você.</p>
+          <span class="bfeat__cta">Ler artigo <em aria-hidden="true">→</em></span>
+        </div>
       </a>
 
-      <a class="blog-card" href="leads-com-orcamento-limitado.html" data-hover>
-        <span class="blog-card__date">15 Jun 2026</span>
-        <h2>Geração de leads com orçamento limitado: o que priorizar</h2>
-        <span class="blog-card__arrow" aria-hidden="true">→</span>
-        <p>Sem verba para mídia? Ainda dá para gerar leads de forma consistente. O segredo é ordem de prioridade, não volume de canais.</p>
-      </a>
+      <div class="bfilter" role="group" aria-label="Filtrar por categoria" data-reveal>
+        <button type="button" class="bfilter__btn is-active" data-filter="all" data-hover>Todos</button>
+        <button type="button" class="bfilter__btn" data-filter="seo" data-hover>SEO</button>
+        <button type="button" class="bfilter__btn" data-filter="performance" data-hover>Performance</button>
+        <button type="button" class="bfilter__btn" data-filter="negocios" data-hover>Negócios</button>
+      </div>
 
-      <a class="blog-card" href="core-web-vitals.html" data-hover>
-        <span class="blog-card__date">28 Mai 2026</span>
-        <h2>Core Web Vitals: por que a velocidade do seu site é dinheiro</h2>
-        <span class="blog-card__arrow" aria-hidden="true">→</span>
-        <p>Google mede a experiência real de quem usa seu site — e usa isso no ranqueamento. Entenda as três métricas e o que fazer com elas.</p>
-      </a>
+      <div class="bgrid" id="bgrid">
+
+        <a class="bcard" href="seo-local.html" data-cat="seo" data-hover>
+          <div class="bcov bcov--seo bcard__cover">
+            <span class="bcat" data-c="seo">SEO</span>
+          </div>
+          <div class="bcard__info">
+            <span class="bcard__date">01 Jul 2026 · <span class="bmin" data-min="1">1 min de leitura</span></span>
+            <h3>O poder do SEO local: apareça para quem está perto de comprar</h3>
+            <p>A maioria das buscas com intenção de compra tem contexto local. Veja como colocar seu negócio na frente de quem já está procurando por você.</p>
+          </div>
+        </a>
+
+        <a class="bcard" href="leads-com-orcamento-limitado.html" data-cat="negocios" data-hover>
+          <div class="bcov bcov--negocios bcard__cover">
+            <span class="bcat" data-c="negocios">Negócios</span>
+          </div>
+          <div class="bcard__info">
+            <span class="bcard__date">15 Jun 2026 · <span class="bmin" data-min="1">1 min de leitura</span></span>
+            <h3>Geração de leads com orçamento limitado: o que priorizar</h3>
+            <p>Sem verba para mídia? Ainda dá para gerar leads de forma consistente. O segredo é ordem de prioridade, não volume de canais.</p>
+          </div>
+        </a>
+
+        <a class="bcard" href="core-web-vitals.html" data-cat="performance" data-hover>
+          <div class="bcov bcov--performance bcard__cover">
+            <span class="bcat" data-c="performance">Performance</span>
+          </div>
+          <div class="bcard__info">
+            <span class="bcard__date">28 Mai 2026 · <span class="bmin" data-min="1">1 min de leitura</span></span>
+            <h3>Core Web Vitals: por que a velocidade do seu site é dinheiro</h3>
+            <p>Google mede a experiência real de quem usa seu site — e usa isso no ranqueamento. Entenda as três métricas e o que fazer com elas.</p>
+          </div>
+        </a>
       </div>
     </section>
+
+    <script>
+    (function () {
+      var btns = document.querySelectorAll('.bfilter__btn');
+      var cards = document.querySelectorAll('#bgrid .bcard');
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          btns.forEach(function (x) { x.classList.remove('is-active'); });
+          b.classList.add('is-active');
+          var f = b.getAttribute('data-filter');
+          cards.forEach(function (c) {
+            var show = f === 'all' || c.getAttribute('data-cat') === f;
+            c.classList.toggle('is-hidden', !show);
+          });
+        });
+      });
+    })();
+    </script>
   </main>
 
   <footer class="footer">
@@ -102,7 +151,7 @@
     </div>
   </footer>
 
-  <script>window.__pageI18n = {"en":{".p-hero__tag":"Development, SEO, performance and growth — no fluff. Articles are written in Portuguese."},"es":{".p-hero__tag":"Desarrollo, SEO, performance y crecimiento — sin rodeos. Los artículos están escritos en portugués."}};</script>
+  <script>window.__pageI18n = {"en":{".p-hero__tag":"Development, SEO, performance and growth — no fluff. Articles are written in Portuguese.",".bfilter__btn[data-filter=\"all\"]":"All",".bcat[data-c=\"negocios\"]":"Business",".bfilter__btn[data-filter=\"negocios\"]":"Business",".bfeat__cta":{"html":"Read article <em aria-hidden=\"true\">→</em>"},".bmin[data-min=\"1\"]":"1 min read"},"es":{".p-hero__tag":"Desarrollo, SEO, performance y crecimiento — sin rodeos. Los artículos están escritos en portugués.",".bfilter__btn[data-filter=\"all\"]":"Todos",".bcat[data-c=\"negocios\"]":"Negocios",".bfilter__btn[data-filter=\"negocios\"]":"Negocios",".bfeat__cta":{"html":"Leer artículo <em aria-hidden=\"true\">→</em>"},".bmin[data-min=\"1\"]":"1 min de lectura"}};</script>
   <script src="../vendor/gsap.min.js"></script>
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>

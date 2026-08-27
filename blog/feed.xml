@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Bumavit — Blog</title>
+    <link>https://bumavit.com.br/blog/index.html</link>
+    <description>Insights sobre desenvolvimento web, SEO, performance e geração de leads.</description>
+    <language>pt-BR</language>
+    <item>
+      <title>O poder do SEO local: apareça para quem está perto de comprar</title>
+      <link>https://bumavit.com.br/blog/seo-local.html</link>
+      <guid>https://bumavit.com.br/blog/seo-local.html</guid>
+      <pubDate>Wed, 01 Jul 2026 12:00:00 GMT</pubDate>
+      <description>A maioria das buscas com intenção de compra tem contexto local. Veja como colocar seu negócio na frente de quem já está procurando por você.</description>
+      <category>SEO</category>
+    </item>
+    <item>
+      <title>Geração de leads com orçamento limitado: o que priorizar</title>
+      <link>https://bumavit.com.br/blog/leads-com-orcamento-limitado.html</link>
+      <guid>https://bumavit.com.br/blog/leads-com-orcamento-limitado.html</guid>
+      <pubDate>Mon, 15 Jun 2026 12:00:00 GMT</pubDate>
+      <description>Sem verba para mídia? Ainda dá para gerar leads de forma consistente. O segredo é ordem de prioridade, não volume de canais.</description>
+      <category>Negócios</category>
+    </item>
+    <item>
+      <title>Core Web Vitals: por que a velocidade do seu site é dinheiro</title>
+      <link>https://bumavit.com.br/blog/core-web-vitals.html</link>
+      <guid>https://bumavit.com.br/blog/core-web-vitals.html</guid>
+      <pubDate>Thu, 28 May 2026 12:00:00 GMT</pubDate>
+      <description>Google mede a experiência real de quem usa seu site — e usa isso no ranqueamento. Entenda as três métricas e o que fazer com elas.</description>
+      <category>Performance</category>
+    </item>
+  </channel>
+</rss>

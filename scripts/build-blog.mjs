@@ -1,72 +1,90 @@
-/* Gera o blog estático em blog/*.html + listagem blog/index.html
+/* Gera o blog estático a partir de posts/*.md
+   Saída: blog/index.html (archive), blog/<slug>.html (posts),
+          blog/feed.xml (RSS) e sitemap.xml completo do site.
    Uso: node scripts/build-blog.mjs */
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://bumavit.com.br';
 
-const posts = [
-  {
-    slug: 'seo-local',
-    title: 'O poder do SEO local: apareça para quem está perto de comprar',
-    excerpt: 'A maioria das buscas com intenção de compra tem contexto local. Veja como colocar seu negócio na frente de quem já está procurando por você.',
-    date: '2026-07-01',
-    dateLabel: '01 Jul 2026',
-    body: `
-<p>Quando alguém busca "pizzaria perto de mim" ou "agência de marketing em Curitiba", essa pessoa não está pesquisando — está <strong>decidindo</strong>. O SEO local existe para colocar o seu negócio exatamente nesse momento da jornada.</p>
-<h2>Por que o local converte mais</h2>
-<p>Buscas locais carregam intenção: quem procura um serviço com a cidade no texto costuma contratar em poucos dias. Ranquear bem nessas buscas vale mais do que milhares de visitas genéricas.</p>
-<h2>Os três pilares</h2>
-<ul>
-<li><strong>Perfil da Empresa no Google</strong> completo: categoria certa, fotos reais, horários atualizados e respostas às avaliações.</li>
-<li><strong>Consistência de dados</strong>: nome, endereço e telefone idênticos no site, redes e diretórios.</li>
-<li><strong>Conteúdo com contexto local</strong>: páginas que respondem às perguntas da sua região, não textos genéricos.</li>
-</ul>
-<h2>O papel do site</h2>
-<p>Nada disso funciona se o site demora para carregar ou quebra no celular. Velocidade, dados estruturados e páginas de serviço bem construídas são o alicerce técnico que sustenta o ranqueamento — e é aí que a engenharia encontra o marketing.</p>
-<p>Foi essa combinação que usamos no projeto <strong>Yacht Day</strong>, em Toronto: plataforma rápida + estratégia local = topo das buscas na região.</p>`
-  },
-  {
-    slug: 'leads-com-orcamento-limitado',
-    title: 'Geração de leads com orçamento limitado: o que priorizar',
-    excerpt: 'Sem verba para mídia? Ainda dá para gerar leads de forma consistente. O segredo é ordem de prioridade, não volume de canais.',
-    date: '2026-06-15',
-    dateLabel: '15 Jun 2026',
-    body: `
-<p>Todo negócio quer mais leads. Poucos têm orçamento para disputar leilão de anúncio com os grandes. A boa notícia: as fontes mais duradouras de leads são as que dependem de <strong>consistência</strong>, não de verba.</p>
-<h2>1. Conserte o balde antes de abrir a torneira</h2>
-<p>Investir em tráfego com um site que não converte é pagar para perder. Antes de qualquer campanha: formulário simples, WhatsApp visível, prova social e velocidade. Cada segundo de carregamento a mais derruba a conversão.</p>
-<h2>2. Um canal orgânico, bem feito</h2>
-<p>Escolha <strong>um</strong> canal onde seu cliente já está e publique com constância. Para serviços locais, Google + avaliações. Para B2B, LinkedIn + conteúdo que responde dúvidas reais de quem compra.</p>
-<h2>3. Transforme clientes em canal</h2>
-<p>Indicação é o lead mais barato que existe. Crie o hábito de pedir: uma mensagem pós-entrega pedindo avaliação ou indicação custa zero e compõe com o tempo.</p>
-<h2>Onde a tecnologia entra</h2>
-<p>Automatizar a captura (formulário → CRM → resposta em minutos) multiplica o resultado de qualquer canal. Leads esfriam rápido: responder em 5 minutos, e não em 5 horas, muda a taxa de fechamento.</p>`
-  },
-  {
-    slug: 'core-web-vitals',
-    title: 'Core Web Vitals: por que a velocidade do seu site é dinheiro',
-    excerpt: 'Google mede a experiência real de quem usa seu site — e usa isso no ranqueamento. Entenda as três métricas e o que fazer com elas.',
-    date: '2026-05-28',
-    dateLabel: '28 Mai 2026',
-    body: `
-<p>Core Web Vitals são as três métricas com que o Google mede a experiência real dos seus visitantes. Elas afetam seu ranqueamento — e, antes disso, afetam quantos visitantes viram clientes.</p>
-<h2>As três métricas, sem jargão</h2>
-<ul>
-<li><strong>LCP</strong> — em quanto tempo o conteúdo principal aparece. Meta: até 2,5s.</li>
-<li><strong>INP</strong> — quanto o site demora para reagir a um clique. Meta: até 200ms.</li>
-<li><strong>CLS</strong> — quanto a página "pula" enquanto carrega. Meta: quase zero.</li>
-</ul>
-<h2>Por que isso é dinheiro</h2>
-<p>Estudos de mercado se repetem há anos: cada segundo a mais de carregamento derruba conversão de forma mensurável. Em e-commerce, um site lento é um desconto involuntário dado ao concorrente.</p>
-<h2>O que costuma resolver</h2>
-<p>Imagens otimizadas e servidas no tamanho certo, fontes auto-hospedadas, JavaScript só do que a página realmente usa e um bom cache. Nada disso é mágica — é engenharia bem feita, medida com dados reais (o relatório CrUX do próprio Google) e não só com testes de laboratório.</p>
-<p>Nos nossos projetos, Core Web Vitals no verde é critério de entrega, não otimização posterior.</p>`
-  }
-];
+/* ---------- Categorias (cores/gradientes em css/style.css: .bcov--*) ---------- */
+const CATS = {
+  'SEO':         { slug: 'seo',         en: 'SEO',         es: 'SEO' },
+  'Performance': { slug: 'performance', en: 'Performance', es: 'Performance' },
+  'Negócios':    { slug: 'negocios',    en: 'Business',    es: 'Negocios' }
+};
 
+/* ---------- Frontmatter + Markdown mínimos (zero dependências) ---------- */
+function parseFrontmatter(raw) {
+  const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+  if (!m) throw new Error('frontmatter ausente');
+  const meta = {};
+  for (const line of m[1].split(/\r?\n/)) {
+    const i = line.indexOf(':');
+    if (i > 0) meta[line.slice(0, i).trim()] = line.slice(i + 1).trim();
+  }
+  return { meta, body: m[2].trim() };
+}
+
+function inline(text) {
+  return text
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+}
+
+function mdToHtml(md) {
+  const out = [];
+  const blocks = md.split(/\r?\n\r?\n+/);
+  for (const block of blocks) {
+    const lines = block.split(/\r?\n/).filter((l) => l.trim());
+    if (!lines.length) continue;
+    if (lines[0].startsWith('### ')) {
+      out.push('<h3>' + inline(lines[0].slice(4)) + '</h3>');
+      const rest = lines.slice(1).join(' ');
+      if (rest) out.push('<p>' + inline(rest) + '</p>');
+    } else if (lines[0].startsWith('## ')) {
+      out.push('<h2>' + inline(lines[0].slice(3)) + '</h2>');
+      const rest = lines.slice(1).join(' ');
+      if (rest) out.push('<p>' + inline(rest) + '</p>');
+    } else if (lines.every((l) => /^[-*] /.test(l.trim()))) {
+      out.push('<ul>' + lines.map((l) => '<li>' + inline(l.trim().slice(2)) + '</li>').join('') + '</ul>');
+    } else if (lines.every((l) => /^\d+\. /.test(l.trim()))) {
+      out.push('<ol>' + lines.map((l) => '<li>' + inline(l.trim().replace(/^\d+\. /, '')) + '</li>').join('') + '</ol>');
+    } else {
+      out.push('<p>' + inline(lines.join(' ')) + '</p>');
+    }
+  }
+  return out.join('\n');
+}
+
+function readingTime(html) {
+  const words = html.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
+/* ---------- Carrega os posts ---------- */
+const posts = readdirSync(join(root, 'posts'))
+  .filter((f) => f.endsWith('.md'))
+  .map((f) => {
+    const { meta, body } = parseFrontmatter(readFileSync(join(root, 'posts', f), 'utf8'));
+    const html = mdToHtml(body);
+    const cat = CATS[meta.category] || CATS['Negócios'];
+    return {
+      ...meta,
+      catLabel: meta.category,
+      catSlug: cat.slug,
+      catEn: cat.en,
+      catEs: cat.es,
+      html,
+      minutes: readingTime(html)
+    };
+  })
+  .sort((a, b) => (a.date < b.date ? 1 : -1));
+
+/* ---------- Shell compartilhado (nav/fab/menu/footer do site) ---------- */
 function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website' }) {
   return `<!doctype html>
 <html lang="pt-BR">
@@ -89,7 +107,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <meta name="twitter:image" content="${SITE}/og.png">
   <link rel="canonical" href="${canonical}">
   <meta name="theme-color" content="#0b0b0d">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%2338bdf8' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23ff7a29' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/style.css">${extraHead}
@@ -155,75 +173,282 @@ ${content}
 
 mkdirSync(join(root, 'blog'), { recursive: true });
 
-/* ---- Listagem ---- */
-const cards = posts.map((p) => `
-      <a class="blog-card" href="${p.slug}.html" data-hover>
-        <span class="blog-card__date">${p.dateLabel}</span>
-        <h2>${p.title}</h2>
-        <span class="blog-card__arrow" aria-hidden="true">→</span>
-        <p>${p.excerpt}</p>
-      </a>`).join('\n');
+/* ================================================================
+   ARCHIVE — blog/index.html
+   ================================================================ */
+const featured = posts[0];
+const rest = posts.slice(1);
 
-writeFileSync(join(root, 'blog', 'index.html'), shell({
-  title: 'Blog — BUMAVIT®',
-  desc: 'Insights sobre desenvolvimento web, SEO, performance e geração de leads — pela Bumavit, software house brasileira.',
-  canonical: `${SITE}/blog/index.html`,
-  pageI18n: {
-    en: {
-      '.p-hero__tag': 'Development, SEO, performance and growth — no fluff. Articles are written in Portuguese.'
-    },
-    es: {
-      '.p-hero__tag': 'Desarrollo, SEO, performance y crecimiento — sin rodeos. Los artículos están escritos en portugués.'
-    }
-  },
-  content: `    <section class="p-hero section">
+const filterBtns = ['all', ...Object.values(CATS).map((c) => c.slug)]
+  .map((slug) => {
+    const label = slug === 'all' ? 'Todos' : Object.keys(CATS).find((k) => CATS[k].slug === slug);
+    return `<button type="button" class="bfilter__btn${slug === 'all' ? ' is-active' : ''}" data-filter="${slug}" data-hover>${label}</button>`;
+  })
+  .join('\n        ');
+
+const card = (p) => `
+        <a class="bcard" href="${p.slug}.html" data-cat="${p.catSlug}" data-hover>
+          <div class="bcov bcov--${p.catSlug} bcard__cover">
+            <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
+          </div>
+          <div class="bcard__info">
+            <span class="bcard__date">${p.dateLabel} · <span class="bmin" data-min="${p.minutes}">${p.minutes} min de leitura</span></span>
+            <h3>${p.title}</h3>
+            <p>${p.excerpt}</p>
+          </div>
+        </a>`;
+
+const archiveContent = `    <section class="p-hero section">
       <p class="section__label" data-reveal>( Blog )</p>
       <h1 class="p-hero__title" data-split>Insights</h1>
       <p class="p-hero__tag" data-reveal>Desenvolvimento, SEO, performance e crescimento — sem enrolação.</p>
     </section>
 
     <section class="section" style="padding-top:0;">
-      <div class="blog-list">
-${cards}
+      <a class="bfeat" href="${featured.slug}.html" data-hover data-reveal>
+        <div class="bcov bcov--${featured.catSlug} bfeat__cover">
+          <span class="bcat" data-c="${featured.catSlug}">${featured.catLabel}</span>
+        </div>
+        <div class="bfeat__info">
+          <span class="bcard__date">${featured.dateLabel} · <span class="bmin" data-min="${featured.minutes}">${featured.minutes} min de leitura</span></span>
+          <h2>${featured.title}</h2>
+          <p>${featured.excerpt}</p>
+          <span class="bfeat__cta">Ler artigo <em aria-hidden="true">→</em></span>
+        </div>
+      </a>
+
+      <div class="bfilter" role="group" aria-label="Filtrar por categoria" data-reveal>
+        ${filterBtns}
       </div>
-    </section>`
+
+      <div class="bgrid" id="bgrid">
+${posts.map(card).join('\n')}
+      </div>
+    </section>
+
+    <script>
+    (function () {
+      var btns = document.querySelectorAll('.bfilter__btn');
+      var cards = document.querySelectorAll('#bgrid .bcard');
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          btns.forEach(function (x) { x.classList.remove('is-active'); });
+          b.classList.add('is-active');
+          var f = b.getAttribute('data-filter');
+          cards.forEach(function (c) {
+            var show = f === 'all' || c.getAttribute('data-cat') === f;
+            c.classList.toggle('is-hidden', !show);
+          });
+        });
+      });
+    })();
+    </script>`;
+
+const archiveI18n = {
+  en: {
+    '.p-hero__tag': 'Development, SEO, performance and growth — no fluff. Articles are written in Portuguese.',
+    '.bfilter__btn[data-filter="all"]': 'All',
+    '.bcat[data-c="negocios"]': 'Business',
+    '.bfilter__btn[data-filter="negocios"]': 'Business',
+    '.bfeat__cta': { html: 'Read article <em aria-hidden="true">→</em>' }
+  },
+  es: {
+    '.p-hero__tag': 'Desarrollo, SEO, performance y crecimiento — sin rodeos. Los artículos están escritos en portugués.',
+    '.bfilter__btn[data-filter="all"]': 'Todos',
+    '.bcat[data-c="negocios"]': 'Negocios',
+    '.bfilter__btn[data-filter="negocios"]': 'Negocios',
+    '.bfeat__cta': { html: 'Leer artículo <em aria-hidden="true">→</em>' }
+  }
+};
+['en', 'es'].forEach((lang) => {
+  posts.forEach((p) => {
+    archiveI18n[lang]['.bmin[data-min="' + p.minutes + '"]'] =
+      lang === 'en' ? p.minutes + ' min read' : p.minutes + ' min de lectura';
+  });
+});
+
+writeFileSync(join(root, 'blog', 'index.html'), shell({
+  title: 'Blog — BUMAVIT®',
+  desc: 'Insights sobre desenvolvimento web, SEO, performance e geração de leads — pela Bumavit, software house brasileira.',
+  canonical: `${SITE}/blog/index.html`,
+  pageI18n: archiveI18n,
+  content: archiveContent
 }), 'utf8');
 console.log('ok: blog/index.html');
 
-/* ---- Posts ---- */
-posts.forEach((p) => {
+/* ================================================================
+   POST SINGLE — blog/<slug>.html
+   ================================================================ */
+posts.forEach((p, i) => {
+  const prev = posts[i + 1] || null; // mais antigo
+  const next = posts[i - 1] || null; // mais novo
+  const related = posts.filter((x) => x.slug !== p.slug && x.catSlug === p.catSlug);
+  const readAlso = (related.length ? related : posts.filter((x) => x.slug !== p.slug)).slice(0, 2);
+  const url = `${SITE}/blog/${p.slug}.html`;
+  const shareText = encodeURIComponent(p.title + ' — ' + url);
+
   const ld = `
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": ${JSON.stringify(p.title)},
-    "description": ${JSON.stringify(p.excerpt)},
-    "datePublished": "${p.date}",
-    "inLanguage": "pt-BR",
-    "author": { "@type": "Organization", "name": "Bumavit", "url": "${SITE}/" },
-    "publisher": { "@type": "Organization", "name": "Bumavit" },
-    "mainEntityOfPage": "${SITE}/blog/${p.slug}.html"
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": ${JSON.stringify(p.title)},
+        "description": ${JSON.stringify(p.excerpt)},
+        "datePublished": "${p.date}",
+        "inLanguage": "pt-BR",
+        "articleSection": ${JSON.stringify(p.catLabel)},
+        "timeRequired": "PT${p.minutes}M",
+        "author": { "@type": "Organization", "name": "Bumavit", "url": "${SITE}/" },
+        "publisher": { "@type": "Organization", "name": "Bumavit" },
+        "mainEntityOfPage": "${url}"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Blog", "item": "${SITE}/blog/index.html" },
+          { "@type": "ListItem", "position": 2, "name": ${JSON.stringify(p.title)}, "item": "${url}" }
+        ]
+      }
+    ]
   }
   </script>`;
 
-  writeFileSync(join(root, 'blog', `${p.slug}.html`), shell({
-    title: `${p.title} — BUMAVIT®`,
-    desc: p.excerpt,
-    canonical: `${SITE}/blog/${p.slug}.html`,
-    ogType: 'article',
-    extraHead: ld,
-    content: `    <article class="article p-hero section">
-      <p class="article__date" data-reveal>${p.dateLabel} — Bumavit</p>
-      <h1 class="p-hero__title" style="font-size:clamp(2rem,5.5vw,4.2rem);" data-split>${p.title}</h1>
-      <div class="article__body" data-reveal>
-${p.body}
+  const navCard = (post, cls, label) => post ? `
+        <a class="bnav__card bnav__card--${cls}" href="${post.slug}.html" data-hover>
+          <span class="bnav__label bnav__label--${cls}">${label}</span>
+          <span class="bnav__title">${post.title}</span>
+        </a>` : `<span class="bnav__card bnav__card--empty" aria-hidden="true"></span>`;
+
+  const content = `    <article class="bpost p-hero section">
+      <nav class="bcrumb" aria-label="Breadcrumb" data-reveal>
+        <a href="index.html" data-hover>Blog</a> <span aria-hidden="true">/</span> <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
+      </nav>
+
+      <h1 class="p-hero__title bpost__title" data-split>${p.title}</h1>
+      <p class="bpost__meta" data-reveal>${p.dateLabel} · <span class="bmin" data-min="${p.minutes}">${p.minutes} min de leitura</span> · Bumavit</p>
+
+      <div class="bcov bcov--${p.catSlug} bpost__cover" data-reveal>
+        <span class="bcov__mono" aria-hidden="true">${p.catLabel.charAt(0)}</span>
       </div>
+
+      <div class="article__body bpost__body" data-reveal>
+${p.html}
+      </div>
+
+      <div class="bshare" data-reveal>
+        <span class="bshare__label">Compartilhar</span>
+        <a class="btn-pill" href="https://wa.me/?text=${shareText}" target="_blank" rel="noopener" data-hover><span>WhatsApp</span></a>
+        <a class="btn-pill" href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}" target="_blank" rel="noopener" data-hover><span>LinkedIn</span></a>
+        <a class="btn-pill" href="https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(p.title)}" target="_blank" rel="noopener" data-hover><span>X</span></a>
+      </div>
+
       <div class="article__cta" data-reveal>
         <h3>Quer aplicar isso no seu negócio?</h3>
         <a class="btn-pill btn-pill--accent" href="../index.html#contato" data-hover><span>Fale com a Bumavit</span></a>
       </div>
-    </article>`
+
+      <nav class="bnav" aria-label="Navegação entre posts">
+${navCard(prev, 'prev', '← Anterior')}
+${navCard(next, 'next', 'Próximo →')}
+      </nav>
+
+      <section class="brelated">
+        <h2 class="brelated__title">Leia também</h2>
+        <div class="bgrid bgrid--related">
+${readAlso.map(card).join('\n')}
+        </div>
+      </section>
+    </article>`;
+
+  const postI18n = {
+    en: {
+      '.bshare__label': 'Share',
+      '.bnav__label--prev': '← Previous',
+      '.bnav__label--next': 'Next →',
+      '.brelated__title': 'Read next',
+      '.bcat[data-c="negocios"]': 'Business',
+      ['.bmin[data-min="' + p.minutes + '"]']: p.minutes + ' min read',
+      '.article__cta h3': 'Want this working for your business?',
+      '.article__cta .btn-pill span': 'Talk to Bumavit'
+    },
+    es: {
+      '.bshare__label': 'Compartir',
+      '.bnav__label--prev': '← Anterior',
+      '.bnav__label--next': 'Siguiente →',
+      '.brelated__title': 'Lee también',
+      '.bcat[data-c="negocios"]': 'Negocios',
+      ['.bmin[data-min="' + p.minutes + '"]']: p.minutes + ' min de lectura',
+      '.article__cta h3': '¿Quieres aplicarlo en tu negocio?',
+      '.article__cta .btn-pill span': 'Habla con Bumavit'
+    }
+  };
+  ['en', 'es'].forEach((lang) => {
+    readAlso.forEach((r) => {
+      postI18n[lang]['.bmin[data-min="' + r.minutes + '"]'] =
+        lang === 'en' ? r.minutes + ' min read' : r.minutes + ' min de lectura';
+    });
+  });
+
+  writeFileSync(join(root, 'blog', `${p.slug}.html`), shell({
+    title: `${p.title} — BUMAVIT®`,
+    desc: p.excerpt,
+    canonical: url,
+    ogType: 'article',
+    extraHead: ld,
+    pageI18n: postI18n,
+    content
   }), 'utf8');
   console.log(`ok: blog/${p.slug}.html`);
 });
+
+/* ================================================================
+   RSS — blog/feed.xml
+   ================================================================ */
+const rssItems = posts.map((p) => `    <item>
+      <title>${p.title.replace(/&/g, '&amp;')}</title>
+      <link>${SITE}/blog/${p.slug}.html</link>
+      <guid>${SITE}/blog/${p.slug}.html</guid>
+      <pubDate>${new Date(p.date + 'T12:00:00Z').toUTCString()}</pubDate>
+      <description>${p.excerpt.replace(/&/g, '&amp;')}</description>
+      <category>${p.catLabel}</category>
+    </item>`).join('\n');
+
+writeFileSync(join(root, 'blog', 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Bumavit — Blog</title>
+    <link>${SITE}/blog/index.html</link>
+    <description>Insights sobre desenvolvimento web, SEO, performance e geração de leads.</description>
+    <language>pt-BR</language>
+${rssItems}
+  </channel>
+</rss>
+`, 'utf8');
+console.log('ok: blog/feed.xml');
+
+/* ================================================================
+   SITEMAP — sitemap.xml (site inteiro; posts entram automaticamente)
+   ================================================================ */
+const staticPages = [
+  ['', '1.0'],
+  ['sobre.html', '0.8'],
+  ['estimador.html', '0.9'],
+  ['projetos/yacht-day.html', '0.7'],
+  ['projetos/cocban.html', '0.7'],
+  ['projetos/fintech.html', '0.6'],
+  ['projetos/ecommerce.html', '0.6'],
+  ['blog/index.html', '0.8']
+];
+const urls = staticPages
+  .map(([path, pri]) => `  <url><loc>${SITE}/${path}</loc><priority>${pri}</priority></url>`)
+  .concat(posts.map((p) => `  <url><loc>${SITE}/blog/${p.slug}.html</loc><priority>0.6</priority></url>`))
+  .join('\n');
+
+writeFileSync(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls}
+</urlset>
+`, 'utf8');
+console.log('ok: sitemap.xml');

@@ -1,7 +1,16 @@
 /* Gera o blog estático a partir de posts/*.md
-   Saída: blog/index.html (archive), blog/<slug>.html (posts),
+   Saída: blog/index.html (archive), blog/<slug>/index.html (posts),
+          blog/<slug>.html (stub para a URL antiga),
           blog/feed.xml (RSS) e sitemap.xml completo do site.
-   Uso: node scripts/build-blog.mjs */
+   Uso: node scripts/build-blog.mjs
+
+   URL canônica de post: https://bumavit.com.br/blog/<slug>/ — barra final,
+   sem .html. Decisão travada pelo fundador (BUMA-11); o Content Writer e a
+   SEO Analyst já escrevem links nesse formato. Não reverter.
+
+   Atenção ao nível de diretório: a listagem fica em /blog/ (1 nível abaixo
+   da raiz) e os posts em /blog/<slug>/ (2 níveis). Todo link relativo passa
+   por `base`/`blogHref` — não escreva "../" solto no shell. */
 import { writeFileSync, mkdirSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -135,7 +144,9 @@ for (const p of posts) {
 }
 
 /* ---------- Shell compartilhado (nav/fab/menu/footer do site) ---------- */
-function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website', ogImage = `${SITE}/og.png` }) {
+/* base     = caminho relativo até a raiz do site  (archive '../', post '../../')
+   blogHref = caminho relativo até a listagem      (archive './',  post '../')   */
+function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website', ogImage = `${SITE}/og.png`, base = '../', blogHref = './' }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -159,9 +170,9 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <link rel="alternate" type="application/rss+xml" title="Bumavit — Blog" href="${SITE}/blog/feed.xml">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23${ACCENT.slice(1)}' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
-  <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css">${extraHead}
+  <link rel="preload" href="${base}fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="${base}fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="${base}css/style.css">${extraHead}
 </head>
 <body>
 
@@ -171,27 +182,27 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
   <header class="nav is-scrolled" id="nav">
-    <a href="../index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
+    <a href="${base}index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
     <nav class="nav__links" aria-label="Navegação principal">
-      <a href="../index.html#estudio" data-hover>Estúdio</a>
-      <a href="../index.html#servicos" data-hover>Serviços</a>
-      <a href="../index.html#projetos" data-hover>Projetos</a>
-      <a href="./" data-hover>Blog</a>
+      <a href="${base}index.html#estudio" data-hover>Estúdio</a>
+      <a href="${base}index.html#servicos" data-hover>Serviços</a>
+      <a href="${base}index.html#projetos" data-hover>Projetos</a>
+      <a href="${blogHref}" data-hover>Blog</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
       <span></span><span></span>
     </button>
   </header>
 
-  <a href="../index.html#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
+  <a href="${base}index.html#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
-      <a href="../index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
-      <a href="../index.html#servicos"><span class="menu__index">02</span>Serviços</a>
-      <a href="../index.html#projetos"><span class="menu__index">03</span>Projetos</a>
-      <a href="./"><span class="menu__index">04</span>Blog</a>
-      <a href="../index.html#contato"><span class="menu__index">05</span>Contato</a>
+      <a href="${base}index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
+      <a href="${base}index.html#servicos"><span class="menu__index">02</span>Serviços</a>
+      <a href="${base}index.html#projetos"><span class="menu__index">03</span>Projetos</a>
+      <a href="${blogHref}"><span class="menu__index">04</span>Blog</a>
+      <a href="${base}index.html#contato"><span class="menu__index">05</span>Contato</a>
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
@@ -206,17 +217,48 @@ ${content}
   <footer class="footer">
     <div class="footer__bottom" style="border-top:0; margin-top:0;">
       <p>© 2026 Bumavit. Todos os direitos reservados.</p>
-      <a href="../index.html" data-hover>← Voltar ao início</a>
+      <a href="${base}index.html" data-hover>← Voltar ao início</a>
       <button class="footer__top-btn" id="backToTop" data-hover>Voltar ao topo ↑</button>
     </div>
   </footer>
 
   <script>window.__pageI18n = ${JSON.stringify(pageI18n || {})};</script>
-  <script src="../vendor/gsap.min.js"></script>
-  <script src="../vendor/ScrollTrigger.min.js"></script>
-  <script src="../vendor/lenis.min.js"></script>
-  <script src="../js/i18n.js?v=4" defer></script>
-  <script src="../js/page.js?v=2" defer></script>
+  <script src="${base}vendor/gsap.min.js"></script>
+  <script src="${base}vendor/ScrollTrigger.min.js"></script>
+  <script src="${base}vendor/lenis.min.js"></script>
+  <script src="${base}js/i18n.js?v=4" defer></script>
+  <script src="${base}js/page.js?v=2" defer></script>
+</body>
+</html>
+`;
+}
+
+/* Stub de redirecionamento para uma URL aposentada. O GitHub Pages não emite
+   301, então canonical + refresh + replace() é o que consolida o sinal no
+   destino. Mesmo formato dos stubs do WordPress legado — uma técnica só. */
+function redirectStub({ to, label }) {
+  return `<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Página movida — BUMAVIT®</title>
+<link rel="canonical" href="${to}">
+<meta http-equiv="refresh" content="0; url=${to}">
+<meta property="og:url" content="${to}">
+<meta name="description" content="Esta página mudou de endereço. Você está sendo redirecionado.">
+<script>location.replace("${to}");</script>
+<style>
+  body{background:#0b0b0d;color:#f4f4f5;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;
+       display:grid;place-items:center;min-height:100vh;margin:0;padding:2rem;text-align:center}
+  a{color:${ACCENT}}
+</style>
+</head>
+<body>
+  <main>
+    <p><strong>${label}</strong> mudou de endereço.</p>
+    <p>Se o redirecionamento não acontecer, <a href="${to}">clique aqui para continuar</a>.</p>
+  </main>
 </body>
 </html>
 `;
@@ -237,8 +279,10 @@ const filterBtns = ['all', ...Object.values(CATS).map((c) => c.slug)]
   })
   .join('\n        ');
 
-const card = (p) => `
-        <a class="bcard" href="${p.slug}.html" data-cat="${p.catSlug}" data-hover>
+/* `prefix` = caminho até /blog/. Vazio na listagem (já está em /blog/),
+   '../' dentro de um post (que fica em /blog/<slug>/). */
+const card = (p, prefix = '') => `
+        <a class="bcard" href="${prefix}${p.slug}/" data-cat="${p.catSlug}" data-hover>
           <div class="bcov bcov--${p.catSlug} bcard__cover">
             <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
           </div>
@@ -256,7 +300,7 @@ const archiveContent = `    <section class="p-hero section">
     </section>
 
     <section class="section" style="padding-top:0;">
-      <a class="bfeat" href="${featured.slug}.html" data-hover data-reveal>
+      <a class="bfeat" href="${featured.slug}/" data-hover data-reveal>
         <div class="bcov bcov--${featured.catSlug} bfeat__cover">
           <span class="bcat" data-c="${featured.catSlug}">${featured.catLabel}</span>
         </div>
@@ -273,7 +317,7 @@ const archiveContent = `    <section class="p-hero section">
       </div>
 
       <div class="bgrid" id="bgrid">
-${posts.map(card).join('\n')}
+${posts.map((p) => card(p)).join('\n')}
       </div>
     </section>
 
@@ -380,7 +424,7 @@ posts.forEach((p, i) => {
   const next = posts[i - 1] || null; // mais novo
   const related = posts.filter((x) => x.slug !== p.slug && x.catSlug === p.catSlug);
   const readAlso = (related.length ? related : posts.filter((x) => x.slug !== p.slug)).slice(0, 2);
-  const url = `${SITE}/blog/${p.slug}.html`;
+  const url = `${SITE}/blog/${p.slug}/`;
   const shareText = encodeURIComponent(p.title + ' — ' + url);
 
   const ld = `
@@ -415,14 +459,14 @@ posts.forEach((p, i) => {
   </script>`;
 
   const navCard = (post, cls, label) => post ? `
-        <a class="bnav__card bnav__card--${cls}" href="${post.slug}.html" data-hover>
+        <a class="bnav__card bnav__card--${cls}" href="../${post.slug}/" data-hover>
           <span class="bnav__label bnav__label--${cls}">${label}</span>
           <span class="bnav__title">${post.title}</span>
         </a>` : `<span class="bnav__card bnav__card--empty" aria-hidden="true"></span>`;
 
   const content = `    <article class="bpost p-hero section">
       <nav class="bcrumb" aria-label="Breadcrumb" data-reveal>
-        <a href="./" data-hover>Blog</a> <span aria-hidden="true">/</span> <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
+        <a href="../" data-hover>Blog</a> <span aria-hidden="true">/</span> <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
       </nav>
 
       <h1 class="p-hero__title bpost__title" data-split>${p.title}</h1>
@@ -445,7 +489,7 @@ ${p.html}
 
       <div class="article__cta" data-reveal>
         <h3>Quer aplicar isso no seu negócio?</h3>
-        <a class="btn-pill btn-pill--accent" href="../index.html#contato" data-hover><span>Fale com a Bumavit</span></a>
+        <a class="btn-pill btn-pill--accent" href="../../index.html#contato" data-hover><span>Fale com a Bumavit</span></a>
       </div>
 
       <nav class="bnav" aria-label="Navegação entre posts">
@@ -456,7 +500,7 @@ ${navCard(next, 'next', 'Próximo →')}
       <section class="brelated">
         <h2 class="brelated__title">Leia também</h2>
         <div class="bgrid bgrid--related">
-${readAlso.map(card).join('\n')}
+${readAlso.map((r) => card(r, '../')).join('\n')}
         </div>
       </section>
     </article>`;
@@ -490,7 +534,8 @@ ${readAlso.map(card).join('\n')}
     });
   });
 
-  writeFileSync(join(root, 'blog', `${p.slug}.html`), shell({
+  mkdirSync(join(root, 'blog', p.slug), { recursive: true });
+  writeFileSync(join(root, 'blog', p.slug, 'index.html'), shell({
     title: `${p.title} — BUMAVIT®`,
     desc: p.excerpt,
     canonical: url,
@@ -498,9 +543,19 @@ ${readAlso.map(card).join('\n')}
     ogImage: p.image ? SITE + p.image : `${SITE}/og.png`,
     extraHead: ld,
     pageI18n: postI18n,
-    content
+    content,
+    base: '../../',
+    blogHref: '../'
   }), 'utf8');
-  console.log(`ok: blog/${p.slug}.html`);
+  console.log(`ok: blog/${p.slug}/index.html`);
+
+  /* Stub na URL antiga. /blog/<slug>.html foi indexável e respondeu 200 antes
+     da troca de padrão — apagar geraria 404 em link externo já publicado. */
+  writeFileSync(join(root, 'blog', `${p.slug}.html`), redirectStub({
+    to: url,
+    label: p.title
+  }), 'utf8');
+  console.log(`ok: blog/${p.slug}.html (stub -> ${url})`);
 });
 
 /* ================================================================
@@ -508,8 +563,8 @@ ${readAlso.map(card).join('\n')}
    ================================================================ */
 const rssItems = posts.map((p) => `    <item>
       <title>${p.title.replace(/&/g, '&amp;')}</title>
-      <link>${SITE}/blog/${p.slug}.html</link>
-      <guid>${SITE}/blog/${p.slug}.html</guid>
+      <link>${SITE}/blog/${p.slug}/</link>
+      <guid>${SITE}/blog/${p.slug}/</guid>
       <pubDate>${new Date(p.date + 'T12:00:00Z').toUTCString()}</pubDate>
       <description>${p.excerpt.replace(/&/g, '&amp;')}</description>
       <category>${p.catLabel}</category>
@@ -545,7 +600,7 @@ const staticPages = [
 ];
 const urls = staticPages
   .map(([path, pri]) => `  <url><loc>${SITE}/${path}</loc><priority>${pri}</priority></url>`)
-  .concat(posts.map((p) => `  <url><loc>${SITE}/blog/${p.slug}.html</loc><lastmod>${p.updated || p.date}</lastmod><priority>0.6</priority></url>`))
+  .concat(posts.map((p) => `  <url><loc>${SITE}/blog/${p.slug}/</loc><lastmod>${p.updated || p.date}</lastmod><priority>0.6</priority></url>`))
   .join('\n');
 
 writeFileSync(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>

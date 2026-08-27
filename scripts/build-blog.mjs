@@ -9,6 +9,29 @@ import { fileURLToPath } from 'node:url';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://bumavit.com.br';
 
+/* A URL canonica da listagem e o diretorio, nunca /blog/index.html.
+   As duas respondem 200 no GitHub Pages; apontar canonical, sitemap,
+   breadcrumb e RSS para a mesma forma evita conteudo duplicado. */
+const BLOG_URL = `${SITE}/blog/`;
+
+/* Cor de marca lida do proprio design system. O favicon inline precisa de um
+   literal, e ja houve divergencia (paginas geradas ficaram no ciano antigo
+   depois do rebrand). Lendo o token, regerar o blog sempre reconcilia. */
+const ACCENT = (readFileSync(join(root, 'css', 'style.css'), 'utf8')
+  .match(/--accent:\s*(#[0-9a-fA-F]{3,8})/) || [, '#ff7a29'])[1];
+
+/* NAP real da empresa. Sem endereco de rua: nao temos um publicado e inventar
+   um e o erro classico de SEO local (NAP inconsistente). areaServed e
+   verdadeiro e suficiente enquanto o endereco nao existe. */
+const BUSINESS = {
+  name: 'Bumavit',
+  telephone: '+55-21-99723-5420',
+  email: 'contato@bumavit.com.br',
+  region: 'RJ',
+  country: 'BR',
+  sameAs: ['https://br.linkedin.com/company/bumavit']
+};
+
 /* ---------- Categorias (cores/gradientes em css/style.css: .bcov--*) ---------- */
 const CATS = {
   'SEO':         { slug: 'seo',         en: 'SEO',         es: 'SEO' },
@@ -60,6 +83,14 @@ function mdToHtml(md) {
   return out.join('\n');
 }
 
+/* dateLabel e derivado de date. Se o autor escrever os dois e eles divergirem,
+   a pagina mostra uma data e o sitemap/RSS declaram outra — entao date manda. */
+const MESES_PT = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+function dateLabelFrom(iso) {
+  const [y, m, d] = iso.split('-');
+  return `${d} ${MESES_PT[Number(m) - 1]} ${y}`;
+}
+
 function readingTime(html) {
   const words = html.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 200));
@@ -67,13 +98,16 @@ function readingTime(html) {
 
 /* ---------- Carrega os posts ---------- */
 const posts = readdirSync(join(root, 'posts'))
-  .filter((f) => f.endsWith('.md'))
+  /* Arquivos de apoio da pasta: `_TEMPLATE.md` e o README que o GitHub
+     renderiza na propria pasta. Nao sao posts. */
+  .filter((f) => f.endsWith('.md') && !f.startsWith('_') && f.toLowerCase() !== 'readme.md')
   .map((f) => {
     const { meta, body } = parseFrontmatter(readFileSync(join(root, 'posts', f), 'utf8'));
     const html = mdToHtml(body);
     const cat = CATS[meta.category] || CATS['Negócios'];
     return {
       ...meta,
+      dateLabel: dateLabelFrom(meta.date),
       catLabel: meta.category,
       catSlug: cat.slug,
       catEn: cat.en,
@@ -82,10 +116,26 @@ const posts = readdirSync(join(root, 'posts'))
       minutes: readingTime(html)
     };
   })
+  /* `draft: true` deixa o texto no repositorio sem publicar: o post nao vira
+     HTML, nao entra na listagem, no RSS nem no sitemap. Tirar a linha publica. */
+  .filter((p) => String(p.draft).toLowerCase() !== 'true')
   .sort((a, b) => (a.date < b.date ? 1 : -1));
 
+/* Um slug duplicado sobrescreveria silenciosamente o HTML do outro post. */
+const dupes = posts.map((p) => p.slug).filter((s, i, a) => a.indexOf(s) !== i);
+if (dupes.length) throw new Error('slug duplicado em posts/: ' + [...new Set(dupes)].join(', '));
+
+/* Campos sem os quais a pagina sai com SEO quebrado (title/description vazios). */
+for (const p of posts) {
+  for (const field of ['title', 'slug', 'date', 'excerpt', 'category']) {
+    if (!p[field]) throw new Error(`posts/${p.slug || '?'}: frontmatter sem "${field}"`);
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(p.date)) throw new Error(`posts/${p.slug}: date deve ser AAAA-MM-DD`);
+  if (!CATS[p.category]) throw new Error(`posts/${p.slug}: category "${p.category}" nao existe (use: ${Object.keys(CATS).join(', ')})`);
+}
+
 /* ---------- Shell compartilhado (nav/fab/menu/footer do site) ---------- */
-function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null }) {
+function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website', ogImage = `${SITE}/og.png` }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -95,10 +145,20 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <meta name="description" content="${desc}">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${desc}">
-  <meta property="og:image" content="${SITE}/og.png">
+  <meta property="og:image" content="${ogImage}">
+  <meta property="og:url" content="${canonical}">
+  <meta property="og:type" content="${ogType}">
+  <meta property="og:site_name" content="BUMAVIT">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="${canonical}">
+  <meta name="twitter:title" content="${title}">
+  <meta name="twitter:description" content="${desc}">
+  <meta name="twitter:image" content="${ogImage}">
   <link rel="canonical" href="${canonical}">
+  <link rel="alternate" type="application/rss+xml" title="Bumavit — Blog" href="${SITE}/blog/feed.xml">
   <meta name="theme-color" content="#0b0b0d">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23ff7a29' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23${ACCENT.slice(1)}' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/style.css">${extraHead}
@@ -116,7 +176,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
       <a href="../index.html#estudio" data-hover>Estúdio</a>
       <a href="../index.html#servicos" data-hover>Serviços</a>
       <a href="../index.html#projetos" data-hover>Projetos</a>
-      <a href="index.html" data-hover>Blog</a>
+      <a href="./" data-hover>Blog</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
       <span></span><span></span>
@@ -130,7 +190,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
       <a href="../index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
       <a href="../index.html#servicos"><span class="menu__index">02</span>Serviços</a>
       <a href="../index.html#projetos"><span class="menu__index">03</span>Projetos</a>
-      <a href="index.html"><span class="menu__index">04</span>Blog</a>
+      <a href="./"><span class="menu__index">04</span>Blog</a>
       <a href="../index.html#contato"><span class="menu__index">05</span>Contato</a>
     </nav>
     <div class="menu__footer">
@@ -258,10 +318,55 @@ const archiveI18n = {
   });
 });
 
+/* Organization + LocalBusiness: exigidos no escopo do blog e reaproveitados
+   como @id pelos posts, para o grafo do site ficar consistente. */
+const orgLd = `
+      {
+        "@type": "Organization",
+        "@id": "${SITE}/#org",
+        "name": "${BUSINESS.name}",
+        "url": "${SITE}/",
+        "email": "${BUSINESS.email}",
+        "telephone": "${BUSINESS.telephone}",
+        "sameAs": ${JSON.stringify(BUSINESS.sameAs)}
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "${SITE}/#localbusiness",
+        "name": "${BUSINESS.name}",
+        "url": "${SITE}/",
+        "email": "${BUSINESS.email}",
+        "telephone": "${BUSINESS.telephone}",
+        "parentOrganization": { "@id": "${SITE}/#org" },
+        "address": { "@type": "PostalAddress", "addressRegion": "${BUSINESS.region}", "addressCountry": "${BUSINESS.country}" },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Rio de Janeiro" },
+          { "@type": "Country", "name": "Brasil" }
+        ]
+      }`;
+
+const archiveLd = `
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "${BLOG_URL}#blog",
+        "name": "Blog — BUMAVIT®",
+        "url": "${BLOG_URL}",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "${SITE}/#org" }
+      },${orgLd}
+    ]
+  }
+  </script>`;
+
 writeFileSync(join(root, 'blog', 'index.html'), shell({
   title: 'Blog — BUMAVIT®',
   desc: 'Insights sobre desenvolvimento web, SEO, performance e geração de leads — pela Bumavit, software house brasileira.',
-  canonical: `${SITE}/blog/index.html`,
+  canonical: BLOG_URL,
+  extraHead: archiveLd,
   pageI18n: archiveI18n,
   content: archiveContent
 }), 'utf8');
@@ -291,17 +396,20 @@ posts.forEach((p, i) => {
         "inLanguage": "pt-BR",
         "articleSection": ${JSON.stringify(p.catLabel)},
         "timeRequired": "PT${p.minutes}M",
-        "author": { "@type": "Organization", "name": "Bumavit", "url": "${SITE}/" },
-        "publisher": { "@type": "Organization", "name": "Bumavit" },
+        "dateModified": "${p.updated || p.date}",
+        "image": "${p.image ? SITE + p.image : SITE + '/og.png'}",
+        "isPartOf": { "@id": "${BLOG_URL}#blog" },
+        "author": { "@id": "${SITE}/#org" },
+        "publisher": { "@id": "${SITE}/#org" },
         "mainEntityOfPage": "${url}"
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Blog", "item": "${SITE}/blog/index.html" },
+          { "@type": "ListItem", "position": 1, "name": "Blog", "item": "${BLOG_URL}" },
           { "@type": "ListItem", "position": 2, "name": ${JSON.stringify(p.title)}, "item": "${url}" }
         ]
-      }
+      },${orgLd}
     ]
   }
   </script>`;
@@ -314,7 +422,7 @@ posts.forEach((p, i) => {
 
   const content = `    <article class="bpost p-hero section">
       <nav class="bcrumb" aria-label="Breadcrumb" data-reveal>
-        <a href="index.html" data-hover>Blog</a> <span aria-hidden="true">/</span> <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
+        <a href="./" data-hover>Blog</a> <span aria-hidden="true">/</span> <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
       </nav>
 
       <h1 class="p-hero__title bpost__title" data-split>${p.title}</h1>
@@ -386,6 +494,8 @@ ${readAlso.map(card).join('\n')}
     title: `${p.title} — BUMAVIT®`,
     desc: p.excerpt,
     canonical: url,
+    ogType: 'article',
+    ogImage: p.image ? SITE + p.image : `${SITE}/og.png`,
     extraHead: ld,
     pageI18n: postI18n,
     content
@@ -406,12 +516,14 @@ const rssItems = posts.map((p) => `    <item>
     </item>`).join('\n');
 
 writeFileSync(join(root, 'blog', 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bumavit — Blog</title>
-    <link>${SITE}/blog/index.html</link>
+    <link>${BLOG_URL}</link>
+    <atom:link href="${SITE}/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Insights sobre desenvolvimento web, SEO, performance e geração de leads.</description>
     <language>pt-BR</language>
+    <lastBuildDate>${new Date(posts[0].date + 'T12:00:00Z').toUTCString()}</lastBuildDate>
 ${rssItems}
   </channel>
 </rss>
@@ -429,11 +541,11 @@ const staticPages = [
   ['projetos/cocban.html', '0.7'],
   ['projetos/fintech.html', '0.6'],
   ['projetos/ecommerce.html', '0.6'],
-  ['blog/index.html', '0.8']
+  ['blog/', '0.8']
 ];
 const urls = staticPages
   .map(([path, pri]) => `  <url><loc>${SITE}/${path}</loc><priority>${pri}</priority></url>`)
-  .concat(posts.map((p) => `  <url><loc>${SITE}/blog/${p.slug}.html</loc><priority>0.6</priority></url>`))
+  .concat(posts.map((p) => `  <url><loc>${SITE}/blog/${p.slug}.html</loc><lastmod>${p.updated || p.date}</lastmod><priority>0.6</priority></url>`))
   .join('\n');
 
 writeFileSync(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>

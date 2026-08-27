@@ -7,8 +7,8 @@
   <url><loc>https://bumavit.com.br/projetos/cocban.html</loc><priority>0.7</priority></url>
   <url><loc>https://bumavit.com.br/projetos/fintech.html</loc><priority>0.6</priority></url>
   <url><loc>https://bumavit.com.br/projetos/ecommerce.html</loc><priority>0.6</priority></url>
-  <url><loc>https://bumavit.com.br/blog/index.html</loc><priority>0.8</priority></url>
-  <url><loc>https://bumavit.com.br/blog/seo-local.html</loc><priority>0.6</priority></url>
-  <url><loc>https://bumavit.com.br/blog/leads-com-orcamento-limitado.html</loc><priority>0.6</priority></url>
-  <url><loc>https://bumavit.com.br/blog/core-web-vitals.html</loc><priority>0.6</priority></url>
+  <url><loc>https://bumavit.com.br/blog/</loc><priority>0.8</priority></url>
+  <url><loc>https://bumavit.com.br/blog/seo-local.html</loc><lastmod>2026-07-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://bumavit.com.br/blog/leads-com-orcamento-limitado.html</loc><lastmod>2026-06-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://bumavit.com.br/blog/core-web-vitals.html</loc><lastmod>2026-05-28</lastmod><priority>0.6</priority></url>
 </urlset>

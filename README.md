@@ -40,8 +40,25 @@ vendor/                     — bibliotecas locais
 fonts/                      — woff2 auto-hospedadas
 ```
 
-Para editar projetos ou posts do blog, altere os dados em `scripts/build-projects.mjs` /
-`scripts/build-blog.mjs` e rode o gerador (`node scripts/<arquivo>`).
+Para editar projetos, altere os dados em `scripts/build-projects.mjs` e rode o gerador.
+
+## Blog
+
+Posts são arquivos Markdown em `posts/*.md` com frontmatter (`title, slug, date,
+dateLabel, category, excerpt`). Categorias: **SEO**, **Performance**, **Negócios**
+(cores/gradientes em `css/style.css`, seletor `.bcov--*`; novas categorias entram no
+mapa `CATS` de `scripts/build-blog.mjs`).
+
+Publicar um post = criar o `.md` e rodar:
+
+```sh
+node scripts/build-blog.mjs
+```
+
+O gerador produz o archive (`blog/index.html` com destaque + filtro por categoria),
+as páginas de post (capa por categoria, tempo de leitura, compartilhar, anterior/
+próximo, relacionados, JSON-LD), o RSS (`blog/feed.xml`) e regenera o `sitemap.xml`
+do site inteiro. Markdown suportado: `##`/`###`, **negrito**, *itálico*, listas e links.
 
 ## Idiomas (pt-BR / EN / ES)
 

@@ -67,7 +67,11 @@ const posts = [
   }
 ];
 
-function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website' }) {
+/* `up` = caminho relativo ate a raiz do site.
+   Listagem (blog/index.html) fica 1 nivel abaixo -> '../'
+   Post (blog/<slug>/index.html) fica 2 niveis abaixo -> '../../'
+   `blogHref` = link do item "Blog" na navegacao, relativo a pagina atual. */
+function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website', up = '../', blogHref = './' }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -90,9 +94,9 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <link rel="canonical" href="${canonical}">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%2338bdf8' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
-  <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css">${extraHead}
+  <link rel="preload" href="${up}fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="${up}fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="${up}css/style.css">${extraHead}
 </head>
 <body>
 
@@ -102,27 +106,27 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
   <header class="nav is-scrolled" id="nav">
-    <a href="../index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
+    <a href="${up}index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
     <nav class="nav__links" aria-label="Navegação principal">
-      <a href="../index.html#estudio" data-hover>Estúdio</a>
-      <a href="../index.html#servicos" data-hover>Serviços</a>
-      <a href="../index.html#projetos" data-hover>Projetos</a>
-      <a href="index.html" data-hover>Blog</a>
+      <a href="${up}index.html#estudio" data-hover>Estúdio</a>
+      <a href="${up}index.html#servicos" data-hover>Serviços</a>
+      <a href="${up}index.html#projetos" data-hover>Projetos</a>
+      <a href="${blogHref}" data-hover>Blog</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
       <span></span><span></span>
     </button>
   </header>
 
-  <a href="../index.html#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
+  <a href="${up}index.html#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
-      <a href="../index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
-      <a href="../index.html#servicos"><span class="menu__index">02</span>Serviços</a>
-      <a href="../index.html#projetos"><span class="menu__index">03</span>Projetos</a>
-      <a href="index.html"><span class="menu__index">04</span>Blog</a>
-      <a href="../index.html#contato"><span class="menu__index">05</span>Contato</a>
+      <a href="${up}index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
+      <a href="${up}index.html#servicos"><span class="menu__index">02</span>Serviços</a>
+      <a href="${up}index.html#projetos"><span class="menu__index">03</span>Projetos</a>
+      <a href="${blogHref}"><span class="menu__index">04</span>Blog</a>
+      <a href="${up}index.html#contato"><span class="menu__index">05</span>Contato</a>
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
@@ -137,17 +141,17 @@ ${content}
   <footer class="footer">
     <div class="footer__bottom" style="border-top:0; margin-top:0;">
       <p>© 2026 Bumavit. Todos os direitos reservados.</p>
-      <a href="../index.html" data-hover>← Voltar ao início</a>
+      <a href="${up}index.html" data-hover>← Voltar ao início</a>
       <button class="footer__top-btn" id="backToTop" data-hover>Voltar ao topo ↑</button>
     </div>
   </footer>
 
   <script>window.__pageI18n = ${JSON.stringify(pageI18n || {})};</script>
-  <script src="../vendor/gsap.min.js"></script>
-  <script src="../vendor/ScrollTrigger.min.js"></script>
-  <script src="../vendor/lenis.min.js"></script>
-  <script src="../js/i18n.js?v=4" defer></script>
-  <script src="../js/page.js?v=2" defer></script>
+  <script src="${up}vendor/gsap.min.js"></script>
+  <script src="${up}vendor/ScrollTrigger.min.js"></script>
+  <script src="${up}vendor/lenis.min.js"></script>
+  <script src="${up}js/i18n.js?v=4" defer></script>
+  <script src="${up}js/page.js?v=2" defer></script>
 </body>
 </html>
 `;
@@ -157,7 +161,7 @@ mkdirSync(join(root, 'blog'), { recursive: true });
 
 /* ---- Listagem ---- */
 const cards = posts.map((p) => `
-      <a class="blog-card" href="${p.slug}.html" data-hover>
+      <a class="blog-card" href="${p.slug}/" data-hover>
         <span class="blog-card__date">${p.dateLabel}</span>
         <h2>${p.title}</h2>
         <span class="blog-card__arrow" aria-hidden="true">→</span>
@@ -167,7 +171,9 @@ const cards = posts.map((p) => `
 writeFileSync(join(root, 'blog', 'index.html'), shell({
   title: 'Blog — BUMAVIT®',
   desc: 'Insights sobre desenvolvimento web, SEO, performance e geração de leads — pela Bumavit, software house brasileira.',
-  canonical: `${SITE}/blog/index.html`,
+  canonical: `${SITE}/blog/`,
+  up: '../',
+  blogHref: './',
   pageI18n: {
     en: {
       '.p-hero__tag': 'Development, SEO, performance and growth — no fluff. Articles are written in Portuguese.'
@@ -191,7 +197,10 @@ ${cards}
 console.log('ok: blog/index.html');
 
 /* ---- Posts ---- */
+/* URL canonica de um post e /blog/<slug>/ (diretorio com index.html).
+   Ver docs blog-url-pattern: o .html na URL amarra o site a esta implementacao. */
 posts.forEach((p) => {
+  const up = '../../';
   const ld = `
   <script type="application/ld+json">
   {
@@ -203,15 +212,18 @@ posts.forEach((p) => {
     "inLanguage": "pt-BR",
     "author": { "@type": "Organization", "name": "Bumavit", "url": "${SITE}/" },
     "publisher": { "@type": "Organization", "name": "Bumavit" },
-    "mainEntityOfPage": "${SITE}/blog/${p.slug}.html"
+    "mainEntityOfPage": "${SITE}/blog/${p.slug}/"
   }
   </script>`;
 
-  writeFileSync(join(root, 'blog', `${p.slug}.html`), shell({
+  mkdirSync(join(root, 'blog', p.slug), { recursive: true });
+  writeFileSync(join(root, 'blog', p.slug, 'index.html'), shell({
     title: `${p.title} — BUMAVIT®`,
     desc: p.excerpt,
-    canonical: `${SITE}/blog/${p.slug}.html`,
+    canonical: `${SITE}/blog/${p.slug}/`,
     ogType: 'article',
+    up,
+    blogHref: '../',
     extraHead: ld,
     content: `    <article class="article p-hero section">
       <p class="article__date" data-reveal>${p.dateLabel} — Bumavit</p>
@@ -221,9 +233,46 @@ ${p.body}
       </div>
       <div class="article__cta" data-reveal>
         <h3>Quer aplicar isso no seu negócio?</h3>
-        <a class="btn-pill btn-pill--accent" href="../index.html#contato" data-hover><span>Fale com a Bumavit</span></a>
+        <a class="btn-pill btn-pill--accent" href="${up}index.html#contato" data-hover><span>Fale com a Bumavit</span></a>
       </div>
     </article>`
   }), 'utf8');
-  console.log(`ok: blog/${p.slug}.html`);
+  console.log(`ok: blog/${p.slug}/index.html`);
+});
+
+/* ---- Stubs do padrao antigo /blog/<slug>.html ----
+   Estas URLs ficaram publicas e retornando 200 enquanto o padrao era .html,
+   entao podem ter sido rastreadas. Mesmo formato dos stubs legados: canonical
+   consolida o sinal na URL nova, sem noindex. Remover so depois que o Search
+   Console parar de reportar impressao nelas. */
+const legacyHtmlPosts = posts.map((p) => p.slug);
+
+legacyHtmlPosts.forEach((slug) => {
+  const target = `${SITE}/blog/${slug}/`;
+  writeFileSync(join(root, 'blog', `${slug}.html`), `<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Página movida — BUMAVIT®</title>
+<link rel="canonical" href="${target}">
+<meta http-equiv="refresh" content="0; url=${target}">
+<meta property="og:url" content="${target}">
+<meta name="description" content="Esta página mudou de endereço. Você está sendo redirecionado.">
+<script>location.replace("${target}");</script>
+<style>
+  body{background:#0b0b0d;color:#f4f4f5;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;
+       display:grid;place-items:center;min-height:100vh;margin:0;padding:2rem;text-align:center}
+  a{color:#38bdf8}
+</style>
+</head>
+<body>
+  <main>
+    <p>Este artigo mudou de endereço.</p>
+    <p>Se o redirecionamento não acontecer, <a href="${target}">clique aqui para continuar</a>.</p>
+  </main>
+</body>
+</html>
+`, 'utf8');
+  console.log(`ok: blog/${slug}.html (stub -> /blog/${slug}/)`);
 });

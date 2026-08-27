@@ -2,7 +2,6 @@
 title: O poder do SEO local: apareça para quem está perto de comprar
 slug: seo-local
 date: 2026-07-01
-dateLabel: 01 Jul 2026
 category: SEO
 excerpt: A maioria das buscas com intenção de compra tem contexto local. Veja como colocar seu negócio na frente de quem já está procurando por você.
 ---

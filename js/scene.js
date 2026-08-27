@@ -68,7 +68,8 @@ function init() {
       uOpacity: { value: 0 },
       uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
       uPaper: { value: new THREE.Color('#efede6') },
-      uAccent: { value: new THREE.Color('#38bdf8') }
+      uAccent: { value: new THREE.Color('#ff7a29') },
+      uAccent2: { value: new THREE.Color('#38bdf8') }
     },
     vertexShader: `
       uniform float uTime;
@@ -101,6 +102,7 @@ function init() {
     fragmentShader: `
       uniform vec3 uPaper;
       uniform vec3 uAccent;
+      uniform vec3 uAccent2;
       uniform float uOpacity;
       varying float vSeed;
       varying float vGlow;
@@ -110,7 +112,10 @@ function init() {
         float d = length(gl_PointCoord - 0.5);
         float alpha = smoothstep(0.5, 0.05, d);
 
-        vec3 color = mix(uPaper, uAccent, step(0.72, vSeed));
+        // duotone: maioria papel, ~14% tangerina, ~14% ciano
+        vec3 color = uPaper;
+        if (vSeed > 0.86) color = uAccent;
+        else if (vSeed > 0.72) color = uAccent2;
         gl_FragColor = vec4(color, alpha * vGlow * uOpacity);
       }
     `
@@ -123,7 +128,7 @@ function init() {
   // subtle wireframe core
   const coreGeo = new THREE.IcosahedronGeometry(RADIUS * 0.52, 1);
   const coreMat = new THREE.MeshBasicMaterial({
-    color: 0x38bdf8,
+    color: 0xff7a29,
     wireframe: true,
     transparent: true,
     opacity: 0.05

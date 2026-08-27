@@ -2,7 +2,6 @@
 title: Geração de leads com orçamento limitado: o que priorizar
 slug: leads-com-orcamento-limitado
 date: 2026-06-15
-dateLabel: 15 Jun 2026
 category: Negócios
 excerpt: Sem verba para mídia? Ainda dá para gerar leads de forma consistente. O segredo é ordem de prioridade, não volume de canais.
 ---

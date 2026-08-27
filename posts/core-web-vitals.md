@@ -2,7 +2,6 @@
 title: Core Web Vitals: por que a velocidade do seu site é dinheiro
 slug: core-web-vitals
 date: 2026-05-28
-dateLabel: 28 Mai 2026
 category: Performance
 excerpt: Google mede a experiência real de quem usa seu site — e usa isso no ranqueamento. Entenda as três métricas e o que fazer com elas.
 ---

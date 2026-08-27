@@ -33,7 +33,7 @@ const projects = [
       ['Top 3', 'Nas buscas locais em Toronto'],
       ['2×', 'Mais reservas online']
     ],
-    link: 'https://yachtday.bumavit.com.br/',
+    link: null, // subdomínio yachtday saiu do ar — reative aqui se voltar
     t: {
       en: {
         tag: 'Yacht booking platform — Toronto, Canada',
@@ -89,7 +89,7 @@ const projects = [
       ['<2s', 'Tempo de carregamento das páginas'],
       ['90+', 'Pontuação de performance no Lighthouse']
     ],
-    link: 'https://bumavit.com.br/cocban/',
+    link: null, // página /cocban vivia no WordPress antigo, desativado na migração do domínio
     t: {
       en: {
         tag: 'Institutional portal with a complete digital presence',
@@ -318,8 +318,8 @@ function page(p, next) {
   <meta property="og:title" content="${esc(p.title)} — BUMAVIT®">
   <meta property="og:description" content="${esc(p.tag)}.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://bragavaas.github.io/bumavit/og.png">
-  <link rel="canonical" href="https://bragavaas.github.io/bumavit/projetos/${p.slug}.html">
+  <meta property="og:image" content="https://bumavit.com.br/og.png">
+  <link rel="canonical" href="https://bumavit.com.br/projetos/${p.slug}.html">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%2338bdf8' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>

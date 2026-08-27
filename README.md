@@ -2,7 +2,7 @@
 
 Landing page da Bumavit, software house brasileira — experiências digitais que movem negócios.
 
-**Live:** https://bragavaas.github.io/bumavit/
+**Live:** https://bumavit.com.br/
 
 ## Stack
 

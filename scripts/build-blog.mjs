@@ -5,7 +5,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const SITE = 'https://bragavaas.github.io/bumavit';
+const SITE = 'https://bumavit.com.br';
 
 const posts = [
   {

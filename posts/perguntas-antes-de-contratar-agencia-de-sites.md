@@ -1,8 +1,7 @@
 ---
 title: O que perguntar antes de contratar uma agência de sites: 12 perguntas
 slug: perguntas-antes-de-contratar-agencia-de-sites
-date: 2026-09-15
-dateLabel: 15 Set 2026
+date: 2026-08-27
 category: Negócios
 excerpt: Doze perguntas para levar à reunião, com o que uma boa resposta contém e qual é o sinal de alerta em cada uma. Para quem vai contratar uma agência de sites.
 keyword: o que perguntar antes de contratar uma agência de sites

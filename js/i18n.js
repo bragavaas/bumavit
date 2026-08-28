@@ -189,9 +189,8 @@
       '.cta__note': { html: 'Or write to <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>. We reply within 24h, in Portuguese, English or Spanish.' },
 
       /* --- páginas internas (comuns) --- */
-      '.footer__bottom a[href$="index.html#projetos"]': '← All projects',
-      '.footer__bottom a[href="../index.html"]': '← Back home',
-      '.footer__bottom a[href="index.html"]:not([data-scroll])': '← Back home',
+      '.footer__bottom a[href="/#projetos"]': '← All projects',
+      '.footer__bottom a[href="/"]': '← Back home',
       '.next__label': 'Next project',
       '.p-nda': 'Project under NDA',
       '.p-visit .btn-pill span': 'Visit website ↗',
@@ -336,9 +335,8 @@
       '.lead__actions a.btn-pill span': 'Escribir por WhatsApp',
       '.cta__note': { html: 'O escribe a <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>. Respondemos en hasta 24h, en portugués, inglés o español.' },
 
-      '.footer__bottom a[href$="index.html#projetos"]': '← Todos los proyectos',
-      '.footer__bottom a[href="../index.html"]': '← Volver al inicio',
-      '.footer__bottom a[href="index.html"]:not([data-scroll])': '← Volver al inicio',
+      '.footer__bottom a[href="/#projetos"]': '← Todos los proyectos',
+      '.footer__bottom a[href="/"]': '← Volver al inicio',
       '.next__label': 'Siguiente proyecto',
       '.p-nda': 'Proyecto bajo NDA',
       '.p-visit .btn-pill span': 'Visitar sitio ↗',

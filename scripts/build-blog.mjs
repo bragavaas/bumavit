@@ -190,11 +190,11 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
   <header class="nav is-scrolled" id="nav">
-    <a href="${base}index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
+    <a href="/" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
     <nav class="nav__links" aria-label="Navegação principal">
-      <a href="${base}index.html#estudio" data-hover>Estúdio</a>
-      <a href="${base}index.html#servicos" data-hover>Serviços</a>
-      <a href="${base}index.html#projetos" data-hover>Projetos</a>
+      <a href="/#estudio" data-hover>Estúdio</a>
+      <a href="/#servicos" data-hover>Serviços</a>
+      <a href="/#projetos" data-hover>Projetos</a>
       <a href="${blogHref}" data-hover>Blog</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
@@ -202,15 +202,15 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
     </button>
   </header>
 
-  <a href="${base}index.html#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
+  <a href="/#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
-      <a href="${base}index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
-      <a href="${base}index.html#servicos"><span class="menu__index">02</span>Serviços</a>
-      <a href="${base}index.html#projetos"><span class="menu__index">03</span>Projetos</a>
+      <a href="/#estudio"><span class="menu__index">01</span>Estúdio</a>
+      <a href="/#servicos"><span class="menu__index">02</span>Serviços</a>
+      <a href="/#projetos"><span class="menu__index">03</span>Projetos</a>
       <a href="${blogHref}"><span class="menu__index">04</span>Blog</a>
-      <a href="${base}index.html#contato"><span class="menu__index">05</span>Contato</a>
+      <a href="/#contato"><span class="menu__index">05</span>Contato</a>
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
@@ -225,7 +225,7 @@ ${content}
   <footer class="footer">
     <div class="footer__bottom" style="border-top:0; margin-top:0;">
       <p>© 2026 Bumavit. Todos os direitos reservados.</p>
-      <a href="${base}index.html" data-hover>← Voltar ao início</a>
+      <a href="/" data-hover>← Voltar ao início</a>
       <button class="footer__top-btn" id="backToTop" data-hover>Voltar ao topo ↑</button>
     </div>
   </footer>
@@ -497,7 +497,7 @@ ${p.html}
 
       <div class="article__cta" data-reveal>
         <h3>Quer aplicar isso no seu negócio?</h3>
-        <a class="btn-pill btn-pill--accent" href="../../index.html#contato" data-hover><span>Fale com a Bumavit</span></a>
+        <a class="btn-pill btn-pill--accent" href="/#contato" data-hover><span>Fale com a Bumavit</span></a>
       </div>
 
       <nav class="bnav" aria-label="Navegação entre posts">

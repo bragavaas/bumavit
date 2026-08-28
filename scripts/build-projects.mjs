@@ -352,27 +352,27 @@ function page(p, next) {
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
   <header class="nav is-scrolled" id="nav">
-    <a href="../index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
+    <a href="/" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
     <nav class="nav__links" aria-label="Navegação principal">
-      <a href="../index.html#estudio" data-hover>Estúdio</a>
-      <a href="../index.html#servicos" data-hover>Serviços</a>
-      <a href="../index.html#projetos" data-hover>Projetos</a>
-      <a href="../index.html#processo" data-hover>Processo</a>
+      <a href="/#estudio" data-hover>Estúdio</a>
+      <a href="/#servicos" data-hover>Serviços</a>
+      <a href="/#projetos" data-hover>Projetos</a>
+      <a href="/#processo" data-hover>Processo</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
       <span></span><span></span>
     </button>
   </header>
 
-  <a href="../index.html#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
+  <a href="/#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
-      <a href="../index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
-      <a href="../index.html#servicos"><span class="menu__index">02</span>Serviços</a>
-      <a href="../index.html#projetos"><span class="menu__index">03</span>Projetos</a>
-      <a href="../index.html#processo"><span class="menu__index">04</span>Processo</a>
-      <a href="../index.html#contato"><span class="menu__index">05</span>Contato</a>
+      <a href="/#estudio"><span class="menu__index">01</span>Estúdio</a>
+      <a href="/#servicos"><span class="menu__index">02</span>Serviços</a>
+      <a href="/#projetos"><span class="menu__index">03</span>Projetos</a>
+      <a href="/#processo"><span class="menu__index">04</span>Processo</a>
+      <a href="/#contato"><span class="menu__index">05</span>Contato</a>
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
@@ -423,7 +423,7 @@ ${visit}
   <footer class="footer">
     <div class="footer__bottom" style="border-top:0; margin-top:0;">
       <p>© 2026 Bumavit. Todos os direitos reservados.</p>
-      <a href="../index.html#projetos" data-hover>← Todos os projetos</a>
+      <a href="/#projetos" data-hover>← Todos os projetos</a>
       <button class="footer__top-btn" id="backToTop" data-hover>Voltar ao topo ↑</button>
     </div>
   </footer>

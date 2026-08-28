@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#1e0a3d"/>
+      <stop offset="100%" stop-color="#0b0b0d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#0b0b0d"/>
+  <rect width="1200" height="560" fill="url(#g)" opacity="0.45"/>
+  <rect x="80" y="68" width="44" height="4" fill="#a855f7" rx="2"/>
+  <text x="80" y="112" fill="#a855f7" font-family="Arial Black,Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="5" opacity="0.9">NEGÓCIOS</text>
+  <text x="80" y="477" fill="#efefef" font-family="Arial Black,Arial,sans-serif" font-size="44" font-weight="900"><tspan x="80" dy="0">O que perguntar antes de contratar uma</tspan><tspan x="80" dy="57">agência de sites: 12 perguntas</tspan></text>
+  <text x="1120" y="870" fill="#16161e" font-family="Arial Black,Arial,sans-serif" font-size="240" font-weight="900" text-anchor="end">B</text>
+  <text x="80" y="848" fill="#363648" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">bumavit.com.br</text>
+</svg>

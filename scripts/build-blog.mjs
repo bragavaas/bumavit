@@ -180,7 +180,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   </script>
   <link rel="preload" href="${base}fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="${base}fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="${base}css/style.css">${extraHead}
+  <link rel="stylesheet" href="${base}css/style.css?v=5">${extraHead}
 </head>
 <body>
 
@@ -234,7 +234,7 @@ ${content}
   <script src="${base}vendor/gsap.min.js"></script>
   <script src="${base}vendor/ScrollTrigger.min.js"></script>
   <script src="${base}vendor/lenis.min.js"></script>
-  <script src="${base}js/i18n.js?v=4" defer></script>
+  <script src="${base}js/i18n.js?v=5" defer></script>
   <script src="${base}js/page.js?v=2" defer></script>
   <script src="${base}js/analytics.js" defer></script>
 </body>

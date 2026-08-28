@@ -406,12 +406,35 @@
       formSending: 'Enviando…',
       formOk: 'Mensagem enviada! Respondemos em até 24h. ✦',
       formError: 'Algo deu errado. Tente de novo ou chame no WhatsApp.',
-      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail. 🙂'
+      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail. 🙂',
+      formLeaveConfirm: 'Você já preencheu o formulário. Quer sair mesmo e continuar por aqui? Se preferir, clique em "Enviar mensagem" para não perder o que digitou.'
     };
 
     function setStatus(msg, cls) {
       status.textContent = msg;
       status.className = 'lead__status' + (cls ? ' ' + cls : '');
+    }
+
+    // Campos reais do form (ignora o próprio botão de submit e os outros CTAs).
+    function formHasInput() {
+      var fields = form.querySelectorAll('input, textarea, select');
+      for (var i = 0; i < fields.length; i++) {
+        var el = fields[i];
+        if (el.type === 'submit' || el.type === 'button') continue;
+        if ((el.value || '').trim() !== '') return true;
+      }
+      return false;
+    }
+
+    // "Chamar no WhatsApp" e "Monte seu projeto" dentro do form levam para fora
+    // da página; se o usuário já escreveu algo, confirma antes de tirá-lo do form.
+    var leaveLinks = form.querySelectorAll('.lead__actions a[href]');
+    for (var li = 0; li < leaveLinks.length; li++) {
+      leaveLinks[li].addEventListener('click', function (e) {
+        if (formHasInput() && !window.confirm(STR.formLeaveConfirm)) {
+          e.preventDefault();
+        }
+      });
     }
 
     form.addEventListener('submit', function (e) {

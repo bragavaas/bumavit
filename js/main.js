@@ -434,6 +434,7 @@
         if (!r.ok) throw new Error('HTTP ' + r.status);
         form.reset();
         setStatus(STR.formOk, 'is-ok');
+        if (window.gtag) { gtag('event', 'form_submit'); }
       }).catch(function () {
         setStatus(STR.formError, 'is-error');
       }).finally(function () {

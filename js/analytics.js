@@ -1,6 +1,6 @@
-/* BUMAVIT — GA4 lead event instrumentation
+/* BUMAVIT · GA4 lead event instrumentation
    Fires whatsapp_click and cta_orcamento_click via document-level delegation.
-   form_submit is fired from main.js; estimador_* from estimator.js. */
+   form_submit is fired from main.js; estimator_* from estimator.js. */
 (function () {
   'use strict';
   if (typeof window.gtag !== 'function') return;

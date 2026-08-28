@@ -20,19 +20,22 @@
       formSending: 'Enviando…',
       formOk: 'Mensagem enviada! Respondemos em até 24h. ✦',
       formError: 'Algo deu errado. Tente de novo ou chame no WhatsApp.',
-      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail. 🙂'
+      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail. 🙂',
+      formLeaveConfirm: 'Você já preencheu o formulário. Quer sair mesmo e continuar por aqui? Se preferir, clique em "Enviar mensagem" para não perder o que digitou.'
     },
     en: {
       formSending: 'Sending…',
       formOk: 'Message sent! We reply within 24h. ✦',
       formError: 'Something went wrong. Try again or ping us on WhatsApp.',
-      formUnconfigured: 'The form isn’t configured yet. For now, reach us on WhatsApp or by e-mail. 🙂'
+      formUnconfigured: 'The form isn’t configured yet. For now, reach us on WhatsApp or by e-mail. 🙂',
+      formLeaveConfirm: 'You already filled in the form. Leave and continue here anyway? If you prefer, click "Send message" so you don’t lose what you typed.'
     },
     es: {
       formSending: 'Enviando…',
       formOk: '¡Mensaje enviado! Respondemos en hasta 24h. ✦',
       formError: 'Algo salió mal. Inténtalo de nuevo o escríbenos por WhatsApp.',
-      formUnconfigured: 'El formulario aún no está configurado. Por ahora, escríbenos por WhatsApp o por correo. 🙂'
+      formUnconfigured: 'El formulario aún no está configurado. Por ahora, escríbenos por WhatsApp o por correo. 🙂',
+      formLeaveConfirm: 'Ya completaste el formulario. ¿Quieres salir e ir por ahí de todas formas? Si prefieres, haz clic en "Enviar mensaje" para no perder lo que escribiste.'
     }
   };
   window.__STR = STR[LANG];
@@ -128,7 +131,7 @@
       /* --- CTA estimador --- */
       '.estcta__label': '( Estimator )',
       '.estcta__title': 'How much does your idea cost?',
-      '.estcta__sub': '3 questions, 1 minute: get an instant investment and timeline estimate. No sign-up, no strings.',
+      '.estcta__sub': 'Configure your project in 1 minute and get an instant investment and timeline estimate. No strings attached.',
       '.estcta__steps span:nth-of-type(1)': '01 · Project type',
       '.estcta__steps span:nth-of-type(2)': '02 · Features',
       '.estcta__steps span:nth-of-type(3)': '03 · Timeline',
@@ -278,7 +281,7 @@
 
       '.estcta__label': '( Estimador )',
       '.estcta__title': '¿Cuánto cuesta tu idea?',
-      '.estcta__sub': '3 preguntas, 1 minuto: recibe al instante una estimación de inversión y plazo. Sin registro, sin compromiso.',
+      '.estcta__sub': 'Configura tu proyecto en 1 minuto y recibe al instante una estimación de inversión y plazo. Sin compromiso.',
       '.estcta__steps span:nth-of-type(1)': '01 · Tipo de proyecto',
       '.estcta__steps span:nth-of-type(2)': '02 · Funcionalidades',
       '.estcta__steps span:nth-of-type(3)': '03 · Plazo',

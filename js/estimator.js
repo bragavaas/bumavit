@@ -324,6 +324,7 @@
 
   var state = { idx: 0, type: null, pages: PAGES_INCLUDED, features: [], deadline: null };
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var completed = false;
 
   /* Sequência de passos depende do tipo (site ganha o passo de páginas) */
   function sequence() {
@@ -418,6 +419,10 @@
       '</div>';
 
     if (isResult) {
+      if (!completed && window.gtag) {
+        gtag('event', 'estimador_complete', { project_type: state.type });
+        completed = true;
+      }
       var e = estimate();
       var chips = [typeName(state.type)];
       if (state.type === 'site') chips.push(t.pagesChip(state.pages));
@@ -535,10 +540,15 @@
     }
     if (act) {
       var a = act.getAttribute('data-act');
-      if (a === 'next' && canAdvance()) { state.idx++; render(true); }
+      if (a === 'next' && canAdvance()) {
+        if (state.idx === 0 && window.gtag) { gtag('event', 'estimador_start'); }
+        state.idx++;
+        render(true);
+      }
       if (a === 'back' && state.idx > 0) { state.idx--; render(true); }
       if (a === 'restart') {
         state = { idx: 0, type: null, pages: PAGES_INCLUDED, features: [], deadline: null };
+        completed = false;
         render(true);
       }
       if (window.scrollY > 200) window.scrollTo({ top: 0 });

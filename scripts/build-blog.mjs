@@ -144,9 +144,7 @@ for (const p of posts) {
 }
 
 /* ---------- Shell compartilhado (nav/fab/menu/footer do site) ---------- */
-/* base     = caminho relativo até a raiz do site  (archive '../', post '../../')
-   blogHref = caminho relativo até a listagem      (archive './',  post '../')   */
-function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website', ogImage = `${SITE}/og.png`, base = '../', blogHref = './' }) {
+function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website', ogImage = `${SITE}/og.png` }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -170,9 +168,9 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <link rel="alternate" type="application/rss+xml" title="Bumavit — Blog" href="${SITE}/blog/feed.xml">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23${ACCENT.slice(1)}' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
-  <link rel="preload" href="${base}fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="${base}fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="${base}css/style.css">${extraHead}
+  <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/style.css">${extraHead}
 </head>
 <body>
 
@@ -184,10 +182,10 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <header class="nav is-scrolled" id="nav">
     <a href="${base}index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
     <nav class="nav__links" aria-label="Navegação principal">
-      <a href="${base}index.html#estudio" data-hover>Estúdio</a>
-      <a href="${base}index.html#servicos" data-hover>Serviços</a>
-      <a href="${base}index.html#projetos" data-hover>Projetos</a>
-      <a href="${blogHref}" data-hover>Blog</a>
+      <a href="../index.html#estudio" data-hover>Estúdio</a>
+      <a href="../index.html#servicos" data-hover>Serviços</a>
+      <a href="../index.html#projetos" data-hover>Projetos</a>
+      <a href="./" data-hover>Blog</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
       <span></span><span></span>
@@ -198,11 +196,11 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
-      <a href="${base}index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
-      <a href="${base}index.html#servicos"><span class="menu__index">02</span>Serviços</a>
-      <a href="${base}index.html#projetos"><span class="menu__index">03</span>Projetos</a>
-      <a href="${blogHref}"><span class="menu__index">04</span>Blog</a>
-      <a href="${base}index.html#contato"><span class="menu__index">05</span>Contato</a>
+      <a href="../index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
+      <a href="../index.html#servicos"><span class="menu__index">02</span>Serviços</a>
+      <a href="../index.html#projetos"><span class="menu__index">03</span>Projetos</a>
+      <a href="./"><span class="menu__index">04</span>Blog</a>
+      <a href="../index.html#contato"><span class="menu__index">05</span>Contato</a>
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
@@ -466,7 +464,7 @@ posts.forEach((p, i) => {
 
   const content = `    <article class="bpost p-hero section">
       <nav class="bcrumb" aria-label="Breadcrumb" data-reveal>
-        <a href="../" data-hover>Blog</a> <span aria-hidden="true">/</span> <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
+        <a href="./" data-hover>Blog</a> <span aria-hidden="true">/</span> <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
       </nav>
 
       <h1 class="p-hero__title bpost__title" data-split>${p.title}</h1>
@@ -600,7 +598,7 @@ const staticPages = [
 ];
 const urls = staticPages
   .map(([path, pri]) => `  <url><loc>${SITE}/${path}</loc><priority>${pri}</priority></url>`)
-  .concat(posts.map((p) => `  <url><loc>${SITE}/blog/${p.slug}/</loc><lastmod>${p.updated || p.date}</lastmod><priority>0.6</priority></url>`))
+  .concat(posts.map((p) => `  <url><loc>${SITE}/blog/${p.slug}.html</loc><lastmod>${p.updated || p.date}</lastmod><priority>0.6</priority></url>`))
   .join('\n');
 
 writeFileSync(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>

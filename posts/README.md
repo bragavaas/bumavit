@@ -9,7 +9,7 @@ cp posts/_TEMPLATE.md posts/meu-post.md   # 1. copie o template
 node scripts/build-blog.mjs               # 3. gere o HTML
 ```
 
-O passo 3 regenera `blog/index.html`, `blog/<slug>.html`, `blog/feed.xml` e
+O passo 3 regenera `blog/index.html`, `blog/<slug>/index.html`, `blog/feed.xml` e
 `sitemap.xml`. **Faça commit do `.md` e de tudo que o build alterou** — o site é
 estático, o HTML gerado é o que vai ao ar.
 
@@ -22,7 +22,7 @@ O bloco entre `---` no topo do arquivo.
 | Campo | Obrigatório | O que é |
 |---|---|---|
 | `title` | sim | Vira o `<h1>`, o `<title>` e o título no compartilhamento. |
-| `slug` | sim | Define a URL: `slug: seo-local` → `/blog/seo-local.html`. |
+| `slug` | sim | Define a URL: `slug: seo-local` → `/blog/seo-local/`. |
 | `date` | sim | `AAAA-MM-DD`. Ordena a listagem e alimenta o RSS e o `lastmod` do sitemap. |
 | `category` | sim | Uma de: `SEO`, `Performance`, `Negócios`. Outro valor quebra o build de propósito. |
 | `excerpt` | sim | Meta description + card da listagem + descrição no RSS. Escreva para ser lida no Google. |
@@ -53,16 +53,26 @@ parte do parágrafo anterior.
 
 - O site é servido na **raiz** de `https://bumavit.com.br`. Não existe
   `/bumavit/` em lugar nenhum.
-- Canônica de post: `https://bumavit.com.br/blog/<slug>.html`
+- Canônica de post: `https://bumavit.com.br/blog/<slug>/` — **com barra final,
+  sem `.html`**. O arquivo servido é `/blog/<slug>/index.html`.
 - Canônica da listagem: `https://bumavit.com.br/blog/` — **com barra, sem
   `index.html`**. As duas formas respondem, mas só essa é canônica.
 - `bragavaas.github.io` **nunca** é uma URL nossa.
-- Link interno para outra página do site: relativo (`../sobre.html`,
-  `./outro-post.html`). Absoluto só para fora do site.
+- Link interno em post: **sempre absoluto** (`https://bumavit.com.br/sobre.html`,
+  `https://bumavit.com.br/blog/outro-post/`). O post é servido em
+  `/blog/<slug>/`, um nível abaixo de onde parece — um link relativo como
+  `../sobre.html` resolve para `/blog/sobre.html` (404).
 
 **Trocar o `slug` de um post publicado quebra a URL** e perde o ranqueamento
 dela. Depois de no ar, o slug é definitivo — se precisar mudar mesmo assim,
 fale com o engenheiro antes, porque exige um redirecionamento.
+
+## Quem roda o build
+
+**O redator envia só o `.md` no PR.** O engenheiro roda `node scripts/build-blog.mjs`
+depois do merge e faz commit do resultado (`blog/`, `sitemap.xml`, `blog/feed.xml`)
+em outro commit no `main`. Isso garante que nenhum rebuild acidental apague páginas
+do sitemap enquanto estamos em desenvolvimento ativo.
 
 ## O que já é automático
 

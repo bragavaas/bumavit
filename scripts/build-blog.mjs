@@ -600,6 +600,7 @@ const staticPages = [
   ['', '1.0'],
   ['sobre.html', '0.8'],
   ['estimador.html', '0.9'],
+  ['criacao-de-sites-rj/', '0.9'],
   ['projetos/yacht-day.html', '0.7'],
   ['projetos/cocban.html', '0.7'],
   ['projetos/fintech.html', '0.6'],

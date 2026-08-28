@@ -1,4 +1,4 @@
-/* BUMAVIT — interações das páginas internas (projetos)
+/* BUMAVIT · interações das páginas internas (projetos)
    Subconjunto leve do main.js: sem preloader, marquee ou Three.js. */
 (function () {
   'use strict';

@@ -1,4 +1,4 @@
-/* BUMAVIT — Estimador "Monte seu projeto"
+/* BUMAVIT · Estimador "Monte seu projeto"
    Wizard → faixa de investimento + prazo → handoff pré-preenchido
    (WhatsApp/e-mail). Trilíngue via window.__LANG.
 
@@ -82,14 +82,14 @@
       },
       pagesStep: {
         q: 'Quantas páginas você precisa?',
-        hint: 'O pacote inclui até 5 páginas: Home, Sobre, Serviços, Portfólio e Contato. Ideias de extras: FAQ, Depoimentos, Landing pages, Políticas de privacidade — e Blog já entra nas funcionalidades do próximo passo.',
+        hint: 'O pacote inclui até 5 páginas: Home, Sobre, Serviços, Portfólio e Contato. Ideias de extras: FAQ, Depoimentos, Landing pages, Políticas de privacidade, e Blog já entra nas funcionalidades do próximo passo.',
         label: function (n, extra) {
           return n + ' páginas' + (extra > 0 ? ' · ' + extra + (extra === 1 ? ' adicional' : ' adicionais') : ' · todas inclusas');
         }
       },
       featuresStep: {
         q: 'Quais funcionalidades você precisa?',
-        hint: 'Selecione quantas quiser — dá para ajustar depois.',
+        hint: 'Selecione quantas quiser, dá para ajustar depois.',
         options: {
           site: [
             { id: 'blog', name: 'Blog / Conteúdo', desc: 'Área de artigos e novidades' },
@@ -140,7 +140,7 @@
       resultLabel: 'Estimativa inicial de investimento',
       resultTime: function (a, b) { return 'Prazo estimado: ' + a + ' a ' + b + ' dias'; },
       pagesChip: function (n) { return n + ' páginas'; },
-      disclaimer: 'Estimativa automática para referência. A proposta final — com escopo e valores fechados — sai depois de uma conversa gratuita de descoberta.',
+      disclaimer: 'Estimativa automática para referência. A proposta final, com escopo e valores fechados, sai depois de uma conversa gratuita de descoberta.',
       ctaWhats: 'Enviar pelo WhatsApp',
       ctaMail: 'Enviar por e-mail',
       restart: 'Recomeçar',
@@ -165,14 +165,14 @@
       },
       pagesStep: {
         q: 'How many pages do you need?',
-        hint: 'The package includes up to 5 pages: Home, About, Services, Portfolio and Contact. Extra ideas: FAQ, Testimonials, Landing pages, Privacy policy — and Blog is covered in the next step.',
+        hint: 'The package includes up to 5 pages: Home, About, Services, Portfolio and Contact. Extra ideas: FAQ, Testimonials, Landing pages, Privacy policy, and Blog is covered in the next step.',
         label: function (n, extra) {
           return n + ' pages' + (extra > 0 ? ' · ' + extra + ' extra' : ' · all included');
         }
       },
       featuresStep: {
         q: 'Which features do you need?',
-        hint: 'Select as many as you like — adjustable later.',
+        hint: 'Select as many as you like, adjustable later.',
         options: {
           site: [
             { id: 'blog', name: 'Blog / Content', desc: 'Articles and news section' },
@@ -223,7 +223,7 @@
       resultLabel: 'Initial investment estimate',
       resultTime: function (a, b) { return 'Estimated timeline: ' + a + ' to ' + b + ' days'; },
       pagesChip: function (n) { return n + ' pages'; },
-      disclaimer: 'Automatic estimate for reference only. The final proposal — with fixed scope and pricing — comes after a free discovery call.',
+      disclaimer: 'Automatic estimate for reference only. The final proposal, with fixed scope and pricing, comes after a free discovery call.',
       ctaWhats: 'Send via WhatsApp',
       ctaMail: 'Send by e-mail',
       restart: 'Start over',
@@ -248,14 +248,14 @@
       },
       pagesStep: {
         q: '¿Cuántas páginas necesitas?',
-        hint: 'El paquete incluye hasta 5 páginas: Inicio, Nosotros, Servicios, Portafolio y Contacto. Ideas extra: FAQ, Testimonios, Landing pages, Política de privacidad — y el Blog entra en el siguiente paso.',
+        hint: 'El paquete incluye hasta 5 páginas: Inicio, Nosotros, Servicios, Portafolio y Contacto. Ideas extra: FAQ, Testimonios, Landing pages, Política de privacidad, y el Blog entra en el siguiente paso.',
         label: function (n, extra) {
           return n + ' páginas' + (extra > 0 ? ' · ' + extra + (extra === 1 ? ' adicional' : ' adicionales') : ' · todas incluidas');
         }
       },
       featuresStep: {
         q: '¿Qué funcionalidades necesitas?',
-        hint: 'Selecciona las que quieras — se puede ajustar después.',
+        hint: 'Selecciona las que quieras, se puede ajustar después.',
         options: {
           site: [
             { id: 'blog', name: 'Blog / Contenido', desc: 'Sección de artículos y novedades' },
@@ -306,7 +306,7 @@
       resultLabel: 'Estimación inicial de inversión',
       resultTime: function (a, b) { return 'Plazo estimado: ' + a + ' a ' + b + ' días'; },
       pagesChip: function (n) { return n + ' páginas'; },
-      disclaimer: 'Estimación automática solo de referencia. La propuesta final — con alcance y valores cerrados — llega después de una llamada de descubrimiento gratuita.',
+      disclaimer: 'Estimación automática solo de referencia. La propuesta final, con alcance y valores cerrados, llega después de una llamada de descubrimiento gratuita.',
       ctaWhats: 'Enviar por WhatsApp',
       ctaMail: 'Enviar por correo',
       restart: 'Empezar de nuevo',
@@ -423,7 +423,7 @@
       if (state.type === 'site') chips.push(t.pagesChip(state.pages));
       chips = chips.concat(state.features.map(featureName), [deadlineName(state.deadline)]);
       var waHref = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(handoffText());
-      var mailHref = 'mailto:contato@bumavit.com.br?subject=' + encodeURIComponent('Projeto — ' + typeName(state.type)) +
+      var mailHref = 'mailto:contato@bumavit.com.br?subject=' + encodeURIComponent('Projeto · ' + typeName(state.type)) +
         '&body=' + encodeURIComponent(handoffText());
       html += '<div class="est__result">' +
         '<span class="est__result-label">' + t.resultLabel + '</span>' +

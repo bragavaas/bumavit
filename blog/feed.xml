@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bumavit — Blog</title>
+    <title>Bumavit · Blog</title>
     <link>https://bumavit.com.br/blog/</link>
     <atom:link href="https://bumavit.com.br/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Insights sobre desenvolvimento web, SEO, performance e geração de leads.</description>
@@ -36,7 +36,7 @@
       <link>https://bumavit.com.br/blog/core-web-vitals/</link>
       <guid>https://bumavit.com.br/blog/core-web-vitals/</guid>
       <pubDate>Thu, 28 May 2026 12:00:00 GMT</pubDate>
-      <description>Google mede a experiência real de quem usa seu site — e usa isso no ranqueamento. Entenda as três métricas e o que fazer com elas.</description>
+      <description>Google mede a experiência real de quem usa seu site, e usa isso no ranqueamento. Entenda as três métricas e o que fazer com elas.</description>
       <category>Performance</category>
     </item>
   </channel>

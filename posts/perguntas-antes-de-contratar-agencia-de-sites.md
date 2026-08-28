@@ -17,7 +17,7 @@ Esta lista resolve isso. São doze perguntas para fazer antes de contratar uma a
 
 A Bumavit também constrói sites. Você está lendo isto no site de uma empresa que faz exatamente o serviço que você está avaliando, então leia sabendo disso.
 
-Por isso nenhuma pergunta aqui foi escrita para nos favorecer. Várias são desconfortáveis para qualquer fornecedor, inclusive para a gente — em especial as três do grupo de propriedade.
+Por isso nenhuma pergunta aqui foi escrita para nos favorecer. Várias são desconfortáveis para qualquer fornecedor, inclusive para a gente, em especial as três do grupo de propriedade.
 
 Faça as mesmas perguntas, na mesma ordem, para todo mundo que você entrevistar. Anote as respostas em vez de confiar na memória: três conversas boas viram uma só depois de dois dias.
 
@@ -49,11 +49,11 @@ Também vale perguntar o que acontece nos dois sentidos. Se você atrasar uma se
 
 Uma boa resposta traz um número, define o que conta como uma rodada e diz quanto custa uma rodada a mais. Isso é justo com os dois lados.
 
-**Sinal de alerta:** "revisões ilimitadas". Soa generoso e quase nunca é. Ou o preço já embutiu o desgaste, ou o projeto simplesmente não tem um ponto de encerramento — e projeto sem fim é projeto que você paga duas vezes.
+**Sinal de alerta:** "revisões ilimitadas". Soa generoso e quase nunca é. Ou o preço já embutiu o desgaste, ou o projeto simplesmente não tem um ponto de encerramento, e projeto sem fim é projeto que você paga duas vezes.
 
 Para ter uma referência do que "incluso" significa na prática, vale abrir um projeto pronto e contar as páginas: veja [um portal institucional construído pela Bumavit](https://bumavit.com.br/projetos/cocban.html).
 
-E se você ainda não tem ideia da ordem de grandeza do projeto — é difícil julgar escopo sem isso — dá para [montar uma estimativa respondendo três perguntas](https://bumavit.com.br/estimador.html) antes da primeira reunião.
+E se você ainda não tem ideia da ordem de grandeza do projeto (é difícil julgar escopo sem isso), dá para [montar uma estimativa respondendo três perguntas](https://bumavit.com.br/estimador.html) antes da primeira reunião.
 
 ## De quem é o site depois de pronto
 
@@ -63,7 +63,7 @@ Este é o grupo que quase ninguém pergunta e o que mais custa caro depois. As t
 
 Uma boa resposta é direta: o domínio fica no seu nome ou no CNPJ da sua empresa, e o login do registrador é seu. O fornecedor pode administrar, mas a conta é sua.
 
-**Sinal de alerta:** o domínio registrado no nome do fornecedor "para facilitar". Facilita mesmo — até o dia em que você quiser sair. O endereço do seu negócio na internet não deve pertencer a um terceiro.
+**Sinal de alerta:** o domínio registrado no nome do fornecedor "para facilitar". Facilita mesmo, até o dia em que você quiser sair. O endereço do seu negócio na internet não deve pertencer a um terceiro.
 
 ### De quem é o código quando o site fica pronto
 
@@ -77,7 +77,7 @@ Uma boa resposta sai sem hesitação e é uma lista: domínio, código, banco de
 
 **Sinal de alerta:** a hesitação em si. E qualquer taxa de saída que apareça só agora, no meio da resposta, sem estar na proposta.
 
-Faça essas três para todos os fornecedores que você entrevistar, incluindo a Bumavit — [quem somos e como trabalhamos](https://bumavit.com.br/sobre.html).
+Faça essas três para todos os fornecedores que você entrevistar, incluindo a Bumavit: [quem somos e como trabalhamos](https://bumavit.com.br/sobre.html).
 
 ## Como o site é feito
 
@@ -123,7 +123,7 @@ A conversa não é de mão única. Se do outro lado ninguém quiser saber nada s
 
 Espere ouvir perguntas como estas:
 
-- O que o site precisa fazer acontecer — vender, agendar, receber currículo, sustentar uma proposta comercial
+- O que o site precisa fazer acontecer: vender, agendar, receber currículo, sustentar uma proposta comercial
 - Quem é o cliente que você quer atrair, e o que ele precisa ver para confiar em você
 - O que acontece depois que alguém preenche o formulário: quem responde, em quanto tempo, por qual canal
 - Quem vai manter o site atualizado daqui a seis meses, e com que frequência
@@ -132,7 +132,7 @@ Quem não pergunta isso não está propondo um projeto. Está vendendo páginas.
 
 ## O que fazer antes da próxima reunião
 
-Leve as doze perguntas na mesma ordem para os três fornecedores e anote as respostas na hora. Depois compare o que cada um incluiu no escopo, não o número no fim da proposta — é a diferença de escopo que explica quase toda a diferença de preço.
+Leve as doze perguntas na mesma ordem para os três fornecedores e anote as respostas na hora. Depois compare o que cada um incluiu no escopo, não o número no fim da proposta: é a diferença de escopo que explica quase toda a diferença de preço.
 
 Se o seu tempo der para três perguntas apenas, use as três de propriedade e saída. Elas são as únicas cuja resposta errada você não consegue corrigir depois sem começar de novo.
 

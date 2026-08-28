@@ -1,4 +1,4 @@
-/* BUMAVIT — Three.js hero scene
+/* BUMAVIT · Three.js hero scene
    Particle sphere with organic noise displacement, mouse parallax
    and scroll-linked fade/scale. Degrades gracefully without WebGL. */
 

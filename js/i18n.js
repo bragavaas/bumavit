@@ -1,4 +1,4 @@
-/* BUMAVIT — i18n runtime (pt-BR padrão, EN e ES)
+/* BUMAVIT · i18n runtime (pt-BR padrão, EN e ES)
    Carregar ANTES de main.js/page.js (ambos defer: a ordem no HTML garante).
    Mecanismo: dicionário { seletorCSS: valor } onde valor é
      - string            → textContent
@@ -20,19 +20,19 @@
       formSending: 'Enviando…',
       formOk: 'Mensagem enviada! Respondemos em até 24h. ✦',
       formError: 'Algo deu errado. Tente de novo ou chame no WhatsApp.',
-      formUnconfigured: 'Formulário ainda não configurado — por enquanto, chame no WhatsApp ou envie um e-mail. 🙂'
+      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail. 🙂'
     },
     en: {
       formSending: 'Sending…',
       formOk: 'Message sent! We reply within 24h. ✦',
       formError: 'Something went wrong. Try again or ping us on WhatsApp.',
-      formUnconfigured: 'The form isn’t configured yet — for now, reach us on WhatsApp or by e-mail. 🙂'
+      formUnconfigured: 'The form isn’t configured yet. For now, reach us on WhatsApp or by e-mail. 🙂'
     },
     es: {
       formSending: 'Enviando…',
       formOk: '¡Mensaje enviado! Respondemos en hasta 24h. ✦',
       formError: 'Algo salió mal. Inténtalo de nuevo o escríbenos por WhatsApp.',
-      formUnconfigured: 'El formulario aún no está configurado — por ahora, escríbenos por WhatsApp o por correo. 🙂'
+      formUnconfigured: 'El formulario aún no está configurado. Por ahora, escríbenos por WhatsApp o por correo. 🙂'
     }
   };
   window.__STR = STR[LANG];
@@ -56,7 +56,7 @@
       '.menu__links a[href$="#projetos"]': { text: 'Work' },
       '.menu__links a[href$="#processo"]': { text: 'Process' },
       '.menu__links a[href$="#contato"]': { text: 'Contact' },
-      '.menu__footer p': 'Brazil — serving the world',
+      '.menu__footer p': 'Brazil, serving the world',
       '.footer__col a[href$="#inicio"]': 'Home',
       '.footer__col a[href$="#servicos"]': 'Services',
       '.footer__col a[href$="#projetos"]': 'Work',
@@ -65,18 +65,18 @@
       '.footer__col a[href$="#contato"]': 'Contact',
       '.lead__estimator span': 'Build your project →',
       '.footer__col--info h3': 'Base',
-      '.footer__col--info p': { html: 'Brazil — serving<br>clients worldwide.' },
+      '.footer__col--info p': { html: 'Brazil, serving<br>clients worldwide.' },
       '.footer__bottom p:first-child': '© 2026 Bumavit. All rights reserved.',
       '.footer__bottom p:nth-of-type(2)': 'Brewed with coffee ☕ in Brazil',
       '.footer__top-btn': 'Back to top ↑',
       '[data-cursor="Ver projeto"]': { attr: { 'data-cursor': 'View project' } },
 
       /* --- hero --- */
-      '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house — Brazil' },
+      '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Brazil' },
       '.hero__line:nth-child(1) .hero__line-inner': 'WE CRAFT',
       '.hero__line:nth-child(2) .hero__line-inner': 'DIGITAL',
       '.hero__line:nth-child(3) .hero__line-inner': { html: 'EXPERIENCES<em class="hero__asterisk">*</em>' },
-      '.hero__sub': '*From idea to deploy — we design and build websites, apps and platforms tailor-made for brands that want to grow.',
+      '.hero__sub': '*From idea to deploy: we design and build websites, apps and platforms tailor-made for brands that want to grow.',
 
       /* --- marquee --- */
       '.marquee__group': { html: marqueeEN },
@@ -93,11 +93,11 @@
       '#servicos .section__label': '( Services )',
       '#servicos .section__title': 'What we do',
       '.services__item:nth-child(1) .services__name': 'Web Development',
-      '.services__item:nth-child(1) .services__desc': 'Websites, systems and platforms — fast, secure and built to scale.',
+      '.services__item:nth-child(1) .services__desc': 'Websites, systems and platforms: fast, secure and built to scale.',
       '.services__item:nth-child(2) .services__name': 'Mobile Apps',
       '.services__item:nth-child(2) .services__desc': 'Native and hybrid apps with flawless UX for iOS and Android.',
       '.services__item:nth-child(3) .services__name': 'E-commerce',
-      '.services__item:nth-child(3) .services__desc': 'Stores that convert — from storefront to checkout, optimized to sell.',
+      '.services__item:nth-child(3) .services__desc': 'Stores that convert: from storefront to checkout, optimized to sell.',
       '.services__item:nth-child(4) .services__name': 'SEO & Performance',
       '.services__item:nth-child(4) .services__desc': 'Local and global visibility with Core Web Vitals in the green.',
       '.services__item:nth-child(5) .services__name': 'Brand & UI/UX',
@@ -106,7 +106,7 @@
       /* --- projetos --- */
       '#projetos .section__label': '( Work )',
       '#projetos .section__title': 'Selected work',
-      '.work__card:nth-child(1) .work__info p': 'Yacht booking platform — Toronto, Canada',
+      '.work__card:nth-child(1) .work__info p': 'Yacht booking platform · Toronto, Canada',
       '.work__card:nth-child(2) .work__info p': 'Institutional portal with a complete digital presence',
       '.work__card:nth-child(3) .work__info h3': 'Confidential project',
       '.work__card:nth-child(3) .work__info p': 'SaaS dashboard for a fast-growing fintech',
@@ -119,7 +119,7 @@
       '.process__panel:nth-child(2) h3': 'Discovery',
       '.process__panel:nth-child(2) p': 'Deep dive into your business, goals and audience. No guesswork: context and data drive every decision.',
       '.process__panel:nth-child(3) h3': 'Strategy & Design',
-      '.process__panel:nth-child(3) p': 'Information architecture, clickable prototypes and visual identity — all validated with you.',
+      '.process__panel:nth-child(3) p': 'Information architecture, clickable prototypes and visual identity, all validated with you.',
       '.process__panel:nth-child(4) h3': 'Development',
       '.process__panel:nth-child(4) p': 'Clean, performant, scalable code, with continuous delivery and full transparency.',
       '.process__panel:nth-child(5) h3': 'Launch & Growth',
@@ -128,7 +128,7 @@
       /* --- CTA estimador --- */
       '.estcta__label': '( Estimator )',
       '.estcta__title': 'How much does your idea cost?',
-      '.estcta__sub': '3 questions, 1 minute — get an instant investment and timeline estimate. No sign-up, no strings.',
+      '.estcta__sub': '3 questions, 1 minute: get an instant investment and timeline estimate. No sign-up, no strings.',
       '.estcta__steps span:nth-of-type(1)': '01 · Project type',
       '.estcta__steps span:nth-of-type(2)': '02 · Features',
       '.estcta__steps span:nth-of-type(3)': '03 · Timeline',
@@ -144,24 +144,24 @@
       '.voices__card:nth-child(2) figcaption span': 'Institutional portal',
       '.voices__card:nth-child(3) blockquote': '"Delivered on time, clean code and a dashboard the whole team can use. A partnership that outlasts go-live."',
       '.voices__card:nth-child(3) figcaption strong': 'Confidential client',
-      '.voices__card:nth-child(3) figcaption span': 'Fintech — SaaS',
+      '.voices__card:nth-child(3) figcaption span': 'Fintech · SaaS',
       '.voices__logos-you': 'your brand here →',
 
       /* --- FAQ --- */
       '#faq .section__label': '( FAQ )',
       '#faq .section__title': 'Frequently asked questions',
       '.faq__item:nth-child(1) summary': { html: 'How much does a project cost?' + faqIcon },
-      '.faq__item:nth-child(1) .faq__answer p': 'Every project is quoted individually, based on scope, timeline and complexity. After a free intro call we send a detailed proposal within 48h — no surprises along the way.',
+      '.faq__item:nth-child(1) .faq__answer p': 'Every project is quoted individually, based on scope, timeline and complexity. After a free intro call we send a detailed proposal within 48h, no surprises along the way.',
       '.faq__item:nth-child(2) summary': { html: 'How long does a website or app take?' + faqIcon },
       '.faq__item:nth-child(2) .faq__answer p': 'Institutional websites usually take 3–6 weeks; e-commerce and apps, 2–4 months. The schedule is set with you during discovery, with continuous deliveries throughout.',
       '.faq__item:nth-child(3) summary': { html: 'Do you provide support after launch?' + faqIcon },
-      '.faq__item:nth-child(3) .faq__answer p': 'Yes. Every project includes a warranty period, and we offer maintenance and continuous-evolution plans — monitoring, updates, improvements and new features.',
+      '.faq__item:nth-child(3) .faq__answer p': 'Yes. Every project includes a warranty period, and we offer maintenance and continuous-evolution plans: monitoring, updates, improvements and new features.',
       '.faq__item:nth-child(4) summary': { html: 'Do you work with clients outside Brazil?' + faqIcon },
-      '.faq__item:nth-child(4) .faq__answer p': 'Yes — we’ve delivered projects for clients in Canada and work in Portuguese, English and Spanish, with remote meetings in any timezone.',
+      '.faq__item:nth-child(4) .faq__answer p': 'Yes, we’ve delivered projects for clients in Canada and work in Portuguese, English and Spanish, with remote meetings in any timezone.',
       '.faq__item:nth-child(5) summary': { html: 'How does a project start?' + faqIcon },
       '.faq__item:nth-child(5) .faq__answer p': 'With a conversation. Tell us your idea through the form or WhatsApp, we’ll do a no-strings discovery call and come back with a proposal, timeline and investment.',
       '.faq__aside h3': 'Still have a question?',
-      '.faq__aside > p': 'Talk to us directly — no bots, no queue. We reply within 24h.',
+      '.faq__aside > p': 'Talk to us directly, no bots, no queue. We reply within 24h.',
       '.faq__aside-actions .btn-pill--accent span': 'Chat on WhatsApp',
       '.faq__aside-actions a[href$="estimador.html"] span': 'Build your project →',
       '.faq__aside-note': { html: 'Prefer e-mail? <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>' },
@@ -186,7 +186,7 @@
       'textarea[name="mensagem"]': { attr: { placeholder: 'What do you want to build?' } },
       '.lead__submit span': 'Send message',
       '.lead__actions a.btn-pill span': 'Chat on WhatsApp',
-      '.cta__note': { html: 'Or write to <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a> — we reply within 24h, in Portuguese, English or Spanish.' },
+      '.cta__note': { html: 'Or write to <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>. We reply within 24h, in Portuguese, English or Spanish.' },
 
       /* --- páginas internas (comuns) --- */
       '.footer__bottom a[href$="index.html#projetos"]': '← All projects',
@@ -200,7 +200,7 @@
 
       /* --- 404 --- */
       '.nf__title': 'This page hasn’t been developed yet.',
-      '.nf p': 'How about yours? We build digital experiences that move businesses — including pages that exist.',
+      '.nf p': 'How about yours? We build digital experiences that move businesses, including pages that exist.',
       '.nf .btn-pill span': 'Back home'
     },
 
@@ -215,7 +215,7 @@
       '.menu__links a[href$="#projetos"]': { text: 'Proyectos' },
       '.menu__links a[href$="#processo"]': { text: 'Proceso' },
       '.menu__links a[href$="#contato"]': { text: 'Contacto' },
-      '.menu__footer p': 'Brasil — atendiendo al mundo',
+      '.menu__footer p': 'Brasil, atendiendo al mundo',
       '.footer__col a[href$="#inicio"]': 'Inicio',
       '.footer__col a[href$="#servicos"]': 'Servicios',
       '.footer__col a[href$="#projetos"]': 'Proyectos',
@@ -223,17 +223,17 @@
       '.footer__col a[href$="estimador.html"]': 'Estimador',
       '.footer__col a[href$="#contato"]': 'Contacto',
       '.lead__estimator span': 'Arma tu proyecto →',
-      '.footer__col--info p': { html: 'Brasil — atendiendo<br>clientes en todo el mundo.' },
+      '.footer__col--info p': { html: 'Brasil, atendiendo<br>clientes en todo el mundo.' },
       '.footer__bottom p:first-child': '© 2026 Bumavit. Todos los derechos reservados.',
       '.footer__bottom p:nth-of-type(2)': 'Hecho con café ☕ en Brasil',
       '.footer__top-btn': 'Volver arriba ↑',
       '[data-cursor="Ver projeto"]': { attr: { 'data-cursor': 'Ver proyecto' } },
 
-      '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house — Brasil' },
+      '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Brasil' },
       '.hero__line:nth-child(1) .hero__line-inner': 'CREAMOS',
       '.hero__line:nth-child(2) .hero__line-inner': 'EXPERIENCIAS',
       '.hero__line:nth-child(3) .hero__line-inner': { html: 'DIGITALES<em class="hero__asterisk">*</em>' },
-      '.hero__sub': '*De la idea al deploy — diseñamos y desarrollamos sitios, aplicaciones y plataformas a medida para marcas que quieren crecer.',
+      '.hero__sub': '*De la idea al deploy: diseñamos y desarrollamos sitios, aplicaciones y plataformas a medida para marcas que quieren crecer.',
 
       '.marquee__group': { html: marqueeES },
 
@@ -251,7 +251,7 @@
       '.services__item:nth-child(2) .services__name': 'Aplicaciones Móviles',
       '.services__item:nth-child(2) .services__desc': 'Apps nativas e híbridas con UX impecable para iOS y Android.',
       '.services__item:nth-child(3) .services__name': 'E-commerce',
-      '.services__item:nth-child(3) .services__desc': 'Tiendas que convierten — del escaparate al checkout, todo optimizado para vender.',
+      '.services__item:nth-child(3) .services__desc': 'Tiendas que convierten: del escaparate al checkout, todo optimizado para vender.',
       '.services__item:nth-child(4) .services__name': 'SEO y Performance',
       '.services__item:nth-child(4) .services__desc': 'Visibilidad local y global con Core Web Vitals en verde.',
       '.services__item:nth-child(5) .services__name': 'Identidad y UI/UX',
@@ -259,7 +259,7 @@
 
       '#projetos .section__label': '( Proyectos )',
       '#projetos .section__title': 'Trabajos seleccionados',
-      '.work__card:nth-child(1) .work__info p': 'Plataforma de reservas de yates — Toronto, Canadá',
+      '.work__card:nth-child(1) .work__info p': 'Plataforma de reservas de yates · Toronto, Canadá',
       '.work__card:nth-child(2) .work__info p': 'Portal institucional con presencia digital completa',
       '.work__card:nth-child(3) .work__info h3': 'Proyecto confidencial',
       '.work__card:nth-child(3) .work__info p': 'Dashboard SaaS para una fintech en crecimiento',
@@ -271,7 +271,7 @@
       '.process__panel:nth-child(2) h3': 'Descubrimiento',
       '.process__panel:nth-child(2) p': 'Inmersión en tu negocio, objetivos y público. Sin suposiciones: el contexto y los datos guían cada decisión.',
       '.process__panel:nth-child(3) h3': 'Estrategia y Diseño',
-      '.process__panel:nth-child(3) p': 'Arquitectura de la información, prototipos navegables e identidad visual — todo validado contigo.',
+      '.process__panel:nth-child(3) p': 'Arquitectura de la información, prototipos navegables e identidad visual, todo validado contigo.',
       '.process__panel:nth-child(4) h3': 'Desarrollo',
       '.process__panel:nth-child(4) p': 'Código limpio, performante y escalable, con entregas continuas y transparencia total.',
       '.process__panel:nth-child(5) h3': 'Lanzamiento y Evolución',
@@ -279,7 +279,7 @@
 
       '.estcta__label': '( Estimador )',
       '.estcta__title': '¿Cuánto cuesta tu idea?',
-      '.estcta__sub': '3 preguntas, 1 minuto — recibe al instante una estimación de inversión y plazo. Sin registro, sin compromiso.',
+      '.estcta__sub': '3 preguntas, 1 minuto: recibe al instante una estimación de inversión y plazo. Sin registro, sin compromiso.',
       '.estcta__steps span:nth-of-type(1)': '01 · Tipo de proyecto',
       '.estcta__steps span:nth-of-type(2)': '02 · Funcionalidades',
       '.estcta__steps span:nth-of-type(3)': '03 · Plazo',
@@ -294,23 +294,23 @@
       '.voices__card:nth-child(2) figcaption span': 'Portal institucional',
       '.voices__card:nth-child(3) blockquote': '"Entrega a tiempo, código limpio y un panel que todo el equipo puede usar. Una alianza que continúa después del go-live."',
       '.voices__card:nth-child(3) figcaption strong': 'Cliente confidencial',
-      '.voices__card:nth-child(3) figcaption span': 'Fintech — SaaS',
+      '.voices__card:nth-child(3) figcaption span': 'Fintech · SaaS',
       '.voices__logos-you': 'tu marca aquí →',
 
       '#faq .section__label': '( FAQ )',
       '#faq .section__title': 'Preguntas frecuentes',
       '.faq__item:nth-child(1) summary': { html: '¿Cuánto cuesta un proyecto con Bumavit?' + faqIcon },
-      '.faq__item:nth-child(1) .faq__answer p': 'Cada proyecto se cotiza a medida, según alcance, plazo y complejidad. Tras una conversación inicial gratuita, enviamos una propuesta detallada en 48h — sin sorpresas en el camino.',
+      '.faq__item:nth-child(1) .faq__answer p': 'Cada proyecto se cotiza a medida, según alcance, plazo y complejidad. Tras una conversación inicial gratuita, enviamos una propuesta detallada en 48h, sin sorpresas en el camino.',
       '.faq__item:nth-child(2) summary': { html: '¿Cuánto tarda un sitio web o una app?' + faqIcon },
       '.faq__item:nth-child(2) .faq__answer p': 'Los sitios institucionales suelen tomar de 3 a 6 semanas; e-commerce y apps, de 2 a 4 meses. El cronograma se define contigo en la fase de descubrimiento, con entregas continuas.',
       '.faq__item:nth-child(3) summary': { html: '¿Dan soporte después del lanzamiento?' + faqIcon },
-      '.faq__item:nth-child(3) .faq__answer p': 'Sí. Todo proyecto incluye un período de garantía, y ofrecemos planes de mantenimiento y evolución continua — monitoreo, actualizaciones, mejoras y nuevas funcionalidades.',
+      '.faq__item:nth-child(3) .faq__answer p': 'Sí. Todo proyecto incluye un período de garantía, y ofrecemos planes de mantenimiento y evolución continua: monitoreo, actualizaciones, mejoras y nuevas funcionalidades.',
       '.faq__item:nth-child(4) summary': { html: '¿Atienden clientes fuera de Brasil?' + faqIcon },
-      '.faq__item:nth-child(4) .faq__answer p': 'Sí — ya entregamos proyectos para clientes en Canadá y trabajamos en portugués, inglés y español, con reuniones remotas en cualquier huso horario.',
+      '.faq__item:nth-child(4) .faq__answer p': 'Sí, ya entregamos proyectos para clientes en Canadá y trabajamos en portugués, inglés y español, con reuniones remotas en cualquier huso horario.',
       '.faq__item:nth-child(5) summary': { html: '¿Cómo empieza un proyecto?' + faqIcon },
       '.faq__item:nth-child(5) .faq__answer p': 'Con una conversación. Cuéntanos tu idea por el formulario o WhatsApp, hacemos una llamada de descubrimiento sin compromiso y volvemos con propuesta, plazo e inversión.',
       '.faq__aside h3': '¿Te quedó alguna duda?',
-      '.faq__aside > p': 'Habla directo con nosotros — sin bots, sin fila. Respondemos en hasta 24h.',
+      '.faq__aside > p': 'Habla directo con nosotros, sin bots, sin fila. Respondemos en hasta 24h.',
       '.faq__aside-actions .btn-pill--accent span': 'Escribir por WhatsApp',
       '.faq__aside-actions a[href$="estimador.html"] span': 'Arma tu proyecto →',
       '.faq__aside-note': { html: '¿Prefieres correo? <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>' },
@@ -334,7 +334,7 @@
       'textarea[name="mensagem"]': { attr: { placeholder: '¿Qué quieres construir?' } },
       '.lead__submit span': 'Enviar mensaje',
       '.lead__actions a.btn-pill span': 'Escribir por WhatsApp',
-      '.cta__note': { html: 'O escribe a <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a> — respondemos en hasta 24h, en portugués, inglés o español.' },
+      '.cta__note': { html: 'O escribe a <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>. Respondemos en hasta 24h, en portugués, inglés o español.' },
 
       '.footer__bottom a[href$="index.html#projetos"]': '← Todos los proyectos',
       '.footer__bottom a[href="../index.html"]': '← Volver al inicio',
@@ -346,7 +346,7 @@
       '.article__cta .btn-pill span': 'Habla con Bumavit',
 
       '.nf__title': 'Esta página aún no fue desarrollada.',
-      '.nf p': '¿Qué tal la tuya? Construimos experiencias digitales que mueven negocios — incluidas páginas que existen.',
+      '.nf p': '¿Qué tal la tuya? Construimos experiencias digitales que mueven negocios, incluidas páginas que existen.',
       '.nf .btn-pill span': 'Volver al inicio'
     }
   };

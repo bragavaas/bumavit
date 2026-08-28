@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Fonte dos posts em Markdown. O GitHub Pages serve o repositorio inteiro,
-# entao /posts/<slug>.md responde 200 com o texto completo do artigo — uma
+# entao /posts/<slug>.md responde 200 com o texto completo do artigo: uma
 # copia rastreavel de cada post. O HTML publicado e a versao canonica.
 Disallow: /posts/
 

@@ -4,13 +4,13 @@
           blog/feed.xml (RSS) e sitemap.xml completo do site.
    Uso: node scripts/build-blog.mjs
 
-   URL canônica de post: https://bumavit.com.br/blog/<slug>/ — barra final,
+   URL canônica de post: https://bumavit.com.br/blog/<slug>/ (barra final),
    sem .html. Decisão travada pelo fundador (BUMA-11); o Content Writer e a
    SEO Analyst já escrevem links nesse formato. Não reverter.
 
    Atenção ao nível de diretório: a listagem fica em /blog/ (1 nível abaixo
    da raiz) e os posts em /blog/<slug>/ (2 níveis). Todo link relativo passa
-   por `base`/`blogHref` — não escreva "../" solto no shell. */
+   por `base`/`blogHref`: não escreva "../" solto no shell. */
 import { writeFileSync, mkdirSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -93,7 +93,7 @@ function mdToHtml(md) {
 }
 
 /* dateLabel e derivado de date. Se o autor escrever os dois e eles divergirem,
-   a pagina mostra uma data e o sitemap/RSS declaram outra — entao date manda. */
+   a pagina mostra uma data e o sitemap/RSS declaram outra, entao date manda. */
 const MESES_PT = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
 function dateLabelFrom(iso) {
   const [y, m, d] = iso.split('-');
@@ -165,7 +165,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <meta name="twitter:description" content="${desc}">
   <meta name="twitter:image" content="${ogImage}">
   <link rel="canonical" href="${canonical}">
-  <link rel="alternate" type="application/rss+xml" title="Bumavit — Blog" href="${SITE}/blog/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Bumavit · Blog" href="${SITE}/blog/feed.xml">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23${ACCENT.slice(1)}' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
 
@@ -214,7 +214,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
-      <p>Brasil — atendendo o mundo</p>
+      <p>Brasil, atendendo o mundo</p>
     </div>
   </div>
 
@@ -243,14 +243,14 @@ ${content}
 
 /* Stub de redirecionamento para uma URL aposentada. O GitHub Pages não emite
    301, então canonical + refresh + replace() é o que consolida o sinal no
-   destino. Mesmo formato dos stubs do WordPress legado — uma técnica só. */
+   destino. Mesmo formato dos stubs do WordPress legado: uma técnica só. */
 function redirectStub({ to, label }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Página movida — BUMAVIT®</title>
+<title>Página movida · BUMAVIT®</title>
 <link rel="canonical" href="${to}">
 <meta http-equiv="refresh" content="0; url=${to}">
 <meta property="og:url" content="${to}">
@@ -275,7 +275,7 @@ function redirectStub({ to, label }) {
 mkdirSync(join(root, 'blog'), { recursive: true });
 
 /* ================================================================
-   ARCHIVE — blog/index.html
+   ARCHIVE · blog/index.html
    ================================================================ */
 const featured = posts[0];
 const rest = posts.slice(1);
@@ -304,7 +304,7 @@ const card = (p, prefix = '') => `
 const archiveContent = `    <section class="p-hero section">
       <p class="section__label" data-reveal>( Blog )</p>
       <h1 class="p-hero__title" data-split>Insights</h1>
-      <p class="p-hero__tag" data-reveal>Desenvolvimento, SEO, performance e crescimento — sem enrolação.</p>
+      <p class="p-hero__tag" data-reveal>Desenvolvimento, SEO, performance e crescimento, sem enrolação.</p>
     </section>
 
     <section class="section" style="padding-top:0;">
@@ -349,14 +349,14 @@ ${posts.map((p) => card(p)).join('\n')}
 
 const archiveI18n = {
   en: {
-    '.p-hero__tag': 'Development, SEO, performance and growth — no fluff. Articles are written in Portuguese.',
+    '.p-hero__tag': 'Development, SEO, performance and growth, no fluff. Articles are written in Portuguese.',
     '.bfilter__btn[data-filter="all"]': 'All',
     '.bcat[data-c="negocios"]': 'Business',
     '.bfilter__btn[data-filter="negocios"]': 'Business',
     '.bfeat__cta': { html: 'Read article <em aria-hidden="true">→</em>' }
   },
   es: {
-    '.p-hero__tag': 'Desarrollo, SEO, performance y crecimiento — sin rodeos. Los artículos están escritos en portugués.',
+    '.p-hero__tag': 'Desarrollo, SEO, performance y crecimiento, sin rodeos. Los artículos están escritos en portugués.',
     '.bfilter__btn[data-filter="all"]': 'Todos',
     '.bcat[data-c="negocios"]': 'Negocios',
     '.bfilter__btn[data-filter="negocios"]': 'Negocios',
@@ -405,7 +405,7 @@ const archiveLd = `
       {
         "@type": "Blog",
         "@id": "${BLOG_URL}#blog",
-        "name": "Blog — BUMAVIT®",
+        "name": "Blog · BUMAVIT®",
         "url": "${BLOG_URL}",
         "inLanguage": "pt-BR",
         "publisher": { "@id": "${SITE}/#org" }
@@ -415,8 +415,8 @@ const archiveLd = `
   </script>`;
 
 writeFileSync(join(root, 'blog', 'index.html'), shell({
-  title: 'Blog — BUMAVIT®',
-  desc: 'Insights sobre desenvolvimento web, SEO, performance e geração de leads — pela Bumavit, software house brasileira.',
+  title: 'Blog · BUMAVIT®',
+  desc: 'Insights sobre desenvolvimento web, SEO, performance e geração de leads, pela Bumavit, software house brasileira.',
   canonical: BLOG_URL,
   extraHead: archiveLd,
   pageI18n: archiveI18n,
@@ -425,7 +425,7 @@ writeFileSync(join(root, 'blog', 'index.html'), shell({
 console.log('ok: blog/index.html');
 
 /* ================================================================
-   POST SINGLE — blog/<slug>.html
+   POST SINGLE · blog/<slug>.html
    ================================================================ */
 posts.forEach((p, i) => {
   const prev = posts[i + 1] || null; // mais antigo
@@ -433,7 +433,7 @@ posts.forEach((p, i) => {
   const related = posts.filter((x) => x.slug !== p.slug && x.catSlug === p.catSlug);
   const readAlso = (related.length ? related : posts.filter((x) => x.slug !== p.slug)).slice(0, 2);
   const url = `${SITE}/blog/${p.slug}/`;
-  const shareText = encodeURIComponent(p.title + ' — ' + url);
+  const shareText = encodeURIComponent(p.title + ' · ' + url);
 
   const ld = `
   <script type="application/ld+json">
@@ -544,7 +544,7 @@ ${readAlso.map((r) => card(r, '../')).join('\n')}
 
   mkdirSync(join(root, 'blog', p.slug), { recursive: true });
   writeFileSync(join(root, 'blog', p.slug, 'index.html'), shell({
-    title: `${p.title} — BUMAVIT®`,
+    title: `${p.title} · BUMAVIT®`,
     desc: p.excerpt,
     canonical: url,
     ogType: 'article',
@@ -558,7 +558,7 @@ ${readAlso.map((r) => card(r, '../')).join('\n')}
   console.log(`ok: blog/${p.slug}/index.html`);
 
   /* Stub na URL antiga. /blog/<slug>.html foi indexável e respondeu 200 antes
-     da troca de padrão — apagar geraria 404 em link externo já publicado. */
+     da troca de padrão: apagar geraria 404 em link externo já publicado. */
   writeFileSync(join(root, 'blog', `${p.slug}.html`), redirectStub({
     to: url,
     label: p.title
@@ -567,7 +567,7 @@ ${readAlso.map((r) => card(r, '../')).join('\n')}
 });
 
 /* ================================================================
-   RSS — blog/feed.xml
+   RSS · blog/feed.xml
    ================================================================ */
 const rssItems = posts.map((p) => `    <item>
       <title>${p.title.replace(/&/g, '&amp;')}</title>
@@ -581,7 +581,7 @@ const rssItems = posts.map((p) => `    <item>
 writeFileSync(join(root, 'blog', 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bumavit — Blog</title>
+    <title>Bumavit · Blog</title>
     <link>${BLOG_URL}</link>
     <atom:link href="${SITE}/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Insights sobre desenvolvimento web, SEO, performance e geração de leads.</description>
@@ -594,7 +594,7 @@ ${rssItems}
 console.log('ok: blog/feed.xml');
 
 /* ================================================================
-   SITEMAP — sitemap.xml (site inteiro; posts entram automaticamente)
+   SITEMAP · sitemap.xml (site inteiro; posts entram automaticamente)
    ================================================================ */
 const staticPages = [
   ['', '1.0'],

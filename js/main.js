@@ -1,4 +1,4 @@
-/* BUMAVIT — interactions & scroll choreography (GSAP + ScrollTrigger + Lenis) */
+/* BUMAVIT · interactions & scroll choreography (GSAP + ScrollTrigger + Lenis) */
 (function () {
   'use strict';
 
@@ -406,7 +406,7 @@
       formSending: 'Enviando…',
       formOk: 'Mensagem enviada! Respondemos em até 24h. ✦',
       formError: 'Algo deu errado. Tente de novo ou chame no WhatsApp.',
-      formUnconfigured: 'Formulário ainda não configurado — por enquanto, chame no WhatsApp ou envie um e-mail. 🙂'
+      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail. 🙂'
     };
 
     function setStatus(msg, cls) {

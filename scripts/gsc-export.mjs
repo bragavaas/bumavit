@@ -17,12 +17,16 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createSign } from 'node:crypto';
 
-const PROPERTY = 'https://bumavit.com.br';
+// GSC_PROPERTY aceita prefixo de URL com barra (https://bumavit.com.br/)
+// ou domínio (sc-domain:bumavit.com.br) — a API compara a string exata.
+const PROPERTY = process.env.GSC_PROPERTY || 'https://bumavit.com.br/';
 const DAYS = 28;
-const ROW_LIMIT = 25000; // máximo da API por requisição
+// Teto da API por requisição — dados acima de 25 000 linhas são silenciosamente truncados.
+const ROW_LIMIT = 25000;
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const outDir = join(root, 'data', 'gsc');
+// GSC_OUT_DIR permite que o fundador aponte para um caminho que os agentes também leiam.
+const outDir = process.env.GSC_OUT_DIR || join(root, 'data', 'gsc');
 
 // ── Credenciais ───────────────────────────────────────────────────────────────
 
@@ -30,9 +34,12 @@ const raw = process.env.GSC_SERVICE_ACCOUNT_JSON;
 if (!raw) {
   console.error(
     'Erro: variável GSC_SERVICE_ACCOUNT_JSON não definida.\n' +
-    'Exporte o JSON da conta de serviço antes de rodar o script.\n' +
-    'Exemplo:\n' +
-    "  export GSC_SERVICE_ACCOUNT_JSON='$(cat service-account.json)'\n" +
+    'Exporte o JSON da conta de serviço antes de rodar o script.\n\n' +
+    'Linux/macOS:\n' +
+    '  export GSC_SERVICE_ACCOUNT_JSON="$(cat service-account.json)"\n' +
+    '  node scripts/gsc-export.mjs\n\n' +
+    'PowerShell (Windows):\n' +
+    '  $env:GSC_SERVICE_ACCOUNT_JSON = Get-Content -Raw C:\\caminho\\service-account.json\n' +
     '  node scripts/gsc-export.mjs'
   );
   process.exit(1);
@@ -135,6 +142,25 @@ async function queryGSC(token, dimensions) {
 
   if (!res.ok) {
     const text = await res.text();
+    if (res.status === 401 || res.status === 403) {
+      console.error(`\nErro de permissao (${res.status}). Propriedades visiveis para esta conta de servico:`);
+      try {
+        const sitesRes = await fetch('https://searchconsole.googleapis.com/webmasters/v3/sites', {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        const sitesData = await sitesRes.json();
+        const sites = sitesData.siteEntry ?? [];
+        if (sites.length === 0) {
+          console.error('  (nenhuma propriedade encontrada — confirme que a conta de servico foi adicionada no Search Console)');
+        } else {
+          sites.forEach(s => console.error(`  ${s.siteUrl}  [${s.permissionLevel}]`));
+        }
+        console.error(`\nPropriedade configurada: ${PROPERTY}`);
+        console.error('Use GSC_PROPERTY=<url-exata> para sobrescrever.\n');
+      } catch {
+        // diagnosico falhou, continuar com erro original
+      }
+    }
     throw new Error(`GSC API erro (${dimensions.join(',')}): ${res.status} ${text}`);
   }
 
@@ -166,7 +192,7 @@ function rowsToCSV(rows, dimensionKey) {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-console.log(`Propriedade: ${PROPERTY}`);
+console.log(`Propriedade: ${PROPERTY}  (sobreponha com GSC_PROPERTY=<url>)`);
 console.log(`Período: ${isoDate(startDate)} → ${isoDate(endDate)} (${DAYS} dias)`);
 console.log('Autenticando...');
 

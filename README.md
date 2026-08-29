@@ -78,10 +78,13 @@ em `data/gsc/` com cliques, impressões, CTR e posição média dos últimos 28 
 um por consulta e um por página.
 
 **Pré-requisito:** conta de serviço do Google Cloud com a permissão
-"Proprietário" (ou pelo menos "Restrito") na propriedade
-`https://bumavit.com.br` no Search Console.
+**"Restrito"** na propriedade no Search Console (Proprietário não é necessário e
+concede poderes de gestão que uma conta de serviço automatizada não deve ter;
+suba o nível apenas se uma chamada específica exigir).
 
 ### Configurar a variável de ambiente
+
+**Linux/macOS:**
 
 ```sh
 # Opção 1: ler o arquivo uma vez e exportar
@@ -91,8 +94,41 @@ export GSC_SERVICE_ACCOUNT_JSON="$(cat /caminho/para/service-account.json)"
 export GSC_SERVICE_ACCOUNT_JSON='{"type":"service_account","project_id":"...","private_key_id":"...","private_key":"-----BEGIN RSA PRIVATE KEY-----\n...","client_email":"bumavit-gsc@<projeto>.iam.gserviceaccount.com",...}'
 ```
 
-> A variável existe apenas na sessão do terminal. Nenhuma chave é gravada em
-> arquivo ou commitada no repositório. `data/gsc/` está no `.gitignore`.
+**PowerShell (Windows):**
+
+```powershell
+$env:GSC_SERVICE_ACCOUNT_JSON = Get-Content -Raw C:\caminho\para\service-account.json
+node scripts/gsc-export.mjs
+```
+
+> A variável existe apenas na sessão do terminal. Nenhuma chave e gravada em
+> arquivo ou commitada no repositório. `data/gsc/` esta no `.gitignore`.
+
+### Propriedade do Search Console
+
+Por padrao o script usa `https://bumavit.com.br/` (prefixo de URL com barra final).
+Se a propriedade estiver registrada como dominio (`sc-domain:bumavit.com.br`), exporte:
+
+```sh
+export GSC_PROPERTY=sc-domain:bumavit.com.br
+```
+
+Se receber 401/403, o script imprime automaticamente as propriedades visiveis para a
+conta de servico para facilitar o diagnostico.
+
+### Destino dos CSVs
+
+Por padrao os arquivos vao para `data/gsc/` dentro do repositorio (no `.gitignore`).
+Para que os agentes do Paperclip possam ler os dados, aponte `GSC_OUT_DIR` para um
+caminho acessivel a eles (o caminho definitivo e decisao do fundador):
+
+```sh
+export GSC_OUT_DIR=/caminho/compartilhado/gsc-data
+```
+
+```powershell
+$env:GSC_OUT_DIR = "C:\caminho\compartilhado\gsc-data"
+```
 
 ### Rodar manualmente
 

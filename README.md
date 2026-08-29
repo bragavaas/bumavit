@@ -71,6 +71,61 @@ pt-BR; EN/ES vivem em dicionários `seletor CSS → texto`:
 - Sobre: bloco `window.__pageI18n` inline em `sobre.html`
 - Blog: interface traduzida; artigos permanecem em português
 
+## Search Console — export de dados (gsc-export.mjs)
+
+O script `scripts/gsc-export.mjs` autentica via conta de serviço e grava dois CSVs
+em `data/gsc/` com cliques, impressões, CTR e posição média dos últimos 28 dias —
+um por consulta e um por página.
+
+**Pré-requisito:** conta de serviço do Google Cloud com a permissão
+"Proprietário" (ou pelo menos "Restrito") na propriedade
+`https://bumavit.com.br` no Search Console.
+
+### Configurar a variável de ambiente
+
+```sh
+# Opção 1: ler o arquivo uma vez e exportar
+export GSC_SERVICE_ACCOUNT_JSON="$(cat /caminho/para/service-account.json)"
+
+# Opção 2: copiar o conteúdo do JSON e colar direto (sem quebra de linha)
+export GSC_SERVICE_ACCOUNT_JSON='{"type":"service_account","project_id":"...","private_key_id":"...","private_key":"-----BEGIN RSA PRIVATE KEY-----\n...","client_email":"bumavit-gsc@<projeto>.iam.gserviceaccount.com",...}'
+```
+
+> A variável existe apenas na sessão do terminal. Nenhuma chave é gravada em
+> arquivo ou commitada no repositório. `data/gsc/` está no `.gitignore`.
+
+### Rodar manualmente
+
+```sh
+node scripts/gsc-export.mjs
+```
+
+Saída:
+
+```
+data/gsc/2026-08-29_queries.csv   ← desempenho por consulta
+data/gsc/2026-08-29_pages.csv     ← desempenho por página
+```
+
+### Agendar (Linux/macOS — cron)
+
+Adicione ao crontab (`crontab -e`) para rodar toda segunda-feira às 08:00:
+
+```cron
+0 8 * * 1 GSC_SERVICE_ACCOUNT_JSON="$(cat /caminho/para/service-account.json)" /usr/local/bin/node /caminho/para/repo/scripts/gsc-export.mjs >> /var/log/gsc-export.log 2>&1
+```
+
+### Agendar (Windows — Agendador de Tarefas)
+
+Crie uma tarefa que execute:
+
+- **Programa:** `node.exe`
+- **Argumentos:** `C:\caminho\para\repo\scripts\gsc-export.mjs`
+- **Variável de ambiente** (aba "Ambiente"): `GSC_SERVICE_ACCOUNT_JSON` com o
+  conteúdo do JSON (sem aspas externas).
+
+---
+
 ## Configuração pendente (troque os placeholders)
 
 - ~~Formulário~~: configurado (Formspree `mbdvvyro`, entrega em bragavaas@gmail.com)

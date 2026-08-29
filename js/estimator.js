@@ -3,8 +3,8 @@
    (WhatsApp/e-mail). Trilíngue via window.__LANG.
 
    MODELO DE PREÇO: horas × RATE (R$/h). Edite RATE, PRICING e FEATURES.
-   Âncora: site institucional ≈ 18–22h ≈ R$ 1.440–1.760 (5 páginas),
-   chegando a ≈ R$ 2.000–2.480 com 10 páginas, ~20h em média, 8–13 dias.
+   Âncora: site institucional ≈ 18–22h ≈ R$ 2.700–3.300 (5 páginas),
+   chegando a ≈ R$ 3.750–4.650 com 10 páginas, ~20h em média, 8–13 dias.
    O tipo "site" tem um passo extra de nº de páginas (5 inclusas,
    adicionais somam EXTRA_PAGE horas/dias cada). */
 (function () {
@@ -12,7 +12,7 @@
 
   var LANG = window.__LANG || 'pt';
   var WHATSAPP = '5521997235420';
-  var RATE = 80;                  // R$/hora
+  var RATE = 150;                 // R$/hora
   /* Mesmo endpoint Formspree do formulário de contato da home. */
   var FORM_ENDPOINT = 'https://formspree.io/f/mbdvvyro';
 
@@ -24,7 +24,7 @@
       app:       { hours: [64, 87],  days: [29, 39] },
       saas:      { hours: [79, 118], days: [39, 50] }
     },
-    deadlines: { urgente: 1.2, normal: 1, medio: 1, flexivel: 1 } // multiplica só o preço
+    deadlines: { urgente: 1.35, normal: 1, medio: 1, flexivel: 1 } // multiplica só o preço
   };
   var PAGES_INCLUDED = 5;
   var PAGES_MAX = 15;
@@ -33,10 +33,10 @@
   /* Faixas numéricas dos budgets, para comparar com a estimativa no resultado.
      'naosei' fica de fora de propósito: sem faixa, sem mensagem. */
   var BUDGET_RANGES = {
-    ate2k:    [0, 2000],
-    de2a5k:   [2000, 5000],
-    de5a10k:  [5000, 10000],
-    acima10k: [10000, Infinity]
+    ate3k:    [0, 3000],
+    de3a6k:   [3000, 6000],
+    de6a12k:  [6000, 12000],
+    acima12k: [12000, Infinity]
   };
 
   /* Horas/dias por funcionalidade (independente de idioma) */
@@ -102,10 +102,10 @@
         q: 'Qual faixa de investimento você tem em mente?',
         hint: 'Isso não muda a estimativa, só nos ajuda a desenhar o escopo certo para o seu momento.',
         options: [
-          { id: 'ate2k', name: 'Até R$ 2.000', desc: 'Escopo enxuto, foco no essencial' },
-          { id: 'de2a5k', name: 'R$ 2.000 – 5.000', desc: 'Projeto completo com folga' },
-          { id: 'de5a10k', name: 'R$ 5.000 – 10.000', desc: 'Escopo robusto, mais recursos' },
-          { id: 'acima10k', name: 'Acima de R$ 10.000', desc: 'Projeto de grande porte' },
+          { id: 'ate3k', name: 'Até R$ 3.000', desc: 'Escopo enxuto, foco no essencial' },
+          { id: 'de3a6k', name: 'R$ 3.000 – 6.000', desc: 'Projeto completo com folga' },
+          { id: 'de6a12k', name: 'R$ 6.000 – 12.000', desc: 'Escopo robusto, mais recursos' },
+          { id: 'acima12k', name: 'Acima de R$ 12.000', desc: 'Projeto de grande porte' },
           { id: 'naosei', name: 'Ainda não sei', desc: 'Quero entender as opções primeiro' }
         ]
       },
@@ -168,7 +168,7 @@
         q: 'Para quando você precisa?',
         hint: 'O prazo influencia o formato da equipe.',
         options: [
-          { id: 'urgente', name: 'É pra ontem', desc: 'Prioridade máxima na agenda (+20%)' },
+          { id: 'urgente', name: 'É pra ontem', desc: 'Prioridade máxima na agenda (+35%)' },
           { id: 'normal', name: '1–2 meses', desc: 'Ritmo acelerado' },
           { id: 'medio', name: '2–4 meses', desc: 'Ritmo confortável' },
           { id: 'flexivel', name: 'Flexível', desc: 'Qualidade acima de pressa' }
@@ -220,10 +220,10 @@
         q: 'What investment range do you have in mind?',
         hint: 'This does not change the estimate, it just helps us shape the right scope for where you are now.',
         options: [
-          { id: 'ate2k', name: 'Up to R$ 2,000', desc: 'Lean scope, focused on the essentials' },
-          { id: 'de2a5k', name: 'R$ 2,000 – 5,000', desc: 'A complete project with room to breathe' },
-          { id: 'de5a10k', name: 'R$ 5,000 – 10,000', desc: 'Robust scope, more capabilities' },
-          { id: 'acima10k', name: 'Above R$ 10,000', desc: 'Large-scale project' },
+          { id: 'ate3k', name: 'Up to R$ 3,000', desc: 'Lean scope, focused on the essentials' },
+          { id: 'de3a6k', name: 'R$ 3,000 – 6,000', desc: 'A complete project with room to breathe' },
+          { id: 'de6a12k', name: 'R$ 6,000 – 12,000', desc: 'Robust scope, more capabilities' },
+          { id: 'acima12k', name: 'Above R$ 12,000', desc: 'Large-scale project' },
           { id: 'naosei', name: 'Not sure yet', desc: 'I want to understand the options first' }
         ]
       },
@@ -286,7 +286,7 @@
         q: 'When do you need it?',
         hint: 'The timeline shapes the team setup.',
         options: [
-          { id: 'urgente', name: 'Yesterday', desc: 'Top priority in the schedule (+20%)' },
+          { id: 'urgente', name: 'Yesterday', desc: 'Top priority in the schedule (+35%)' },
           { id: 'normal', name: '1–2 months', desc: 'Fast pace' },
           { id: 'medio', name: '2–4 months', desc: 'Comfortable pace' },
           { id: 'flexivel', name: 'Flexible', desc: 'Quality over rush' }
@@ -338,10 +338,10 @@
         q: '¿Qué rango de inversión tienes en mente?',
         hint: 'Esto no cambia la estimación, solo nos ayuda a diseñar el alcance adecuado para tu momento.',
         options: [
-          { id: 'ate2k', name: 'Hasta R$ 2.000', desc: 'Alcance ajustado, foco en lo esencial' },
-          { id: 'de2a5k', name: 'R$ 2.000 – 5.000', desc: 'Proyecto completo con holgura' },
-          { id: 'de5a10k', name: 'R$ 5.000 – 10.000', desc: 'Alcance robusto, más recursos' },
-          { id: 'acima10k', name: 'Más de R$ 10.000', desc: 'Proyecto de gran porte' },
+          { id: 'ate3k', name: 'Hasta R$ 3.000', desc: 'Alcance ajustado, foco en lo esencial' },
+          { id: 'de3a6k', name: 'R$ 3.000 – 6.000', desc: 'Proyecto completo con holgura' },
+          { id: 'de6a12k', name: 'R$ 6.000 – 12.000', desc: 'Alcance robusto, más recursos' },
+          { id: 'acima12k', name: 'Más de R$ 12.000', desc: 'Proyecto de gran porte' },
           { id: 'naosei', name: 'Aún no lo sé', desc: 'Quiero entender las opciones primero' }
         ]
       },
@@ -404,7 +404,7 @@
         q: '¿Para cuándo lo necesitas?',
         hint: 'El plazo define el formato del equipo.',
         options: [
-          { id: 'urgente', name: 'Para ayer', desc: 'Prioridad máxima en la agenda (+20%)' },
+          { id: 'urgente', name: 'Para ayer', desc: 'Prioridad máxima en la agenda (+35%)' },
           { id: 'normal', name: '1–2 meses', desc: 'Ritmo acelerado' },
           { id: 'medio', name: '2–4 meses', desc: 'Ritmo cómodo' },
           { id: 'flexivel', name: 'Flexible', desc: 'Calidad antes que prisa' }

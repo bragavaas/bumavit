@@ -34,6 +34,13 @@ const projects = [
       ['2×', 'Mais reservas online']
     ],
     link: null, // subdomínio yachtday saiu do ar: reative aqui se voltar
+    /* Palco 2.5D no lugar do banner gradiente: mockups com fundo transparente
+       em img/projetos/ (WebP ~150KB no total). O tilt vive em js/page.js. */
+    showcase: {
+      laptop: { src: '../img/projetos/yacht-day-laptop.webp', w: 1600, h: 973 },
+      phone:  { src: '../img/projetos/yacht-day-phone.webp',  w: 960,  h: 1200 },
+      alt: 'Site da Yacht Day exibido em um notebook e em um celular'
+    },
     t: {
       en: {
         tag: 'Yacht booking platform · Toronto, Canada',
@@ -308,6 +315,19 @@ function page(p, next) {
 
   const ndaBadge = p.nda ? `\n        <span class="p-nda" data-reveal>Projeto sob NDA</span>` : '';
 
+  /* Banner: palco 2.5D quando o projeto tem mockups, senão o gradiente padrão.
+     As <img> internas são decorativas (alt vazio); o rótulo fica no contêiner. */
+  const banner = p.showcase ? `
+      <div class="devstage" id="devstage" data-reveal role="img" aria-label="${esc(p.showcase.alt)}">
+        <div class="devstage__scene" id="devstageScene">
+          <img class="devstage__laptop" src="${p.showcase.laptop.src}" alt="" width="${p.showcase.laptop.w}" height="${p.showcase.laptop.h}" decoding="async">
+          <img class="devstage__phone" src="${p.showcase.phone.src}" alt="" width="${p.showcase.phone.w}" height="${p.showcase.phone.h}" decoding="async">
+        </div>
+      </div>` : `
+      <div class="work__media p-banner ${p.mediaClass}" data-reveal>
+        <span class="work__mono">${p.mono}</span>
+      </div>`;
+
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -342,7 +362,7 @@ function page(p, next) {
   </script>
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css?v=5">
+  <link rel="stylesheet" href="../css/style.css?v=6">
 </head>
 <body>
 
@@ -389,9 +409,7 @@ function page(p, next) {
       <dl class="p-meta">${metaItems}
       </dl>
 
-      <div class="work__media p-banner ${p.mediaClass}" data-reveal>
-        <span class="work__mono">${p.mono}</span>
-      </div>
+${banner}
     </section>
 
     <section class="p-section section">
@@ -433,7 +451,7 @@ ${visit}
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
   <script src="../js/i18n.js?v=5" defer></script>
-  <script src="../js/page.js?v=2" defer></script>
+  <script src="../js/page.js?v=3" defer></script>
   <script src="../js/analytics.js" defer></script>
 </body>
 </html>

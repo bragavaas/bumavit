@@ -1711,6 +1711,53 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   aspect-ratio: 16 / 7;
   border-radius: 18px;
 }
+
+/* ---------- Palco 2.5D (mockups de dispositivo nas páginas de projeto) ----------
+   Camadas: notebook ao centro e celular à frente (translateZ maior = parallax
+   maior no tilt). O tilt do ponteiro vive em js/page.js e gira só a .devstage__scene;
+   a flutuação usa a propriedade `translate` para não brigar com o transform. */
+.devstage {
+  position: relative;
+  margin-top: clamp(2.5rem, 7vh, 4.5rem);
+  padding-bottom: clamp(2rem, 5vh, 3.5rem); /* respiro para o celular que vaza para baixo */
+  perspective: 1300px;
+}
+.devstage__scene {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.devstage__laptop {
+  display: block;
+  width: min(78%, 920px);
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 44px 64px rgba(0, 0, 0, 0.55));
+  translate: 0 0;
+  animation: devfloat 9s ease-in-out infinite;
+}
+.devstage__phone {
+  position: absolute;
+  right: 4%;
+  bottom: -10%;
+  width: min(23%, 260px);
+  height: auto;
+  transform: translateZ(70px);
+  filter: drop-shadow(0 32px 48px rgba(0, 0, 0, 0.6));
+  translate: 0 0;
+  animation: devfloat 7s ease-in-out 0.8s infinite reverse;
+}
+@keyframes devfloat {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -14px; }
+}
+.reduced-motion .devstage__laptop,
+.reduced-motion .devstage__phone { animation: none; }
+@media (max-width: 720px) {
+  .devstage { perspective: none; padding-bottom: 3rem; }
+  .devstage__laptop { width: 96%; }
+  .devstage__phone { width: 30%; right: 0; bottom: -12%; transform: none; }
+}
 .p-section {
   display: grid;
   grid-template-columns: 1fr 2fr;

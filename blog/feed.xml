@@ -6,7 +6,15 @@
     <atom:link href="https://bumavit.com.br/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Insights sobre desenvolvimento web, SEO, performance e geração de leads.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 27 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Meu site não gera clientes: como descobrir o motivo</title>
+      <link>https://bumavit.com.br/blog/meu-site-nao-gera-clientes/</link>
+      <guid>https://bumavit.com.br/blog/meu-site-nao-gera-clientes/</guid>
+      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Quatro causas, em ordem de probabilidade -- e como testar cada uma em menos de dez minutos sem precisar de ferramenta paga.</description>
+      <category>Negócios</category>
+    </item>
     <item>
       <title>O que perguntar antes de contratar uma agência de sites: 12 perguntas</title>
       <link>https://bumavit.com.br/blog/perguntas-antes-de-contratar-agencia-de-sites/</link>

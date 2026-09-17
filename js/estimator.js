@@ -187,6 +187,7 @@
         under: 'Abaixo da faixa que você indicou: sobra espaço até para ampliar o escopo, se fizer sentido.'
       },
       disclaimer: 'Estimativa automática para referência. A proposta final, com escopo e valores fechados, sai depois de uma conversa gratuita de descoberta.',
+      privacyNote: 'Seus dados são usados apenas para responder esta estimativa, conforme a <a href="/privacidade.html">Política de Privacidade</a>.',
       ctaWhats: 'Enviar pelo WhatsApp',
       ctaMail: 'Enviar por e-mail',
       restart: 'Recomeçar',
@@ -305,6 +306,7 @@
         under: 'Below the range you indicated: there is even room to expand the scope, if it makes sense.'
       },
       disclaimer: 'Automatic estimate for reference only. The final proposal, with fixed scope and pricing, comes after a free discovery call.',
+      privacyNote: 'Your data is used only to answer this estimate, per our <a href="/privacidade.html">Privacy Policy</a>.',
       ctaWhats: 'Send via WhatsApp',
       ctaMail: 'Send by e-mail',
       restart: 'Start over',
@@ -423,6 +425,7 @@
         under: 'Por debajo del rango que indicaste: incluso hay margen para ampliar el alcance, si tiene sentido.'
       },
       disclaimer: 'Estimación automática solo de referencia. La propuesta final, con alcance y valores cerrados, llega después de una llamada de descubrimiento gratuita.',
+      privacyNote: 'Tus datos se usan solo para responder esta estimación, según nuestra <a href="/privacidade.html">Política de Privacidad</a>.',
       ctaWhats: 'Enviar por WhatsApp',
       ctaMail: 'Enviar por correo',
       restart: 'Empezar de nuevo',
@@ -660,6 +663,7 @@
         (fit ? '<p class="est__fit est__fit--' + fit + '">' + t.budgetFit[fit] + '</p>' : '') +
         '<ul class="est__summary">' + chips.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' +
         '<p class="est__disclaimer">' + t.disclaimer + '</p>' +
+        '<p class="est__privacy">' + t.privacyNote + '</p>' +
         '<div class="est__ctas">' +
         '<a class="btn-pill btn-pill--accent" href="' + waHref + '" target="_blank" rel="noopener" data-hover><span>' + t.ctaWhats + '</span></a>' +
         '<a class="btn-pill" href="' + mailHref + '" data-hover><span>' + t.ctaMail + '</span></a>' +

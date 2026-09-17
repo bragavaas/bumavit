@@ -1614,8 +1614,29 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   color: var(--muted);
   font-size: 0.85rem;
   max-width: 48ch;
+  margin: 0 auto 0.8rem;
+}
+/* Aviso de privacidade (LGPD): discreto, mas sempre visível junto ao resultado
+   e ao formulário — é onde o dado pessoal é efetivamente enviado. */
+.est__privacy,
+.lead__privacy {
+  color: var(--muted);
+  font-size: 0.78rem;
+  max-width: 52ch;
   margin: 0 auto 2rem;
 }
+.lead__privacy { margin: 1rem 0 0; }
+.est__privacy a,
+.lead__privacy a,
+.footer__privacy {
+  color: var(--paper);
+  border-bottom: 1px solid var(--accent);
+  transition: color 0.3s;
+}
+.est__privacy a:hover,
+.lead__privacy a:hover,
+.footer__privacy:hover { color: var(--accent); }
+.footer__privacy { font-size: 0.85rem; }
 .est__ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
 .est__restart {
   display: inline-block;

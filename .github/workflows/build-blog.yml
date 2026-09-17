@@ -6,6 +6,12 @@ on:
       - main
     paths:
       - 'posts/**'
+  # Roda todo dia para publicar posts cuja `date` (frontmatter) chegou —
+  # o build ignora posts com data futura, então o push do fonte pode
+  # acontecer antes da data de publicação sem publicar cedo.
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write

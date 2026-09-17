@@ -185,6 +185,10 @@ const posts = readdirSync(join(root, 'posts'))
   /* `draft: true` deixa o texto no repositorio sem publicar: o post nao vira
      HTML, nao entra na listagem, no RSS nem no sitemap. Tirar a linha publica. */
   .filter((p) => String(p.draft).toLowerCase() !== 'true')
+  /* Post com `date` futura tambem fica fora do build: a fonte pode ser
+     mergeada antes da data (fluxo dos PRs "[PUBLICAR dd/mm]") sem publicar
+     cedo. O workflow build-blog.yml roda diariamente e publica quando chega. */
+  .filter((p) => p.date <= new Date().toISOString().slice(0, 10))
   .sort((a, b) => (a.date < b.date ? 1 : -1));
 
 /* Um slug duplicado sobrescreveria silenciosamente o HTML do outro post. */

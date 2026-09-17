@@ -34,6 +34,13 @@ const projects = [
       ['2×', 'Mais reservas online']
     ],
     link: null, // subdomínio yachtday saiu do ar: reative aqui se voltar
+    /* Palco 2.5D no lugar do banner gradiente: mockups com fundo transparente
+       em img/projetos/ (WebP ~150KB no total). O tilt vive em js/page.js. */
+    showcase: {
+      laptop: { src: '../img/projetos/yacht-day-laptop.webp', w: 1600, h: 973 },
+      phone:  { src: '../img/projetos/yacht-day-phone.webp',  w: 960,  h: 1200 },
+      alt: 'Site da Yacht Day exibido em um notebook e em um celular'
+    },
     t: {
       en: {
         tag: 'Yacht booking platform · Toronto, Canada',
@@ -308,6 +315,19 @@ function page(p, next) {
 
   const ndaBadge = p.nda ? `\n        <span class="p-nda" data-reveal>Projeto sob NDA</span>` : '';
 
+  /* Banner: palco 2.5D quando o projeto tem mockups, senão o gradiente padrão.
+     As <img> internas são decorativas (alt vazio); o rótulo fica no contêiner. */
+  const banner = p.showcase ? `
+      <div class="devstage" id="devstage" data-reveal role="img" aria-label="${esc(p.showcase.alt)}">
+        <div class="devstage__scene" id="devstageScene">
+          <img class="devstage__laptop" src="${p.showcase.laptop.src}" alt="" width="${p.showcase.laptop.w}" height="${p.showcase.laptop.h}" decoding="async">
+          <img class="devstage__phone" src="${p.showcase.phone.src}" alt="" width="${p.showcase.phone.w}" height="${p.showcase.phone.h}" decoding="async">
+        </div>
+      </div>` : `
+      <div class="work__media p-banner ${p.mediaClass}" data-reveal>
+        <span class="work__mono">${p.mono}</span>
+      </div>`;
+
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -342,7 +362,7 @@ function page(p, next) {
   </script>
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=6">
 </head>
 <body>
 
@@ -352,27 +372,27 @@ function page(p, next) {
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
   <header class="nav is-scrolled" id="nav">
-    <a href="../index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
+    <a href="/" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
     <nav class="nav__links" aria-label="Navegação principal">
-      <a href="../index.html#estudio" data-hover>Estúdio</a>
-      <a href="../index.html#servicos" data-hover>Serviços</a>
-      <a href="../index.html#projetos" data-hover>Projetos</a>
-      <a href="../index.html#processo" data-hover>Processo</a>
+      <a href="/#estudio" data-hover>Estúdio</a>
+      <a href="/#servicos" data-hover>Serviços</a>
+      <a href="/#projetos" data-hover>Projetos</a>
+      <a href="/#processo" data-hover>Processo</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
       <span></span><span></span>
     </button>
   </header>
 
-  <a href="../index.html#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
+  <a href="/#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
-      <a href="../index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
-      <a href="../index.html#servicos"><span class="menu__index">02</span>Serviços</a>
-      <a href="../index.html#projetos"><span class="menu__index">03</span>Projetos</a>
-      <a href="../index.html#processo"><span class="menu__index">04</span>Processo</a>
-      <a href="../index.html#contato"><span class="menu__index">05</span>Contato</a>
+      <a href="/#estudio"><span class="menu__index">01</span>Estúdio</a>
+      <a href="/#servicos"><span class="menu__index">02</span>Serviços</a>
+      <a href="/#projetos"><span class="menu__index">03</span>Projetos</a>
+      <a href="/#processo"><span class="menu__index">04</span>Processo</a>
+      <a href="/#contato"><span class="menu__index">05</span>Contato</a>
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
@@ -389,9 +409,7 @@ function page(p, next) {
       <dl class="p-meta">${metaItems}
       </dl>
 
-      <div class="work__media p-banner ${p.mediaClass}" data-reveal>
-        <span class="work__mono">${p.mono}</span>
-      </div>
+${banner}
     </section>
 
     <section class="p-section section">
@@ -423,7 +441,7 @@ ${visit}
   <footer class="footer">
     <div class="footer__bottom" style="border-top:0; margin-top:0;">
       <p>© 2026 Bumavit. Todos os direitos reservados.</p>
-      <a href="../index.html#projetos" data-hover>← Todos os projetos</a>
+      <a href="/#projetos" data-hover>← Todos os projetos</a>
       <button class="footer__top-btn" id="backToTop" data-hover>Voltar ao topo ↑</button>
     </div>
   </footer>
@@ -432,8 +450,9 @@ ${visit}
   <script src="../vendor/gsap.min.js"></script>
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
-  <script src="../js/i18n.js?v=4" defer></script>
-  <script src="../js/page.js?v=2" defer></script>
+  <script src="../js/i18n.js?v=5" defer></script>
+  <script src="../js/page.js?v=3" defer></script>
+  <script src="../js/analytics.js" defer></script>
 </body>
 </html>
 `;

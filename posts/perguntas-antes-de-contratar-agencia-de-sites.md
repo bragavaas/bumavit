@@ -51,7 +51,7 @@ Uma boa resposta traz um número, define o que conta como uma rodada e diz quant
 
 **Sinal de alerta:** "revisões ilimitadas". Soa generoso e quase nunca é. Ou o preço já embutiu o desgaste, ou o projeto simplesmente não tem um ponto de encerramento, e projeto sem fim é projeto que você paga duas vezes.
 
-Para ter uma referência do que "incluso" significa na prática, vale abrir um projeto pronto e contar as páginas: veja [um portal institucional construído pela Bumavit](https://bumavit.com.br/projetos/cocban.html).
+Para ter uma referência do que "incluso" significa na prática, vale abrir um projeto pronto e contar as páginas: veja [o portal que a Bumavit construiu para a Cocban](https://bumavit.com.br/projetos/cocban.html).
 
 E se você ainda não tem ideia da ordem de grandeza do projeto (é difícil julgar escopo sem isso), dá para [montar uma estimativa respondendo três perguntas](https://bumavit.com.br/estimador.html) antes da primeira reunião.
 

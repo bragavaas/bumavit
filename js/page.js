@@ -75,6 +75,25 @@
     });
   }
 
+  /* ---- Palco 2.5D: tilt dos mockups seguindo o ponteiro (só desktop) ----
+     Gira a cena inteira; o celular tem translateZ no CSS, então ganha um
+     parallax maior de graça. No mobile fica só a flutuação do CSS. */
+  var devScene = document.getElementById('devstageScene');
+  if (devScene && finePointer) {
+    var devStage = document.getElementById('devstage');
+    var rxTo = gsap.quickTo(devScene, 'rotationX', { duration: 0.9, ease: 'power3.out' });
+    var ryTo = gsap.quickTo(devScene, 'rotationY', { duration: 0.9, ease: 'power3.out' });
+    gsap.set(devScene, { transformPerspective: 1300 });
+    devStage.addEventListener('pointermove', function (e) {
+      var r = devStage.getBoundingClientRect();
+      var nx = (e.clientX - r.left) / r.width - 0.5;  // -0.5 … 0.5
+      var ny = (e.clientY - r.top) / r.height - 0.5;
+      ryTo(nx * 14);
+      rxTo(ny * -10);
+    });
+    devStage.addEventListener('pointerleave', function () { rxTo(0); ryTo(0); });
+  }
+
   /* ---- Nav: esconder ao rolar para baixo ---- */
   var nav = document.getElementById('nav');
   ScrollTrigger.create({

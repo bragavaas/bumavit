@@ -48,6 +48,13 @@ const CATS = {
   'Negócios':    { slug: 'negocios',    en: 'Business',    es: 'Negocios' }
 };
 
+/* Cores para os cards gerados por post (equivalem aos gradientes do .bcov--*). */
+const CAT_CARD_COLORS = {
+  seo:         { grad: '#04223a', accent: '#0ea5e9' },
+  performance: { grad: '#2c1007', accent: '#f97316' },
+  negocios:    { grad: '#1e0a3d', accent: '#a855f7' }
+};
+
 /* ---------- Frontmatter + Markdown mínimos (zero dependências) ---------- */
 function parseFrontmatter(raw) {
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
@@ -105,6 +112,56 @@ function readingTime(html) {
   return Math.max(1, Math.round(words / 200));
 }
 
+/* ---------- Card 4:3 por post (1200x900 SVG) ---------- */
+function wrapText(text, maxChars) {
+  const words = text.split(' ');
+  const lines = [];
+  let cur = '';
+  for (const w of words) {
+    const test = cur ? cur + ' ' + w : w;
+    if (test.length > maxChars) { if (cur) lines.push(cur); cur = w; }
+    else cur = test;
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+
+function svgEsc(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function generatePostCard(p) {
+  const W = 1200, H = 900, PX = 80;
+  const usableW = W - 2 * PX;
+  const len = p.title.length;
+  const fs = len <= 42 ? 72 : len <= 68 ? 56 : 44;
+  const lh = Math.round(fs * 1.3);
+  const cpl = Math.floor(usableW / (fs * 0.52));
+  const lines = wrapText(p.title, cpl);
+  const totalH = lines.length * lh;
+  /* Centraliza o bloco de titulo entre a legenda da categoria (y~150) e o rodape (y~840). */
+  const firstY = Math.round(490 - totalH / 2 + fs);
+  const tspans = lines.map((l, i) =>
+    `<tspan x="${PX}" dy="${i === 0 ? 0 : lh}">${svgEsc(l)}</tspan>`
+  ).join('');
+  const { grad, accent } = CAT_CARD_COLORS[p.catSlug] || CAT_CARD_COLORS.negocios;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="${grad}"/>
+      <stop offset="100%" stop-color="#0b0b0d"/>
+    </linearGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="#0b0b0d"/>
+  <rect width="${W}" height="560" fill="url(#g)" opacity="0.45"/>
+  <rect x="${PX}" y="68" width="44" height="4" fill="${accent}" rx="2"/>
+  <text x="${PX}" y="112" fill="${accent}" font-family="Arial Black,Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="5" opacity="0.9">${svgEsc(p.catLabel.toUpperCase())}</text>
+  <text x="${PX}" y="${firstY}" fill="#efefef" font-family="Arial Black,Arial,sans-serif" font-size="${fs}" font-weight="900">${tspans}</text>
+  <text x="${W - PX}" y="${H - 30}" fill="#16161e" font-family="Arial Black,Arial,sans-serif" font-size="240" font-weight="900" text-anchor="end">B</text>
+  <text x="${PX}" y="${H - 52}" fill="#363648" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">bumavit.com.br</text>
+</svg>`;
+}
+
 /* ---------- Carrega os posts ---------- */
 const posts = readdirSync(join(root, 'posts'))
   /* Arquivos de apoio da pasta: `_TEMPLATE.md` e o README que o GitHub
@@ -128,6 +185,10 @@ const posts = readdirSync(join(root, 'posts'))
   /* `draft: true` deixa o texto no repositorio sem publicar: o post nao vira
      HTML, nao entra na listagem, no RSS nem no sitemap. Tirar a linha publica. */
   .filter((p) => String(p.draft).toLowerCase() !== 'true')
+  /* Post com `date` futura tambem fica fora do build: a fonte pode ser
+     mergeada antes da data (fluxo dos PRs "[PUBLICAR dd/mm]") sem publicar
+     cedo. O workflow build-blog.yml roda diariamente e publica quando chega. */
+  .filter((p) => p.date <= new Date().toISOString().slice(0, 10))
   .sort((a, b) => (a.date < b.date ? 1 : -1));
 
 /* Um slug duplicado sobrescreveria silenciosamente o HTML do outro post. */
@@ -142,6 +203,18 @@ for (const p of posts) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(p.date)) throw new Error(`posts/${p.slug}: date deve ser AAAA-MM-DD`);
   if (!CATS[p.category]) throw new Error(`posts/${p.slug}: category "${p.category}" nao existe (use: ${Object.keys(CATS).join(', ')})`);
 }
+
+/* Gera card 4:3 (1200x900 SVG) para posts sem imagem explicita no frontmatter.
+   Posts com `image:` no frontmatter usam essa imagem em vez do card gerado. */
+mkdirSync(join(root, 'images', 'posts'), { recursive: true });
+for (const p of posts) {
+  if (!p.image) {
+    writeFileSync(join(root, 'images', 'posts', `${p.slug}-card.svg`), generatePostCard(p), 'utf8');
+    console.log(`ok: images/posts/${p.slug}-card.svg`);
+  }
+}
+/* URL de imagem efetiva por post: imagem do frontmatter, ou card gerado. */
+const cardUrl = (p) => p.image ? SITE + p.image : `${SITE}/images/posts/${p.slug}-card.svg`;
 
 /* ---------- Shell compartilhado (nav/fab/menu/footer do site) ---------- */
 function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website', ogImage = `${SITE}/og.png`, base = '../', blogHref = './' }) {
@@ -180,7 +253,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   </script>
   <link rel="preload" href="${base}fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="${base}fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="${base}css/style.css">${extraHead}
+  <link rel="stylesheet" href="${base}css/style.css?v=6">${extraHead}
 </head>
 <body>
 
@@ -190,11 +263,11 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
   <header class="nav is-scrolled" id="nav">
-    <a href="${base}index.html" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
+    <a href="/" class="nav__logo" data-hover>BUMAVIT<span class="nav__logo-r">®</span></a>
     <nav class="nav__links" aria-label="Navegação principal">
-      <a href="${base}index.html#estudio" data-hover>Estúdio</a>
-      <a href="${base}index.html#servicos" data-hover>Serviços</a>
-      <a href="${base}index.html#projetos" data-hover>Projetos</a>
+      <a href="/#estudio" data-hover>Estúdio</a>
+      <a href="/#servicos" data-hover>Serviços</a>
+      <a href="/#projetos" data-hover>Projetos</a>
       <a href="${blogHref}" data-hover>Blog</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
@@ -202,15 +275,15 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
     </button>
   </header>
 
-  <a href="${base}index.html#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
+  <a href="/#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
-      <a href="${base}index.html#estudio"><span class="menu__index">01</span>Estúdio</a>
-      <a href="${base}index.html#servicos"><span class="menu__index">02</span>Serviços</a>
-      <a href="${base}index.html#projetos"><span class="menu__index">03</span>Projetos</a>
+      <a href="/#estudio"><span class="menu__index">01</span>Estúdio</a>
+      <a href="/#servicos"><span class="menu__index">02</span>Serviços</a>
+      <a href="/#projetos"><span class="menu__index">03</span>Projetos</a>
       <a href="${blogHref}"><span class="menu__index">04</span>Blog</a>
-      <a href="${base}index.html#contato"><span class="menu__index">05</span>Contato</a>
+      <a href="/#contato"><span class="menu__index">05</span>Contato</a>
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
@@ -225,7 +298,7 @@ ${content}
   <footer class="footer">
     <div class="footer__bottom" style="border-top:0; margin-top:0;">
       <p>© 2026 Bumavit. Todos os direitos reservados.</p>
-      <a href="${base}index.html" data-hover>← Voltar ao início</a>
+      <a href="/" data-hover>← Voltar ao início</a>
       <button class="footer__top-btn" id="backToTop" data-hover>Voltar ao topo ↑</button>
     </div>
   </footer>
@@ -234,8 +307,9 @@ ${content}
   <script src="${base}vendor/gsap.min.js"></script>
   <script src="${base}vendor/ScrollTrigger.min.js"></script>
   <script src="${base}vendor/lenis.min.js"></script>
-  <script src="${base}js/i18n.js?v=4" defer></script>
-  <script src="${base}js/page.js?v=2" defer></script>
+  <script src="${base}js/i18n.js?v=5" defer></script>
+  <script src="${base}js/page.js?v=3" defer></script>
+  <script src="${base}js/analytics.js" defer></script>
 </body>
 </html>
 `;
@@ -449,7 +523,7 @@ posts.forEach((p, i) => {
         "articleSection": ${JSON.stringify(p.catLabel)},
         "timeRequired": "PT${p.minutes}M",
         "dateModified": "${p.updated || p.date}",
-        "image": "${p.image ? SITE + p.image : SITE + '/og.png'}",
+        "image": "${cardUrl(p)}",
         "isPartOf": { "@id": "${BLOG_URL}#blog" },
         "author": { "@id": "${SITE}/#org" },
         "publisher": { "@id": "${SITE}/#org" },
@@ -480,8 +554,8 @@ posts.forEach((p, i) => {
       <h1 class="p-hero__title bpost__title" data-split>${p.title}</h1>
       <p class="bpost__meta" data-reveal>${p.dateLabel} · <span class="bmin" data-min="${p.minutes}">${p.minutes} min de leitura</span> · Bumavit</p>
 
-      <div class="bcov bcov--${p.catSlug} bpost__cover" data-reveal>
-        <span class="bcov__mono" aria-hidden="true">${p.catLabel.charAt(0)}</span>
+      <div class="bcov bcov--${p.catSlug} bpost__cover bpost__cover--has-img" data-reveal>
+        <img src="../../images/posts/${p.slug}-card.svg" alt="${p.title.replace(/"/g, '&quot;')}" width="1200" height="900" class="bpost__card-img" loading="lazy">
       </div>
 
       <div class="article__body bpost__body" data-reveal>
@@ -497,7 +571,7 @@ ${p.html}
 
       <div class="article__cta" data-reveal>
         <h3>Quer aplicar isso no seu negócio?</h3>
-        <a class="btn-pill btn-pill--accent" href="../../index.html#contato" data-hover><span>Fale com a Bumavit</span></a>
+        <a class="btn-pill btn-pill--accent" href="/#contato" data-hover><span>Fale com a Bumavit</span></a>
       </div>
 
       <nav class="bnav" aria-label="Navegação entre posts">
@@ -548,7 +622,7 @@ ${readAlso.map((r) => card(r, '../')).join('\n')}
     desc: p.excerpt,
     canonical: url,
     ogType: 'article',
-    ogImage: p.image ? SITE + p.image : `${SITE}/og.png`,
+    ogImage: cardUrl(p),
     extraHead: ld,
     pageI18n: postI18n,
     content,

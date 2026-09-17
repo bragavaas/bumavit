@@ -1,7 +1,7 @@
 ---
 title: Meu site não gera clientes: como descobrir o motivo
 slug: meu-site-nao-gera-clientes
-date: 2026-10-01
+date: 2026-09-17
 category: Negócios
 excerpt: Quatro causas, em ordem de probabilidade -- e como testar cada uma em menos de dez minutos sem precisar de ferramenta paga.
 keyword: meu site não gera clientes o que fazer
@@ -73,4 +73,4 @@ Diagnóstico 3 pode ser resolvido com pequenas mudanças de conteúdo e estrutur
 
 Se depois de passar pelos quatro diagnósticos o problema ficou claro, o próximo passo é decidir o que resolver primeiro. Você pode conversar com quem fez o site original, ou pode trazer outra empresa para avaliar.
 
-Se quiser um ponto de partida para avaliar o que seria reconstruir o site ou parte dele, o estimador da Bumavit devolve uma estimativa com base em três perguntas: [monte o projeto](https://bumavit.com.br/estimador.html). Você não precisa ter decidido nada para usar a ferramenta.
+Se quiser um ponto de partida para avaliar o que seria reconstruir o site ou parte dele, o estimador da Bumavit devolve uma estimativa com base em algumas perguntas rápidas: [monte o projeto](https://bumavit.com.br/estimador.html). Você não precisa ter decidido nada para usar a ferramenta.

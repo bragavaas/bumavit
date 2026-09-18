@@ -38,7 +38,10 @@ const BUSINESS = {
   email: 'contato@bumavit.com.br',
   region: 'RJ',
   country: 'BR',
-  sameAs: ['https://br.linkedin.com/company/bumavit']
+  sameAs: [
+    'https://br.linkedin.com/company/bumavit',
+    'https://www.instagram.com/bumavit/'
+  ]
 };
 
 /* ---------- Categorias (cores/gradientes em css/style.css: .bcov--*) ---------- */

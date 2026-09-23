@@ -98,8 +98,9 @@
          a janela (60-82% da altura dela) cai no vao entre o CTA e o palco; acima e abaixo e ink. */
       .h2-bg { inset: auto; top: 120px; left: 50%; width: 130%; height: auto; transform: translateX(-50%); }
       .h2-bg img { height: auto; object-fit: unset; object-position: unset; }
-      .h2::before { background: linear-gradient(180deg, rgba(11,11,13,0.70) 0, rgba(11,11,13,0.94) 200px, rgba(11,11,13,0.94) 580px, rgba(11,11,13,0.30) 680px, rgba(11,11,13,0) 740px, rgba(11,11,13,0) 960px, rgba(11,11,13,0.80) 1060px, var(--ink) 1140px); }
-      .h2-stage { margin-top: 300px; } /* janela livre entre o CTA e o palco; px, nao vh, para nao escalar com a altura */
+      .h2::before { background: linear-gradient(180deg, rgba(11,11,13,0.70) 0, rgba(11,11,13,0.94) 200px, rgba(11,11,13,0.94) 580px, rgba(11,11,13,0.30) 680px, rgba(11,11,13,0) 740px, rgba(11,11,13,0) 1010px, rgba(11,11,13,0.80) 1100px, var(--ink) 1170px); }
+      .h2-stage { margin-top: 140px; } /* laptop sobe ate a borda da mesa da foto: montanha acima, base apoiada */
+      .h2-stage .devstage__laptop, .h2-stage .devstage__phone { animation: none; } /* apoiado na mesa nao flutua */ /* janela livre entre o CTA e o palco; px, nao vh, para nao escalar com a altura */
       .h2-stage .devstage__laptop { width: 100%; margin: 0; }
       .h2-nav .btn-pill { display: none; } /* o CTA da hero fica logo abaixo; um pill de duas linhas na nav so atrapalha */
       .h2-grid { grid-template-columns: 1fr; align-items: start; gap: 2.5rem; padding-top: 1rem; }

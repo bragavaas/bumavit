@@ -177,7 +177,8 @@
     --pad-x: 88px; --pad-y: 72px;
     --ink-fg: var(--paper); --ink-fg-70: var(--paper-70); --ink-fg-55: var(--muted); --ink-fg-14: var(--faint);
   }
-  .page[data-format="story"] { height: 1920px; --dy: 285px; }
+  .page[data-format="story"] { height: 1920px; --dy: 220px; } /* eyebrow at y 292, critical zone 355–1435, footer ends at 1500: clear of the 250px top and 400px bottom UI bands (BUMA-56) */
+  .page[data-format="story"] .foot { bottom: 420px; }
   .page[data-format="highlight"] { height: 1080px; background: var(--ink-2); }
 
   .bg, .glow, .grain, .guides { position: absolute; inset: 0; }
@@ -283,7 +284,7 @@
   /* story + sticker: the pill goes away and a 600×160 area at y 1380–1540 stays empty for the link sticker */
   .page[data-format="story"][data-sticker] .critical { justify-content: flex-start; padding-top: 120px; }
   .page[data-format="story"][data-sticker] .pill-row { display: none; }
-  .sticker-zone { display: none; position: absolute; z-index: 20; left: 240px; width: 600px; top: 1380px; height: 160px; border: 2px dashed var(--accent-2); }
+  .sticker-zone { display: none; position: absolute; z-index: 20; left: 240px; width: 600px; top: 1300px; height: 160px; border: 2px dashed var(--accent-2); }
   .page[data-guides][data-format="story"][data-sticker] .sticker-zone { display: block; }
 
   /* ── highlight cover ───────────────────────────────── */
@@ -300,7 +301,7 @@
   .guides .g34 { position: absolute; top: 0; bottom: 0; width: 34px; background: repeating-linear-gradient(45deg, rgba(56,189,248,0.35) 0 4px, transparent 4px 10px); }
   .guides .g34.l { left: 0; } .guides .g34.r { right: 0; }
   .guides .band-ui { position: absolute; left: 0; right: 0; height: 250px; background: repeating-linear-gradient(45deg, rgba(255,90,90,0.45) 0 6px, transparent 6px 14px); }
-  .guides .band-ui.t { top: 0; } .guides .band-ui.b { bottom: 0; }
+  .guides .band-ui.t { top: 0; } .guides .band-ui.b { bottom: 0; height: 400px; }
   .guides .circle { position: absolute; left: 240px; top: 240px; width: 600px; height: 600px; border-radius: 50%; outline: 2px dashed var(--accent-2); }
   .page[data-textless] .top, .page[data-textless] .critical, .page[data-textless] .foot, .page[data-textless] .band { visibility: hidden; }
 </style>
@@ -327,7 +328,7 @@
   {
    "type": "statement",
    "variant": "split",
-   "text": "Do design ao deploy.",
+   "text": "Do design ao lançamento.",
    "sub": "Uma equipe, do início ao fim.",
    "steps": [
     "Descoberta",

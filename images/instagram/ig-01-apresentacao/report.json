@@ -1,6 +1,6 @@
 {
   "slug": "ig-01-apresentacao",
-  "generated": "2026-09-24T17:07:39.192Z",
+  "generated": "2026-09-24T17:40:29.224Z",
   "engine": "templates/ig-slide.html",
   "slides": [
     {
@@ -15,7 +15,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1350"
+      "size": "1080×1350",
+      "jpeg": "ig-01-apresentacao-01.jpg"
     },
     {
       "file": "ig-01-apresentacao-story-01.png",
@@ -29,7 +30,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1920"
+      "size": "1080×1920",
+      "jpeg": "ig-01-apresentacao-story-01.jpg"
     },
     {
       "file": "ig-01-apresentacao-02.png",
@@ -43,7 +45,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1350"
+      "size": "1080×1350",
+      "jpeg": "ig-01-apresentacao-02.jpg"
     },
     {
       "file": "ig-01-apresentacao-03.png",
@@ -57,7 +60,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1350"
+      "size": "1080×1350",
+      "jpeg": "ig-01-apresentacao-03.jpg"
     },
     {
       "file": "ig-01-apresentacao-04.png",
@@ -71,7 +75,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1350"
+      "size": "1080×1350",
+      "jpeg": "ig-01-apresentacao-04.jpg"
     }
   ]
 }

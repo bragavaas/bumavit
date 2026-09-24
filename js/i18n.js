@@ -43,8 +43,6 @@
 
   /* ---------- Dicionário comum + página principal ---------- */
   var faqIcon = '<span class="faq__icon" aria-hidden="true"></span>';
-  var marqueeEN = '<span>Web Development</span><i>✺</i><span>Mobile Apps</span><i>✺</i><span>E-commerce</span><i>✺</i><span>UI/UX Design</span><i>✺</i><span>SEO &amp; Performance</span><i>✺</i><span>Automation</span><i>✺</i>';
-  var marqueeES = '<span>Desarrollo Web</span><i>✺</i><span>Aplicaciones</span><i>✺</i><span>E-commerce</span><i>✺</i><span>Diseño UI/UX</span><i>✺</i><span>SEO y Performance</span><i>✺</i><span>Automatización</span><i>✺</i>';
 
   var DICT = {
     en: {
@@ -77,14 +75,26 @@
       '[data-cursor="Ver projeto"]': { attr: { 'data-cursor': 'View project' } },
 
       /* --- hero --- */
-      '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Brazil' },
-      '.hero__line:nth-child(1) .hero__line-inner': 'WE CRAFT',
-      '.hero__line:nth-child(2) .hero__line-inner': 'DIGITAL',
-      '.hero__line:nth-child(3) .hero__line-inner': { html: 'EXPERIENCES<em class="hero__asterisk">*</em>' },
-      '.hero__sub': '*From idea to deploy: we design and build websites, apps and platforms tailor-made for brands that want to grow.',
-
-      /* --- marquee --- */
-      '.marquee__group': { html: marqueeEN },
+      '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Rio de Janeiro' },
+      '.h2-title': { html: 'You need a website and want to <em>hire the right people</em>.' },
+      '.h2-sub': 'At Bumavit, you know the price, what’s included and who looks after the site afterwards, before you sign. Custom websites, online stores and apps.',
+      '.h2-cta .btn-pill span': 'Talk about my project →',
+      '.h2-cta__note': { html: '<b>We reply within 24h.</b> No bots, no queue.' },
+      '.h2-alt': { html: 'Want a price range first? <a href="estimador.html" data-hover>Try the estimator →</a>' },
+      '.h2-proof': { attr: { 'aria-label': '+120% search traffic in 6 months, Yacht Day, Toronto. See the project' } },
+      '.h2-proof__desc': 'search traffic in 6 months',
+      '#devstage': { attr: { 'aria-label': 'Yacht Day website shown on a laptop and a phone' } },
+      '.h2-strip__item:nth-child(1) .h2-strip__t': 'How much will it cost?',
+      '.h2-strip__item:nth-child(1) .h2-strip__d': 'A price and timeline range from the estimator, before any meeting.',
+      '.h2-strip__item:nth-child(2) .h2-strip__t': 'What’s included?',
+      '.h2-strip__item:nth-child(2) .h2-strip__d': 'A written proposal: what’s in and what’s out.',
+      '.h2-strip__item:nth-child(3) .h2-strip__t': 'Who looks after it later?',
+      '.h2-strip__item:nth-child(3) .h2-strip__d': 'The people who built it. Support and maintenance once it’s live.',
+      '.h2-strip__item:nth-child(4) .h2-strip__t': 'Will it show up on Google?',
+      '.h2-strip__item:nth-child(4) .h2-strip__d': 'Nobody can promise rankings. We deliver it fast on mobile and easy for Google to read.',
+      '.h2-strip__trust span:nth-child(1)': 'You talk to the people who build it',
+      '.h2-strip__trust span:nth-child(2)': 'Free first conversation',
+      '.h2-strip__trust span:nth-child(3)': 'Proposal within 48h',
 
       /* --- estúdio / manifesto --- */
       '#estudio .section__label': '( Studio )',
@@ -235,13 +245,26 @@
       '.footer__top-btn': 'Volver arriba ↑',
       '[data-cursor="Ver projeto"]': { attr: { 'data-cursor': 'Ver proyecto' } },
 
-      '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Brasil' },
-      '.hero__line:nth-child(1) .hero__line-inner': 'CREAMOS',
-      '.hero__line:nth-child(2) .hero__line-inner': 'EXPERIENCIAS',
-      '.hero__line:nth-child(3) .hero__line-inner': { html: 'DIGITALES<em class="hero__asterisk">*</em>' },
-      '.hero__sub': '*De la idea al deploy: diseñamos y desarrollamos sitios, aplicaciones y plataformas a medida para marcas que quieren crecer.',
-
-      '.marquee__group': { html: marqueeES },
+      '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Rio de Janeiro' },
+      '.h2-title': { html: 'Necesitas un sitio web y <em>no quieres equivocarte</em> al contratar.' },
+      '.h2-sub': 'En Bumavit, antes de firmar, sabes cuánto cuesta, qué incluye y quién se ocupa del sitio después. Sitios web, tiendas online y aplicaciones a medida.',
+      '.h2-cta .btn-pill span': 'Hablar sobre mi proyecto →',
+      '.h2-cta__note': { html: '<b>Respondemos en menos de 24 h.</b> Sin bots, sin esperas.' },
+      '.h2-alt': { html: '¿Prefieres ver un rango de precio antes? <a href="estimador.html" data-hover>Usa el estimador →</a>' },
+      '.h2-proof': { attr: { 'aria-label': '+120% de visitas desde búsquedas en 6 meses, Yacht Day, Toronto. Ver el proyecto' } },
+      '.h2-proof__desc': 'de visitas desde búsquedas en 6 meses',
+      '#devstage': { attr: { 'aria-label': 'Sitio de Yacht Day en una laptop y un celular' } },
+      '.h2-strip__item:nth-child(1) .h2-strip__t': '¿Cuánto cuesta?',
+      '.h2-strip__item:nth-child(1) .h2-strip__d': 'Rango de precio y plazo en el estimador, antes de cualquier reunión.',
+      '.h2-strip__item:nth-child(2) .h2-strip__t': '¿Qué incluye?',
+      '.h2-strip__item:nth-child(2) .h2-strip__d': 'Propuesta por escrito, con lo que entra y lo que no.',
+      '.h2-strip__item:nth-child(3) .h2-strip__t': '¿Quién lo cuida después?',
+      '.h2-strip__item:nth-child(3) .h2-strip__d': 'Quien hizo el sitio. Soporte y mantenimiento con el sitio publicado.',
+      '.h2-strip__item:nth-child(4) .h2-strip__t': '¿Aparecerá en Google?',
+      '.h2-strip__item:nth-child(4) .h2-strip__d': 'Nadie puede garantizar posiciones. Lo entregamos rápido en el celular y fácil de leer para Google.',
+      '.h2-strip__trust span:nth-child(1)': 'Hablas con quien hace el sitio',
+      '.h2-strip__trust span:nth-child(2)': 'Primera conversación gratuita',
+      '.h2-strip__trust span:nth-child(3)': 'Propuesta en 48 h como máximo',
 
       '#estudio .section__label': '( Estudio )',
       '#manifestoText': 'No entregamos solo código. Combinamos ingeniería, diseño y estrategia para construir productos que generan ingresos, marcas que ganan presencia y experiencias que quedan en la memoria.',

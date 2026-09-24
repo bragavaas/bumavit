@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BUMAVIT® · Experiências digitais que movem negócios</title>
-  <meta name="description" content="Bumavit é uma software house brasileira. Projetamos e desenvolvemos sites, aplicativos, e-commerces e estratégias digitais sob medida, da ideia ao deploy.">
-  <meta property="og:title" content="BUMAVIT® · Experiências digitais que movem negócios">
-  <meta property="og:description" content="Software house brasileira: web, mobile, e-commerce e SEO sob medida.">
+  <title>Criação de sites e lojas virtuais sob medida · Bumavit</title>
+  <meta name="description" content="Criação de sites, lojas virtuais e aplicativos sob medida no Rio de Janeiro. Faixa de preço antes da conversa e suporte depois que o site está no ar.">
+  <meta property="og:title" content="Criação de sites e lojas virtuais sob medida · Bumavit">
+  <meta property="og:description" content="Criação de sites, lojas virtuais e aplicativos sob medida no Rio de Janeiro. Faixa de preço antes da conversa e suporte depois que o site está no ar.">
   <meta property="og:site_name" content="BUMAVIT">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
@@ -16,8 +16,8 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://bumavit.com.br/">
-  <meta name="twitter:title" content="BUMAVIT® · Experiências digitais que movem negócios">
-  <meta name="twitter:description" content="Software house brasileira: web, mobile, e-commerce e SEO sob medida.">
+  <meta name="twitter:title" content="Criação de sites e lojas virtuais sob medida · Bumavit">
+  <meta name="twitter:description" content="Criação de sites, lojas virtuais e aplicativos sob medida no Rio de Janeiro. Faixa de preço antes da conversa e suporte depois que o site está no ar.">
   <meta name="twitter:image" content="https://bumavit.com.br/og.png">
   <link rel="canonical" href="https://bumavit.com.br/">
   <meta name="theme-color" content="#0b0b0d">
@@ -31,8 +31,10 @@
         "@id": "https://bumavit.com.br/#org",
         "name": "Bumavit",
         "url": "https://bumavit.com.br/",
-        "description": "Software house brasileira: web, mobile, e-commerce e SEO sob medida.",
+        "description": "Criação de sites, lojas virtuais e aplicativos sob medida no Rio de Janeiro. Faixa de preço antes da conversa e suporte depois que o site está no ar.",
         "email": "contato@bumavit.com.br",
+        "address": { "@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "addressCountry": "BR" },
+        "areaServed": [ { "@type": "Country", "name": "Brasil" }, { "@type": "Country", "name": "Canadá" } ],
         "sameAs": [
           "https://br.linkedin.com/company/bumavit",
           "https://www.instagram.com/bumavit/"
@@ -92,9 +94,10 @@
     gtag('config', 'G-M6TK6TCC9R');
   </script>
 
+  <link rel="preload" href="fonts/ClashDisplay-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body class="is-loading">
 
@@ -155,52 +158,48 @@
   <main id="main">
 
     <!-- ============ HERO ============ -->
-    <section class="hero" id="inicio">
-      <canvas class="hero__canvas" id="webgl" aria-hidden="true"></canvas>
+    <section class="hero h2" id="inicio">
+      <!-- Foto de fundo: o lugar (Rio). Placeholder gerado por IA, a trocar por foto real; o palco com o mockup fica por cima em HTML. -->
+      <picture class="h2-bg" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="img/hero/bg-rio-mobile.jpg" width="768" height="1376">
+        <img src="img/hero/bg-rio.webp" alt="" width="1672" height="941" fetchpriority="high" decoding="async">
+      </picture>
 
-      <div class="hero__content">
-        <p class="hero__eyebrow" data-reveal>
-          <span class="hero__dot"></span> Software house · Brasil
-        </p>
+      <div class="h2-grid">
+        <div class="h2-copy">
+          <p class="hero__eyebrow" data-reveal><span class="hero__dot"></span> Software house · Rio de Janeiro</p>
+          <h1 class="h2-title" data-reveal>Você precisa de um site e <em>não quer errar</em> em quem contratar.</h1>
+          <p class="h2-sub" data-reveal>Aqui na Bumavit, antes de assinar, você sabe quanto custa, o que está incluso e quem cuida do site depois. Sites, lojas virtuais e aplicativos sob medida.</p>
+          <div class="h2-cta" data-reveal>
+            <a href="#contato" class="btn-pill btn-pill--solid" data-hover><span>Falar sobre meu projeto →</span></a>
+            <span class="h2-cta__note"><b>Resposta em até 24h.</b> Sem robô, sem fila.</span>
+          </div>
+          <p class="h2-alt" data-reveal>Prefere ver uma faixa de preço antes? <a href="estimador.html" data-hover>Use o estimador →</a></p>
+        </div>
 
-        <h1 class="hero__title">
-          <span class="hero__line"><span class="hero__line-inner">CRIAMOS</span></span>
-          <span class="hero__line hero__line--outline"><span class="hero__line-inner">EXPERIÊNCIAS</span></span>
-          <span class="hero__line"><span class="hero__line-inner">DIGITAIS<em class="hero__asterisk">*</em></span></span>
-        </h1>
-
-        <div class="hero__bottom">
-          <p class="hero__sub" data-reveal>*Da ideia ao deploy: projetamos e desenvolvemos sites, aplicativos e plataformas sob medida para marcas que querem crescer.</p>
+        <div class="h2-stage" data-reveal>
+          <a class="h2-proof" href="projetos/yacht-day.html" data-hover aria-label="+120% de visitas pela busca em 6 meses, Yacht Day, Toronto. Ver o projeto">
+            <span class="h2-proof__num">+120%</span>
+            <span class="h2-proof__desc">de visitas pela busca em 6 meses</span>
+            <span class="h2-proof__who">Yacht Day · Toronto · 2024</span>
+          </a>
+          <div class="devstage" id="devstage" role="img" aria-label="Site da Yacht Day exibido em um notebook e em um celular">
+            <div class="devstage__scene" id="devstageScene">
+              <img class="devstage__laptop" src="img/projetos/yacht-day-laptop.webp" alt="" width="1600" height="973" decoding="async">
+              <img class="devstage__phone" src="img/projetos/yacht-day-phone.webp" alt="" width="960" height="1200" decoding="async">
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="hero__scroll" aria-hidden="true">
-        <span>scroll</span>
-        <span class="hero__scroll-line"></span>
+      <div class="h2-strip">
+        <div class="h2-strip__item"><span class="h2-strip__n">01</span><span class="h2-strip__t">Quanto custa?</span><span class="h2-strip__d">Faixa de preço e prazo no estimador, antes de qualquer reunião.</span></div>
+        <div class="h2-strip__item"><span class="h2-strip__n">02</span><span class="h2-strip__t">O que está incluso?</span><span class="h2-strip__d">Proposta por escrito, com o que entra e o que não entra.</span></div>
+        <div class="h2-strip__item"><span class="h2-strip__n">03</span><span class="h2-strip__t">Quem cuida depois?</span><span class="h2-strip__d">Quem fez o site. Suporte e manutenção com ele no ar.</span></div>
+        <div class="h2-strip__item"><span class="h2-strip__n">04</span><span class="h2-strip__t">Vai aparecer no Google?</span><span class="h2-strip__d">Ninguém garante posição. Entregamos rápido no celular e pronto para o Google ler.</span></div>
+        <div class="h2-strip__trust"><span>Você fala com quem faz o site</span><span>Conversa inicial gratuita</span><span>Proposta em até 48h</span></div>
       </div>
     </section>
-
-    <!-- ============ MARQUEE ============ -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track" id="marqueeTrack">
-        <div class="marquee__group">
-          <span>Desenvolvimento Web</span><i>✺</i>
-          <span>Aplicativos</span><i>✺</i>
-          <span>E-commerce</span><i>✺</i>
-          <span>UI/UX Design</span><i>✺</i>
-          <span>SEO &amp; Performance</span><i>✺</i>
-          <span>Automação</span><i>✺</i>
-        </div>
-        <div class="marquee__group">
-          <span>Desenvolvimento Web</span><i>✺</i>
-          <span>Aplicativos</span><i>✺</i>
-          <span>E-commerce</span><i>✺</i>
-          <span>UI/UX Design</span><i>✺</i>
-          <span>SEO &amp; Performance</span><i>✺</i>
-          <span>Automação</span><i>✺</i>
-        </div>
-      </div>
-    </div>
 
     <!-- ============ MANIFESTO / ESTÚDIO ============ -->
     <section class="manifesto section" id="estudio">
@@ -531,9 +530,8 @@
   <script src="vendor/gsap.min.js"></script>
   <script src="vendor/ScrollTrigger.min.js"></script>
   <script src="vendor/lenis.min.js"></script>
-  <script type="module" src="js/scene.js"></script>
-  <script src="js/i18n.js?v=6" defer></script>
-  <script src="js/main.js?v=6" defer></script>
+  <script src="js/i18n.js?v=7" defer></script>
+  <script src="js/main.js?v=7" defer></script>
   <script src="js/analytics.js" defer></script>
 </body>
 </html>

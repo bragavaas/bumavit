@@ -13,7 +13,7 @@
     document.body.classList.remove('is-loading');
     var pre = document.getElementById('preloader');
     if (pre) pre.style.display = 'none';
-    gsap.set('.hero__line-inner, .preloader__char', { y: 0 });
+    gsap.set('.preloader__char', { y: 0 });
     document.querySelectorAll('[data-count]').forEach(function (el) {
       el.textContent = el.dataset.count + (el.dataset.suffix || '');
     });
@@ -64,15 +64,12 @@
   if (manifesto) splitWords(manifesto, false, 'm-word');
 
   /* ============ Preloader → hero intro ============ */
-  gsap.set('.hero__scroll', { opacity: 0 });
-  gsap.set('#fab', { y: 120, opacity: 0 });
 
   var heroIntro = gsap.timeline({ paused: true });
   heroIntro
-    .to('.hero__line-inner', { y: 0, duration: 1.15, ease: 'power4.out', stagger: 0.12 })
-    .to('.hero [data-reveal]', { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12 }, '-=0.7')
-    .to('#fab', { y: 0, opacity: 1, duration: 0.9, ease: 'back.out(1.4)', clearProps: 'all' }, '-=0.6')
-    .to('.hero__scroll', { opacity: 1, duration: 0.8 }, '-=0.4');
+    .to('.h2-copy [data-reveal]', { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.08 })
+    .to('.h2-stage', { opacity: 1, y: 0, duration: 1.1, ease: 'power3.out' }, 0.15)
+    .set('.hero [data-reveal]', { willChange: 'auto' });
 
   var counter = { v: 0 };
   var countEl = document.getElementById('preCount');
@@ -96,6 +93,16 @@
     .to('.preloader__char', { y: '-110%', duration: 0.7, ease: 'power4.in', stagger: 0.04 }, '+=0.15')
     .to('#preloader', { yPercent: -100, duration: 0.9, ease: 'power4.inOut' }, '-=0.25');
 
+  /* ============ FAB: escondido enquanto o hero está na tela (o hero já tem o CTA) ============ */
+  var fab = document.getElementById('fab');
+  if (fab) {
+    fab.classList.add('is-hidden');
+    ScrollTrigger.create({
+      trigger: '.hero', start: 'top top', end: 'bottom 85%',
+      onToggle: function (self) { fab.classList.toggle('is-hidden', self.isActive); }
+    });
+  }
+
   /* ============ Nav: shrink + hide on scroll down ============ */
   var nav = document.getElementById('nav');
   ScrollTrigger.create({
@@ -109,8 +116,23 @@
     }
   });
 
-  /* ============ Marquee ============ */
-  gsap.to('#marqueeTrack', { xPercent: -50, duration: 22, ease: 'none', repeat: -1 });
+  /* ============ Hero: tilt do palco 2.5D seguindo o ponteiro (só desktop) ============
+     Mesmo bloco das páginas de case (js/page.js): gira a cena inteira; o celular
+     tem translateZ no CSS, então ganha um parallax maior de graça. */
+  var devScene = document.getElementById('devstageScene');
+  if (devScene && finePointer) {
+    var devStage = document.getElementById('devstage');
+    var rxTo = gsap.quickTo(devScene, 'rotationX', { duration: 0.9, ease: 'power3.out' });
+    var ryTo = gsap.quickTo(devScene, 'rotationY', { duration: 0.9, ease: 'power3.out' });
+    devStage.addEventListener('pointermove', function (e) {
+      var r = devStage.getBoundingClientRect();
+      var nx = (e.clientX - r.left) / r.width - 0.5;
+      var ny = (e.clientY - r.top) / r.height - 0.5;
+      ryTo(nx * 14);
+      rxTo(ny * -10);
+    });
+    devStage.addEventListener('pointerleave', function () { rxTo(0); ryTo(0); });
+  }
 
   /* ============ Generic reveals (outside hero) ============ */
   document.querySelectorAll('[data-reveal]').forEach(function (el) {

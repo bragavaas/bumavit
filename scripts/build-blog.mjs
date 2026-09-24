@@ -265,7 +265,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   </script>
   <link rel="preload" href="${base}fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="${base}fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="${base}css/style.css?v=8">${extraHead}
+  <link rel="stylesheet" href="${base}css/style.css?v=9">${extraHead}
 </head>
 <body>
 

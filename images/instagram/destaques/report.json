@@ -1,0 +1,49 @@
+{
+  "slug": "destaques",
+  "generated": "2026-09-24T14:31:51.773Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "destaques-projetos.png",
+      "slide": 1,
+      "format": "highlight",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": null,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1080"
+    },
+    {
+      "file": "destaques-como-funciona.png",
+      "slide": 2,
+      "format": "highlight",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": null,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1080"
+    },
+    {
+      "file": "destaques-blog.png",
+      "slide": 3,
+      "format": "highlight",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": null,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1080"
+    }
+  ]
+}

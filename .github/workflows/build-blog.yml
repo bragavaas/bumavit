@@ -43,8 +43,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nenhum arquivo gerado mudou — nada a commitar."
           else
-            git commit -m "chore: rebuild blog HTML [skip ci]
-
-Co-Authored-By: Paperclip <noreply@paperclip.ing>"
+            git commit -m "chore: rebuild blog HTML [skip ci]" -m "Co-Authored-By: Paperclip <noreply@paperclip.ing>"
             git push origin main
           fi

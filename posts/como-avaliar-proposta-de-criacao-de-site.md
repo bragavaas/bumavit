@@ -3,6 +3,7 @@ title: Como avaliar uma proposta de criação de site (e comparar três orçamen
 slug: como-avaliar-proposta-de-criacao-de-site
 date: 2026-09-19
 category: Negócios
+cover: cyan
 excerpt: Três propostas com preços muito diferentes quase nunca descrevem o mesmo projeto. Veja como comparar de verdade.
 keyword: como avaliar proposta de criação de site
 ---

@@ -11,7 +11,7 @@ const projects = [
     slug: 'yacht-day',
     title: 'Yacht Day',
     tag: 'Plataforma de reservas de iates · Toronto, Canadá',
-    mediaClass: 'work__media--yacht',
+    mediaClass: 'cover--cyan',
     mono: 'Y',
     nda: false,
     meta: {
@@ -74,7 +74,7 @@ const projects = [
     slug: 'cocban',
     title: 'COCBAN',
     tag: 'Portal institucional com presença digital completa',
-    mediaClass: 'work__media--cocban',
+    mediaClass: 'cover--rust',
     mono: 'C',
     nda: false,
     meta: {
@@ -130,7 +130,7 @@ const projects = [
     slug: 'fintech',
     title: 'Fintech SaaS',
     tag: 'Dashboard SaaS para fintech em crescimento',
-    mediaClass: 'work__media--fintech',
+    mediaClass: 'cover--ink',
     mono: 'F',
     nda: true,
     meta: {
@@ -186,7 +186,7 @@ const projects = [
     slug: 'ecommerce',
     title: 'E-commerce de moda',
     tag: 'Loja virtual com checkout otimizado para conversão',
-    mediaClass: 'work__media--commerce',
+    mediaClass: 'cover--cyan',
     mono: 'E',
     nda: true,
     meta: {
@@ -364,7 +364,7 @@ function page(p, next) {
   </script>
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css?v=7">
+  <link rel="stylesheet" href="../css/style.css?v=8">
 </head>
 <body>
 

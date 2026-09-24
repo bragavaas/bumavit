@@ -3,6 +3,7 @@ title: Checklist para contratar o desenvolvimento do seu site (sem se arrepender
 slug: checklist-para-contratar-desenvolvimento-de-site
 date: 2026-09-24
 category: Negócios
+cover: cyan
 excerpt: Três fases com os itens que muita gente esquece de confirmar antes de assinar, antes de aprovar o layout e antes de colocar o site no ar.
 keyword: checklist para contratar desenvolvimento de site
 ---

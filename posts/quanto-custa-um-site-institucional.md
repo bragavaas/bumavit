@@ -3,6 +3,7 @@ title: Quanto custa um site institucional em 2026?
 slug: quanto-custa-um-site-institucional
 date: 2026-09-17
 category: Negócios
+cover: cyan
 excerpt: O preço de um site institucional depende de cinco variáveis. Esta página explica o que empurra o custo para cima ou para baixo, com cenários concretos para você chegar à reunião sabendo onde o seu projeto está.
 keyword: quanto custa um site institucional
 ---

@@ -3,6 +3,7 @@ title: Agência ou freelancer para criar seu site? Como decidir
 slug: agencia-ou-freelancer-para-criar-site
 date: 2026-09-22
 category: Negócios
+cover: rust
 excerpt: Quando o freelancer é a escolha certa, quando a agência se paga e a pergunta que quase ninguém faz: quem cuida disso daqui a seis meses?
 keyword: agência ou freelancer para criar site
 ---

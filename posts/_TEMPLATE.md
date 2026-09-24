@@ -3,6 +3,7 @@ title: Título do post, como aparece no H1 e na aba do navegador
 slug: slug-do-post
 date: 2026-09-15
 category: SEO
+cover: cyan
 excerpt: Uma frase e meia que resume o post. Vira a meta description, o texto do card na listagem e a descrição no RSS e no compartilhamento.
 keyword: termo principal que o post persegue
 ---

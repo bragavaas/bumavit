@@ -26,8 +26,10 @@ const BLOG_URL = `${SITE}/blog/`;
 /* Cor de marca lida do proprio design system. O favicon inline precisa de um
    literal, e ja houve divergencia (paginas geradas ficaram no ciano antigo
    depois do rebrand). Lendo o token, regerar o blog sempre reconcilia. */
-const ACCENT = (readFileSync(join(root, 'css', 'style.css'), 'utf8')
-  .match(/--accent:\s*(#[0-9a-fA-F]{3,8})/) || [, '#ff7a29'])[1];
+const STYLE_CSS = readFileSync(join(root, 'css', 'style.css'), 'utf8');
+const cssVar = (name, fallback) =>
+  (STYLE_CSS.match(new RegExp(name + ':\\s*(#[0-9a-fA-F]{3,8})')) || [, fallback])[1];
+const ACCENT = cssVar('--accent', '#ff7a29');
 
 /* NAP real da empresa. Sem endereco de rua: nao temos um publicado e inventar
    um e o erro classico de SEO local (NAP inconsistente). areaServed e
@@ -44,19 +46,22 @@ const BUSINESS = {
   ]
 };
 
-/* ---------- Categorias (cores/gradientes em css/style.css: .bcov--*) ---------- */
+/* ---------- Categorias (rotulo, filtro e traducao; a categoria nao tem cor) ---------- */
 const CATS = {
   'SEO':         { slug: 'seo',         en: 'SEO',         es: 'SEO' },
   'Performance': { slug: 'performance', en: 'Performance', es: 'Performance' },
   'Negócios':    { slug: 'negocios',    en: 'Business',    es: 'Negocios' }
 };
 
-/* Cores para os cards gerados por post (equivalem aos gradientes do .bcov--*). */
-const CAT_CARD_COLORS = {
-  seo:         { grad: '#04223a', accent: '#0ea5e9' },
-  performance: { grad: '#2c1007', accent: '#f97316' },
-  negocios:    { grad: '#1e0a3d', accent: '#a855f7' }
+/* Tinta da capa de cada post (`cover:` no frontmatter): cyan ou rust, alternando na
+   listagem. E ritmo de layout, nunca identifica a categoria. Os stops vem do
+   css/style.css (.cover--*), entao o card SVG e a capa HTML nunca divergem. */
+const COVERS = {
+  cyan: { grad: cssVar('--cover-cyan-1', '#075985') },
+  rust: { grad: cssVar('--cover-rust-1', '#9a3f12') }
 };
+const PAPER = '#efede6';
+const PAPER_70 = 'rgba(239,237,230,0.78)';
 
 /* ---------- Frontmatter + Markdown mínimos (zero dependências) ---------- */
 function parseFrontmatter(raw) {
@@ -147,7 +152,7 @@ function generatePostCard(p) {
   const tspans = lines.map((l, i) =>
     `<tspan x="${PX}" dy="${i === 0 ? 0 : lh}">${svgEsc(l)}</tspan>`
   ).join('');
-  const { grad, accent } = CAT_CARD_COLORS[p.catSlug] || CAT_CARD_COLORS.negocios;
+  const { grad } = COVERS[p.cover] || COVERS.cyan;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
@@ -157,9 +162,9 @@ function generatePostCard(p) {
   </defs>
   <rect width="${W}" height="${H}" fill="#0b0b0d"/>
   <rect width="${W}" height="560" fill="url(#g)" opacity="0.45"/>
-  <rect x="${PX}" y="68" width="44" height="4" fill="${accent}" rx="2"/>
-  <text x="${PX}" y="112" fill="${accent}" font-family="Arial Black,Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="5" opacity="0.9">${svgEsc(p.catLabel.toUpperCase())}</text>
-  <text x="${PX}" y="${firstY}" fill="#efefef" font-family="Arial Black,Arial,sans-serif" font-size="${fs}" font-weight="900">${tspans}</text>
+  <rect x="${PX}" y="68" width="44" height="4" fill="${ACCENT}" rx="2"/>
+  <text x="${PX}" y="112" fill="${PAPER_70}" font-family="Arial Black,Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="5" opacity="0.9">${svgEsc(p.catLabel.toUpperCase())}</text>
+  <text x="${PX}" y="${firstY}" fill="${PAPER}" font-family="Arial Black,Arial,sans-serif" font-size="${fs}" font-weight="900">${tspans}</text>
   <text x="${W - PX}" y="${H - 30}" fill="#16161e" font-family="Arial Black,Arial,sans-serif" font-size="240" font-weight="900" text-anchor="end">B</text>
   <text x="${PX}" y="${H - 52}" fill="#363648" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">bumavit.com.br</text>
 </svg>`;
@@ -179,6 +184,7 @@ const posts = readdirSync(join(root, 'posts'))
       dateLabel: dateLabelFrom(meta.date),
       catLabel: meta.category,
       catSlug: cat.slug,
+      cover: String(meta.cover || 'cyan').trim().toLowerCase(),
       catEn: cat.en,
       catEs: cat.es,
       html,
@@ -192,7 +198,7 @@ const posts = readdirSync(join(root, 'posts'))
      mergeada antes da data (fluxo dos PRs "[PUBLICAR dd/mm]") sem publicar
      cedo. O workflow build-blog.yml roda diariamente e publica quando chega. */
   .filter((p) => p.date <= new Date().toISOString().slice(0, 10))
-  .sort((a, b) => (a.date < b.date ? 1 : -1));
+  .sort((a, b) => (a.date === b.date ? a.slug.localeCompare(b.slug) : a.date < b.date ? 1 : -1));
 
 /* Um slug duplicado sobrescreveria silenciosamente o HTML do outro post. */
 const dupes = posts.map((p) => p.slug).filter((s, i, a) => a.indexOf(s) !== i);
@@ -205,6 +211,7 @@ for (const p of posts) {
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(p.date)) throw new Error(`posts/${p.slug}: date deve ser AAAA-MM-DD`);
   if (!CATS[p.category]) throw new Error(`posts/${p.slug}: category "${p.category}" nao existe (use: ${Object.keys(CATS).join(', ')})`);
+  if (!COVERS[p.cover]) throw new Error(`posts/${p.slug}: cover "${p.cover}" nao existe (use: ${Object.keys(COVERS).join(', ')})`);
 }
 
 /* Gera card 4:3 (1200x900 SVG) para posts sem imagem explicita no frontmatter.
@@ -258,7 +265,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   </script>
   <link rel="preload" href="${base}fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="${base}fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="${base}css/style.css?v=7">${extraHead}
+  <link rel="stylesheet" href="${base}css/style.css?v=8">${extraHead}
 </head>
 <body>
 
@@ -371,9 +378,13 @@ const filterBtns = ['all', ...Object.values(CATS).map((c) => c.slug)]
 
 /* `prefix` = caminho até /blog/. Vazio na listagem (já está em /blog/),
    '../' dentro de um post (que fica em /blog/<slug>/). */
+/* Inicial vazada na capa: a letra do titulo, como nos cards de projeto. */
+const initialOf = (p) => (p.title.match(/\p{L}/u) || ['B'])[0].toUpperCase();
+
 const card = (p, prefix = '') => `
         <a class="bcard" href="${prefix}${p.slug}/" data-cat="${p.catSlug}" data-hover>
-          <div class="bcov bcov--${p.catSlug} bcard__cover">
+          <div class="bcov cover--${p.cover} bcard__cover">
+            <span class="bcov__mono" aria-hidden="true">${initialOf(p)}</span>
             <span class="bcat" data-c="${p.catSlug}">${p.catLabel}</span>
           </div>
           <div class="bcard__info">
@@ -391,7 +402,8 @@ const archiveContent = `    <section class="p-hero section">
 
     <section class="section" style="padding-top:0;">
       <a class="bfeat" href="${featured.slug}/" data-hover data-reveal>
-        <div class="bcov bcov--${featured.catSlug} bfeat__cover">
+        <div class="bcov cover--${featured.cover} bfeat__cover">
+          <span class="bcov__mono" aria-hidden="true">${initialOf(featured)}</span>
           <span class="bcat" data-c="${featured.catSlug}">${featured.catLabel}</span>
         </div>
         <div class="bfeat__info">
@@ -562,7 +574,7 @@ posts.forEach((p, i) => {
       <h1 class="p-hero__title bpost__title" data-split>${p.title}</h1>
       <p class="bpost__meta" data-reveal>${p.dateLabel} · <span class="bmin" data-min="${p.minutes}">${p.minutes} min de leitura</span> · Bumavit</p>
 
-      <div class="bcov bcov--${p.catSlug} bpost__cover bpost__cover--has-img" data-reveal>
+      <div class="bcov cover--${p.cover} bpost__cover bpost__cover--has-img" data-reveal>
         <img src="../../images/posts/${p.slug}-card.svg" alt="${p.title.replace(/"/g, '&quot;')}" width="1200" height="900" class="bpost__card-img" loading="lazy">
       </div>
 

@@ -3,6 +3,7 @@ title: Como escolher uma agência de criação de sites: 7 critérios que dá pa
 slug: como-escolher-uma-agencia-de-criacao-de-sites
 date: 2026-09-17
 category: Negócios
+cover: rust
 excerpt: Sete critérios — e como checar cada um sem depender do que a agência promete.
 keyword: como escolher uma agência de criação de sites
 ---

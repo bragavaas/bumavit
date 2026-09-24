@@ -25,6 +25,7 @@ O bloco entre `---` no topo do arquivo.
 | `slug` | sim | Define a URL: `slug: seo-local` → `/blog/seo-local/`. |
 | `date` | sim | `AAAA-MM-DD`. **É a data efetiva de publicação**: com data futura o post fica fora do build (não aparece na listagem, no RSS nem no sitemap) até a data chegar — aí o build diário publica sozinho. Também ordena a listagem e alimenta o RSS e o `lastmod` do sitemap. |
 | `category` | sim | Uma de: `SEO`, `Performance`, `Negócios`. Outro valor quebra o build de propósito. |
+| `cover` | não | Tinta da capa e do card: `cyan` (padrão) ou `rust`. Alterne com o post anterior na listagem; é ritmo visual, não categoria. |
 | `excerpt` | sim | Meta description + card da listagem + descrição no RSS. Escreva para ser lida no Google. |
 | `keyword` | não | Termo-alvo. Documenta a intenção do post; não é publicado. |
 | `image` | não | OG image própria, caminho a partir da raiz (`/og-meu-post.png`). Sem isso usa `/og.png`. |

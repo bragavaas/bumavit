@@ -8,7 +8,6 @@ Landing page da Bumavit, software house brasileira — experiências digitais qu
 
 - HTML/CSS/JS estático — sem build, sem dependências de CDN
 - [GSAP](https://gsap.com) + ScrollTrigger — animações e coreografia de scroll
-- [Three.js](https://threejs.org) — esfera de partículas do hero (shaders customizados)
 - [Lenis](https://lenis.darkroom.engineering) — smooth scroll
 - Fontes Clash Display + Satoshi (auto-hospedadas)
 
@@ -34,7 +33,6 @@ css/style.css               — design system + responsivo + reduced-motion
 js/i18n.js                  — traduções EN/ES + seletor de idioma (bandeiras na nav)
 js/main.js                  — interações GSAP da home (preloader, menu, scroll, cursor, form, FAQ)
 js/page.js                  — interações das páginas internas
-js/scene.js                 — cena Three.js do hero
 og.png / sitemap.xml / robots.txt — SEO
 vendor/                     — bibliotecas locais
 fonts/                      — woff2 auto-hospedadas

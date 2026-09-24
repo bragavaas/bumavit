@@ -45,6 +45,12 @@
   --accent: #ff7a29;      /* tangerina elétrica */
   --accent-ink: #2e1503;  /* texto escuro sobre a tangerina */
   --accent-2: #38bdf8;    /* ciano — cor secundária de apoio */
+  /* Capas (superfícies tingidas): três tintas derivadas da paleta. A tinta é ritmo de
+     layout, nunca identifica projeto ou categoria. Stops separados do gradiente para o
+     foco (--cover-at) poder variar por posição. */
+  --cover-ink-1: #1c1c22;  --cover-ink-2: #121216;  --cover-ink-3: #0b0b0d;
+  --cover-cyan-1: #075985; --cover-cyan-2: #0c2f45; --cover-cyan-3: #060d12; /* ciano #38bdf8 escurecido */
+  --cover-rust-1: #9a3f12; --cover-rust-2: #45200a; --cover-rust-3: #120802; /* tangerina #ff7a29 escurecida */
 
   --font-display: 'Clash Display', 'Arial Black', sans-serif;
   --font-body: 'Satoshi', 'Helvetica Neue', Arial, sans-serif;
@@ -594,10 +600,18 @@ body.menu-open .nav__burger span:last-child { transform: translateY(-4px) rotate
   mix-blend-mode: overlay;
   pointer-events: none;
 }
-.work__media--yacht { background: radial-gradient(120% 140% at 15% 15%, #0e3a5c 0%, #0a1a2e 55%, #060a12 100%); }
-.work__media--cocban { background: radial-gradient(120% 140% at 85% 20%, #14532d 0%, #0b2818 55%, #060d08 100%); }
-.work__media--fintech { background: radial-gradient(120% 140% at 20% 85%, #4c1d95 0%, #241045 55%, #0c0616 100%); }
-.work__media--commerce { background: radial-gradient(120% 140% at 80% 80%, #9a3412 0%, #431407 55%, #120602 100%); }
+/* Tintas de capa (projetos e blog). O foco do gradiente vem de --cover-at, por posição. */
+.cover--ink  { background: radial-gradient(120% 140% at var(--cover-at, 20% 20%), var(--cover-ink-1) 0%, var(--cover-ink-2) 55%, var(--cover-ink-3) 100%); }
+.cover--cyan { background: radial-gradient(120% 140% at var(--cover-at, 20% 20%), var(--cover-cyan-1) 0%, var(--cover-cyan-2) 55%, var(--cover-cyan-3) 100%); }
+.cover--rust { background: radial-gradient(120% 140% at var(--cover-at, 20% 20%), var(--cover-rust-1) 0%, var(--cover-rust-2) 55%, var(--cover-rust-3) 100%); }
+/* Legado: classes por categoria do HTML do blog ainda na main. O Build Blog regenera o HTML
+   com .cover--* por PR; depois desse merge, remover estas três linhas. */
+.bcov--seo, .bcov--negocios { background: radial-gradient(120% 140% at var(--cover-at, 20% 20%), var(--cover-cyan-1) 0%, var(--cover-cyan-2) 55%, var(--cover-cyan-3) 100%); }
+.bcov--performance { background: radial-gradient(120% 140% at var(--cover-at, 20% 20%), var(--cover-rust-1) 0%, var(--cover-rust-2) 55%, var(--cover-rust-3) 100%); }
+.work__grid .work__card:nth-child(1) .work__media { --cover-at: 15% 15%; }
+.work__grid .work__card:nth-child(2) .work__media { --cover-at: 85% 20%; }
+.work__grid .work__card:nth-child(3) .work__media { --cover-at: 20% 85%; }
+.work__grid .work__card:nth-child(4) .work__media { --cover-at: 80% 80%; }
 .work__mono {
   font-family: var(--font-display);
   font-weight: 700;
@@ -1146,7 +1160,7 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
 /* ============================================================
    Blog
    ============================================================ */
-/* --- capas gradientes por categoria --- */
+/* --- capas: tinta por post (cover--cyan | cover--rust, no frontmatter), nunca por categoria --- */
 .bcov {
   position: relative;
   border-radius: 14px;
@@ -1163,9 +1177,11 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   mix-blend-mode: overlay;
   pointer-events: none;
 }
-.bcov--seo { background: radial-gradient(120% 140% at 20% 20%, #075985 0%, #0c2f45 55%, #060d12 100%); }
-.bcov--performance { background: radial-gradient(120% 140% at 80% 20%, #9a3f12 0%, #45200a 55%, #120802 100%); }
-.bcov--negocios { background: radial-gradient(120% 140% at 20% 80%, #4c1d95 0%, #241045 55%, #0c0616 100%); }
+.bfeat__cover { --cover-at: 80% 20%; }
+.bcov .bcov__mono {
+  position: absolute; right: 0.4em; bottom: -0.22em; z-index: 0;
+  line-height: 1; pointer-events: none; user-select: none;
+}
 .bcat {
   position: relative;
   z-index: 1;

@@ -3,6 +3,7 @@ title: Preciso de site se já tenho Instagram? A resposta honesta
 slug: preciso-de-site-se-ja-tenho-instagram
 date: 2026-09-17
 category: Negócios
+cover: rust
 excerpt: Para algumas empresas, neste momento, Instagram é suficiente. Para outras, não. Três sinais que indicam quando o Instagram deixa de bastar.
 keyword: preciso de site se já tenho Instagram
 ---

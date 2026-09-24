@@ -3,6 +3,7 @@ title: Meu site não gera clientes: como descobrir o motivo
 slug: meu-site-nao-gera-clientes
 date: 2026-09-17
 category: Negócios
+cover: cyan
 excerpt: Quatro causas, em ordem de probabilidade -- e como testar cada uma em menos de dez minutos sem precisar de ferramenta paga.
 keyword: meu site não gera clientes o que fazer
 ---

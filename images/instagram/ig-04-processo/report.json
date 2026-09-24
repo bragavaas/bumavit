@@ -1,0 +1,91 @@
+{
+  "slug": "ig-04-processo",
+  "generated": "2026-09-24T13:27:36.302Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-04-processo-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "b",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 128,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-04-processo-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "b",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 128,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920"
+    },
+    {
+      "file": "ig-04-processo-02.png",
+      "slide": 2,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 104,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-04-processo-03.png",
+      "slide": 3,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 104,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-04-processo-04.png",
+      "slide": 4,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 100,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-04-processo-05.png",
+      "slide": 5,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 104,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    }
+  ]
+}

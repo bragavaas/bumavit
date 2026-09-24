@@ -1,0 +1,77 @@
+{
+  "slug": "ig-07-estimador",
+  "generated": "2026-09-24T13:27:49.160Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-07-estimador-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 128,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-07-estimador-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 128,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920"
+    },
+    {
+      "file": "ig-07-estimador-02.png",
+      "slide": 2,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": true,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-07-estimador-03.png",
+      "slide": 3,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": true,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-07-estimador-04.png",
+      "slide": 4,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": true,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    }
+  ]
+}

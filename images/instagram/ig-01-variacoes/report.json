@@ -1,0 +1,91 @@
+{
+  "slug": "ig-01-variacoes",
+  "generated": "2026-09-24T13:27:22.869Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-01-variacoes-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "b",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 164,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-01-variacoes-02.png",
+      "slide": 2,
+      "format": "feed",
+      "variant": "c",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 164,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-01-variacoes-03.png",
+      "slide": 3,
+      "format": "feed",
+      "variant": "devstage",
+      "hasImage": true,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-01-variacoes-04.png",
+      "slide": 4,
+      "format": "feed",
+      "variant": "c",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 128,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-01-variacoes-05.png",
+      "slide": 5,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 120,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-01-variacoes-06.png",
+      "slide": 6,
+      "format": "feed",
+      "variant": "c",
+      "hasImage": true,
+      "fonts": "ok",
+      "fontSize": 120,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    }
+  ]
+}

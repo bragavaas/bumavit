@@ -66,12 +66,16 @@
   --focus-ring:var(--accent);
   --error:#ff7a6b;
 
-  /* project cover gradients (work cards + blog covers) */
-  --cover-blue:radial-gradient(120% 140% at 15% 15%,#0e3a5c 0%,#0a1a2e 55%,#060a12 100%); /* @kind color */
-  --cover-green:radial-gradient(120% 140% at 85% 20%,#14532d 0%,#0b2818 55%,#060d08 100%); /* @kind color */
-  --cover-violet:radial-gradient(120% 140% at 20% 85%,#4c1d95 0%,#241045 55%,#0c0616 100%); /* @kind color */
-  --cover-rust:radial-gradient(120% 140% at 80% 80%,#9a3412 0%,#431407 55%,#120602 100%); /* @kind color */
-  --cover-seo:radial-gradient(120% 140% at 20% 20%,#075985 0%,#0c2f45 55%,#060d12 100%); /* @kind color */
+  /* cover tints (work cards, blog covers, social cards): three surfaces derived from the
+     palette. A tint is layout rhythm, never an identifier — project and category are told
+     by text, the outlined initial and real imagery. Stops are separate so the focal point
+     can vary per position (radial-gradient(... at <x> <y>, ...)). */
+  --cover-ink-1:#1c1c22;  --cover-ink-2:#121216;  --cover-ink-3:#0b0b0d;   /* @kind color */
+  --cover-cyan-1:#075985; --cover-cyan-2:#0c2f45; --cover-cyan-3:#060d12;  /* @kind color — #38bdf8 darkened, hue 201° */
+  --cover-rust-1:#9a3f12; --cover-rust-2:#45200a; --cover-rust-3:#120802;  /* @kind color — #ff7a29 darkened, hue 20° */
+  --cover-ink:radial-gradient(120% 140% at 20% 20%,var(--cover-ink-1) 0%,var(--cover-ink-2) 55%,var(--cover-ink-3) 100%); /* @kind color */
+  --cover-cyan:radial-gradient(120% 140% at 20% 20%,var(--cover-cyan-1) 0%,var(--cover-cyan-2) 55%,var(--cover-cyan-3) 100%); /* @kind color */
+  --cover-rust:radial-gradient(120% 140% at 20% 20%,var(--cover-rust-1) 0%,var(--cover-rust-2) 55%,var(--cover-rust-3) 100%); /* @kind color */
 }
 
 /* ── Typography ─────────────────────────────────────────
@@ -253,7 +257,7 @@
   .page[data-type="media"] .text { font-size: 88px; }
   .media {
     position: relative; flex: 1; min-height: 0; margin-top: 48px; border-radius: var(--radius-media); overflow: hidden;
-    background: var(--cover-blue);
+    background: var(--cover-cyan);
   }
   .media::after { content: ""; position: absolute; inset: 0; background-image: var(--grain-url-media); opacity: var(--grain-media-opacity); mix-blend-mode: overlay; pointer-events: none; }
   .media:not([data-devstage]) > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
@@ -307,7 +311,7 @@
  "slug": "ig-04-processo",
  "jira": "CLA-109",
  "eyebrow": "Processo",
- "cover": "violet",
+ "cover": "cyan",
  "handle": "@bumavit",
  "slides": [
   {
@@ -361,7 +365,7 @@
   var overrides = {};
   get('variant', '').split(',').forEach(function (p) { var m = p.split('='); if (m.length === 2) overrides[m[0]] = m[1]; });
 
-  var COVERS = { blue: 'var(--cover-blue)', green: 'var(--cover-green)', violet: 'var(--cover-violet)', rust: 'var(--cover-rust)', seo: 'var(--cover-seo)' };
+  var COVERS = { ink: 'var(--cover-ink)', cyan: 'var(--cover-cyan)', rust: 'var(--cover-rust)' }; // three tints; rhythm, never an identifier
   var SIZES = { feed: [1080, 1350], story: [1080, 1920], highlight: [1080, 1080] };
   var pad2 = function (n) { return (n < 10 ? '0' : '') + n; };
 

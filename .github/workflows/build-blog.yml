@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   build:
@@ -33,16 +34,28 @@ jobs:
       - name: Build blog HTML
         run: node scripts/build-blog.mjs
 
-      - name: Commit generated files
+      - name: Publicar HTML gerado via pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add blog/ sitemap.xml
           git add images/posts/ 2>/dev/null || true
           git add feed.xml 2>/dev/null || true
+
           if git diff --cached --quiet; then
-            echo "Nenhum arquivo gerado mudou — nada a commitar."
-          else
-            git commit -m "chore: rebuild blog HTML [skip ci]" -m "Co-Authored-By: Paperclip <noreply@paperclip.ing>"
-            git push origin main
+            echo "Nenhum arquivo gerado mudou. Nada a publicar."
+            exit 0
           fi
+
+          # A main exige pull request (ruleset main-protection) e nao aceita
+          # bypass para o GitHub Actions: rulesets so aceitam bypass de app
+          # em repo de organizacao, e este e de conta pessoal. Entao o bot
+          # nao fura a regra, ele cumpre: abre um PR com a saida do build.
+          BRANCH="chore/rebuild-blog-${GITHUB_RUN_ID}"
+          git switch -c "$BRANCH"
+          git commit -m "chore: rebuild blog HTML" -m "Co-Authored-By: Paperclip <noreply@paperclip.ing>"
+          git push origin "$BRANCH"
+
+          gh pr create --base main --head "$BRANCH" --title "chore: rebuild blog HTML [skip ci]" --body "Saida de scripts/build-blog.mjs gerada pelo run #${GITHUB_RUN_ID}."

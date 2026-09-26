@@ -1,0 +1,37 @@
+{
+  "slug": "ig-03-cocban",
+  "generated": "2026-09-26T03:33:31.182Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-03-cocban-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350",
+      "jpeg": "ig-03-cocban-01.jpg"
+    },
+    {
+      "file": "ig-03-cocban-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920",
+      "jpeg": "ig-03-cocban-story-01.jpg"
+    }
+  ]
+}

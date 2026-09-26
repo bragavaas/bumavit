@@ -1,6 +1,6 @@
 {
   "slug": "ig-04-processo",
-  "generated": "2026-09-24T17:08:04.657Z",
+  "generated": "2026-09-26T03:32:39.116Z",
   "engine": "templates/ig-slide.html",
   "slides": [
     {
@@ -15,7 +15,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1350"
+      "size": "1080×1350",
+      "jpeg": "ig-04-processo-01.jpg"
     },
     {
       "file": "ig-04-processo-story-01.png",
@@ -29,7 +30,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1920"
+      "size": "1080×1920",
+      "jpeg": "ig-04-processo-story-01.jpg"
     },
     {
       "file": "ig-04-processo-02.png",
@@ -43,7 +45,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1350"
+      "size": "1080×1350",
+      "jpeg": "ig-04-processo-02.jpg"
     },
     {
       "file": "ig-04-processo-03.png",
@@ -57,7 +60,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1350"
+      "size": "1080×1350",
+      "jpeg": "ig-04-processo-03.jpg"
     },
     {
       "file": "ig-04-processo-04.png",
@@ -71,7 +75,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1350"
+      "size": "1080×1350",
+      "jpeg": "ig-04-processo-04.jpg"
     },
     {
       "file": "ig-04-processo-05.png",
@@ -85,7 +90,8 @@
       "contentHeight": 1080,
       "ok": true,
       "problems": [],
-      "size": "1080×1350"
+      "size": "1080×1350",
+      "jpeg": "ig-04-processo-05.jpg"
     }
   ]
 }

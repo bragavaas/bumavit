@@ -327,48 +327,23 @@
 <body>
 <script id="data" type="application/json">
 {
- "slug": "ig-04-processo",
- "jira": "CLA-109",
- "eyebrow": "Processo",
- "cover": "ink",
+ "slug": "ig-03-cocban",
+ "jira": "CLA-107",
+ "eyebrow": "Projeto · COCBAN · Juiz de Fora",
+ "cover": "rust",
  "handle": "@bumavit",
- "slides": [
-  {
-   "type": "statement",
-   "variant": "b",
-   "text": "Como um projeto acontece na *Bumavit*"
-  },
-  {
-   "type": "step",
-   "num": "01",
-   "label": "Descoberta",
-   "title": "Descoberta",
-   "line": "Imersão no seu negócio, objetivos e público. Contexto e dados guiam cada decisão."
-  },
-  {
-   "type": "step",
-   "num": "02",
-   "label": "Estratégia e design",
-   "title": "Estratégia e design",
-   "line": "Arquitetura da informação, protótipos navegáveis e identidade, tudo validado com você."
-  },
-  {
-   "type": "step",
-   "num": "03",
-   "label": "Desenvolvimento",
-   "title": "Desenvolvimento",
-   "line": "Código limpo e performático, com entregas contínuas."
-  },
-  {
-   "type": "step",
-   "num": "04",
-   "label": "Lançamento e evolução",
-   "title": "Lançamento e evolução",
-   "line": "Lançamento sem sustos, métricas de verdade, otimização depois que o site está no ar."
-  }
- ],
+ "caption": "COCBAN, Juiz de Fora. Portal institucional, com tudo que estava espalhado em um só lugar.\n\nA instituição precisava de uma casa à altura dela na internet: a informação estava fragmentada e a comunicação dependia de canais dispersos. Arquitetura de conteúdo pensada para quem busca, identidade visual consistente e um site que o time interno mantém sem depender de ninguém.\n\nPortal institucional é o tipo de projeto que mais fazemos. Se o seu está desatualizado, o link na bio estima quanto custa um novo.",
+ "hashtags": [],
  "story": [
   1
+ ],
+ "slides": [
+  {
+   "type": "media",
+   "initial": "C",
+   "text": "O que estava espalhado virou *um só lugar*.",
+   "sub": "Portal institucional · 2024"
+  }
  ]
 }
 </script>
@@ -420,7 +395,7 @@
     var bg = el('div', 'bg'); bg.style.background = (useCover && COVERS[coverName]) ? COVERS[coverName] : 'transparent'; page.appendChild(bg);
     if ((slide.type === 'cover' && variant === 'a') || (slide.type === 'cta' && variant === 'a')) page.appendChild(el('div', 'glow'));
 
-    var initial = slide.initial || ((slide.type === 'cover' && variant === 'b') ? 'B' : (slide.type === 'statement' && variant === 'c') ? (slide.text || 'B').replace(/\*/g, '').charAt(0).toUpperCase() : '');
+    var initial = slide.type === 'media' ? '' : (slide.initial || ((slide.type === 'cover' && variant === 'b') ? 'B' : (slide.type === 'statement' && variant === 'c') ? (slide.text || 'B').replace(/\*/g, '').charAt(0).toUpperCase() : '')); // on a media slide the box carries the initial (fallback when there is no image)
     if (initial) page.appendChild(el('div', 'initial', esc(initial)));
 
     // top bar

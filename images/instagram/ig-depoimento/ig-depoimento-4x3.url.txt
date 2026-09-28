@@ -1,0 +1,1 @@
+mode=quote&quote=Lorem+ipsum+dolor+sit+amet%2C+consectetur+adipiscing+elit%2C+sed+do+eiusmod+tempor+incididunt+ut+labore+et+dolore+magna+aliqua.+Ut+enim+ad+minim+veniam%2C+quis+nostrud+exercitation+ullamco.&name=%5BNome+do+cliente%5D&company=%5BEmpresa%5D&city=%5BCidade%5D&eyebrow=Depoimento

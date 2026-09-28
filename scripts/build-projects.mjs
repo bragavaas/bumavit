@@ -11,7 +11,7 @@ const projects = [
     slug: 'yacht-day',
     title: 'Yacht Day',
     tag: 'Plataforma de reservas de iates · Toronto, Canadá',
-    mediaClass: 'work__media--yacht',
+    mediaClass: 'cover--cyan',
     mono: 'Y',
     nda: false,
     meta: {
@@ -34,6 +34,13 @@ const projects = [
       ['2×', 'Mais reservas online']
     ],
     link: null, // subdomínio yachtday saiu do ar: reative aqui se voltar
+    /* Palco 2.5D no lugar do banner gradiente: mockups com fundo transparente
+       em img/projetos/ (WebP ~150KB no total). O tilt vive em js/page.js. */
+    showcase: {
+      laptop: { src: '../img/projetos/yacht-day-laptop.webp', w: 1600, h: 973 },
+      phone:  { src: '../img/projetos/yacht-day-phone.webp',  w: 960,  h: 1200 },
+      alt: 'Site da Yacht Day exibido em um notebook e em um celular'
+    },
     t: {
       en: {
         tag: 'Yacht booking platform · Toronto, Canada',
@@ -67,47 +74,47 @@ const projects = [
     slug: 'cocban',
     title: 'COCBAN',
     tag: 'Cooperativa de crédito · Juiz de Fora, MG',
-    mediaClass: 'work__media--cocban',
+    mediaClass: 'cover--rust',
     mono: 'C',
     nda: false,
     meta: {
       Cliente: 'COCBAN',
       Ano: '2024',
       Setor: 'Cooperativa de crédito',
-      'Serviços': '(confirmar com o André)'
+      'Serviços': 'Site institucional, SEO, Performance'
     },
     challenge: [
-      'A COCBAN é a Cooperativa de Economia e Crédito Mútuo dos Bancários de Juiz de Fora: 25 anos de história, atuação na Zona da Mata mineira e um público bem definido, bancários e dependentes que já são cooperados. O site precisava cumprir dois papéis ao mesmo tempo: deixar o cooperado simular um empréstimo em poucos cliques e atender às obrigações regulatórias do Banco Central, que exigem ouvidoria, canal de denúncias, demonstrativos contábeis e governança corporativa publicados.',
-      'O risco num projeto assim é construir um arquivo morto: um portal que fecha o checklist regulatório mas não converte. Organizar a conformidade sem soterrar o simulador de empréstimo era o desafio real.'
+      'A COCBAN é a Cooperativa de Economia e Crédito Mútuo dos Bancários de Juiz de Fora, fundada em 2000, com atuação na Zona da Mata mineira e um público definido: bancários e dependentes que já são cooperados. O site precisava cumprir dois papéis ao mesmo tempo.',
+      'O primeiro: deixar o cooperado simular um empréstimo em poucos cliques. O segundo: publicar o que o Banco Central exige de uma cooperativa de crédito, como ouvidoria, canal de denúncias, demonstrativos contábeis e governança. O risco num projeto assim é construir um arquivo morto, que fecha o checklist regulatório mas não gera pedido de crédito.'
     ],
     solution: [
-      'Construímos o site em WordPress com Elementor, com arquitetura que separa os dois fluxos. A navegação leva o cooperado direto ao simulador. As páginas de compliance ficam organizadas e acessíveis: ouvidoria com 0800, canal de denúncias, demonstrativos contábeis e governança, cada uma no lugar certo, sem gerar retrabalho.',
-      'Uma cooperativa de 25 anos tem história e prestação de contas para mostrar. Integramos isso ao site sem deixá-lo pesado: quem quer crédito encontra o simulador, e quem precisa de transparência encontra os documentos.'
+      'Construímos o site em WordPress com Elementor, com arquitetura que separa os dois fluxos. A navegação leva o cooperado direto ao simulador. As páginas de conformidade ficam organizadas e acessíveis: ouvidoria com 0800, canal de denúncias, demonstrativos contábeis e governança, cada uma no lugar certo, sem gerar retrabalho.',
+      'Uma cooperativa com mais de duas décadas tem história e prestação de contas para mostrar. Integramos isso ao site sem deixá-lo pesado: quem quer crédito encontra o simulador, e quem precisa de transparência encontra os documentos.'
     ],
     link: 'https://cocban.coop.br/',
     t: {
       en: {
         tag: 'Credit union · Juiz de Fora, Brazil',
-        metaValues: ['COCBAN', '2024', 'Credit union', '(confirm with André)'],
+        metaValues: ['COCBAN', '2024', 'Credit union', 'Institutional website, SEO, Performance'],
         challenge: [
-          'COCBAN is the Cooperativa de Economia e Crédito Mútuo dos Bancários de Juiz de Fora: a 25-year-old credit union serving bank workers and their dependents across the Juiz de Fora region. The site had to do two things at once: let a member simulate a loan in a few clicks and meet the Brazilian Central Bank\'s requirements for regulated financial institutions, which include a formal complaints channel, published financial statements and a full governance disclosure.',
-          'The real risk in a project like this is building a dead archive: a portal that checks every compliance box but never converts. Organizing the regulatory content without burying the loan simulator was the actual problem to solve.'
+          'COCBAN is the Cooperativa de Economia e Crédito Mútuo dos Bancários de Juiz de Fora, a credit union founded in 2000 that serves bank workers and their dependents in the Zona da Mata region of Minas Gerais. The site had to do two things at once.',
+          'First, let a member simulate a loan in a few clicks. Second, publish what the Brazilian Central Bank requires from a credit union: an ombudsman channel, a whistleblowing channel, financial statements and governance disclosures. The risk in a project like this is building a dead archive: a site that checks every compliance box but never brings in a loan request.'
         ],
         solution: [
-          'We built the site on WordPress with Elementor, with an architecture that keeps the two flows separate. Navigation routes members straight to the simulator. The compliance pages, formal complaints channel, financial statements and governance disclosures each have a permanent URL and organized content that stays current without constant rework.',
-          'A 25-year-old cooperative has real history and a track record to show. We brought that into the site without weighing it down: members looking for credit find the simulator, and members who need transparency find the documents.'
+          'We built the site on WordPress with Elementor, with an architecture that keeps the two flows separate. Navigation routes members straight to the simulator. The compliance pages, ombudsman channel with a toll-free number, whistleblowing channel, financial statements and governance disclosures, each sit in the right place and stay current without constant rework.',
+          'A cooperative with more than two decades of history has a track record to show. We brought that into the site without weighing it down: members looking for credit find the simulator, and members who need transparency find the documents.'
         ]
       },
       es: {
         tag: 'Cooperativa de crédito · Juiz de Fora, Brasil',
-        metaValues: ['COCBAN', '2024', 'Cooperativa de crédito', '(confirmar con André)'],
+        metaValues: ['COCBAN', '2024', 'Cooperativa de crédito', 'Sitio institucional, SEO, Performance'],
         challenge: [
-          'COCBAN es la Cooperativa de Economía y Crédito Mutuo de los Bancarios de Juiz de Fora: una cooperativa de crédito con 25 años de historia que atiende a trabajadores bancarios y sus dependientes en la región de Juiz de Fora. El sitio tenía que cumplir dos funciones al mismo tiempo: permitir que el cooperado simule un préstamo en pocos clics y satisfacer las exigencias del Banco Central de Brasil para instituciones financieras reguladas, que incluyen canal de denuncias, estados financieros publicados y divulgación de gobernanza corporativa.',
-          'El riesgo real en un proyecto así es construir un archivo muerto: un portal que completa la lista de conformidad pero nunca convierte. Organizar el contenido regulatorio sin enterrar el simulador de préstamo era el problema real a resolver.'
+          'COCBAN es la Cooperativa de Economía y Crédito Mutuo de los Bancarios de Juiz de Fora, fundada en 2000, que atiende a trabajadores bancarios y sus dependientes en la región de la Zona da Mata, en Minas Gerais. El sitio tenía que cumplir dos funciones al mismo tiempo.',
+          'La primera: permitir que el cooperado simule un préstamo en pocos clics. La segunda: publicar lo que el Banco Central de Brasil exige a una cooperativa de crédito, como defensoría, canal de denuncias, estados financieros y gobernanza. El riesgo en un proyecto así es construir un archivo muerto: un sitio que completa la lista de conformidad pero nunca genera una solicitud de crédito.'
         ],
         solution: [
-          'Construimos el sitio en WordPress con Elementor, con una arquitectura que mantiene los dos flujos separados. La navegación lleva al cooperado directamente al simulador. Las páginas de conformidad: canal de denuncias, estados financieros y gobernanza corporativa, tienen URL fija y contenido organizado que se mantiene actualizado sin retrabajo constante.',
-          'Una cooperativa de 25 años tiene historia real y un historial que mostrar. Integramos eso al sitio sin que pesara: quien busca crédito encuentra el simulador, y quien necesita transparencia encuentra los documentos.'
+          'Construimos el sitio en WordPress con Elementor, con una arquitectura que mantiene los dos flujos separados. La navegación lleva al cooperado directamente al simulador. Las páginas de conformidad, defensoría con número gratuito, canal de denuncias, estados financieros y gobernanza, quedan cada una en su lugar y se mantienen al día sin retrabajo constante.',
+          'Una cooperativa con más de dos décadas tiene historia y rendición de cuentas que mostrar. Integramos eso al sitio sin que pesara: quien busca crédito encuentra el simulador, y quien necesita transparencia encuentra los documentos.'
         ]
       }
     }
@@ -116,7 +123,7 @@ const projects = [
     slug: 'fintech',
     title: 'Fintech SaaS',
     tag: 'Dashboard SaaS para fintech em crescimento',
-    mediaClass: 'work__media--fintech',
+    mediaClass: 'cover--ink',
     mono: 'F',
     nda: true,
     meta: {
@@ -172,7 +179,7 @@ const projects = [
     slug: 'ecommerce',
     title: 'E-commerce de moda',
     tag: 'Loja virtual com checkout otimizado para conversão',
-    mediaClass: 'work__media--commerce',
+    mediaClass: 'cover--cyan',
     mono: 'E',
     nda: true,
     meta: {
@@ -301,6 +308,19 @@ function page(p, next) {
 
   const ndaBadge = p.nda ? `\n        <span class="p-nda" data-reveal>Projeto sob NDA</span>` : '';
 
+  /* Banner: palco 2.5D quando o projeto tem mockups, senão o gradiente padrão.
+     As <img> internas são decorativas (alt vazio); o rótulo fica no contêiner. */
+  const banner = p.showcase ? `
+      <div class="devstage" id="devstage" data-reveal role="img" aria-label="${esc(p.showcase.alt)}">
+        <div class="devstage__scene" id="devstageScene">
+          <img class="devstage__laptop" src="${p.showcase.laptop.src}" alt="" width="${p.showcase.laptop.w}" height="${p.showcase.laptop.h}" decoding="async">
+          <img class="devstage__phone" src="${p.showcase.phone.src}" alt="" width="${p.showcase.phone.w}" height="${p.showcase.phone.h}" decoding="async">
+        </div>
+      </div>` : `
+      <div class="work__media p-banner ${p.mediaClass}" data-reveal>
+        <span class="work__mono">${p.mono}</span>
+      </div>`;
+
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -322,7 +342,9 @@ function page(p, next) {
   <meta name="twitter:image" content="https://bumavit.com.br/og.png">
   <link rel="canonical" href="https://bumavit.com.br/projetos/${p.slug}.html">
   <meta name="theme-color" content="#0b0b0d">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='36' font-weight='900' fill='%23ff7a29' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R"></script>
@@ -335,7 +357,7 @@ function page(p, next) {
   </script>
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css?v=5">
+  <link rel="stylesheet" href="../css/style.css?v=9">
 </head>
 <body>
 
@@ -351,6 +373,7 @@ function page(p, next) {
       <a href="/#servicos" data-hover>Serviços</a>
       <a href="/#projetos" data-hover>Projetos</a>
       <a href="/#processo" data-hover>Processo</a>
+      <a href="/estimador.html" data-hover>Estimador</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" data-hover>
       <span></span><span></span>
@@ -365,7 +388,8 @@ function page(p, next) {
       <a href="/#servicos"><span class="menu__index">02</span>Serviços</a>
       <a href="/#projetos"><span class="menu__index">03</span>Projetos</a>
       <a href="/#processo"><span class="menu__index">04</span>Processo</a>
-      <a href="/#contato"><span class="menu__index">05</span>Contato</a>
+      <a href="/estimador.html"><span class="menu__index">05</span>Estimador</a>
+      <a href="/#contato"><span class="menu__index">06</span>Contato</a>
     </nav>
     <div class="menu__footer">
       <a href="mailto:contato@bumavit.com.br">contato@bumavit.com.br</a>
@@ -382,9 +406,7 @@ function page(p, next) {
       <dl class="p-meta">${metaItems}
       </dl>
 
-      <div class="work__media p-banner ${p.mediaClass}" data-reveal>
-        <span class="work__mono">${p.mono}</span>
-      </div>
+${banner}
     </section>
 
     <section class="p-section section">
@@ -400,13 +422,12 @@ function page(p, next) {
           ${paras(p.solution)}
       </div>
     </section>
-
 ${statItems ? `
     <section class="section">
       <div class="p-stats">${statItems}
       </div>
-    </section>` : ''}
-${visit}
+    </section>
+` : ''}${visit}
     <a class="next" href="${next.slug}.html" data-hover>
       <span class="next__label">Próximo projeto</span>
       <span class="next__title">${esc(next.title)}</span>
@@ -417,6 +438,7 @@ ${visit}
   <footer class="footer">
     <div class="footer__bottom" style="border-top:0; margin-top:0;">
       <p>© 2026 Bumavit. Todos os direitos reservados.</p>
+      <a class="footer__privacy" href="/privacidade.html" data-hover>Política de Privacidade</a>
       <a href="/#projetos" data-hover>← Todos os projetos</a>
       <button class="footer__top-btn" id="backToTop" data-hover>Voltar ao topo ↑</button>
     </div>
@@ -426,8 +448,8 @@ ${visit}
   <script src="../vendor/gsap.min.js"></script>
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
-  <script src="../js/i18n.js?v=5" defer></script>
-  <script src="../js/page.js?v=2" defer></script>
+  <script src="../js/i18n.js?v=6" defer></script>
+  <script src="../js/page.js?v=3" defer></script>
   <script src="../js/analytics.js" defer></script>
 </body>
 </html>

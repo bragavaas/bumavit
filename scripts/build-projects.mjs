@@ -284,6 +284,82 @@ function pageDict(p, next) {
   return out;
 }
 
+/* ---------- Card social por projeto ----------
+   Mesmo formato do og.png do site (1200x630), que e a proporcao que
+   Facebook, WhatsApp e LinkedIn esperam. Sai em SVG, que e a fonte
+   versionada; o JPEG servido no og:image e rasterizado a partir dele.
+   Por que JPEG e nao PNG: o gradiente nao comprime em PNG e cada card
+   saía com 372KB, contra 33KB em JPEG 0.92.
+   Por que nao SVG direto no og:image: Facebook, WhatsApp, LinkedIn e X
+   nao renderizam SVG em previa; a previa sai sem imagem nenhuma.
+   Como rasterizar apos mudar titulo ou tag de um projeto: abrir o site
+   local, desenhar o SVG num canvas 1200x630 e exportar em image/jpeg 0.92.
+   Fontes de sistema de proposito: webfont em SVG nao carrega quando o
+   arquivo e aberto fora do site. */
+const CARD_GRAD = {
+  'cover--cyan': '#075985',
+  'cover--rust': '#9a3f12',
+  'cover--ink':  '#1c1c22'
+};
+
+function cardWrap(text, max) {
+  const words = String(text).split(/\s+/);
+  const lines = [];
+  let cur = '';
+  for (const w of words) {
+    const next = cur ? cur + ' ' + w : w;
+    if (next.length > max && cur) { lines.push(cur); cur = w; } else { cur = next; }
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+
+const cardEsc = (s) => String(s)
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+function projectCard(p) {
+  const W = 1200, H = 630, PX = 80;
+  const grad = CARD_GRAD[p.mediaClass] || CARD_GRAD['cover--ink'];
+
+  /* Arial Black e larga: a media por caractere fica perto de 0.70em, nao de
+     0.55em. Subestimar isso faz o titulo vazar pela direita do card. */
+  const CHAR_W = 0.70;
+  const tLen = p.title.length;
+  const fs = tLen <= 14 ? 88 : tLen <= 24 ? 68 : 54;
+  const titleLines = cardWrap(p.title, Math.floor((W - 2 * PX) / (fs * CHAR_W)));
+  const lh = Math.round(fs * 1.16);
+  const titleY = 330 - (titleLines.length - 1) * lh / 2;
+  const tspans = titleLines.map((l, i) =>
+    `<tspan x="${PX}" dy="${i === 0 ? 0 : lh}">${cardEsc(l)}</tspan>`).join('');
+
+  /* A tag e longa e descritiva; duas linhas no maximo, com reticencias. */
+  const tagLines = cardWrap(p.tag, 58).slice(0, 2);
+  const tagSpans = tagLines.map((l, i) =>
+    `<tspan x="${PX}" dy="${i === 0 ? 0 : 34}">${cardEsc(l)}</tspan>`).join('');
+
+  const selo = p.status === 'andamento' ? 'PROJETO EM ANDAMENTO'
+             : p.nda ? 'PROJETO SOB NDA'
+             : 'PROJETO';
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="${grad}"/>
+      <stop offset="100%" stop-color="#0b0b0d"/>
+    </linearGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="#0b0b0d"/>
+  <rect width="${W}" height="420" fill="url(#g)" opacity="0.45"/>
+  <text x="${W - PX}" y="${H - 8}" fill="#16161e" font-family="Arial Black,Arial,sans-serif" font-size="300" font-weight="900" text-anchor="end">B</text>
+  <rect x="${PX}" y="68" width="44" height="4" fill="#ff7a29" rx="2"/>
+  <text x="${PX}" y="112" fill="rgba(239,237,230,0.78)" font-family="Arial Black,Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="5">${cardEsc(selo)}</text>
+  <text x="${PX}" y="${titleY}" fill="#efede6" font-family="Arial Black,Arial,sans-serif" font-size="${fs}" font-weight="900">${tspans}</text>
+  <text x="${PX}" y="440" fill="rgba(239,237,230,0.62)" font-family="Arial,sans-serif" font-size="26">${tagSpans}</text>
+  <text x="${PX}" y="${H - 52}" fill="#363648" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">bumavit.com.br</text>
+</svg>`;
+}
+
 const esc = (s) => s; // conteúdo controlado localmente
 
 function page(p, next) {
@@ -334,12 +410,15 @@ function page(p, next) {
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://bumavit.com.br/projetos/${p.slug}.html">
-  <meta property="og:image" content="https://bumavit.com.br/og.png">
+  <meta property="og:image" content="https://bumavit.com.br/images/projetos/${p.slug}-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="${esc(p.title)}, projeto da Bumavit">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://bumavit.com.br/projetos/${p.slug}.html">
   <meta name="twitter:title" content="${esc(p.title)} · BUMAVIT®">
   <meta name="twitter:description" content="${esc(p.tag)}.">
-  <meta name="twitter:image" content="https://bumavit.com.br/og.png">
+  <meta name="twitter:image" content="https://bumavit.com.br/images/projetos/${p.slug}-card.jpg">
   <link rel="canonical" href="https://bumavit.com.br/projetos/${p.slug}.html">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -457,9 +536,14 @@ ${statItems ? `
 }
 
 mkdirSync(join(root, 'projetos'), { recursive: true });
+mkdirSync(join(root, 'images', 'projetos'), { recursive: true });
 projects.forEach((p, i) => {
   const next = projects[(i + 1) % projects.length];
   const out = join(root, 'projetos', `${p.slug}.html`);
   writeFileSync(out, page(p, next), 'utf8');
   console.log('ok:', out);
+
+  const card = join(root, 'images', 'projetos', `${p.slug}-card.svg`);
+  writeFileSync(card, projectCard(p), 'utf8');
+  console.log('ok:', card);
 });

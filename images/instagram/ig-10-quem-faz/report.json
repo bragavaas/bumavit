@@ -1,0 +1,37 @@
+{
+  "slug": "ig-10-quem-faz",
+  "generated": "2026-09-28T16:03:27.524Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-10-quem-faz-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": true,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350",
+      "jpeg": "ig-10-quem-faz-01.jpg"
+    },
+    {
+      "file": "ig-10-quem-faz-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "a",
+      "hasImage": true,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920",
+      "jpeg": "ig-10-quem-faz-story-01.jpg"
+    }
+  ]
+}

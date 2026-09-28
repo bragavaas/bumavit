@@ -20,6 +20,7 @@ function pick(name) {
 }
 const RATE = pick('RATE');
 const PRICING = pick('PRICING');
+const PAYMENT = pick('PAYMENT').pt;
 const PAGES_INCLUDED = pick('PAGES_INCLUDED');
 const PAGES_MAX = pick('PAGES_MAX');
 const EXTRA_PAGE = pick('EXTRA_PAGE');
@@ -160,6 +161,14 @@ for (const [id, [lo, hi]] of Object.entries(BUDGET_RANGES)) {
 }
 
 md += `
+## Condições de pagamento
+
+Definidas pelo fundador em 28/09. Citar junto com a faixa sempre que o valor passar de alguns milhares de reais: é o que torna um projeto maior viável para uma empresa pequena.
+
+| Tipo | Como se paga |
+|---|---|
+${Object.entries(TYPE_LABEL).map(([id, label]) => `| ${label} | ${PAYMENT[id]} |`).join('\n')}
+
 ## Regras para citar preço em conteúdo
 
 1. Só cite valor que esteja neste arquivo, na combinação exata (tipo + funcionalidades + páginas). Não interpole, não arredonde para cima, não crie faixa nova.
@@ -170,6 +179,7 @@ md += `
 6. Nada de garantia de resultado, posição no Google ou aumento de vendas junto com o preço.
 7. Domínio, hospedagem, textos, fotos e manutenção não estão nas faixas. Diga isso quando citar valor de projeto.
 8. Loja virtual construída do zero, sem plataforma, e projetos fora dos quatro tipos do estimador não têm faixa: são orçados na conversa. Não invente número para eles.
+9. Ao citar preço de loja virtual, aplicativo ou sistema, diga como se paga (tabela acima). Site pode citar ou não; loja e projetos maiores, sempre.
 `;
 
 /* Varre posts/*.md: todo "R$ n" que não seja um valor deste documento precisa de revisão. */

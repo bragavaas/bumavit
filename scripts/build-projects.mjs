@@ -73,56 +73,49 @@ const projects = [
   {
     slug: 'cocban',
     title: 'COCBAN',
-    tag: 'Portal institucional com presença digital completa',
+    tag: 'Cooperativa de crédito · Juiz de Fora, MG',
     mediaClass: 'cover--rust',
     mono: 'C',
     nda: false,
     meta: {
       Cliente: 'COCBAN',
       Ano: '2024',
-      Setor: 'Institucional',
-      'Serviços': 'Web design, Desenvolvimento, Identidade digital'
+      Setor: 'Cooperativa de crédito',
+      'Serviços': 'Site institucional, SEO, Performance'
     },
     challenge: [
-      'A COCBAN precisava de uma casa digital à altura da instituição: a informação estava fragmentada e a comunicação com o público dependia de canais dispersos.',
-      'O desafio era centralizar tudo em um portal claro, acessível e fácil de manter, sem abrir mão de personalidade.'
+      'A COCBAN é a Cooperativa de Economia e Crédito Mútuo dos Bancários de Juiz de Fora, fundada em 2000, com atuação na Zona da Mata mineira e um público definido: bancários e dependentes que já são cooperados. O site precisava cumprir dois papéis ao mesmo tempo.',
+      'O primeiro: deixar o cooperado simular um empréstimo em poucos cliques. O segundo: publicar o que o Banco Central exige de uma cooperativa de crédito, como ouvidoria, canal de denúncias, demonstrativos contábeis e governança. O risco num projeto assim é construir um arquivo morto, que fecha o checklist regulatório mas não gera pedido de crédito.'
     ],
     solution: [
-      'Construímos um portal institucional moderno, com arquitetura de informação pensada para quem busca, não para quem publica. Conteúdo organizado, navegação direta e identidade visual consistente em todas as páginas.',
-      'O resultado é uma presença digital que transmite credibilidade e funciona em qualquer dispositivo.'
+      'Construímos o site em WordPress com Elementor, com arquitetura que separa os dois fluxos. A navegação leva o cooperado direto ao simulador. As páginas de conformidade ficam organizadas e acessíveis: ouvidoria com 0800, canal de denúncias, demonstrativos contábeis e governança, cada uma no lugar certo, sem gerar retrabalho.',
+      'Uma cooperativa com mais de duas décadas tem história e prestação de contas para mostrar. Integramos isso ao site sem deixá-lo pesado: quem quer crédito encontra o simulador, e quem precisa de transparência encontra os documentos.'
     ],
-    stats: [
-      ['100%', 'Da informação centralizada em um só lugar'],
-      ['<2s', 'Tempo de carregamento das páginas'],
-      ['90+', 'Pontuação de performance no Lighthouse']
-    ],
-    link: null, // página /cocban vivia no WordPress antigo, desativado na migração do domínio
+    link: 'https://cocban.coop.br/',
     t: {
       en: {
-        tag: 'Institutional portal with a complete digital presence',
-        metaValues: ['COCBAN', '2024', 'Institutional', 'Web design, Development, Digital identity'],
+        tag: 'Credit union · Juiz de Fora, Brazil',
+        metaValues: ['COCBAN', '2024', 'Credit union', 'Institutional website, SEO, Performance'],
         challenge: [
-          'COCBAN needed a digital home worthy of the institution: information was fragmented and communication with the public relied on scattered channels.',
-          'The challenge was to centralize everything in a clear, accessible, easy-to-maintain portal, without giving up personality.'
+          'COCBAN is the Cooperativa de Economia e Crédito Mútuo dos Bancários de Juiz de Fora, a credit union founded in 2000 that serves bank workers and their dependents in the Zona da Mata region of Minas Gerais. The site had to do two things at once.',
+          'First, let a member simulate a loan in a few clicks. Second, publish what the Brazilian Central Bank requires from a credit union: an ombudsman channel, a whistleblowing channel, financial statements and governance disclosures. The risk in a project like this is building a dead archive: a site that checks every compliance box but never brings in a loan request.'
         ],
         solution: [
-          'We built a modern institutional portal with information architecture designed for those who search, not for those who publish. Organized content, direct navigation and consistent visual identity across every page.',
-          'The result is a digital presence that conveys credibility and works on any device.'
-        ],
-        stats: [['100%', 'Of the information centralized in one place'], ['<2s', 'Page load time'], ['90+', 'Lighthouse performance score']]
+          'We built the site on WordPress with Elementor, with an architecture that keeps the two flows separate. Navigation routes members straight to the simulator. The compliance pages, ombudsman channel with a toll-free number, whistleblowing channel, financial statements and governance disclosures, each sit in the right place and stay current without constant rework.',
+          'A cooperative with more than two decades of history has a track record to show. We brought that into the site without weighing it down: members looking for credit find the simulator, and members who need transparency find the documents.'
+        ]
       },
       es: {
-        tag: 'Portal institucional con presencia digital completa',
-        metaValues: ['COCBAN', '2024', 'Institucional', 'Diseño web, Desarrollo, Identidad digital'],
+        tag: 'Cooperativa de crédito · Juiz de Fora, Brasil',
+        metaValues: ['COCBAN', '2024', 'Cooperativa de crédito', 'Sitio institucional, SEO, Performance'],
         challenge: [
-          'COCBAN necesitaba una casa digital a la altura de la institución: la información estaba fragmentada y la comunicación con el público dependía de canales dispersos.',
-          'El desafío era centralizar todo en un portal claro, accesible y fácil de mantener, sin renunciar a la personalidad.'
+          'COCBAN es la Cooperativa de Economía y Crédito Mutuo de los Bancarios de Juiz de Fora, fundada en 2000, que atiende a trabajadores bancarios y sus dependientes en la región de la Zona da Mata, en Minas Gerais. El sitio tenía que cumplir dos funciones al mismo tiempo.',
+          'La primera: permitir que el cooperado simule un préstamo en pocos clics. La segunda: publicar lo que el Banco Central de Brasil exige a una cooperativa de crédito, como defensoría, canal de denuncias, estados financieros y gobernanza. El riesgo en un proyecto así es construir un archivo muerto: un sitio que completa la lista de conformidad pero nunca genera una solicitud de crédito.'
         ],
         solution: [
-          'Construimos un portal institucional moderno, con arquitectura de la información pensada para quien busca, no para quien publica. Contenido organizado, navegación directa e identidad visual consistente en todas las páginas.',
-          'El resultado es una presencia digital que transmite credibilidad y funciona en cualquier dispositivo.'
-        ],
-        stats: [['100%', 'De la información centralizada en un solo lugar'], ['<2s', 'Tiempo de carga de las páginas'], ['90+', 'Puntuación de performance en Lighthouse']]
+          'Construimos el sitio en WordPress con Elementor, con una arquitectura que mantiene los dos flujos separados. La navegación lleva al cooperado directamente al simulador. Las páginas de conformidad, defensoría con número gratuito, canal de denuncias, estados financieros y gobernanza, quedan cada una en su lugar y se mantienen al día sin retrabajo constante.',
+          'Una cooperativa con más de dos décadas tiene historia y rendición de cuentas que mostrar. Integramos eso al sitio sin que pesara: quien busca crédito encuentra el simulador, y quien necesita transparencia encuentra los documentos.'
+        ]
       }
     }
   },
@@ -280,7 +273,7 @@ function pageDict(p, next) {
     t.solution.forEach((txt, i) => {
       d[`section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(${i + 1})`] = txt;
     });
-    t.stats.forEach(([num, desc], i) => {
+    (t.stats || []).forEach(([num, desc], i) => {
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__num`] = num;
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__desc`] = desc;
     });
@@ -289,6 +282,82 @@ function pageDict(p, next) {
     out[lang] = d;
   }
   return out;
+}
+
+/* ---------- Card social por projeto ----------
+   Mesmo formato do og.png do site (1200x630), que e a proporcao que
+   Facebook, WhatsApp e LinkedIn esperam. Sai em SVG, que e a fonte
+   versionada; o JPEG servido no og:image e rasterizado a partir dele.
+   Por que JPEG e nao PNG: o gradiente nao comprime em PNG e cada card
+   saía com 372KB, contra 33KB em JPEG 0.92.
+   Por que nao SVG direto no og:image: Facebook, WhatsApp, LinkedIn e X
+   nao renderizam SVG em previa; a previa sai sem imagem nenhuma.
+   Como rasterizar apos mudar titulo ou tag de um projeto: abrir o site
+   local, desenhar o SVG num canvas 1200x630 e exportar em image/jpeg 0.92.
+   Fontes de sistema de proposito: webfont em SVG nao carrega quando o
+   arquivo e aberto fora do site. */
+const CARD_GRAD = {
+  'cover--cyan': '#075985',
+  'cover--rust': '#9a3f12',
+  'cover--ink':  '#1c1c22'
+};
+
+function cardWrap(text, max) {
+  const words = String(text).split(/\s+/);
+  const lines = [];
+  let cur = '';
+  for (const w of words) {
+    const next = cur ? cur + ' ' + w : w;
+    if (next.length > max && cur) { lines.push(cur); cur = w; } else { cur = next; }
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+
+const cardEsc = (s) => String(s)
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+function projectCard(p) {
+  const W = 1200, H = 630, PX = 80;
+  const grad = CARD_GRAD[p.mediaClass] || CARD_GRAD['cover--ink'];
+
+  /* Arial Black e larga: a media por caractere fica perto de 0.70em, nao de
+     0.55em. Subestimar isso faz o titulo vazar pela direita do card. */
+  const CHAR_W = 0.70;
+  const tLen = p.title.length;
+  const fs = tLen <= 14 ? 88 : tLen <= 24 ? 68 : 54;
+  const titleLines = cardWrap(p.title, Math.floor((W - 2 * PX) / (fs * CHAR_W)));
+  const lh = Math.round(fs * 1.16);
+  const titleY = 330 - (titleLines.length - 1) * lh / 2;
+  const tspans = titleLines.map((l, i) =>
+    `<tspan x="${PX}" dy="${i === 0 ? 0 : lh}">${cardEsc(l)}</tspan>`).join('');
+
+  /* A tag e longa e descritiva; duas linhas no maximo, com reticencias. */
+  const tagLines = cardWrap(p.tag, 58).slice(0, 2);
+  const tagSpans = tagLines.map((l, i) =>
+    `<tspan x="${PX}" dy="${i === 0 ? 0 : 34}">${cardEsc(l)}</tspan>`).join('');
+
+  const selo = p.status === 'andamento' ? 'PROJETO EM ANDAMENTO'
+             : p.nda ? 'PROJETO SOB NDA'
+             : 'PROJETO';
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="${grad}"/>
+      <stop offset="100%" stop-color="#0b0b0d"/>
+    </linearGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="#0b0b0d"/>
+  <rect width="${W}" height="420" fill="url(#g)" opacity="0.45"/>
+  <text x="${W - PX}" y="${H - 8}" fill="#16161e" font-family="Arial Black,Arial,sans-serif" font-size="300" font-weight="900" text-anchor="end">B</text>
+  <rect x="${PX}" y="68" width="44" height="4" fill="#ff7a29" rx="2"/>
+  <text x="${PX}" y="112" fill="rgba(239,237,230,0.78)" font-family="Arial Black,Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="5">${cardEsc(selo)}</text>
+  <text x="${PX}" y="${titleY}" fill="#efede6" font-family="Arial Black,Arial,sans-serif" font-size="${fs}" font-weight="900">${tspans}</text>
+  <text x="${PX}" y="440" fill="rgba(239,237,230,0.62)" font-family="Arial,sans-serif" font-size="26">${tagSpans}</text>
+  <text x="${PX}" y="${H - 52}" fill="#363648" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">bumavit.com.br</text>
+</svg>`;
 }
 
 const esc = (s) => s; // conteúdo controlado localmente
@@ -302,7 +371,7 @@ function page(p, next) {
 
   const paras = (arr) => arr.map((t) => `<p>${t}</p>`).join('\n          ');
 
-  const statItems = p.stats.map(([num, desc]) => `
+  const statItems = (p.stats || []).map(([num, desc]) => `
         <div class="stats__item" data-reveal>
           <span class="stats__num">${num}</span>
           <span class="stats__desc">${desc}</span>
@@ -341,12 +410,15 @@ function page(p, next) {
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://bumavit.com.br/projetos/${p.slug}.html">
-  <meta property="og:image" content="https://bumavit.com.br/og.png">
+  <meta property="og:image" content="https://bumavit.com.br/images/projetos/${p.slug}-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="${esc(p.title)}, projeto da Bumavit">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://bumavit.com.br/projetos/${p.slug}.html">
   <meta name="twitter:title" content="${esc(p.title)} · BUMAVIT®">
   <meta name="twitter:description" content="${esc(p.tag)}.">
-  <meta name="twitter:image" content="https://bumavit.com.br/og.png">
+  <meta name="twitter:image" content="https://bumavit.com.br/images/projetos/${p.slug}-card.jpg">
   <link rel="canonical" href="https://bumavit.com.br/projetos/${p.slug}.html">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -429,12 +501,12 @@ ${banner}
           ${paras(p.solution)}
       </div>
     </section>
-
+${statItems ? `
     <section class="section">
       <div class="p-stats">${statItems}
       </div>
     </section>
-${visit}
+` : ''}${visit}
     <a class="next" href="${next.slug}.html" data-hover>
       <span class="next__label">Próximo projeto</span>
       <span class="next__title">${esc(next.title)}</span>
@@ -464,9 +536,14 @@ ${visit}
 }
 
 mkdirSync(join(root, 'projetos'), { recursive: true });
+mkdirSync(join(root, 'images', 'projetos'), { recursive: true });
 projects.forEach((p, i) => {
   const next = projects[(i + 1) % projects.length];
   const out = join(root, 'projetos', `${p.slug}.html`);
   writeFileSync(out, page(p, next), 'utf8');
   console.log('ok:', out);
+
+  const card = join(root, 'images', 'projetos', `${p.slug}-card.svg`);
+  writeFileSync(card, projectCard(p), 'utf8');
+  console.log('ok:', card);
 });

@@ -29,7 +29,9 @@ Cada página adicional acrescenta entre R$ 210 e R$ 270 ao valor total. Integra�
 
 Busca "criação de sites Rio de Janeiro" e você vai encontrar propostas de R$ 500 e propostas de R$ 12.000 para o "mesmo" produto. Não é engano. São produtos diferentes.
 
-**No piso** estão construtores de site com mensalidade (Wix, Squarespace e plataformas similares), freelancers em início de carreira usando templates básicos e revendedores de soluções padronizadas. Esses serviços existem, funcionam para alguns casos e têm limitações que só aparecem mais tarde: você não é dono do código, a performance no celular costuma ser mediana, a personalização tem teto baixo.
+**No piso** estão construtores de site com mensalidade (Wix, Squarespace e plataformas similares), freelancers em início de carreira usando templates básicos e revendedores de soluções padronizadas. Esses serviços existem e funcionam para alguns casos.
+
+As limitações só aparecem mais tarde: você não é dono do código, a velocidade no celular costuma ser mediana e a personalização tem teto baixo.
 
 O Mercado carioca tem uma concentração de revendedores de template em Zona Norte e subúrbios, onde o custo operacional menor permite preços mais baixos. Isso amplia o leque de propostas recebidas e aumenta a chance de comparar ofertas que não descrevem o mesmo produto.
 
@@ -43,7 +45,7 @@ Rio de Janeiro tem uma composição de negócios que influencia o que os sites p
 
 **Clínicas e consultórios** concentrados em Zona Sul, Barra e Tijuca procuram com frequência sites com convênios visíveis, agendamento integrado e SEO local para bairro. O paciente procura "dentista em Botafogo" ou "médico na Barra", não "clínica Rio de Janeiro" genericamente.
 
-**Comércio e serviços no Centro e nas zonas comerciais** — advogados, contadores, construtoras, imobiliárias — precisam de presença digital credível para clientes que vieram por indicação e pesquisam antes de ligar. O site confirma ou desfaz a impressão inicial.
+**Comércio e serviços no Centro e nas zonas comerciais** — advogados, contadores, construtoras, imobiliárias — precisam de um site que passe credibilidade para clientes que vieram por indicação e pesquisam antes de ligar. O site confirma ou desfaz a impressão inicial.
 
 **Turismo e hospitalidade** têm pico de demanda sazonal e precisam de sites rápidos no celular — o visitante pesquisa na rua, com 4G e pressa. Velocidade não é diferencial, é requisito.
 
@@ -65,9 +67,11 @@ Há também o caso do cliente que prefere reunião presencial por segurança ou 
 
 **Quando a localização não importa — que é a maioria dos projetos:**
 
-Um site institucional de cinco, sete ou dez páginas é desenvolvido no computador de quem está sendo pago para desenvolvê-lo. Os arquivos trafegam pela internet, a aprovação de layout acontece pelo browser, e o resultado final é um arquivo hospedado em servidor. Que esse arquivo tenha sido gerado em Botafogo, Barra ou Belo Horizonte não afeta o que o visitante vai ver.
+Um site institucional de cinco, sete ou dez páginas é desenvolvido no computador de quem está sendo pago para desenvolvê-lo. Os arquivos trafegam pela internet, a aprovação de layout acontece no navegador, e o resultado final é um arquivo hospedado em servidor.
 
-**Bumavit é uma agência carioca** — DDD 21, equipe no Rio — e faz a maior parte dos projetos sem uma única reunião presencial. Não porque presença não ajude em nada, mas porque é honesto dizer que, para a maioria dos projetos de site institucional, ela não muda o resultado final. Quando importa, está disponível.
+Que esse arquivo tenha sido gerado em Botafogo, Barra ou Belo Horizonte não afeta o que o visitante vai ver.
+
+**A Bumavit é uma software house carioca** — DDD 21, equipe no Rio — e faz a maior parte dos projetos sem uma única reunião presencial. Não porque presença não ajude em nada, mas porque é honesto dizer que, para a maioria dos projetos de site institucional, ela não muda o resultado final. Quando importa, está disponível.
 
 A escolha entre agência local e agência remota deve ser feita com base em o que o projeto exige, não no pressuposto de que "local é melhor". Para saber como avaliar qualquer fornecedor — carioca ou remoto — com base em critérios verificáveis, [estes sete pontos ajudam](https://bumavit.com.br/blog/como-escolher-uma-agencia-de-criacao-de-sites/).
 
@@ -77,7 +81,9 @@ O [post de precificação geral](https://bumavit.com.br/blog/quanto-custa-um-sit
 
 **Quem escreve os textos.** Empresas em início de atividade costumam não ter os textos do site prontos. Incluir redação no escopo adiciona horas ao projeto e move o orçamento da faixa básica para a faixa profissional. Defina isso antes da primeira reunião, não no meio do projeto.
 
-**Prazo.** O Rio tem concentração de projetos com lançamento em data de evento: feira de negócios, inauguração de espaço, temporada turística. Prazo comprimido tem custo extra — universal, mas aparece com frequência nos briefings cariocas. Se o prazo é real e tem uma razão de negócio, diga isso na primeira conversa. Se é preferência, vale avaliar se economizar algumas semanas justifica o custo adicional.
+**Prazo.** O Rio tem concentração de projetos com lançamento em data de evento: feira de negócios, inauguração de espaço, temporada turística. Prazo comprimido tem custo extra — universal, mas aparece com frequência nos briefings cariocas.
+
+Se o prazo é real e tem uma razão de negócio, diga isso na primeira conversa. Se é preferência, vale avaliar se economizar algumas semanas justifica o custo adicional.
 
 ## Depois do site: aparecer nas buscas do Rio
 
@@ -113,6 +119,6 @@ Três situações concretas para situar o seu projeto:
 
 Não ficou claro onde o seu projeto se encaixa? O [estimador da Bumavit](https://bumavit.com.br/estimador.html) devolve uma estimativa com base em algumas perguntas rápidas sobre o escopo. É o ponto de partida para qualquer conversa com um fornecedor, no Rio ou fora daqui.
 
-Se preferir falar antes: a Bumavit é uma agência carioca e está na [nossa página de serviços para o Rio](https://bumavit.com.br/criacao-de-sites-rj/).
+Se preferir falar antes: a Bumavit é uma software house carioca e está na [nossa página de serviços para o Rio](https://bumavit.com.br/criacao-de-sites-rj/).
 
-Para um exemplo concreto de site institucional desenvolvido pela Bumavit — portal de informações com identidade visual própria — veja o [projeto Cocban](https://bumavit.com.br/projetos/cocban.html).
+Para um exemplo concreto de site institucional desenvolvido pela Bumavit — o site de uma cooperativa de crédito, com simulador de empréstimo e páginas de transparência — veja o [projeto COCBAN](https://bumavit.com.br/projetos/cocban.html).

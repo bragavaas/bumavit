@@ -3,8 +3,10 @@
    (WhatsApp/e-mail). Trilíngue via window.__LANG.
 
    MODELO DE PREÇO: horas × RATE (R$/h). Edite RATE, PRICING e FEATURES.
-   Âncora: site institucional ≈ 18–22h ≈ R$ 2.700–3.300 (5 páginas),
-   chegando a ≈ R$ 3.750–4.650 com 10 páginas, ~20h em média, 8–13 dias.
+   Âncora: site institucional ≈ 20–28h ≈ R$ 1.800–2.500 (5 páginas),
+   chegando a ≈ R$ 2.430–3.310 com 10 páginas, 8–13 dias.
+   As faixas resultantes ficam em docs/faixas-de-preco.md (gerado por
+   scripts/build-pricing.mjs); rode o script depois de mudar qualquer tabela.
    O tipo "site" tem um passo extra de nº de páginas (5 inclusas,
    adicionais somam EXTRA_PAGE horas/dias cada). */
 (function () {
@@ -12,19 +14,40 @@
 
   var LANG = window.__LANG || 'pt';
   var WHATSAPP = '5521997235420';
-  var RATE = 150;                 // R$/hora
+  var RATE = 90;                  // R$/hora
   /* Mesmo endpoint Formspree do formulário de contato da home. */
   var FORM_ENDPOINT = 'https://formspree.io/f/mbdvvyro';
 
   /* ---------- Tabela de preços (edite aqui) ---------- */
   var PRICING = {
     types: { // hours: [mín, máx] → preço = h × RATE · days: prazo em dias
-      site:      { hours: [18, 22],  days: [8, 13] },
+      site:      { hours: [20, 27.8], days: [8, 13] }, // 20 a 27,8 h × R$ 90 = R$ 1.800 a 2.500, faixa definida pelo fundador (28/09)
       ecommerce: { hours: [36, 51],  days: [18, 25] },
       app:       { hours: [64, 87],  days: [29, 39] },
       saas:      { hours: [79, 118], days: [39, 50] }
     },
     deadlines: { urgente: 1.35, normal: 1, medio: 1, flexivel: 1 } // multiplica só o preço
+  };
+  /* Condições de pagamento por tipo, mostradas no resultado (fundador, 28/09). */
+  var PAYMENT = {
+    pt: {
+      site: 'Pagamento em 2 vezes: metade no ato e metade um mês depois.',
+      ecommerce: 'Pagamento em até 4 vezes.',
+      app: 'Pagamento parcelado ao longo do projeto, combinado na proposta.',
+      saas: 'Pagamento parcelado ao longo do projeto, combinado na proposta.'
+    },
+    en: {
+      site: 'Paid in 2 installments: half upfront and half one month later.',
+      ecommerce: 'Paid in up to 4 installments.',
+      app: 'Installments spread over the project, agreed in the proposal.',
+      saas: 'Installments spread over the project, agreed in the proposal.'
+    },
+    es: {
+      site: 'Pago en 2 cuotas: la mitad al inicio y la mitad un mes después.',
+      ecommerce: 'Pago en hasta 4 cuotas.',
+      app: 'Pago en cuotas a lo largo del proyecto, acordado en la propuesta.',
+      saas: 'Pago en cuotas a lo largo del proyecto, acordado en la propuesta.'
+    }
   };
   var PAGES_INCLUDED = 5;
   var PAGES_MAX = 15;
@@ -660,6 +683,7 @@
         '<span class="est__result-label">' + t.resultLabel + '</span>' +
         '<div class="est__result-value">' + money(e.lo, e.hi) + '</div>' +
         '<p class="est__result-time">' + t.resultTime(e.dLo, e.dHi) + '</p>' +
+        '<p class="est__result-time">' + (PAYMENT[LANG] || PAYMENT.pt)[state.type] + '</p>' +
         (fit ? '<p class="est__fit est__fit--' + fit + '">' + t.budgetFit[fit] + '</p>' : '') +
         '<ul class="est__summary">' + chips.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' +
         '<p class="est__disclaimer">' + t.disclaimer + '</p>' +

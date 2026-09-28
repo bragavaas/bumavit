@@ -232,6 +232,55 @@ const projects = [
         stats: [['+35%', 'Tasa de conversión en el checkout'], ['-28%', 'Abandono de carrito'], ['3×', 'Más recompra en 90 días']]
       }
     }
+  },
+  {
+    slug: 'exeurban',
+    title: 'EXE URBAN',
+    tag: 'Site institucional para escritório de arquitetura em Toronto',
+    mediaClass: 'cover--cyan',
+    mono: 'E',
+    nda: false,
+    meta: {
+      Cliente: 'EXE URBAN',
+      Ano: '2025',
+      Setor: 'Arquitetura e design de interiores',
+      'Serviços': 'Site institucional, SEO, Performance'
+    },
+    challenge: [
+      'A EXE URBAN é um escritório de arquitetura residencial em Toronto, com três frentes de serviço: Architecture, Interior Design e Cabinetry Design. O processo acompanha o cliente do conceito ao registro da licença de obra, um ciclo longo e de ticket alto em que o site funciona como prova de competência antes da primeira reunião.',
+      'O desafio era apresentar três disciplinas complementares sem fragmentar a percepção do escritório. Em um mercado onde o cliente pesquisa fundo antes de marcar qualquer conversa, cada página precisava transmitir o mesmo padrão técnico.'
+    ],
+    solution: [
+      'Desenvolvemos o site como parceiros de desenvolvimento da L. Socio Digital Marketing, agência canadense que coordenou o projeto. Construímos a estrutura em WordPress e Elementor, com cada frente de serviço ocupando espaço próprio sem competir com as demais.',
+      'A configuração de SEO e a otimização de performance foram ajustadas para o mercado residencial de Ontario: palavras-chave locais, velocidade no verde e marcação estruturada. O resultado é um site que comunica sofisticação e qualifica o visitante antes de qualquer contato.'
+    ],
+    link: 'https://exeurban.com/',
+    t: {
+      en: {
+        tag: 'Institutional website for an architecture firm in Toronto',
+        metaValues: ['EXE URBAN', '2025', 'Architecture and interior design', 'Institutional website, SEO, Performance'],
+        challenge: [
+          'EXE URBAN is a residential architecture firm based in Mississauga and Toronto, with three service lines: Architecture, Interior Design and Cabinetry Design. Their process runs from concept and zoning through permit submission and construction documentation — a long-cycle, high-ticket engagement where the website has to earn trust before the first meeting ever happens.',
+          'Presenting three distinct disciplines without fragmenting the firm\'s identity was the core challenge. Residential clients in Ontario research extensively before reaching out, so every page needed to carry the same level of craft and technical credibility.'
+        ],
+        solution: [
+          'We built the site as the development team behind L. Socio Digital Marketing, a Canadian agency that brought us in for the technical build. The structure runs on WordPress and Elementor, with each service line given its own space while the overall experience stays coherent.',
+          'SEO configuration and performance tuning were calibrated for the Ontario residential market: local keyword targeting, green Core Web Vitals scores, and structured markup for search. The result is a site that reads as sophisticated and works as a pre-qualification step before any conversation begins.'
+        ]
+      },
+      es: {
+        tag: 'Sitio institucional para una firma de arquitectura en Toronto',
+        metaValues: ['EXE URBAN', '2025', 'Arquitectura y diseño de interiores', 'Sitio institucional, SEO, Performance'],
+        challenge: [
+          'EXE URBAN es una firma de arquitectura residencial en Toronto, con tres frentes de servicio: Architecture, Interior Design y Cabinetry Design. Su proceso acompaña al cliente desde el concepto hasta el registro de la licencia de obra, un ciclo largo y de ticket alto en el que el sitio funciona como prueba de competencia antes de la primera reunión.',
+          'El desafío era presentar tres disciplinas complementarias sin fragmentar la percepción de la firma. En un mercado donde el cliente investiga a fondo antes de agendar cualquier conversación, cada página necesitaba transmitir el mismo estándar técnico.'
+        ],
+        solution: [
+          'Desarrollamos el sitio como equipo de desarrollo de L. Socio Digital Marketing, agencia canadense que coordinó el proyecto. Construimos la estructura en WordPress y Elementor, con cada frente de servicio ocupando su propio espacio sin competir con los demás.',
+          'La configuración de SEO y la optimización de performance fueron ajustadas para el mercado residencial de Ontario: palabras clave locales, velocidad en verde y marcado estructurado. El resultado es un sitio que comunica sofisticación y califica al visitante antes de cualquier contacto.'
+        ]
+      }
+    }
   }
 ];
 
@@ -273,7 +322,7 @@ function pageDict(p, next) {
     t.solution.forEach((txt, i) => {
       d[`section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(${i + 1})`] = txt;
     });
-    t.stats.forEach(([num, desc], i) => {
+    (t.stats || []).forEach(([num, desc], i) => {
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__num`] = num;
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__desc`] = desc;
     });
@@ -295,7 +344,7 @@ function page(p, next) {
 
   const paras = (arr) => arr.map((t) => `<p>${t}</p>`).join('\n          ');
 
-  const statItems = p.stats.map(([num, desc]) => `
+  const statItems = (p.stats || []).map(([num, desc]) => `
         <div class="stats__item" data-reveal>
           <span class="stats__num">${num}</span>
           <span class="stats__desc">${desc}</span>
@@ -408,10 +457,11 @@ function page(p, next) {
       </div>
     </section>
 
+${statItems ? `
     <section class="section">
       <div class="p-stats">${statItems}
       </div>
-    </section>
+    </section>` : ''}
 ${visit}
     <a class="next" href="${next.slug}.html" data-hover>
       <span class="next__label">Próximo projeto</span>

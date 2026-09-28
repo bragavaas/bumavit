@@ -3,11 +3,11 @@ title: "Quanto custa criar um site no Rio de Janeiro? Faixas 2026"
 slug: quanto-custa-criar-um-site-no-rio-de-janeiro
 date: 2026-09-27
 category: Negócios
-excerpt: Site básico fica entre R$ 2.700 e R$ 3.300. O que muda no Rio — e o que não muda — quando você compara agência local com agência remota.
+excerpt: Site básico fica entre R$ 1.800 e R$ 2.500. O que muda no Rio — e o que não muda — quando você compara agência local com agência remota.
 keyword: quanto custa criar um site no Rio de Janeiro
 ---
 
-Um site institucional básico no Rio de Janeiro — cinco páginas, design baseado em template, textos fornecidos pelo cliente — fica entre **R$ 2.700 e R$ 3.300**, com prazo de 8 a 13 dias.
+Um site institucional básico no Rio de Janeiro — cinco páginas, design baseado em template, textos fornecidos pelo cliente — fica entre **R$ 1.800 e R$ 2.500**, com prazo de 8 a 13 dias.
 
 Esse é o mesmo número de [quanto custa um site institucional](https://bumavit.com.br/blog/quanto-custa-um-site-institucional/) em qualquer outra cidade. O desenvolvimento de um site é, em grande medida, trabalho remoto. O que muda quando a agência é carioca — e quando isso importa para o seu projeto — é o assunto deste post.
 
@@ -17,13 +17,13 @@ Para uma estimativa personalizada antes de qualquer conversa com fornecedor: [ca
 
 As faixas abaixo são as mesmas do mercado nacional. O que existe no Rio é mais variação no piso — agências locais pequenas e revendedores de template que cobram menos — e concentração de fornecedores em determinadas regiões da cidade.
 
-**Presença básica.** Cinco páginas (Início, Sobre, Serviços, Portfólio, Contato), design baseado em template bem escolhido, textos fornecidos pelo cliente, sem integrações complexas. Faixa: **R$ 2.700 a R$ 3.300.** Prazo: 8 a 13 dias.
+**Presença básica.** Cinco páginas (Início, Sobre, Serviços, Portfólio, Contato), design baseado em template bem escolhido, textos fornecidos pelo cliente, sem integrações complexas. Faixa: **R$ 1.800 a R$ 2.500.** Prazo: 8 a 13 dias. Pagamento em duas vezes: metade no ato e metade um mês depois.
 
-**Site profissional.** Sete a oito páginas, design com a identidade visual da marca, textos escritos ou revisados pelo fornecedor, SEO básico configurado desde o lançamento, integração com formulário e WhatsApp. Faixa: **R$ 4.000 a R$ 6.000.** Prazo: 3 a 4 semanas.
+**Site profissional.** Sete a oito páginas, design com a identidade visual da marca, textos escritos ou revisados pelo fornecedor, SEO básico configurado desde o lançamento, integração com formulário e WhatsApp. Faixa: **R$ 3.080 a R$ 4.430.** Prazo: 3 a 4 semanas.
 
-**Com integrações.** Área restrita para clientes, integração com CRM, agendamento online, blog com estrutura de conteúdo ou requisitos de performance específicos. Faixa: **R$ 6.000 a R$ 8.500.** Prazo: 4 a 6 semanas.
+**Com integrações.** Área restrita para clientes, integração com CRM, agendamento online, blog com estrutura de conteúdo ou requisitos de performance específicos. Faixa: **R$ 4.070 a R$ 6.050.** Prazo: 4 a 6 semanas.
 
-Cada página adicional acrescenta entre R$ 210 e R$ 270 ao valor total. Integração, prazo apertado e textos a cargo do fornecedor empurram o orçamento para cima — as mesmas variáveis, independente de onde a agência esteja.
+Cada página adicional acrescenta entre R$ 130 e R$ 160 ao valor total. Integração, prazo apertado e textos a cargo do fornecedor empurram o orçamento para cima — as mesmas variáveis, independente de onde a agência esteja.
 
 ## Por que os preços no Rio variam tanto
 
@@ -111,11 +111,11 @@ A maioria das empresas subestima esse item e descobre um ou dois anos depois que
 
 Três situações concretas para situar o seu projeto:
 
-**Você precisa de presença básica.** Empresa em início de atividade, cinco páginas, textos próprios, sem integrações complexas. Faixa: **R$ 2.700 a R$ 3.300.** Prazo: 8 a 13 dias.
+**Você precisa de presença básica.** Empresa em início de atividade, cinco páginas, textos próprios, sem integrações complexas. Faixa: **R$ 1.800 a R$ 2.500.** Prazo: 8 a 13 dias. Pagamento em duas vezes: metade no ato e metade um mês depois.
 
-**Você precisa de um site profissional.** Sete a oito páginas, identidade visual da marca, SEO configurado desde o lançamento. Faixa: **R$ 4.000 a R$ 6.000.** Prazo: 3 a 4 semanas.
+**Você precisa de um site profissional.** Sete a oito páginas, identidade visual da marca, SEO configurado desde o lançamento. Faixa: **R$ 3.080 a R$ 4.430.** Prazo: 3 a 4 semanas.
 
-**Você precisa de integrações.** Agendamento online, área do cliente, CRM, blog. Faixa: **R$ 6.000 a R$ 8.500.** Prazo: 4 a 6 semanas.
+**Você precisa de integrações.** Agendamento online, área do cliente, CRM, blog. Faixa: **R$ 4.070 a R$ 6.050.** Prazo: 4 a 6 semanas.
 
 Não ficou claro onde o seu projeto se encaixa? O [estimador da Bumavit](https://bumavit.com.br/estimador.html) devolve uma estimativa com base em algumas perguntas rápidas sobre o escopo. É o ponto de partida para qualquer conversa com um fornecedor, no Rio ou fora daqui.
 

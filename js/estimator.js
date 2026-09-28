@@ -3,8 +3,10 @@
    (WhatsApp/e-mail). Trilíngue via window.__LANG.
 
    MODELO DE PREÇO: horas × RATE (R$/h). Edite RATE, PRICING e FEATURES.
-   Âncora: site institucional ≈ 18–22h ≈ R$ 2.700–3.300 (5 páginas),
-   chegando a ≈ R$ 3.750–4.650 com 10 páginas, ~20h em média, 8–13 dias.
+   Âncora: site institucional ≈ 18–22h ≈ R$ 1.620–1.980 (5 páginas),
+   chegando a ≈ R$ 2.250–2.790 com 10 páginas, ~20h em média, 8–13 dias.
+   As faixas resultantes ficam em docs/faixas-de-preco.md (gerado por
+   scripts/build-pricing.mjs); rode o script depois de mudar qualquer tabela.
    O tipo "site" tem um passo extra de nº de páginas (5 inclusas,
    adicionais somam EXTRA_PAGE horas/dias cada). */
 (function () {
@@ -12,7 +14,7 @@
 
   var LANG = window.__LANG || 'pt';
   var WHATSAPP = '5521997235420';
-  var RATE = 150;                 // R$/hora
+  var RATE = 90;                  // R$/hora
   /* Mesmo endpoint Formspree do formulário de contato da home. */
   var FORM_ENDPOINT = 'https://formspree.io/f/mbdvvyro';
 

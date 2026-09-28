@@ -4,7 +4,7 @@ slug: quanto-custa-criar-uma-loja-virtual-profissional
 date: 2026-10-20
 category: Negócios
 cover: rust
-excerpt: O investimento inicial varia 20 vezes — e por razões reais. Entenda os três caminhos, o que faz o preço mudar em cada um, e o custo mensal que raramente aparece na proposta.
+excerpt: O preço inicial varia 20 vezes — e por razões reais. Entenda os três caminhos, o que faz o preço mudar em cada um, e o custo mensal que raramente aparece na proposta.
 keyword: quanto custa criar uma loja virtual profissional
 ---
 
@@ -20,9 +20,9 @@ Não existe um modelo único de "loja virtual profissional". Existem três, e ca
 
 **Plataforma pronta**
 
-Nuvemshop, Shopify, Loja Integrada e similares. Você paga uma mensalidade, configura a loja dentro do ambiente da plataforma e pode começar a vender em dias. O investimento inicial pode ser baixo — se você mesmo montar — ou chegar a alguns milhares de reais se contratar alguém para configurar e customizar dentro dos limites da ferramenta.
+Nuvemshop, Shopify, Loja Integrada e similares. Você paga uma mensalidade, configura a loja dentro do ambiente da plataforma e pode começar a vender em dias. O custo inicial pode ser baixo — se você mesmo montar — ou chegar a alguns milhares de reais se contratar alguém para configurar e customizar dentro dos limites da ferramenta.
 
-É o caminho certo para quem está validando um produto, montando o primeiro canal de vendas online, ou opera com catálogo pequeno e sem necessidade de integração com sistema de gestão externo. A plataforma resolve 90% dos problemas de e-commerce sem precisar escrever uma linha de código.
+É o caminho certo para quem está validando um produto, montando o primeiro canal de vendas online, ou opera com catálogo pequeno e sem necessidade de integração com sistema de gestão externo. A plataforma resolve a maior parte dos problemas de uma loja sem precisar escrever uma linha de código.
 
 O limite aparece quando a operação cresce: a plataforma cobra um percentual sobre cada venda, o design fica restrito ao que o tema permite, e certas integrações — com ERP proprietário, com regras tributárias de nicho, com marketplace de logística específico — são difíceis ou simplesmente impossíveis de implementar. Quanto mais a loja cresce, mais você sente o teto.
 
@@ -30,13 +30,13 @@ O limite aparece quando a operação cresce: a plataforma cobra um percentual so
 
 O modelo mais comum para quem já fatura. Você escolhe uma plataforma consolidada — geralmente WooCommerce em WordPress ou Shopify — e contrata um desenvolvedor para construir um tema completamente personalizado, integrar com seu sistema de gestão, configurar a lógica de frete por região e adaptar o checkout ao processo de vendas do seu negócio.
 
-Você continua pagando a mensalidade e o percentual da plataforma, mas tem uma loja que parece e se comporta exatamente como você precisa. O investimento inicial é maior do que a plataforma pura, mas consideravelmente menor do que um e-commerce construído do zero.
+Você continua pagando a mensalidade e o percentual da plataforma, mas tem uma loja que parece e se comporta exatamente como você precisa. O custo inicial é maior do que a plataforma pura, mas consideravelmente menor do que um e-commerce construído do zero.
 
 Esse é o equilíbrio certo quando a plataforma resolve a base da operação e o que precisa de personalização são as partes críticas para o negócio.
 
 **E-commerce sob medida**
 
-Desenvolvido do zero, sem plataforma de terceiros. Você não paga mensalidade nem percentual de vendas para nenhum serviço externo — a infraestrutura é inteiramente sua. O investimento inicial é o mais alto dos três caminhos, o prazo de desenvolvimento é mais longo, e a manutenção fica sob sua responsabilidade.
+Desenvolvido do zero, sem plataforma de terceiros. Você não paga mensalidade nem percentual de vendas para nenhum serviço externo — a infraestrutura é inteiramente sua. O custo inicial é o mais alto dos três caminhos, o prazo de desenvolvimento é mais longo, e a manutenção fica sob sua responsabilidade.
 
 Faz sentido quando o volume de transações é alto o suficiente para que a economia no percentual sobre vendas cubra o custo adicional do desenvolvimento em 12 a 24 meses. Para operações menores, o payback raramente compensa.
 
@@ -48,9 +48,9 @@ Para a plataforma pronta, o custo é principalmente o tempo de configuração e 
 
 Para a plataforma com personalização, o custo cresce com o nível de customização técnica: tema original, integrações específicas e lógica de checkout não padrão são os maiores itens. O piso é mais alto do que a plataforma pura, mas o teto depende do escopo.
 
-Para o e-commerce sob medida, o investimento reflete o custo de construir do zero o que as plataformas já entregam prontas — carrinho, checkout, gestão de pedidos, catálogo — além das funcionalidades específicas do negócio. A vantagem não está no custo inicial; está na ausência de percentual sobre vendas e na ausência de limites de plataforma a longo prazo.
+Para o e-commerce sob medida, o preço reflete o custo de construir do zero o que as plataformas já entregam prontas — carrinho, checkout, gestão de pedidos, catálogo — além das funcionalidades específicas do negócio. A vantagem não está no custo inicial; está na ausência de percentual sobre vendas e na ausência de limites de plataforma a longo prazo.
 
-O [estimador de projetos](/estimador.html) mapeia qual caminho se aplica ao seu caso em três perguntas e chega a uma referência de investimento inicial.
+O [estimador de projetos](https://bumavit.com.br/estimador.html) mapeia qual caminho se aplica ao seu caso em três perguntas e devolve uma faixa de orçamento inicial.
 
 ## O que faz o preço subir
 
@@ -58,7 +58,9 @@ Dentro de qualquer modelo, o custo do projeto é determinado principalmente por 
 
 **Integração com ERP ou sistema de gestão**
 
-O maior multiplicador de custo em projetos de e-commerce. Sincronizar estoque, pedidos e emissão de nota fiscal entre a loja e o sistema de gestão depende da API disponível no ERP — cada sistema é diferente, alguns não têm conector pronto e exigem desenvolvimento customizado. Se você usa um sistema proprietário ou pouco comum, mencione isso no primeiro contato com qualquer fornecedor. O impacto no orçamento é alto e precisa ser estimado antes de qualquer proposta.
+O maior multiplicador de custo em projetos de e-commerce. Sincronizar estoque, pedidos e emissão de nota fiscal entre a loja e o sistema de gestão depende da API disponível no ERP — cada sistema é diferente, alguns não têm conector pronto e exigem desenvolvimento customizado. Se você usa um sistema proprietário ou pouco comum, mencione isso no primeiro contato com qualquer fornecedor.
+
+O impacto no orçamento é alto e precisa ser estimado antes de qualquer proposta.
 
 **Volume de produtos e variações**
 
@@ -122,8 +124,8 @@ Quem começa bem na plataforma certa e cresce é exatamente quem volta com o pro
 
 ## Por onde começar
 
-O caminho certo depende do momento da operação. Para identificar qual dos três modelos se aplica ao seu caso — e ter uma estimativa de investimento inicial sem compromisso — o [estimador de projetos](/estimador.html) chega a uma referência em três perguntas.
+O caminho certo depende do momento da operação. Para identificar qual dos três modelos se aplica ao seu caso — e ter uma faixa de orçamento inicial sem compromisso — o [estimador de projetos](https://bumavit.com.br/estimador.html) chega a uma referência em três perguntas.
 
-Para entender quando o sob medida se paga com os números reais da sua operação, faz sentido conversar antes de tomar qualquer decisão. Um exemplo de loja virtual desenvolvida pela Bumavit está no [portfólio de e-commerce](/projetos/ecommerce.html).
+Para entender quando o sob medida se paga com os números reais da sua operação, faz sentido conversar antes de tomar qualquer decisão. Um exemplo de loja virtual desenvolvida pela Bumavit está no [portfólio de e-commerce](https://bumavit.com.br/projetos/ecommerce.html).
 
-Se você já está comparando propostas, o post [como avaliar uma proposta de criação de site](/blog/como-avaliar-proposta-de-criacao-de-site/) explica o que verificar antes de assinar qualquer contrato — os princípios se aplicam igualmente a projetos de e-commerce.
+Se você já está comparando propostas, o post [como avaliar uma proposta de criação de site](https://bumavit.com.br/blog/como-avaliar-proposta-de-criacao-de-site/) explica o que verificar antes de assinar qualquer contrato — os princípios se aplicam igualmente a projetos de e-commerce.

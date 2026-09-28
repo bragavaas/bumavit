@@ -33,7 +33,7 @@ const projects = [
       ['Top 3', 'Nas buscas locais em Toronto'],
       ['2×', 'Mais reservas online']
     ],
-    link: null, // subdomínio yachtday saiu do ar: reative aqui se voltar
+    link: 'https://yachtday.ca/',
     /* Palco 2.5D no lugar do banner gradiente: mockups com fundo transparente
        em img/projetos/ (WebP ~150KB no total). O tilt vive em js/page.js. */
     showcase: {
@@ -80,8 +80,8 @@ const projects = [
     meta: {
       Cliente: 'COCBAN',
       Ano: '2024',
-      Setor: 'Institucional',
-      'Serviços': 'Web design, Desenvolvimento, Identidade digital'
+      Setor: 'Cooperativa de crédito',
+      'Serviços': 'Site institucional, SEO, Performance'
     },
     challenge: [
       'A COCBAN precisava de uma casa digital à altura da instituição: a informação estava fragmentada e a comunicação com o público dependia de canais dispersos.',
@@ -96,11 +96,11 @@ const projects = [
       ['<2s', 'Tempo de carregamento das páginas'],
       ['90+', 'Pontuação de performance no Lighthouse']
     ],
-    link: null, // página /cocban vivia no WordPress antigo, desativado na migração do domínio
+    link: 'https://cocban.coop.br/',
     t: {
       en: {
         tag: 'Institutional portal with a complete digital presence',
-        metaValues: ['COCBAN', '2024', 'Institutional', 'Web design, Development, Digital identity'],
+        metaValues: ['COCBAN', '2024', 'Credit union', 'Institutional website, SEO, Performance'],
         challenge: [
           'COCBAN needed a digital home worthy of the institution: information was fragmented and communication with the public relied on scattered channels.',
           'The challenge was to centralize everything in a clear, accessible, easy-to-maintain portal, without giving up personality.'
@@ -113,7 +113,7 @@ const projects = [
       },
       es: {
         tag: 'Portal institucional con presencia digital completa',
-        metaValues: ['COCBAN', '2024', 'Institucional', 'Diseño web, Desarrollo, Identidad digital'],
+        metaValues: ['COCBAN', '2024', 'Cooperativa de crédito', 'Sitio institucional, SEO, Performance'],
         challenge: [
           'COCBAN necesitaba una casa digital a la altura de la institución: la información estaba fragmentada y la comunicación con el público dependía de canales dispersos.',
           'El desafío era centralizar todo en un portal claro, accesible y fácil de mantener, sin renunciar a la personalidad.'

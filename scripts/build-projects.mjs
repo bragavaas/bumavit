@@ -280,7 +280,7 @@ function pageDict(p, next) {
     t.solution.forEach((txt, i) => {
       d[`section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(${i + 1})`] = txt;
     });
-    t.stats.forEach(([num, desc], i) => {
+    (t.stats || []).forEach(([num, desc], i) => {
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__num`] = num;
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__desc`] = desc;
     });
@@ -302,11 +302,27 @@ function page(p, next) {
 
   const paras = (arr) => arr.map((t) => `<p>${t}</p>`).join('\n          ');
 
-  const statItems = p.stats.map(([num, desc]) => `
+  const stats = p.stats || [];
+  const statItems = stats.map(([num, desc]) => `
         <div class="stats__item" data-reveal>
           <span class="stats__num">${num}</span>
           <span class="stats__desc">${desc}</span>
         </div>`).join('');
+
+  /* Projeto ainda em execucao. Marca a pagina com o selo e, por nao haver
+     resultado medido, a faixa de numeros some sozinha quando stats fica
+     vazio. O link continua independente: entra so se o projeto tiver um
+     endereco publico. */
+  const wipBadge = p.status === 'andamento'
+    ? `
+        <span class="p-wip" data-reveal>Em andamento</span>`
+    : '';
+
+  const statsSection = statItems ? `    <section class="section">
+      <div class="p-stats">${statItems}
+      </div>
+    </section>
+` : '';
 
   const visit = p.link ? `
     <section class="p-visit section">
@@ -364,7 +380,7 @@ function page(p, next) {
   </script>
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css?v=9">
+  <link rel="stylesheet" href="../css/style.css?v=10">
 </head>
 <body>
 
@@ -406,7 +422,7 @@ function page(p, next) {
 
   <main>
     <section class="p-hero section">
-      <p class="section__label" data-reveal>( Projeto )</p>${ndaBadge}
+      <p class="section__label" data-reveal>( Projeto )</p>${ndaBadge}${wipBadge}
       <h1 class="p-hero__title" data-split>${esc(p.title)}</h1>
       <p class="p-hero__tag" data-reveal>${esc(p.tag)}</p>
 
@@ -430,11 +446,7 @@ ${banner}
       </div>
     </section>
 
-    <section class="section">
-      <div class="p-stats">${statItems}
-      </div>
-    </section>
-${visit}
+${statsSection}${visit}
     <a class="next" href="${next.slug}.html" data-hover>
       <span class="next__label">Próximo projeto</span>
       <span class="next__title">${esc(next.title)}</span>

@@ -1844,6 +1844,26 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   margin-bottom: 1.5rem;
 }
 .p-nda::before { content: '🔒'; font-size: 0.9em; }
+
+/* Selo de projeto em execucao. Mesma forma do .p-nda, mas em tangerina:
+   sinaliza trabalho em curso em vez de sigilo. */
+.p-wip {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 0.82rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 100px;
+  padding: 0.5em 1.2em;
+  margin-bottom: 1.5rem;
+}
+.p-wip::before {
+  content: ''; width: 0.5em; height: 0.5em; border-radius: 50%;
+  background: var(--accent);
+  animation: wippulse 2s ease-in-out infinite;
+}
+@keyframes wippulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+@media (prefers-reduced-motion: reduce) { .p-wip::before { animation: none; } }
 .next {
   display: block;
   padding: clamp(4rem, 10vh, 7rem) var(--pad);

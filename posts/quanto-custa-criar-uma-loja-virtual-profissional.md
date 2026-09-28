@@ -48,7 +48,7 @@ Para a plataforma pronta, o custo é principalmente o tempo de configuração e 
 
 Para a plataforma com personalização, o custo cresce com o nível de customização técnica: tema original, integrações específicas e lógica de checkout não padrão são os maiores itens. O piso é mais alto do que a plataforma pura, mas o teto depende do escopo.
 
-Na Bumavit, a loja inicial fica entre R$ 3.240 e R$ 4.590. Frete integrado, cupons e SEO avançado levam a faixa para R$ 4.680 a R$ 6.840; catálogo grande, assinaturas e multi-idioma, para R$ 6.480 a R$ 9.630. Domínio, hospedagem, fotos e cadastro de produtos ficam fora dessas faixas.
+Na Bumavit, a loja inicial fica entre R$ 3.240 e R$ 4.590. Frete integrado, cupons e SEO avançado levam a faixa para R$ 4.680 a R$ 6.840; catálogo grande, assinaturas e multi-idioma, para R$ 6.480 a R$ 9.630. O pagamento pode ser dividido em até quatro vezes. Domínio, hospedagem, fotos e cadastro de produtos ficam fora dessas faixas.
 
 Para o e-commerce sob medida, o preço reflete o custo de construir do zero o que as plataformas já entregam prontas — carrinho, checkout, gestão de pedidos, catálogo — além das funcionalidades específicas do negócio. A vantagem não está no custo inicial; está na ausência de percentual sobre vendas e na ausência de limites de plataforma a longo prazo. Esse caminho não tem faixa fixa: o orçamento sai da conversa, depois de mapear integrações e volume.
 

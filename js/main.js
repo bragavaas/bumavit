@@ -426,9 +426,9 @@
     // strings traduzidas pelo i18n.js (fallback pt-BR)
     var STR = window.__STR || {
       formSending: 'Enviando…',
-      formOk: 'Mensagem enviada! Respondemos em até 24h. ✦',
+      formOk: 'Mensagem enviada. Respondemos em até 24h. ✦',
       formError: 'Algo deu errado. Tente de novo ou chame no WhatsApp.',
-      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail. 🙂',
+      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail.',
       formLeaveConfirm: 'Você já preencheu o formulário. Quer sair mesmo e continuar por aqui? Se preferir, clique em "Enviar mensagem" para não perder o que digitou.'
     };
 

@@ -4,13 +4,13 @@ slug: quanto-custa-criar-uma-loja-virtual-profissional
 date: 2026-10-20
 category: Negócios
 cover: rust
-excerpt: O preço inicial varia 20 vezes — e por razões reais. Entenda os três caminhos, o que faz o preço mudar em cada um, e o custo mensal que raramente aparece na proposta.
+excerpt: Uma loja virtual inicial fica entre R$ 3.240 e R$ 4.590; com todas as funcionalidades, chega a R$ 9.630. Entenda os três caminhos, o que faz o preço mudar e o custo mensal que raramente aparece na proposta.
 keyword: quanto custa criar uma loja virtual profissional
 ---
 
-O orçamento que você recebeu estava entre R$ 3.000 e R$ 60.000 e ninguém explicou a diferença.
+Uma loja virtual inicial na Bumavit — catálogo pequeno, pagamento e frete padrão — fica entre **R$ 3.240 e R$ 4.590**, com prazo de 18 a 25 dias. Com todas as funcionalidades do estimador, chega a R$ 6.480 a R$ 9.630. Entre uma proposta e outra do mercado, a diferença costuma ser bem maior, e quase nunca vem explicada.
 
-Não é falta de transparência. Preço de loja virtual oscila 20 vezes mais do que preço de site institucional, e por razões técnicas reais: volume de produtos, integração com sistema de gestão, regras de frete, sincronização com marketplace, meios de pagamento, migração de plataforma existente. Cada um desses fatores muda o orçamento de forma mensurável.
+Não é falta de transparência. Preço de loja virtual varia mais do que preço de site institucional, e por razões técnicas reais: volume de produtos, integração com sistema de gestão, regras de frete, sincronização com marketplace, meios de pagamento, migração de plataforma existente. Cada um desses fatores muda o orçamento de forma mensurável.
 
 Este post mapeia os três caminhos possíveis para montar uma loja virtual profissional, explica o que faz o preço variar dentro de cada um, e — o que raramente aparece em qualquer proposta — quanto custa operar a loja todo mês depois que ela vai ao ar.
 
@@ -48,7 +48,9 @@ Para a plataforma pronta, o custo é principalmente o tempo de configuração e 
 
 Para a plataforma com personalização, o custo cresce com o nível de customização técnica: tema original, integrações específicas e lógica de checkout não padrão são os maiores itens. O piso é mais alto do que a plataforma pura, mas o teto depende do escopo.
 
-Para o e-commerce sob medida, o preço reflete o custo de construir do zero o que as plataformas já entregam prontas — carrinho, checkout, gestão de pedidos, catálogo — além das funcionalidades específicas do negócio. A vantagem não está no custo inicial; está na ausência de percentual sobre vendas e na ausência de limites de plataforma a longo prazo.
+Na Bumavit, a loja inicial fica entre R$ 3.240 e R$ 4.590. Frete integrado, cupons e SEO avançado levam a faixa para R$ 4.680 a R$ 6.840; catálogo grande, assinaturas e multi-idioma, para R$ 6.480 a R$ 9.630. Domínio, hospedagem, fotos e cadastro de produtos ficam fora dessas faixas.
+
+Para o e-commerce sob medida, o preço reflete o custo de construir do zero o que as plataformas já entregam prontas — carrinho, checkout, gestão de pedidos, catálogo — além das funcionalidades específicas do negócio. A vantagem não está no custo inicial; está na ausência de percentual sobre vendas e na ausência de limites de plataforma a longo prazo. Esse caminho não tem faixa fixa: o orçamento sai da conversa, depois de mapear integrações e volume.
 
 O [estimador de projetos](https://bumavit.com.br/estimador.html) mapeia qual caminho se aplica ao seu caso em três perguntas e devolve uma faixa de orçamento inicial.
 
@@ -98,7 +100,7 @@ Os componentes do custo mensal variam por modelo, mas geralmente incluem:
 
 Não é possível citar os valores dessas linhas sem risco de desatualizar o post em semanas — plataformas e gateways revisam as tabelas com frequência. Consulte as condições vigentes de cada serviço antes de fechar qualquer contrato.
 
-O que importa entender é a estrutura: há um custo fixo mensal e há um custo variável que cresce com a receita. Uma loja que custa R$ 8.000 para ser construída pode custar mais do que isso para ser operada no primeiro ano. Saber disso antes de assinar — e não descobrir depois — é o que separa um projeto sustentável de um arrependimento.
+O que importa entender é a estrutura: há um custo fixo mensal e há um custo variável que cresce com a receita. Uma loja que custa R$ 5.000 para ser construída pode custar mais do que isso para ser operada no primeiro ano. Saber disso antes de assinar — e não descobrir depois — é o que separa um projeto sustentável de um arrependimento.
 
 Esta é a informação que nenhuma plataforma publica em seu próprio site. Um fornecedor que inclui o custo mensal detalhado na proposta está colocando os números certos na mesa. Um que não inclui, vale perguntar.
 

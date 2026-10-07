@@ -1,0 +1,67 @@
+{
+  "slug": "ig-13-traducao",
+  "generated": "2026-10-07T16:20:42.500Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-13-traducao-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "b",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350",
+      "jpeg": "ig-13-traducao-01.jpg"
+    },
+    {
+      "file": "ig-13-traducao-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "b",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920",
+      "jpeg": "ig-13-traducao-story-01.jpg"
+    },
+    {
+      "file": "ig-13-traducao-02.png",
+      "slide": 2,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 84,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350",
+      "jpeg": "ig-13-traducao-02.jpg"
+    },
+    {
+      "file": "ig-13-traducao-03.png",
+      "slide": 3,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 120,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350",
+      "jpeg": "ig-13-traducao-03.jpg"
+    }
+  ]
+}

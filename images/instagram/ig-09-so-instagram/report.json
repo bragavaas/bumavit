@@ -1,0 +1,37 @@
+{
+  "slug": "ig-09-so-instagram",
+  "generated": "2026-10-07T16:19:59.835Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-09-so-instagram-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 106,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350",
+      "jpeg": "ig-09-so-instagram-01.jpg"
+    },
+    {
+      "file": "ig-09-so-instagram-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 106,
+      "overflow": false,
+      "contentHeight": 1080,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920",
+      "jpeg": "ig-09-so-instagram-story-01.jpg"
+    }
+  ]
+}

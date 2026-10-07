@@ -1,6 +1,6 @@
 # Faixas de preço da Bumavit
 
-> Gerado por `scripts/build-pricing.mjs` a partir de `js/estimator.js` em 2026-09-28.
+> Gerado por `scripts/build-pricing.mjs` a partir de `js/estimator.js` em 2026-10-07.
 > Não edite à mão: mude o estimador e rode o script. O estimador é a fonte de verdade.
 
 Este é o único documento de onde um agente de conteúdo (blog, redes, Post do Google, portfólio) pode tirar um valor em reais. Número que não está aqui não existe.
@@ -134,4 +134,5 @@ Varredura de `posts/*.md` na data de geração. A última coluna lista o que nã
 | agencia-ou-freelancer-para-criar-site | R$ 2.500, R$ 5.800, R$ 9.200 | R$ 5.800, R$ 9.200 |
 | como-avaliar-proposta-de-criacao-de-site | R$ 1.800, R$ 4.500, R$ 11.000 | R$ 4.500, R$ 11.000 |
 | preciso-de-site-se-ja-tenho-instagram | R$ 150, R$ 4.000 | R$ 150, R$ 4.000 |
-| quanto-custa-um-site-institucional | R$ 2.700, R$ 3.300, R$ 210, R$ 270, R$ 420, R$ 540, R$ 500, R$ 30.000, R$ 5.400, R$ 7.650, R$ 4.000, R$ 6.000, R$ 8.500 | R$ 2.700, R$ 3.300, R$ 210, R$ 270, R$ 420, R$ 500, R$ 30.000, R$ 5.400, R$ 7.650, R$ 4.000, R$ 8.500 |
+| quanto-custa-criar-um-site-no-rio-de-janeiro | R$ 1.800, R$ 2.500, R$ 3.080, R$ 4.430, R$ 4.070, R$ 6.050, R$ 130, R$ 160, R$ 500, R$ 12.000 | R$ 500 |
+| quanto-custa-um-site-institucional | R$ 1.800, R$ 2.500, R$ 130, R$ 160, R$ 260, R$ 320, R$ 500, R$ 30.000, R$ 3.240, R$ 4.590, R$ 3.080, R$ 4.430, R$ 4.070, R$ 6.050 | R$ 260, R$ 320, R$ 500, R$ 30.000 |

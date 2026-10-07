@@ -1,5 +1,5 @@
 /* BUMAVIT · Estimador "Monte seu projeto"
-   Wizard → faixa de investimento + prazo → handoff pré-preenchido
+   Wizard → faixa de orçamento + prazo → handoff pré-preenchido
    (WhatsApp/e-mail). Trilíngue via window.__LANG.
 
    MODELO DE PREÇO: horas × RATE (R$/h). Edite RATE, PRICING e FEATURES.
@@ -122,12 +122,12 @@
         error: { email: 'Digite um e-mail válido.', phone: 'Digite um telefone válido, com DDD.' }
       },
       budgetStep: {
-        q: 'Qual faixa de investimento você tem em mente?',
+        q: 'Quanto você pensa em gastar no projeto?',
         hint: 'Isso não muda a estimativa, só nos ajuda a desenhar o escopo certo para o seu momento.',
         options: [
           { id: 'ate3k', name: 'Até R$ 3.000', desc: 'Escopo enxuto, foco no essencial' },
           { id: 'de3a6k', name: 'R$ 3.000 – 6.000', desc: 'Projeto completo com folga' },
-          { id: 'de6a12k', name: 'R$ 6.000 – 12.000', desc: 'Escopo robusto, mais recursos' },
+          { id: 'de6a12k', name: 'R$ 6.000 – 12.000', desc: 'Escopo maior, mais funcionalidades' },
           { id: 'acima12k', name: 'Acima de R$ 12.000', desc: 'Projeto de grande porte' },
           { id: 'naosei', name: 'Ainda não sei', desc: 'Quero entender as opções primeiro' }
         ]
@@ -136,10 +136,10 @@
         q: function (n) { return n ? n + ', o que você quer construir?' : 'O que você quer construir?'; },
         hint: 'Escolha o tipo de projeto.',
         options: [
-          { id: 'site', name: 'Site institucional', desc: 'Presença digital profissional para sua marca' },
-          { id: 'ecommerce', name: 'E-commerce', desc: 'Loja virtual pronta para vender' },
-          { id: 'app', name: 'Aplicativo', desc: 'App mobile para iOS e Android' },
-          { id: 'saas', name: 'Sistema / SaaS', desc: 'Plataforma web sob medida para o seu negócio' }
+          { id: 'site', name: 'Site institucional', desc: 'Site sob medida para apresentar a sua empresa' },
+          { id: 'ecommerce', name: 'Loja virtual', desc: 'Loja sob medida, pronta para vender' },
+          { id: 'app', name: 'Aplicativo', desc: 'Aplicativo para iPhone e Android' },
+          { id: 'saas', name: 'Sistema sob medida', desc: 'Sistema web feito para o jeito que a sua empresa trabalha' }
         ]
       },
       pagesStep: {
@@ -200,11 +200,11 @@
       back: '← Voltar',
       next: 'Avançar →',
       resultGreeting: function (n) { return n ? n + ', aqui está o seu projeto' : 'Aqui está o seu projeto'; },
-      resultLabel: 'Estimativa inicial de investimento',
+      resultLabel: 'Faixa de orçamento estimada',
       resultTime: function (a, b) { return 'Prazo estimado: ' + a + ' a ' + b + ' dias'; },
       pagesChip: function (n) { return n + ' páginas'; },
       budgetFit: {
-        ok: '✓ Cabe na faixa de investimento que você indicou.',
+        ok: '✓ Cabe na faixa de orçamento que você indicou.',
         tight: 'Encosta no teto da sua faixa, mas dá para ajustar o escopo na conversa para fechar a conta.',
         over: 'Ficou acima da faixa que você indicou, mas dá para dividir o escopo em fases e caber no seu orçamento. Vale uma conversa.',
         under: 'Abaixo da faixa que você indicou: sobra espaço até para ampliar o escopo, se fizer sentido.'
@@ -214,8 +214,8 @@
       ctaWhats: 'Enviar pelo WhatsApp',
       ctaMail: 'Enviar por e-mail',
       restart: 'Recomeçar',
-      handoffIntro: 'Olá, Bumavit! Montei meu projeto no site:',
-      handoffName: 'Nome', handoffEmail: 'E-mail', handoffPhone: 'WhatsApp', handoffBudget: 'Faixa de investimento',
+      handoffIntro: 'Olá, Bumavit. Montei meu projeto no site:',
+      handoffName: 'Nome', handoffEmail: 'E-mail', handoffPhone: 'WhatsApp', handoffBudget: 'Faixa de orçamento',
       handoffType: 'Tipo', handoffPages: 'Páginas', handoffFeatures: 'Funcionalidades',
       handoffDeadline: 'Prazo', handoffEstimate: 'Estimativa apresentada',
       handoffExtra: function (n) { return n > 0 ? ' (' + n + ' adicionais)' : ''; },
@@ -241,12 +241,12 @@
         error: { email: 'Please enter a valid e-mail.', phone: 'Please enter a valid phone number.' }
       },
       budgetStep: {
-        q: 'What investment range do you have in mind?',
+        q: 'How much are you planning to spend on the project?',
         hint: 'This does not change the estimate, it just helps us shape the right scope for where you are now.',
         options: [
           { id: 'ate3k', name: 'Up to R$ 3,000', desc: 'Lean scope, focused on the essentials' },
           { id: 'de3a6k', name: 'R$ 3,000 – 6,000', desc: 'A complete project with room to breathe' },
-          { id: 'de6a12k', name: 'R$ 6,000 – 12,000', desc: 'Robust scope, more capabilities' },
+          { id: 'de6a12k', name: 'R$ 6,000 – 12,000', desc: 'Larger scope, more features' },
           { id: 'acima12k', name: 'Above R$ 12,000', desc: 'Large-scale project' },
           { id: 'naosei', name: 'Not sure yet', desc: 'I want to understand the options first' }
         ]
@@ -255,10 +255,10 @@
         q: function (n) { return n ? n + ', what do you want to build?' : 'What do you want to build?'; },
         hint: 'Pick a project type.',
         options: [
-          { id: 'site', name: 'Institutional website', desc: 'A professional digital home for your brand' },
-          { id: 'ecommerce', name: 'E-commerce', desc: 'An online store ready to sell' },
-          { id: 'app', name: 'Mobile app', desc: 'iOS and Android' },
-          { id: 'saas', name: 'System / SaaS', desc: 'A tailor-made web platform for your business' }
+          { id: 'site', name: 'Institutional website', desc: 'A custom website to present your business' },
+          { id: 'ecommerce', name: 'Online store', desc: 'A custom store, ready to sell' },
+          { id: 'app', name: 'Mobile app', desc: 'An app for iPhone and Android' },
+          { id: 'saas', name: 'Custom system', desc: 'A web system built around how your business works' }
         ]
       },
       pagesStep: {
@@ -319,11 +319,11 @@
       back: '← Back',
       next: 'Next →',
       resultGreeting: function (n) { return n ? n + ', here is your project' : 'Here is your project'; },
-      resultLabel: 'Initial investment estimate',
+      resultLabel: 'Estimated price range',
       resultTime: function (a, b) { return 'Estimated timeline: ' + a + ' to ' + b + ' days'; },
       pagesChip: function (n) { return n + ' pages'; },
       budgetFit: {
-        ok: '✓ Fits the investment range you indicated.',
+        ok: '✓ Fits the budget range you indicated.',
         tight: 'Close to the top of your range, but we can fine-tune the scope in the call to make it work.',
         over: 'Above the range you indicated, but we can split the scope into phases to fit your budget. Worth a quick chat.',
         under: 'Below the range you indicated: there is even room to expand the scope, if it makes sense.'
@@ -333,8 +333,8 @@
       ctaWhats: 'Send via WhatsApp',
       ctaMail: 'Send by e-mail',
       restart: 'Start over',
-      handoffIntro: 'Hi Bumavit! I configured my project on the website:',
-      handoffName: 'Name', handoffEmail: 'E-mail', handoffPhone: 'WhatsApp', handoffBudget: 'Investment range',
+      handoffIntro: 'Hi Bumavit, I configured my project on the website:',
+      handoffName: 'Name', handoffEmail: 'E-mail', handoffPhone: 'WhatsApp', handoffBudget: 'Budget range',
       handoffType: 'Type', handoffPages: 'Pages', handoffFeatures: 'Features',
       handoffDeadline: 'Timeline', handoffEstimate: 'Estimate shown',
       handoffExtra: function (n) { return n > 0 ? ' (' + n + ' extra)' : ''; },
@@ -360,12 +360,12 @@
         error: { email: 'Escribe un correo válido.', phone: 'Escribe un teléfono válido.' }
       },
       budgetStep: {
-        q: '¿Qué rango de inversión tienes en mente?',
+        q: '¿Cuánto piensas gastar en el proyecto?',
         hint: 'Esto no cambia la estimación, solo nos ayuda a diseñar el alcance adecuado para tu momento.',
         options: [
           { id: 'ate3k', name: 'Hasta R$ 3.000', desc: 'Alcance ajustado, foco en lo esencial' },
           { id: 'de3a6k', name: 'R$ 3.000 – 6.000', desc: 'Proyecto completo con holgura' },
-          { id: 'de6a12k', name: 'R$ 6.000 – 12.000', desc: 'Alcance robusto, más recursos' },
+          { id: 'de6a12k', name: 'R$ 6.000 – 12.000', desc: 'Alcance mayor, más funcionalidades' },
           { id: 'acima12k', name: 'Más de R$ 12.000', desc: 'Proyecto de gran porte' },
           { id: 'naosei', name: 'Aún no lo sé', desc: 'Quiero entender las opciones primero' }
         ]
@@ -374,10 +374,10 @@
         q: function (n) { return n ? n + ', ¿qué quieres construir?' : '¿Qué quieres construir?'; },
         hint: 'Elige el tipo de proyecto.',
         options: [
-          { id: 'site', name: 'Sitio institucional', desc: 'Presencia digital profesional para tu marca' },
-          { id: 'ecommerce', name: 'E-commerce', desc: 'Tienda online lista para vender' },
-          { id: 'app', name: 'Aplicación móvil', desc: 'Para iOS y Android' },
-          { id: 'saas', name: 'Sistema / SaaS', desc: 'Plataforma web a medida para tu negocio' }
+          { id: 'site', name: 'Sitio institucional', desc: 'Sitio a medida para presentar tu empresa' },
+          { id: 'ecommerce', name: 'Tienda online', desc: 'Tienda a medida, lista para vender' },
+          { id: 'app', name: 'Aplicación móvil', desc: 'Aplicación para iPhone y Android' },
+          { id: 'saas', name: 'Sistema a medida', desc: 'Sistema web hecho para la forma en que trabaja tu empresa' }
         ]
       },
       pagesStep: {
@@ -438,11 +438,11 @@
       back: '← Volver',
       next: 'Avanzar →',
       resultGreeting: function (n) { return n ? n + ', aquí está tu proyecto' : 'Aquí está tu proyecto'; },
-      resultLabel: 'Estimación inicial de inversión',
+      resultLabel: 'Rango de presupuesto estimado',
       resultTime: function (a, b) { return 'Plazo estimado: ' + a + ' a ' + b + ' días'; },
       pagesChip: function (n) { return n + ' páginas'; },
       budgetFit: {
-        ok: '✓ Cabe en el rango de inversión que indicaste.',
+        ok: '✓ Cabe en el rango de presupuesto que indicaste.',
         tight: 'Roza el techo de tu rango, pero podemos ajustar el alcance en la llamada para que cierre.',
         over: 'Quedó por encima del rango que indicaste, pero podemos dividir el alcance en fases para caber en tu presupuesto. Vale una conversación.',
         under: 'Por debajo del rango que indicaste: incluso hay margen para ampliar el alcance, si tiene sentido.'
@@ -452,8 +452,8 @@
       ctaWhats: 'Enviar por WhatsApp',
       ctaMail: 'Enviar por correo',
       restart: 'Empezar de nuevo',
-      handoffIntro: '¡Hola, Bumavit! Configuré mi proyecto en el sitio:',
-      handoffName: 'Nombre', handoffEmail: 'Correo', handoffPhone: 'WhatsApp', handoffBudget: 'Rango de inversión',
+      handoffIntro: 'Hola, Bumavit. Configuré mi proyecto en el sitio:',
+      handoffName: 'Nombre', handoffEmail: 'Correo', handoffPhone: 'WhatsApp', handoffBudget: 'Rango de presupuesto',
       handoffType: 'Tipo', handoffPages: 'Páginas', handoffFeatures: 'Funcionalidades',
       handoffDeadline: 'Plazo', handoffEstimate: 'Estimación mostrada',
       handoffExtra: function (n) { return n > 0 ? ' (' + n + ' adicionales)' : ''; },

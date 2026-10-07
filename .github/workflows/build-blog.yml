@@ -34,6 +34,16 @@ jobs:
       - name: Build blog HTML
         run: node scripts/build-blog.mjs
 
+      # og:image dos posts e JPEG 1200x630 (redes sociais nao exibem SVG).
+      # So os cards novos ou alterados sao refeitos. O runner ja tem Chrome;
+      # se nao tiver, o playwright-core baixa um Chromium.
+      - name: Rasterizar os cards de compartilhamento
+        run: |
+          npm i --no-save --no-package-lock --no-audit --no-fund playwright-core@1.56.1
+          CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          if [ -z "$CHROME" ]; then npx playwright-core install chromium; fi
+          CHROME_PATH="$CHROME" node scripts/rasterize-og.mjs
+
       - name: Publicar HTML gerado via pull request
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

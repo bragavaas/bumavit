@@ -73,7 +73,7 @@ const projects = [
   {
     slug: 'cocban',
     title: 'COCBAN',
-    tag: 'Portal institucional com presença digital completa',
+    tag: 'Cooperativa de crédito · Juiz de Fora, MG',
     mediaClass: 'cover--rust',
     mono: 'C',
     nda: false,
@@ -84,45 +84,38 @@ const projects = [
       'Serviços': 'Site institucional, SEO, Performance'
     },
     challenge: [
-      'A COCBAN precisava de uma casa digital à altura da instituição: a informação estava fragmentada e a comunicação com o público dependia de canais dispersos.',
-      'O desafio era centralizar tudo em um portal claro, acessível e fácil de manter, sem abrir mão de personalidade.'
+      'A COCBAN é a Cooperativa de Economia e Crédito Mútuo dos Bancários de Juiz de Fora, fundada em 2000, com atuação na Zona da Mata mineira e um público definido: bancários e dependentes que já são cooperados. O site precisava cumprir dois papéis ao mesmo tempo.',
+      'O primeiro: deixar o cooperado simular um empréstimo em poucos cliques. O segundo: publicar o que o Banco Central exige de uma cooperativa de crédito, como ouvidoria, canal de denúncias, demonstrativos contábeis e governança. O risco num projeto assim é construir um arquivo morto, que fecha o checklist regulatório mas não gera pedido de crédito.'
     ],
     solution: [
-      'Construímos um portal institucional moderno, com arquitetura de informação pensada para quem busca, não para quem publica. Conteúdo organizado, navegação direta e identidade visual consistente em todas as páginas.',
-      'O resultado é uma presença digital que transmite credibilidade e funciona em qualquer dispositivo.'
-    ],
-    stats: [
-      ['100%', 'Da informação centralizada em um só lugar'],
-      ['<2s', 'Tempo de carregamento das páginas'],
-      ['90+', 'Pontuação de performance no Lighthouse']
+      'Construímos o site em WordPress com Elementor, com arquitetura que separa os dois fluxos. A navegação leva o cooperado direto ao simulador. As páginas de conformidade ficam organizadas e acessíveis: ouvidoria com 0800, canal de denúncias, demonstrativos contábeis e governança, cada uma no lugar certo, sem gerar retrabalho.',
+      'Uma cooperativa com mais de duas décadas tem história e prestação de contas para mostrar. Integramos isso ao site sem deixá-lo pesado: quem quer crédito encontra o simulador, e quem precisa de transparência encontra os documentos.'
     ],
     link: 'https://cocban.coop.br/',
     t: {
       en: {
-        tag: 'Institutional portal with a complete digital presence',
+        tag: 'Credit union · Juiz de Fora, Brazil',
         metaValues: ['COCBAN', '2024', 'Credit union', 'Institutional website, SEO, Performance'],
         challenge: [
-          'COCBAN needed a digital home worthy of the institution: information was fragmented and communication with the public relied on scattered channels.',
-          'The challenge was to centralize everything in a clear, accessible, easy-to-maintain portal, without giving up personality.'
+          'COCBAN is the Cooperativa de Economia e Crédito Mútuo dos Bancários de Juiz de Fora, a credit union founded in 2000 that serves bank workers and their dependents in the Zona da Mata region of Minas Gerais. The site had to do two things at once.',
+          'First, let a member simulate a loan in a few clicks. Second, publish what the Brazilian Central Bank requires from a credit union: an ombudsman channel, a whistleblowing channel, financial statements and governance disclosures. The risk in a project like this is building a dead archive: a site that checks every compliance box but never brings in a loan request.'
         ],
         solution: [
-          'We built a modern institutional portal with information architecture designed for those who search, not for those who publish. Organized content, direct navigation and consistent visual identity across every page.',
-          'The result is a digital presence that conveys credibility and works on any device.'
-        ],
-        stats: [['100%', 'Of the information centralized in one place'], ['<2s', 'Page load time'], ['90+', 'Lighthouse performance score']]
+          'We built the site on WordPress with Elementor, with an architecture that keeps the two flows separate. Navigation routes members straight to the simulator. The compliance pages, ombudsman channel with a toll-free number, whistleblowing channel, financial statements and governance disclosures, each sit in the right place and stay current without constant rework.',
+          'A cooperative with more than two decades of history has a track record to show. We brought that into the site without weighing it down: members looking for credit find the simulator, and members who need transparency find the documents.'
+        ]
       },
       es: {
-        tag: 'Portal institucional con presencia digital completa',
+        tag: 'Cooperativa de crédito · Juiz de Fora, Brasil',
         metaValues: ['COCBAN', '2024', 'Cooperativa de crédito', 'Sitio institucional, SEO, Performance'],
         challenge: [
-          'COCBAN necesitaba una casa digital a la altura de la institución: la información estaba fragmentada y la comunicación con el público dependía de canales dispersos.',
-          'El desafío era centralizar todo en un portal claro, accesible y fácil de mantener, sin renunciar a la personalidad.'
+          'COCBAN es la Cooperativa de Economía y Crédito Mutuo de los Bancarios de Juiz de Fora, fundada en 2000, que atiende a trabajadores bancarios y sus dependientes en la región de la Zona da Mata, en Minas Gerais. El sitio tenía que cumplir dos funciones al mismo tiempo.',
+          'La primera: permitir que el cooperado simule un préstamo en pocos clics. La segunda: publicar lo que el Banco Central de Brasil exige a una cooperativa de crédito, como defensoría, canal de denuncias, estados financieros y gobernanza. El riesgo en un proyecto así es construir un archivo muerto: un sitio que completa la lista de conformidad pero nunca genera una solicitud de crédito.'
         ],
         solution: [
-          'Construimos un portal institucional moderno, con arquitectura de la información pensada para quien busca, no para quien publica. Contenido organizado, navegación directa e identidad visual consistente en todas las páginas.',
-          'El resultado es una presencia digital que transmite credibilidad y funciona en cualquier dispositivo.'
-        ],
-        stats: [['100%', 'De la información centralizada en un solo lugar'], ['<2s', 'Tiempo de carga de las páginas'], ['90+', 'Puntuación de performance en Lighthouse']]
+          'Construimos el sitio en WordPress con Elementor, con una arquitectura que mantiene los dos flujos separados. La navegación lleva al cooperado directamente al simulador. Las páginas de conformidad, defensoría con número gratuito, canal de denuncias, estados financieros y gobernanza, quedan cada una en su lugar y se mantienen al día sin retrabajo constante.',
+          'Una cooperativa con más de dos décadas tiene historia y rendición de cuentas que mostrar. Integramos eso al sitio sin que pesara: quien busca crédito encuentra el simulador, y quien necesita transparencia encuentra los documentos.'
+        ]
       }
     }
   },
@@ -280,7 +273,7 @@ function pageDict(p, next) {
     t.solution.forEach((txt, i) => {
       d[`section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(${i + 1})`] = txt;
     });
-    t.stats.forEach(([num, desc], i) => {
+    (t.stats || []).forEach(([num, desc], i) => {
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__num`] = num;
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__desc`] = desc;
     });
@@ -378,7 +371,7 @@ function page(p, next) {
 
   const paras = (arr) => arr.map((t) => `<p>${t}</p>`).join('\n          ');
 
-  const statItems = p.stats.map(([num, desc]) => `
+  const statItems = (p.stats || []).map(([num, desc]) => `
         <div class="stats__item" data-reveal>
           <span class="stats__num">${num}</span>
           <span class="stats__desc">${desc}</span>
@@ -508,12 +501,12 @@ ${banner}
           ${paras(p.solution)}
       </div>
     </section>
-
+${statItems ? `
     <section class="section">
       <div class="p-stats">${statItems}
       </div>
     </section>
-${visit}
+` : ''}${visit}
     <a class="next" href="${next.slug}.html" data-hover>
       <span class="next__label">Próximo projeto</span>
       <span class="next__title">${esc(next.title)}</span>

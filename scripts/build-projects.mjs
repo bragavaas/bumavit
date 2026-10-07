@@ -33,7 +33,7 @@ const projects = [
       ['Top 3', 'Nas buscas locais em Toronto'],
       ['2×', 'Mais reservas online']
     ],
-    link: null, // subdomínio yachtday saiu do ar: reative aqui se voltar
+    link: 'https://yachtday.ca/',
     /* Palco 2.5D no lugar do banner gradiente: mockups com fundo transparente
        em img/projetos/ (WebP ~150KB no total). O tilt vive em js/page.js. */
     showcase: {

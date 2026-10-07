@@ -34,7 +34,7 @@
   </script>
   <link rel="preload" href="fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
 
@@ -125,6 +125,19 @@
       </div>
     </section>
 
+    <section class="p-section p-person section">
+      <figure class="p-person__photo" data-reveal>
+        <img src="img/andre/andre-vasco.webp" alt="André Vasco, desenvolvedor à frente da Bumavit" width="1254" height="1168" loading="lazy" decoding="async">
+      </figure>
+      <div class="p-person__text">
+        <h2 class="p-section__label" data-reveal>Quem atende você</h2>
+        <div class="p-section__body" data-reveal>
+          <p>André Vasco é o desenvolvedor à frente da Bumavit. É ele quem faz a primeira conversa, escreve o código do seu site e responde quando você precisa de suporte depois do site no ar.</p>
+          <p>Sem gerente de conta no meio do caminho: a pessoa que entende o seu negócio é a mesma que constrói o site.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="cta section" id="contato-sobre">
       <h2 class="cta__title">
         <span class="cta__line" data-split>Vamos conversar?</span>
@@ -165,6 +178,10 @@
       'section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(3)': { html: '<strong>Long-term support.</strong> The site going live is the beginning: we follow, adjust and evolve it alongside your business.' },
       'section.p-section:nth-of-type(4) .p-section__label': 'What we work with',
       'section.p-section:nth-of-type(4) .p-section__body p': 'The tool comes after the problem. Two similar projects can end up on different technologies, depending on what each one needs to do: WordPress with Elementor when you want to edit the site yourself, custom code when the site needs something a ready-made theme can’t do. The choice is driven by the project, never by trends.',
+      'section.p-section:nth-of-type(5) .p-section__label': 'Who you talk to',
+      'section.p-section:nth-of-type(5) .p-section__body p:nth-of-type(1)': 'André Vasco is the developer behind Bumavit. He runs the first conversation, writes the code for your site and answers when you need support after the site goes live.',
+      'section.p-section:nth-of-type(5) .p-section__body p:nth-of-type(2)': 'No account manager in between: the person who understands your business is the same person who builds the site.',
+      '.p-person__photo img': { attr: { alt: 'André Vasco, the developer behind Bumavit' } },
       '.cta__line': 'Shall we talk?',
       '.cta .btn-pill span': 'Request a quote'
     },
@@ -189,6 +206,10 @@
       'section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(3)': { html: '<strong>Soporte de largo plazo.</strong> El sitio publicado es el comienzo: acompañamos, ajustamos y evolucionamos el sitio junto con tu negocio.' },
       'section.p-section:nth-of-type(4) .p-section__label': 'Con qué trabajamos',
       'section.p-section:nth-of-type(4) .p-section__body p': 'La herramienta viene después del problema. Dos proyectos parecidos pueden salir con tecnologías distintas, según lo que cada uno necesita hacer: WordPress con Elementor cuando quieres editar el sitio por tu cuenta, código propio cuando el sitio necesita algo que una plantilla no hace. La elección la guía el proyecto, nunca la moda.',
+      'section.p-section:nth-of-type(5) .p-section__label': 'Quién te atiende',
+      'section.p-section:nth-of-type(5) .p-section__body p:nth-of-type(1)': 'André Vasco es el desarrollador al frente de Bumavit. Es quien hace la primera conversación, escribe el código de tu sitio y responde cuando necesitas soporte con el sitio ya publicado.',
+      'section.p-section:nth-of-type(5) .p-section__body p:nth-of-type(2)': 'Sin un gerente de cuenta en el medio: la persona que entiende tu negocio es la misma que construye el sitio.',
+      '.p-person__photo img': { attr: { alt: 'André Vasco, el desarrollador al frente de Bumavit' } },
       '.cta__line': '¿Hablamos?',
       '.cta .btn-pill span': 'Pedir presupuesto'
     }

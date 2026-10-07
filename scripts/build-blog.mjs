@@ -170,6 +170,43 @@ function generatePostCard(p) {
 </svg>`;
 }
 
+/* ---------- Card de compartilhamento por post (1200x630 SVG -> JPEG) ----------
+   WhatsApp, LinkedIn, Facebook e X nao exibem SVG em previa, e o card 4:3 acima
+   nao e o formato que eles pedem. Este SVG e a fonte; o JPEG servido no og:image
+   sai de scripts/rasterize-og.mjs, que o workflow Build Blog roda depois deste
+   script. Mesmo desenho do card 4:3, recomposto para a proporcao 1.91:1. */
+function generatePostOg(p) {
+  const W = 1200, H = 630, PX = 80;
+  const usableW = W - 2 * PX - 140; // folga para o monograma no canto
+  const len = p.title.length;
+  const fs = len <= 42 ? 64 : len <= 68 ? 52 : 42;
+  const lh = Math.round(fs * 1.22);
+  const cpl = Math.floor(usableW / (fs * 0.56));
+  const lines = wrapText(p.title, cpl).slice(0, 4);
+  const totalH = lines.length * lh;
+  /* Centraliza o titulo entre a legenda (y~112) e o rodape (y~578). */
+  const firstY = Math.round(345 - totalH / 2 + fs * 0.8);
+  const tspans = lines.map((l, i) =>
+    `<tspan x="${PX}" dy="${i === 0 ? 0 : lh}">${svgEsc(l)}</tspan>`
+  ).join('');
+  const { grad } = COVERS[p.cover] || COVERS.cyan;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="${grad}"/>
+      <stop offset="100%" stop-color="#0b0b0d"/>
+    </linearGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="#0b0b0d"/>
+  <rect width="${W}" height="${H}" fill="url(#g)" opacity="0.45"/>
+  <text x="${W - PX}" y="${H - 8}" fill="#16161e" font-family="Arial Black,Arial,sans-serif" font-size="300" font-weight="900" text-anchor="end">B</text>
+  <rect x="${PX}" y="68" width="44" height="4" fill="${ACCENT}" rx="2"/>
+  <text x="${PX}" y="112" fill="${PAPER_70}" font-family="Arial Black,Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="5" opacity="0.9">${svgEsc(p.catLabel.toUpperCase())}</text>
+  <text x="${PX}" y="${firstY}" fill="${PAPER}" font-family="Arial Black,Arial,sans-serif" font-size="${fs}" font-weight="900">${tspans}</text>
+  <text x="${PX}" y="${H - 52}" fill="#363648" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">bumavit.com.br</text>
+</svg>`;
+}
+
 /* ---------- Carrega os posts ---------- */
 const posts = readdirSync(join(root, 'posts'))
   /* Arquivos de apoio da pasta: `_TEMPLATE.md` e o README que o GitHub
@@ -221,13 +258,17 @@ for (const p of posts) {
   if (!p.image) {
     writeFileSync(join(root, 'images', 'posts', `${p.slug}-card.svg`), generatePostCard(p), 'utf8');
     console.log(`ok: images/posts/${p.slug}-card.svg`);
+    writeFileSync(join(root, 'images', 'posts', `${p.slug}-og.svg`), generatePostOg(p), 'utf8');
+    console.log(`ok: images/posts/${p.slug}-og.svg`);
   }
 }
-/* URL de imagem efetiva por post: imagem do frontmatter, ou card gerado. */
-const cardUrl = (p) => p.image ? SITE + p.image : `${SITE}/images/posts/${p.slug}-card.svg`;
+/* Imagem de compartilhamento (og:image, twitter:image, JSON-LD): a do frontmatter
+   ou o JPEG 1200x630 rasterizado de <slug>-og.svg. O card 4:3 em SVG continua
+   sendo o da pagina do post. */
+const ogUrl = (p) => p.image ? SITE + p.image : `${SITE}/images/posts/${p.slug}-og.jpg`;
 
 /* ---------- Shell compartilhado (nav/fab/menu/footer do site) ---------- */
-function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website', ogImage = `${SITE}/og.png`, base = '../', blogHref = './' }) {
+function shell({ title, desc, canonical, content, extraHead = '', pageI18n = null, ogType = 'website', ogImage = `${SITE}/og.png`, ogImageAlt = 'BUMAVIT', ogSized = true, base = '../', blogHref = './' }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -237,7 +278,10 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <meta name="description" content="${desc}">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${desc}">
-  <meta property="og:image" content="${ogImage}">
+  <meta property="og:image" content="${ogImage}">${ogSized ? `
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">` : ''}
+  <meta property="og:image:alt" content="${ogImageAlt}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:type" content="${ogType}">
   <meta property="og:site_name" content="BUMAVIT">
@@ -543,7 +587,7 @@ posts.forEach((p, i) => {
         "articleSection": ${JSON.stringify(p.catLabel)},
         "timeRequired": "PT${p.minutes}M",
         "dateModified": "${p.updated || p.date}",
-        "image": "${cardUrl(p)}",
+        "image": "${ogUrl(p)}",
         "isPartOf": { "@id": "${BLOG_URL}#blog" },
         "author": { "@id": "${SITE}/#org" },
         "publisher": { "@id": "${SITE}/#org" },
@@ -642,7 +686,9 @@ ${readAlso.map((r) => card(r, '../')).join('\n')}
     desc: p.excerpt,
     canonical: url,
     ogType: 'article',
-    ogImage: cardUrl(p),
+    ogImage: ogUrl(p),
+    ogImageAlt: p.title.replace(/"/g, '&quot;'),
+    ogSized: !p.image,
     extraHead: ld,
     pageI18n: postI18n,
     content,

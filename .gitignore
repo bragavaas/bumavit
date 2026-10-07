@@ -1,2 +1,5 @@
 # Exports da Search Console — contém dados de desempenho que não devem ser versionados
 data/gsc/
+
+# Dependências instaladas só no CI (playwright-core para rasterizar os cards)
+node_modules/

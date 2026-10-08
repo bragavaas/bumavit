@@ -7,6 +7,9 @@ on:
 
 jobs:
   check:
+    # chore/rebuild-blog-* PRs are opened by the Build Blog action and intentionally
+    # contain generated HTML — skip the check for those branches.
+    if: ${{ !startsWith(github.head_ref, 'chore/rebuild-blog-') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

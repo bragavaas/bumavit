@@ -1,5 +1,5 @@
 ---
-title: "Site para escritório de contabilidade: por onde começar"
+title: Site para escritório de contabilidade: por onde começar
 slug: site-para-escritorio-de-contabilidade
 date: 2026-10-15
 category: Negócios

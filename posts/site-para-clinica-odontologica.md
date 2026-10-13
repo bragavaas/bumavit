@@ -1,5 +1,5 @@
 ---
-title: "Site para clínica odontológica: o que ele precisa ter"
+title: Site para clínica odontológica: o que ele precisa ter
 slug: site-para-clinica-odontologica
 date: 2026-09-24
 category: Negócios

@@ -1,7 +1,7 @@
 ---
 title: Vale a pena contratar uma agência de e-commerce?
 slug: vale-a-pena-contratar-agencia-de-ecommerce
-date: 2026-10-22
+date: 2026-10-13
 category: Negócios
 cover: rust
 excerpt: Plataforma pronta ou agência? Veja quando cada opção faz sentido e o que avaliar antes de contratar alguém para montar sua loja virtual.

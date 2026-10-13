@@ -1,7 +1,7 @@
 ---
 title: "Quanto custa criar uma loja virtual profissional? Guia 2026"
 slug: quanto-custa-criar-uma-loja-virtual-profissional
-date: 2026-10-20
+date: 2026-10-13
 category: Negócios
 cover: rust
 excerpt: Uma loja virtual inicial fica entre R$ 3.240 e R$ 4.590; com todas as funcionalidades, chega a R$ 9.630. Entenda os três caminhos, o que faz o preço mudar e o custo mensal que raramente aparece na proposta.

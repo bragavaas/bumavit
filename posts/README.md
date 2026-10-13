@@ -21,7 +21,7 @@ O bloco entre `---` no topo do arquivo.
 
 | Campo | Obrigatório | O que é |
 |---|---|---|
-| `title` | sim | Vira o `<h1>`, o `<title>` e o título no compartilhamento. |
+| `title` | sim | Vira o `<h1>`, o `<title>` e o título no compartilhamento. **Sem aspas envolventes** (`title: Texto`, não `title: "Texto"`). |
 | `slug` | sim | Define a URL: `slug: seo-local` → `/blog/seo-local/`. |
 | `date` | sim | `AAAA-MM-DD`. **É a data efetiva de publicação**: com data futura o post fica fora do build (não aparece na listagem, no RSS nem no sitemap) até a data chegar — aí o build diário publica sozinho. Também ordena a listagem e alimenta o RSS e o `lastmod` do sitemap. |
 | `category` | sim | Uma de: `SEO`, `Performance`, `Negócios`. Outro valor quebra o build de propósito. |

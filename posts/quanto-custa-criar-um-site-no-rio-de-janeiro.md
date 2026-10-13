@@ -1,5 +1,5 @@
 ---
-title: "Quanto custa criar um site no Rio de Janeiro? Faixas 2026"
+title: Quanto custa criar um site no Rio de Janeiro? Faixas 2026
 slug: quanto-custa-criar-um-site-no-rio-de-janeiro
 date: 2026-09-27
 category: Negócios

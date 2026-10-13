@@ -1,6 +1,6 @@
 # Guia de Voz e Estilo — Bumavit
 
-> **Status: v4 — Post do Google (GBP) adicionado ao checklist.** O post piloto (`perguntas-antes-de-contratar-agencia-de-sites`) foi escrito com a v1, revisado pelo fundador e **mergeado sem uma única alteração** no texto. Isso ratifica a v1 e resolveu quatro conflitos que só apareceram na hora de escrever — estão marcados **✅ ratificado** ao longo do guia.
+> **Status: v5 — Regra de preço atualizada; LinkedIn removido; COCBAN liberada; build com data futura confirmado.** O post piloto (`perguntas-antes-de-contratar-agencia-de-sites`) foi escrito com a v1, revisado pelo fundador e **mergeado sem uma única alteração** no texto. Isso ratifica a v1 e resolveu quatro conflitos que só apareceram na hora de escrever — estão marcados **✅ ratificado** ao longo do guia.
 >
 > As seções marcadas com 🔸 ainda dependem da calibração do fundador (ver **Pendências**, no fim). Tudo o que não está marcado já pode ser usado.
 >
@@ -263,22 +263,6 @@ O teste, antes de cada link no meio do texto:
 
 Continua valendo: **um só link de oferta, no fechamento.** Links de ajuda no meio entram no orçamento de 2 a 4 links internos por post.
 
-## Versão LinkedIn
-
-Todo post entregue inclui uma versão LinkedIn para o fundador publicar manualmente. O texto vai no próprio issue do post, como bloco separado.
-
-**Estrutura:** 3 a 6 linhas curtas, o link com o slug canônico e no máximo 3 hashtags.
-
-**O gancho:** parte de uma observação, dúvida ou dado concreto do post — não um resumo genérico nem o título reescrito. Se o post tem uma pergunta que surpreende, o gancho é ela; se tem uma comparação inesperada, é essa. O leitor para porque reconhece a situação, não porque viu um resumo.
-
-**Tom:** segue o voice guide. Sem exclamação, sem emoji, sem "compartilhe este post", sem urgência.
-
-**O link:** sempre o slug canônico com trailing slash — `https://bumavit.com.br/blog/<slug>/`. Nunca encurtado, nunca sem o `https://`.
-
-**Hashtags:** três no máximo. Use as do nicho (`#CriacaoDeSites`, `#MarketingDigital`, `#NegociosOnline` como ponto de partida). Não transforme a palavra-chave em hashtag.
-
-Nenhum agente posta em rede social. O texto é entregue pronto; o fundador decide quando e onde publicar.
-
 ## O que o gerador aceita
 
 Um post é **um arquivo Markdown em `posts/<slug>.md`** — nunca HTML. O `scripts/build-blog.mjs` gera `blog/`, o RSS e o sitemap a partir dele. **Nada escrito à mão dentro de `blog/` sobrevive ao próximo build.**
@@ -318,17 +302,15 @@ Contornos que não custam nada:
 
 **Não existe campo de canonical.** A URL canônica é montada sozinha, em `https://bumavit.com.br/blog/<slug>/`.
 
-### ⚠️ `date` é a data em que o post vai ao ar, não o slot do calendário
+### `date` é a data de publicação do slot
 
-O gerador **não segura post com data futura**. Ele publica e usa `date` para o rótulo visível, a ordenação, o `lastmod` do sitemap, o RSS e o `datePublished` do JSON-LD.
-
-Foi o erro do post piloto: entrou com a data do slot (15/09), o fundador mergeou em 27/08, e a página ficou no ar declarando ter sido publicada 18 dias no futuro. Corrigido no PR #11.
+O gerador usa `date` para o rótulo visível, a ordenação, o `lastmod` do sitemap, o RSS e o `datePublished` do JSON-LD. **O GitHub Actions roda o build diariamente às 09:00 (Brasília) e já segura posts com data futura** — o post entra no ar automaticamente na data do slot, desde que o merge já tenha ocorrido.
 
 A regra:
 
-- **Vai ao ar quando mergear?** `date` é a data prevista do merge. Se o merge escorregar alguns dias, corrija antes
-- **Precisa esperar o slot?** Entregue com **`draft: true`** e a data do slot. O post fica no repositório, fora do ar, e publica quando alguém tirar a linha
-- **Já está no ar com data errada?** Corrija `date`, nunca o `slug`. Trocar slug quebra a URL
+- **Escreva com `date` = data do slot** (ex.: `2026-10-20`). O post fica fora do ar até esse dia e publica sozinho quando o Actions rodar.
+- **Precisa de revisão antes de ir ao ar?** Entregue com **`draft: true`** e a data do slot. Retira o `draft: true` quando o texto estiver aprovado.
+- **Já está no ar com data errada?** Corrija `date`, nunca o `slug`. Trocar slug quebra a URL.
 
 ### Depois do merge, alguém precisa rodar o build
 
@@ -356,7 +338,7 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 
 **Prova social inventada.** Nenhum nome de cliente, depoimento, case ou logo que não tenha sido liberado. Nem como placeholder.
 
-**Preço, prazo e garantia.** Não dizemos quanto custa um site da Bumavit, em quanto tempo entregamos, nem que garantimos resultado, posição no Google ou aumento de vendas. Falar de *faixas de preço do mercado* com fonte é permitido; falar do *nosso* preço não é.
+**Preço, prazo e garantia.** Preço da Bumavit aparece **somente no blog**, sempre retirado de `docs/faixas-de-preco.md` — nunca inventado nem estimado. Preço de mercado ou de terceiros precisa de fonte aberta e linkável. **Nunca preço em Post do Google, arte ou legenda de rede social.** Prazo e garantia de resultado, posição no Google ou aumento de vendas: nunca em nenhum canal.
 
 **Capacidades não confirmadas.** Só afirmamos que fazemos o que está na lista de fatos públicos acima.
 
@@ -409,14 +391,6 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 - [ ] `node scripts/build-blog.mjs` roda sem erro
 - [ ] O PR diz que alguém precisa rodar o build e commitar `blog/` depois do merge
 
-**LinkedIn**
-
-- [ ] Versão LinkedIn entregue junto com o post: 3–6 linhas, gancho concreto (não resumo genérico), link com slug canônico, máx. 3 hashtags
-- [ ] Gancho parte de uma observação real do post — não repete o título nem resume o artigo
-- [ ] Tom segue o voice guide: sem exclamação, sem emoji, sem "compartilhe", sem urgência
-- [ ] Link usa o slug canônico completo com trailing slash (`https://bumavit.com.br/blog/<slug>/`)
-- [ ] Entregue como bloco de texto no issue do post (o fundador publica manualmente)
-
 **Post do Google (GBP)**
 
 - [ ] Post do Google entregue junto com o artigo: 150–300 caracteres, com os primeiros 100 fazendo sentido sozinhos
@@ -435,7 +409,7 @@ Aberto na calibração com o fundador (interação nesta task, BUMA-5). Enquanto
 1. **Registro** — confirmar *consultor próximo* (você + "a gente" ocasional) como padrão. *Usado no post #1 e mergeado sem alteração — na prática, aprovado por uso.*
 2. **Referências de tom** — três marcas/escritores que o fundador gosta ou detesta. **Ainda aberto**
 3. **Linha de descrição da Bumavit** — confirmar a redação. A proibição de "agência" está resolvida acima: vale para autodescrição, não para a palavra-chave
-4. **Dados do site atual** — as métricas publicadas hoje em bumavit.com.br (`40% de melhoria média de performance`, `< 2s`, `5/5 avaliação dos clientes`) e o cliente nomeado (COCBAN / Helisete Cerqueira) **não podem ser citados em post até serem confirmados**. Tratar como não existentes. **Ainda aberto, e agora custa caro:** o post #1 linka o projeto sem poder nomear o cliente ("um portal institucional construído pela Bumavit"). Liberar o nome melhora o texto do link em todo post que citar um projeto
+4. ~~**Dados do site atual / COCBAN**~~ — ✅ **resolvido (13/10/2026).** COCBAN e Helisete Cerqueira estão liberados para nomeação nos posts. As métricas publicadas (`40% de melhoria média de performance`, `< 2s`, `5/5 avaliação dos clientes`) ainda precisam de confirmação do fundador antes de citar. O link de projeto pode usar o nome do cliente.
 5. ~~**Destino do CTA**~~ — ✅ **resolvido.** `/estimador.html` e o formulário estão no ar. O estimador é o destino padrão
 
 ### Pendências novas, do primeiro post — são do engenheiro, não do fundador
@@ -443,7 +417,7 @@ Aberto na calibração com o fundador (interação nesta task, BUMA-5). Enquanto
 6. **`posts/README.md` está desatualizado e induz ao erro.** Diz que a canônica é `/blog/<slug>.html` (é `/blog/<slug>/`) e manda usar link interno relativo (que resolve para 404 no padrão atual). Enquanto não for corrigido, **este guia manda**
 7. **Rebuild apaga `/criacao-de-sites-rj/` do sitemap.** `staticPages` (`build-blog.mjs:599`) não lista a página. Uma linha para corrigir, e é armadilha para qualquer pessoa que rode o build
 8. **Sem imagem no corpo do post.** Enquanto não houver, a regra de alt text fica dormente e nenhum post consegue cumprir requisito de "alt text descritivo"
-9. **Quem roda o build depois do merge?** O README manda commitar a saída gerada; nossa instrução manda mandar só o `.md`. A lacuna já custou uma publicação: o PR #6 mergeou sem ir ao ar e só apareceu quando o #8 rebuildou por outro motivo
+9. ~~**Quem roda o build depois do merge?**~~ ✅ **resolvido (13/10/2026).** O GitHub Actions roda o build diariamente às 09:00 (Brasília). Mergear o PR e aguardar o próximo Actions é suficiente.
 
 ---
 
@@ -453,4 +427,6 @@ Aberto na calibração com o fundador (interação nesta task, BUMA-5). Enquanto
 
 *v4 — 28/08/2026. Bloco "Post do Google (GBP)" adicionado ao checklist de publicação (BUMA-37).*
 
-*v5 — 29/08/2026. Bloco "PR — Data de publicação" adicionado ao checklist (BUMA-45): título com [PUBLICAR DD/MM], bloco de publicação no topo do corpo, dependências declaradas.*
+*v5 (anterior) — 29/08/2026. Bloco "PR — Data de publicação" adicionado ao checklist (BUMA-45): título com [PUBLICAR DD/MM], bloco de publicação no topo do corpo, dependências declaradas.*
+
+*v5 — 13/10/2026 (BUMA-68). Regra de preço atualizada: preço Bumavit permitido no blog a partir de `docs/faixas-de-preco.md`; nunca em Post do Google, arte ou legenda. Seção LinkedIn removida (canal saiu do plano em 08/10). COCBAN liberada para nomeação. Build com data futura confirmado via Actions 09:00 — nota de aviso na seção `date` atualizada.*

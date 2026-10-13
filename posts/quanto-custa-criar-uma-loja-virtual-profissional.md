@@ -1,5 +1,5 @@
 ---
-title: "Quanto custa criar uma loja virtual profissional? Guia 2026"
+title: Quanto custa criar uma loja virtual profissional? Guia 2026
 slug: quanto-custa-criar-uma-loja-virtual-profissional
 date: 2026-10-13
 category: Negócios

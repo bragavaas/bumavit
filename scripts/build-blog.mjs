@@ -70,7 +70,13 @@ function parseFrontmatter(raw) {
   const meta = {};
   for (const line of m[1].split(/\r?\n/)) {
     const i = line.indexOf(':');
-    if (i > 0) meta[line.slice(0, i).trim()] = line.slice(i + 1).trim();
+    if (i > 0) {
+      let val = line.slice(i + 1).trim();
+      if (val.length >= 2 && val[0] === val[val.length - 1] && (val[0] === '"' || val[0] === "'")) {
+        val = val.slice(1, -1);
+      }
+      meta[line.slice(0, i).trim()] = val;
+    }
   }
   return { meta, body: m[2].trim() };
 }
@@ -135,6 +141,10 @@ function wrapText(text, maxChars) {
 }
 
 function svgEsc(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function attrEsc(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
@@ -274,10 +284,10 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${title}</title>
-  <meta name="description" content="${desc}">
-  <meta property="og:title" content="${title}">
-  <meta property="og:description" content="${desc}">
+  <title>${attrEsc(title)}</title>
+  <meta name="description" content="${attrEsc(desc)}">
+  <meta property="og:title" content="${attrEsc(title)}">
+  <meta property="og:description" content="${attrEsc(desc)}">
   <meta property="og:image" content="${ogImage}">${ogSized ? `
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">` : ''}
@@ -288,8 +298,8 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <meta property="og:locale" content="pt_BR">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="${canonical}">
-  <meta name="twitter:title" content="${title}">
-  <meta name="twitter:description" content="${desc}">
+  <meta name="twitter:title" content="${attrEsc(title)}">
+  <meta name="twitter:description" content="${attrEsc(desc)}">
   <meta name="twitter:image" content="${ogImage}">
   <link rel="canonical" href="${canonical}">
   <link rel="alternate" type="application/rss+xml" title="Bumavit · Blog" href="${SITE}/blog/feed.xml">

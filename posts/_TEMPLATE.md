@@ -1,5 +1,5 @@
 ---
-title: Título do post, como aparece no H1 e na aba do navegador
+title: Título do post, como aparece no H1 e na aba do navegador  # sem aspas envolventes
 slug: slug-do-post
 date: 2026-09-15
 category: SEO

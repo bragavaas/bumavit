@@ -8,7 +8,7 @@ excerpt: Três propostas com preços muito diferentes quase nunca descrevem o me
 keyword: como avaliar proposta de criação de site
 ---
 
-Você pediu três orçamentos. Voltaram R$ 1.800, R$ 4.500 e R$ 11.000. O projeto é o mesmo. Os três disseram que entendem o que você precisa.
+Você pediu três orçamentos e voltaram três valores que não se parecem: o mais caro custa várias vezes o mais barato. O projeto é o mesmo. Os três disseram que entendem o que você precisa.
 
 Esse não é um problema de preço. É um problema de comparação.
 

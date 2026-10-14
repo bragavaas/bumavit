@@ -100,7 +100,7 @@ Os componentes do custo mensal variam por modelo, mas geralmente incluem:
 
 Não é possível citar os valores dessas linhas sem risco de desatualizar o post em semanas — plataformas e gateways revisam as tabelas com frequência. Consulte as condições vigentes de cada serviço antes de fechar qualquer contrato.
 
-O que importa entender é a estrutura: há um custo fixo mensal e há um custo variável que cresce com a receita. Uma loja que custa R$ 5.000 para ser construída pode custar mais do que isso para ser operada no primeiro ano. Saber disso antes de assinar — e não descobrir depois — é o que separa um projeto sustentável de um arrependimento.
+O que importa entender é a estrutura: há um custo fixo mensal e há um custo variável que cresce com a receita. Uma loja inicial, que custa de R$ 3.240 a R$ 4.590 para ser construída, pode custar mais do que isso para ser operada no primeiro ano. Saber disso antes de assinar — e não descobrir depois — é o que separa um projeto sustentável de um arrependimento.
 
 Esta é a informação que nenhuma plataforma publica em seu próprio site. Um fornecedor que inclui o custo mensal detalhado na proposta está colocando os números certos na mesa. Um que não inclui, vale perguntar.
 

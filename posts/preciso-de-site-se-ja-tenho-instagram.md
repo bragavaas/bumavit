@@ -80,7 +80,7 @@ Quanto mais gente começar a te procurar por nome de serviço em vez de indicaç
 
 ### Quando o ticket sobe e a decisão precisa de mais prova
 
-Vender um produto de R$ 150 por direct funciona. Fechar um serviço de R$ 4.000 pelo Instagram é difícil, porque a pessoa quer conferir muito mais coisa antes de confiar o dinheiro.
+Vender um produto barato por direct funciona. Fechar um serviço de alguns milhares de reais pelo Instagram é difícil, porque a pessoa quer conferir muito mais coisa antes de confiar o dinheiro.
 
 Quer ver casos, entender o processo, saber quem já contratou, ter certeza de que você existe de verdade. Instagram passa credibilidade, mas não tem espaço para esse nível de detalhe.
 

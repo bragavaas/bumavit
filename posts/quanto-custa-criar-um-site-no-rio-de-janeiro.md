@@ -27,7 +27,7 @@ Cada página adicional acrescenta entre R$ 130 e R$ 160 ao valor total. Integra�
 
 ## Por que os preços no Rio variam tanto
 
-Busca "criação de sites Rio de Janeiro" e você vai encontrar propostas de R$ 500 e propostas de R$ 12.000 para o "mesmo" produto. Não é engano. São produtos diferentes.
+Busca "criação de sites Rio de Janeiro" e você vai encontrar propostas muito baratas e propostas muito caras para o "mesmo" produto. Não é engano. São produtos diferentes.
 
 **No piso** estão construtores de site com mensalidade (Wix, Squarespace e plataformas similares), freelancers em início de carreira usando templates básicos e revendedores de soluções padronizadas. Esses serviços existem e funcionam para alguns casos.
 

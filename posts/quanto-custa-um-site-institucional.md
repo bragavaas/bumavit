@@ -44,7 +44,7 @@ O problema mais comum: ninguém combina isso antes de começar. Cada lado acha q
 
 Um design construído do zero -- com identidade visual própria, tipografia escolhida, cores da marca e layout exclusivo -- custa mais e demora mais do que um site baseado em um template bem escolhido e adaptado.
 
-Nenhuma das duas opções é inferior. Um template executado com cuidado pode ser tão profissional quanto um design proprietário. A escolha certa depende do que você precisa: se a sua marca já tem uma identidade visual forte e ela precisa aparecer com exatidão no site, um template pode não servir. Se você está começando e precisa de presença digital rápida e com bom custo, um template bem adaptado entrega isso.
+Nenhuma das duas opções é inferior. Um template executado com cuidado pode ser tão profissional quanto um design proprietário. A escolha certa depende do que você precisa: se a sua marca já tem uma identidade visual forte e ela precisa aparecer com exatidão no site, um template pode não servir. Se você está começando e precisa de um site no ar rápido e com bom custo, um template bem adaptado entrega isso.
 
 ### Integrações com outros sistemas
 
@@ -64,7 +64,7 @@ A pergunta aparece com frequência de empresas em estágio inicial: o orçamento
 
 O ponto mais honesto: um site funcional para pequena empresa não precisa ser complexo. Cinco páginas bem feitas -- Início, Sobre, Serviços, Portfólio, Contato -- com textos claros, carregamento rápido no celular e um formulário de contato que funciona fazem mais pela credibilidade do negócio do que um site de vinte páginas com metade das informações desatualizadas.
 
-**Um site básico para pequena empresa, com cinco páginas, design baseado em template e textos fornecidos pelo cliente, fica entre R$ 1.800 e R$ 2.500.** Se você precisa de sete páginas em vez de cinco, acrescente R$ 260 a R$ 320 ao topo da faixa. Se precisa que o fornecedor escreva os textos, de integração com CRM ou de prazo mais curto, cada item adiciona horas ao projeto e sobe o orçamento.
+**Um site básico para pequena empresa, com cinco páginas, design baseado em template e textos fornecidos pelo cliente, fica entre R$ 1.800 e R$ 2.500.** Se você precisa de sete páginas em vez de cinco, cada página a mais acrescenta R$ 130 a R$ 160. Se precisa que o fornecedor escreva os textos, de integração com CRM ou de prazo mais curto, cada item adiciona horas ao projeto e sobe o orçamento.
 
 O que vai definir o preço final são as mesmas cinco variáveis acima. Uma empresa que entrega os próprios textos, aceita um design baseado em template e não precisa de integrações complexas fica na faixa base. Uma que quer tudo incluso, com prazo curto e funcionalidades adicionais, pode dobrar ou triplicar esse valor.
 
@@ -84,17 +84,17 @@ Esta é a seção onde a maioria dos projetos gera surpresa. O preço da propost
 
 Confirmar cada um desses pontos antes de assinar poupa uma conversa difícil no meio do projeto, quando o prazo já está no limite.
 
-## Por que existe site de R$ 500 e site de R$ 30.000
+## Por que o preço de um site varia tanto
 
 A diferença de preço no mercado brasileiro de sites é real e tem explicação. Não é engano: são produtos diferentes.
 
 No piso do mercado estão construtores de site que cobram mensalidade (Wix, Squarespace e plataformas similares), freelancers em começo de carreira usando templates básicos e fornecedores que revendem soluções padronizadas. Esses serviços existem, funcionam para alguns casos e têm limitações que só aparecem mais tarde: propriedade do código, flexibilidade para crescer, performance no celular, controle sobre SEO.
 
-No meio do mercado -- onde está a faixa de **R$ 1.800 a R$ 2.500** para um site institucional básico e **R$ 3.240 a R$ 4.590** para uma loja virtual inicial -- estão freelancers experientes, agências menores e software houses que trabalham sobre plataformas conhecidas com personalização, atenção ao detalhe e código que você possui. É onde está a maioria dos projetos para pequenas e médias empresas que precisam de presença digital profissional sem gastar em customização extrema.
+No meio do mercado estão freelancers experientes, agências menores e software houses que trabalham sobre plataformas conhecidas com personalização, atenção ao detalhe e código que você possui. É onde está a maioria dos projetos para pequenas e médias empresas que precisam de um site profissional sem gastar em customização extrema. A Bumavit trabalha nessa faixa: **R$ 1.800 a R$ 2.500** para um site institucional básico e **R$ 3.240 a R$ 4.590** para uma loja virtual inicial.
 
 No topo estão projetos construídos do zero, com integrações complexas, design proprietário e prazos curtos. É também onde estão projetos mediocres vendidos pelo preço de projetos bons, razão pela qual o portfólio do fornecedor importa tanto quanto o número no fim da proposta.
 
-A escolha não é encontrar o mais barato. É encontrar o que serve ao que você precisa agora e vai continuar servindo daqui a dois anos. Um site de R$ 500 pode sair mais caro no segundo ano, quando você descobre que precisa de uma funcionalidade que a plataforma não oferece e tem que reconstruir tudo do zero. Para entender melhor a diferença entre contratar uma agência e um freelancer, com critérios práticos para cada caso, veja [agência ou freelancer para criar seu site](https://bumavit.com.br/blog/agencia-ou-freelancer-para-criar-site/).
+A escolha não é encontrar o mais barato. É encontrar o que serve ao que você precisa agora e vai continuar servindo daqui a dois anos. Um site muito barato pode sair mais caro no segundo ano, quando você descobre que precisa de uma funcionalidade que a plataforma não oferece e tem que reconstruir tudo do zero. Para entender melhor a diferença entre contratar uma agência e um freelancer, com critérios práticos para cada caso, veja [agência ou freelancer para criar seu site](https://bumavit.com.br/blog/agencia-ou-freelancer-para-criar-site/).
 
 Para ver um exemplo de site institucional construído pela Bumavit, com portal de informações e identidade visual própria, veja o [projeto Cocban](https://bumavit.com.br/projetos/cocban.html).
 

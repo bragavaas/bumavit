@@ -1,45 +1,45 @@
 {
   "slug": "reel-01-estimador",
-  "generated": "2026-10-15T05:17:30.693Z",
+  "generated": "2026-10-15T05:54:50.183Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
-  "duration": 15,
+  "duration": 28.5,
   "fonts": "ok",
   "problems": [],
   "keyframes": [
     {
       "scene": 1,
-      "t": 2.5999999999999996,
+      "t": 5.6,
       "file": "reel-01-estimador-k01.jpg",
       "guides": "reel-01-estimador-k01-guias.jpg"
     },
     {
       "scene": 2,
-      "t": 4.8,
+      "t": 10.25,
       "file": "reel-01-estimador-k02.jpg",
       "guides": "reel-01-estimador-k02-guias.jpg"
     },
     {
       "scene": 3,
-      "t": 7.999999999999999,
+      "t": 14.05,
       "file": "reel-01-estimador-k03.jpg",
       "guides": "reel-01-estimador-k03-guias.jpg"
     },
     {
       "scene": 4,
-      "t": 11,
+      "t": 18.25,
       "file": "reel-01-estimador-k04.jpg",
       "guides": "reel-01-estimador-k04-guias.jpg"
     },
     {
       "scene": 5,
-      "t": 12.8,
+      "t": 22.5,
       "file": "reel-01-estimador-k05.jpg",
       "guides": "reel-01-estimador-k05-guias.jpg"
     },
     {
       "scene": 6,
-      "t": 14.9,
+      "t": 28.4,
       "file": "reel-01-estimador-k06.jpg",
       "guides": "reel-01-estimador-k06-guias.jpg"
     }
@@ -47,14 +47,14 @@
   "cover": "reel-01-estimador-capa.jpg",
   "video": {
     "file": "reel-01-estimador.mp4",
-    "bytes": 5109914,
+    "bytes": 7727997,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 15,
+    "duration": 28.5,
     "audio": false
   },
   "sheet": "reel-01-estimador-prancha.jpg"

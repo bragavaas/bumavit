@@ -1,10 +1,11 @@
 {
   "slug": "reel-01-estimador",
-  "generated": "2026-10-15T06:21:00.934Z",
+  "generated": "2026-10-19T04:52:56.010Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
   "duration": 28.65,
   "fonts": "ok",
+  "lines": null,
   "problems": [],
   "keyframes": [
     {
@@ -47,7 +48,7 @@
   "cover": "reel-01-estimador-capa.jpg",
   "video": {
     "file": "reel-01-estimador.mp4",
-    "bytes": 8274736,
+    "bytes": 8188566,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",

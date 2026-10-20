@@ -73,7 +73,7 @@ Também não usamos: "parceiro estratégico", "seu braço digital", "ecossistema
 - Oferece suporte e manutenção contínua
 - André Vasco é o desenvolvedor à frente do trabalho
 
-Qualquer coisa **além dessa lista** — preço, prazo, nome de cliente, número, garantia — só entra no post depois de confirmada pelo fundador. Ver **O que nunca dizemos**.
+Qualquer coisa **além dessa lista** — prazo, nome de cliente, número, garantia — só entra no post depois de confirmada pelo fundador. Preço da Bumavit tem regra própria: só no blog e só a partir de `docs/faixas-de-preco.md`. Ver **O que nunca dizemos**.
 
 ## Vocabulário
 
@@ -356,7 +356,16 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 
 **Prova social inventada.** Nenhum nome de cliente, depoimento, case ou logo que não tenha sido liberado. Nem como placeholder.
 
-**Preço, prazo e garantia.** Não dizemos quanto custa um site da Bumavit, em quanto tempo entregamos, nem que garantimos resultado, posição no Google ou aumento de vendas. Falar de *faixas de preço do mercado* com fonte é permitido; falar do *nosso* preço não é.
+**Preço, prazo e garantia.** Não garantimos resultado, posição no Google nem aumento de vendas.
+
+✅ **Decisão de 13/10 (CLA-217) — preço da Bumavit só no blog, a partir de `docs/faixas-de-preco.md`.** O arquivo é gerado do estimador por `scripts/build-pricing.mjs` e é a única fonte de valor em reais. Na prática:
+
+- Pode: citar uma faixa do arquivo, na combinação exata, sempre com o que está incluso no mesmo parágrafo, e o prazo em dias que o arquivo traz ao lado
+- Pode: citar a condição de pagamento do arquivo junto com o preço (site em duas vezes, loja em até quatro)
+- Não pode: criar faixa nova, arredondar, interpolar ou somar valores por conta própria
+- Não pode: preço em arte, slide, legenda, story, Post do Google ou post de rede sobre artigo de preço
+- Não pode: número "de exemplo" que pareça orçamento real ("recebeu R$ 1.800, R$ 4.500 e R$ 11.000")
+- Preço de mercado ou de terceiros continua exigindo fonte aberta e link. Sem fonte, descreva sem número ("o mais caro custa várias vezes o mais barato")
 
 **Capacidades não confirmadas.** Só afirmamos que fazemos o que está na lista de fatos públicos acima.
 
@@ -379,7 +388,8 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 - [ ] A primeira frase entrega alguma coisa. Não é aquecimento
 - [ ] Nenhuma abertura da lista de clichês
 - [ ] Todo número tem fonte linkada, ou está marcado `[NEEDS DATA: ...]`
-- [ ] Nenhum nome de cliente, preço, prazo ou garantia não liberados
+- [ ] Nenhum nome de cliente, prazo ou garantia não liberados
+- [ ] Todo valor em reais da Bumavit está em `docs/faixas-de-preco.md`, na combinação exata; nenhum orçamento "de exemplo"
 - [ ] A Bumavit não é chamada de "agência" em nenhuma frase que a descreva
 - [ ] Jargão traduzido na primeira menção, ou fora
 - [ ] Um H1 só; H2 em caixa de frase; sem `Conclusão`
@@ -452,5 +462,7 @@ Aberto na calibração com o fundador (interação nesta task, BUMA-5). Enquanto
 *v2 — 28/08/2026. Calibrada pelo post piloto: quatro reconciliações ratificadas por merge sem alteração, mais as restrições reais do gerador, que a v1 não conhecia.*
 
 *v4 — 28/08/2026. Bloco "Post do Google (GBP)" adicionado ao checklist de publicação (BUMA-37).*
+
+*v6 — 14/10/2026. Regra de preço da Bumavit (CLA-217/CLA-218): só no blog, só a partir de `docs/faixas-de-preco.md`.*
 
 *v5 — 29/08/2026. Bloco "PR — Data de publicação" adicionado ao checklist (BUMA-45): título com [PUBLICAR DD/MM], bloco de publicação no topo do corpo, dependências declaradas.*

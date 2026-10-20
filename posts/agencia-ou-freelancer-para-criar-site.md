@@ -8,7 +8,7 @@ excerpt: Quando o freelancer é a escolha certa, quando a agência se paga e a p
 keyword: agência ou freelancer para criar site
 ---
 
-Você tem três orçamentos na mesa. O freelancer cobra R$ 2.500, a agência pequena R$ 5.800 e a outra agência R$ 9.200. Aparentemente o mesmo trabalho, três preços muito diferentes.
+Você tem três orçamentos na mesa: o de um freelancer, o de uma agência pequena e o de outra agência. Aparentemente o mesmo trabalho, e o mais caro custa várias vezes o mais barato.
 
 O problema não é escolher o mais barato ou o mais caro. É que a diferença de preço não explica a diferença real entre as opções — e a variável que mais importa quase nunca aparece na conversa inicial.
 

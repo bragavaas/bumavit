@@ -983,7 +983,8 @@
    "type": "statement",
    "variant": "b",
    "text": "Agência carioca ou remota? Na maioria dos projetos, *não muda o resultado*.",
-   "sub": "O site é feito no computador de quem você contratou. Presença importa em projeto grande, com fotos no local ou reunião de alinhamento."
+   "sub": "O site é feito no computador de quem você contratou. Presença importa em projeto grande, com fotos no local ou reunião de alinhamento.",
+   "fit": "92,64"
   },
   {
    "type": "cta",
@@ -1184,6 +1185,7 @@
       if (slide.shift) g.style.transform = 'translateY(' + slide.shift + 'px)';
       c.appendChild(g);
     }
+    if (slide.fit) { var ft = c.querySelector('.text.fit'); if (ft) ft.setAttribute('data-fit', slide.fit); } // per-slide "max,min" for the title, when the type's default reads too big (founder, post 15 slide 3)
     page.appendChild(c);
 
     // footer

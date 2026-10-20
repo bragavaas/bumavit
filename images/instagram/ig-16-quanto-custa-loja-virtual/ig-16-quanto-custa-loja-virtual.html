@@ -966,7 +966,7 @@
  "slides": [
   {
    "type": "article",
-   "text": "Quanto custa criar uma *loja virtual* profissional?",
+   "text": "Quanto custa criar uma\n*loja virtual* profissional?",
    "sub": "Três caminhos, o que faz o preço variar em cada um e o custo mensal que raramente aparece na proposta."
   },
   {
@@ -1184,6 +1184,7 @@
       if (slide.shift) g.style.transform = 'translateY(' + slide.shift + 'px)';
       c.appendChild(g);
     }
+    if (slide.fit) { var ft = c.querySelector('.text.fit'); if (ft) ft.setAttribute('data-fit', slide.fit); } // per-slide "max,min" for the title, when the type's default reads too big (founder, post 15 slide 3)
     page.appendChild(c);
 
     // footer

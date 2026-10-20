@@ -1,6 +1,6 @@
 {
   "slug": "ig-16-quanto-custa-loja-virtual",
-  "generated": "2026-10-20T01:51:06.575Z",
+  "generated": "2026-10-20T02:18:07.895Z",
   "engine": "templates/ig-slide.html",
   "slides": [
     {
@@ -50,69 +50,6 @@
       "problems": [],
       "size": "1080×1920",
       "jpeg": "ig-16-quanto-custa-loja-virtual-story-01.jpg"
-    },
-    {
-      "file": "ig-16-quanto-custa-loja-virtual-02.png",
-      "slide": 2,
-      "format": "feed",
-      "variant": "a",
-      "hasImage": false,
-      "fonts": "ok",
-      "fontSize": 88,
-      "overflow": false,
-      "contentHeight": 1080,
-      "lines": {
-        "kind": "cotas",
-        "seed": 88463,
-        "dropped": 0,
-        "accents": [
-          "origem"
-        ]
-      },
-      "ok": true,
-      "problems": [],
-      "size": "1080×1350",
-      "jpeg": "ig-16-quanto-custa-loja-virtual-02.jpg"
-    },
-    {
-      "file": "ig-16-quanto-custa-loja-virtual-03.png",
-      "slide": 3,
-      "format": "feed",
-      "variant": "b",
-      "hasImage": false,
-      "fonts": "ok",
-      "fontSize": 128,
-      "overflow": false,
-      "contentHeight": 1080,
-      "lines": {
-        "kind": "planta",
-        "seed": 66082,
-        "dropped": 41,
-        "accents": [
-          "l1",
-          "l2"
-        ]
-      },
-      "ok": true,
-      "problems": [],
-      "size": "1080×1350",
-      "jpeg": "ig-16-quanto-custa-loja-virtual-03.jpg"
-    },
-    {
-      "file": "ig-16-quanto-custa-loja-virtual-04.png",
-      "slide": 4,
-      "format": "feed",
-      "variant": "a",
-      "hasImage": false,
-      "fonts": "ok",
-      "fontSize": 120,
-      "overflow": false,
-      "contentHeight": 1080,
-      "lines": null,
-      "ok": true,
-      "problems": [],
-      "size": "1080×1350",
-      "jpeg": "ig-16-quanto-custa-loja-virtual-04.jpg"
     }
   ]
 }

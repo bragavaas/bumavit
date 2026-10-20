@@ -1,6 +1,6 @@
 {
   "slug": "ig-08-hera-brand",
-  "generated": "2026-09-26T04:16:15.087Z",
+  "generated": "2026-10-20T01:37:40.672Z",
   "engine": "templates/ig-slide.html",
   "slides": [
     {
@@ -13,6 +13,7 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": null,
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -28,6 +29,7 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": null,
       "ok": true,
       "problems": [],
       "size": "1080×1920",

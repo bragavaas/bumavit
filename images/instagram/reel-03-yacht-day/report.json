@@ -1,0 +1,113 @@
+{
+  "slug": "reel-03-yacht-day",
+  "generated": "2026-10-21T21:11:57.314Z",
+  "engine": "templates/ig-reel.html",
+  "fps": 30,
+  "duration": 26,
+  "fonts": "ok",
+  "lines": {
+    "kind": "jornada-telas",
+    "seed": 73170,
+    "dropped": 0,
+    "accents": [
+      "l1",
+      "accf",
+      "volta",
+      "telas-3"
+    ],
+    "shift": 300
+  },
+  "drawings": [
+    {
+      "scene": "hook",
+      "kind": "jornada-telas",
+      "visible": 31,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "accf",
+        "volta",
+        "telas-3"
+      ]
+    }
+  ],
+  "readTimes": [
+    {
+      "text": "E se cada reserva dependesse de uma *troca de mensagens*?",
+      "chars": 55,
+      "legible": 4.2,
+      "need": 4.167
+    },
+    {
+      "text": "Catálogo, disponibilidade clara e *reserva direta*.",
+      "chars": 49,
+      "legible": 4.82,
+      "need": 3.767
+    },
+    {
+      "text": "SEO local para aparecer *primeiro* nas buscas da região.",
+      "chars": 54,
+      "legible": 4.47,
+      "need": 4.1
+    },
+    {
+      "text": "Site rápido no celular, onde a reserva *acontece*.",
+      "chars": 48,
+      "legible": 4.82,
+      "need": 3.7
+    },
+    {
+      "text": "Cliente no Canadá, projeto feito *daqui*.",
+      "chars": 61,
+      "legible": 4.58,
+      "need": 4.567
+    }
+  ],
+  "problems": [],
+  "keyframes": [
+    {
+      "scene": 1,
+      "t": 4.25,
+      "file": "reel-03-yacht-day-k01.jpg",
+      "guides": "reel-03-yacht-day-k01-guias.jpg"
+    },
+    {
+      "scene": 2,
+      "t": 9.8,
+      "file": "reel-03-yacht-day-k02.jpg",
+      "guides": "reel-03-yacht-day-k02-guias.jpg"
+    },
+    {
+      "scene": 3,
+      "t": 15,
+      "file": "reel-03-yacht-day-k03.jpg",
+      "guides": "reel-03-yacht-day-k03-guias.jpg"
+    },
+    {
+      "scene": 4,
+      "t": 20,
+      "file": "reel-03-yacht-day-k04.jpg",
+      "guides": "reel-03-yacht-day-k04-guias.jpg"
+    },
+    {
+      "scene": 5,
+      "t": 25.9,
+      "file": "reel-03-yacht-day-k05.jpg",
+      "guides": "reel-03-yacht-day-k05-guias.jpg"
+    }
+  ],
+  "cover": "reel-03-yacht-day-capa.jpg",
+  "video": {
+    "file": "reel-03-yacht-day.mp4",
+    "bytes": 6704843,
+    "codec": "h264",
+    "pix": "yuv420p",
+    "color": "tv, bt709, progressive",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 26,
+    "audio": false
+  },
+  "sheet": "reel-03-yacht-day-prancha.jpg"
+}

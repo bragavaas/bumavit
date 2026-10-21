@@ -1,0 +1,358 @@
+{
+  "slug": "reel-04-doze-perguntas",
+  "generated": "2026-10-21T21:15:36.288Z",
+  "engine": "templates/ig-reel.html",
+  "fps": 30,
+  "duration": 88.35,
+  "fonts": "ok",
+  "lines": {
+    "kind": "fluxo-mapa-site",
+    "seed": 6289,
+    "dropped": 0,
+    "accents": [
+      "sem-cadeia",
+      "sem-ponto",
+      "contorno"
+    ],
+    "shift": 300
+  },
+  "drawings": [
+    {
+      "scene": "hook",
+      "kind": "fluxo-mapa-site",
+      "visible": 24,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "sem-cadeia",
+        "sem-ponto",
+        "contorno"
+      ]
+    },
+    {
+      "scene": "text0",
+      "kind": "planta",
+      "visible": 31,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "accf"
+      ]
+    },
+    {
+      "scene": "text1",
+      "kind": "jornada-telas",
+      "visible": 40,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "accf",
+        "volta",
+        "telas-3"
+      ]
+    },
+    {
+      "scene": "text2",
+      "kind": "obra-implantacao",
+      "visible": 35,
+      "strokeK": 1.0909090909090908,
+      "decisions": [
+        "degrau-lado",
+        "bolha",
+        "vertice-b",
+        "sob-fio",
+        "ponto",
+        "acesso"
+      ]
+    },
+    {
+      "scene": "text3",
+      "kind": "fluxo-mapa-site",
+      "visible": 26,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "cadeia",
+        "sem-ponto",
+        "contorno"
+      ]
+    },
+    {
+      "scene": "text4",
+      "kind": "planta",
+      "visible": 34,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "l2"
+      ]
+    },
+    {
+      "scene": "text5",
+      "kind": "jornada-telas",
+      "visible": 38,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "accf",
+        "telas-3"
+      ]
+    },
+    {
+      "scene": "text6",
+      "kind": "obra-implantacao",
+      "visible": 32,
+      "strokeK": 1.0909090909090908,
+      "decisions": [
+        "degrau-lado",
+        "bolha",
+        "vertice-b",
+        "sob-fio",
+        "ponto",
+        "acesso"
+      ]
+    },
+    {
+      "scene": "text7",
+      "kind": "fluxo-mapa-site",
+      "visible": 27,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "cadeia",
+        "sem-ponto",
+        "contorno"
+      ]
+    },
+    {
+      "scene": "text8",
+      "kind": "planta",
+      "visible": 30,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "accf"
+      ]
+    },
+    {
+      "scene": "text9",
+      "kind": "jornada-telas",
+      "visible": 37,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "accf",
+        "telas-3"
+      ]
+    },
+    {
+      "scene": "text10",
+      "kind": "obra-implantacao",
+      "visible": 32,
+      "strokeK": 1.0909090909090908,
+      "decisions": [
+        "degrau-lado",
+        "bolha",
+        "vertice-b",
+        "sob-fio",
+        "ponto",
+        "acesso"
+      ]
+    },
+    {
+      "scene": "text11",
+      "kind": "fluxo-mapa-site",
+      "visible": 27,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "cadeia",
+        "sem-ponto",
+        "contorno"
+      ]
+    }
+  ],
+  "readTimes": [
+    {
+      "text": "Vai contratar quem faz o seu site? *Doze* perguntas antes de assinar.",
+      "chars": 67,
+      "legible": 5,
+      "need": 4.967
+    },
+    {
+      "text": "O que exatamente está incluso, e o que fica de fora?",
+      "chars": 85,
+      "legible": 6.19,
+      "need": 6.167
+    },
+    {
+      "text": "Quem escreve os textos do site?",
+      "chars": 64,
+      "legible": 4.78,
+      "need": 4.767
+    },
+    {
+      "text": "Qual é o prazo, e o que acontece se atrasar?",
+      "chars": 77,
+      "legible": 5.68,
+      "need": 5.633
+    },
+    {
+      "text": "Quantas rodadas de revisão estão incluídas?",
+      "chars": 76,
+      "legible": 5.58,
+      "need": 5.567
+    },
+    {
+      "text": "Em nome de quem fica o domínio?",
+      "chars": 68,
+      "legible": 5.07,
+      "need": 5.033
+    },
+    {
+      "text": "De quem é o código quando o site fica pronto?",
+      "chars": 82,
+      "legible": 5.98,
+      "need": 5.967
+    },
+    {
+      "text": "O que você leva se trocar de fornecedor daqui a dois anos?",
+      "chars": 95,
+      "legible": 6.84,
+      "need": 6.833
+    },
+    {
+      "text": "Em que o site vai ser feito, e por quê?",
+      "chars": 62,
+      "legible": 4.67,
+      "need": 4.633
+    },
+    {
+      "text": "Qual velocidade o site vai ter, e como isso é medido?",
+      "chars": 76,
+      "legible": 5.59,
+      "need": 5.567
+    },
+    {
+      "text": "O site já nasce preparado para aparecer no Google?",
+      "chars": 73,
+      "legible": 5.38,
+      "need": 5.367
+    },
+    {
+      "text": "O que está incluso na manutenção, e quanto custa por mês?",
+      "chars": 90,
+      "legible": 6.54,
+      "need": 6.5
+    },
+    {
+      "text": "Se o site cair num sábado, quem responde?",
+      "chars": 74,
+      "legible": 5.48,
+      "need": 5.433
+    },
+    {
+      "text": "As respostas, uma por uma, estão no *blog*.",
+      "chars": 53,
+      "legible": 4.58,
+      "need": 4.033
+    }
+  ],
+  "problems": [],
+  "keyframes": [
+    {
+      "scene": 1,
+      "t": 5.05,
+      "file": "reel-04-doze-perguntas-k01.jpg",
+      "guides": "reel-04-doze-perguntas-k01-guias.jpg"
+    },
+    {
+      "scene": 2,
+      "t": 12.15,
+      "file": "reel-04-doze-perguntas-k02.jpg",
+      "guides": "reel-04-doze-perguntas-k02-guias.jpg"
+    },
+    {
+      "scene": 3,
+      "t": 17.75,
+      "file": "reel-04-doze-perguntas-k03.jpg",
+      "guides": "reel-04-doze-perguntas-k03-guias.jpg"
+    },
+    {
+      "scene": 4,
+      "t": 24.25,
+      "file": "reel-04-doze-perguntas-k04.jpg",
+      "guides": "reel-04-doze-perguntas-k04-guias.jpg"
+    },
+    {
+      "scene": 5,
+      "t": 30.650000000000002,
+      "file": "reel-04-doze-perguntas-k05.jpg",
+      "guides": "reel-04-doze-perguntas-k05-guias.jpg"
+    },
+    {
+      "scene": 6,
+      "t": 36.449999999999996,
+      "file": "reel-04-doze-perguntas-k06.jpg",
+      "guides": "reel-04-doze-perguntas-k06-guias.jpg"
+    },
+    {
+      "scene": 7,
+      "t": 43.25,
+      "file": "reel-04-doze-perguntas-k07.jpg",
+      "guides": "reel-04-doze-perguntas-k07-guias.jpg"
+    },
+    {
+      "scene": 8,
+      "t": 51,
+      "file": "reel-04-doze-perguntas-k08.jpg",
+      "guides": "reel-04-doze-perguntas-k08-guias.jpg"
+    },
+    {
+      "scene": 9,
+      "t": 56.4,
+      "file": "reel-04-doze-perguntas-k09.jpg",
+      "guides": "reel-04-doze-perguntas-k09-guias.jpg"
+    },
+    {
+      "scene": 10,
+      "t": 62.9,
+      "file": "reel-04-doze-perguntas-k10.jpg",
+      "guides": "reel-04-doze-perguntas-k10-guias.jpg"
+    },
+    {
+      "scene": 11,
+      "t": 69.1,
+      "file": "reel-04-doze-perguntas-k11.jpg",
+      "guides": "reel-04-doze-perguntas-k11-guias.jpg"
+    },
+    {
+      "scene": 12,
+      "t": 76.55,
+      "file": "reel-04-doze-perguntas-k12.jpg",
+      "guides": "reel-04-doze-perguntas-k12-guias.jpg"
+    },
+    {
+      "scene": 13,
+      "t": 82.85,
+      "file": "reel-04-doze-perguntas-k13.jpg",
+      "guides": "reel-04-doze-perguntas-k13-guias.jpg"
+    },
+    {
+      "scene": 14,
+      "t": 88.25,
+      "file": "reel-04-doze-perguntas-k14.jpg",
+      "guides": "reel-04-doze-perguntas-k14-guias.jpg"
+    }
+  ],
+  "cover": "reel-04-doze-perguntas-capa.jpg",
+  "video": {
+    "file": "reel-04-doze-perguntas.mp4",
+    "bytes": 18265611,
+    "codec": "h264",
+    "pix": "yuv420p",
+    "color": "tv, bt709, progressive",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 88.37,
+    "audio": false
+  },
+  "sheet": "reel-04-doze-perguntas-prancha.jpg"
+}

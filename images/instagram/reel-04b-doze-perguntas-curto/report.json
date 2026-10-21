@@ -1,0 +1,163 @@
+{
+  "slug": "reel-04b-doze-perguntas-curto",
+  "generated": "2026-10-21T20:39:18.866Z",
+  "engine": "templates/ig-reel.html",
+  "fps": 30,
+  "duration": 63.6,
+  "fonts": "ok",
+  "lines": {
+    "kind": "fluxo-mapa-site",
+    "seed": 71389,
+    "dropped": 0,
+    "accents": [
+      "sem-cadeia",
+      "sem-ponto",
+      "contorno"
+    ],
+    "shift": 300
+  },
+  "drawings": [
+    {
+      "scene": "hook",
+      "kind": "fluxo-mapa-site",
+      "visible": 23,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "sem-cadeia",
+        "sem-ponto",
+        "contorno"
+      ]
+    },
+    {
+      "scene": "text0",
+      "kind": "planta",
+      "visible": 16,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "l2"
+      ]
+    },
+    {
+      "scene": "text1",
+      "kind": "planta",
+      "visible": 14,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "l2"
+      ]
+    },
+    {
+      "scene": "text2",
+      "kind": "planta",
+      "visible": 25,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "accf"
+      ]
+    },
+    {
+      "scene": "text3",
+      "kind": "planta",
+      "visible": 19,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "l1",
+        "l2"
+      ]
+    }
+  ],
+  "readTimes": [
+    {
+      "text": "Vai contratar quem faz o seu site? *Doze* perguntas antes de assinar.",
+      "chars": 67,
+      "legible": 5,
+      "need": 4.967
+    },
+    {
+      "text": "O que exatamente está incluso, e o que fica de fora?\nQuem escreve os textos do site?\nQual é o prazo, e o que acontece se atrasar?\nQuantas rodadas de revisão estão incluídas?",
+      "chars": 206,
+      "legible": 14.38,
+      "need": 14.233
+    },
+    {
+      "text": "Em nome de quem fica o domínio?\nDe quem é o código quando o site fica pronto?\nO que você leva se trocar de fornecedor daqui a dois anos?",
+      "chars": 173,
+      "legible": 12.12,
+      "need": 12.033
+    },
+    {
+      "text": "Em que o site vai ser feito, e por quê?\nQual velocidade o site vai ter, e como isso é medido?\nO site já nasce preparado para aparecer no Google?",
+      "chars": 167,
+      "legible": 11.72,
+      "need": 11.633
+    },
+    {
+      "text": "O que está incluso na manutenção, e quanto custa por mês?\nSe o site cair num sábado, quem responde?",
+      "chars": 132,
+      "legible": 9.41,
+      "need": 9.3
+    },
+    {
+      "text": "As respostas, uma por uma, estão no *blog*.",
+      "chars": 53,
+      "legible": 5.28,
+      "need": 4.033
+    }
+  ],
+  "problems": [],
+  "keyframes": [
+    {
+      "scene": 1,
+      "t": 5.05,
+      "file": "reel-04b-doze-perguntas-curto-k01.jpg",
+      "guides": "reel-04b-doze-perguntas-curto-k01-guias.jpg"
+    },
+    {
+      "scene": 2,
+      "t": 20.7,
+      "file": "reel-04b-doze-perguntas-curto-k02.jpg",
+      "guides": "reel-04b-doze-perguntas-curto-k02-guias.jpg"
+    },
+    {
+      "scene": 3,
+      "t": 34,
+      "file": "reel-04b-doze-perguntas-curto-k03.jpg",
+      "guides": "reel-04b-doze-perguntas-curto-k03-guias.jpg"
+    },
+    {
+      "scene": 4,
+      "t": 46.9,
+      "file": "reel-04b-doze-perguntas-curto-k04.jpg",
+      "guides": "reel-04b-doze-perguntas-curto-k04-guias.jpg"
+    },
+    {
+      "scene": 5,
+      "t": 57.4,
+      "file": "reel-04b-doze-perguntas-curto-k05.jpg",
+      "guides": "reel-04b-doze-perguntas-curto-k05-guias.jpg"
+    },
+    {
+      "scene": 6,
+      "t": 63.5,
+      "file": "reel-04b-doze-perguntas-curto-k06.jpg",
+      "guides": "reel-04b-doze-perguntas-curto-k06-guias.jpg"
+    }
+  ],
+  "cover": "reel-04b-doze-perguntas-curto-capa.jpg",
+  "video": {
+    "file": "reel-04b-doze-perguntas-curto.mp4",
+    "bytes": 14841463,
+    "codec": "h264",
+    "pix": "yuv420p",
+    "color": "tv, bt709, progressive",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 63.6,
+    "audio": false
+  },
+  "sheet": "reel-04b-doze-perguntas-curto-prancha.jpg"
+}

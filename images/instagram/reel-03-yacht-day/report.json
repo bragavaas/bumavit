@@ -1,9 +1,9 @@
 {
   "slug": "reel-03-yacht-day",
-  "generated": "2026-10-21T21:11:57.314Z",
+  "generated": "2026-10-21T22:02:53.009Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
-  "duration": 26,
+  "duration": 31.6,
   "fonts": "ok",
   "lines": {
     "kind": "jornada-telas",
@@ -41,20 +41,32 @@
     {
       "text": "Catálogo, disponibilidade clara e *reserva direta*.",
       "chars": 49,
-      "legible": 4.82,
+      "legible": 4.42,
       "need": 3.767
     },
     {
       "text": "SEO local para aparecer *primeiro* nas buscas da região.",
       "chars": 54,
-      "legible": 4.47,
+      "legible": 4.17,
       "need": 4.1
     },
     {
       "text": "Site rápido no celular, onde a reserva *acontece*.",
       "chars": 48,
-      "legible": 4.82,
+      "legible": 3.77,
       "need": 3.7
+    },
+    {
+      "text": "Reservas de iates, do design ao *lançamento*.",
+      "chars": 43,
+      "legible": 3.56,
+      "need": 3.367
+    },
+    {
+      "text": "Yacht Day, *Toronto*.",
+      "chars": 19,
+      "legible": 2.6,
+      "need": 2.5
     },
     {
       "text": "Cliente no Canadá, projeto feito *daqui*.",
@@ -73,40 +85,52 @@
     },
     {
       "scene": 2,
-      "t": 9.8,
+      "t": 9.4,
       "file": "reel-03-yacht-day-k02.jpg",
       "guides": "reel-03-yacht-day-k02-guias.jpg"
     },
     {
       "scene": 3,
-      "t": 15,
+      "t": 14.3,
       "file": "reel-03-yacht-day-k03.jpg",
       "guides": "reel-03-yacht-day-k03-guias.jpg"
     },
     {
       "scene": 4,
-      "t": 20,
+      "t": 18.8,
       "file": "reel-03-yacht-day-k04.jpg",
       "guides": "reel-03-yacht-day-k04-guias.jpg"
     },
     {
       "scene": 5,
-      "t": 25.9,
+      "t": 23,
       "file": "reel-03-yacht-day-k05.jpg",
       "guides": "reel-03-yacht-day-k05-guias.jpg"
+    },
+    {
+      "scene": 6,
+      "t": 25.6,
+      "file": "reel-03-yacht-day-k06.jpg",
+      "guides": "reel-03-yacht-day-k06-guias.jpg"
+    },
+    {
+      "scene": 7,
+      "t": 31.5,
+      "file": "reel-03-yacht-day-k07.jpg",
+      "guides": "reel-03-yacht-day-k07-guias.jpg"
     }
   ],
   "cover": "reel-03-yacht-day-capa.jpg",
   "video": {
     "file": "reel-03-yacht-day.mp4",
-    "bytes": 6704843,
+    "bytes": 8475960,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 26,
+    "duration": 31.6,
     "audio": false
   },
   "sheet": "reel-03-yacht-day-prancha.jpg"

@@ -1,9 +1,9 @@
 {
   "slug": "reel-03-yacht-day",
-  "generated": "2026-10-21T22:02:53.009Z",
+  "generated": "2026-10-21T22:24:24.153Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
-  "duration": 31.6,
+  "duration": 31.7,
   "fonts": "ok",
   "lines": {
     "kind": "jornada-telas",
@@ -65,13 +65,13 @@
     {
       "text": "Yacht Day, *Toronto*.",
       "chars": 19,
-      "legible": 2.6,
+      "legible": 2.525,
       "need": 2.5
     },
     {
       "text": "Cliente no Canadá, projeto feito *daqui*.",
       "chars": 61,
-      "legible": 4.58,
+      "legible": 4.755,
       "need": 4.567
     }
   ],
@@ -109,13 +109,13 @@
     },
     {
       "scene": 6,
-      "t": 25.6,
+      "t": 25.7,
       "file": "reel-03-yacht-day-k06.jpg",
       "guides": "reel-03-yacht-day-k06-guias.jpg"
     },
     {
       "scene": 7,
-      "t": 31.5,
+      "t": 31.599999999999998,
       "file": "reel-03-yacht-day-k07.jpg",
       "guides": "reel-03-yacht-day-k07-guias.jpg"
     }
@@ -123,14 +123,14 @@
   "cover": "reel-03-yacht-day-capa.jpg",
   "video": {
     "file": "reel-03-yacht-day.mp4",
-    "bytes": 8475960,
+    "bytes": 8816185,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 31.6,
+    "duration": 31.7,
     "audio": false
   },
   "sheet": "reel-03-yacht-day-prancha.jpg"

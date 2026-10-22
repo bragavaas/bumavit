@@ -1,9 +1,9 @@
 {
   "slug": "reel-03-yacht-day",
-  "generated": "2026-10-22T17:10:05.597Z",
+  "generated": "2026-10-22T17:22:40.611Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
-  "duration": 39.2,
+  "duration": 44.8,
   "fonts": "ok",
   "lines": {
     "kind": "jornada-telas",
@@ -57,10 +57,22 @@
       "need": 3.7
     },
     {
-      "text": "Reservas de iates, do design ao *lançamento*.",
-      "chars": 43,
-      "legible": 3.56,
-      "need": 3.367
+      "text": "Passeio em *família* pelas ilhas de Toronto.",
+      "chars": 42,
+      "legible": 3.36,
+      "need": 3.3
+    },
+    {
+      "text": "Despedida de solteira, pedido de casamento, festa com os *amigos*.",
+      "chars": 64,
+      "legible": 4.87,
+      "need": 4.767
+    },
+    {
+      "text": "Um barco para cada *ocasião*.",
+      "chars": 27,
+      "legible": 2.56,
+      "need": 2.5
     },
     {
       "text": "Yacht Day, *Toronto*.",
@@ -103,40 +115,46 @@
     },
     {
       "scene": 5,
-      "t": 27.5,
+      "t": 27.3,
       "file": "reel-03-yacht-day-k05.jpg",
       "guides": "reel-03-yacht-day-k05-guias.jpg"
     },
     {
       "scene": 6,
-      "t": 30.5,
+      "t": 32.9,
       "file": "reel-03-yacht-day-k06.jpg",
       "guides": "reel-03-yacht-day-k06-guias.jpg"
     },
     {
       "scene": 7,
-      "t": 33.199999999999996,
+      "t": 36.099999999999994,
       "file": "reel-03-yacht-day-k07.jpg",
       "guides": "reel-03-yacht-day-k07-guias.jpg"
     },
     {
       "scene": 8,
-      "t": 39.1,
+      "t": 38.8,
       "file": "reel-03-yacht-day-k08.jpg",
       "guides": "reel-03-yacht-day-k08-guias.jpg"
+    },
+    {
+      "scene": 9,
+      "t": 44.699999999999996,
+      "file": "reel-03-yacht-day-k09.jpg",
+      "guides": "reel-03-yacht-day-k09-guias.jpg"
     }
   ],
   "cover": "reel-03-yacht-day-capa.jpg",
   "video": {
     "file": "reel-03-yacht-day.mp4",
-    "bytes": 11083729,
+    "bytes": 12938503,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 39.2,
+    "duration": 44.8,
     "audio": false
   },
   "sheet": "reel-03-yacht-day-prancha.jpg"

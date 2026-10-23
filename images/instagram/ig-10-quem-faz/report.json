@@ -1,6 +1,6 @@
 {
   "slug": "ig-10-quem-faz",
-  "generated": "2026-09-28T16:03:27.524Z",
+  "generated": "2026-10-23T16:38:07.452Z",
   "engine": "templates/ig-slide.html",
   "slides": [
     {
@@ -13,6 +13,7 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": null,
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -28,6 +29,7 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": null,
       "ok": true,
       "problems": [],
       "size": "1080×1920",

@@ -1,6 +1,6 @@
 {
   "slug": "ig-12-site-nao-gera-clientes",
-  "generated": "2026-10-07T16:20:30.858Z",
+  "generated": "2026-10-23T16:38:54.295Z",
   "engine": "templates/ig-slide.html",
   "slides": [
     {
@@ -13,6 +13,16 @@
       "fontSize": 128,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "jornada-telas",
+        "seed": 75554,
+        "dropped": 0,
+        "accents": [
+          "acc",
+          "accf",
+          "telas-3"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -28,6 +38,16 @@
       "fontSize": 128,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "jornada-telas",
+        "seed": 75554,
+        "dropped": 0,
+        "accents": [
+          "acc",
+          "accf",
+          "telas-3"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1920",
@@ -43,6 +63,17 @@
       "fontSize": 96,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-implantacao",
+        "seed": 42697,
+        "dropped": 0,
+        "accents": [
+          "degrau-frente-inteira",
+          "bolha",
+          "ponto",
+          "acesso"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -58,6 +89,17 @@
       "fontSize": 96,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-implantacao",
+        "seed": 20316,
+        "dropped": 0,
+        "accents": [
+          "degrau-frente-inteira",
+          "bolha",
+          "ponto",
+          "acesso"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -73,6 +115,17 @@
       "fontSize": 96,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-implantacao",
+        "seed": 8411,
+        "dropped": 0,
+        "accents": [
+          "degrau-frente-lado-inteira",
+          "bolha",
+          "ponto",
+          "acesso"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -88,6 +141,17 @@
       "fontSize": 96,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-implantacao",
+        "seed": 86030,
+        "dropped": 0,
+        "accents": [
+          "degrau-lado-inteira",
+          "bolha",
+          "ponto",
+          "acesso"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -103,6 +167,7 @@
       "fontSize": 120,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": null,
       "ok": true,
       "problems": [],
       "size": "1080×1350",

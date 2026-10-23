@@ -1,6 +1,6 @@
 {
   "slug": "ig-11-agencia-ou-freelancer",
-  "generated": "2026-10-07T16:20:14.208Z",
+  "generated": "2026-10-23T16:43:07.305Z",
   "engine": "templates/ig-slide.html",
   "slides": [
     {
@@ -13,6 +13,14 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "cotas",
+        "seed": 13112,
+        "dropped": 0,
+        "accents": [
+          "origem"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -28,6 +36,14 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "cotas",
+        "seed": 13112,
+        "dropped": 0,
+        "accents": [
+          "sem-origem"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1920",
@@ -43,6 +59,14 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "cotas",
+        "seed": 90731,
+        "dropped": 0,
+        "accents": [
+          "sem-origem"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -58,6 +82,14 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "cotas",
+        "seed": 68350,
+        "dropped": 0,
+        "accents": [
+          "sem-origem"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -73,6 +105,18 @@
       "fontSize": 128,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-corte",
+        "seed": 25017,
+        "dropped": 1,
+        "accents": [
+          "compact",
+          "janela",
+          "desce 3.5",
+          "terreno 3",
+          "contorno-papel"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -88,6 +132,7 @@
       "fontSize": 120,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": null,
       "ok": true,
       "problems": [],
       "size": "1080×1350",

@@ -1,6 +1,6 @@
 {
   "slug": "ig-14-sete-criterios",
-  "generated": "2026-10-07T16:22:18.917Z",
+  "generated": "2026-10-23T16:43:22.326Z",
   "engine": "templates/ig-slide.html",
   "slides": [
     {
@@ -13,6 +13,16 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "fluxo-tracado",
+        "seed": 21276,
+        "dropped": 0,
+        "accents": [
+          "bolsao",
+          "sem-contorno",
+          "ponto"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -28,6 +38,16 @@
       "fontSize": 88,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "fluxo-tracado",
+        "seed": 21276,
+        "dropped": 0,
+        "accents": [
+          "story",
+          "sem-contorno",
+          "sem-ponto"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1920",
@@ -43,6 +63,16 @@
       "fontSize": 116,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "geometria-curva",
+        "seed": 98895,
+        "dropped": 1,
+        "accents": [
+          "ponto",
+          "sem-contorno",
+          "br-lista t=0.36 "
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -58,6 +88,7 @@
       "fontSize": 120,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": null,
       "ok": true,
       "problems": [],
       "size": "1080×1350",

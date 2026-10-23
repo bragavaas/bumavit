@@ -1,6 +1,6 @@
 {
   "slug": "ig-09-so-instagram",
-  "generated": "2026-10-07T16:19:59.835Z",
+  "generated": "2026-10-23T16:37:58.024Z",
   "engine": "templates/ig-slide.html",
   "slides": [
     {
@@ -13,6 +13,16 @@
       "fontSize": 106,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "fluxo-mapa-site",
+        "seed": 28897,
+        "dropped": 0,
+        "accents": [
+          "sem-cadeia",
+          "ponto",
+          "contorno"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1350",
@@ -28,6 +38,16 @@
       "fontSize": 106,
       "overflow": false,
       "contentHeight": 1080,
+      "lines": {
+        "kind": "fluxo-mapa-site",
+        "seed": 28897,
+        "dropped": 0,
+        "accents": [
+          "sem-cadeia",
+          "ponto",
+          "contorno"
+        ]
+      },
       "ok": true,
       "problems": [],
       "size": "1080×1920",

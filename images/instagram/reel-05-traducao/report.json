@@ -1,0 +1,225 @@
+{
+  "slug": "reel-05-traducao",
+  "generated": "2026-10-23T18:25:53.554Z",
+  "engine": "templates/ig-reel.html",
+  "fps": 30,
+  "duration": 42.6,
+  "fonts": "ok",
+  "lines": {
+    "kind": "obra-corte",
+    "seed": 32731,
+    "dropped": 0,
+    "accents": [
+      "compact",
+      "janela",
+      "sobe 3.1",
+      "terreno 3",
+      "contorno-papel"
+    ],
+    "shift": 300
+  },
+  "drawings": [
+    {
+      "scene": "hook",
+      "kind": "obra-corte",
+      "visible": 14,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "compact",
+        "janela",
+        "sobe 3.1",
+        "terreno 3",
+        "contorno-papel"
+      ]
+    },
+    {
+      "scene": "text0",
+      "kind": "geometria-tales",
+      "visible": 25,
+      "strokeK": 1.3333333333333333,
+      "decisions": [
+        "br",
+        "arco",
+        "ponto",
+        "guias"
+      ]
+    },
+    {
+      "scene": "text1",
+      "kind": "fluxo-tracado",
+      "visible": 22,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "story",
+        "contorno-D",
+        "ponto"
+      ]
+    },
+    {
+      "scene": "text2",
+      "kind": "geometria-tales",
+      "visible": 25,
+      "strokeK": 1.3333333333333333,
+      "decisions": [
+        "br",
+        "arco",
+        "ponto",
+        "guias"
+      ]
+    },
+    {
+      "scene": "text3",
+      "kind": "codigo-versoes",
+      "visible": 18,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "sem-contorno",
+        "ponto",
+        "ramos:2+1",
+        "nos:6",
+        "bolhas:2"
+      ]
+    },
+    {
+      "scene": "text4",
+      "kind": "geometria-tales",
+      "visible": 25,
+      "strokeK": 1.3333333333333333,
+      "decisions": [
+        "br",
+        "arco",
+        "ponto",
+        "guias"
+      ]
+    },
+    {
+      "scene": "text5",
+      "kind": "obra-implantacao",
+      "visible": 36,
+      "strokeK": 1.0909090909090908,
+      "decisions": [
+        "degrau-lado",
+        "bolha",
+        "vertice-b",
+        "sob-fio",
+        "ponto",
+        "acesso-papel"
+      ]
+    }
+  ],
+  "readTimes": [
+    {
+      "text": "A proposta chegou cheia de termos que você *não entendeu*?",
+      "chars": 56,
+      "legible": 4.35,
+      "need": 4.233
+    },
+    {
+      "text": "Funciona bem no *celular*.",
+      "chars": 38,
+      "legible": 3.77,
+      "need": 3.033
+    },
+    {
+      "text": "Painel onde você edita o *conteúdo*.",
+      "chars": 41,
+      "legible": 3.97,
+      "need": 3.233
+    },
+    {
+      "text": "Endereço seguro, com o *cadeado*.",
+      "chars": 50,
+      "legible": 4.57,
+      "need": 3.833
+    },
+    {
+      "text": "As notas de velocidade que o *Google* usa.",
+      "chars": 59,
+      "legible": 5.08,
+      "need": 4.433
+    },
+    {
+      "text": "Descoberta: entender o *seu negócio*.",
+      "chars": 55,
+      "legible": 4.87,
+      "need": 4.167
+    },
+    {
+      "text": "Quantas páginas, e quanto custa a *extra*?",
+      "chars": 60,
+      "legible": 5.18,
+      "need": 4.5
+    },
+    {
+      "text": "Se a proposta precisa de tradução, peça por *escrito*.",
+      "chars": 64,
+      "legible": 5.28,
+      "need": 4.767
+    }
+  ],
+  "problems": [],
+  "keyframes": [
+    {
+      "scene": 1,
+      "t": 4.3999999999999995,
+      "file": "reel-05-traducao-k01.jpg",
+      "guides": "reel-05-traducao-k01-guias.jpg"
+    },
+    {
+      "scene": 2,
+      "t": 8.9,
+      "file": "reel-05-traducao-k02.jpg",
+      "guides": "reel-05-traducao-k02-guias.jpg"
+    },
+    {
+      "scene": 3,
+      "t": 13.600000000000001,
+      "file": "reel-05-traducao-k03.jpg",
+      "guides": "reel-05-traducao-k03-guias.jpg"
+    },
+    {
+      "scene": 4,
+      "t": 18.900000000000002,
+      "file": "reel-05-traducao-k04.jpg",
+      "guides": "reel-05-traducao-k04-guias.jpg"
+    },
+    {
+      "scene": 5,
+      "t": 24.8,
+      "file": "reel-05-traducao-k05.jpg",
+      "guides": "reel-05-traducao-k05-guias.jpg"
+    },
+    {
+      "scene": 6,
+      "t": 30.400000000000002,
+      "file": "reel-05-traducao-k06.jpg",
+      "guides": "reel-05-traducao-k06-guias.jpg"
+    },
+    {
+      "scene": 7,
+      "t": 36.4,
+      "file": "reel-05-traducao-k07.jpg",
+      "guides": "reel-05-traducao-k07-guias.jpg"
+    },
+    {
+      "scene": 8,
+      "t": 42.5,
+      "file": "reel-05-traducao-k08.jpg",
+      "guides": "reel-05-traducao-k08-guias.jpg"
+    }
+  ],
+  "cover": "reel-05-traducao-capa.jpg",
+  "video": {
+    "file": "reel-05-traducao.mp4",
+    "bytes": 7786915,
+    "codec": "h264",
+    "pix": "yuv420p",
+    "color": "tv, bt709, progressive",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 42.6,
+    "audio": false
+  },
+  "sheet": "reel-05-traducao-prancha.jpg"
+}

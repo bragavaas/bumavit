@@ -1,0 +1,117 @@
+{
+  "slug": "reel-06-quanto-custa",
+  "generated": "2026-10-23T18:25:53.490Z",
+  "engine": "templates/ig-reel.html",
+  "fps": 30,
+  "duration": 26.3,
+  "fonts": "ok",
+  "lines": {
+    "kind": "obra-implantacao",
+    "seed": 17916,
+    "dropped": 0,
+    "accents": [
+      "degrau-lado",
+      "bolha",
+      "vertice-b",
+      "sob-fio",
+      "ponto",
+      "acesso-papel"
+    ],
+    "shift": 300
+  },
+  "drawings": [
+    {
+      "scene": "hook",
+      "kind": "obra-implantacao",
+      "visible": 35,
+      "strokeK": 1.0909090909090908,
+      "decisions": [
+        "degrau-lado",
+        "bolha",
+        "vertice-b",
+        "sob-fio",
+        "ponto",
+        "acesso-papel"
+      ]
+    }
+  ],
+  "readTimes": [
+    {
+      "text": "Quanto custa um site? Depende de *três coisas*.",
+      "chars": 45,
+      "legible": 3.95,
+      "need": 3.5
+    },
+    {
+      "text": "Quantas páginas ele *precisa* ter.",
+      "chars": 32,
+      "legible": 4.76,
+      "need": 2.633
+    },
+    {
+      "text": "O que ele precisa *fazer*.",
+      "chars": 24,
+      "legible": 5.45,
+      "need": 2.5
+    },
+    {
+      "text": "E a faixa que cabe no seu *orçamento*, na hora.",
+      "chars": 45,
+      "legible": 4.61,
+      "need": 3.5
+    },
+    {
+      "text": "Um minuto, *sem compromisso*.",
+      "chars": 45,
+      "legible": 4.78,
+      "need": 3.5
+    }
+  ],
+  "problems": [],
+  "keyframes": [
+    {
+      "scene": 1,
+      "t": 4,
+      "file": "reel-06-quanto-custa-k01.jpg",
+      "guides": "reel-06-quanto-custa-k01-guias.jpg"
+    },
+    {
+      "scene": 2,
+      "t": 9.4,
+      "file": "reel-06-quanto-custa-k02.jpg",
+      "guides": "reel-06-quanto-custa-k02-guias.jpg"
+    },
+    {
+      "scene": 3,
+      "t": 15.4,
+      "file": "reel-06-quanto-custa-k03.jpg",
+      "guides": "reel-06-quanto-custa-k03-guias.jpg"
+    },
+    {
+      "scene": 4,
+      "t": 20.1,
+      "file": "reel-06-quanto-custa-k04.jpg",
+      "guides": "reel-06-quanto-custa-k04-guias.jpg"
+    },
+    {
+      "scene": 5,
+      "t": 26.2,
+      "file": "reel-06-quanto-custa-k05.jpg",
+      "guides": "reel-06-quanto-custa-k05-guias.jpg"
+    }
+  ],
+  "cover": "reel-06-quanto-custa-capa.jpg",
+  "video": {
+    "file": "reel-06-quanto-custa.mp4",
+    "bytes": 8114098,
+    "codec": "h264",
+    "pix": "yuv420p",
+    "color": "tv, bt709, progressive",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 26.3,
+    "audio": false
+  },
+  "sheet": "reel-06-quanto-custa-prancha.jpg"
+}

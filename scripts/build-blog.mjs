@@ -377,7 +377,7 @@ ${content}
   <script src="${base}vendor/ScrollTrigger.min.js"></script>
   <script src="${base}vendor/lenis.min.js"></script>
   <script src="${base}js/i18n.js?v=6" defer></script>
-  <script src="${base}js/page.js?v=3" defer></script>
+  <script src="${base}js/page.js?v=4" defer></script>
   <script src="${base}js/analytics.js" defer></script>
 </body>
 </html>
@@ -751,6 +751,7 @@ const staticPages = [
   ['sobre.html', '0.8'],
   ['estimador.html', '0.9'],
   ['criacao-de-sites-rj/', '0.9'],
+  ['manutencao-de-sites/', '0.8'],
   ['projetos/yacht-day.html', '0.7'],
   ['projetos/cocban.html', '0.7'],
   ['projetos/fintech.html', '0.6'],

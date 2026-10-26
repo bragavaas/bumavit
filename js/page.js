@@ -65,6 +65,16 @@
     });
   });
 
+  /* ---- Títulos divididos fora do hero (FAQ, CTA): o CSS deixa as palavras
+     abaixo da máscara, então sem isto eles nunca aparecem ---- */
+  document.querySelectorAll('[data-split]').forEach(function (el) {
+    if (el.closest('.p-hero')) return;
+    gsap.to(el.querySelectorAll('.word > span'), {
+      y: 0, duration: 1, ease: 'power4.out', stagger: 0.06,
+      scrollTrigger: { trigger: el, start: 'top 88%' }
+    });
+  });
+
   /* ---- Parallax no monograma do banner ---- */
   var mono = document.querySelector('.p-banner .work__mono');
   if (mono) {

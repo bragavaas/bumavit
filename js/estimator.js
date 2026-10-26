@@ -49,6 +49,10 @@
       saas: 'Pago en cuotas a lo largo del proyecto, acordado en la propuesta.'
     }
   };
+  /* Preços aprovados (André, 24/10/2026). Só o site institucional tem faixa;
+     loja, app e sistema são "sob orçamento". Não inventar preço fora desta tabela.
+     RATE/horas acima seguem só para o prazo e para docs/faixas-de-preco.md. */
+  var APPROVED = { site: { from: 1800, typical: 2500 } };
   var PAGES_INCLUDED = 5;
   var PAGES_MAX = 15;
   var EXTRA_PAGE = { h: [1.4, 1.8], d: 0.4 }; // por página adicional
@@ -191,7 +195,7 @@
         q: 'Para quando você precisa?',
         hint: 'O prazo influencia o formato da equipe.',
         options: [
-          { id: 'urgente', name: 'É pra ontem', desc: 'Prioridade máxima na agenda (+35%)' },
+          { id: 'urgente', name: 'É pra ontem', desc: 'Prioridade máxima na agenda' },
           { id: 'normal', name: '1–2 meses', desc: 'Ritmo acelerado' },
           { id: 'medio', name: '2–4 meses', desc: 'Ritmo confortável' },
           { id: 'flexivel', name: 'Flexível', desc: 'Qualidade acima de pressa' }
@@ -200,7 +204,16 @@
       back: '← Voltar',
       next: 'Avançar →',
       resultGreeting: function (n) { return n ? n + ', aqui está o seu projeto' : 'Aqui está o seu projeto'; },
-      resultLabel: 'Faixa de orçamento estimada',
+      priceStep: {
+        q: function (n) { return n ? n + ', esta é a faixa de preço do seu projeto' : 'Esta é a faixa de preço do seu projeto'; },
+        label: 'Preço de referência',
+        typical: function (v) { return 'Faixa típica até R$ ' + v; },
+        quote: 'Sob orçamento',
+        quoteNote: 'Esse tipo de projeto é orçado caso a caso, depois de uma conversa sobre o escopo.',
+        note: 'Valor final após a conversa inicial.',
+        hint: 'No próximo passo pedimos seu contato para enviar o resumo do projeto.',
+        cont: 'Quero receber o resumo →'
+      },
       resultTime: function (a, b) { return 'Prazo estimado: ' + a + ' a ' + b + ' dias'; },
       pagesChip: function (n) { return n + ' páginas'; },
       budgetFit: {
@@ -310,7 +323,7 @@
         q: 'When do you need it?',
         hint: 'The timeline shapes the team setup.',
         options: [
-          { id: 'urgente', name: 'Yesterday', desc: 'Top priority in the schedule (+35%)' },
+          { id: 'urgente', name: 'Yesterday', desc: 'Top priority in the schedule' },
           { id: 'normal', name: '1–2 months', desc: 'Fast pace' },
           { id: 'medio', name: '2–4 months', desc: 'Comfortable pace' },
           { id: 'flexivel', name: 'Flexible', desc: 'Quality over rush' }
@@ -319,7 +332,16 @@
       back: '← Back',
       next: 'Next →',
       resultGreeting: function (n) { return n ? n + ', here is your project' : 'Here is your project'; },
-      resultLabel: 'Estimated price range',
+      priceStep: {
+        q: function (n) { return n ? n + ', here is the price range for your project' : 'Here is the price range for your project'; },
+        label: 'Reference price',
+        typical: function (v) { return 'Typical range up to R$ ' + v; },
+        quote: 'Quoted per project',
+        quoteNote: 'This type of project is quoted case by case, after a conversation about scope.',
+        note: 'Final price after the initial conversation.',
+        hint: 'Next we ask for your contact so we can send the project summary.',
+        cont: 'Send me the summary →'
+      },
       resultTime: function (a, b) { return 'Estimated timeline: ' + a + ' to ' + b + ' days'; },
       pagesChip: function (n) { return n + ' pages'; },
       budgetFit: {
@@ -429,7 +451,7 @@
         q: '¿Para cuándo lo necesitas?',
         hint: 'El plazo define el formato del equipo.',
         options: [
-          { id: 'urgente', name: 'Para ayer', desc: 'Prioridad máxima en la agenda (+35%)' },
+          { id: 'urgente', name: 'Para ayer', desc: 'Prioridad máxima en la agenda' },
           { id: 'normal', name: '1–2 meses', desc: 'Ritmo acelerado' },
           { id: 'medio', name: '2–4 meses', desc: 'Ritmo cómodo' },
           { id: 'flexivel', name: 'Flexible', desc: 'Calidad antes que prisa' }
@@ -438,7 +460,16 @@
       back: '← Volver',
       next: 'Avanzar →',
       resultGreeting: function (n) { return n ? n + ', aquí está tu proyecto' : 'Aquí está tu proyecto'; },
-      resultLabel: 'Rango de presupuesto estimado',
+      priceStep: {
+        q: function (n) { return n ? n + ', este es el rango de precio de tu proyecto' : 'Este es el rango de precio de tu proyecto'; },
+        label: 'Precio de referencia',
+        typical: function (v) { return 'Rango típico hasta R$ ' + v; },
+        quote: 'A presupuestar',
+        quoteNote: 'Este tipo de proyecto se presupuesta caso a caso, después de una conversación sobre el alcance.',
+        note: 'Valor final después de la conversación inicial.',
+        hint: 'En el siguiente paso pedimos tu contacto para enviarte el resumen del proyecto.',
+        cont: 'Quiero recibir el resumen →'
+      },
       resultTime: function (a, b) { return 'Plazo estimado: ' + a + ' a ' + b + ' días'; },
       pagesChip: function (n) { return n + ' páginas'; },
       budgetFit: {
@@ -477,8 +508,8 @@
   /* Sequência de passos depende do tipo (site ganha o passo de páginas) */
   function sequence() {
     return state.type === 'site'
-      ? ['name', 'type', 'pages', 'features', 'contact', 'budget', 'deadline']
-      : ['name', 'type', 'features', 'contact', 'budget', 'deadline'];
+      ? ['name', 'type', 'pages', 'features', 'budget', 'deadline', 'price', 'contact']
+      : ['name', 'type', 'features', 'budget', 'deadline', 'price', 'contact'];
   }
 
   /* Nome e e-mail vêm do usuário e entram via innerHTML: escapar sempre. */
@@ -551,16 +582,29 @@
     };
   }
 
-  function money(lo, hi) { return 'R$ ' + fmt(lo) + ' – ' + fmt(hi); }
+  /* O que o visitante vê como preço: só a tabela aprovada. */
+  function shownPrice() { return APPROVED[state.type] || null; }
+  function priceSummary() { // texto único para lead e handoff
+    var p = shownPrice();
+    if (!p) return t.priceStep.quote;
+    return t.from(fmt(p.from)) + '; ' + t.priceStep.typical(fmt(p.typical)) + ' (' + t.priceStep.note.replace(/\.$/, '') + ')';
+  }
+  function priceBlock() {
+    var p = shownPrice();
+    return '<span class="est__result-label">' + t.priceStep.label + '</span>' +
+      '<div class="est__result-value">' + (p ? t.from(fmt(p.from)) : t.priceStep.quote) + '</div>' +
+      '<p class="est__result-time">' + (p ? t.priceStep.typical(fmt(p.typical)) + '. ' : t.priceStep.quoteNote + ' ') + t.priceStep.note + '</p>';
+  }
 
   /* Compara a estimativa com a faixa de budget escolhida.
      Retorna 'ok' | 'tight' | 'over' | 'under' | null (sem faixa). */
   function budgetFit(e) {
     var range = BUDGET_RANGES[state.budget];
-    if (!range) return null;
-    if (e.lo > range[1]) return 'over';
-    if (e.hi > range[1]) return 'tight';
-    if (e.hi < range[0]) return 'under';
+    var p = shownPrice();
+    if (!range || !p) return null; // sem preço aprovado, sem comparação
+    if (p.from > range[1]) return 'over';
+    if (p.typical > range[1]) return 'tight';
+    if (p.typical < range[0]) return 'under';
     return 'ok';
   }
 
@@ -586,7 +630,7 @@
       funcionalidades: state.features.length ? state.features.map(featureName).join(', ') : t.none,
       faixa_investimento: budgetName(state.budget),
       prazo: deadlineName(state.deadline),
-      estimativa_apresentada: money(e.lo, e.hi),
+      estimativa_apresentada: priceSummary(),
       idioma: LANG
     };
     if (state.type === 'site') payload.paginas = String(state.pages);
@@ -621,7 +665,7 @@
     lines.push('• ' + t.handoffFeatures + ': ' + feats,
       '• ' + t.handoffBudget + ': ' + budgetName(state.budget),
       '• ' + t.handoffDeadline + ': ' + deadlineName(state.deadline),
-      '• ' + t.handoffEstimate + ': ' + money(e.lo, e.hi));
+      '• ' + t.handoffEstimate + ': ' + priceSummary());
     return lines.join('\n');
   }
 
@@ -672,16 +716,15 @@
           budget: state.budget,
           deadline: state.deadline,
           contact_method: state.contact,
-          estimate_low: e.lo,
-          estimate_high: e.hi,
+          estimate_low: shownPrice() ? shownPrice().from : 0,
+          estimate_high: shownPrice() ? shownPrice().typical : 0,
           budget_fit: fit || 'unknown'
         });
       }
 
       html += '<div class="est__result">' +
         '<p class="est__result-greeting">' + t.resultGreeting(safeName()) + '</p>' +
-        '<span class="est__result-label">' + t.resultLabel + '</span>' +
-        '<div class="est__result-value">' + money(e.lo, e.hi) + '</div>' +
+        priceBlock() +
         '<p class="est__result-time">' + t.resultTime(e.dLo, e.dHi) + '</p>' +
         '<p class="est__result-time">' + (PAYMENT[LANG] || PAYMENT.pt)[state.type] + '</p>' +
         (fit ? '<p class="est__fit est__fit--' + fit + '">' + t.budgetFit[fit] + '</p>' : '') +
@@ -721,15 +764,24 @@
         ' aria-label="' + esc(cs.placeholder[method]) + '">' +
         '<p class="est__error" id="estError" hidden>' + esc(cs.error[method]) + '</p>' +
         '</div>' + navButtons(true);
+    } else if (key === 'price') {
+      var pe = estimate();
+      html += '<div class="est__result">' +
+        '<h2 class="est__question">' + t.priceStep.q(safeName()) + '</h2>' +
+        priceBlock() +
+        '<p class="est__result-time">' + t.resultTime(pe.dLo, pe.dHi) + '</p>' +
+        '<p class="est__disclaimer">' + t.disclaimer + '</p>' +
+        '<p class="est__hint">' + t.priceStep.hint + '</p>' +
+        '</div>' + navButtons(true, t.priceStep.cont);
     } else if (key === 'type') {
       html += '<h2 class="est__question">' + t.typeStep.q(safeName()) + '</h2>' +
         '<p class="est__hint">' + t.typeStep.hint + '</p>' +
         '<div class="est__options">';
       t.typeStep.options.forEach(function (o) {
-        var fromPrice = round10(PRICING.types[o.id].hours[0] * RATE);
+        var ap = APPROVED[o.id];
         html += '<button type="button" class="est__opt' + (state.type === o.id ? ' is-selected' : '') + '" data-opt="' + o.id + '" data-hover>' +
           '<span class="est__opt-name">' + o.name + '</span>' +
-          '<span class="est__opt-desc">' + o.desc + ' · ' + t.from(fmt(fromPrice)) + '</span>' +
+          '<span class="est__opt-desc">' + o.desc + ' · ' + (ap ? t.from(fmt(ap.from)) : t.priceStep.quote) + '</span>' +
           '</button>';
       });
       html += '</div>' + navButtons(true);
@@ -816,10 +868,10 @@
     }
   }
 
-  function navButtons(showBack) {
+  function navButtons(showBack, nextLabel) {
     return '<div class="est__nav">' +
       '<button type="button" class="est__back" data-act="back"' + (showBack ? '' : ' hidden') + ' data-hover>' + t.back + '</button>' +
-      '<button type="button" class="btn-pill btn-pill--accent est__next" data-act="next" ' + (canAdvance() ? '' : 'disabled') + ' data-hover><span>' + t.next + '</span></button>' +
+      '<button type="button" class="btn-pill btn-pill--accent est__next" data-act="next" ' + (canAdvance() ? '' : 'disabled') + ' data-hover><span>' + (nextLabel || t.next) + '</span></button>' +
       '</div>';
   }
 

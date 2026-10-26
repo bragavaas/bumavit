@@ -149,9 +149,9 @@ Varredura de `posts/*.md` na data de geração. A última coluna lista o que nã
 
 | Post | Valores citados | Fora do estimador |
 |---|---|---|
-| loja-virtual-sob-medida | R$ 3.240, R$ 4.590, R$ 4.680, R$ 6.840, R$ 6.480, R$ 9.630, R$ 400, R$ 20.000, R$ 780, R$ 9.360, R$ 4.000 | R$ 400, R$ 20.000, R$ 780, R$ 9.360, R$ 4.000 |
+| loja-virtual-sob-medida | R$ 3.240, R$ 4.590, R$ 4.680, R$ 6.840, R$ 6.480, R$ 9.630 | nenhum |
 | quanto-custa-criar-um-site-no-rio-de-janeiro | R$ 1.800, R$ 2.500, R$ 3.080, R$ 4.430, R$ 4.070, R$ 6.050, R$ 130, R$ 160 | nenhum |
 | quanto-custa-criar-uma-loja-virtual-profissional | R$ 3.240, R$ 4.590, R$ 9.630, R$ 6.480, R$ 4.680, R$ 6.840 | nenhum |
 | quanto-custa-um-site-institucional | R$ 1.800, R$ 2.500, R$ 130, R$ 160, R$ 3.240, R$ 4.590, R$ 3.080, R$ 4.430, R$ 4.070, R$ 6.050 | nenhum |
-| site-lento-perde-vendas | R$ 1.800, R$ 2.500, R$ 3.240, R$ 4.590, R$ 10.000, R$ 700, R$ 2.000, R$ 150 | R$ 10.000, R$ 700, R$ 2.000 |
+| site-lento-perde-vendas | R$ 1.800, R$ 2.500, R$ 3.240, R$ 4.590, R$ 2.000 | R$ 2.000 |
 | site-para-clinica-medica | R$ 3.080, R$ 4.430, R$ 3.980, R$ 5.870 | nenhum |

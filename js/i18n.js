@@ -116,7 +116,7 @@
       '.services__item:nth-child(4) .services__name': 'SEO & Performance',
       '.services__item:nth-child(4) .services__desc': 'Technical work so Google can find your pages and so they load fast, on phones and computers.',
       '.services__item:nth-child(5) .services__name': 'Support and maintenance',
-      '.services__item:nth-child(5) .services__desc': 'Once the site is live, we stay close: updates, fixes and improvements, done by the people who built it.',
+      '.services__item:nth-child(5) .services__desc': { html: 'Once the site is live, we stay close: updates, fixes and improvements, done by the people who built it. <a href="manutencao-de-sites/">See how maintenance works</a>' },
 
       /* --- projetos --- */
       '#projetos .section__label': '( Work )',
@@ -271,7 +271,7 @@
       '.services__item:nth-child(4) .services__name': 'SEO y Performance',
       '.services__item:nth-child(4) .services__desc': 'Trabajo técnico para que Google encuentre tus páginas y para que abran rápido, en el celular y en la computadora.',
       '.services__item:nth-child(5) .services__name': 'Soporte y mantenimiento',
-      '.services__item:nth-child(5) .services__desc': 'Con el sitio publicado, seguimos cerca: actualizaciones, ajustes y mejoras, hechos por quien lo construyó.',
+      '.services__item:nth-child(5) .services__desc': { html: 'Con el sitio publicado, seguimos cerca: actualizaciones, ajustes y mejoras, hechos por quien lo construyó. <a href="manutencao-de-sites/">Ver cómo funciona el mantenimiento</a>' },
 
       '#projetos .section__label': '( Proyectos )',
       '#projetos .section__title': 'Trabajos seleccionados',

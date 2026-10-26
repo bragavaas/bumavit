@@ -751,6 +751,7 @@ const staticPages = [
   ['sobre.html', '0.8'],
   ['estimador.html', '0.9'],
   ['criacao-de-sites-rj/', '0.9'],
+  ['manutencao-de-sites/', '0.8'],
   ['projetos/yacht-day.html', '0.7'],
   ['projetos/cocban.html', '0.7'],
   ['projetos/fintech.html', '0.6'],

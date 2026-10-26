@@ -377,7 +377,7 @@ ${content}
   <script src="${base}vendor/ScrollTrigger.min.js"></script>
   <script src="${base}vendor/lenis.min.js"></script>
   <script src="${base}js/i18n.js?v=6" defer></script>
-  <script src="${base}js/page.js?v=3" defer></script>
+  <script src="${base}js/page.js?v=4" defer></script>
   <script src="${base}js/analytics.js" defer></script>
 </body>
 </html>

@@ -62,6 +62,11 @@
     acima12k: [12000, Infinity]
   };
 
+  /* Plano de manutenção contínua (fundador, 26/10). O estimador não usa:
+     fica aqui para docs/faixas-de-preco.md sair da mesma fonte. A hora
+     extra é RATE. Página: /manutencao-de-sites/. */
+  var MAINTENANCE = { monthly: 199, hoursIncluded: 4, minMonths: 6, auditReport: 150 };
+
   /* Horas/dias por funcionalidade (independente de idioma) */
   var FEATURES = {
     site: {

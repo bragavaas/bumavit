@@ -1,6 +1,6 @@
 # Faixas de preço da Bumavit
 
-> Gerado por `scripts/build-pricing.mjs` a partir de `js/estimator.js` em 2026-10-14.
+> Gerado por `scripts/build-pricing.mjs` a partir de `js/estimator.js` em 2026-10-26.
 > Não edite à mão: mude o estimador e rode o script. O estimador é a fonte de verdade.
 
 Este é o único documento de onde um agente de conteúdo (blog, redes, Post do Google, portfólio) pode tirar um valor em reais. Número que não está aqui não existe.
@@ -113,6 +113,24 @@ Definidas pelo fundador em 28/09. Citar junto com a faixa sempre que o valor pas
 | Aplicativo | Pagamento parcelado ao longo do projeto, combinado na proposta. |
 | Sistema sob medida | Pagamento parcelado ao longo do projeto, combinado na proposta. |
 
+## Manutenção contínua
+
+Plano mensal, definido pelo fundador em 26/10. Valores exatos, sem arredondamento. Página do serviço: https://bumavit.com.br/manutencao-de-sites/
+
+| Item | Valor |
+|---|---|
+| Mensalidade | R$ 199 por mês, com até 4 horas de trabalho |
+| Hora além das 4 do mês | R$ 90, orçada e aprovada pelo cliente antes |
+| Relatório técnico de auditoria do site | R$ 150, quando o cliente pedir |
+
+Inclui: atualização de conteúdo e documentos, backup mensal do site e do banco de dados, verificação de segurança, verificação em duas etapas no painel, atualizações do WordPress e dos plugins e correção de erros. Vale também para sites feitos por outras empresas.
+
+Condições: mensalidade por Pix ou boleto, a primeira na assinatura. Permanência mínima de 6 meses; depois, encerra sem multa. Quem encerra antes paga as mensalidades que faltam para os 6 meses.
+
+Fora do plano: páginas e funcionalidades novas, mudança em regras de simuladores, hospedagem e domínio, redação de documentos, área restrita, integrações, posts para redes sociais.
+
+Diferente dos projetos, este preço também aparece na própria página do serviço (decisão do fundador, 26/10). Em conteúdo, cite a mensalidade sempre com as 4 horas e a permanência mínima.
+
 ## Regras para citar preço em conteúdo
 
 1. Só cite valor que esteja neste arquivo, na combinação exata (tipo + funcionalidades + páginas). Não interpole, não arredonde para cima, não crie faixa nova.
@@ -121,7 +139,7 @@ Definidas pelo fundador em 28/09. Citar junto com a faixa sempre que o valor pas
 4. Preço de mercado (o que outros fornecedores cobram) só com fonte aberta e link. Sem fonte, não entra.
 5. O estimador é o destino padrão de quem quer saber o próprio caso: https://bumavit.com.br/estimador.html
 6. Nada de garantia de resultado, posição no Google ou aumento de vendas junto com o preço.
-7. Domínio, hospedagem, textos, fotos e manutenção não estão nas faixas. Diga isso quando citar valor de projeto.
+7. Domínio, hospedagem, textos, fotos e manutenção não estão nas faixas de projeto (a manutenção tem preço próprio, na seção acima). Diga isso quando citar valor de projeto.
 8. Loja virtual construída do zero, sem plataforma, e projetos fora dos quatro tipos do estimador não têm faixa: são orçados na conversa. Não invente número para eles.
 9. Ao citar preço de loja virtual, aplicativo ou sistema, diga como se paga (tabela acima). Site pode citar ou não; loja e projetos maiores, sempre.
 
@@ -131,6 +149,9 @@ Varredura de `posts/*.md` na data de geração. A última coluna lista o que nã
 
 | Post | Valores citados | Fora do estimador |
 |---|---|---|
+| loja-virtual-sob-medida | R$ 3.240, R$ 4.590, R$ 4.680, R$ 6.840, R$ 6.480, R$ 9.630, R$ 400, R$ 20.000, R$ 780, R$ 9.360, R$ 4.000 | R$ 400, R$ 20.000, R$ 780, R$ 9.360, R$ 4.000 |
 | quanto-custa-criar-um-site-no-rio-de-janeiro | R$ 1.800, R$ 2.500, R$ 3.080, R$ 4.430, R$ 4.070, R$ 6.050, R$ 130, R$ 160 | nenhum |
 | quanto-custa-criar-uma-loja-virtual-profissional | R$ 3.240, R$ 4.590, R$ 9.630, R$ 6.480, R$ 4.680, R$ 6.840 | nenhum |
 | quanto-custa-um-site-institucional | R$ 1.800, R$ 2.500, R$ 130, R$ 160, R$ 3.240, R$ 4.590, R$ 3.080, R$ 4.430, R$ 4.070, R$ 6.050 | nenhum |
+| site-lento-perde-vendas | R$ 1.800, R$ 2.500, R$ 3.240, R$ 4.590, R$ 10.000, R$ 700, R$ 2.000, R$ 150 | R$ 10.000, R$ 700, R$ 2.000 |
+| site-para-clinica-medica | R$ 3.080, R$ 4.430, R$ 3.980, R$ 5.870 | nenhum |

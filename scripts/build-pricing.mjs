@@ -2,7 +2,7 @@
    Uso: node scripts/build-pricing.mjs
    O estimador é a fonte de verdade dos valores. Este arquivo só lê RATE,
    PRICING, PAGES_INCLUDED, PAGES_MAX, EXTRA_PAGE, BUDGET_RANGES e FEATURES
-   e escreve o documento que os agentes de conteúdo usam para citar preço.
+   e MAINTENANCE e escreve o documento que os agentes de conteúdo usam para citar preço.
    Se o estimador mudar, rode de novo e commite o .md junto. */
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -26,6 +26,7 @@ const PAGES_MAX = pick('PAGES_MAX');
 const EXTRA_PAGE = pick('EXTRA_PAGE');
 const BUDGET_RANGES = pick('BUDGET_RANGES');
 const FEATURES = pick('FEATURES');
+const MAINTENANCE = pick('MAINTENANCE');
 
 /* Nomes visíveis (pt) das funcionalidades, por tipo, lidos de T.pt.featuresStep.options
    (ids como seo, idiomas e assinaturas têm nomes diferentes conforme o tipo). */
@@ -169,6 +170,24 @@ Definidas pelo fundador em 28/09. Citar junto com a faixa sempre que o valor pas
 |---|---|
 ${Object.entries(TYPE_LABEL).map(([id, label]) => `| ${label} | ${PAYMENT[id]} |`).join('\n')}
 
+## Manutenção contínua
+
+Plano mensal, definido pelo fundador em 26/10. Valores exatos, sem arredondamento. Página do serviço: https://bumavit.com.br/manutencao-de-sites/
+
+| Item | Valor |
+|---|---|
+| Mensalidade | R$ ${num(MAINTENANCE.monthly)} por mês, com até ${MAINTENANCE.hoursIncluded} horas de trabalho |
+| Hora além das ${MAINTENANCE.hoursIncluded} do mês | R$ ${num(RATE)}, orçada e aprovada pelo cliente antes |
+| Relatório técnico de auditoria do site | R$ ${num(MAINTENANCE.auditReport)}, quando o cliente pedir |
+
+Inclui: atualização de conteúdo e documentos, backup mensal do site e do banco de dados, verificação de segurança, verificação em duas etapas no painel, atualizações do WordPress e dos plugins e correção de erros. Vale também para sites feitos por outras empresas.
+
+Condições: mensalidade por Pix ou boleto, a primeira na assinatura. Permanência mínima de ${MAINTENANCE.minMonths} meses; depois, encerra sem multa. Quem encerra antes paga as mensalidades que faltam para os ${MAINTENANCE.minMonths} meses.
+
+Fora do plano: páginas e funcionalidades novas, mudança em regras de simuladores, hospedagem e domínio, redação de documentos, área restrita, integrações, posts para redes sociais.
+
+Diferente dos projetos, este preço também aparece na própria página do serviço (decisão do fundador, 26/10). Em conteúdo, cite a mensalidade sempre com as ${MAINTENANCE.hoursIncluded} horas e a permanência mínima.
+
 ## Regras para citar preço em conteúdo
 
 1. Só cite valor que esteja neste arquivo, na combinação exata (tipo + funcionalidades + páginas). Não interpole, não arredonde para cima, não crie faixa nova.
@@ -177,7 +196,7 @@ ${Object.entries(TYPE_LABEL).map(([id, label]) => `| ${label} | ${PAYMENT[id]} |
 4. Preço de mercado (o que outros fornecedores cobram) só com fonte aberta e link. Sem fonte, não entra.
 5. O estimador é o destino padrão de quem quer saber o próprio caso: https://bumavit.com.br/estimador.html
 6. Nada de garantia de resultado, posição no Google ou aumento de vendas junto com o preço.
-7. Domínio, hospedagem, textos, fotos e manutenção não estão nas faixas. Diga isso quando citar valor de projeto.
+7. Domínio, hospedagem, textos, fotos e manutenção não estão nas faixas de projeto (a manutenção tem preço próprio, na seção acima). Diga isso quando citar valor de projeto.
 8. Loja virtual construída do zero, sem plataforma, e projetos fora dos quatro tipos do estimador não têm faixa: são orçados na conversa. Não invente número para eles.
 9. Ao citar preço de loja virtual, aplicativo ou sistema, diga como se paga (tabela acima). Site pode citar ou não; loja e projetos maiores, sempre.
 `;

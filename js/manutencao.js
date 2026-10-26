@@ -28,7 +28,7 @@
       scale: ['0', '4 h included in the plan', 'extra'],
       notes: {
         rotina: 'Text and document updates plus the month’s technical care fit within the plan’s hours.',
-        cheio: 'The month went past 4 hours: the extra hours were quoted and approved by you before starting.',
+        cheio: 'The month went past 4 hours: the extra hours, at R$ 90 each, were quoted and approved by you before starting.',
         novo: 'A new page is a project, not maintenance: it has its own quote and doesn’t use the plan’s hours.'
       },
       termMin: 'Minimum term of 6 months', termAfter: 'After that: continue or stop, no fee',
@@ -51,7 +51,7 @@
       scale: ['0', '4 h incluidas en el plan', 'extra'],
       notes: {
         rotina: 'Las actualizaciones de texto, los documentos y el cuidado técnico del mes caben en las horas del plan.',
-        cheio: 'El mes pasó de 4 horas: las horas extra se presupuestaron y las aprobaste antes de empezar.',
+        cheio: 'El mes pasó de 4 horas: las horas extra, a R$ 90 cada una, se presupuestaron y las aprobaste antes de empezar.',
         novo: 'Una página nueva es proyecto, no mantenimiento: tiene presupuesto propio y no usa las horas del plan.'
       },
       termMin: 'Permanencia mínima de 6 meses', termAfter: 'Después: continúas o terminas, sin multa',

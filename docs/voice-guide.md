@@ -365,6 +365,7 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 - Não pode: criar faixa nova, arredondar, interpolar ou somar valores por conta própria
 - Não pode: preço em arte, slide, legenda, story, Post do Google ou post de rede sobre artigo de preço
 - Não pode: número "de exemplo" que pareça orçamento real ("recebeu R$ 1.800, R$ 4.500 e R$ 11.000")
+- Exceção (26/10, fundador): a página `/manutencao-de-sites/` mostra o preço do plano de manutenção (R$ 199 por mês, hora extra a R$ 90, relatório de auditoria a R$ 150), tirado da seção "Manutenção contínua" do arquivo. É produto de entrada e a página vende direto. As outras páginas do site continuam sem preço
 - Preço de mercado ou de terceiros continua exigindo fonte aberta e link. Sem fonte, descreva sem número ("o mais caro custa várias vezes o mais barato")
 
 **Capacidades não confirmadas.** Só afirmamos que fazemos o que está na lista de fatos públicos acima.
@@ -462,6 +463,8 @@ Aberto na calibração com o fundador (interação nesta task, BUMA-5). Enquanto
 *v2 — 28/08/2026. Calibrada pelo post piloto: quatro reconciliações ratificadas por merge sem alteração, mais as restrições reais do gerador, que a v1 não conhecia.*
 
 *v4 — 28/08/2026. Bloco "Post do Google (GBP)" adicionado ao checklist de publicação (BUMA-37).*
+
+*v7 — 26/10/2026. Exceção à regra de preço: a página de manutenção mostra o preço do plano, tirado de `docs/faixas-de-preco.md`.*
 
 *v6 — 14/10/2026. Regra de preço da Bumavit (CLA-217/CLA-218): só no blog, só a partir de `docs/faixas-de-preco.md`.*
 

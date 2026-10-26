@@ -528,7 +528,7 @@ ${statItems ? `
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
   <script src="../js/i18n.js?v=6" defer></script>
-  <script src="../js/page.js?v=3" defer></script>
+  <script src="../js/page.js?v=4" defer></script>
   <script src="../js/analytics.js" defer></script>
 </body>
 </html>

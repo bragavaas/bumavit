@@ -56,7 +56,7 @@ Para um site institucional, a lentidão afasta o cliente na hora de pedir orçam
 
 A velocidade do site é parte da primeira impressão. E primeira impressão, no digital, acontece nos primeiros dois segundos.
 
-Para uma loja virtual, o impacto é ainda mais direto. **Cada segundo a mais no carregamento reduz a taxa de conversão.** Estudos de e-commerce apontam quedas de 7% a cada segundo adicional. Em uma loja que fatura R$ 10.000 por mês, isso representa R$ 700 por segundo de lentidão que você está deixando de ganhar todo mês.
+Para uma loja virtual, o impacto é ainda mais direto. **Cada segundo a mais no carregamento reduz a taxa de conversão.** Quanto isso pesa depende do tráfego e das vendas da sua loja, e a conta logo abaixo mostra como fazer com os seus números.
 
 Além disso, em e-commerce, o abandono acontece em etapas: o visitante abandona a listagem antes de ver o produto, abandona o produto antes de adicionar ao carrinho, abandona o carrinho antes de finalizar. A lentidão amplifica o abandono em cada uma dessas etapas.
 
@@ -78,7 +78,7 @@ Comprima as imagens antes de fazer upload. Ferramentas gratuitas como Squoosh ou
 
 Desative plugins que você não usa. No WordPress, acesse a lista de plugins e desative tudo que não está em uso ativo. Cada plugin desativado é código que deixa de ser carregado para cada visitante.
 
-Troque o plano de hospedagem. Planos compartilhados muito baratos raramente entregam velocidade aceitável para sites profissionais. Um plano melhor custa entre R$ 50 e R$ 150 por mês e faz diferença real, especialmente para sites com tráfego crescente.
+Troque o plano de hospedagem. Planos compartilhados muito baratos raramente entregam velocidade aceitável para sites profissionais. Um plano melhor custa um pouco mais por mês e faz diferença real, especialmente para sites com tráfego crescente.
 
 Se depois dessas correções o site continuar lento, o problema costuma ser estrutural — template pesado, código acumulado ao longo do tempo, imagens inseridas sem processo. Nesses casos, a solução mais eficiente é refazer o site com performance como requisito, não como correção posterior.
 

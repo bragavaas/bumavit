@@ -83,7 +83,7 @@ A conta que precede qualquer decisão de migração é simples.
 
 Pegue o custo total atual da sua plataforma — mensalidade do plano mais o percentual médio de taxa sobre as vendas — e multiplique por 12. Esse é o custo anual de continuar onde você está.
 
-Se você está no plano intermediário de uma plataforma popular e paga R$ 400 de mensalidade mais uma taxa de 1,9% sobre R$ 20.000 de vendas mensais, isso é R$ 780 por mês, ou R$ 9.360 por ano. Uma loja inicial na Bumavit por R$ 4.000 se paga em menos de 5 meses por essa diferença — sem contar que a hospedagem depois da loja no ar custa uma fração do que você pagava de mensalidade.
+Do outro lado da conta está o preço da loja sob medida. Na Bumavit, uma loja virtual inicial, com catálogo pequeno, pagamento e frete padrão, fica de R$ 3.240 a R$ 4.590, pagos em até 4 vezes. Divida esse valor pelo que você paga hoje à plataforma por mês, entre mensalidade e taxa sobre as vendas, e você tem o número de meses para a troca se pagar.
 
 O payback melhora à medida que o faturamento cresce, porque a taxa percentual sobre vendas sobe junto. É um custo que acompanha o crescimento na direção errada.
 

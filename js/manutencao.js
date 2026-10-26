@@ -1,9 +1,7 @@
 /* BUMAVIT · página /manutencao-de-sites/
-   Quatro peças interativas, sem dependência: funcionam com ou sem GSAP.
+   Três peças interativas, sem dependência: funcionam com ou sem GSAP.
    - Painel "Sem / Com manutenção" (chave + anel de saúde). Vira para "com"
      sozinho na primeira vez que aparece na tela.
-   - Linha do tempo do envio ao documento no ar (em até 24 h), que avança
-     com a rolagem.
    - Medidor das 4 horas do plano, com três cenários.
    - Régua do contrato (6 meses de permanência e depois).
    Traduções das peças ficam aqui; o resto da página usa window.__pageI18n. */
@@ -26,8 +24,6 @@
         ['Documents', 'Old version online', 'Latest version published'],
         ['Errors', 'Waiting for someone to notice', 'Fixed within the plan']
       ],
-      flow: [['You send', 'the approved document'], ['We publish', 'in the right place on the site'], ['Live', 'within 24 hours']],
-      flowLabel: 'From sending to the document going live, within 24 hours',
       tabs: ['Routine month', 'Busier month', 'New page'],
       scale: ['0', '4 h included in the plan', 'extra'],
       notes: {
@@ -51,8 +47,6 @@
         ['Documentos', 'Versión vieja publicada', 'Última versión publicada'],
         ['Errores', 'Esperando que alguien los vea', 'Corregidos en el plan']
       ],
-      flow: [['Tú envías', 'el documento aprobado'], ['Lo publicamos', 'en el lugar correcto del sitio'], ['Publicado', 'en hasta 24 horas']],
-      flowLabel: 'Del envío al documento publicado, en hasta 24 horas',
       tabs: ['Mes de rutina', 'Mes con más pedidos', 'Página nueva'],
       scale: ['0', '4 h incluidas en el plan', 'extra'],
       notes: {
@@ -83,11 +77,6 @@
       setText(li.querySelector('.mt-row__k'), r[0]);
       var v = li.querySelector('.mt-row__v');
       v.dataset.sem = r[1]; v.dataset.com = r[2]; v.textContent = r[1];
-    });
-    var flow = document.querySelector('.mt-flow');
-    if (flow) flow.setAttribute('aria-label', t.flowLabel);
-    document.querySelectorAll('.mt-flow__step').forEach(function (li, i) {
-      setText(li.querySelector('b'), t.flow[i][0]); setText(li.querySelector('span'), t.flow[i][1]);
     });
     document.querySelectorAll('.mt-hours__tab').forEach(function (b, i) { setText(b, t.tabs[i]); });
     document.querySelectorAll('.mt-hours__scale span').forEach(function (s, i) { setText(s, t.scale[i]); });
@@ -134,27 +123,6 @@
   onceVisible(win, function () {
     setTimeout(function () { if (!touched) setHealth('com'); }, reduced ? 0 : 900);
   }, 0.6);
-
-  /* ---------- Linha do tempo de 24 h ---------- */
-  var flowEl = document.querySelector('.mt-flow');
-  function setFlow(p) {
-    if (!flowEl) return;
-    p = Math.max(0, Math.min(1, p));
-    flowEl.style.setProperty('--p', p.toFixed(3));
-    flowEl.querySelectorAll('.mt-flow__step').forEach(function (s, i) {
-      s.classList.toggle('is-on', p >= i / 2 - 0.001);
-    });
-  }
-  if (flowEl) {
-    if (reduced) setFlow(1);
-    else if (window.gsap && window.ScrollTrigger) {
-      setFlow(0);
-      ScrollTrigger.create({
-        trigger: flowEl, start: 'top 85%', end: 'bottom 45%', scrub: 0.6,
-        onUpdate: function (self) { setFlow(self.progress); }
-      });
-    } else onceVisible(flowEl, function () { setFlow(1); });
-  }
 
   /* ---------- Medidor das 4 horas ---------- */
   var hours = document.querySelector('.mt-hours');

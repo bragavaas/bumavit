@@ -2042,54 +2042,6 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
 .mt-health__window[data-state="com"] .mt-health__rows li:nth-child(5) .mt-row__v::before { transition-delay: 0.36s; }
 .mt-health__window[data-state="com"] .mt-health__rows li:nth-child(6) .mt-row__v::before { transition-delay: 0.45s; }
 
-/* Envio ao documento no ar: --p vai de 0 a 1 com a rolagem */
-.mt-flow {
-  --p: 0;
-  position: relative;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1.4rem;
-  align-items: start;
-  margin-top: 2.4rem;
-  padding: 1.6rem;
-  border: 1px solid var(--faint);
-  border-radius: 14px;
-  background: var(--ink-2);
-  max-width: 58ch;
-}
-.mt-flow__clock { width: 64px; height: 64px; }
-.mt-flow__clock circle { fill: none; stroke: var(--faint); stroke-width: 3; }
-.mt-flow__arc {
-  fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round;
-  stroke-dasharray: 100;
-  stroke-dashoffset: calc(100 - var(--p) * 100);
-}
-.mt-flow__hand {
-  stroke: var(--paper); stroke-width: 3; stroke-linecap: round;
-  transform-origin: 32px 32px;
-  transform: rotate(calc(var(--p) * 360deg));
-}
-.mt-flow__steps {
-  list-style: none; margin: 0; padding: 0;
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
-}
-.mt-flow__step { display: flex; flex-direction: column; gap: 0.2rem; opacity: 0.35; transition: opacity 0.4s; }
-.mt-flow__step.is-on { opacity: 1; }
-.mt-flow__step b { font-family: var(--font-display); font-size: 1.05rem; color: var(--paper); }
-.mt-flow__step span { font-size: 0.86rem; color: var(--muted); line-height: 1.45; }
-.mt-flow__step:last-child.is-on b { color: var(--accent); }
-.mt-flow__line {
-  grid-column: 2;
-  height: 3px; border-radius: 3px;
-  background: var(--faint);
-  overflow: hidden;
-}
-.mt-flow__line i {
-  display: block; height: 100%;
-  width: calc(var(--p) * 100%);
-  background: var(--accent);
-}
-
 /* Medidor das 4 horas: --plan e --extra (0 a 1) vêm do cenário escolhido */
 .mt-hours {
   --plan: 0;
@@ -2176,10 +2128,6 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   .mt-health__rows { width: 100%; }
   .mt-health__rows li { font-size: 0.86rem; }
   .mt-health__bar span { font-size: 0.7rem; }
-  .mt-flow { grid-template-columns: 1fr; padding: 1.2rem; }
-  .mt-flow__clock { width: 48px; height: 48px; }
-  .mt-flow__line { grid-column: 1; }
-  .mt-flow__steps { grid-template-columns: 1fr; gap: 0.8rem; }
   .mt-hours { padding: 1.2rem; }
   .mt-hours__tab { font-size: 0.8rem; padding: 0.55em 1em; }
 }

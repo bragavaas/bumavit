@@ -14,7 +14,7 @@ Escritórios de contabilidade nascidos nos últimos dez anos operam com estrutur
 
 O site do escritório contábil é onde essa comparação acontece. Se ele apenas lista serviços em texto corrido, o escritório já perdeu o único momento em que podia diferenciar o atendimento especializado de uma solução mais barata.
 
-Este post explica o que um site para contabilidade precisa fazer — e o que a maioria dos sites contábeis ainda deixa de fazer.
+O que um site para contabilidade precisa fazer, e o que a maioria dos sites contábeis ainda deixa de fazer, está abaixo.
 
 ## O que mudou na captação de clientes contábeis
 
@@ -50,7 +50,7 @@ Tempo de operação, número aproximado de clientes ativos, setores atendidos. S
 
 Uma página por segmento atendido produz mais resultado do que uma única página de "Serviços".
 
-A razão prática é o comportamento de busca: quando um empresário pesquisa "contabilidade para e-commerce Rio de Janeiro", o Google entrega uma página específica para esse segmento — não uma página genérica que menciona e-commerce em um bullet. O escritório com a página `/contabilidade-para-ecommerce/` aparece; o que não tem, não aparece.
+A razão prática é o comportamento de busca: quando um empresário pesquisa "contabilidade para e-commerce Rio de Janeiro", o Google entrega uma página específica para esse segmento — não uma página genérica que menciona e-commerce em um bullet. O escritório com a página "/contabilidade-para-ecommerce/" aparece; o que não tem, não aparece.
 
 A razão de conversão é igualmente direta: o cliente chega em uma página que trata exatamente da situação dele. O texto pode nomear os problemas do setor, os regimes tributários aplicáveis e as dúvidas que chegam com mais frequência. O argumento é mais fácil de avaliar porque é específico.
 
@@ -78,7 +78,7 @@ O volume não precisa ser alto. Para um escritório com foco setorial, dois ou t
 
 Uma área restrita para troca de documentos e comunicação transforma o site de brochure em ferramenta de trabalho.
 
-O investimento se justifica quando o volume de clientes gera atrito relevante no fluxo atual de arquivos — dezenas de clientes enviando documentos por e-mail, WhatsApp e ferramentas de nuvem diferentes, sem rastreamento. Abaixo desse volume, o ganho operacional pode não compensar o custo de implementação inicial.
+O custo se justifica quando o volume de clientes gera atrito relevante no fluxo atual de arquivos — dezenas de clientes enviando documentos por e-mail, WhatsApp e ferramentas de nuvem diferentes, sem rastreamento. Abaixo desse volume, o ganho operacional pode não compensar o custo de implementação inicial.
 
 Se o escritório usa um sistema de gestão contábil que já tem portal do cliente nativo, a integração com o site é frequentemente mais simples do que desenvolver uma área do zero. Vale mapear o que já existe no sistema atual antes de especificar qualquer desenvolvimento.
 

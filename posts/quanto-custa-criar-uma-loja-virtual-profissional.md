@@ -12,7 +12,7 @@ Uma loja virtual inicial na Bumavit — catálogo pequeno, pagamento e frete pad
 
 Não é falta de transparência. Preço de loja virtual varia mais do que preço de site institucional, e por razões técnicas reais: volume de produtos, integração com sistema de gestão, regras de frete, sincronização com marketplace, meios de pagamento, migração de plataforma existente. Cada um desses fatores muda o orçamento de forma mensurável.
 
-Este post mapeia os três caminhos possíveis para montar uma loja virtual profissional, explica o que faz o preço variar dentro de cada um, e — o que raramente aparece em qualquer proposta — quanto custa operar a loja todo mês depois que ela vai ao ar.
+Abaixo estão os três caminhos possíveis para montar uma loja virtual profissional, o que faz o preço variar dentro de cada um e, o que raramente aparece em qualquer proposta, quanto custa operar a loja todo mês depois que ela vai ao ar.
 
 ## Os três caminhos
 
@@ -38,7 +38,7 @@ Esse é o equilíbrio certo quando a plataforma resolve a base da operação e o
 
 Desenvolvido do zero, sem plataforma de terceiros. Você não paga mensalidade nem percentual de vendas para nenhum serviço externo — a infraestrutura é inteiramente sua. O custo inicial é o mais alto dos três caminhos, o prazo de desenvolvimento é mais longo, e a manutenção fica sob sua responsabilidade.
 
-Faz sentido quando o volume de transações é alto o suficiente para que a economia no percentual sobre vendas cubra o custo adicional do desenvolvimento em 12 a 24 meses. Para operações menores, o payback raramente compensa.
+Faz sentido quando o volume de transações é alto o suficiente para que a economia no percentual sobre vendas cubra o custo adicional do desenvolvimento em até 24 meses. Na nossa experiência, para operações menores o payback raramente compensa.
 
 ## Quanto cada caminho custa — e o que muda dentro de cada faixa
 
@@ -102,7 +102,7 @@ Não é possível citar os valores dessas linhas sem risco de desatualizar o pos
 
 O que importa entender é a estrutura: há um custo fixo mensal e há um custo variável que cresce com a receita. Uma loja inicial, que custa de R$ 3.240 a R$ 4.590 para ser construída, pode custar mais do que isso para ser operada no primeiro ano. Saber disso antes de assinar — e não descobrir depois — é o que separa um projeto sustentável de um arrependimento.
 
-Esta é a informação que nenhuma plataforma publica em seu próprio site. Um fornecedor que inclui o custo mensal detalhado na proposta está colocando os números certos na mesa. Um que não inclui, vale perguntar.
+É uma informação que as plataformas não costumam publicar. Um fornecedor que inclui o custo mensal detalhado na proposta está colocando os números certos na mesa. Um que não inclui, vale perguntar.
 
 ## Quando o e-commerce sob medida se paga
 
@@ -110,7 +110,7 @@ O desenvolvimento sob medida tem custo inicial mais alto. A questão é em quant
 
 A conta é simples: calcule quanto você pagaria por mês em percentual de vendas na plataforma com o seu faturamento atual. Esse é o valor que o sob medida economiza todo mês. Depois compare com o custo adicional do desenvolvimento sob medida em relação à alternativa em plataforma. Divida o custo adicional pela economia mensal e você tem o payback em meses.
 
-Se o resultado for menor que 18 a 24 meses, o sob medida provavelmente vale. Se for maior, a plataforma ainda é o caminho certo — pelo menos por ora.
+Se o resultado for de até 24 meses, na nossa experiência o sob medida provavelmente vale. Se for maior, a plataforma ainda é o caminho certo — pelo menos por ora.
 
 Para uma loja em estágio inicial, o percentual economizado por mês é baixo e o payback leva anos. Para uma operação que já movimenta volume expressivo, a conta fecha muito mais rápido. Essa é exatamente a situação em que vale fazer o cálculo antes de renovar o próximo plano anual da plataforma.
 
@@ -118,7 +118,7 @@ Para uma loja em estágio inicial, o percentual economizado por mês é baixo e 
 
 A resposta honesta que nenhuma plataforma vai publicar:
 
-Se você está validando um produto ou montando seu primeiro canal online, comece na plataforma pronta. Nuvemshop, Shopify e Loja Integrada existem para isso — você não precisa investir dezenas de milhares de reais para descobrir se o produto vende. Comece, venda, itere. Quando a plataforma começar a limitar o crescimento, a operação já terá tamanho suficiente para justificar um projeto maior.
+Se você está validando um produto ou montando seu primeiro canal online, comece na plataforma pronta. Nuvemshop, Shopify e Loja Integrada existem para isso — você não precisa investir dezenas de milhares de reais para descobrir se o produto vende. Quando a plataforma começar a limitar o crescimento, a operação já terá tamanho suficiente para justificar um projeto maior.
 
 Também não vale a pena o e-commerce sob medida para catálogos pequenos, para operações sem integração com sistema de gestão externo, e para negócios em que o modelo da plataforma se encaixa sem atrito relevante. Pagar pela complexidade de um sistema proprietário sem ter o problema que justifica esse custo é uma decisão que parece ambiciosa e costuma sair cara.
 

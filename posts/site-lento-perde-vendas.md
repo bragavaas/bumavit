@@ -20,7 +20,7 @@ Um estudo do próprio Google sobre velocidade no celular ([Think with Google, 20
 
 Isso não é sobre paciência do visitante. É sobre atenção. A pessoa que clicou no seu anúncio ou no seu link do Instagram está em movimento, entre uma coisa e outra. Ela não vai esperar.
 
-O pior: você pagou para trazer esse visitante. Seja com dinheiro em Google Ads, seja com tempo escrevendo conteúdo, seja com anos construindo reputação para receber indicações. O site lento desperdiça esse investimento antes de o visitante ver uma palavra sequer do que você oferece.
+O pior: você pagou para trazer esse visitante. Seja com dinheiro em Google Ads, seja com tempo escrevendo conteúdo, seja com anos construindo reputação para receber indicações. O site lento desperdiça esse esforço antes de o visitante ver uma palavra sequer do que você oferece.
 
 ## Como saber se o seu site está lento
 
@@ -82,10 +82,10 @@ Se depois dessas correções o site continuar lento, o problema costuma ser estr
 
 Um site institucional refeito do zero, com até 5 páginas e sem extras, fica entre R$ 1.800 e R$ 2.500. Performance é parte do processo — não um item adicional a cobrar depois.
 
-Para uma loja virtual, o investimento base vai de R$ 3.240 a R$ 4.590, também sem extras.
+Para uma loja virtual, o preço base vai de R$ 3.240 a R$ 4.590, também sem extras.
 
 Em ambos os casos, o site entregue já parte com as boas práticas de velocidade aplicadas: imagens otimizadas, código limpo, hospedagem dimensionada para o porte do negócio.
 
 Se você quer ver como isso fica na prática, o [projeto de e-commerce](https://bumavit.com.br/projetos/ecommerce.html) e o [projeto de site institucional](https://bumavit.com.br/projetos/cocban.html) mostram o resultado antes e depois do processo.
 
-Para saber quanto ficaria o seu caso específico, use o [estimador de investimento](https://bumavit.com.br/estimador.html) — o resultado sai na hora, sem precisar falar com ninguém.
+Para saber quanto ficaria o seu caso específico, use o [estimador de projetos](https://bumavit.com.br/estimador.html) — o resultado sai na hora, sem precisar falar com ninguém.

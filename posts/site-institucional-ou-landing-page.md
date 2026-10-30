@@ -1,17 +1,16 @@
 ---
 title: Site institucional ou landing page: qual você precisa
 slug: site-institucional-ou-landing-page
-date: 2026-10-28
-draft: true
+date: 2026-11-06
 category: Negócios
 cover: rust
-excerpt: Site institucional e landing page parecem a mesma coisa, mas servem para objetivos diferentes. Entender a diferença antes de contratar poupa tempo e dinheiro.
+excerpt: Site institucional e landing page parecem iguais, mas servem para objetivos diferentes. Entender a diferença antes de contratar poupa tempo e dinheiro.
 keyword: diferença entre site institucional e landing page
 ---
 
-Você está prestes a investir em presença digital. Um contato disse que você precisa de um site. Outro disse que basta uma landing page. Ambos têm razão — dependendo do caso. O problema é que são dois produtos diferentes, custam diferente e entregam coisas diferentes. Confundir os dois é um erro que aparece antes de qualquer reunião com desenvolvedor.
+Você está prestes a contratar um site. Um contato disse que você precisa de um site. Outro disse que basta uma landing page. Ambos têm razão — dependendo do caso. O problema é que são dois produtos diferentes, custam diferente e entregam coisas diferentes. Confundir os dois é um erro que aparece antes de qualquer reunião com desenvolvedor.
 
-Este post explica o que é cada um, quando usar cada um e quando vale ter os dois ao mesmo tempo.
+Abaixo: o que é cada um, quando usar cada um e quando vale ter os dois ao mesmo tempo.
 
 ## O que é um site institucional
 
@@ -29,13 +28,13 @@ Para um negócio de serviços com múltiplas linhas de atendimento, um site inst
 
 Uma landing page é uma página com um único objetivo.
 
-Não tem menu de navegação. Não tem links que levam a outras páginas. Tudo na página — headline, texto, imagens, depoimentos, botões — aponta para uma única ação: preencher um formulário, fazer um download, se registrar para um evento, iniciar um contato.
+Não tem menu de navegação. Não tem links que levam a outras páginas. Tudo na página — título, texto, imagens, depoimentos, botões — aponta para uma única ação: preencher um formulário, fazer um download, se registrar para um evento, iniciar um contato.
 
 O visitante de uma landing page chega com intenção definida. Ele clicou em um anúncio, abriu um link de email, ou escaneou um QR code em um material impresso. Ele não está explorando — está avaliando se aquela oferta específica faz sentido para ele. O papel da landing page é convencê-lo a agir naquele momento.
 
 Landing pages são instrumentos de campanha. Elas nascem junto com uma campanha e morrem quando a campanha termina. Uma landing page para inscrição em um webinar perde o sentido depois que o webinar aconteceu. Uma para um lançamento de produto tem vida útil de dias ou semanas.
 
-Por isso, o investimento em uma landing page é diferente do investimento em um site. Ela precisa converter bem agora. Não está sendo construída para os próximos anos.
+Por isso, uma landing page é pensada de um jeito diferente de um site. Ela precisa converter bem agora. Não está sendo construída para os próximos anos.
 
 ## A diferença que decide
 
@@ -57,9 +56,11 @@ Se o objetivo é converter para uma oferta específica — um produto, um servi�
 
 **Em que estágio o negócio está?**
 
-Testar se um produto ou serviço tem demanda antes de fazer um site completo é uma estratégia legítima. Nesse caso, uma landing page cumpre o papel de validação com menos investimento. Se a demanda existir, o site vem depois, em uma base mais sólida.
+Testar se um produto ou serviço tem demanda antes de fazer um site completo é uma estratégia legítima. Nesse caso, uma landing page cumpre o papel de validação com menos custo. Se a demanda existir, o site vem depois, em uma base mais sólida.
 
 Um negócio já estabelecido, com oferta conhecida e múltiplos canais de atendimento, precisa do site como endereço principal. A landing page entra depois para campanhas específicas.
+
+Caso o site já exista mas não esteja gerando contatos, o problema raramente é o tipo de página — é o que acontece depois que o visitante chega. O post sobre [por que o site não gera clientes](https://bumavit.com.br/blog/meu-site-nao-gera-clientes/) cobre os motivos mais comuns e o que muda em cada caso.
 
 ## Quando ter os dois
 
@@ -77,7 +78,7 @@ A landing page pode viver dentro do próprio domínio do site (como uma página 
 
 Landing pages custam menos para desenvolver do que um site institucional completo, porque são mais simples em estrutura.
 
-A diferença de custo, porém, não conta toda a história. Uma landing page que não converte bem precisa de iteração — testes de copy, ajuste de layout, variações de headline. Esse trabalho de otimização tem custo. Além disso, o tráfego pago que alimenta a landing page tem custo recorrente enquanto a campanha estiver no ar.
+A diferença de custo, porém, não conta toda a história. Uma landing page que não converte bem precisa de iteração — testes de texto, ajuste de layout, variações de título. Esse trabalho de otimização tem custo. Além disso, o tráfego pago que alimenta a landing page tem custo recorrente enquanto a campanha estiver no ar.
 
 Um site institucional tem custo de desenvolvimento mais alto, mas não depende de verba de mídia para ser encontrado organicamente. O SEO que ele acumula tem valor que cresce com o tempo.
 
@@ -89,8 +90,6 @@ Se o negócio ainda não tem site e não está rodando campanhas pagas: comece p
 
 Se o negócio já tem site e vai lançar uma campanha específica: desenvolva a landing page para aquela campanha. Não redirecione o tráfego pago para a home — a taxa de conversão cai.
 
-Se o negócio ainda está testando se a oferta tem mercado: uma landing page funciona como prova de conceito antes do investimento completo em um site.
+Se o negócio ainda está testando se a oferta tem mercado: uma landing page funciona como prova de conceito antes de um site completo.
 
-Se ainda não ficou claro qual dos dois faz sentido para o momento atual: o [estimador de projetos da Bumavit](https://bumavit.com.br/estimador.html) mostra o escopo e a faixa de investimento para um site institucional a partir de três perguntas. É um ponto de partida concreto antes de qualquer reunião.
-
-Caso o site já exista mas não esteja gerando contatos, o problema raramente é o tipo de página — é o que acontece depois que o visitante chega. O post sobre [por que o site não gera clientes](https://bumavit.com.br/blog/meu-site-nao-gera-clientes/) cobre os motivos mais comuns e o que muda em cada caso.
+Se ainda não ficou claro qual dos dois faz sentido para o momento atual: o [estimador de projetos da Bumavit](https://bumavit.com.br/estimador.html) mostra o escopo e a faixa de preço para um site institucional a partir de três perguntas. É um ponto de partida concreto antes de qualquer reunião.

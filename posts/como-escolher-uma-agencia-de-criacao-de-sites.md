@@ -1,5 +1,5 @@
 ---
-title: Como escolher uma agência de criação de sites: 7 critérios que dá para verificar
+title: Como escolher uma agência de criação de sites: 7 critérios
 slug: como-escolher-uma-agencia-de-criacao-de-sites
 date: 2026-09-17
 category: Negócios
@@ -28,8 +28,6 @@ Aplique cada critério a todas as agências que você está considerando. Tome n
 
 O objetivo não é encontrar a agência que passou em tudo. É eliminar as que falharam nos pontos que você não consegue compensar depois: propriedade do site, velocidade de entrega, clareza de escopo. Os outros você negocia. Esses não.
 
----
-
 ## 1. Eles resolvem o seu problema ou vendem o produto deles?
 
 A primeira reunião costuma revelar isso em dez minutos.
@@ -44,15 +42,13 @@ Uma agência que quer vender vai te mostrar o pacote logo na introdução.
 
 Se você ainda não tem uma lista de perguntas para levar, [este guia cobre os doze pontos que mais revelam sobre uma agência](https://bumavit.com.br/blog/perguntas-antes-de-contratar-agencia-de-sites/) — desde escopo até propriedade do código.
 
----
-
 ## 2. O portfólio é real e ainda está no ar
 
 Portfólio é o critério mais citado e o menos verificado. A maioria das pessoas olha a aparência dos sites e para aí.
 
 A pergunta certa não é "o site ficou bonito?". É: o site ainda está no ar, ainda está com o design que eles entregaram e ainda é creditado a essa agência?
 
-**Como verificar:** abra cinco links do portfólio deles. Conta quantos carregam, quantos ainda têm o mesmo visual, quantos ainda têm o nome da agência no rodapé ou no código. Não é raro encontrar um link que vai para uma empresa que mudou de identidade, trocou de fornecedor ou simplesmente fechou.
+**Como verificar:** abra cinco links do portfólio deles. Conte quantos carregam, quantos ainda têm o mesmo visual, quantos ainda têm o nome da agência no rodapé ou no código. Não é raro encontrar um link que vai para uma empresa que mudou de identidade, trocou de fornecedor ou simplesmente fechou.
 
 Links mortos no portfólio são o sinal mais honesto que existe sobre o ciclo de vida de um projeto depois do lançamento.
 
@@ -60,23 +56,19 @@ Links mortos no portfólio são o sinal mais honesto que existe sobre o ciclo de
 
 Você pode comparar com um projeto real: o [portal que a Bumavit construiu para a Cocban](https://bumavit.com.br/projetos/cocban.html) está no ar e em produção.
 
----
-
 ## 3. Os sites do portfólio são rápidos no celular
 
 Este é o critério que mais agências falham e nenhuma divulga voluntariamente.
 
 Um site lento perde visitantes antes de carregá-los, baixa no Google e piora a experiência de quem chega pelo anúncio. Velocidade não é detalhe técnico — é o resultado que o cliente paga para ter. E a maior parte das ferramentas que as agências mais usam, quando mal configurada, produz sites pesados por padrão.
 
-**Como verificar:** abra três sites do portfólio no seu celular, em 4G, fora do Wi-Fi de casa. Conte quantos segundos até a página aparecer útil — não o spinner, a página. Ou acesse [PageSpeed Insights](https://pagespeed.web.dev/) e cole o endereço. A nota que aparece para "Celular" é o que o Google usa para decidir a posição no resultado de busca.
+**Como verificar:** abra três sites do portfólio no seu celular, em 4G, fora do Wi-Fi de casa. Conte quantos segundos até a página aparecer útil — não o spinner, a página. Ou acesse [PageSpeed Insights](https://pagespeed.web.dev/) e cole o endereço. A nota que aparece para "Celular" é uma medição de laboratório. O que o Google usa no ranqueamento são as notas de velocidade medidas em visitantes reais, mas um site que vai mal no laboratório raramente vai bem na rua.
 
-Acima de 70 é bom. Abaixo de 50 em três dos cinco sites é um padrão, não uma exceção.
+Na escala que o próprio PageSpeed mostra, de 90 a 100 é bom, de 50 a 89 precisa melhorar e abaixo de 50 é ruim. Abaixo de 50 em três dos cinco sites é um padrão, não uma exceção.
 
 **Sinal de alerta:** nenhum site do portfólio passa de 50 no celular. Ou a resposta para "qual a nota de velocidade?" for "o site é rápido" sem nenhum número.
 
 Se quiser entender o que está sendo medido, [este post explica as notas de velocidade que o Google usa](https://bumavit.com.br/blog/core-web-vitals/).
-
----
 
 ## 4. Eles explicam ou só impressionam?
 
@@ -90,8 +82,6 @@ Uma resposta ruim é uma lista de logos de ferramentas.
 
 **Sinal de alerta:** "é o que a gente usa para tudo" dito com orgulho. Padronização não é errada, mas o orgulho nessa resposta indica que a conversa sobre o seu caso já terminou antes de começar.
 
----
-
 ## 5. O contrato define escopo, prazo e propriedade
 
 A maioria dos problemas no desenvolvimento de um site está em frases que ninguém escreveu.
@@ -103,8 +93,6 @@ A maioria dos problemas no desenvolvimento de um site está em frases que ningu�
 Para saber o que esperar de um contrato bem feito, o [checklist para contratar o desenvolvimento de um site](https://bumavit.com.br/blog/checklist-para-contratar-desenvolvimento-de-site/) cobre ponto a ponto o que não pode estar faltando.
 
 **Sinal de alerta:** hesitação em compartilhar o contrato antes de você assinar. Ou um contrato de uma página que não cobre nenhum dos três pontos acima.
-
----
 
 ## 6. Existe vida depois do lançamento
 
@@ -118,8 +106,6 @@ Uma boa resposta tem números em pelo menos dois desses pontos. Pode ser uma ofe
 
 **Sinal de alerta:** "pode chamar a qualquer hora" sem nada formalizado. Funciona durante a lua de mel do projeto. Não é o que você vai ter quando precisar de verdade.
 
----
-
 ## 7. Você entende o que está comprando
 
 Este não é um critério técnico. É um teste de comunicação.
@@ -132,8 +118,6 @@ Se não consegue, esse é um problema da proposta, não seu. Proposta que você 
 
 **Sinal de alerta:** propostas com muita linguagem técnica e poucos detalhes práticos. Ou PDFs bonitos que descrevem o processo da agência mas não descrevem o projeto de vocês.
 
----
-
 ## Uma palavra sobre preço
 
 A proposta mais barata e a mais cara costumam estar ambas erradas — e por razões diferentes.
@@ -143,8 +127,6 @@ A mais barata quase sempre exclui algo que você vai precisar: textos, revisões
 Antes de comparar os números do fim da proposta, compare o que cada fornecedor incluiu. Uma agência que inclui textos, configuração de Analytics e três meses de acompanhamento pós-lançamento pode ser mais cara no papel e mais barata no total.
 
 Para entender o que compõe o preço de um site e o que costuma estar de fora, [este guia detalha os fatores que formam o custo de um site institucional](https://bumavit.com.br/blog/quanto-custa-um-site-institucional/).
-
----
 
 ## A pergunta que vale mais que as sete anteriores
 
@@ -160,6 +142,4 @@ Uma agência que responde com silêncio ou que emenda direto para o que deu cert
 
 A disposição de falar sobre erro passado é a forma mais rápida de avaliar se a relação vai funcionar quando surgir o primeiro imprevisto.
 
----
-
-Se quiser um ponto de partida antes de qualquer reunião, o estimador da Bumavit devolve uma faixa de investimento e de prazo a partir de três perguntas sobre o seu projeto: [monte sua estimativa aqui](https://bumavit.com.br/estimador.html).
+Se quiser um ponto de partida antes de qualquer reunião, o estimador da Bumavit devolve uma faixa de preço e de prazo a partir de três perguntas sobre o seu projeto: [monte sua estimativa](https://bumavit.com.br/estimador.html).

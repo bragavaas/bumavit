@@ -1,6 +1,6 @@
 # Guia de Voz e Estilo — Bumavit
 
-> **Status: v4 — Post do Google (GBP) adicionado ao checklist.** O post piloto (`perguntas-antes-de-contratar-agencia-de-sites`) foi escrito com a v1, revisado pelo fundador e **mergeado sem uma única alteração** no texto. Isso ratifica a v1 e resolveu quatro conflitos que só apareceram na hora de escrever — estão marcados **✅ ratificado** ao longo do guia.
+> **Status: v8 (30/10/2026) — três passagens corrigidas contra o `posts/README.md` e o gerador (links, data futura, build), pendências 4, 6, 7 e 9 fechadas. Antes: v4, Post do Google (GBP) adicionado ao checklist.** O post piloto (`perguntas-antes-de-contratar-agencia-de-sites`) foi escrito com a v1, revisado pelo fundador e **mergeado sem uma única alteração** no texto. Isso ratifica a v1 e resolveu quatro conflitos que só apareceram na hora de escrever — estão marcados **✅ ratificado** ao longo do guia.
 >
 > As seções marcadas com 🔸 ainda dependem da calibração do fundador (ver **Pendências**, no fim). Tudo o que não está marcado já pode ser usado.
 >
@@ -190,15 +190,9 @@ Três aberturas que funcionam:
 
 ⚠️ **Link interno em post é sempre absoluto, com `https://bumavit.com.br`.** Nunca relativo. Nunca `bragavaas.github.io`, nunca prefixo `/bumavit/`.
 
-Isso **contraria o `posts/README.md`**, que ainda manda usar relativo (`../sobre.html`). O README está desatualizado desde que o padrão `/blog/<slug>/` entrou no ar, e seguir ele quebra o link. A conta:
+O `posts/README.md` (revisado em 23/10/2026) diz o mesmo: link absoluto com `https://bumavit.com.br`, canônica em `/blog/<slug>/` com barra final. Um link relativo como `../sobre.html` resolveria para `/blog/sobre.html`, que não existe. Todo link interno do post piloto é absoluto e os cinco respondem 200.
 
-- O post agora é servido em `/blog/<slug>/index.html` — um nível mais fundo que antes
-- De lá, `../sobre.html` resolve para **`/blog/sobre.html`**
-- Conferido no site no ar: `https://bumavit.com.br/blog/sobre.html` → **404**
-
-Enquanto o README não for corrigido, **este guia manda.** Todo link interno do post piloto é absoluto e os cinco respondem 200.
-
-**Destinos que existem hoje** (conferidos no ar): `/estimador.html`, `/sobre.html`, `/projetos/{cocban,ecommerce,fintech,yacht-day}.html`, `/criacao-de-sites-rj/`, `/blog/`, `/blog/<slug>/` dos posts publicados.
+**Destinos que existem hoje** (conferidos em 30/10/2026 no `staticPages` do gerador e no ar): `/estimador.html`, `/sobre.html`, `/projetos/{cocban,ecommerce,fintech,yacht-day}.html`, `/criacao-de-sites-rj/`, `/manutencao-de-sites/`, `/blog/`, `/blog/<slug>/` dos posts publicados. Três posts estão em `draft: true` (`loja-virtual-sob-medida`, `site-institucional-ou-landing-page`, `site-para-clinica-medica`): linkar para eles antes de publicarem dá 404.
 
 **Nunca invente um caminho.** Se o destino que você quer não está na lista acima nem no calendário, ele não existe — e um link para 404 num post no ar é um erro que o leitor vê.
 
@@ -318,23 +312,21 @@ Contornos que não custam nada:
 
 **Não existe campo de canonical.** A URL canônica é montada sozinha, em `https://bumavit.com.br/blog/<slug>/`.
 
-### ⚠️ `date` é a data em que o post vai ao ar, não o slot do calendário
+### `date` é a data em que o post vai ao ar, e o gerador espera por ela
 
-O gerador **não segura post com data futura**. Ele publica e usa `date` para o rótulo visível, a ordenação, o `lastmod` do sitemap, o RSS e o `datePublished` do JSON-LD.
-
-Foi o erro do post piloto: entrou com a data do slot (15/09), o fundador mergeou em 27/08, e a página ficou no ar declarando ter sido publicada 18 dias no futuro. Corrigido no PR #11.
+O gerador **retém post com data futura** (`scripts/build-blog.mjs`, filtro por `date`): ele fica fora da listagem, do RSS e do sitemap até a data chegar. O workflow `build-blog.yml` roda todo dia às 12:00 UTC e publica sozinho no dia. `date` também é o rótulo visível, a ordenação, o `lastmod` do sitemap e o `datePublished` do JSON-LD.
 
 A regra:
 
-- **Vai ao ar quando mergear?** `date` é a data prevista do merge. Se o merge escorregar alguns dias, corrija antes
-- **Precisa esperar o slot?** Entregue com **`draft: true`** e a data do slot. O post fica no repositório, fora do ar, e publica quando alguém tirar a linha
+- **Quer agendar?** Escreva o `date` da publicação e faça o merge quando quiser. O título do PR leva `[PUBLICAR dd/mm]` só como comunicação; a data que vale é a do frontmatter, e as duas precisam ser iguais
+- **Quer guardar sem publicar nunca, por enquanto?** `draft: true`
 - **Já está no ar com data errada?** Corrija `date`, nunca o `slug`. Trocar slug quebra a URL
 
-### Depois do merge, alguém precisa rodar o build
+Histórico: o post piloto entrou com a data do slot (15/09), foi mergeado em 27/08 e ficou no ar declarando uma data futura; isso era o comportamento do gerador na época e foi corrigido (PR #11 e o filtro de data no build).
 
-O repositório versiona a saída gerada, e nossos PRs levam só o `.md`. **Mergear o PR não publica nada** até alguém rodar `node scripts/build-blog.mjs` e commitar o `blog/`. Diga isso na descrição de todo PR.
+### Depois do merge, o build roda sozinho
 
-⚠️ **E avise para conferir o sitemap antes de commitar.** O `staticPages` do gerador (`build-blog.mjs:599`) não lista `/criacao-de-sites-rj/`, então qualquer rebuild apaga essa página do `sitemap.xml` em silêncio. Enquanto não for corrigido, é armadilha para quem publicar.
+O workflow `build-blog.yml` roda `node scripts/build-blog.mjs` e o rasterizador dos cards a cada push em `posts/` na `main` e todo dia às 12:00 UTC, e commita o `blog/`, o `feed.xml` e o `sitemap.xml`. **O PR leva só o `.md`**: o workflow `check-no-html-in-pr.yml` bloqueia qualquer PR que traga HTML gerado em `blog/` (BUMA-53, para o rascunho não ser indexado no github.com antes de ir ao ar). Rode o build localmente só para validar o frontmatter; não commite a saída.
 
 ## O que nunca dizemos
 
@@ -418,7 +410,7 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 - [ ] `category` é `SEO`, `Performance` ou `Negócios`
 - [ ] Nenhuma tabela, imagem, citação `>` ou bloco de código no corpo
 - [ ] `node scripts/build-blog.mjs` roda sem erro
-- [ ] O PR diz que alguém precisa rodar o build e commitar `blog/` depois do merge
+- [ ] O PR leva só o `.md` em `posts/`; nenhum HTML de `blog/` (o workflow bloqueia)
 
 **LinkedIn**
 
@@ -446,15 +438,15 @@ Aberto na calibração com o fundador (interação nesta task, BUMA-5). Enquanto
 1. **Registro** — confirmar *consultor próximo* (você + "a gente" ocasional) como padrão. *Usado no post #1 e mergeado sem alteração — na prática, aprovado por uso.*
 2. **Referências de tom** — três marcas/escritores que o fundador gosta ou detesta. **Ainda aberto**
 3. **Linha de descrição da Bumavit** — confirmar a redação. A proibição de "agência" está resolvida acima: vale para autodescrição, não para a palavra-chave
-4. **Dados do site atual** — as métricas publicadas hoje em bumavit.com.br (`40% de melhoria média de performance`, `< 2s`, `5/5 avaliação dos clientes`) e o cliente nomeado (COCBAN / Helisete Cerqueira) **não podem ser citados em post até serem confirmados**. Tratar como não existentes. **Ainda aberto, e agora custa caro:** o post #1 linka o projeto sem poder nomear o cliente ("um portal institucional construído pela Bumavit"). Liberar o nome melhora o texto do link em todo post que citar um projeto
+4. ~~**Dados do site atual**~~ — ✅ **parcialmente resolvido (30/10/2026).** Clientes nomeáveis, por decisão do fundador em 24/09 e 26/09 (`social-media-rules.md`): **COCBAN, Yacht Day e Hera Brand**; qualquer outro é "um cliente" ou "projeto confidencial". As métricas do site (`40%`, `< 2s`, `5/5`) continuam sem fonte confirmada e **não entram em post**
 5. ~~**Destino do CTA**~~ — ✅ **resolvido.** `/estimador.html` e o formulário estão no ar. O estimador é o destino padrão
 
 ### Pendências novas, do primeiro post — são do engenheiro, não do fundador
 
-6. **`posts/README.md` está desatualizado e induz ao erro.** Diz que a canônica é `/blog/<slug>.html` (é `/blog/<slug>/`) e manda usar link interno relativo (que resolve para 404 no padrão atual). Enquanto não for corrigido, **este guia manda**
-7. **Rebuild apaga `/criacao-de-sites-rj/` do sitemap.** `staticPages` (`build-blog.mjs:599`) não lista a página. Uma linha para corrigir, e é armadilha para qualquer pessoa que rode o build
+6. ~~**`posts/README.md` está desatualizado e induz ao erro.**~~ — ✅ **resolvido.** O README (23/10/2026) manda link absoluto e canônica `/blog/<slug>/`; este guia foi alinhado a ele na v8
+7. ~~**Rebuild apaga `/criacao-de-sites-rj/` do sitemap.**~~ — ✅ **resolvido.** `staticPages` do gerador lista `/criacao-de-sites-rj/` e `/manutencao-de-sites/` (conferido em 30/10/2026)
 8. **Sem imagem no corpo do post.** Enquanto não houver, a regra de alt text fica dormente e nenhum post consegue cumprir requisito de "alt text descritivo"
-9. **Quem roda o build depois do merge?** O README manda commitar a saída gerada; nossa instrução manda mandar só o `.md`. A lacuna já custou uma publicação: o PR #6 mergeou sem ir ao ar e só apareceu quando o #8 rebuildou por outro motivo
+9. ~~**Quem roda o build depois do merge?**~~ — ✅ **resolvido.** O workflow `build-blog.yml` roda o build e commita a saída a cada push em `posts/` e todo dia às 12:00 UTC; o PR leva só o `.md` (`check-no-html-in-pr.yml`)
 
 ---
 

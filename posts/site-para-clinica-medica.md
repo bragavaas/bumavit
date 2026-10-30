@@ -1,5 +1,5 @@
 ---
-title: "Site para clínica médica e consultório: o que muda em relação a um site comum"
+title: Site para clínica médica e consultório: o que muda em relação a um site comum
 slug: site-para-clinica-medica
 date: 2026-10-30
 draft: true

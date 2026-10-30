@@ -1,11 +1,10 @@
 ---
 title: Loja virtual sob medida: quanto custa e quando vale a pena
 slug: loja-virtual-sob-medida
-date: 2026-10-24
-draft: true
+date: 2026-11-03
 category: Negócios
-cover: rust
-excerpt: Quando a plataforma pronta começa a travar o crescimento da sua loja, a pergunta natural é quanto custa uma loja virtual sob medida. O que está incluído, o que faz o preço variar e quando a migração se paga.
+cover: cyan
+excerpt: Quando a plataforma pronta começa a travar o crescimento, quanto custa uma loja virtual sob medida, o que está incluído e quando a troca se paga.
 keyword: quanto custa uma loja virtual sob medida
 ---
 
@@ -13,7 +12,7 @@ Você já tem uma loja virtual. Ela está no ar, já vendeu, e você conhece bem
 
 A plataforma cobra um percentual de cada venda, e esse número vai ficando menos aceitável à medida que o faturamento cresce. O checkout não permite a lógica de desconto que o seu processo de vendas precisa. A integração com o sistema de gestão que você usa é incompleta ou inexistente. O tema da loja está no limite do que dá para personalizar.
 
-Esse é o momento em que a pergunta aparece: quanto custa uma loja virtual sob medida? E a resposta vai depender de o que "sob medida" significa para o seu caso.
+Esse é o momento em que a pergunta aparece: quanto custa uma loja virtual sob medida? E a resposta vai depender do que "sob medida" significa para o seu caso.
 
 ## O que é uma loja virtual sob medida
 
@@ -99,7 +98,7 @@ Se o faturamento ainda não justifica o custo, a conta não fecha. Faz sentido c
 
 Se a operação está funcionando bem na plataforma atual e não há limitação técnica real, trocar só para ter o código na mão não é justificativa suficiente. Plataforma pronta tem valor genuíno: ela já resolveu carrinho, checkout, gateway e logística. Você paga por esse trabalho resolvido.
 
-Se a dúvida está em quem deve fazer o projeto — uma agência especializada em e-commerce ou uma software house — o post sobre [vale a pena contratar uma agência de e-commerce](https://bumavit.com.br/blog/vale-a-pena-contratar-agencia-de-ecommerce/) cobre essa questão em específico.
+Se a dúvida está em quem deve fazer o projeto, o post sobre [vale a pena contratar uma agência de e-commerce](https://bumavit.com.br/blog/vale-a-pena-contratar-agencia-de-ecommerce/) compara as opções.
 
 O [guia de quanto custa criar uma loja virtual profissional](https://bumavit.com.br/blog/quanto-custa-criar-uma-loja-virtual-profissional/) detalha os três caminhos possíveis — plataforma, plataforma com personalização e e-commerce sob medida — e quando cada um faz sentido para o estágio da operação.
 
@@ -122,4 +121,4 @@ Se você já está nessa análise, o passo concreto é ter uma estimativa real p
 
 O [estimador da Bumavit](https://bumavit.com.br/estimador.html) devolve uma faixa inicial a partir do tipo de loja, das funcionalidades que você precisa e do prazo. São três perguntas. Se o projeto inclui integração com ERP ou volume de SKUs acima do padrão, leve essa informação para o primeiro contato — é o fator que mais muda o escopo e o mais ignorado em primeiro orçamento.
 
-A Bumavit cria lojas virtuais sob medida. Se quiser conversar sobre o seu caso, [fale com a gente](https://bumavit.com.br/contato.html).
+A Bumavit cria lojas virtuais sob medida, e o escopo final se define na primeira conversa. Você não precisa ter decidido nada para usar a ferramenta.

@@ -54,9 +54,9 @@ A razão prática é o comportamento de busca: quando um empresário pesquisa "c
 
 A razão de conversão é igualmente direta: o cliente chega em uma página que trata exatamente da situação dele. O texto pode nomear os problemas do setor, os regimes tributários aplicáveis e as dúvidas que chegam com mais frequência. O argumento é mais fácil de avaliar porque é específico.
 
-Segmentos com volume suficiente para uma página dedicada em um escritório de pequeno ou médio porte: comércio varejista, prestadores de serviço, clínicas e consultórios, imobiliárias e construtoras, e-commerce. A lógica é a mesma que funciona para outros profissionais de serviço — em [sites para clínicas odontológicas](/blog/site-para-clinica-odontologica/), o mesmo princípio aumenta a conversão de visitas em consultas.
+Segmentos com volume suficiente para uma página dedicada em um escritório de pequeno ou médio porte: comércio varejista, prestadores de serviço, clínicas e consultórios, imobiliárias e construtoras, e-commerce. A lógica é a mesma que funciona para outros profissionais de serviço — em [sites para clínicas odontológicas](https://bumavit.com.br/blog/site-para-clinica-odontologica/), o mesmo princípio aumenta a conversão de visitas em consultas.
 
-Para ser encontrado em buscas locais, cada uma dessas páginas precisa de um trabalho básico de [SEO local](/blog/seo-local/) — consistência de nome, endereço e telefone, e uma presença ativa no Google Business Profile do escritório.
+Para ser encontrado em buscas locais, cada uma dessas páginas precisa de um trabalho básico de [SEO local](https://bumavit.com.br/blog/seo-local/) — consistência de nome, endereço e telefone, e uma presença ativa no Google Business Profile do escritório.
 
 ## Abertura de empresa como porta de entrada
 
@@ -82,7 +82,7 @@ O investimento se justifica quando o volume de clientes gera atrito relevante no
 
 Se o escritório usa um sistema de gestão contábil que já tem portal do cliente nativo, a integração com o site é frequentemente mais simples do que desenvolver uma área do zero. Vale mapear o que já existe no sistema atual antes de especificar qualquer desenvolvimento.
 
-O escopo e o custo de um projeto assim variam bastante — a diferença entre um site institucional simples e um com portal integrado está explicada em [Quanto custa um site institucional](/blog/quanto-custa-um-site-institucional/). Para uma estimativa rápida do que se aplica ao caso concreto do escritório, o [estimador de projetos](/estimador.html) chega a uma referência em três perguntas.
+O escopo e o custo de um projeto assim variam bastante — a diferença entre um site institucional simples e um com portal integrado está explicada em [Quanto custa um site institucional](https://bumavit.com.br/blog/quanto-custa-um-site-institucional/). Para uma estimativa rápida do que se aplica ao caso concreto do escritório, o [estimador de projetos](https://bumavit.com.br/estimador.html) chega a uma referência em três perguntas.
 
 ## LGPD e dados de clientes
 
@@ -98,4 +98,4 @@ O passo de maior impacto com o menor escopo: **uma página por segmento atendido
 
 Isso já diferencia o escritório de concorrentes que listam serviços em texto corrido — e é a base para o que vem depois: abertura de empresa, área do cliente, conteúdo.
 
-Para entender o custo e o escopo de um site assim, o [estimador de projetos](/estimador.html) chega a uma estimativa em três perguntas. Um exemplo de site institucional para setor de serviços desenvolvido pela Bumavit está no [portfólio do Cocban](/projetos/cocban.html).
+Para entender o custo e o escopo de um site assim, o [estimador de projetos](https://bumavit.com.br/estimador.html) chega a uma estimativa em três perguntas. Um exemplo de site institucional para setor de serviços desenvolvido pela Bumavit está no [portfólio do Cocban](https://bumavit.com.br/projetos/cocban.html).

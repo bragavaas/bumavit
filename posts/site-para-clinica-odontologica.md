@@ -98,7 +98,7 @@ Três pontos que valem a pena considerar antes de aceitar:
 
 Para uma clínica que está abrindo e precisa de algo no ar rapidamente, o template faz sentido como solução temporária. Para quem quer que o site contribua ativamente com a captação de pacientes, o site próprio com estrutura adaptada entrega resultados que o template não consegue.
 
-Um exemplo de site institucional desenvolvido sob medida está no [portfólio da Bumavit](/projetos/cocban.html). Para entender o que custa um site profissional para clínicas e outros segmentos, [este post detalha as faixas de preço](https://bumavit.com.br/blog/quanto-custa-um-site-institucional/). Se você está comparando propostas de fornecedores, [estes sete critérios ajudam a separar boas propostas das ruins](https://bumavit.com.br/blog/como-escolher-uma-agencia-de-criacao-de-sites/).
+Um exemplo de site institucional desenvolvido sob medida está no [portfólio da Bumavit](https://bumavit.com.br/projetos/cocban.html). Para entender o que custa um site profissional para clínicas e outros segmentos, [este post detalha as faixas de preço](https://bumavit.com.br/blog/quanto-custa-um-site-institucional/). Se você está comparando propostas de fornecedores, [estes sete critérios ajudam a separar boas propostas das ruins](https://bumavit.com.br/blog/como-escolher-uma-agencia-de-criacao-de-sites/).
 
 ## O que fazer esta semana
 

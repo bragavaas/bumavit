@@ -2,15 +2,11 @@
 title: Site lento perde vendas: quanto isso custa por mês
 slug: site-lento-perde-vendas
 date: 2026-10-22
-dateLabel: 22 Out 2026
 category: Performance
+cover: rust
+keyword: site lento perde vendas
 excerpt: Um site que demora para carregar perde visitantes antes de mostrar o que você vende. Veja como medir o impacto e o que fazer.
-publico: dono de micro ou pequena empresa de serviços no Rio de Janeiro
-preco: site institucional R$ 1.800–R$ 2.500; e-commerce R$ 3.240–R$ 4.590
-postDoGoogle: Site lento perde venda. Veja como medir e resolver antes de perder mais clientes.
 ---
-
-# Site lento perde vendas: quanto isso custa por mês
 
 Site lento perde venda. É o problema mais barato de resolver e o mais ignorado.
 
@@ -20,7 +16,7 @@ Isso acontece todo dia em sites de pequenas empresas. A maioria dos donos não s
 
 ## Por que o visitante sai antes de ver o que você vende
 
-O Google publicou dados mostrando que a probabilidade de abandono aumenta 32% quando o carregamento vai de 1 segundo para 3 segundos. Depois de 5 segundos, esse número passa de 90%.
+Um estudo do próprio Google sobre velocidade no celular ([Think with Google, 2017](https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/)) mediu que a probabilidade de abandono aumenta 32% quando o carregamento vai de 1 segundo para 3 segundos, e 90% quando vai de 1 para 5 segundos.
 
 Isso não é sobre paciência do visitante. É sobre atenção. A pessoa que clicou no seu anúncio ou no seu link do Instagram está em movimento, entre uma coisa e outra. Ela não vai esperar.
 
@@ -66,7 +62,7 @@ Não existe fórmula única, porque depende do seu tráfego e da sua taxa de con
 
 Se o seu site recebe 500 visitas por mês e converte 2% em contatos, você tem 10 contatos. Se a lentidão faz metade dos visitantes abandonar antes de interagir, você está operando como se tivesse 250 visitas — ou seja, 5 contatos, não 10.
 
-Quantos desses 5 contatos perdidos virariam negócio? Se apenas um fechasse, e seu ticket médio for R$ 2.000, o site lento está custando R$ 2.000 por mês. Todos os meses. Sem que apareça em nenhuma conta.
+Quantos desses 5 contatos perdidos virariam negócio? Se apenas um fechasse, o site lento estaria custando um contrato por mês. Todos os meses. Sem que apareça em nenhuma conta.
 
 Isso sem contar o dinheiro gasto em tráfego pago para trazer visitantes que o site descartou antes de eles lerem uma linha.
 

@@ -30,7 +30,7 @@ A troca de plataforma para loja sob medida faz sentido em situações específic
 
 **O custo da plataforma está crescendo junto com o faturamento**
 
-Plataformas cobram uma porcentagem sobre cada transação, em cima da taxa do gateway de pagamento. Enquanto o volume mensal é pequeno, essa taxa dilui bem. Quando a loja passa de algumas centenas de pedidos por mês, a conta muda.
+Plataformas cobram uma porcentagem sobre cada transação, em cima da taxa do gateway de pagamento. Enquanto o volume mensal é pequeno, essa taxa dilui bem. Quando o volume cresce, a conta muda.
 
 Some a taxa da plataforma ao custo do plano mensal e multiplique por 12. Esse número é o custo anual que você está pagando para usar o software de outra empresa. Quando ele começa a se aproximar do custo de desenvolvimento de uma loja própria, a análise de payback passa a fazer sentido.
 

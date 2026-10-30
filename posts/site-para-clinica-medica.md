@@ -1,5 +1,5 @@
 ---
-title: Site para clínica médica e consultório: o que muda em relação a um site comum
+title: Site para clínica médica: o que muda
 slug: site-para-clinica-medica
 date: 2026-10-30
 draft: true
@@ -13,7 +13,7 @@ Você pode contratar qualquer desenvolvedor para criar um site. Mas um site para
 
 As diferenças não são estéticas. Estão nas obrigações regulatórias do CFM, nas exigências da LGPD para dados de saúde, no tipo de busca que o paciente faz antes de marcar uma consulta e no papel que o agendamento online desempenha na taxa de conversão de visitante em paciente.
 
-Este post cobre o que precisa estar em um site para clínica médica, o que a regulação proíbe, como funciona o SEO para o setor de saúde e quanto um projeto bem feito custa.
+O que precisa estar em um site para clínica médica, o que a regulação proíbe, como funciona o SEO para o setor de saúde e quanto um projeto bem feito custa: é isso que está abaixo.
 
 ## O que não pode faltar em um site para clínica médica
 
@@ -73,7 +73,7 @@ O Google Meu Negócio (GBP) precisa estar configurado com as categorias corretas
 
 Posts sobre sintomas, condições e tratamentos atraem pacientes nas fases iniciais de pesquisa. Um artigo sobre "sinais de hipertensão" atrai leitores que podem ainda não ter médico de cabeceira. O conteúdo não é publicidade — é informação que posiciona o médico como referência e gera visitas que, com o tempo, convertem em consultas.
 
-Esse formato funciona bem para clínicas. Para consultórios especializados em um único procedimento, o blog pode não valer o investimento inicial. Para clínicas generalistas ou com múltiplas especialidades, o conteúdo educativo é um dos canais mais eficientes de captação.
+Esse formato funciona bem para clínicas. Para consultórios especializados em um único procedimento, o blog pode não compensar o custo inicial. Para clínicas generalistas ou com múltiplas especialidades, o conteúdo educativo é um dos canais mais eficientes de captação.
 
 ## Agendamento online: quando incluir e como funciona
 
@@ -114,6 +114,6 @@ O que muda são os conselhos reguladores (CFO no caso da odontologia), algumas d
 
 Se a clínica ainda não tem site ou o site atual não aparece nas buscas, o primeiro passo concreto é mapear o escopo: quantas especialidades precisam de página própria, se o agendamento precisa ser integrado e qual nível de integração faz sentido para o volume de consultas.
 
-O [estimador da Bumavit](https://bumavit.com.br/estimador.html) devolve uma faixa de investimento a partir dessas três variáveis. Se o projeto inclui sistema de gestão clínica com integração própria, leve essa informação para o primeiro contato — é o ponto que mais muda o escopo.
+O [estimador da Bumavit](https://bumavit.com.br/estimador.html) devolve uma faixa de preço a partir dessas três variáveis. Se o projeto inclui sistema de gestão clínica com integração própria, leve essa informação para o primeiro contato — é o ponto que mais muda o escopo.
 
 Para quem já tem site mas não está convertendo visitantes em consultas, o post sobre [por que o site não gera clientes](https://bumavit.com.br/blog/meu-site-nao-gera-clientes/) cobre os motivos mais comuns e o que pode ser ajustado antes de uma reformulação completa.

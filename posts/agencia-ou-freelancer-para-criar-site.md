@@ -37,7 +37,7 @@ Você pode começar sozinho se:
 - Você tem tempo para aprender o suficiente da plataforma e não tem problema em resolver os próprios travamentos
 - Não vai precisar de integrações com outros sistemas (pagamento, ERP, CRM)
 
-A plataforma pronta tem uma grande vantagem: você começa hoje. E um limite claro: quando o site precisar fazer algo que a plataforma não oferece, você pára.
+A plataforma pronta tem uma grande vantagem: você começa hoje. E um limite claro: quando o site precisar fazer algo que a plataforma não oferece, você para.
 
 Nesse ponto, a decisão volta: **freelancer ou agência?**
 
@@ -71,7 +71,7 @@ A diferença está em quem ajusta: freelancers experientes sabem editar para web
 
 Aqui a diferença começa a importar de verdade.
 
-**Freelancer** é uma pessoa. Se ela viaja, adoece, aceita um freela maior ou um emprego fixo, o seu projeto pára ou passa para outra mão. Você não perde o código se tiver acesso ao repositório, mas perde a continuidade.
+**Freelancer** é uma pessoa. Se ela viaja, adoece, aceita um trabalho maior ou um emprego fixo, o seu projeto para ou passa para outra mão. Você não perde o código se tiver acesso ao repositório, mas perde a continuidade.
 
 **Agência** tem mais de uma pessoa que conhece o projeto. Quando alguém sai, outro assume. A instituição sobrevive à saída de qualquer indivíduo.
 
@@ -111,7 +111,7 @@ O código também é seu, a menos que você esteja alugando uma plataforma (Shop
 
 **Melhor para:** confirme por escrito antes de assinar, dos dois lados. Não presuma que está garantido.
 
-### Escalabilidade
+### Quando o site precisa crescer
 
 **Freelancer** não escala com você. Se o projeto crescer, você vai precisar contratar mais alguém — e coordenar dois freelancers sozinho é trabalho de gerente de projetos.
 
@@ -145,7 +145,7 @@ A agência faz sentido quando:
 
 Se três ou mais desses pontos se aplicam, o custo extra da agência não é desperdício. É seguro.
 
-A Bumavit é uma software house que constrói sites e lojas virtuais sob medida. Nós trabalhamos com equipe fixa, suporte contínuo e código que você leva se sair. Conheça [como trabalhamos](https://bumavit.com.br/sobre.html).
+A Bumavit é uma software house que constrói sites e lojas virtuais sob medida. Quem projeta é quem atende, com suporte contínuo e código que você leva se sair. Conheça [como trabalhamos](https://bumavit.com.br/sobre.html).
 
 ## A pergunta que quase ninguém faz
 
@@ -159,7 +159,7 @@ A resposta da agência deveria ser: "A equipe. Se o desenvolvedor que fez sair, 
 
 Essa pergunta vale mais que a comparação de preço. Porque **o custo real da escolha errada não aparece no orçamento inicial. Aparece no mês em que você precisa de alguém e não tem.**
 
-### Escrow de domínio e repositório
+### Domínio e código em nome de quem paga
 
 Pergunte também como fica o acesso se algo der errado. O domínio está no seu nome desde o dia 1? Você tem login no repositório onde o código está guardado?
 

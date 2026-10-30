@@ -79,7 +79,7 @@ Alguns casos tornam a contratação de uma agência o caminho mais eficiente des
 
 Em todos esses casos, tentar adaptar uma plataforma padrão ao que você precisa costuma custar mais — em dinheiro ou em tempo — do que construir a loja certa desde o início.
 
-Uma forma de perceber isso cedo: se você precisa de uma pessoa dedicada a executar manualmente o que a plataforma não automatiza — sincronizar estoque, confirmar pedido a pedido, organizar kits que o sistema não reconhece — esse custo operacional vai crescendo enquanto a loja cresce. Em algum ponto, esse custo mensal supera o que teria sido o investimento em uma loja construída para o seu processo.
+Uma forma de perceber isso cedo: se você precisa de uma pessoa dedicada a executar manualmente o que a plataforma não automatiza — sincronizar estoque, confirmar pedido a pedido, organizar kits que o sistema não reconhece — esse custo operacional vai crescendo enquanto a loja cresce. Em algum ponto, esse custo mensal supera o que teria custado uma loja construída para o seu processo.
 
 Veja um exemplo de loja virtual sob medida no [portfólio de e-commerce da Bumavit](https://bumavit.com.br/projetos/ecommerce.html).
 

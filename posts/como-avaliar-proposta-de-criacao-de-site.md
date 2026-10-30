@@ -1,5 +1,5 @@
 ---
-title: Como avaliar uma proposta de criação de site (e comparar três orçamentos)
+title: Como avaliar uma proposta de criação de site
 slug: como-avaliar-proposta-de-criacao-de-site
 date: 2026-09-19
 category: Negócios
@@ -14,7 +14,7 @@ Esse não é um problema de preço. É um problema de comparação.
 
 Quando três propostas descrevem o mesmo serviço com nomes iguais e preços muito diferentes, quase sempre significa que estão descrevendo projetos diferentes. O termo "site profissional" pode caber em qualquer uma delas. O conteúdo real de cada proposta, não.
 
-Este post ensina um método para normalizar as três propostas — reescrevê-las nos mesmos termos — para que a diferença de preço faça sentido. Uma vez que você tiver esse quadro preenchido, a escolha costuma ficar mais clara.
+O método abaixo normaliza as três propostas, reescrevendo cada uma nos mesmos termos, para que a diferença de preço faça sentido. Uma vez que você tiver esse quadro preenchido, a escolha costuma ficar mais clara.
 
 ## Por que os preços são tão diferentes para o "mesmo" projeto
 
@@ -54,8 +54,6 @@ Um número. O que conta como uma rodada. Quanto custa uma extra.
 **Qual é o prazo — e com quais marcos intermediários?**
 Uma data de entrega sem etapas é a preparação para um atraso em que a culpa vai ser sua.
 
----
-
 ### Tecnologia e propriedade
 
 **Em que o site será construído — e por que essa escolha para o seu caso?**
@@ -73,8 +71,6 @@ Se o site roda em plataforma com custo mensal, o que você leva se decidir sair?
 **SEO técnico: incluso ou "opcional"?**
 SEO técnico básico — títulos próprios, sitemap, dados estruturados — deveria estar em qualquer projeto. Se aparece como add-on, pergunte o que está incluso por padrão.
 
----
-
 ### Suporte e manutenção
 
 **Manutenção: o que cobre, por quanto tempo, a que custo?**
@@ -83,14 +79,10 @@ Separar três itens: hospedagem, atualizações de segurança e alterações de 
 **Suporte após o lançamento: prazo de resposta, canal, janela de atendimento**
 "A qualquer hora pelo WhatsApp" não é uma política de suporte.
 
----
-
 ### Financeiro
 
 **Forma de pagamento e o que cada parcela libera**
 Pagamento total adiantado é sinal de alerta (veja abaixo). Mas também é ruim pagar o saldo final antes de ver o resultado. O que cada parcela deve ter liberado antes de você pagar a próxima?
-
----
 
 Para saber o que o contrato deve cobrir além da proposta, o [checklist de contratação de desenvolvimento de site](https://bumavit.com.br/blog/checklist-para-contratar-desenvolvimento-de-site/) vai ponto a ponto.
 
@@ -156,8 +148,6 @@ Esses sinais não significam necessariamente má-fé — às vezes é descuido o
 
 Depois de preencher a grade, você vai ter identificado três ou quatro pontos que cada proposta não deixou claro. Esta é a forma mais direta de obter as respostas:
 
----
-
 *"Obrigado pela proposta. Antes de decidir, tenho algumas perguntas sobre o escopo:*
 
 *1. [Preencha com o primeiro ponto que ficou em aberto — ex.: 'A proposta menciona hospedagem inclusa, mas não especifica o prazo. Quanto tempo está incluso e qual o valor mensal a partir daí?']*
@@ -168,8 +158,6 @@ Depois de preencher a grade, você vai ter identificado três ou quatro pontos q
 
 *Posso enviar as perguntas para a mesma pessoa que fez a proposta?"*
 
----
-
 Uma agência séria responde essas perguntas sem pressão. A forma como responde — e em quanto tempo — já faz parte da avaliação.
 
-Se quiser um ponto de partida antes de entrar nessa negociação, o estimador da Bumavit devolve uma faixa de referência de investimento a partir de três perguntas sobre o seu projeto: [monte sua estimativa aqui](https://bumavit.com.br/estimador.html).
+Se quiser um ponto de partida antes de entrar nessa negociação, o estimador da Bumavit devolve uma faixa de preço de referência a partir de três perguntas sobre o seu projeto: [monte sua estimativa](https://bumavit.com.br/estimador.html).

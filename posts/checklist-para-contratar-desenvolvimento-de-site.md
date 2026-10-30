@@ -1,5 +1,5 @@
 ---
-title: Checklist para contratar o desenvolvimento do seu site (sem se arrepender)
+title: Checklist para contratar o desenvolvimento do seu site
 slug: checklist-para-contratar-desenvolvimento-de-site
 date: 2026-09-24
 category: Negócios
@@ -12,7 +12,7 @@ Você fez as perguntas certas na reunião, escolheu o fornecedor e chegou na hor
 
 Se você ainda está comparando propostas, há uma etapa antes desta: [o que perguntar antes de contratar uma agência de sites](https://bumavit.com.br/blog/perguntas-antes-de-contratar-agencia-de-sites/) cobre as doze perguntas para levar à reunião. Volte aqui quando tiver escolhido.
 
-A divisão é em três fases: antes de assinar, antes de aprovar o layout e antes de colocar o site no ar. São menos de 30 itens. Se parecer muito, comece pela Fase 1 -- ela é onde os problemas mais caros nascem.
+A divisão é em três fases: antes de assinar, antes de aprovar o layout e antes de colocar o site no ar. São menos de 30 itens. Se parecer muito, comece pela Fase 1 — ela é onde os problemas mais caros nascem.
 
 ## Fase 1: antes de assinar
 
@@ -28,7 +28,7 @@ O contrato ou a proposta deve listar exatamente quais páginas estão incluídas
 
 ### Quem escreve os textos e de onde vêm as imagens
 
-Este é o ponto que mais para projetos no Brasil.
+Este é o ponto que mais trava projetos no Brasil.
 
 Se a proposta não menciona textos e imagens, é porque você que fornece. Confirme isso agora. Descobrir na terceira semana do projeto que você devia ter entregado os textos na primeira é o início do atraso que vai ser culpa sua.
 
@@ -66,7 +66,7 @@ Este último item é o mais ignorado. Fornecedor troca de empresa, muda de área
 
 Não é pessimismo. É saber o que você está comprometendo antes de comprometer.
 
-**O que pedir:** o que é entregue no ponto de cancelamento e o que acontece com os valores já pagos.
+**O que pedir por escrito:** o que é entregue no ponto de cancelamento e o que acontece com os valores já pagos.
 
 ### Proposta e contrato não são a mesma coisa
 
@@ -118,7 +118,7 @@ A meta description é o texto que aparece nos resultados do Google. Abra cada p�
 
 ### Um H1 por página
 
-Cada página deve ter um titulo principal. Deve existir exatamente um por página, no início do conteúdo, descrevendo o tema da página.
+Cada página deve ter um título principal. Deve existir exatamente um por página, no início do conteúdo, descrevendo o tema da página.
 
 ### O site abre em menos de 3 segundos no celular
 
@@ -140,15 +140,15 @@ Se não funcionar, o visitante mais interessado simplesmente não consegue entra
 
 ### sitemap.xml e robots.txt funcionando
 
-Abra `seudominio.com.br/sitemap.xml` e `seudominio.com.br/robots.txt` no navegador. Ambos devem carregar.
+Abra "seudominio.com.br/sitemap.xml" e "seudominio.com.br/robots.txt" no navegador. Ambos devem carregar.
 
 Esses dois arquivos informam ao Google quais páginas indexar e como navegar o site. Se não existirem, o Google vai encontrar o site com mais dificuldade e mais lentamente.
 
 ### HTTPS com redirecionamento do http
 
-O endereço do site deve começar com `https://`. Teste digitando `http://` (sem o s) no navegador. O site deve redirecionar automaticamente para a versão segura.
+O endereço do site deve começar com "https://". Teste digitando "http://" (sem o s) no navegador. O site deve redirecionar automaticamente para a versão segura.
 
-Se não redirecionar, o Google trata as duas versões como sites diferentes -- e divide o ranqueamento entre elas.
+Se não redirecionar, o Google trata as duas versões como sites diferentes — e divide o ranqueamento entre elas.
 
 ### Analytics e Search Console nas suas contas
 
@@ -184,6 +184,6 @@ Para os itens técnicos, você terá a chance de verificar quando o site for ent
 
 Para os itens de propriedade, uma conversa direta funciona na maioria dos casos. Peça que os acessos fiquem no seu e-mail antes de o site entrar no ar. A maioria dos fornecedores faz isso sem problema quando pedido antes do encerramento do projeto.
 
-Se quiser um ponto de partida antes de entrar em contato com qualquer fornecedor, o estimador da Bumavit devolve uma faixa de investimento e de prazo a partir de três respostas: [monte o projeto](https://bumavit.com.br/estimador.html).
+Se quiser um ponto de partida antes de entrar em contato com qualquer fornecedor, o estimador da Bumavit devolve uma faixa de preço e de prazo a partir de três respostas: [monte o projeto](https://bumavit.com.br/estimador.html).
 
-Para lojas virtuais, o checklist se aplica com os mesmos critérios -- com alguns itens adicionais no escopo, como o fluxo de checkout e as integrações de pagamento. Veja [como são nossos projetos de e-commerce](https://bumavit.com.br/projetos/ecommerce.html).
+Para lojas virtuais, o checklist se aplica com os mesmos critérios — com alguns itens adicionais no escopo, como o fluxo de checkout e as integrações de pagamento. Veja [como são nossos projetos de e-commerce](https://bumavit.com.br/projetos/ecommerce.html).

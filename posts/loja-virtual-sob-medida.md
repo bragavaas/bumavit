@@ -95,7 +95,7 @@ A loja sob medida não é o próximo passo em todo estágio.
 
 Se você ainda está testando se o produto tem demanda ou se o canal digital funciona para o seu negócio, uma plataforma pronta é a escolha mais racional. O custo inicial é menor, você começa a vender em dias e, se o experimento não funcionar, você encerrou sem perder meses de desenvolvimento.
 
-Se o faturamento ainda não justifica o investimento, a conta não fecha. Faz sentido calcular quando o custo anual da plataforma se aproxima do custo de desenvolvimento — antes disso, a plataforma entrega valor real por um preço justo.
+Se o faturamento ainda não justifica o custo, a conta não fecha. Faz sentido calcular quando o custo anual da plataforma se aproxima do custo de desenvolvimento — antes disso, a plataforma entrega valor real por um preço justo.
 
 Se a operação está funcionando bem na plataforma atual e não há limitação técnica real, trocar só para ter o código na mão não é justificativa suficiente. Plataforma pronta tem valor genuíno: ela já resolveu carrinho, checkout, gateway e logística. Você paga por esse trabalho resolvido.
 
@@ -122,4 +122,4 @@ Se você já está nessa análise, o passo concreto é ter uma estimativa real p
 
 O [estimador da Bumavit](https://bumavit.com.br/estimador.html) devolve uma faixa inicial a partir do tipo de loja, das funcionalidades que você precisa e do prazo. São três perguntas. Se o projeto inclui integração com ERP ou volume de SKUs acima do padrão, leve essa informação para o primeiro contato — é o fator que mais muda o escopo e o mais ignorado em primeiro orçamento.
 
-A Bumavit cria lojas virtuais sob medida. Se quiser começar com uma estimativa antes de pedir orçamento formal, [use o estimador de projetos](https://bumavit.com.br/estimador.html).
+A Bumavit cria lojas virtuais sob medida. Se quiser conversar sobre o seu caso, [fale com a gente](https://bumavit.com.br/contato.html).

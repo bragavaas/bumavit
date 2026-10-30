@@ -1,5 +1,5 @@
 ---
-title: O poder do SEO local: apareça para quem está perto de comprar
+title: SEO local: apareça para quem está perto de comprar
 slug: seo-local
 date: 2026-07-01
 category: SEO
@@ -23,4 +23,4 @@ Buscas locais carregam intenção: quem procura um serviço com a cidade no text
 
 Nada disso funciona se o site demora para carregar ou quebra no celular. Velocidade, dados estruturados e páginas de serviço bem construídas são o alicerce técnico que sustenta o ranqueamento, e é aí que a engenharia encontra o marketing.
 
-Foi essa combinação que usamos no projeto **Yacht Day**, em Toronto: plataforma rápida + estratégia local = topo das buscas na região.
+Foi essa combinação que usamos no projeto Yacht Day, em Toronto: plataforma rápida + estratégia local = topo das buscas na região.

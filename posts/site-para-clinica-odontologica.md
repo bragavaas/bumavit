@@ -13,7 +13,7 @@ A informação mais procurada, e mais frequentemente ausente: **convênios aceit
 
 Um paciente novo, antes de ligar, verifica convênios, especialidades, localização e quem é o dentista. Se o site não responde a essas perguntas em trinta segundos, o próximo resultado no Google recebe a ligação. A clínica que perde esse contato quase nunca sabe que perdeu.
 
-Este post explica o que o site de uma clínica odontológica precisa ter para converter visitantes em pacientes — e o que a legislação profissional permite e restringe.
+O que o site de uma clínica odontológica precisa ter para transformar visitante em paciente, e o que a legislação profissional permite e restringe, está abaixo.
 
 ## Como o paciente encontra sua clínica hoje
 
@@ -29,7 +29,7 @@ Um paciente que chegou pelo Maps já passou pelo crivo da localização e das av
 
 Estas são as cinco informações que definem se o paciente liga ou vai para a próxima clínica da lista:
 
-**1. Convênios e planos aceitos.** É a mais buscada e a mais frequentemente ausente. "Aceitamos os principais convênios" não serve — o paciente precisa saber se o **seu** convênio específico está na lista. Uma página com a relação atualizada, ou pelo menos os principais planos escritos por extenso, elimina uma ligação e um abandono. Clínicas que escondem essa informação quase sempre têm um motivo: não atendem tantos planos quanto gostariam de parecer.
+**1. Convênios e planos aceitos.** É a mais buscada e a mais frequentemente ausente. "Aceitamos os principais convênios" não serve — o paciente precisa saber se o **seu** convênio específico está na lista. Uma página com a relação atualizada, ou pelo menos os principais planos escritos por extenso, elimina uma ligação e um abandono.
 
 **2. Especialidades.** O paciente que procura implante não quer ser atendido por um clínico geral. Especialidades devem estar visíveis na página inicial, não enterradas em uma aba "Serviços" que ninguém clica.
 
@@ -43,11 +43,11 @@ Estas são as cinco informações que definem se o paciente liga ou vai para a p
 
 Três opções aparecem nas clínicas odontológicas. Cada uma serve um contexto diferente.
 
-**WhatsApp** é o que mais converte na maioria das clínicas. O botão precisa ficar visível na versão mobile logo no topo — sem precisar rolar. Uma mensagem pré-preenchida ("Olá, quero marcar uma consulta na clínica") reduz o abandono porque o paciente não precisa formular o primeiro contato do zero.
+**WhatsApp** é o que mais converte na maioria das clínicas. O botão precisa ficar visível no celular logo no topo — sem precisar rolar. Uma mensagem pré-preenchida ("Olá, quero marcar uma consulta na clínica") reduz o abandono porque o paciente não precisa formular o primeiro contato do zero.
 
 **Formulário de contato** converte menos porque cria duas etapas extras: preencher e esperar resposta. Se o formulário demorar mais de algumas horas para ser respondido, o paciente já foi para outra clínica. Um formulário que fica dias sem resposta é pior do que não ter formulário.
 
-**Agendamento online** (sistemas como SimplesVet, iClinic ou similares com módulo de agenda) é a opção de maior conversão quando bem implementada — o paciente escolhe o dia e o horário sem interação humana, às duas da manhã se quiser. O custo de configuração existe; faz sentido quando o volume de contatos já é alto o suficiente para justificar o investimento e a equipe tem disciplina para manter a agenda online sincronizada com a real.
+**Agendamento online** (um sistema de gestão de clínica com módulo de agenda) é a opção de maior conversão quando bem implementada — o paciente escolhe o dia e o horário sem interação humana, às duas da manhã se quiser. O custo de configuração existe; faz sentido quando o volume de contatos já é alto o suficiente para justificar o custo e a equipe tem disciplina para manter a agenda online sincronizada com a real.
 
 A escolha depende do tamanho da clínica e de quantas pessoas existem para responder contatos. Para a maioria das clínicas de pequeno e médio porte, WhatsApp bem configurado supera as outras duas opções com menos custo.
 
@@ -57,9 +57,7 @@ O exercício da odontologia no Brasil é regulamentado pelo Conselho Federal de 
 
 As áreas que tipicamente geram dúvida: uso de imagens de antes e depois de procedimentos, promessa de resultados estéticos, divulgação de preços de procedimentos específicos, e o formato de depoimentos de pacientes.
 
-**Esta seção não substitui a consulta ao seu CRO.** As resoluções são atualizadas, variam em interpretação, e o profissional responde pessoalmente pelas infrações — não a agência que fez o site. Antes de publicar qualquer material que prometa resultado estético, compare procedimentos ou use imagens de tratamentos, confirme o enquadramento com seu Conselho Regional.
-
-`[NEEDS DATA: Citar a resolução CFO vigente sobre publicidade odontológica — confirmar o número e a data do ato normativo atual antes de publicar.]`
+Esta seção não substitui a consulta ao seu CRO. As regras estão no Código de Ética Odontológica, publicado pelo CFO, e nas resoluções que o atualizam. Elas mudam, variam em interpretação, e o profissional responde pessoalmente pelas infrações — não a agência que fez o site. Antes de publicar qualquer material que prometa resultado estético, compare procedimentos ou use imagens de tratamentos, confirme o enquadramento com seu Conselho Regional.
 
 O que o site pode fazer com segurança: apresentar a formação e especialização do profissional, listar os procedimentos oferecidos com descrição técnica (sem prometer resultado), mostrar a estrutura física da clínica, e descrever o processo de atendimento. A regra prática é: informe, não prometa.
 
@@ -90,7 +88,7 @@ Muitas clínicas recebem um site incluído no pacote do software de gestão odon
 
 Três pontos que valem a pena considerar antes de aceitar:
 
-**Você não é dono do domínio.** O endereço do site geralmente é um subdomínio da plataforma (`suaclinica.sistemaX.com.br`). Se a clínica trocar de software, o site vai junto — incluindo qualquer histórico de posicionamento que tenha acumulado.
+**Você não é dono do domínio.** O endereço do site geralmente é um subdomínio da plataforma ("suaclinica.sistemaX.com.br"). Se a clínica trocar de software, o site vai junto — incluindo qualquer histórico de posicionamento que tenha acumulado.
 
 **O site parece igual ao de todo mundo.** O template é o mesmo para todas as clínicas que usam aquele sistema. Um paciente que abre dois sites do mesmo software vê o mesmo layout com nomes diferentes. Não existe diferenciação possível dentro do template.
 

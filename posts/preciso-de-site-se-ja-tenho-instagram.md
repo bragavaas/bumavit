@@ -44,7 +44,7 @@ Esse último ponto importa mais do que parece. Muitas vendas começam com três 
 
 Três coisas que o Instagram não resolve, por design.
 
-**Aparecer no Google.** Posts do Instagram quase não ranqueiam para termos de busca comercial. Quando alguém procura `[seu serviço] + [sua cidade]` no Google e você só tem Instagram, quem aparece é o concorrente que tem site.
+**Aparecer no Google.** Posts do Instagram quase não ranqueiam para termos de busca comercial. Quando alguém procura "seu serviço + sua cidade" no Google e você só tem Instagram, quem aparece é o concorrente que tem site.
 
 Se alguém te conhece pelo nome e te procura direto, tudo bem. Mas quem ainda não te conhece vai achar outro fornecedor primeiro.
 
@@ -52,7 +52,7 @@ Escrevemos sobre [como aparecer no Google quando alguém procura o seu serviço 
 
 **Propriedade.** O site é seu: domínio no seu nome, conteúdo sob seu controle, dados de acesso que você exporta quando quiser. O Instagram é uma conta de aluguel, e as regras mudam sem você participar da conversa.
 
-Todo dono de empresa brasileira conhece alguém que teve a conta bloqueada sem aviso e perdeu meses de trabalho. Não é raro. É um risco real de um modelo onde você não é dono de nada.
+Conta bloqueada sem aviso acontece, e quem só vende pelo Instagram para de vender naquele dia. É um risco real de um modelo onde você não é dono de nada.
 
 **Suportar decisão complexa.** Quando o ticket é alto ou o serviço exige confiança, a pessoa precisa de mais informação antes de decidir. Quer entender exatamente o que você faz, ver casos, comparar opções, ler sobre garantia ou processo.
 
@@ -66,7 +66,7 @@ Se você está em algum desses três, a resposta muda.
 
 "Vocês atendem [bairro]?", "Quanto custa?", "Qual é o prazo?", "Trabalham no sábado?" — perguntas que você responde 15 vezes por semana, sempre igual.
 
-Cada uma toma 3 minutos. No fim do mês, são 12 horas respondendo o que já podia estar escrito em algum lugar.
+Cada uma toma uns três minutos. No fim do mês, são três horas respondendo o que já podia estar escrito em algum lugar.
 
 O site responde uma vez, para sempre. E libera o seu tempo para a conversa que realmente precisa de você.
 
@@ -112,4 +112,4 @@ Se você está em um dos três momentos que a gente listou, a resposta é clara.
 
 O Instagram vai continuar servindo enquanto servir. O sinal de que parou de servir é objetivo: ou você perde venda porque não aparece no Google, ou gasta tanto tempo respondendo pergunta repetida que não consegue atender quem realmente quer comprar.
 
-Se o sinal já apareceu e você quer um ponto de partida, o estimador da Bumavit devolve uma faixa de investimento respondendo três perguntas sobre o que você precisa: [monte uma estimativa](https://bumavit.com.br/estimador.html).
+Se o sinal já apareceu e você quer um ponto de partida, o estimador da Bumavit devolve uma faixa de preço respondendo três perguntas sobre o que você precisa: [monte uma estimativa](https://bumavit.com.br/estimador.html).

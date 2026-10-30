@@ -1,5 +1,5 @@
 ---
-title: Antes de contratar uma agência de sites: 12 perguntas essenciais
+title: Antes de contratar uma agência de sites: 12 perguntas
 slug: perguntas-antes-de-contratar-agencia-de-sites
 date: 2026-08-27
 category: Negócios
@@ -137,4 +137,4 @@ Leve as doze perguntas na mesma ordem para os três fornecedores e anote as resp
 
 Se o seu tempo der para três perguntas apenas, use as três de propriedade e saída. Elas são as únicas cuja resposta errada você não consegue corrigir depois sem começar de novo.
 
-Se quiser um ponto de partida antes de falar com qualquer fornecedor, o estimador da Bumavit devolve uma faixa de investimento e de prazo a partir de três respostas: [monte seu projeto](https://bumavit.com.br/estimador.html).
+Se quiser um ponto de partida antes de falar com qualquer fornecedor, o estimador da Bumavit devolve uma faixa de preço e de prazo a partir de três respostas: [monte seu projeto](https://bumavit.com.br/estimador.html).

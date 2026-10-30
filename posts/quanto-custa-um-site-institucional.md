@@ -12,7 +12,7 @@ Site institucional não tem preço fixo. O valor de um projeto depende de variá
 
 ## Faixas de preço para site institucional
 
-Um site institucional básico -- cinco páginas (Início, Sobre, Serviços, Portfólio, Contato), design baseado em template bem escolhido, textos fornecidos pelo cliente, sem integrações complexas -- fica entre **R$ 1.800 e R$ 2.500**, com prazo de entrega entre 8 e 13 dias.
+Um site institucional básico — cinco páginas (Início, Sobre, Serviços, Portfólio, Contato), design baseado em template bem escolhido, textos fornecidos pelo cliente, sem integrações complexas — fica entre **R$ 1.800 e R$ 2.500**, com prazo de entrega entre 8 e 13 dias.
 
 Essa é a base. O que faz o preço subir ou descer a partir daí são cinco fatores concretos, explicados abaixo.
 
@@ -42,7 +42,7 @@ O problema mais comum: ninguém combina isso antes de começar. Cada lado acha q
 
 ### Design sob medida ou adaptado de template
 
-Um design construído do zero -- com identidade visual própria, tipografia escolhida, cores da marca e layout exclusivo -- custa mais e demora mais do que um site baseado em um template bem escolhido e adaptado.
+Um design construído do zero — com identidade visual própria, tipografia escolhida, cores da marca e layout exclusivo — custa mais e demora mais do que um site baseado em um template bem escolhido e adaptado.
 
 Nenhuma das duas opções é inferior. Um template executado com cuidado pode ser tão profissional quanto um design proprietário. A escolha certa depende do que você precisa: se a sua marca já tem uma identidade visual forte e ela precisa aparecer com exatidão no site, um template pode não servir. Se você está começando e precisa de um site no ar rápido e com bom custo, um template bem adaptado entrega isso.
 
@@ -62,7 +62,7 @@ Se o prazo é real (lançamento em data fixa por razão de negócio, por exemplo
 
 A pergunta aparece com frequência de empresas em estágio inicial: o orçamento disponível costuma ser menor e a incerteza sobre o que é necessário, maior.
 
-O ponto mais honesto: um site funcional para pequena empresa não precisa ser complexo. Cinco páginas bem feitas -- Início, Sobre, Serviços, Portfólio, Contato -- com textos claros, carregamento rápido no celular e um formulário de contato que funciona fazem mais pela credibilidade do negócio do que um site de vinte páginas com metade das informações desatualizadas.
+O ponto mais honesto: um site funcional para pequena empresa não precisa ser complexo. Cinco páginas bem feitas — Início, Sobre, Serviços, Portfólio, Contato — com textos claros, carregamento rápido no celular e um formulário de contato que funciona fazem mais pela credibilidade do negócio do que um site de vinte páginas com metade das informações desatualizadas.
 
 **Um site básico para pequena empresa, com cinco páginas, design baseado em template e textos fornecidos pelo cliente, fica entre R$ 1.800 e R$ 2.500.** Se você precisa de sete páginas em vez de cinco, cada página a mais acrescenta R$ 130 a R$ 160. Se precisa que o fornecedor escreva os textos, de integração com CRM ou de prazo mais curto, cada item adiciona horas ao projeto e sobe o orçamento.
 
@@ -74,7 +74,7 @@ Para saber onde o seu projeto está, responda algumas perguntas rápidas no [est
 
 Esta é a seção onde a maioria dos projetos gera surpresa. O preço da proposta é o preço do projeto. Os itens abaixo costumam ficar de fora:
 
-**Domínio e hospedagem.** O endereço do site (`seudominio.com.br`) e o servidor onde ele fica têm custo anual. Alguns fornecedores incluem o primeiro ano, outros não. Pergunte antes de fechar.
+**Domínio e hospedagem.** O endereço do site ("seudominio.com.br") e o servidor onde ele fica têm custo anual. Alguns fornecedores incluem o primeiro ano, outros não. Pergunte antes de fechar.
 
 **Textos do site.** Se a proposta não menciona quem escreve, é você quem fornece. Confirme isso na primeira reunião, não no meio do projeto.
 
@@ -110,13 +110,13 @@ A maioria das empresas subestima esse custo e descobre um ou dois anos depois qu
 
 ## Como saber qual faixa é a sua
 
-Três situações concretas, com faixas de investimento:
+Três situações concretas, com faixas de preço:
 
 **Presença básica.** Empresa em estágio inicial, cinco páginas, textos fornecidos pelo próprio cliente, design baseado em template, sem integrações além do formulário de contato. **Faixa: R$ 1.800 a R$ 2.500. Prazo: 8 a 13 dias.** Pagamento em duas vezes: metade no ato e metade um mês depois.
 
-**Site profissional.** Sete a oito páginas, textos escritos ou revisados pelo fornecedor, design com identidade visual da marca, integração com formulário e WhatsApp, SEO básico configurado desde o lançamento. O orçamento sobe para a faixa de **R$ 3.080 a R$ 4.430**, dependendo do volume de funcionalidades. Prazo: 3 a 4 semanas.
+**Site profissional.** Sete a oito páginas, textos escritos ou revisados pelo fornecedor, design com identidade visual da marca, integração com formulário e WhatsApp, SEO básico configurado desde o lançamento. O orçamento sobe para a faixa de **R$ 3.080 a R$ 4.430**, dependendo do volume de funcionalidades. Prazo: 11 a 21 dias a partir do conteúdo pronto.
 
-**Projeto com integrações.** Área restrita, CRM, agendamento online, blog com estrutura de conteúdo ou requisitos de performance específicos. O orçamento entra na faixa de **R$ 4.070 a R$ 6.050**, e o prazo estende para 4 a 6 semanas.
+**Projeto com integrações.** Área restrita, CRM, agendamento online, blog com estrutura de conteúdo ou requisitos de performance específicos. O orçamento entra na faixa de **R$ 4.070 a R$ 6.050**, e o prazo vai de 16 a 29 dias a partir do conteúdo pronto.
 
 Esses números são referência. O que você escolher incluir ou deixar de fora move o preço dentro de cada faixa ou o coloca em outra.
 

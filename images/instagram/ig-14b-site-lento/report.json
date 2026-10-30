@@ -1,0 +1,184 @@
+{
+  "slug": "ig-14b-site-lento",
+  "generated": "2026-10-30T23:09:01.975Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-14b-site-lento-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 106,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-corte",
+        "seed": 40570,
+        "dropped": 0,
+        "accents": [
+          "full",
+          "sem-janela",
+          "sobe 2.6",
+          "tracejada 2",
+          "terreno 5",
+          "ponto",
+          "contorno-papel"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-14b-site-lento-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 106,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-corte",
+        "seed": 40570,
+        "dropped": 0,
+        "accents": [
+          "full",
+          "janela",
+          "sobe 2.6",
+          "tracejada 2",
+          "terreno 5",
+          "ponto",
+          "contorno"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920"
+    },
+    {
+      "file": "ig-14b-site-lento-02.png",
+      "slide": 2,
+      "format": "feed",
+      "variant": "c",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 128,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-corte",
+        "seed": 7713,
+        "dropped": 0,
+        "accents": [
+          "compact",
+          "janela",
+          "sobe 3.5",
+          "terreno 3",
+          "contorno-papel"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-14b-site-lento-03.png",
+      "slide": 3,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 96,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "caixa-detalhe",
+        "seed": 85332,
+        "dropped": 0,
+        "accents": [
+          "br",
+          "hachura-h",
+          "sem-bolhas",
+          "marcas-3-h",
+          "ponto",
+          "alca"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-14b-site-lento-04.png",
+      "slide": 4,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "caixa-detalhe",
+        "seed": 73427,
+        "dropped": 0,
+        "accents": [
+          "br",
+          "sem-bolhas",
+          "marcas-4-h",
+          "ponto",
+          "alca"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-14b-site-lento-05.png",
+      "slide": 5,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 88,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "caixa-detalhe",
+        "seed": 51046,
+        "dropped": 0,
+        "accents": [
+          "br-erguido",
+          "hachura-h",
+          "bolhas-3",
+          "marcas-4-h",
+          "ponto",
+          "alca"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    },
+    {
+      "file": "ig-14b-site-lento-06.png",
+      "slide": 6,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 120,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": null,
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350"
+    }
+  ]
+}

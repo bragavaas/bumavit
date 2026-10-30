@@ -1,6 +1,6 @@
 # Guia de Voz e Estilo — Bumavit
 
-> **Status: v8 (30/10/2026) — três passagens corrigidas contra o `posts/README.md` e o gerador (links, data futura, build), pendências 4, 6, 7 e 9 fechadas. Antes: v4, Post do Google (GBP) adicionado ao checklist.** O post piloto (`perguntas-antes-de-contratar-agencia-de-sites`) foi escrito com a v1, revisado pelo fundador e **mergeado sem uma única alteração** no texto. Isso ratifica a v1 e resolveu quatro conflitos que só apareceram na hora de escrever — estão marcados **✅ ratificado** ao longo do guia.
+> **Status: v8 (30/10/2026) — três passagens corrigidas contra o `posts/README.md` e o gerador (links, data futura, build); seção LinkedIn removida (canal saiu do plano em 08/10, decisão de 13/10, BUMA-68, PR #87 fechado sem merge e incorporado aqui); pendências 4, 6, 7 e 9 fechadas.** O post piloto (`perguntas-antes-de-contratar-agencia-de-sites`) foi escrito com a v1, revisado pelo fundador e **mergeado sem uma única alteração** no texto. Isso ratifica a v1 e resolveu quatro conflitos que só apareceram na hora de escrever — estão marcados **✅ ratificado** ao longo do guia.
 >
 > As seções marcadas com 🔸 ainda dependem da calibração do fundador (ver **Pendências**, no fim). Tudo o que não está marcado já pode ser usado.
 >
@@ -257,22 +257,6 @@ O teste, antes de cada link no meio do texto:
 
 Continua valendo: **um só link de oferta, no fechamento.** Links de ajuda no meio entram no orçamento de 2 a 4 links internos por post.
 
-## Versão LinkedIn
-
-Todo post entregue inclui uma versão LinkedIn para o fundador publicar manualmente. O texto vai no próprio issue do post, como bloco separado.
-
-**Estrutura:** 3 a 6 linhas curtas, o link com o slug canônico e no máximo 3 hashtags.
-
-**O gancho:** parte de uma observação, dúvida ou dado concreto do post — não um resumo genérico nem o título reescrito. Se o post tem uma pergunta que surpreende, o gancho é ela; se tem uma comparação inesperada, é essa. O leitor para porque reconhece a situação, não porque viu um resumo.
-
-**Tom:** segue o voice guide. Sem exclamação, sem emoji, sem "compartilhe este post", sem urgência.
-
-**O link:** sempre o slug canônico com trailing slash — `https://bumavit.com.br/blog/<slug>/`. Nunca encurtado, nunca sem o `https://`.
-
-**Hashtags:** três no máximo. Use as do nicho (`#CriacaoDeSites`, `#MarketingDigital`, `#NegociosOnline` como ponto de partida). Não transforme a palavra-chave em hashtag.
-
-Nenhum agente posta em rede social. O texto é entregue pronto; o fundador decide quando e onde publicar.
-
 ## O que o gerador aceita
 
 Um post é **um arquivo Markdown em `posts/<slug>.md`** — nunca HTML. O `scripts/build-blog.mjs` gera `blog/`, o RSS e o sitemap a partir dele. **Nada escrito à mão dentro de `blog/` sobrevive ao próximo build.**
@@ -412,14 +396,6 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 - [ ] `node scripts/build-blog.mjs` roda sem erro
 - [ ] O PR leva só o `.md` em `posts/`; nenhum HTML de `blog/` (o workflow bloqueia)
 
-**LinkedIn**
-
-- [ ] Versão LinkedIn entregue junto com o post: 3–6 linhas, gancho concreto (não resumo genérico), link com slug canônico, máx. 3 hashtags
-- [ ] Gancho parte de uma observação real do post — não repete o título nem resume o artigo
-- [ ] Tom segue o voice guide: sem exclamação, sem emoji, sem "compartilhe", sem urgência
-- [ ] Link usa o slug canônico completo com trailing slash (`https://bumavit.com.br/blog/<slug>/`)
-- [ ] Entregue como bloco de texto no issue do post (o fundador publica manualmente)
-
 **Post do Google (GBP)**
 
 - [ ] Post do Google entregue junto com o artigo: 150–300 caracteres, com os primeiros 100 fazendo sentido sozinhos
@@ -455,6 +431,8 @@ Aberto na calibração com o fundador (interação nesta task, BUMA-5). Enquanto
 *v2 — 28/08/2026. Calibrada pelo post piloto: quatro reconciliações ratificadas por merge sem alteração, mais as restrições reais do gerador, que a v1 não conhecia.*
 
 *v4 — 28/08/2026. Bloco "Post do Google (GBP)" adicionado ao checklist de publicação (BUMA-37).*
+
+*v8 — 30/10/2026 (CLA-233, estudo da voz). Links absolutos e canônica `/blog/<slug>/` conforme o README; data futura retida pelo build e publicada pelo workflow diário (12:00 UTC); build automático, PR só com Markdown. Seção LinkedIn removida (BUMA-68, 13/10). Pendências 4 (clientes nomeáveis: COCBAN, Yacht Day, Hera Brand), 6, 7 e 9 fechadas.*
 
 *v7 — 26/10/2026. Exceção à regra de preço: a página de manutenção mostra o preço do plano, tirado de `docs/faixas-de-preco.md`.*
 

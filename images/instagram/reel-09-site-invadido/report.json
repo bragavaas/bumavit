@@ -1,0 +1,223 @@
+{
+  "slug": "reel-09-site-invadido",
+  "generated": "2026-10-30T23:56:13.533Z",
+  "engine": "templates/ig-reel.html",
+  "fps": 30,
+  "duration": 43.6,
+  "fonts": "ok",
+  "lines": {
+    "kind": "geometria-curva",
+    "seed": 18870,
+    "dropped": 0,
+    "accents": [
+      "ponto",
+      "sem-contorno",
+      "br t=0.38 A"
+    ],
+    "shift": 300
+  },
+  "drawings": [
+    {
+      "scene": "hook",
+      "kind": "geometria-curva",
+      "visible": 13,
+      "strokeK": 1.7142857142857142,
+      "decisions": [
+        "ponto",
+        "sem-contorno",
+        "br t=0.38 A"
+      ]
+    },
+    {
+      "scene": "text0",
+      "kind": "obra-implantacao",
+      "visible": 35,
+      "strokeK": 1.0909090909090908,
+      "decisions": [
+        "degrau-lado",
+        "bolha",
+        "vertice-b",
+        "sob-fio",
+        "ponto",
+        "acesso-papel"
+      ]
+    },
+    {
+      "scene": "text1",
+      "kind": "obra-implantacao",
+      "visible": 36,
+      "strokeK": 1.0909090909090908,
+      "decisions": [
+        "degrau-lado",
+        "bolha",
+        "vertice-b",
+        "sob-fio",
+        "ponto",
+        "acesso"
+      ]
+    },
+    {
+      "scene": "text2",
+      "kind": "geometria-tales",
+      "visible": 26,
+      "strokeK": 1.3333333333333333,
+      "decisions": [
+        "br",
+        "arco",
+        "ponto",
+        "guias-borda"
+      ]
+    },
+    {
+      "scene": "text3",
+      "kind": "geometria-tales",
+      "visible": 26,
+      "strokeK": 1.3333333333333333,
+      "decisions": [
+        "br",
+        "arco",
+        "ponto",
+        "guias-borda"
+      ]
+    }
+  ],
+  "readTimes": [
+    {
+      "text": "Já abriu o seu próprio site e caiu numa *casa de apostas*?",
+      "chars": 56,
+      "legible": 4.25,
+      "need": 4.233
+    },
+    {
+      "text": "Eu sou o André, faço sites aqui na *Bumavit*.",
+      "chars": 43,
+      "legible": 3.56,
+      "need": 3.367
+    },
+    {
+      "text": "Site é cartão de visita. Invadido, fala *contra você*.",
+      "chars": 52,
+      "legible": 4.07,
+      "need": 3.967
+    },
+    {
+      "text": "Vale mesmo para site que *não fui eu* que fiz.",
+      "chars": 44,
+      "legible": 3.96,
+      "need": 3.433
+    },
+    {
+      "text": "Quem cuida é quem programa. *Sou eu*.",
+      "chars": 35,
+      "legible": 3.035,
+      "need": 2.833
+    },
+    {
+      "text": "Ou um texto estranho no meio da sua *página*.",
+      "chars": 43,
+      "legible": 3.38,
+      "need": 3.367
+    },
+    {
+      "text": "O cliente abre, vê, e fecha. *Não volta*.",
+      "chars": 39,
+      "legible": 3.28,
+      "need": 3.1
+    },
+    {
+      "text": "Carro, casa, site. Tudo precisa de *manutenção*.",
+      "chars": 46,
+      "legible": 3.68,
+      "need": 3.567
+    },
+    {
+      "text": "Atualização, backup, *segurança*. Todo mês.",
+      "chars": 41,
+      "legible": 3.28,
+      "need": 3.233
+    },
+    {
+      "text": "Antes de o cliente ver, veja *você*.",
+      "chars": 54,
+      "legible": 4.255,
+      "need": 4.1
+    }
+  ],
+  "problems": [],
+  "keyframes": [
+    {
+      "scene": 1,
+      "t": 4.3,
+      "file": "reel-09-site-invadido-k01.jpg",
+      "guides": "reel-09-site-invadido-k01-guias.jpg"
+    },
+    {
+      "scene": 2,
+      "t": 8.5,
+      "file": "reel-09-site-invadido-k02.jpg",
+      "guides": "reel-09-site-invadido-k02-guias.jpg"
+    },
+    {
+      "scene": 3,
+      "t": 12.600000000000001,
+      "file": "reel-09-site-invadido-k03.jpg",
+      "guides": "reel-09-site-invadido-k03-guias.jpg"
+    },
+    {
+      "scene": 4,
+      "t": 16.8,
+      "file": "reel-09-site-invadido-k04.jpg",
+      "guides": "reel-09-site-invadido-k04-guias.jpg"
+    },
+    {
+      "scene": 5,
+      "t": 21.6,
+      "file": "reel-09-site-invadido-k05.jpg",
+      "guides": "reel-09-site-invadido-k05-guias.jpg"
+    },
+    {
+      "scene": 6,
+      "t": 26.1,
+      "file": "reel-09-site-invadido-k06.jpg",
+      "guides": "reel-09-site-invadido-k06-guias.jpg"
+    },
+    {
+      "scene": 7,
+      "t": 30.2,
+      "file": "reel-09-site-invadido-k07.jpg",
+      "guides": "reel-09-site-invadido-k07-guias.jpg"
+    },
+    {
+      "scene": 8,
+      "t": 34.8,
+      "file": "reel-09-site-invadido-k08.jpg",
+      "guides": "reel-09-site-invadido-k08-guias.jpg"
+    },
+    {
+      "scene": 9,
+      "t": 38.099999999999994,
+      "file": "reel-09-site-invadido-k09.jpg",
+      "guides": "reel-09-site-invadido-k09-guias.jpg"
+    },
+    {
+      "scene": 10,
+      "t": 43.5,
+      "file": "reel-09-site-invadido-k10.jpg",
+      "guides": "reel-09-site-invadido-k10-guias.jpg"
+    }
+  ],
+  "cover": "reel-09-site-invadido-capa.jpg",
+  "video": {
+    "file": "reel-09-site-invadido.mp4",
+    "bytes": 11664137,
+    "codec": "h264",
+    "pix": "yuv420p",
+    "color": "tv, bt709, progressive",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 43.6,
+    "audio": false
+  },
+  "sheet": "reel-09-site-invadido-prancha.jpg"
+}

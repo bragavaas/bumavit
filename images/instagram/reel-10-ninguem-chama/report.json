@@ -1,6 +1,6 @@
 {
   "slug": "reel-10-ninguem-chama",
-  "generated": "2026-10-31T07:11:02.808Z",
+  "generated": "2026-10-31T09:02:07.068Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
   "duration": 46.7,
@@ -64,6 +64,13 @@
     }
   ],
   "problems": [],
+  "device3d": {
+    "three": "r187 (templates/vendor/three.bundle.min.js)",
+    "frame": [
+      1080,
+      2316
+    ]
+  },
   "keyframes": [
     {
       "scene": 1,
@@ -123,7 +130,7 @@
   "cover": "reel-10-ninguem-chama-capa.jpg",
   "video": {
     "file": "reel-10-ninguem-chama.mp4",
-    "bytes": 10613651,
+    "bytes": 11945252,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",

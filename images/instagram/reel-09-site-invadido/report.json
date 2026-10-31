@@ -1,9 +1,9 @@
 {
   "slug": "reel-09-site-invadido",
-  "generated": "2026-10-31T05:53:19.796Z",
+  "generated": "2026-10-31T07:11:07.211Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
-  "duration": 43.6,
+  "duration": 44.6,
   "fonts": "ok",
   "lines": null,
   "drawings": [],
@@ -17,56 +17,56 @@
     {
       "text": "Eu sou o André, faço sites aqui na *Bumavit*.",
       "chars": 43,
-      "legible": 3.56,
+      "legible": 3.69,
       "need": 3.367
-    },
-    {
-      "text": "Site é cartão de visita. Invadido, fala *contra você*.",
-      "chars": 52,
-      "legible": 4.07,
-      "need": 3.967
-    },
-    {
-      "text": "Vale mesmo para site que *não fui eu* que fiz.",
-      "chars": 44,
-      "legible": 3.96,
-      "need": 3.433
     },
     {
       "text": "Quem cuida é quem programa. *Sou eu*.",
       "chars": 35,
-      "legible": 3.035,
+      "legible": 3.14,
       "need": 2.833
     },
     {
       "text": "Ou um texto estranho no meio da sua *página*.",
       "chars": 43,
-      "legible": 3.56,
+      "legible": 3.69,
       "need": 3.367
     },
     {
       "text": "O cliente abre, vê, e fecha. *Não volta*.",
       "chars": 39,
-      "legible": 3.46,
+      "legible": 3.39,
       "need": 3.1
+    },
+    {
+      "text": "Vale mesmo para site que *não fui eu* que fiz.",
+      "chars": 44,
+      "legible": 3.99,
+      "need": 3.433
     },
     {
       "text": "Carro, casa, site. Tudo precisa de *manutenção*.",
       "chars": 46,
-      "legible": 3.74,
+      "legible": 3.64,
       "need": 3.567
+    },
+    {
+      "text": "Site é cartão de visita. Invadido, fala *contra você*.",
+      "chars": 52,
+      "legible": 4.12,
+      "need": 3.967
     },
     {
       "text": "Atualização, backup, *segurança*. Todo mês.",
       "chars": 41,
-      "legible": 3.46,
+      "legible": 3.36,
       "need": 3.233
     },
     {
-      "text": "Antes de o cliente ver, veja *você*.",
-      "chars": 54,
-      "legible": 4.255,
-      "need": 4.1
+      "text": "Cuide antes de o cliente *ver*.",
+      "chars": 52,
+      "legible": 4.28,
+      "need": 3.967
     }
   ],
   "problems": [],
@@ -79,70 +79,64 @@
     },
     {
       "scene": 2,
-      "t": 8.5,
+      "t": 8.65,
       "file": "reel-09-site-invadido-k02.jpg",
       "guides": "reel-09-site-invadido-k02-guias.jpg"
     },
     {
       "scene": 3,
-      "t": 12.600000000000001,
+      "t": 17.2,
       "file": "reel-09-site-invadido-k03.jpg",
       "guides": "reel-09-site-invadido-k03-guias.jpg"
     },
     {
       "scene": 4,
-      "t": 16.8,
+      "t": 21.5,
       "file": "reel-09-site-invadido-k04.jpg",
       "guides": "reel-09-site-invadido-k04-guias.jpg"
     },
     {
       "scene": 5,
-      "t": 21.6,
+      "t": 26.7,
       "file": "reel-09-site-invadido-k05.jpg",
       "guides": "reel-09-site-invadido-k05-guias.jpg"
     },
     {
       "scene": 6,
-      "t": 26.1,
+      "t": 30.900000000000002,
       "file": "reel-09-site-invadido-k06.jpg",
       "guides": "reel-09-site-invadido-k06-guias.jpg"
     },
     {
       "scene": 7,
-      "t": 30.2,
+      "t": 33.4,
       "file": "reel-09-site-invadido-k07.jpg",
       "guides": "reel-09-site-invadido-k07-guias.jpg"
     },
     {
       "scene": 8,
-      "t": 34.8,
+      "t": 39.099999999999994,
       "file": "reel-09-site-invadido-k08.jpg",
       "guides": "reel-09-site-invadido-k08-guias.jpg"
     },
     {
       "scene": 9,
-      "t": 38.099999999999994,
+      "t": 44.5,
       "file": "reel-09-site-invadido-k09.jpg",
       "guides": "reel-09-site-invadido-k09-guias.jpg"
-    },
-    {
-      "scene": 10,
-      "t": 43.5,
-      "file": "reel-09-site-invadido-k10.jpg",
-      "guides": "reel-09-site-invadido-k10-guias.jpg"
     }
   ],
   "cover": "reel-09-site-invadido-capa.jpg",
   "video": {
     "file": "reel-09-site-invadido.mp4",
-    "bytes": 14198889,
+    "bytes": 14111613,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 43.6,
+    "duration": 44.6,
     "audio": true
   },
   "music": {

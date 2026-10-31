@@ -1,0 +1,155 @@
+{
+  "slug": "reel-10-ninguem-chama",
+  "generated": "2026-10-31T05:59:49.463Z",
+  "engine": "templates/ig-reel.html",
+  "fps": 30,
+  "duration": 48.2,
+  "fonts": "ok",
+  "lines": null,
+  "drawings": [],
+  "readTimes": [
+    {
+      "text": "Você paga anúncio, a visita chega no site e *ninguém chama*.",
+      "chars": 58,
+      "legible": 4.75,
+      "need": 4.367
+    },
+    {
+      "text": "Eu sou o André, faço sites aqui na *Bumavit*.",
+      "chars": 43,
+      "legible": 3.46,
+      "need": 3.367
+    },
+    {
+      "text": "Às vezes o problema não é o anúncio. É o *site*.",
+      "chars": 46,
+      "legible": 3.76,
+      "need": 3.567
+    },
+    {
+      "text": "No blog tem as *quatro causas*, com um teste para cada uma.",
+      "chars": 57,
+      "legible": 4.37,
+      "need": 4.3
+    },
+    {
+      "text": "Se precisar refazer, quem programa o seu site *sou eu*.",
+      "chars": 53,
+      "legible": 4.445,
+      "need": 4.033
+    },
+    {
+      "text": "Aí você põe mais dinheiro, e o WhatsApp continua *parado*.",
+      "chars": 56,
+      "legible": 4.26,
+      "need": 4.233
+    },
+    {
+      "text": "Pode ser o site lento no *celular*.",
+      "chars": 33,
+      "legible": 2.84,
+      "need": 2.7
+    },
+    {
+      "text": "Ou a primeira tela que não diz o que você *faz*.",
+      "chars": 46,
+      "legible": 3.7,
+      "need": 3.567
+    },
+    {
+      "text": "Ou um formulário que cai num e-mail que *ninguém lê*.",
+      "chars": 51,
+      "legible": 4.16,
+      "need": 3.9
+    },
+    {
+      "text": "Antes de aumentar o anúncio, faça o *teste*.",
+      "chars": 68,
+      "legible": 5.155,
+      "need": 5.033
+    }
+  ],
+  "problems": [],
+  "keyframes": [
+    {
+      "scene": 1,
+      "t": 4.8,
+      "file": "reel-10-ninguem-chama-k01.jpg",
+      "guides": "reel-10-ninguem-chama-k01-guias.jpg"
+    },
+    {
+      "scene": 2,
+      "t": 10,
+      "file": "reel-10-ninguem-chama-k02.jpg",
+      "guides": "reel-10-ninguem-chama-k02-guias.jpg"
+    },
+    {
+      "scene": 3,
+      "t": 14.100000000000001,
+      "file": "reel-10-ninguem-chama-k03.jpg",
+      "guides": "reel-10-ninguem-chama-k03-guias.jpg"
+    },
+    {
+      "scene": 4,
+      "t": 18.5,
+      "file": "reel-10-ninguem-chama-k04.jpg",
+      "guides": "reel-10-ninguem-chama-k04-guias.jpg"
+    },
+    {
+      "scene": 5,
+      "t": 22.1,
+      "file": "reel-10-ninguem-chama-k05.jpg",
+      "guides": "reel-10-ninguem-chama-k05-guias.jpg"
+    },
+    {
+      "scene": 6,
+      "t": 26.8,
+      "file": "reel-10-ninguem-chama-k06.jpg",
+      "guides": "reel-10-ninguem-chama-k06-guias.jpg"
+    },
+    {
+      "scene": 7,
+      "t": 31.900000000000002,
+      "file": "reel-10-ninguem-chama-k07.jpg",
+      "guides": "reel-10-ninguem-chama-k07-guias.jpg"
+    },
+    {
+      "scene": 8,
+      "t": 37,
+      "file": "reel-10-ninguem-chama-k08.jpg",
+      "guides": "reel-10-ninguem-chama-k08-guias.jpg"
+    },
+    {
+      "scene": 9,
+      "t": 41.8,
+      "file": "reel-10-ninguem-chama-k09.jpg",
+      "guides": "reel-10-ninguem-chama-k09-guias.jpg"
+    },
+    {
+      "scene": 10,
+      "t": 48.1,
+      "file": "reel-10-ninguem-chama-k10.jpg",
+      "guides": "reel-10-ninguem-chama-k10-guias.jpg"
+    }
+  ],
+  "cover": "reel-10-ninguem-chama-capa.jpg",
+  "video": {
+    "file": "reel-10-ninguem-chama.mp4",
+    "bytes": 12338414,
+    "codec": "h264",
+    "pix": "yuv420p",
+    "color": "tv, bt709, progressive",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 48.2,
+    "audio": true
+  },
+  "music": {
+    "clip": "trilha-cuidado.m4a",
+    "gain": -17,
+    "fadeIn": 1.2,
+    "fadeOut": 3
+  },
+  "sheet": "reel-10-ninguem-chama-prancha.jpg"
+}

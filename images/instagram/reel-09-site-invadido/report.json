@@ -1,6 +1,6 @@
 {
   "slug": "reel-09-site-invadido",
-  "generated": "2026-10-31T07:11:07.211Z",
+  "generated": "2026-10-31T08:55:34.188Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
   "duration": 44.6,
@@ -70,6 +70,13 @@
     }
   ],
   "problems": [],
+  "device3d": {
+    "three": "r187 (templates/vendor/three.bundle.min.js)",
+    "frame": [
+      1080,
+      2316
+    ]
+  },
   "keyframes": [
     {
       "scene": 1,
@@ -129,7 +136,7 @@
   "cover": "reel-09-site-invadido-capa.jpg",
   "video": {
     "file": "reel-09-site-invadido.mp4",
-    "bytes": 14111613,
+    "bytes": 14012563,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",

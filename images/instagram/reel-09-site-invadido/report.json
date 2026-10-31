@@ -1,6 +1,6 @@
 {
   "slug": "reel-09-site-invadido",
-  "generated": "2026-10-31T08:55:34.188Z",
+  "generated": "2026-10-31T12:53:06.213Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
   "duration": 44.6,
@@ -39,10 +39,10 @@
       "need": 3.1
     },
     {
-      "text": "Vale mesmo para site que *não fui eu* que fiz.",
-      "chars": 44,
-      "legible": 3.99,
-      "need": 3.433
+      "text": "Vale para sites que não foram *feitos pela Bumavit*.",
+      "chars": 50,
+      "legible": 3.93,
+      "need": 3.833
     },
     {
       "text": "Carro, casa, site. Tudo precisa de *manutenção*.",
@@ -136,7 +136,7 @@
   "cover": "reel-09-site-invadido-capa.jpg",
   "video": {
     "file": "reel-09-site-invadido.mp4",
-    "bytes": 14012563,
+    "bytes": 14474567,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",

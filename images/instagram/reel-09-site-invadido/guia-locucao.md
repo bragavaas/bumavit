@@ -1,4 +1,4 @@
-# Reel 9 · Site invadido: guia para gravar a voz no CapCut (versão 5, 31/10, aparelho em 3D)
+# Reel 9 · Site invadido: guia para gravar a voz no CapCut (versão 7, 31/10, aparelho em 3D, cena 7 sem tom de culpa e vírus contra escudo na cena 6)
 
 O MP4 tem 44,6 s, 1080 × 1920, 30 fps, com a trilha de fundo já mixada baixa (a −17 dB, para a sua voz ficar por
 cima). Cada cena tem o tempo de uma frase falada com calma mais uma pausa. Grave uma frase por cena, começando a
@@ -6,7 +6,7 @@ falar quando o texto da cena já estiver inteiro (cerca de meio segundo depois d
 cena, deixe o silêncio: a legenda precisa do tempo de leitura. Se a trilha incomodar na hora de mixar, a faixa solta está
 em `trilha-cuidado.mp3` e dá para tirar ou abaixar no CapCut.
 
-Os tempos são os mesmos da versão 4: a voz que você gravar sobre ela encaixa nesta também. O que mudou foi o aparelho das
+Os tempos são os mesmos da versão 4: a voz que você gravar sobre ela encaixa nesta também. Nas versões 6 e 7 mudaram, a seu pedido, a cena 6 (o calendário deu lugar ao vírus raivoso contra o escudo) e a cena 7: a frase saiu de "que não fui eu que fiz" (soava como culpa do cliente e de outras empresas) para "que não foram feitos pela Bumavit", e o cartão do plano passou a mostrar quatro itens do que a Bumavit faz, em vez de dois. O que mudou foi o aparelho das
 cenas 2 e 7: em vez do corpo chapado, um celular em três dimensões (o do teste que você aprovou, agora com o iPhone como
 referência, sem logotipo, sombra suave e parada), que sobe girando no corte, flutua de leve e desce no fim da cena. A demo
 foi regravada na proporção da tela dele.
@@ -19,8 +19,8 @@ foi regravada na proporção da tela dele.
 | 3 cartão | 12,8 s | 17,4 s | Carro, casa, site. Tudo precisa de manutenção. | os três ícones acendendo na ordem das palavras |
 | 4 você | 17,4 s | 21,7 s | Eu sou o André, faço sites aqui na Bumavit. | seu recorte, maior, com brilho atrás da cabeça |
 | 5 cartão | 21,7 s | 26,9 s | Site é cartão de visita. Invadido, fala contra você. | cartão de visita em traço que recebe a mancha de spam e o risco |
-| 6 cartão | 26,9 s | 31,1 s | Atualização, backup, segurança. Todo mês. | calendário: checks em papel, o deste mês em tangerina |
-| 7 plano | 31,1 s | 35,7 s | Vale mesmo para site que não fui eu que fiz. | o cartão real do plano de manutenção na tela do celular 3D, no alto, com a linha "Vale para sites feitos por outras empresas" dentro da zona segura |
+| 6 cartão | 26,9 s | 31,1 s | Atualização, backup, segurança. Todo mês. | o escudo se desenha e três vírus raivosos tentam furá-lo, um por vez (batidas por volta de 28,1 s, 29,0 s e 29,9 s), e são jogados de volta; o check tangerina fecha o escudo no fim |
+| 7 plano | 31,1 s | 35,7 s | Vale para sites que não foram feitos pela Bumavit. (pode dizer "vale também para sites que não tenham sido desenvolvidos por nós aqui na Bumavit") | o cartão real do plano de manutenção na tela do celular 3D, com quatro itens do plano (documentos e textos, backup mensal, segurança e atualizações, vale para sites feitos por outras empresas); as duas linhas com número (4 horas por mês, hora a mais por R$ 90) ficam fora pela regra de nenhum número em quadro |
 | 8 você | 35,7 s | 39,3 s | Quem cuida é quem programa. Sou eu. | |
 | 9 fecho | 39,3 s | 44,6 s | Cuide antes de o cliente ver. | chamada "Conheça o plano no site" |
 

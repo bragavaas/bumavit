@@ -1,0 +1,59 @@
+{
+  "slug": "ig-28-pergunta-12",
+  "generated": "2026-11-01T18:09:56.308Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-28-pergunta-12-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "b",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 96,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "geometria-tales",
+        "seed": 89907,
+        "dropped": 0,
+        "accents": [
+          "tr",
+          "arco-papel",
+          "ponto",
+          "guias-borda"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350",
+      "jpeg": "ig-28-pergunta-12-01.jpg"
+    },
+    {
+      "file": "ig-28-pergunta-12-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "b",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 96,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "geometria-tales",
+        "seed": 89907,
+        "dropped": 5,
+        "accents": [
+          "br-forcado",
+          "arco-papel",
+          "ponto",
+          "sem-guias"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920",
+      "jpeg": "ig-28-pergunta-12-story-01.jpg"
+    }
+  ]
+}

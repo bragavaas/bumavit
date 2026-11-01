@@ -1,0 +1,60 @@
+{
+  "slug": "ig-24-pergunta-08",
+  "generated": "2026-11-01T18:09:26.287Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-24-pergunta-08-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 96,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-implantacao",
+        "seed": 98022,
+        "dropped": 0,
+        "accents": [
+          "degrau-frente",
+          "sem-bolha",
+          "ponto",
+          "sem-acesso"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350",
+      "jpeg": "ig-24-pergunta-08-01.jpg"
+    },
+    {
+      "file": "ig-24-pergunta-08-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 96,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "obra-implantacao",
+        "seed": 98022,
+        "dropped": 0,
+        "accents": [
+          "degrau",
+          "bolha",
+          "vertice-b",
+          "ponto",
+          "acesso-papel"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920",
+      "jpeg": "ig-24-pergunta-08-story-01.jpg"
+    }
+  ]
+}

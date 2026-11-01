@@ -1,0 +1,53 @@
+{
+  "slug": "ig-22-pergunta-06",
+  "generated": "2026-11-01T18:09:08.699Z",
+  "engine": "templates/ig-slide.html",
+  "slides": [
+    {
+      "file": "ig-22-pergunta-06-01.png",
+      "slide": 1,
+      "format": "feed",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 96,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "codigo-versoes",
+        "seed": 3950,
+        "dropped": 0,
+        "accents": [
+          "sem-desenho"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1350",
+      "jpeg": "ig-22-pergunta-06-01.jpg"
+    },
+    {
+      "file": "ig-22-pergunta-06-story-01.png",
+      "slide": 1,
+      "format": "story",
+      "variant": "a",
+      "hasImage": false,
+      "fonts": "ok",
+      "fontSize": 96,
+      "overflow": false,
+      "contentHeight": 1080,
+      "lines": {
+        "kind": "codigo-versoes",
+        "seed": 3950,
+        "dropped": 0,
+        "accents": [
+          "sem-desenho"
+        ]
+      },
+      "ok": true,
+      "problems": [],
+      "size": "1080×1920",
+      "jpeg": "ig-22-pergunta-06-story-01.jpg"
+    }
+  ]
+}

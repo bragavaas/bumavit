@@ -4,11 +4,14 @@ slug: quanto-custa-um-site-institucional
 date: 2026-09-17
 category: Negócios
 cover: cyan
-excerpt: O preço de um site institucional depende de cinco variáveis. Esta página explica o que empurra o custo para cima ou para baixo, com cenários concretos para você chegar à reunião sabendo onde o seu projeto está.
+excerpt: Site institucional na Bumavit vai de R$ 1.800 a R$ 2.500 na base e até R$ 8.620 com tudo. Veja as cinco variáveis que movem o preço e onde o seu caso cai.
 keyword: quanto custa um site institucional
+updated: 2026-11-01
 ---
 
 Site institucional não tem preço fixo. O valor de um projeto depende de variáveis concretas, e entender cada uma delas permite que você chegue à reunião já sabendo a qual faixa o seu caso pertence.
+
+Se o seu caso é vender pela internet, o preço segue outra lógica: veja [quanto custa criar uma loja virtual profissional](https://bumavit.com.br/blog/quanto-custa-criar-uma-loja-virtual-profissional/).
 
 ## Faixas de preço para site institucional
 

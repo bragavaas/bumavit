@@ -6,6 +6,7 @@ category: Negócios
 cover: rust
 excerpt: Uma loja virtual inicial fica entre R$ 3.240 e R$ 4.590; com todas as funcionalidades, chega a R$ 9.630. Entenda os três caminhos, o que faz o preço mudar e o custo mensal que raramente aparece na proposta.
 keyword: quanto custa criar uma loja virtual profissional
+updated: 2026-11-01
 ---
 
 Uma loja virtual inicial na Bumavit — catálogo pequeno, pagamento e frete padrão — fica entre **R$ 3.240 e R$ 4.590**, com prazo de 18 a 25 dias. Com todas as funcionalidades do estimador, chega a R$ 6.480 a R$ 9.630. Entre uma proposta e outra do mercado, a diferença costuma ser bem maior, e quase nunca vem explicada.
@@ -13,6 +14,16 @@ Uma loja virtual inicial na Bumavit — catálogo pequeno, pagamento e frete pad
 Não é falta de transparência. Preço de loja virtual varia mais do que preço de site institucional, e por razões técnicas reais: volume de produtos, integração com sistema de gestão, regras de frete, sincronização com marketplace, meios de pagamento, migração de plataforma existente. Cada um desses fatores muda o orçamento de forma mensurável.
 
 Abaixo estão os três caminhos possíveis para montar uma loja virtual profissional, o que faz o preço variar dentro de cada um e, o que raramente aparece em qualquer proposta, quanto custa operar a loja todo mês depois que ela vai ao ar.
+
+## Resumo: quanto custa uma loja virtual na Bumavit
+
+| Loja virtual | Faixa | Prazo |
+|---|---|---|
+| Inicial: catálogo pequeno, pagamento e frete padrão | R$ 3.240 a R$ 4.590 | 18 a 25 dias |
+| Com frete integrado, cupons e SEO avançado | R$ 4.680 a R$ 6.840 | 22 a 35 dias |
+| Com todas as funcionalidades | R$ 6.480 a R$ 9.630 | 30 a 47 dias |
+
+Pagamento em até 4 vezes. A faixa exata do seu caso sai na hora no [estimador](https://bumavit.com.br/estimador.html), antes de qualquer conversa. Loja construída do zero, sem plataforma, é orçada na conversa.
 
 ## Os três caminhos
 
@@ -131,3 +142,21 @@ O caminho certo depende do momento da operação. Para identificar qual dos trê
 Para entender quando o sob medida se paga com os números reais da sua operação, faz sentido conversar antes de tomar qualquer decisão. Um exemplo de loja virtual desenvolvida pela Bumavit está no [portfólio de e-commerce](https://bumavit.com.br/projetos/ecommerce.html).
 
 Se você já está comparando propostas, o post [como avaliar uma proposta de criação de site](https://bumavit.com.br/blog/como-avaliar-proposta-de-criacao-de-site/) explica o que verificar antes de assinar qualquer contrato — os princípios se aplicam igualmente a projetos de e-commerce.
+
+## Perguntas frequentes
+
+### Quanto custa uma loja virtual?
+
+Na Bumavit, uma loja virtual inicial fica entre R$ 3.240 e R$ 4.590; com todas as funcionalidades, entre R$ 6.480 e R$ 9.630. O que move o preço dentro da faixa está nas seções acima: volume de produtos, integrações, regras de frete e migração.
+
+### Quanto custa montar uma loja virtual completa?
+
+Com todas as funcionalidades do estimador (frete integrado, cupons, SEO avançado, integrações e o resto), de R$ 6.480 a R$ 9.630, em 30 a 47 dias. Projeto fora desse escopo, como loja construída do zero sem plataforma, é orçado na conversa.
+
+### Quanto custa manter uma loja virtual por mês?
+
+O custo mensal raramente aparece na proposta e existe sempre: plataforma ou hospedagem, meios de pagamento, e quem faz as alterações. A seção sobre o custo que não aparece na proposta, acima, mostra como estimar o seu.
+
+### Quanto tempo leva para criar uma loja virtual?
+
+De 18 a 25 dias na faixa inicial e de 30 a 47 dias com todas as funcionalidades, contando a partir do material em mãos: produtos, fotos, textos e acessos. Texto e foto que atrasam são a causa mais comum de prazo estourado.

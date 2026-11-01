@@ -3,7 +3,7 @@ title: Quanto custa manter um site: preços e o que inclui
 slug: quanto-custa-manter-um-site
 date: 2026-11-10
 category: Negócios
-cover: cyan
+cover: rust
 excerpt: Quanto custa manter um site? Na Bumavit, R$ 199 por mês, até 4 horas de trabalho e permanência mínima de 6 meses. O que inclui e quando vale contratar.
 keyword: quanto custa manter um site
 ---

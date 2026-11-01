@@ -3,7 +3,7 @@ title: Vale a pena criar um site grátis para empresa?
 slug: vale-a-pena-site-gratis-para-empresa
 date: 2026-11-12
 category: Negócios
-cover: rust
+cover: cyan
 excerpt: Site grátis para empresa vale a pena em um caso. Veja o que ele entrega, o que cobra por baixo dos panos e quando passa a sair caro.
 keyword: vale a pena criar site grátis para empresa
 ---

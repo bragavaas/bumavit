@@ -3,7 +3,7 @@ title: Site institucional ou landing page: qual você precisa
 slug: site-institucional-ou-landing-page
 date: 2026-11-06
 category: Negócios
-cover: rust
+cover: cyan
 excerpt: Site institucional e landing page parecem iguais, mas servem para objetivos diferentes. Entender a diferença antes de contratar poupa tempo e dinheiro.
 keyword: diferença entre site institucional e landing page
 ---

@@ -1,0 +1,41 @@
+# Bumavit
+
+> Software house brasileira, no Rio de Janeiro, que cria sites, lojas virtuais e aplicativos sob medida, programados do zero. Quem escreve o código é quem atende. Faixa de preço antes da conversa, estimador público e manutenção contínua depois do lançamento.
+
+## Páginas principais
+
+- [Início](https://bumavit.com.br/): serviços, projetos e contato.
+- [Criação de sites no Rio de Janeiro](https://bumavit.com.br/criacao-de-sites-rj/): sites institucionais, landing pages e e-commerce para empresas do Rio.
+- [Manutenção de sites](https://bumavit.com.br/manutencao-de-sites/): plano mensal com atualização de conteúdo, backup, segurança e correções; vale para sites feitos por outras empresas.
+- [Estimador de orçamento](https://bumavit.com.br/estimador.html): monte o projeto e receba uma faixa de orçamento e prazo na hora.
+- [Sobre o estúdio](https://bumavit.com.br/sobre.html)
+- Projetos: [COCBAN](https://bumavit.com.br/projetos/cocban.html), [Yacht Day](https://bumavit.com.br/projetos/yacht-day.html), [Fintech SaaS](https://bumavit.com.br/projetos/fintech.html), [E-commerce de moda](https://bumavit.com.br/projetos/ecommerce.html)
+- [Política de privacidade](https://bumavit.com.br/privacidade.html)
+
+## Blog
+
+Artigos sobre contratar, orçar e manter um site, escritos por quem programa. Índice em https://bumavit.com.br/blog/ e feed em https://bumavit.com.br/blog/feed.xml.
+
+- [Quanto custa um site institucional em 2026?](https://bumavit.com.br/blog/quanto-custa-um-site-institucional/)
+- [Quanto custa criar uma loja virtual profissional? Guia 2026](https://bumavit.com.br/blog/quanto-custa-criar-uma-loja-virtual-profissional/)
+- [Quanto custa criar um site no Rio de Janeiro? Faixas 2026](https://bumavit.com.br/blog/quanto-custa-criar-um-site-no-rio-de-janeiro/)
+- [Checklist para contratar o desenvolvimento do seu site](https://bumavit.com.br/blog/checklist-para-contratar-desenvolvimento-de-site/)
+- [Como escolher uma agência de criação de sites: 7 critérios](https://bumavit.com.br/blog/como-escolher-uma-agencia-de-criacao-de-sites/)
+- [Antes de contratar uma agência de sites: 12 perguntas](https://bumavit.com.br/blog/perguntas-antes-de-contratar-agencia-de-sites/)
+- [Como avaliar uma proposta de criação de site](https://bumavit.com.br/blog/como-avaliar-proposta-de-criacao-de-site/)
+- [Agência ou freelancer para criar seu site? Como decidir](https://bumavit.com.br/blog/agencia-ou-freelancer-para-criar-site/)
+- [Vale a pena contratar uma agência de e-commerce?](https://bumavit.com.br/blog/vale-a-pena-contratar-agencia-de-ecommerce/)
+- [Meu site não gera clientes: como descobrir o motivo](https://bumavit.com.br/blog/meu-site-nao-gera-clientes/)
+- [Preciso de site se já tenho Instagram? A resposta honesta](https://bumavit.com.br/blog/preciso-de-site-se-ja-tenho-instagram/)
+- [Site lento perde vendas: quanto isso custa por mês](https://bumavit.com.br/blog/site-lento-perde-vendas/)
+- [Core Web Vitals: por que a velocidade do seu site é dinheiro](https://bumavit.com.br/blog/core-web-vitals/)
+- [SEO local: apareça para quem está perto de comprar](https://bumavit.com.br/blog/seo-local/)
+- [Geração de leads com orçamento limitado: o que priorizar](https://bumavit.com.br/blog/leads-com-orcamento-limitado/)
+- [Site para clínica odontológica: o que ele precisa ter](https://bumavit.com.br/blog/site-para-clinica-odontologica/)
+- [Site para escritório de contabilidade: por onde começar](https://bumavit.com.br/blog/site-para-escritorio-de-contabilidade/)
+
+## Contato
+
+- WhatsApp e formulário na página inicial: https://bumavit.com.br/#contato
+- Instagram: https://www.instagram.com/bumavit/
+- LinkedIn: https://br.linkedin.com/company/bumavit

@@ -69,3 +69,13 @@ jobs:
           git push origin "$BRANCH"
 
           gh pr create --base main --head "$BRANCH" --title "chore: rebuild blog HTML [skip ci]" --body "Saida de scripts/build-blog.mjs gerada pelo run #${GITHUB_RUN_ID}."
+
+          # Mescla o proprio PR na sequencia. A regra da main exige so que a
+          # mudanca passe por pull request (zero aprovacoes, nenhum check
+          # obrigatorio), e e isso que o bot faz. Assim um artigo com data de
+          # hoje entra no ar no run das 12:00 UTC sem esperar ninguem mesclar
+          # (02/11/2026: os Posts do Google agendados para as 11h de Brasilia
+          # apontam para artigos que so existem depois deste merge). Se a
+          # regra mudar e o merge for recusado, o PR fica aberto como antes.
+          gh pr merge "$BRANCH" --merge --delete-branch \
+            || echo "Merge automatico recusado; o PR $BRANCH fica aberto para merge manual."

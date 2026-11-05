@@ -4,12 +4,14 @@ on:
   pull_request:
     paths:
       - 'blog/**'
+    # Os PRs chore/rebuild-blog-* sao abertos pelo Build Blog e trazem HTML
+    # gerado de proposito. Com o filtro no evento, nenhum run nasce para eles
+    # (o `if` no job deixava um run vermelho sem job em cada PR do bot).
+    branches-ignore:
+      - 'chore/rebuild-blog-*'
 
 jobs:
   check:
-    # chore/rebuild-blog-* PRs are opened by the Build Blog action and intentionally
-    # contain generated HTML — skip the check for those branches.
-    if: ${{ !startsWith(github.head_ref, 'chore/rebuild-blog-') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -12,7 +12,7 @@ Você fez as perguntas certas na reunião, escolheu o fornecedor e chegou na hor
 
 Se você ainda está comparando propostas, há uma etapa antes desta: [o que perguntar antes de contratar uma agência de sites](https://bumavit.com.br/blog/perguntas-antes-de-contratar-agencia-de-sites/) cobre as doze perguntas para levar à reunião. Volte aqui quando tiver escolhido.
 
-A divisão é em três fases: antes de assinar, antes de aprovar o layout e antes de colocar o site no ar. São menos de 30 itens. Se parecer muito, comece pela Fase 1 — ela é onde os problemas mais caros nascem.
+A divisão é em três fases: antes de assinar, antes de aprovar o layout e antes de colocar o site no ar. São menos de 30 itens. Se parecer muito, comece pela Fase 1: ela é onde os problemas mais caros nascem.
 
 ## Fase 1: antes de assinar
 
@@ -148,7 +148,7 @@ Esses dois arquivos informam ao Google quais páginas indexar e como navegar o s
 
 O endereço do site deve começar com "https://". Teste digitando "http://" (sem o s) no navegador. O site deve redirecionar automaticamente para a versão segura.
 
-Se não redirecionar, o Google trata as duas versões como sites diferentes — e divide o ranqueamento entre elas.
+Se não redirecionar, o Google trata as duas versões como sites diferentes. E divide o ranqueamento entre elas.
 
 ### Analytics e Search Console nas suas contas
 
@@ -186,4 +186,4 @@ Para os itens de propriedade, uma conversa direta funciona na maioria dos casos.
 
 Se quiser um ponto de partida antes de entrar em contato com qualquer fornecedor, o estimador da Bumavit devolve uma faixa de preço e de prazo a partir de três respostas: [monte o projeto](https://bumavit.com.br/estimador.html).
 
-Para lojas virtuais, o checklist se aplica com os mesmos critérios — com alguns itens adicionais no escopo, como o fluxo de checkout e as integrações de pagamento. Veja [como são nossos projetos de e-commerce](https://bumavit.com.br/projetos/ecommerce.html).
+Para lojas virtuais, o checklist se aplica com os mesmos critérios, com alguns itens adicionais no escopo, como o fluxo de checkout e as integrações de pagamento. Veja [como são nossos projetos de e-commerce](https://bumavit.com.br/projetos/ecommerce.html).

@@ -8,7 +8,7 @@ excerpt: Plataforma pronta ou agência? Veja quando cada opção faz sentido e o
 keyword: vale a pena contratar agência de e-commerce
 ---
 
-Você decidiu que quer uma loja virtual. A pergunta agora não é "preciso de loja?" — é "quem faz isso para mim, e vale a pena contratar uma agência?"
+Você decidiu que quer uma loja virtual. A pergunta agora não é "preciso de loja?", e sim "quem faz isso para mim, e vale a pena contratar uma agência?"
 
 Existem dois caminhos. O primeiro é usar uma plataforma pronta como Nuvemshop, Shopify ou WooCommerce: você paga uma assinatura, configura os produtos e começa a vender em dias. O segundo é contratar uma agência que constrói a loja sob medida, do design ao checkout.
 
@@ -23,7 +23,7 @@ O que ela não faz: criar seus produtos, gerenciar seu estoque, garantir vendas 
 Um projeto típico inclui:
 
 - Layout desenhado para a sua marca, não um tema escolhido de uma biblioteca
-- Integrações com sistemas que você já usa — ERP, plataforma de logística, emissão de nota fiscal
+- Integrações com sistemas que você já usa: ERP, plataforma de logística, emissão de nota fiscal
 - Configuração de pagamento com as condições que seu cliente espera: cartão, Pix, parcelamento
 - Velocidade de carregamento otimizada desde o início, que afeta diretamente quantas pessoas finalizam a compra
 - Documentação e treinamento para você administrar a loja depois
@@ -44,11 +44,11 @@ Nessas situações, você começa a trabalhar contra a plataforma em vez de com 
 
 Com uma loja construída sob medida, esses requisitos entram no escopo desde o início. A loja é feita para o seu processo, não o contrário.
 
-A diferença de custo existe — e vale entender o que ela compra. Para saber mais sobre o que compõe o preço de uma loja virtual profissional, leia [quanto custa criar uma loja virtual profissional](https://bumavit.com.br/blog/quanto-custa-criar-uma-loja-virtual-profissional/).
+A diferença de custo existe. E vale entender o que ela compra. Para saber mais sobre o que compõe o preço de uma loja virtual profissional, leia [quanto custa criar uma loja virtual profissional](https://bumavit.com.br/blog/quanto-custa-criar-uma-loja-virtual-profissional/).
 
 ## Quando a plataforma pronta resolve
 
-Para muitas empresas, uma plataforma pronta é a resposta certa. Não é a segunda opção — é a escolha correta para aquele momento.
+Para muitas empresas, uma plataforma pronta é a resposta certa. Não é a segunda opção: é a escolha correta para aquele momento.
 
 **A plataforma faz sentido quando:**
 
@@ -62,24 +62,24 @@ Nesses casos, a velocidade de início e o suporte da plataforma são vantagens r
 
 O limite aparece quando a operação cresce e a plataforma começa a criar atrito. Workarounds manuais que consomem horas da equipe toda semana. Integrações que custam mais para manter do que custaria ter construído do jeito certo. Checkout que abandona clientes em etapas que não fazem sentido para o seu produto.
 
-Quando isso acontece, a migração para uma solução sob medida fica mais cara do que teria sido construir assim desde o início. Mas isso não significa que a plataforma foi a escolha errada — significa que chegou a hora de dar o próximo passo.
+Quando isso acontece, a migração para uma solução sob medida fica mais cara do que teria sido construir assim desde o início. Mas isso não significa que a plataforma foi a escolha errada: significa que chegou a hora de dar o próximo passo.
 
 ## Quando contratar uma agência de e-commerce faz sentido
 
-Alguns casos tornam a contratação de uma agência o caminho mais eficiente desde o início — mesmo comparando com o custo inicial maior.
+Alguns casos tornam a contratação de uma agência o caminho mais eficiente desde o início, mesmo comparando com o custo inicial maior.
 
 **Faz sentido contratar uma agência quando:**
 
-- Você precisa que a loja se integre com sistemas que já usa na empresa — estoque, ERP, plataforma de logística, emissão de nota fiscal automática
+- Você precisa que a loja se integre com sistemas que já usa na empresa: estoque, ERP, plataforma de logística, emissão de nota fiscal automática
 - Seu catálogo tem variações complexas: kits personalizados, produtos com medidas sob encomenda, bundles que dependem de disponibilidade em tempo real
-- Você vende para perfis diferentes no mesmo site — atacado e varejo, por exemplo — e precisa de regras de preço separadas sem criar duas lojas
+- Você vende para perfis diferentes no mesmo site (atacado e varejo, por exemplo) e precisa de regras de preço separadas sem criar duas lojas
 - Performance é crítica: no seu segmento, a diferença entre 1,5 segundo e 3 segundos de carregamento afeta diretamente o faturamento, e o tema padrão da plataforma não chega no nível que você precisa
-- Sua marca tem uma identidade visual que um template padrão não consegue expressar — e você sabe que isso importa para o cliente que você quer atrair
+- Sua marca tem uma identidade visual que um template padrão não consegue expressar, e você sabe que isso importa para o cliente que você quer atrair
 - Você já tem uma plataforma pronta e chegou no limite do que ela resolve
 
-Em todos esses casos, tentar adaptar uma plataforma padrão ao que você precisa costuma custar mais — em dinheiro ou em tempo — do que construir a loja certa desde o início.
+Em todos esses casos, tentar adaptar uma plataforma padrão ao que você precisa costuma custar mais, em dinheiro ou em tempo, do que construir a loja certa desde o início.
 
-Uma forma de perceber isso cedo: se você precisa de uma pessoa dedicada a executar manualmente o que a plataforma não automatiza — sincronizar estoque, confirmar pedido a pedido, organizar kits que o sistema não reconhece — esse custo operacional vai crescendo enquanto a loja cresce. Em algum ponto, esse custo mensal supera o que teria custado uma loja construída para o seu processo.
+Uma forma de perceber isso cedo: se você precisa de uma pessoa dedicada a executar manualmente o que a plataforma não automatiza (sincronizar estoque, confirmar pedido a pedido, organizar kits que o sistema não reconhece), esse custo operacional vai crescendo enquanto a loja cresce. Em algum ponto, esse custo mensal supera o que teria custado uma loja construída para o seu processo.
 
 Veja um exemplo de loja virtual sob medida no [portfólio de e-commerce da Bumavit](https://bumavit.com.br/projetos/ecommerce.html).
 
@@ -93,7 +93,7 @@ Quatro perguntas que ajudam a separar a agência certa das outras:
 
 **Quem cuida da loja depois do lançamento?** Se você vai precisar de manutenção, correções ou novas funcionalidades depois de lançar, confirme desde o início se isso está incluso, qual é o custo e qual o prazo de resposta. Uma agência que entrega e some deixa você dependendo de outra empresa para resolver um bug no checkout no meio de uma promoção importante.
 
-**O que está incluído no preço — e o que não está?** Essa pergunta evita a maioria dos conflitos em projetos de desenvolvimento. Peça uma lista fechada do que o projeto entrega: páginas, integrações, revisões incluídas, prazo de correção pós-entrega. Escopo aberto é o principal gerador de cobranças extras não esperadas.
+**O que está incluído no preço, e o que não está?** Essa pergunta evita a maioria dos conflitos em projetos de desenvolvimento. Peça uma lista fechada do que o projeto entrega: páginas, integrações, revisões incluídas, prazo de correção pós-entrega. Escopo aberto é o principal gerador de cobranças extras não esperadas.
 
 **Eu vou conseguir editar a loja sozinho depois?** Dependendo de como a loja é construída, trocar o texto de uma promoção ou atualizar uma foto pode depender da agência ou pode ser feito diretamente pelo painel de administração. Saber isso antes evita surpresas quando você precisar reagir rápido a algo e não tiver acesso para mexer.
 
@@ -103,16 +103,16 @@ Para uma lista mais completa do que avaliar antes de fechar com qualquer fornece
 
 Uma forma de filtrar rápido: observe o que a agência pergunta antes de apresentar qualquer proposta.
 
-Uma agência que propõe preço sem entender o seu negócio está vendendo horas de trabalho, não uma solução. Uma que faz as perguntas certas primeiro está tentando entender se o que você precisa é realmente uma loja sob medida — ou se uma plataforma pronta resolve mais rápido e mais barato.
+Uma agência que propõe preço sem entender o seu negócio está vendendo horas de trabalho, não uma solução. Uma que faz as perguntas certas primeiro está tentando entender se o que você precisa é realmente uma loja sob medida, ou se uma plataforma pronta resolve mais rápido e mais barato.
 
 Perguntas que uma agência séria de e-commerce vai fazer antes de qualquer orçamento:
 
-- Como você vende hoje — canal físico, marketplace, outro site, WhatsApp?
+- Como você vende hoje: canal físico, marketplace, outro site, WhatsApp?
 - Quais sistemas você já usa na empresa que precisam se comunicar com a loja?
 - Seu catálogo tem variações, personalizações ou regras de preço que dependem do perfil do comprador?
 - Você já tentou uma plataforma pronta e chegou em algum limite?
 
-Se a agência ouvir a sua resposta e recomendar que você comece pelo Nuvemshop ou Shopify — isso é um bom sinal, não o contrário. Significa que ela está respondendo ao seu problema, não ao tamanho do contrato.
+Se a agência ouvir a sua resposta e recomendar que você comece pelo Nuvemshop ou Shopify, isso é um bom sinal, não o contrário. Significa que ela está respondendo ao seu problema, não ao tamanho do contrato.
 
 ## Antes de pedir orçamento
 

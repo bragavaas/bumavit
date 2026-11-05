@@ -24,7 +24,7 @@ Quatro razões honestas:
 
 **2. O que está incluso versus o que é cobrado depois.** Uma proposta barata pode não incluir hospedagem, não incluir SEO técnico, cobrar por cada rodada de revisão acima de duas, e não cobrir suporte depois do lançamento. Uma proposta mais cara pode incluir tudo isso. O preço que você vê na proposta raramente é o preço total.
 
-**3. Quem faz o trabalho.** Uma agência estruturada que toca o projeto internamente tem custo diferente de um freelancer que terceiriza o design, ou de uma revendedora de template que entrega um modelo pronto com o logo e as cores trocados. As três podem ser legítimas — mas a entrega e o que acontece depois são muito diferentes.
+**3. Quem faz o trabalho.** Uma agência estruturada que toca o projeto internamente tem custo diferente de um freelancer que terceiriza o design, ou de uma revendedora de template que entrega um modelo pronto com o logo e as cores trocados. As três podem ser legítimas, mas a entrega e o que acontece depois são muito diferentes.
 
 **4. O que acontece depois da entrega.** Algumas propostas terminam no lançamento. Outras incluem período de suporte, atualizações de segurança, alterações de conteúdo. A diferença costuma aparecer nos detalhes do contrato, não no título da proposta.
 
@@ -32,15 +32,15 @@ Para entender melhor a diferença entre tipos de fornecedor antes de comparar pr
 
 ## A grade de comparação
 
-Preencha uma coluna para cada proposta que você recebeu. As respostas que faltarem — ou que ninguém soube dar — são tão reveladoras quanto as que você obtiver.
+Preencha uma coluna para cada proposta que você recebeu. As respostas que faltarem, ou que ninguém soube dar, são tão reveladoras quanto as que você obtiver.
 
 ### Escopo e entrega
 
-**Número de páginas incluídas — e o custo de cada página a mais**
+**Número de páginas incluídas, e o custo de cada página a mais**
 O que diz a proposta? Se ela diz "até X páginas", pergunte explicitamente quanto custa a página X+1.
 
 **Design sob medida ou adaptação de template?**
-Template não é problema — mas o preço e a diferenciação visual são muito diferentes. Se for template, de qual plataforma e o que acontece quando a licença vencer?
+Template não é problema, mas o preço e a diferenciação visual são muito diferentes. Se for template, de qual plataforma e o que acontece quando a licença vencer?
 
 **Quem escreve os textos?**
 Você, a agência, ou você escreve e eles ajustam? Se você escrever e atrasar, o que acontece com o prazo?
@@ -51,12 +51,12 @@ Banco de imagens pago pelo fornecedor, banco gratuito, ou fotos suas? Isso apare
 **Quantas rodadas de revisão estão incluídas?**
 Um número. O que conta como uma rodada. Quanto custa uma extra.
 
-**Qual é o prazo — e com quais marcos intermediários?**
+**Qual é o prazo, e com quais marcos intermediários?**
 Uma data de entrega sem etapas é a preparação para um atraso em que a culpa vai ser sua.
 
 ### Tecnologia e propriedade
 
-**Em que o site será construído — e por que essa escolha para o seu caso?**
+**Em que o site será construído, e por que essa escolha para o seu caso?**
 A justificativa deve falar do seu negócio, não da preferência do fornecedor. Veja [como avaliar essa resposta](https://bumavit.com.br/blog/como-escolher-uma-agencia-de-criacao-de-sites/).
 
 **Hospedagem: inclusa? Por quanto tempo? A conta fica em nome de quem?**
@@ -69,7 +69,7 @@ O endereço da sua empresa na internet não deve pertencer a um terceiro. Ponto.
 Se o site roda em plataforma com custo mensal, o que você leva se decidir sair?
 
 **SEO técnico: incluso ou "opcional"?**
-SEO técnico básico — títulos próprios, sitemap, dados estruturados — deveria estar em qualquer projeto. Se aparece como add-on, pergunte o que está incluso por padrão.
+SEO técnico básico (títulos próprios, sitemap, dados estruturados) deveria estar em qualquer projeto. Se aparece como add-on, pergunte o que está incluso por padrão.
 
 ### Suporte e manutenção
 
@@ -104,7 +104,7 @@ E a página X+1 custa quanto? O projeto quase sempre cresce entre o briefing e o
 
 ### "Revisões conforme necessidade"
 
-Sem número escrito significa sem limite escrito — que na prática vira limite não escrito. Pergunte: o que conta como uma rodada? Alterar um parágrafo é a mesma rodada que reformular toda a página inicial?
+Sem número escrito significa sem limite escrito, que na prática vira limite não escrito. Pergunte: o que conta como uma rodada? Alterar um parágrafo é a mesma rodada que reformular toda a página inicial?
 
 ### "Hospedagem grátis no primeiro ano"
 
@@ -124,11 +124,11 @@ Preencha essa fórmula para cada proposta com os números que você obtiver. A p
 
 A proposta mais barata pode ser a escolha correta em três situações:
 
-Quando o escopo é simples e bem definido — uma landing page com formulário, um site de uma página para um negócio local, um projeto de prazo curto com objetivo único.
+Quando o escopo é simples e bem definido: uma landing page com formulário, um site de uma página para um negócio local, um projeto de prazo curto com objetivo único.
 
 Quando o briefing está completo e não vai crescer no meio do projeto.
 
-Quando você tem quem cuide do suporte depois — desenvolvedor interno, parceiro técnico ou alguém de confiança para os ajustes.
+Quando você tem quem cuide do suporte depois: desenvolvedor interno, parceiro técnico ou alguém de confiança para os ajustes.
 
 Fora dessas situações, o que parece mais barato hoje costuma custar mais caro em seis meses.
 
@@ -142,7 +142,7 @@ Independentemente do preço, alguns sinais pedem atenção antes de assinar:
 - **Pagamento integral adiantado.** Combinação incomum: o risco fica todo do seu lado.
 - **Nenhuma menção ao que acontece depois do lançamento.** O projeto não termina quando o site entra no ar.
 
-Esses sinais não significam necessariamente má-fé — às vezes é descuido ou processo informal. Mas são os pontos a esclarecer por escrito antes de qualquer assinatura.
+Esses sinais não significam necessariamente má-fé: às vezes é descuido ou processo informal. Mas são os pontos a esclarecer por escrito antes de qualquer assinatura.
 
 ## O que perguntar de volta
 
@@ -150,14 +150,14 @@ Depois de preencher a grade, você vai ter identificado três ou quatro pontos q
 
 *"Obrigado pela proposta. Antes de decidir, tenho algumas perguntas sobre o escopo:*
 
-*1. [Preencha com o primeiro ponto que ficou em aberto — ex.: 'A proposta menciona hospedagem inclusa, mas não especifica o prazo. Quanto tempo está incluso e qual o valor mensal a partir daí?']*
+*1. [Preencha com o primeiro ponto que ficou em aberto, ex.: 'A proposta menciona hospedagem inclusa, mas não especifica o prazo. Quanto tempo está incluso e qual o valor mensal a partir daí?']*
 
-*2. [Segundo ponto — ex.: 'Qual o custo de uma página adicional acima das cinco incluídas?']*
+*2. [Segundo ponto, ex.: 'Qual o custo de uma página adicional acima das cinco incluídas?']*
 
-*3. [Terceiro ponto — ex.: 'O código do site será entregue a mim ao final do projeto?']*
+*3. [Terceiro ponto, ex.: 'O código do site será entregue a mim ao final do projeto?']*
 
 *Posso enviar as perguntas para a mesma pessoa que fez a proposta?"*
 
-Uma agência séria responde essas perguntas sem pressão. A forma como responde — e em quanto tempo — já faz parte da avaliação.
+Uma agência séria responde essas perguntas sem pressão. A forma como responde, e em quanto tempo, já faz parte da avaliação.
 
 Se quiser um ponto de partida antes de entrar nessa negociação, o estimador da Bumavit devolve uma faixa de preço de referência a partir de três perguntas sobre o seu projeto: [monte sua estimativa](https://bumavit.com.br/estimador.html).

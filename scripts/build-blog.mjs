@@ -241,6 +241,16 @@ const posts = readdirSync(join(root, 'posts'))
   /* `draft: true` deixa o texto no repositorio sem publicar: o post nao vira
      HTML, nao entra na listagem, no RSS nem no sitemap. Tirar a linha publica. */
   .filter((p) => String(p.draft).toLowerCase() !== 'true')
+  /* Travessao (U+2014) e meia-risca (U+2013) nao entram em texto da Bumavit
+     (decisao do fundador, 01/11/2026; artigos corrigidos em 05/11/2026). A
+     checagem roda antes do filtro de data, para o erro aparecer no build do
+     merge e nao no dia da publicacao. Drafts ficam de fora, como no resto. */
+  .map((p) => {
+    if (/[\u2013\u2014]/.test(`${p.title} ${p.excerpt} ${p.html}`)) {
+      throw new Error(`posts/${p.slug}: travessao (—) ou meia-risca (–) no texto; use virgula, dois-pontos ou ponto (posts/README.md, "Sem travessao")`);
+    }
+    return p;
+  })
   /* Post com `date` futura tambem fica fora do build: a fonte pode ser
      mergeada antes da data (fluxo dos PRs "[PUBLICAR dd/mm]") sem publicar
      cedo. O workflow build-blog.yml roda diariamente e publica quando chega. */

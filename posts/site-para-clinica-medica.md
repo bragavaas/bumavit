@@ -5,11 +5,11 @@ date: 2026-10-30
 draft: true
 category: Negócios
 cover: rust
-excerpt: Um site para clínica médica tem requisitos que um site genérico não cobre — desde as normas do CFM até agendamento e SEO por especialidade. O que é obrigatório, o que é recomendado e quanto custa.
+excerpt: Um site para clínica médica tem requisitos que um site genérico não cobre: desde as normas do CFM até agendamento e SEO por especialidade. O que é obrigatório, o que é recomendado e quanto custa.
 keyword: site para clínica médica
 ---
 
-Você pode contratar qualquer desenvolvedor para criar um site. Mas um site para clínica médica ou consultório tem requisitos que um site genérico não contempla — e ignorá-los cria problemas que aparecem depois do lançamento.
+Você pode contratar qualquer desenvolvedor para criar um site. Mas um site para clínica médica ou consultório tem requisitos que um site genérico não contempla. E ignorá-los cria problemas que aparecem depois do lançamento.
 
 As diferenças não são estéticas. Estão nas obrigações regulatórias do CFM, nas exigências da LGPD para dados de saúde, no tipo de busca que o paciente faz antes de marcar uma consulta e no papel que o agendamento online desempenha na taxa de conversão de visitante em paciente.
 
@@ -19,7 +19,7 @@ O que precisa estar em um site para clínica médica, o que a regulação proíb
 
 ### Identificação do médico e registro profissional
 
-O Código de Ética Médica exige que qualquer comunicação médica identifique o profissional com nome, especialidade e número de registro no CRM. Um site sem esses dados não apenas perde credibilidade — está em desacordo com as normas do conselho.
+O Código de Ética Médica exige que qualquer comunicação médica identifique o profissional com nome, especialidade e número de registro no CRM. Um site sem esses dados não apenas perde credibilidade: está em desacordo com as normas do conselho.
 
 Para clínicas com múltiplos médicos, cada profissional precisa de uma página própria com currículo, formação, especializações, filiações hospitalares e registro profissional. Essa informação cumpre um papel regulatório, mas também é o que o paciente quer ver antes de decidir por uma consulta.
 
@@ -27,15 +27,15 @@ Para clínicas com múltiplos médicos, cada profissional precisa de uma página
 
 O paciente não busca "clínica médica" de forma genérica. Ele busca por especialidade: cardiologista, endocrinologista, dermatologista. E, muitas vezes, filtra pelo convênio que tem.
 
-Um site que não apresenta claramente as especialidades atendidas e os planos de saúde aceitos perde parte da busca orgânica e cria atrito desnecessário — o paciente telefonará antes de marcar a consulta só para confirmar se o plano é aceito, ou simplesmente procurará outra clínica.
+Um site que não apresenta claramente as especialidades atendidas e os planos de saúde aceitos perde parte da busca orgânica e cria atrito desnecessário: o paciente telefonará antes de marcar a consulta só para confirmar se o plano é aceito, ou simplesmente procurará outra clínica.
 
 ### Localização e referências de acesso
 
-Endereço completo com bairro, complemento, referência de localização e embed do mapa. Clínicas e consultórios dependem do tráfego local. Um paciente que não consegue confirmar rapidamente onde a clínica fica — com transporte público, estacionamento, referência de rua — converte menos.
+Endereço completo com bairro, complemento, referência de localização e embed do mapa. Clínicas e consultórios dependem do tráfego local. Um paciente que não consegue confirmar rapidamente onde a clínica fica (com transporte público, estacionamento, referência de rua) converte menos.
 
 ### Política de privacidade e LGPD
 
-Dados de saúde são dados sensíveis sob a Lei Geral de Proteção de Dados (LGPD). Qualquer site que colete informações de pacientes — mesmo um formulário de agendamento simples — precisa de política de privacidade adequada e consentimento explícito para uso de dados.
+Dados de saúde são dados sensíveis sob a Lei Geral de Proteção de Dados (LGPD). Qualquer site que colete informações de pacientes, mesmo um formulário de agendamento simples, precisa de política de privacidade adequada e consentimento explícito para uso de dados.
 
 Isso não é apenas burocracia: um site de saúde sem política de privacidade clara sinaliza descuido para o paciente e gera risco legal para a clínica.
 
@@ -45,11 +45,11 @@ O CFM regula a publicidade médica com restrições que não existem para outros
 
 **O que é permitido:**
 
-Apresentar o currículo completo do médico — formação, especializações, residências, filiações a sociedades médicas, publicações, prêmios acadêmicos. Informar os serviços e procedimentos realizados. Publicar conteúdo educativo sobre saúde, desde que sem indicação diagnóstica ao leitor.
+Apresentar o currículo completo do médico: formação, especializações, residências, filiações a sociedades médicas, publicações, prêmios acadêmicos. Informar os serviços e procedimentos realizados. Publicar conteúdo educativo sobre saúde, desde que sem indicação diagnóstica ao leitor.
 
 **O que é proibido:**
 
-Comparar resultados entre médicos ou entre clínicas. Usar depoimentos de pacientes com indicação de cura ou resultado específico. Publicar fotos de antes e depois em especialidades como cirurgia plástica e dermatologia estética — a proibição se aplica ao site, às redes sociais e a qualquer comunicação da clínica.
+Comparar resultados entre médicos ou entre clínicas. Usar depoimentos de pacientes com indicação de cura ou resultado específico. Publicar fotos de antes e depois em especialidades como cirurgia plástica e dermatologia estética: a proibição se aplica ao site, às redes sociais e a qualquer comunicação da clínica.
 
 Garantir resultado de tratamento ou procedimento. Usar linguagem que crie expectativa de cura, eliminação de doença ou resultado específico.
 
@@ -65,19 +65,19 @@ Cada especialidade atendida merece uma página própria com conteúdo específic
 
 ### SEO local por bairro e cidade
 
-Clínicas atendem um raio geográfico definido. O SEO local — nome da cidade, bairro, região — precisa estar nas páginas de especialidade, nos metadados e no Google Meu Negócio. Uma clínica no Rio de Janeiro que não menciona a cidade e os bairros de referência nas páginas do site perde visibilidade para quem busca por localização.
+Clínicas atendem um raio geográfico definido. O SEO local (nome da cidade, bairro, região) precisa estar nas páginas de especialidade, nos metadados e no Google Meu Negócio. Uma clínica no Rio de Janeiro que não menciona a cidade e os bairros de referência nas páginas do site perde visibilidade para quem busca por localização.
 
 O Google Meu Negócio (GBP) precisa estar configurado com as categorias corretas, as especialidades listadas e horários atualizados. O site e o perfil no Google trabalham juntos; um sem o outro limita o resultado.
 
 ### Conteúdo educativo como ferramenta de busca
 
-Posts sobre sintomas, condições e tratamentos atraem pacientes nas fases iniciais de pesquisa. Um artigo sobre "sinais de hipertensão" atrai leitores que podem ainda não ter médico de cabeceira. O conteúdo não é publicidade — é informação que posiciona o médico como referência e gera visitas que, com o tempo, convertem em consultas.
+Posts sobre sintomas, condições e tratamentos atraem pacientes nas fases iniciais de pesquisa. Um artigo sobre "sinais de hipertensão" atrai leitores que podem ainda não ter médico de cabeceira. O conteúdo não é publicidade: é informação que posiciona o médico como referência e gera visitas que, com o tempo, convertem em consultas.
 
 Esse formato funciona bem para clínicas. Para consultórios especializados em um único procedimento, o blog pode não compensar o custo inicial. Para clínicas generalistas ou com múltiplas especialidades, o conteúdo educativo é um dos canais mais eficientes de captação.
 
 ## Agendamento online: quando incluir e como funciona
 
-O agendamento online é hoje uma expectativa de uma parcela crescente dos pacientes — especialmente os mais jovens. Um site que não oferece forma de agendar sem telefonar cria atrito.
+O agendamento online é hoje uma expectativa de uma parcela crescente dos pacientes, especialmente os mais jovens. Um site que não oferece forma de agendar sem telefonar cria atrito.
 
 As opções variam em custo e complexidade:
 
@@ -100,11 +100,11 @@ Na Bumavit:
 
 O pagamento é em 2 vezes: metade no início do projeto e metade um mês depois.
 
-Esses valores não incluem domínio, hospedagem, textos médicos, fotos da equipe ou manutenção após a entrega — itens que ficam com a clínica em qualquer projeto.
+Esses valores não incluem domínio, hospedagem, textos médicos, fotos da equipe ou manutenção após a entrega: itens que ficam com a clínica em qualquer projeto.
 
-Para ter a estimativa do seu caso — com o número exato de páginas e as funcionalidades que fazem sentido para a sua clínica — o [estimador de projetos da Bumavit](https://bumavit.com.br/estimador.html) devolve uma faixa em menos de dois minutos.
+Para ter a estimativa do seu caso, com o número exato de páginas e as funcionalidades que fazem sentido para a sua clínica, o [estimador de projetos da Bumavit](https://bumavit.com.br/estimador.html) devolve uma faixa em menos de dois minutos.
 
-## O que o site de uma clínica odontológica tem em comum — e o que muda
+## O que o site de uma clínica odontológica tem em comum, e o que muda
 
 Muitas das exigências são equivalentes entre clínicas médicas e odontológicas: identificação do profissional com registro no conselho, proibição de depoimentos com promessa de resultado, SEO local por especialidade.
 
@@ -114,6 +114,6 @@ O que muda são os conselhos reguladores (CFO no caso da odontologia), algumas d
 
 Se a clínica ainda não tem site ou o site atual não aparece nas buscas, o primeiro passo concreto é mapear o escopo: quantas especialidades precisam de página própria, se o agendamento precisa ser integrado e qual nível de integração faz sentido para o volume de consultas.
 
-O [estimador da Bumavit](https://bumavit.com.br/estimador.html) devolve uma faixa de preço a partir dessas três variáveis. Se o projeto inclui sistema de gestão clínica com integração própria, leve essa informação para o primeiro contato — é o ponto que mais muda o escopo.
+O [estimador da Bumavit](https://bumavit.com.br/estimador.html) devolve uma faixa de preço a partir dessas três variáveis. Se o projeto inclui sistema de gestão clínica com integração própria, leve essa informação para o primeiro contato: é o ponto que mais muda o escopo.
 
 Para quem já tem site mas não está convertendo visitantes em consultas, o post sobre [por que o site não gera clientes](https://bumavit.com.br/blog/meu-site-nao-gera-clientes/) cobre os motivos mais comuns e o que pode ser ajustado antes de uma reformulação completa.

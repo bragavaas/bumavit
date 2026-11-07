@@ -4,7 +4,7 @@ slug: como-escolher-uma-agencia-de-criacao-de-sites
 date: 2026-09-17
 category: Negócios
 cover: rust
-excerpt: Sete critérios — e como checar cada um sem depender do que a agência promete.
+excerpt: Sete critérios, e como checar cada um sem depender do que a agência promete.
 keyword: como escolher uma agência de criação de sites
 ---
 
@@ -12,7 +12,7 @@ Você pesquisou, pediu indicação e marcou três reuniões. Agora tem três pro
 
 Não dá para distinguir uma da outra só lendo as propostas.
 
-O problema não é a falta de informação. É que os critérios que as agências ensinam a usar — portfólio, experiência, atendimento — cada uma afirma ter todos eles. Um critério que qualquer agência passa não elimina ninguém.
+O problema não é a falta de informação. É que os critérios que as agências ensinam a usar (portfólio, experiência, atendimento), cada uma afirma ter todos eles. Um critério que qualquer agência passa não elimina ninguém.
 
 A única pergunta que vale fazer quando está na hora de escolher uma agência de criação de sites: **esse critério, quando aplicado, vai me ajudar a eliminar alguém?**
 
@@ -24,7 +24,7 @@ A Bumavit também constrói sites. Se preferir, leia com esse filtro ligado.
 
 ## Como usar esta lista
 
-Aplique cada critério a todas as agências que você está considerando. Tome nota — não confie na memória depois de três reuniões na mesma semana.
+Aplique cada critério a todas as agências que você está considerando. Tome nota: não confie na memória depois de três reuniões na mesma semana.
 
 O objetivo não é encontrar a agência que passou em tudo. É eliminar as que falharam nos pontos que você não consegue compensar depois: propriedade do site, velocidade de entrega, clareza de escopo. Os outros você negocia. Esses não.
 
@@ -38,9 +38,9 @@ Uma agência que quer vender vai te mostrar o pacote logo na introdução.
 
 **Como verificar:** na primeira ligação ou reunião, anote quantas perguntas sobre o seu negócio cada agência fez antes de começar a falar de preço ou de tecnologia. Duas a zero já é uma diferença relevante.
 
-**Sinal de alerta:** "aqui está nosso portfólio de pacotes" como primeira resposta à sua descrição do projeto. Pacotes não são ruins — o sinal de alerta é quando eles aparecem antes de qualquer pergunta sobre o que você precisa.
+**Sinal de alerta:** "aqui está nosso portfólio de pacotes" como primeira resposta à sua descrição do projeto. Pacotes não são ruins: o sinal de alerta é quando eles aparecem antes de qualquer pergunta sobre o que você precisa.
 
-Se você ainda não tem uma lista de perguntas para levar, [este guia cobre os doze pontos que mais revelam sobre uma agência](https://bumavit.com.br/blog/perguntas-antes-de-contratar-agencia-de-sites/) — desde escopo até propriedade do código.
+Se você ainda não tem uma lista de perguntas para levar, [este guia cobre os doze pontos que mais revelam sobre uma agência](https://bumavit.com.br/blog/perguntas-antes-de-contratar-agencia-de-sites/), desde escopo até propriedade do código.
 
 ## 2. O portfólio é real e ainda está no ar
 
@@ -52,7 +52,7 @@ A pergunta certa não é "o site ficou bonito?". É: o site ainda está no ar, a
 
 Links mortos no portfólio são o sinal mais honesto que existe sobre o ciclo de vida de um projeto depois do lançamento.
 
-**Sinal de alerta:** mais de um link quebrado em cinco. Ou portfólio só com capturas de tela — screenshots não envelhecem, sites envelhecem.
+**Sinal de alerta:** mais de um link quebrado em cinco. Ou portfólio só com capturas de tela: screenshots não envelhecem, sites envelhecem.
 
 Você pode comparar com um projeto real: o [portal que a Bumavit construiu para a Cocban](https://bumavit.com.br/projetos/cocban.html) está no ar e em produção.
 
@@ -60,9 +60,9 @@ Você pode comparar com um projeto real: o [portal que a Bumavit construiu para 
 
 Este é o critério que mais agências falham e nenhuma divulga voluntariamente.
 
-Um site lento perde visitantes antes de carregá-los, baixa no Google e piora a experiência de quem chega pelo anúncio. Velocidade não é detalhe técnico — é o resultado que o cliente paga para ter. E a maior parte das ferramentas que as agências mais usam, quando mal configurada, produz sites pesados por padrão.
+Um site lento perde visitantes antes de carregá-los, baixa no Google e piora a experiência de quem chega pelo anúncio. Velocidade não é detalhe técnico: é o resultado que o cliente paga para ter. E a maior parte das ferramentas que as agências mais usam, quando mal configurada, produz sites pesados por padrão.
 
-**Como verificar:** abra três sites do portfólio no seu celular, em 4G, fora do Wi-Fi de casa. Conte quantos segundos até a página aparecer útil — não o spinner, a página. Ou acesse [PageSpeed Insights](https://pagespeed.web.dev/) e cole o endereço. A nota que aparece para "Celular" é uma medição de laboratório. O que o Google usa no ranqueamento são as notas de velocidade medidas em visitantes reais, mas um site que vai mal no laboratório raramente vai bem na rua.
+**Como verificar:** abra três sites do portfólio no seu celular, em 4G, fora do Wi-Fi de casa. Conte quantos segundos até a página aparecer útil: não o spinner, a página. Ou acesse [PageSpeed Insights](https://pagespeed.web.dev/) e cole o endereço. A nota que aparece para "Celular" é uma medição de laboratório. O que o Google usa no ranqueamento são as notas de velocidade medidas em visitantes reais, mas um site que vai mal no laboratório raramente vai bem na rua.
 
 Na escala que o próprio PageSpeed mostra, de 90 a 100 é bom, de 50 a 89 precisa melhorar e abaixo de 50 é ruim. Abaixo de 50 em três dos cinco sites é um padrão, não uma exceção.
 
@@ -74,7 +74,7 @@ Se quiser entender o que está sendo medido, [este post explica as notas de velo
 
 A resposta para "em que vocês vão construir o site?" diz mais sobre o processo de trabalho da agência do que qualquer outra pergunta técnica.
 
-Uma boa resposta conecta a escolha de tecnologia ao seu caso específico: quem vai editar o site, com que frequência, o que precisa ser integrado, se o projeto vai crescer. Pode ser uma plataforma conhecida, pode ser código sob medida — o que importa é que a justificativa seja sobre você, não sobre a agência.
+Uma boa resposta conecta a escolha de tecnologia ao seu caso específico: quem vai editar o site, com que frequência, o que precisa ser integrado, se o projeto vai crescer. Pode ser uma plataforma conhecida, pode ser código sob medida: o que importa é que a justificativa seja sobre você, não sobre a agência.
 
 Uma resposta ruim é uma lista de logos de ferramentas.
 
@@ -98,11 +98,11 @@ Para saber o que esperar de um contrato bem feito, o [checklist para contratar o
 
 O site vai para o ar. Três semanas depois, o botão de contato para de funcionar. Ou alguém quer trocar uma foto. Ou aparece uma mensagem de "site inseguro" no navegador.
 
-O que acontece nesse momento depende de quem você contratou — e a resposta a essa pergunta precisa estar combinada antes, não depois.
+O que acontece nesse momento depende de quem você contratou, e a resposta a essa pergunta precisa estar combinada antes, não depois.
 
 **Como verificar:** pergunte diretamente: o que acontece no dia 31 depois do lançamento? Quem cuida de manutenção, em que canal, com que prazo de resposta e por qual valor mensal?
 
-Uma boa resposta tem números em pelo menos dois desses pontos. Pode ser uma oferta de manutenção com escopo definido, pode ser uma política clara de "não fazemos manutenção, você precisa de um desenvolvedor próprio" — ambas são honestas. O problema é a ausência de resposta.
+Uma boa resposta tem números em pelo menos dois desses pontos. Pode ser uma oferta de manutenção com escopo definido, pode ser uma política clara de "não fazemos manutenção, você precisa de um desenvolvedor próprio": ambas são honestas. O problema é a ausência de resposta.
 
 **Sinal de alerta:** "pode chamar a qualquer hora" sem nada formalizado. Funciona durante a lua de mel do projeto. Não é o que você vai ter quando precisar de verdade.
 
@@ -110,7 +110,7 @@ Uma boa resposta tem números em pelo menos dois desses pontos. Pode ser uma ofe
 
 Este não é um critério técnico. É um teste de comunicação.
 
-Depois de ler a proposta, você consegue explicar para um sócio ou familiar o que vai ser feito, em quanto tempo, com o que incluso e por qual valor — sem ter que ler em voz alta o documento?
+Depois de ler a proposta, você consegue explicar para um sócio ou familiar o que vai ser feito, em quanto tempo, com o que incluso e por qual valor, sem ter que ler em voz alta o documento?
 
 Se não consegue, esse é um problema da proposta, não seu. Proposta que você não consegue explicar é proposta que você não consegue defender internamente, comparar com as outras nem apontar como base para cobranças depois.
 
@@ -120,7 +120,7 @@ Se não consegue, esse é um problema da proposta, não seu. Proposta que você 
 
 ## Uma palavra sobre preço
 
-A proposta mais barata e a mais cara costumam estar ambas erradas — e por razões diferentes.
+A proposta mais barata e a mais cara costumam estar ambas erradas. E por razões diferentes.
 
 A mais barata quase sempre exclui algo que você vai precisar: textos, revisões, hospedagem, manutenção. A mais cara pode estar embutindo serviços que não servem ao seu caso. A diferença de preço que importa é a diferença de escopo.
 
@@ -138,7 +138,7 @@ Não o que deu certo. O que deu errado.
 
 Uma agência que construiu projetos reais tem respostas para isso: entrega que atrasou porque o cliente não enviou os textos, funcionalidade que precisou ser refeita depois do lançamento, integração que complicou mais do que o esperado. São histórias normais de projeto.
 
-Uma agência que responde com silêncio ou que emenda direto para o que deu certo nunca passou por isso — o que significa que tem poucos projetos — ou não está sendo direta, o que já é a resposta.
+Uma agência que responde com silêncio ou que emenda direto para o que deu certo nunca passou por isso (o que significa que tem poucos projetos) ou não está sendo direta, o que já é a resposta.
 
 A disposição de falar sobre erro passado é a forma mais rápida de avaliar se a relação vai funcionar quando surgir o primeiro imprevisto.
 

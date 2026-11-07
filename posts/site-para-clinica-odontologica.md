@@ -3,11 +3,11 @@ title: Site para clínica odontológica: o que ele precisa ter
 slug: site-para-clinica-odontologica
 date: 2026-09-24
 category: Negócios
-excerpt: O paciente verifica convênios, horários e quem é o dentista antes de ligar. Veja o que o site da sua clínica precisa ter — e o que a legislação permite mostrar.
+excerpt: O paciente verifica convênios, horários e quem é o dentista antes de ligar. Veja o que o site da sua clínica precisa ter, e o que a legislação permite mostrar.
 keyword: criação de site para clínica odontológica
 ---
 
-O problema mais comum no site de uma clínica odontológica não é o design. É que o paciente abre o site, procura a informação que precisa para marcar uma consulta, não encontra — e fecha.
+O problema mais comum no site de uma clínica odontológica não é o design. É que o paciente abre o site, procura a informação que precisa para marcar uma consulta, não encontra. E fecha.
 
 A informação mais procurada, e mais frequentemente ausente: **convênios aceitos**.
 
@@ -19,7 +19,7 @@ O que o site de uma clínica odontológica precisa ter para transformar visitant
 
 A maioria dos pacientes novos chega por uma combinação de: busca no Google com bairro ("dentista em Botafogo"), Google Maps, indicação de conhecido, ou Instagram.
 
-O site não substitui nenhum desses canais. Ele é onde o paciente chega depois de encontrar a clínica — e decide se vai ligar ou não.
+O site não substitui nenhum desses canais. Ele é onde o paciente chega depois de encontrar a clínica. E decide se vai ligar ou não.
 
 Isso muda o que o site precisa fazer. O objetivo não é apresentar a clínica para quem nunca ouviu falar. É convencer quem já está considerando que vale a pena marcar.
 
@@ -29,54 +29,54 @@ Um paciente que chegou pelo Maps já passou pelo crivo da localização e das av
 
 Estas são as cinco informações que definem se o paciente liga ou vai para a próxima clínica da lista:
 
-**1. Convênios e planos aceitos.** É a mais buscada e a mais frequentemente ausente. "Aceitamos os principais convênios" não serve — o paciente precisa saber se o **seu** convênio específico está na lista. Uma página com a relação atualizada, ou pelo menos os principais planos escritos por extenso, elimina uma ligação e um abandono.
+**1. Convênios e planos aceitos.** É a mais buscada e a mais frequentemente ausente. "Aceitamos os principais convênios" não serve: o paciente precisa saber se o **seu** convênio específico está na lista. Uma página com a relação atualizada, ou pelo menos os principais planos escritos por extenso, elimina uma ligação e um abandono.
 
 **2. Especialidades.** O paciente que procura implante não quer ser atendido por um clínico geral. Especialidades devem estar visíveis na página inicial, não enterradas em uma aba "Serviços" que ninguém clica.
 
 **3. Localização e acesso.** Endereço completo, ponto de referência, indicação de estacionamento. Uma clínica com estacionamento e sem estacionamento atendem perfis diferentes de paciente, e isso vale ser dito.
 
-**4. Horários reais.** Clínica que abre aos sábados ou atende em horário comercial estendido tem isso como diferencial. Coloque na página inicial. Se os horários mudam, mantenha atualizados — nada frustra mais do que ligar no horário que o site diz que a clínica está aberta e não ser atendido.
+**4. Horários reais.** Clínica que abre aos sábados ou atende em horário comercial estendido tem isso como diferencial. Coloque na página inicial. Se os horários mudam, mantenha atualizados: nada frustra mais do que ligar no horário que o site diz que a clínica está aberta e não ser atendido.
 
-**5. Quem é o dentista.** Nome, CRO, formação, especialização. Pacientes escolhem dentistas, não clínicas. Uma foto e duas linhas de apresentação — de onde veio, em que se especializou, há quanto tempo atende — aumentam a taxa de contato de forma consistente. Isso vale mais do que qualquer imagem de stock de sorriso perfeito.
+**5. Quem é o dentista.** Nome, CRO, formação, especialização. Pacientes escolhem dentistas, não clínicas. Uma foto e duas linhas de apresentação (de onde veio, em que se especializou, há quanto tempo atende) aumentam a taxa de contato de forma consistente. Isso vale mais do que qualquer imagem de stock de sorriso perfeito.
 
 ## Agendamento: qual botão faz diferença
 
 Três opções aparecem nas clínicas odontológicas. Cada uma serve um contexto diferente.
 
-**WhatsApp** é o que mais converte na maioria das clínicas. O botão precisa ficar visível no celular logo no topo — sem precisar rolar. Uma mensagem pré-preenchida ("Olá, quero marcar uma consulta na clínica") reduz o abandono porque o paciente não precisa formular o primeiro contato do zero.
+**WhatsApp** é o que mais converte na maioria das clínicas. O botão precisa ficar visível no celular logo no topo, sem precisar rolar. Uma mensagem pré-preenchida ("Olá, quero marcar uma consulta na clínica") reduz o abandono porque o paciente não precisa formular o primeiro contato do zero.
 
 **Formulário de contato** converte menos porque cria duas etapas extras: preencher e esperar resposta. Se o formulário demorar mais de algumas horas para ser respondido, o paciente já foi para outra clínica. Um formulário que fica dias sem resposta é pior do que não ter formulário.
 
-**Agendamento online** (um sistema de gestão de clínica com módulo de agenda) é a opção de maior conversão quando bem implementada — o paciente escolhe o dia e o horário sem interação humana, às duas da manhã se quiser. O custo de configuração existe; faz sentido quando o volume de contatos já é alto o suficiente para justificar o custo e a equipe tem disciplina para manter a agenda online sincronizada com a real.
+**Agendamento online** (um sistema de gestão de clínica com módulo de agenda) é a opção de maior conversão quando bem implementada: o paciente escolhe o dia e o horário sem interação humana, às duas da manhã se quiser. O custo de configuração existe; faz sentido quando o volume de contatos já é alto o suficiente para justificar o custo e a equipe tem disciplina para manter a agenda online sincronizada com a real.
 
 A escolha depende do tamanho da clínica e de quantas pessoas existem para responder contatos. Para a maioria das clínicas de pequeno e médio porte, WhatsApp bem configurado supera as outras duas opções com menos custo.
 
 ## O que a legislação permite no site de uma clínica odontológica
 
-O exercício da odontologia no Brasil é regulamentado pelo Conselho Federal de Odontologia (CFO) e pelos Conselhos Regionais (CRO). A publicidade odontológica tem restrições específicas que a maioria das agências generalistas desconhece — e que deixam clínicas em situação irregular sem saber.
+O exercício da odontologia no Brasil é regulamentado pelo Conselho Federal de Odontologia (CFO) e pelos Conselhos Regionais (CRO). A publicidade odontológica tem restrições específicas que a maioria das agências generalistas desconhece, e que deixam clínicas em situação irregular sem saber.
 
 As áreas que tipicamente geram dúvida: uso de imagens de antes e depois de procedimentos, promessa de resultados estéticos, divulgação de preços de procedimentos específicos, e o formato de depoimentos de pacientes.
 
-Esta seção não substitui a consulta ao seu CRO. As regras estão no Código de Ética Odontológica, publicado pelo CFO, e nas resoluções que o atualizam. Elas mudam, variam em interpretação, e o profissional responde pessoalmente pelas infrações — não a agência que fez o site. Antes de publicar qualquer material que prometa resultado estético, compare procedimentos ou use imagens de tratamentos, confirme o enquadramento com seu Conselho Regional.
+Esta seção não substitui a consulta ao seu CRO. As regras estão no Código de Ética Odontológica, publicado pelo CFO, e nas resoluções que o atualizam. Elas mudam, variam em interpretação, e o profissional responde pessoalmente pelas infrações, não a agência que fez o site. Antes de publicar qualquer material que prometa resultado estético, compare procedimentos ou use imagens de tratamentos, confirme o enquadramento com seu Conselho Regional.
 
 O que o site pode fazer com segurança: apresentar a formação e especialização do profissional, listar os procedimentos oferecidos com descrição técnica (sem prometer resultado), mostrar a estrutura física da clínica, e descrever o processo de atendimento. A regra prática é: informe, não prometa.
 
 ## SEO local: aparecer quando o paciente procura "dentista perto de mim"
 
-A maioria das buscas por clínicas odontológicas inclui um bairro, cidade ou a expressão "perto de mim". Essas buscas retornam o Google Maps com o pacote local — três clínicas com avaliações, horários e link para o site. Chegar nesse bloco depende menos do site em si e mais do perfil do Google Business Profile.
+A maioria das buscas por clínicas odontológicas inclui um bairro, cidade ou a expressão "perto de mim". Essas buscas retornam o Google Maps com o pacote local: três clínicas com avaliações, horários e link para o site. Chegar nesse bloco depende menos do site em si e mais do perfil do Google Business Profile.
 
 Os quatro ajustes que mais impactam a posição local:
 
 - **Google Business Profile completo e verificado**: nome da clínica exatamente como aparece no site, endereço e telefone idênticos em todos os lugares onde a clínica aparece (site, redes sociais, diretórios de saúde).
 - **Categoria correta**: "Dentista" ou "Clínica odontológica", não "Serviços de saúde" genérico.
-- **Avaliações respondidas**: clínicas que respondem avaliações — positivas e negativas — aparecem melhor do que as que ignoram. A resposta a uma avaliação negativa mostra ao próximo paciente como a clínica lida com problemas.
+- **Avaliações respondidas**: clínicas que respondem avaliações, positivas e negativas, aparecem melhor do que as que ignoram. A resposta a uma avaliação negativa mostra ao próximo paciente como a clínica lida com problemas.
 - **Fotos da estrutura**: sala de espera, consultório, equipamentos. Fotos reais convertem mais do que ilustrações.
 
 Para uma explicação completa de como o SEO local funciona e como configurar o perfil do zero, [este post tem o passo a passo](https://bumavit.com.br/blog/seo-local/).
 
 ## Velocidade no celular
 
-A maior parte das buscas por clínicas odontológicas acontece no celular. O paciente muitas vezes está em fila, no ônibus, ou em pausa no trabalho — com conexão variável e pouca tolerância para espera.
+A maior parte das buscas por clínicas odontológicas acontece no celular. O paciente muitas vezes está em fila, no ônibus, ou em pausa no trabalho, com conexão variável e pouca tolerância para espera.
 
 Um site que demora mais de três segundos para abrir perde uma parte relevante dos visitantes antes de qualquer informação aparecer. As causas mais comuns: imagens em alta resolução sem compressão, excesso de fontes externas carregadas simultaneamente, e scripts de terceiros que bloqueiam o carregamento da página.
 
@@ -88,7 +88,7 @@ Muitas clínicas recebem um site incluído no pacote do software de gestão odon
 
 Três pontos que valem a pena considerar antes de aceitar:
 
-**Você não é dono do domínio.** O endereço do site geralmente é um subdomínio da plataforma ("suaclinica.sistemaX.com.br"). Se a clínica trocar de software, o site vai junto — incluindo qualquer histórico de posicionamento que tenha acumulado.
+**Você não é dono do domínio.** O endereço do site geralmente é um subdomínio da plataforma ("suaclinica.sistemaX.com.br"). Se a clínica trocar de software, o site vai junto, incluindo qualquer histórico de posicionamento que tenha acumulado.
 
 **O site parece igual ao de todo mundo.** O template é o mesmo para todas as clínicas que usam aquele sistema. Um paciente que abre dois sites do mesmo software vê o mesmo layout com nomes diferentes. Não existe diferenciação possível dentro do template.
 
@@ -108,4 +108,4 @@ Antes de redesenhar o site inteiro, três ajustes de impacto imediato:
 
 **3. Complete o Google Business Profile.** Confirme que nome, endereço e telefone estão idênticos em todos os lugares onde a clínica aparece online. Um número diferente no Facebook e no site divide o sinal de relevância que o Google usa para posicionar a clínica.
 
-Se você quiser uma estimativa do que custaria um site sob medida para a sua clínica — com agendamento, páginas por especialidade e SEO local configurado — [o estimador da Bumavit responde em três perguntas](https://bumavit.com.br/estimador.html).
+Se você quiser uma estimativa do que custaria um site sob medida para a sua clínica (com agendamento, páginas por especialidade e SEO local configurado), [o estimador da Bumavit responde em três perguntas](https://bumavit.com.br/estimador.html).

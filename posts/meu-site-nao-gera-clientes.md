@@ -4,7 +4,7 @@ slug: meu-site-nao-gera-clientes
 date: 2026-09-17
 category: Negócios
 cover: cyan
-excerpt: Quatro causas, em ordem de probabilidade — e como testar cada uma em menos de dez minutos sem precisar de ferramenta paga.
+excerpt: Quatro causas, em ordem de probabilidade, e como testar cada uma em menos de dez minutos sem precisar de ferramenta paga.
 keyword: meu site não gera clientes o que fazer
 ---
 
@@ -16,7 +16,7 @@ Não é coincidência e provavelmente não é o design. A maioria dos sites que 
 
 Esta é a causa mais frequente e a menos suspeita. O dono do site acha que está tendo visitas, mas sem um Analytics configurado, não tem como saber.
 
-**Como testar agora:** pesquise o nome da sua empresa no Google. O site aparece? Agora pesquise o serviço que você vende seguido da sua cidade — por exemplo, "consultório de nutrição São Paulo". O site aparece em algum momento dos resultados? Se não aparece em nenhum dos dois, o problema não é o site. É que ninguém está chegando nele.
+**Como testar agora:** pesquise o nome da sua empresa no Google. O site aparece? Agora pesquise o serviço que você vende seguido da sua cidade, por exemplo, "consultório de nutrição São Paulo". O site aparece em algum momento dos resultados? Se não aparece em nenhum dos dois, o problema não é o site. É que ninguém está chegando nele.
 
 Um site com zero tráfego não é um problema de conversão. Nenhum ajuste de design, botão ou formulário resolve isso. O que resolve é trabalho de posicionamento no Google, que começa por aparecer nas buscas locais. Escrevemos sobre [como funciona o SEO local e por onde começar](https://bumavit.com.br/blog/seo-local/) para quem está nesse estágio.
 
@@ -44,7 +44,7 @@ Em geral, um de três problemas:
 
 **O formulário é trabalhoso demais.** Nome completo, e-mail, telefone, empresa, mensagem, CNPJ. Um formulário com muitos campos filtra os curiosos, mas também filtra os interessados. Para um primeiro contato, nome, telefone e uma linha de contexto são suficientes.
 
-**Não há nenhum motivo para confiar.** Um site sem nada que prove a entrega — sem exemplos reais de trabalho, sem depoimento de cliente ou sem a face de quem faz o serviço — pede que o visitante dê um passo com base só na promessa. Muitos não dão. Ver um projeto real é diferente de ler que você "entrega qualidade": veja um [exemplo de site institucional construído pela Bumavit](https://bumavit.com.br/projetos/cocban.html).
+**Não há nenhum motivo para confiar.** Um site sem nada que prove a entrega (sem exemplos reais de trabalho, sem depoimento de cliente ou sem a face de quem faz o serviço) pede que o visitante dê um passo com base só na promessa. Muitos não dão. Ver um projeto real é diferente de ler que você "entrega qualidade": veja um [exemplo de site institucional construído pela Bumavit](https://bumavit.com.br/projetos/cocban.html).
 
 Se há um CTA claro, o formulário é simples e há prova de trabalho, verifique o último diagnóstico.
 

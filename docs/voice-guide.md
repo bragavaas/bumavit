@@ -1,6 +1,6 @@
-# Guia de Voz e Estilo — Bumavit
+# Guia de Voz e Estilo: Bumavit
 
-> **Status: v8 (30/10/2026) — três passagens corrigidas contra o `posts/README.md` e o gerador (links, data futura, build); seção LinkedIn removida (canal saiu do plano em 08/10, decisão de 13/10, BUMA-68, PR #87 fechado sem merge e incorporado aqui); pendências 4, 6, 7 e 9 fechadas.** O post piloto (`perguntas-antes-de-contratar-agencia-de-sites`) foi escrito com a v1, revisado pelo fundador e **mergeado sem uma única alteração** no texto. Isso ratifica a v1 e resolveu quatro conflitos que só apareceram na hora de escrever — estão marcados **✅ ratificado** ao longo do guia.
+> **Status: v9 (05/11/2026). Sem travessão em todo o guia e nos 16 artigos publicados; regra nova em Ritmo (Travessão: nunca).** O post piloto (`perguntas-antes-de-contratar-agencia-de-sites`) foi escrito com a v1, revisado pelo fundador e **mergeado sem uma única alteração** no texto. Isso ratifica a v1 e resolveu quatro conflitos que só apareceram na hora de escrever: estão marcados **✅ ratificado** ao longo do guia.
 >
 > As seções marcadas com 🔸 ainda dependem da calibração do fundador (ver **Pendências**, no fim). Tudo o que não está marcado já pode ser usado.
 >
@@ -18,7 +18,7 @@ Escrevemos para ela. Não para outros desenvolvedores, não para o Google, não 
 
 ## Tom e registro
 
-Somos o consultor que explica com clareza — não o vendedor, não o professor, não o palestrante.
+Somos o consultor que explica com clareza: não o vendedor, não o professor, não o palestrante.
 
 | Somos | Não somos |
 | --- | --- |
@@ -30,14 +30,14 @@ Somos o consultor que explica com clareza — não o vendedor, não o professor,
 
 🔸 **Tratamento:** *você*. Nunca *tu*, nunca *o senhor / a senhora*. Falamos com a pessoa, não sobre ela.
 
-🔸 **"A gente" vs. "nós":** o padrão é *nós* ou *a Bumavit*. *A gente* aparece no máximo uma ou duas vezes por post, em momentos de proximidade — é o registro que o site já usa ("Fala com gente de verdade", "a gente entrega design + desenvolvimento"). Não é gíria, é aproximação: use com intenção ou não use.
+🔸 **"A gente" vs. "nós":** o padrão é *nós* ou *a Bumavit*. *A gente* aparece no máximo uma ou duas vezes por post, em momentos de proximidade: é o registro que o site já usa ("Fala com gente de verdade", "a gente entrega design + desenvolvimento"). Não é gíria, é aproximação: use com intenção ou não use.
 
 **Nunca usamos:** gíria regional, meme, emoji no corpo do texto, ironia sobre o leitor, humor que precisa de contexto.
 
 **Podemos usar:** uma frase curta e seca para fechar um raciocínio. É o nosso único recurso de estilo.
 
 > "Velocidade não é detalhe."
-> — bumavit.com.br
+> (bumavit.com.br)
 
 Esse é o tom. Afirmação curta, sem adjetivo, que o leitor não discute.
 
@@ -49,17 +49,17 @@ Esse é o tom. Afirmação curta, sem adjetivo, que o leitor não discute.
 
 Variação curta, dentro do texto: **"Aqui na Bumavit, ..."**
 
-**Nunca chamamos a Bumavit de "agência".** Nem "agência digital", nem "agência full-service", nem "sua agência parceira". A copy antiga do site usa a palavra; o conteúdo novo não usa. Somos uma software house — quem escreve o código é quem atende o cliente.
+**Nunca chamamos a Bumavit de "agência".** Nem "agência digital", nem "agência full-service", nem "sua agência parceira". A copy antiga do site usa a palavra; o conteúdo novo não usa. Somos uma software house: quem escreve o código é quem atende o cliente.
 
-✅ **Ratificado no post #1 — a proibição é sobre autodescrição, não sobre a palavra.**
+✅ **Ratificado no post #1: a proibição é sobre autodescrição, não sobre a palavra.**
 
-"Agência" é a palavra que o leitor usa e digita. O post piloto persegue exatamente o termo *o que perguntar antes de contratar uma agência de sites*, e ele aparece no título, no H1 e num H2. Trocar por "software house" ali seria escrever para o nosso vocabulário, não para o dele — e perderia o termo.
+"Agência" é a palavra que o leitor usa e digita. O post piloto persegue exatamente o termo *o que perguntar antes de contratar uma agência de sites*, e ele aparece no título, no H1 e num H2. Trocar por "software house" ali seria escrever para o nosso vocabulário, não para o dele. E perderia o termo.
 
 A regra, na prática:
 
-- ✅ "antes de contratar uma agência de sites" — é o leitor falando do mercado dele
-- ✅ "as perguntas que uma boa agência vai fazer para você" — genérico, sobre fornecedores
-- ❌ "a Bumavit é uma agência de sites" — é a Bumavit se descrevendo. Nunca
+- ✅ "antes de contratar uma agência de sites": é o leitor falando do mercado dele
+- ✅ "as perguntas que uma boa agência vai fazer para você": genérico, sobre fornecedores
+- ❌ "a Bumavit é uma agência de sites": é a Bumavit se descrevendo. Nunca
 
 O mesmo vale para qualquer palavra da lista de banidos que seja a palavra-chave alvo do post: **use no texto do leitor, nunca na frase que descreve quem somos.** Se a dúvida persistir, o teste é: dá para trocar o sujeito por "a Bumavit" sem a frase ficar falsa? Se dá, é autodescrição e a palavra sai.
 
@@ -73,18 +73,18 @@ Também não usamos: "parceiro estratégico", "seu braço digital", "ecossistema
 - Oferece suporte e manutenção contínua
 - André Vasco é o desenvolvedor à frente do trabalho
 
-Qualquer coisa **além dessa lista** — prazo, nome de cliente, número, garantia — só entra no post depois de confirmada pelo fundador. Preço da Bumavit tem regra própria: só no blog e só a partir de `docs/faixas-de-preco.md`. Ver **O que nunca dizemos**.
+Qualquer coisa **além dessa lista** (prazo, nome de cliente, número, garantia) só entra no post depois de confirmada pelo fundador. Preço da Bumavit tem regra própria: só no blog e só a partir de `docs/faixas-de-preco.md`. Ver **O que nunca dizemos**.
 
 ## Vocabulário
 
-### Nossos serviços — os termos que usamos
+### Nossos serviços: os termos que usamos
 
 | Usamos | Não usamos |
 | --- | --- |
 | site institucional | site de apresentação, presença digital, sitezinho |
 | landing page (ou *página de captura*, na primeira menção) | LP, squeeze page |
 | loja virtual | e-shop, comércio eletrônico |
-| e-commerce — só falando do setor, não do produto | — |
+| e-commerce: só falando do setor, não do produto | (nenhum) |
 | loja no ar / site no ar | site publicado, go-live |
 | orçamento | proposta comercial, investimento (como eufemismo de preço) |
 | suporte | pós-venda, sustentação |
@@ -103,8 +103,8 @@ Se o termo é do nosso mundo e não do mundo do leitor, ele aparece **explicado 
 | taxa de conversão | quantas visitas viram contato (ou pedido) |
 | lead | contato, pedido de orçamento |
 | indexação | o Google encontrar e listar suas páginas |
-| checkout | pode manter — quem tem loja conhece |
-| SEO | pode manter — mas "SEO técnico" precisa de uma explicação curta |
+| checkout | pode manter: quem tem loja conhece |
+| SEO | pode manter, mas "SEO técnico" precisa de uma explicação curta |
 
 **Nunca aparecem, em nenhuma forma:** stack, deploy, framework, headless, pipeline, escalável, robusto, inovador, disruptivo, sinergia, expertise, know-how, alavancar, potencializar, "solução" como substantivo vago.
 
@@ -125,11 +125,11 @@ Títulos em **caixa de frase**: maiúscula só na primeira palavra e em nomes pr
 
 Sem H2 chamado `Conclusão`. Feche com algo concreto: `O que fazer agora`, `Como escolher`, `Antes de pedir orçamento`.
 
-**Parágrafos:** de 1 a 3 frases. Máximo ~55 palavras. Se passou disso, quebre — quase sempre tem duas ideias ali.
+**Parágrafos:** de 1 a 3 frases. Máximo ~55 palavras. Se passou disso, quebre: quase sempre tem duas ideias ali.
 
 **Frases:** média abaixo de 20 palavras. No máximo uma oração subordinada. Se você precisou de ponto e vírgula, provavelmente são duas frases.
 
-**Listas:** quando há 3 ou mais itens paralelos. Nunca com 2 itens — isso é uma frase. Cada item é um fragmento curto ou uma frase; sem ponto final em fragmentos. Um nível só, sem sublistas.
+**Listas:** quando há 3 ou mais itens paralelos. Nunca com 2 itens: isso é uma frase. Cada item é um fragmento curto ou uma frase; sem ponto final em fragmentos. Um nível só, sem sublistas.
 
 **Tabelas:** ⚠️ **o gerador do blog não suporta tabela.** A regra abaixo vale para este guia e para documentos internos, não para posts. Em post, uma comparação real vira duas listas ou um par de H3. Ver **O que o gerador aceita**.
 
@@ -137,21 +137,21 @@ Sem H2 chamado `Conclusão`. Feche com algo concreto: `O que fazer agora`, `Como
 
 **Negrito:** para a informação que a pessoa que só passa o olho precisa achar. No máximo umas 5 vezes no post. Nunca frase inteira em negrito. Nunca itálico para ênfase.
 
-✅ **Ratificado no post #1 — rótulo estrutural não conta no limite de 5.**
+✅ **Ratificado no post #1: rótulo estrutural não conta no limite de 5.**
 
-O post piloto usa **`Sinal de alerta:`** doze vezes, uma por pergunta. Isso não é ênfase, é a espinha do post: o leitor passa o olho e acha as doze respostas ruins sem ler o resto. O limite de ~5 continua valendo para **negrito de ênfase** — a frase que você destacou porque achou importante.
+O post piloto usa **`Sinal de alerta:`** doze vezes, uma por pergunta. Isso não é ênfase, é a espinha do post: o leitor passa o olho e acha as doze respostas ruins sem ler o resto. O limite de ~5 continua valendo para **negrito de ênfase**: a frase que você destacou porque achou importante.
 
 Um rótulo estrutural só é permitido se atender às três condições:
 
 - É **a mesma palavra**, sempre. Não "Sinal de alerta" numa e "Atenção" na outra
-- Está **na mesma posição** em cada unidade — sempre abrindo o último parágrafo, por exemplo
+- Está **na mesma posição** em cada unidade: sempre abrindo o último parágrafo, por exemplo
 - Aparece em **todas** as unidades, sem exceção. Um rótulo que pula itens vira ênfase de novo, e volta a contar
 
 Fora disso, o teto de 5 vale. E o post tem direito a **um** rótulo estrutural, não a três concorrendo entre si.
 
 **Sem caixa alta**, sem exclamação, sem emoji.
 
-## Ritmo — antes e depois
+## Ritmo: antes e depois
 
 O padrão que mais aparece na revisão: a frase certa está lá, enterrada embaixo de aquecimento.
 
@@ -166,6 +166,8 @@ O padrão que mais aparece na revisão: a frase certa está lá, enterrada embai
 
 Note o que muda: some o aquecimento, entra um substantivo concreto, a frase encurta, e o leitor ganha alguma coisa já na primeira linha.
 
+**Travessão: nunca.** O travessão (o traço longo, U+2014) não aparece em nenhum texto da Bumavit, em nenhum canal. No lugar, vírgula, dois-pontos ou ponto, conforme o caso. É marca de texto gerado por máquina e o leitor percebe; o fundador pediu isso em 01/11/2026 e em 05/11/2026 os 16 artigos publicados foram corrigidos.
+
 ## Como abrir um post
 
 A primeira frase entrega valor ou nomeia o problema. Sem aquecimento, sem contexto histórico, sem "atualmente".
@@ -173,7 +175,7 @@ A primeira frase entrega valor ou nomeia o problema. Sem aquecimento, sem contex
 Três aberturas que funcionam:
 
 **1. A situação concreta do leitor**
-> Você pediu três orçamentos para fazer o site e recebeu três preços muito diferentes. Faz sentido — eles não estão vendendo a mesma coisa.
+> Você pediu três orçamentos para fazer o site e recebeu três preços muito diferentes. Faz sentido: eles não estão vendendo a mesma coisa.
 
 **2. A decisão que a pessoa está tomando**
 > Antes de escolher entre Shopify e uma loja sob medida, vale saber o que cada uma cobra de você depois do primeiro ano.
@@ -194,11 +196,11 @@ O `posts/README.md` (revisado em 23/10/2026) diz o mesmo: link absoluto com `htt
 
 **Destinos que existem hoje** (conferidos em 30/10/2026 no `staticPages` do gerador e no ar): `/estimador.html`, `/sobre.html`, `/projetos/{cocban,ecommerce,fintech,yacht-day}.html`, `/criacao-de-sites-rj/`, `/manutencao-de-sites/`, `/blog/`, `/blog/<slug>/` dos posts publicados. Três posts estão em `draft: true` (`loja-virtual-sob-medida`, `site-institucional-ou-landing-page`, `site-para-clinica-medica`): linkar para eles antes de publicarem dá 404.
 
-**Nunca invente um caminho.** Se o destino que você quer não está na lista acima nem no calendário, ele não existe — e um link para 404 num post no ar é um erro que o leitor vê.
+**Nunca invente um caminho.** Se o destino que você quer não está na lista acima nem no calendário, ele não existe. E um link para 404 num post no ar é um erro que o leitor vê.
 
 **Links externos:** só para fonte primária (documentação oficial, órgão, pesquisa que dá para abrir e conferir). Nunca para blog de concorrente.
 
-**Alt text:** ⚠️ **regra dormente — o gerador não aceita imagem no corpo do post.** Não existe `![]()` no parser e a capa é um gradiente em CSS, não um `<img>`. Então não há alt text para escrever, e um post não pode "ter uma imagem com alt descritivo" hoje. Se o post precisa mesmo de um diagrama ou print, **peça ao engenheiro antes de escrever em volta dele** — é mudança no gerador. Ver **O que o gerador aceita**.
+**Alt text:** ⚠️ **regra dormente: o gerador não aceita imagem no corpo do post.** Não existe `![]()` no parser e a capa é um gradiente em CSS, não um `<img>`. Então não há alt text para escrever, e um post não pode "ter uma imagem com alt descritivo" hoje. Se o post precisa mesmo de um diagrama ou print, **peça ao engenheiro antes de escrever em volta dele**: é mudança no gerador. Ver **O que o gerador aceita**.
 
 O campo `image:` do frontmatter existe, mas é só a imagem de compartilhamento (Open Graph). É um caminho de arquivo, não tem alt.
 
@@ -212,11 +214,11 @@ O campo `image:` do frontmatter existe, mas é só a imagem de compartilhamento 
 - ✅ `quanto-custa-loja-virtual`
 - ❌ `quanto-custa-uma-loja-virtual-em-2026-guia-completo`
 
-**Palavra-chave:** aparece no título, no H1, na meta description, em pelo menos um H2 e nas primeiras 100 palavras. Se para encaixá-la a frase ficou torta, a frase ganha — a variação natural também posiciona.
+**Palavra-chave:** aparece no título, no H1, na meta description, em pelo menos um H2 e nas primeiras 100 palavras. Se para encaixá-la a frase ficou torta, a frase ganha: a variação natural também posiciona.
 
-**Tamanho do título:** ⚠️ o gerador acrescenta **` — BUMAVIT®`** ao `<title>` de toda página (`build-blog.mjs:547`). São 11 caracteres que você não escreve e não controla.
+**Tamanho do título:** ⚠️ o gerador acrescenta **` · BUMAVIT®`** ao `<title>` de toda página (`build-blog.mjs:706`). São 11 caracteres que você não escreve e não controla.
 
-Escreva o `title` com **até ~50 caracteres**, para o `<title>` renderizado ficar abaixo dos ~60 que o Google mostra. O post piloto tem 69 e renderiza 80 — o Google trunca. Ficou aceitável só porque a palavra-chave inteira cabe antes do corte, e isso foi sorte, não método. **Coloque a palavra-chave nas primeiras palavras do título** e o corte deixa de importar tanto.
+Escreva o `title` com **até ~50 caracteres**, para o `<title>` renderizado ficar abaixo dos ~60 que o Google mostra. O post piloto tem 69 e renderiza 80: o Google trunca. Ficou aceitável só porque a palavra-chave inteira cabe antes do corte, e isso foi sorte, não método. **Coloque a palavra-chave nas primeiras palavras do título** e o corte deixa de importar tanto.
 
 ## Como o post termina
 
@@ -224,16 +226,16 @@ Sem pop-up, sem urgência, sem "entre em contato hoje mesmo".
 
 O fechamento tem três partes, nessa ordem:
 
-1. **O que fazer agora** — 2 a 4 frases de resumo prático, útil mesmo para quem não vai contratar
+1. **O que fazer agora**: 2 a 4 frases de resumo prático, útil mesmo para quem não vai contratar
 2. **Uma linha oferecendo ajuda**, sem pressão
 3. **Um link só**
 
-✅ **Destino do CTA — resolvido.** A pendência #5 da v1 dizia que não havia destino funcionando. **Está obsoleta:** `https://bumavit.com.br/estimador.html` está no ar e o formulário de contato funciona. O estimador é o destino padrão do CTA — devolve uma faixa a partir de três respostas, o que serve o leitor mesmo se ele não contratar.
+✅ **Destino do CTA: resolvido.** A pendência #5 da v1 dizia que não havia destino funcionando. **Está obsoleta:** `https://bumavit.com.br/estimador.html` está no ar e o formulário de contato funciona. O estimador é o destino padrão do CTA: devolve uma faixa a partir de três respostas, o que serve o leitor mesmo se ele não contratar.
 
 Modelos:
 
 > **Se você vai tocar isso sozinho**, comece pela velocidade: é o item que dá mais resultado por hora de trabalho.
-> Se preferir que alguém faça, a Bumavit faz sites institucionais sob medida — [monte uma estimativa em três perguntas](https://bumavit.com.br/estimador.html) antes de pedir orçamento.
+> Se preferir que alguém faça, a Bumavit faz sites institucionais sob medida: [monte uma estimativa em três perguntas](https://bumavit.com.br/estimador.html) antes de pedir orçamento.
 
 > Não existe resposta única aqui. Depende de quantos produtos você vende e de quanto quer mexer na loja sozinho.
 > Se quiser um ponto de partida antes de decidir, [o estimador devolve uma faixa a partir de três respostas](https://bumavit.com.br/estimador.html).
@@ -242,9 +244,9 @@ Modelos:
 
 - Uma oferta por post, escolhida pelo assunto do post
 - Sem exclamação, sem caixa alta, sem "vagas limitadas", sem "hoje mesmo"
-- O CTA nunca promete prazo, preço ou resultado — descrever o que o estimador **faz** é permitido; prometer o número que ele vai devolver, não
+- O CTA nunca promete prazo, preço ou resultado: descrever o que o estimador **faz** é permitido; prometer o número que ele vai devolver, não
 
-✅ **Ratificado no post #1 — "sem link no meio do texto" vale para o pedido, não para a ajuda.**
+✅ **Ratificado no post #1: "sem link no meio do texto" vale para o pedido, não para a ajuda.**
 
 A v1 dizia "sem CTA no meio do texto". A regra continua, e continua sendo sobre **pedir**. Ela não proíbe **responder**.
 
@@ -259,7 +261,7 @@ Continua valendo: **um só link de oferta, no fechamento.** Links de ajuda no me
 
 ## O que o gerador aceita
 
-Um post é **um arquivo Markdown em `posts/<slug>.md`** — nunca HTML. O `scripts/build-blog.mjs` gera `blog/`, o RSS e o sitemap a partir dele. **Nada escrito à mão dentro de `blog/` sobrevive ao próximo build.**
+Um post é **um arquivo Markdown em `posts/<slug>.md`**, nunca HTML. O `scripts/build-blog.mjs` gera `blog/`, o RSS e o sitemap a partir dele. **Nada escrito à mão dentro de `blog/` sobrevive ao próximo build.**
 
 Escrever fora do que está aqui não dá erro no build: dá um post publicado com um pedaço quebrado no meio.
 
@@ -271,7 +273,7 @@ Separe todo bloco por **uma linha em branco**. Parágrafo colado no `##` vira pa
 
 ### Markdown que não funciona
 
-**Tabela, imagem inline, citação (`>`) e bloco de código.** Nenhum tem parser. Precisa de um deles? **Fale com o engenheiro antes de escrever o post em volta dele** — é mudança no gerador, não no seu texto.
+**Tabela, imagem inline, citação (`>`) e bloco de código.** Nenhum tem parser. Precisa de um deles? **Fale com o engenheiro antes de escrever o post em volta dele**: é mudança no gerador, não no seu texto.
 
 Contornos que não custam nada:
 
@@ -282,9 +284,9 @@ Contornos que não custam nada:
 
 | Campo | Obrigatório | O que é |
 |---|---|---|
-| `title` | sim | Vira o H1 e o `<title>`. **O gerador acrescenta ` — BUMAVIT®`** |
-| `slug` | sim | Define a URL. **Depois de no ar, é definitivo** — mudar quebra a URL e perde o ranqueamento |
-| `date` | sim | `AAAA-MM-DD`. Ver a regra abaixo — não é a data do calendário |
+| `title` | sim | Vira o H1 e o `<title>`. **O gerador acrescenta ` · BUMAVIT®`** |
+| `slug` | sim | Define a URL. **Depois de no ar, é definitivo**: mudar quebra a URL e perde o ranqueamento |
+| `date` | sim | `AAAA-MM-DD`. Ver a regra abaixo: não é a data do calendário |
 | `category` | sim | Só `SEO`, `Performance` ou `Negócios`. Outro valor quebra o build de propósito |
 | `excerpt` | sim | Meta description + card da listagem + RSS. Escreva para ser lida no Google |
 | `keyword` | não | Termo-alvo. Documenta a intenção, **não é publicado**. Preencha sempre |
@@ -325,7 +327,7 @@ O workflow `build-blog.yml` roda `node scripts/build-blog.mjs` e o rasterizador 
 **Números inventados.** Nenhuma estatística que não tenha fonte aberta e linkável. Nada de "estudos mostram", "pesquisas indicam", "especialistas afirmam" sem nome e link. Se o post precisa de um número que não temos, escreva no rascunho:
 
 ```
-[NEEDS DATA: taxa média de abandono de carrinho no Brasil — precisa de fonte]
+[NEEDS DATA: taxa média de abandono de carrinho no Brasil, precisa de fonte]
 ```
 
 e avise na entrega. Nunca um número "de exemplo" que pareça real.
@@ -334,7 +336,7 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 
 **Preço, prazo e garantia.** Não garantimos resultado, posição no Google nem aumento de vendas.
 
-✅ **Decisão de 13/10 (CLA-217) — preço da Bumavit só no blog, a partir de `docs/faixas-de-preco.md`.** O arquivo é gerado do estimador por `scripts/build-pricing.mjs` e é a única fonte de valor em reais. Na prática:
+✅ **Decisão de 13/10 (CLA-217): preço da Bumavit só no blog, a partir de `docs/faixas-de-preco.md`.** O arquivo é gerado do estimador por `scripts/build-pricing.mjs` e é a única fonte de valor em reais. Na prática:
 
 - Pode: citar uma faixa do arquivo, na combinação exata, sempre com o que está incluso no mesmo parágrafo, e o prazo em dias que o arquivo traz ao lado
 - Pode: citar a condição de pagamento do arquivo junto com o preço (site em duas vezes, loja em até quatro)
@@ -348,17 +350,17 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 
 **Sobre concorrentes.** Comparamos abordagens (tema pronto vs. sob medida, plataforma fechada vs. aberta). Não criticamos empresas nominalmente.
 
-**Medo e culpa.** Não vendemos dizendo que o negócio da pessoa vai fracassar. Ela já sabe dos problemas dela — nosso trabalho é mostrar o caminho.
+**Medo e culpa.** Não vendemos dizendo que o negócio da pessoa vai fracassar. Ela já sabe dos problemas dela: nosso trabalho é mostrar o caminho.
 
 ## Checklist antes de mandar para revisão
 
-**PR — Data de publicação**
+**PR: Data de publicação**
 
-- [ ] Data de publicação obtida do `content-calendar` (BUMA-20) — nunca inventada ou estimada. Se não tem data no calendário, o PR **não abre**: comentar no issue pedindo a data ao SEO Research Analyst
-- [ ] Título do PR começa com `[PUBLICAR DD/MM]` — ex.: `[PUBLICAR 15/09] Post #5: Quanto custa um site institucional em 2026?`
+- [ ] Data de publicação obtida do `content-calendar` (BUMA-20), nunca inventada ou estimada. Se não tem data no calendário, o PR **não abre**: comentar no issue pedindo a data ao SEO Research Analyst
+- [ ] Título do PR começa com `[PUBLICAR DD/MM]` (ex.: `[PUBLICAR 15/09] Post #5: Quanto custa um site institucional em 2026?`)
 - [ ] Topo do corpo do PR contém o bloco de publicação com: data completa com dia da semana, posição no calendário (post #N de 30), data de escrita com dias de antecedência, e dependências
-- [ ] Se o post linka para outro post ainda não publicado, a dependência está declarada no bloco — e a ordem de merge respeita a dependência
-- [ ] Se escrito com mais de 14 dias de antecedência, o aviso está presente: `⚠️ Escrito com antecedência — reler antes de publicar, dados podem ter mudado.`
+- [ ] Se o post linka para outro post ainda não publicado, a dependência está declarada no bloco, e a ordem de merge respeita a dependência
+- [ ] Se escrito com mais de 14 dias de antecedência, o aviso está presente: `⚠️ Escrito com antecedência: reler antes de publicar, dados podem ter mudado.`
 
 **Texto**
 
@@ -380,7 +382,7 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 
 - [ ] De 2 a 4 links internos, nenhum "clique aqui"
 - [ ] **Todo link interno é absoluto, em `https://bumavit.com.br`.** Nenhum relativo
-- [ ] **Todo destino existe** — conferido, não presumido. Nenhum caminho inventado
+- [ ] **Todo destino existe**: conferido, não presumido. Nenhum caminho inventado
 - [ ] Cada link no meio do texto passa no teste da ajuda: o leitor clicaria mesmo sem contratar
 - [ ] Slug curto, sem acento, com a palavra-chave. E definitivo
 - [ ] `title` com até ~50 caracteres, palavra-chave nas primeiras palavras
@@ -390,7 +392,7 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 
 - [ ] É `posts/<slug>.md`. Nada escrito à mão dentro de `blog/`
 - [ ] Frontmatter completo: `title`, `slug`, `date`, `category`, `excerpt`, `keyword`. **Sem `dateLabel`**
-- [ ] `date` é a data real de ir ao ar — ou `draft: true`, se for esperar o slot
+- [ ] `date` é a data real de ir ao ar, ou `draft: true`, se for esperar o slot
 - [ ] `category` é `SEO`, `Performance` ou `Negócios`
 - [ ] Nenhuma tabela, imagem, citação `>` ou bloco de código no corpo
 - [ ] `node scripts/build-blog.mjs` roda sem erro
@@ -399,9 +401,9 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 **Post do Google (GBP)**
 
 - [ ] Post do Google entregue junto com o artigo: 150–300 caracteres, com os primeiros 100 fazendo sentido sozinhos
-- [ ] O gancho parte de uma observação real do artigo — não repete o título nem resume o texto
+- [ ] O gancho parte de uma observação real do artigo: não repete o título nem resume o texto
 - [ ] Botão `Saiba mais` apontando para `https://bumavit.com.br/blog/<slug>/` com a UTM de GBP
-- [ ] A URL não aparece no corpo do texto — quem carrega o link é o botão
+- [ ] A URL não aparece no corpo do texto: quem carrega o link é o botão
 - [ ] Imagem 4:3 própria do post. Se só existir `og.png`, avisar na entrega em vez de usar
 - [ ] Sem telefone, preço, prazo, garantia, emoji, exclamação, caixa alta ou hashtag
 - [ ] A Bumavit não é chamada de "agência" em nenhuma frase que a descreva
@@ -411,31 +413,33 @@ e avise na entrega. Nunca um número "de exemplo" que pareça real.
 
 Aberto na calibração com o fundador (interação nesta task, BUMA-5). Enquanto não houver resposta, valem os padrões marcados com 🔸 acima.
 
-1. **Registro** — confirmar *consultor próximo* (você + "a gente" ocasional) como padrão. *Usado no post #1 e mergeado sem alteração — na prática, aprovado por uso.*
-2. **Referências de tom** — três marcas/escritores que o fundador gosta ou detesta. **Ainda aberto**
-3. **Linha de descrição da Bumavit** — confirmar a redação. A proibição de "agência" está resolvida acima: vale para autodescrição, não para a palavra-chave
-4. ~~**Dados do site atual**~~ — ✅ **parcialmente resolvido (30/10/2026).** Clientes nomeáveis, por decisão do fundador em 24/09 e 26/09 (`social-media-rules.md`): **COCBAN, Yacht Day e Hera Brand**; qualquer outro é "um cliente" ou "projeto confidencial". As métricas do site (`40%`, `< 2s`, `5/5`) continuam sem fonte confirmada e **não entram em post**
-5. ~~**Destino do CTA**~~ — ✅ **resolvido.** `/estimador.html` e o formulário estão no ar. O estimador é o destino padrão
+1. **Registro**: confirmar *consultor próximo* (você + "a gente" ocasional) como padrão. *Usado no post #1 e mergeado sem alteração: na prática, aprovado por uso.*
+2. **Referências de tom**: três marcas/escritores que o fundador gosta ou detesta. **Ainda aberto**
+3. **Linha de descrição da Bumavit**: confirmar a redação. A proibição de "agência" está resolvida acima: vale para autodescrição, não para a palavra-chave
+4. ~~**Dados do site atual**~~: ✅ **parcialmente resolvido (30/10/2026).** Clientes nomeáveis, por decisão do fundador em 24/09 e 26/09 (`social-media-rules.md`): **COCBAN, Yacht Day e Hera Brand**; qualquer outro é "um cliente" ou "projeto confidencial". As métricas do site (`40%`, `< 2s`, `5/5`) continuam sem fonte confirmada e **não entram em post**
+5. ~~**Destino do CTA**~~: ✅ **resolvido.** `/estimador.html` e o formulário estão no ar. O estimador é o destino padrão
 
-### Pendências novas, do primeiro post — são do engenheiro, não do fundador
+### Pendências novas, do primeiro post: são do engenheiro, não do fundador
 
-6. ~~**`posts/README.md` está desatualizado e induz ao erro.**~~ — ✅ **resolvido.** O README (23/10/2026) manda link absoluto e canônica `/blog/<slug>/`; este guia foi alinhado a ele na v8
-7. ~~**Rebuild apaga `/criacao-de-sites-rj/` do sitemap.**~~ — ✅ **resolvido.** `staticPages` do gerador lista `/criacao-de-sites-rj/` e `/manutencao-de-sites/` (conferido em 30/10/2026)
+6. ~~**`posts/README.md` está desatualizado e induz ao erro.**~~ ✅ **resolvido.** O README (23/10/2026) manda link absoluto e canônica `/blog/<slug>/`; este guia foi alinhado a ele na v8
+7. ~~**Rebuild apaga `/criacao-de-sites-rj/` do sitemap.**~~ ✅ **resolvido.** `staticPages` do gerador lista `/criacao-de-sites-rj/` e `/manutencao-de-sites/` (conferido em 30/10/2026)
 8. **Sem imagem no corpo do post.** Enquanto não houver, a regra de alt text fica dormente e nenhum post consegue cumprir requisito de "alt text descritivo"
-9. ~~**Quem roda o build depois do merge?**~~ — ✅ **resolvido.** O workflow `build-blog.yml` roda o build e commita a saída a cada push em `posts/` e todo dia às 12:00 UTC; o PR leva só o `.md` (`check-no-html-in-pr.yml`)
+9. ~~**Quem roda o build depois do merge?**~~ ✅ **resolvido.** O workflow `build-blog.yml` roda o build e commita a saída a cada push em `posts/` e todo dia às 12:00 UTC; o PR leva só o `.md` (`check-no-html-in-pr.yml`)
 
 ---
 
 *Este guia é atualizado sempre que uma correção do fundador se repetir. Se a mesma observação aparecer duas vezes na revisão, ela vira regra aqui.*
 
-*v2 — 28/08/2026. Calibrada pelo post piloto: quatro reconciliações ratificadas por merge sem alteração, mais as restrições reais do gerador, que a v1 não conhecia.*
+*v2, 28/08/2026. Calibrada pelo post piloto: quatro reconciliações ratificadas por merge sem alteração, mais as restrições reais do gerador, que a v1 não conhecia.*
 
-*v4 — 28/08/2026. Bloco "Post do Google (GBP)" adicionado ao checklist de publicação (BUMA-37).*
+*v4, 28/08/2026. Bloco "Post do Google (GBP)" adicionado ao checklist de publicação (BUMA-37).*
 
-*v8 — 30/10/2026 (CLA-233, estudo da voz). Links absolutos e canônica `/blog/<slug>/` conforme o README; data futura retida pelo build e publicada pelo workflow diário (12:00 UTC); build automático, PR só com Markdown. Seção LinkedIn removida (BUMA-68, 13/10). Pendências 4 (clientes nomeáveis: COCBAN, Yacht Day, Hera Brand), 6, 7 e 9 fechadas.*
+*v9, 05/11/2026. Travessão removido de todo o guia e dos 16 artigos publicados, a pedido do fundador (01/11/2026); regra nova em Ritmo (Travessão: nunca). Separador do `<title>` corrigido para o que o gerador faz hoje (` · BUMAVIT®`).*
 
-*v7 — 26/10/2026. Exceção à regra de preço: a página de manutenção mostra o preço do plano, tirado de `docs/faixas-de-preco.md`.*
+*v8, 30/10/2026 (CLA-233, estudo da voz). Links absolutos e canônica `/blog/<slug>/` conforme o README; data futura retida pelo build e publicada pelo workflow diário (12:00 UTC); build automático, PR só com Markdown. Seção LinkedIn removida (BUMA-68, 13/10). Pendências 4 (clientes nomeáveis: COCBAN, Yacht Day, Hera Brand), 6, 7 e 9 fechadas.*
 
-*v6 — 14/10/2026. Regra de preço da Bumavit (CLA-217/CLA-218): só no blog, só a partir de `docs/faixas-de-preco.md`.*
+*v7, 26/10/2026. Exceção à regra de preço: a página de manutenção mostra o preço do plano, tirado de `docs/faixas-de-preco.md`.*
 
-*v5 — 29/08/2026. Bloco "PR — Data de publicação" adicionado ao checklist (BUMA-45): título com [PUBLICAR DD/MM], bloco de publicação no topo do corpo, dependências declaradas.*
+*v6, 14/10/2026. Regra de preço da Bumavit (CLA-217/CLA-218): só no blog, só a partir de `docs/faixas-de-preco.md`.*
+
+*v5, 29/08/2026. Bloco "PR: Data de publicação" adicionado ao checklist (BUMA-45): título com [PUBLICAR DD/MM], bloco de publicação no topo do corpo, dependências declaradas.*

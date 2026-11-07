@@ -9,8 +9,14 @@ on:
   # Roda todo dia para publicar posts cuja `date` (frontmatter) chegou —
   # o build ignora posts com data futura, então o push do fonte pode
   # acontecer antes da data de publicação sem publicar cedo.
+  # Tres horarios fora da hora cheia: o GitHub atrasa por horas os crons de
+  # minuto 00 (entre 01 e 05/11/2026 o das 12:00 UTC rodou entre 17h e 21h
+  # UTC, e o artigo de 04/11 so entrou no ar as 15h55 do Rio). O build e
+  # idempotente: sem mudanca, nao abre PR. 12:07 UTC e 9h07 no Rio.
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '7 12 * * *'
+    - cron: '37 12 * * *'
+    - cron: '7 14 * * *'
   workflow_dispatch:
 
 permissions:

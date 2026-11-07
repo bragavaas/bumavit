@@ -1304,15 +1304,17 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
 }
 .bpost__cover {
   aspect-ratio: 21 / 9;
-  align-items: center;
-  justify-content: center;
   margin-bottom: clamp(2.5rem, 6vh, 4rem);
 }
-.bpost__cover--has-img { aspect-ratio: 4 / 3; }
-.bpost__card-img {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
+/* A inicial vazada do titulo, como nos cards da listagem, em escala de capa:
+   grande, encostada no canto direito e cortada pela borda de baixo. */
+.bpost__cover .bcov__mono {
+  font-size: clamp(7rem, 24vw, 18rem);
+  right: 0.12em; bottom: -0.22em;
+  -webkit-text-stroke: 2px rgba(239, 237, 230, 0.3);
+}
+@media (max-width: 720px) {
+  .bpost__cover { aspect-ratio: 16 / 9; }
 }
 .bcov__mono {
   position: relative; z-index: 1;

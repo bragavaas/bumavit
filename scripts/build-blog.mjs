@@ -126,7 +126,7 @@ function readingTime(html) {
   return Math.max(1, Math.round(words / 200));
 }
 
-/* ---------- Card 4:3 por post (1200x900 SVG) ---------- */
+/* ---------- Helpers dos cards em SVG ---------- */
 function wrapText(text, maxChars) {
   const words = text.split(' ');
   const lines = [];
@@ -146,38 +146,6 @@ function svgEsc(s) {
 
 function attrEsc(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
-function generatePostCard(p) {
-  const W = 1200, H = 900, PX = 80;
-  const usableW = W - 2 * PX;
-  const len = p.title.length;
-  const fs = len <= 42 ? 72 : len <= 68 ? 56 : 44;
-  const lh = Math.round(fs * 1.3);
-  const cpl = Math.floor(usableW / (fs * 0.52));
-  const lines = wrapText(p.title, cpl);
-  const totalH = lines.length * lh;
-  /* Centraliza o bloco de titulo entre a legenda da categoria (y~150) e o rodape (y~840). */
-  const firstY = Math.round(490 - totalH / 2 + fs);
-  const tspans = lines.map((l, i) =>
-    `<tspan x="${PX}" dy="${i === 0 ? 0 : lh}">${svgEsc(l)}</tspan>`
-  ).join('');
-  const { grad } = COVERS[p.cover] || COVERS.cyan;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0%" stop-color="${grad}"/>
-      <stop offset="100%" stop-color="#0b0b0d"/>
-    </linearGradient>
-  </defs>
-  <rect width="${W}" height="${H}" fill="#0b0b0d"/>
-  <rect width="${W}" height="560" fill="url(#g)" opacity="0.45"/>
-  <rect x="${PX}" y="68" width="44" height="4" fill="${ACCENT}" rx="2"/>
-  <text x="${PX}" y="112" fill="${PAPER_70}" font-family="Arial Black,Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="5" opacity="0.9">${svgEsc(p.catLabel.toUpperCase())}</text>
-  <text x="${PX}" y="${firstY}" fill="${PAPER}" font-family="Arial Black,Arial,sans-serif" font-size="${fs}" font-weight="900">${tspans}</text>
-  <text x="${W - PX}" y="${H - 30}" fill="#16161e" font-family="Arial Black,Arial,sans-serif" font-size="240" font-weight="900" text-anchor="end">B</text>
-  <text x="${PX}" y="${H - 52}" fill="#363648" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">bumavit.com.br</text>
-</svg>`;
 }
 
 /* ---------- Card de compartilhamento por post (1200x630 SVG -> JPEG) ----------
@@ -261,13 +229,13 @@ for (const p of posts) {
   if (!COVERS[p.cover]) throw new Error(`posts/${p.slug}: cover "${p.cover}" nao existe (use: ${Object.keys(COVERS).join(', ')})`);
 }
 
-/* Gera card 4:3 (1200x900 SVG) para posts sem imagem explicita no frontmatter.
-   Posts com `image:` no frontmatter usam essa imagem em vez do card gerado. */
+/* Gera o card de compartilhamento (1200x630 SVG; o JPEG sai do rasterize-og.mjs).
+   O card 4:3 que servia de capa dentro do post foi removido em 06/11/2026: a capa
+   do post e a faixa com a inicial vazada (.bpost__cover), como nos cards da listagem.
+   Posts com `image:` no frontmatter usam essa imagem no og:image. */
 mkdirSync(join(root, 'images', 'posts'), { recursive: true });
 for (const p of posts) {
   if (!p.image) {
-    writeFileSync(join(root, 'images', 'posts', `${p.slug}-card.svg`), generatePostCard(p), 'utf8');
-    console.log(`ok: images/posts/${p.slug}-card.svg`);
     writeFileSync(join(root, 'images', 'posts', `${p.slug}-og.svg`), generatePostOg(p), 'utf8');
     console.log(`ok: images/posts/${p.slug}-og.svg`);
   }
@@ -629,8 +597,8 @@ posts.forEach((p, i) => {
       <h1 class="p-hero__title bpost__title" data-split>${p.title}</h1>
       <p class="bpost__meta" data-reveal>${p.dateLabel} · <span class="bmin" data-min="${p.minutes}">${p.minutes} min de leitura</span> · Bumavit</p>
 
-      <div class="bcov cover--${p.cover} bpost__cover bpost__cover--has-img" data-reveal>
-        <img src="../../images/posts/${p.slug}-card.svg" alt="${p.title.replace(/"/g, '&quot;')}" width="1200" height="900" class="bpost__card-img" loading="lazy">
+      <div class="bcov cover--${p.cover} bpost__cover" data-reveal>
+        <span class="bcov__mono" aria-hidden="true">${initialOf(p)}</span>
       </div>
 
       <div class="article__body bpost__body" data-reveal>

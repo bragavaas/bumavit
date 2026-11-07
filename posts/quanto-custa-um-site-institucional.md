@@ -15,7 +15,7 @@ Se o seu caso é vender pela internet, o preço segue outra lógica: veja [quant
 
 ## Faixas de preço para site institucional
 
-Um site institucional básico — cinco páginas (Início, Sobre, Serviços, Portfólio, Contato), design baseado em template bem escolhido, textos fornecidos pelo cliente, sem integrações complexas — fica entre **R$ 1.800 e R$ 2.500**, com prazo de entrega entre 8 e 13 dias.
+Um site institucional básico (cinco páginas: Início, Sobre, Serviços, Portfólio e Contato; design baseado em template bem escolhido; textos fornecidos pelo cliente; sem integrações complexas) fica entre **R$ 1.800 e R$ 2.500**, com prazo de entrega entre 8 e 13 dias.
 
 Essa é a base. O que faz o preço subir ou descer a partir daí são cinco fatores concretos, explicados abaixo.
 
@@ -45,7 +45,7 @@ O problema mais comum: ninguém combina isso antes de começar. Cada lado acha q
 
 ### Design sob medida ou adaptado de template
 
-Um design construído do zero — com identidade visual própria, tipografia escolhida, cores da marca e layout exclusivo — custa mais e demora mais do que um site baseado em um template bem escolhido e adaptado.
+Um design construído do zero (com identidade visual própria, tipografia escolhida, cores da marca e layout exclusivo) custa mais e demora mais do que um site baseado em um template bem escolhido e adaptado.
 
 Nenhuma das duas opções é inferior. Um template executado com cuidado pode ser tão profissional quanto um design proprietário. A escolha certa depende do que você precisa: se a sua marca já tem uma identidade visual forte e ela precisa aparecer com exatidão no site, um template pode não servir. Se você está começando e precisa de um site no ar rápido e com bom custo, um template bem adaptado entrega isso.
 
@@ -65,7 +65,7 @@ Se o prazo é real (lançamento em data fixa por razão de negócio, por exemplo
 
 A pergunta aparece com frequência de empresas em estágio inicial: o orçamento disponível costuma ser menor e a incerteza sobre o que é necessário, maior.
 
-O ponto mais honesto: um site funcional para pequena empresa não precisa ser complexo. Cinco páginas bem feitas — Início, Sobre, Serviços, Portfólio, Contato — com textos claros, carregamento rápido no celular e um formulário de contato que funciona fazem mais pela credibilidade do negócio do que um site de vinte páginas com metade das informações desatualizadas.
+O ponto mais honesto: um site funcional para pequena empresa não precisa ser complexo. Cinco páginas bem feitas (Início, Sobre, Serviços, Portfólio, Contato) com textos claros, carregamento rápido no celular e um formulário de contato que funciona fazem mais pela credibilidade do negócio do que um site de vinte páginas com metade das informações desatualizadas.
 
 **Um site básico para pequena empresa, com cinco páginas, design baseado em template e textos fornecidos pelo cliente, fica entre R$ 1.800 e R$ 2.500.** Se você precisa de sete páginas em vez de cinco, cada página a mais acrescenta R$ 130 a R$ 160. Se precisa que o fornecedor escreva os textos, de integração com CRM ou de prazo mais curto, cada item adiciona horas ao projeto e sobe o orçamento.
 

@@ -10,7 +10,7 @@ keyword: agência ou freelancer para criar site
 
 Você tem três orçamentos na mesa: o de um freelancer, o de uma agência pequena e o de outra agência. Aparentemente o mesmo trabalho, e o mais caro custa várias vezes o mais barato.
 
-O problema não é escolher o mais barato ou o mais caro. É que a diferença de preço não explica a diferença real entre as opções — e a variável que mais importa quase nunca aparece na conversa inicial.
+O problema não é escolher o mais barato ou o mais caro. É que a diferença de preço não explica a diferença real entre as opções, e a variável que mais importa quase nunca aparece na conversa inicial.
 
 Essa variável é o que acontece no sétimo mês, quando o site já está no ar e alguém precisa mexer nele.
 
@@ -33,7 +33,7 @@ Antes de gastar com qualquer fornecedor, vale testar se você realmente precisa 
 Você pode começar sozinho se:
 
 - Está validando uma ideia e o site ainda não precisa vender a sério
-- O negócio não depende do site para existir — é um cartão de visita digital, não o canal de vendas
+- O negócio não depende do site para existir: é um cartão de visita digital, não o canal de vendas
 - Você tem tempo para aprender o suficiente da plataforma e não tem problema em resolver os próprios travamentos
 - Não vai precisar de integrações com outros sistemas (pagamento, ERP, CRM)
 
@@ -79,7 +79,7 @@ Aqui a diferença começa a importar de verdade.
 
 ### Manutenção depois do lançamento
 
-**Freelancer** pode fazer a manutenção, enquanto tiver agenda. Mas se o único desenvolvedor que conhece o código não puder atender, você espera ou procura outro — e o próximo vai cobrar mais caro para entender um código que ele não escreveu.
+**Freelancer** pode fazer a manutenção, enquanto tiver agenda. Mas se o único desenvolvedor que conhece o código não puder atender, você espera ou procura outro, e o próximo vai cobrar mais caro para entender um código que ele não escreveu.
 
 **Agência** mantém documentação e acesso compartilhado ao projeto. A manutenção não depende de quem fez o lançamento, depende de quem está disponível naquele mês.
 
@@ -113,7 +113,7 @@ O código também é seu, a menos que você esteja alugando uma plataforma (Shop
 
 ### Quando o site precisa crescer
 
-**Freelancer** não escala com você. Se o projeto crescer, você vai precisar contratar mais alguém — e coordenar dois freelancers sozinho é trabalho de gerente de projetos.
+**Freelancer** não escala com você. Se o projeto crescer, você vai precisar contratar mais alguém, e coordenar dois freelancers sozinho é trabalho de gerente de projetos.
 
 **Agência** já tem a equipe montada. Quando o site virar loja, ou quando a loja precisar de automação, ou quando você quiser campanha paga integrada, a mesma agência oferece. Nem sempre bem, mas oferece.
 
@@ -124,7 +124,7 @@ O código também é seu, a menos que você esteja alugando uma plataforma (Shop
 Seja específico. O freelancer ganha quando:
 
 - Você tem menos de oito páginas para construir e sabe exatamente o que quer
-- Já tem textos, imagens e identidade visual prontos — só falta o código
+- Já tem textos, imagens e identidade visual prontos: só falta o código
 - Pode gerenciar o projeto sozinho e não precisa que alguém cobre prazo ou organize entregas
 - Conhece um freelancer bom por referência direta, não por anúncio
 - Tem orçamento apertado e precisa gastar o mínimo para o site existir
@@ -137,11 +137,11 @@ Se esses seis pontos se aplicam ao seu caso, contratar uma agência é pagar por
 A agência faz sentido quando:
 
 - O projeto envolve mais de uma especialização ao mesmo tempo: design original, código, copy para conversão, SEO técnico
-- Você tem um prazo real, com consequência — lançamento de produto, evento marcado, janela comercial
+- Você tem um prazo real, com consequência: lançamento de produto, evento marcado, janela comercial
 - Precisa de integrações: sistema de pagamento, CRM, ERP, automação de marketing
 - Não sabe gerenciar desenvolvimento de software e quer que alguém assuma essa parte
 - Alguém precisa responder depois do lançamento, e você quer que a responsabilidade seja de uma empresa, não de uma pessoa física
-- O site **é** o canal de vendas, não um complemento — e parar custa caro
+- O site **é** o canal de vendas, não um complemento. E parar custa caro
 
 Se três ou mais desses pontos se aplicam, o custo extra da agência não é desperdício. É seguro.
 
@@ -153,7 +153,7 @@ Antes de decidir, faça esta pergunta para o freelancer e para a agência:
 
 **"Quem cuida disso daqui a seis meses?"**
 
-A resposta do freelancer honesto é: "Eu, se estiver disponível. Se não estiver, você vai precisar de outra pessoa." E isso é justo — só não pode ser surpresa.
+A resposta do freelancer honesto é: "Eu, se estiver disponível. Se não estiver, você vai precisar de outra pessoa." E isso é justo. Só não pode ser surpresa.
 
 A resposta da agência deveria ser: "A equipe. Se o desenvolvedor que fez sair, outro assume. Está documentado e versionado." Se não for essa a resposta, você está pagando preço de agência por estrutura de freelancer.
 
@@ -169,7 +169,7 @@ Se a resposta for "a gente cuida disso para você", insista: **você precisa do 
 
 Existe um termo no mercado para isso: **fator ônibus.** Quantas pessoas precisam ser atropeladas por um ônibus para o seu projeto parar de funcionar?
 
-Se a resposta for "uma", você contratou uma pessoa, não um fornecedor. E isso pode ser a escolha certa — só não pode ser uma escolha que você fez sem saber.
+Se a resposta for "uma", você contratou uma pessoa, não um fornecedor. E isso pode ser a escolha certa. Só não pode ser uma escolha que você fez sem saber.
 
 ## O erro que custa mais caro que a escolha
 

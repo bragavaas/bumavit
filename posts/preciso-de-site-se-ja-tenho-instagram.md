@@ -64,7 +64,7 @@ Se você está em algum desses três, a resposta muda.
 
 ### Quando você recebe a mesma pergunta toda semana no direct
 
-"Vocês atendem [bairro]?", "Quanto custa?", "Qual é o prazo?", "Trabalham no sábado?" — perguntas que você responde 15 vezes por semana, sempre igual.
+"Vocês atendem [bairro]?", "Quanto custa?", "Qual é o prazo?", "Trabalham no sábado?": perguntas que você responde 15 vezes por semana, sempre igual.
 
 Cada uma toma uns três minutos. No fim do mês, são três horas respondendo o que já podia estar escrito em algum lugar.
 
@@ -90,7 +90,7 @@ Se o seu ticket médio subiu nos últimos meses ou se você percebe que as pesso
 
 Essa é a pergunta certa se você ainda não tem certeza de que precisa de um site completo.
 
-Uma landing page — uma página só, com foco em uma coisa — resolve boa parte do problema por uma fração do custo e do prazo de um site com cinco ou sete páginas.
+Uma landing page (uma página só, com foco em uma coisa) resolve boa parte do problema por uma fração do custo e do prazo de um site com cinco ou sete páginas.
 
 Ela aparece no Google, tem um domínio seu, responde as três perguntas que você mais recebe e coloca um botão que manda direto para o seu WhatsApp.
 

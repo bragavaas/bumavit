@@ -1,0 +1,27 @@
+name: Sem travessão nos posts
+
+on:
+  pull_request:
+    paths:
+      - 'posts/**'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # O travessão (U+2014) e a meia-risca (U+2013) nao entram em texto da Bumavit
+      # (decisao do fundador, 01/11/2026; artigos corrigidos em 05/11/2026).
+      - name: Recusar travessão nos artigos
+        run: |
+          FILES=$(grep -l -e '—' -e '–' posts/*.md 2>/dev/null | grep -v -E 'posts/(README|_TEMPLATE)\.md' || true)
+          if [ -n "$FILES" ]; then
+            echo "Travessão ou meia-risca encontrado em:"
+            echo "$FILES"
+            grep -n -e '—' -e '–' $FILES | head -40
+            echo ""
+            echo "Troque por vírgula, dois-pontos ou ponto (posts/README.md, seção 'Sem travessão')."
+            exit 1
+          fi
+          echo "Nenhum travessão nos posts."

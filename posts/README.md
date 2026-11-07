@@ -10,7 +10,7 @@ node scripts/build-blog.mjs               # 3. gere o HTML
 ```
 
 O passo 3 regenera `blog/index.html`, `blog/<slug>/index.html`, `blog/feed.xml` e
-`sitemap.xml`. **Faça commit do `.md` e de tudo que o build alterou** — o site é
+`sitemap.xml`. **Faça commit do `.md` e de tudo que o build alterou**: o site é
 estático, o HTML gerado é o que vai ao ar.
 
 Abra um branch e um PR. Quem publica é o fundador, com o merge.
@@ -23,7 +23,7 @@ O bloco entre `---` no topo do arquivo.
 |---|---|---|
 | `title` | sim | Vira o `<h1>`, o `<title>` e o título no compartilhamento. **Sem aspas envolventes** (`title: Texto`, não `title: "Texto"`). |
 | `slug` | sim | Define a URL: `slug: seo-local` → `/blog/seo-local/`. |
-| `date` | sim | `AAAA-MM-DD`. **É a data efetiva de publicação**: com data futura o post fica fora do build (não aparece na listagem, no RSS nem no sitemap) até a data chegar — aí o build diário publica sozinho. Também ordena a listagem e alimenta o RSS e o `lastmod` do sitemap. |
+| `date` | sim | `AAAA-MM-DD`. **É a data efetiva de publicação**: com data futura o post fica fora do build (não aparece na listagem, no RSS nem no sitemap) até a data chegar. Aí o build diário publica sozinho. Também ordena a listagem e alimenta o RSS e o `lastmod` do sitemap. |
 | `category` | sim | Uma de: `SEO`, `Performance`, `Negócios`. Outro valor quebra o build de propósito. |
 | `cover` | não | Tinta da capa e do card: `cyan` (padrão) ou `rust`. Alterne com o post anterior na listagem; é ritmo visual, não categoria. |
 | `excerpt` | sim | Meta description + card da listagem + descrição no RSS. Escreva para ser lida no Google. |
@@ -39,11 +39,11 @@ Não existe campo de canonical: a URL canônica é montada sozinha.
 
 Quem agenda a publicação é o **`date` do frontmatter**, não o título do PR.
 O fluxo é: escreva o `date` com a data desejada de publicação, faça o merge
-do `.md` quando quiser — o post fica retido pelo build enquanto a data não
-chega, e o workflow diário (`build-blog.yml`, 12:00 UTC) publica sozinho no
+do `.md` quando quiser: o post fica retido pelo build enquanto a data não
+chega, e o workflow diário (`build-blog.yml`, cron da manhã) publica sozinho no
 dia. O rótulo "[PUBLICAR dd/mm]" no título do PR é só comunicação humana:
 **a data do título e a do frontmatter precisam ser a mesma**. Já houve post
-com título pedindo 10/09 e frontmatter marcando 29/09 — o que vale é o
+com título pedindo 10/09 e frontmatter marcando 29/09: o que vale é o
 frontmatter, e a divergência atrasa a publicação sem ninguém perceber.
 
 O build falha, com mensagem, se faltar campo obrigatório, se a data não estiver
@@ -56,35 +56,44 @@ em `AAAA-MM-DD`, se a categoria não existir ou se dois posts tiverem o mesmo
 listas com `-` e listas numeradas.
 
 Não há suporte a tabela, imagem inline, citação ou bloco de código. Se precisar
-de um deles, peça — é mudança no gerador, não no seu texto.
+de um deles, peça: é mudança no gerador, não no seu texto.
 
 Separe todo bloco por **uma linha em branco**. Parágrafo colado no `##` vira
 parte do parágrafo anterior.
+
+## Sem travessão
+
+O travessão (—) não entra em nenhum texto: título, excerpt, corpo. No lugar,
+vírgula, dois-pontos ou ponto, conforme o caso; parênteses só para um aparte
+que já tem vírgula dentro. É marca de texto gerado por
+máquina e o leitor percebe (pedido do fundador em 01/11/2026; os artigos
+publicados foram corrigidos em 05/11/2026). O build e o check de PR recusam
+post com travessão. O guia completo de voz está em `docs/voice-guide.md`.
 
 ## Regras de URL (não improvise aqui)
 
 - O site é servido na **raiz** de `https://bumavit.com.br`. Não existe
   `/bumavit/` em lugar nenhum.
-- Canônica de post: `https://bumavit.com.br/blog/<slug>/` — **com barra final,
+- Canônica de post: `https://bumavit.com.br/blog/<slug>/`, **com barra final,
   sem `.html`**. O arquivo servido é `/blog/<slug>/index.html`.
-- Canônica da listagem: `https://bumavit.com.br/blog/` — **com barra, sem
+- Canônica da listagem: `https://bumavit.com.br/blog/`, **com barra, sem
   `index.html`**. As duas formas respondem, mas só essa é canônica.
 - `bragavaas.github.io` **nunca** é uma URL nossa.
 - Link interno em post: **sempre absoluto** (`https://bumavit.com.br/sobre.html`,
   `https://bumavit.com.br/blog/outro-post/`). O post é servido em
-  `/blog/<slug>/`, um nível abaixo de onde parece — um link relativo como
+  `/blog/<slug>/`, um nível abaixo de onde parece: um link relativo como
   `../sobre.html` resolve para `/blog/sobre.html` (404).
 
 **Trocar o `slug` de um post publicado quebra a URL** e perde o ranqueamento
-dela. Depois de no ar, o slug é definitivo — se precisar mudar mesmo assim,
+dela. Depois de no ar, o slug é definitivo. Se precisar mudar mesmo assim,
 fale com o engenheiro antes, porque exige um redirecionamento.
 
 ## Quem roda o build
 
 **O redator envia só o `.md` no PR.** Depois do merge, o GitHub Actions
 (`.github/workflows/build-blog.yml`) roda o build e commita o resultado
-(`blog/`, `sitemap.xml`, `blog/feed.xml`, `images/posts/`) sozinho — em todo
-push que toque `posts/` e uma vez por dia (12:00 UTC), que é o que publica os
+(`blog/`, `sitemap.xml`, `blog/feed.xml`, `images/posts/`) sozinho: em todo
+push que toque `posts/` e no cron diário da manhã, que é o que publica os
 posts agendados quando o `date` chega. Rodar `node scripts/build-blog.mjs`
 localmente continua valendo como validação antes do PR.
 

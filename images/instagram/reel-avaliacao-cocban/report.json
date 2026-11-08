@@ -1,0 +1,398 @@
+{
+  "slug": "reel-avaliacao-cocban",
+  "fonte": {
+    "avaliacao": "Perfil da Empresa no Google, avaliação 5 estrelas de Helisete Cerqueira, texto copiado do print enviado pelo André em 08/11/2026, sem edição.",
+    "projeto": "bumavit.com.br/projetos/cocban.html: serviços (Site institucional, SEO, Performance), palavra por palavra; a linha junta os três. Sem subtítulo: setor e cidade já estão na avaliação (revisão de 08/11).",
+    "liberacao": "André, 08/11/2026: nomes de quem avaliou como aparecem no Google (\"confirmado\")."
+  },
+  "tempos": {
+    "gancho": 3.833,
+    "avaliacao": 20.683,
+    "projeto": 4.433,
+    "fecho": 5,
+    "total": 33.949,
+    "capa": 3.553
+  },
+  "leitura": {
+    "caracteresPorSegundo": 15,
+    "inicioVarredura": 4.163,
+    "fimVarredura": 21.563,
+    "saida": 24.296,
+    "regraSomada": 20.133
+  },
+  "frases": [
+    {
+      "frase": "A Cocban - Cooperativa dos Bancários de JF é cliente da Bumavit há 5 anos.",
+      "caracteres": 74,
+      "acendeEm": 4.163,
+      "regra": 5.433
+    },
+    {
+      "frase": "Estamos plenamente satisfeitos pelo trabalho prestado pela empresa.",
+      "caracteres": 67,
+      "acendeEm": 9.163,
+      "regra": 4.967
+    },
+    {
+      "frase": "Sempre em busca de novas soluções, o atendimento é personalizado e realizado com qualidade e rapidez.",
+      "caracteres": 101,
+      "acendeEm": 13.696,
+      "regra": 7.233
+    },
+    {
+      "frase": "Super indicamos!",
+      "caracteres": 16,
+      "acendeEm": 20.496,
+      "regra": 2.5
+    }
+  ],
+  "tamanhos": {
+    "gancho": 92,
+    "avaliacao": 46,
+    "projeto": 72
+  },
+  "zona": {
+    "x0": 65,
+    "x1": 1015,
+    "y0": 285,
+    "y1": 1248
+  },
+  "medidas": [
+    {
+      "cena": "gancho",
+      "t": 3.433,
+      "el": "rotulo",
+      "x0": 100,
+      "x1": 657,
+      "y0": 468,
+      "y1": 502,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "gancho",
+      "t": 3.433,
+      "el": "estrelas",
+      "x0": 100,
+      "x1": 584,
+      "y0": 530,
+      "y1": 611,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "gancho",
+      "t": 3.433,
+      "el": "aspas",
+      "x0": 86,
+      "x1": 265,
+      "y0": 622,
+      "y1": 772,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "gancho",
+      "t": 3.433,
+      "el": "gancho-texto",
+      "x0": 100,
+      "x1": 980,
+      "y0": 820,
+      "y1": 1107,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "gancho",
+      "t": 3.433,
+      "el": "assina",
+      "x0": 100,
+      "x1": 980,
+      "y0": 1153,
+      "y1": 1219,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 24.196,
+      "el": "rotulo",
+      "x0": 100,
+      "x1": 657,
+      "y0": 318,
+      "y1": 352,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 24.196,
+      "el": "estrelas",
+      "x0": 100,
+      "x1": 330,
+      "y0": 380,
+      "y1": 419,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 24.196,
+      "el": "aspas",
+      "x0": 86,
+      "x1": 176,
+      "y0": 434,
+      "y1": 509,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 24.196,
+      "el": "av-texto",
+      "x0": 100,
+      "x1": 980,
+      "y0": 556,
+      "y1": 1034,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 24.196,
+      "el": "av-assina",
+      "x0": 100,
+      "x1": 980,
+      "y0": 1086,
+      "y1": 1212,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "projeto",
+      "t": 28.649,
+      "el": "p-rotulo",
+      "x0": 100,
+      "x1": 980,
+      "y0": 590,
+      "y1": 624,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "projeto",
+      "t": 28.649,
+      "el": "p-linha",
+      "x0": 100,
+      "x1": 980,
+      "y0": 650,
+      "y1": 801,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "fecho",
+      "t": 33.849,
+      "el": "caixa",
+      "x0": 75,
+      "x1": 1005,
+      "y0": 640,
+      "y1": 809,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "fecho",
+      "t": 33.849,
+      "el": "f-tag",
+      "x0": 203,
+      "x1": 877,
+      "y0": 846,
+      "y1": 876,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "fecho",
+      "t": 33.849,
+      "el": "t",
+      "x0": 296,
+      "x1": 784,
+      "y0": 948,
+      "y1": 1017,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "fecho",
+      "t": 33.849,
+      "el": "seta",
+      "x0": 504,
+      "x1": 576,
+      "y0": 1039,
+      "y1": 1111,
+      "estouro": false,
+      "fora": false
+    }
+  ],
+  "aparelho": [],
+  "check": {
+    "ok": true,
+    "achados": [
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"chao\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"marca-rotulo\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"marca-estrelas\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"marca-aspas\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"gancho\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"avaliacao\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"projeto\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"fecho\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "craft",
+        "nivel": "warning",
+        "codigo": "film_silent",
+        "msg": "This 34 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md."
+      }
+    ]
+  },
+  "scan": {
+    "frames": 1019,
+    "fps": 30,
+    "maxRun": 11,
+    "runs": [
+      {
+        "from": 0.6,
+        "to": 0.67,
+        "frames": 2
+      },
+      {
+        "from": 1.13,
+        "to": 1.27,
+        "frames": 4
+      },
+      {
+        "from": 4.03,
+        "to": 4.2,
+        "frames": 5
+      },
+      {
+        "from": 24.3,
+        "to": 24.4,
+        "frames": 3
+      },
+      {
+        "from": 24.93,
+        "to": 25.03,
+        "frames": 3
+      },
+      {
+        "from": 28.67,
+        "to": 28.8,
+        "frames": 4
+      },
+      {
+        "from": 29.67,
+        "to": 29.77,
+        "frames": 3
+      },
+      {
+        "from": 29.9,
+        "to": 29.97,
+        "frames": 2
+      },
+      {
+        "from": 30.1,
+        "to": 30.47,
+        "frames": 11
+      },
+      {
+        "from": 31.13,
+        "to": 31.2,
+        "frames": 2
+      },
+      {
+        "from": 31.87,
+        "to": 31.97,
+        "frames": 3
+      },
+      {
+        "from": 32.63,
+        "to": 32.7,
+        "frames": 2
+      },
+      {
+        "from": 33.37,
+        "to": 33.47,
+        "frames": 3
+      }
+    ],
+    "noText": [
+      {
+        "from": 24.5,
+        "to": 24.67,
+        "s": 0.17
+      },
+      {
+        "from": 28.93,
+        "to": 29,
+        "s": 0.07
+      }
+    ]
+  },
+  "mp4": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "33.966667",
+      "size": "5229928"
+    }
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "slug": "reel-avaliacao-cnacab",
+  "fonte": {
+    "avaliacao": "Perfil da Empresa no Google, avaliação 5 estrelas de Cecília Lopes, texto enviado pelo André em 08/11/2026, sem edição (inteiro na legenda).",
+    "trechos": "André, 08/11/2026: \"O texto da cecília está muito longo. podemos cortar um pouco e deixar só uma parte.\" Recortes literais, na ordem do original, com \"(…)\" onde cortar.",
+    "papel": "André, 08/11/2026: \"o cargo da Cecilia é Presidente da Comissão de Divulgação e Comunicação\".",
+    "organizacao": "André pediu o nome por extenso no lugar de CNACAB (08/11/2026). Grafia do rodapé do próprio site da cliente (repositório bragavaas/cnacab: \"© Coordenadoria Nacional das Associações Casa da Amizade do Brasil\"); o André escreveu \"da Associação Casas da Amizade do brasil\".",
+    "projeto": "Mockup junto das frases, com mais do site (André, 08/11/2026: \"o mockup não mostra quase nada do site... acelere o vídeo da homepage cnacab ou faça cortes\"). Cortes da gravação de tela que ele enviou: topo da home, programas, histórias, a busca com \"Blumenau\", os passos do \"Quer conhecer uma ACA?\" e as publicações; sem as pausas e sem os blocos de números grandes (estatísticas, linha do tempo, Troféu 1966, ENA 2027). Ficam números pequenos do texto do site, liberados pelo André em 08/11/2026 (\"números do site liberados\"). Sem subtítulo no projeto: a organização por extenso está na capa.",
+    "liberacao": "André, 08/11/2026: nome de quem avaliou (\"confirmado\") e CNACAB nomeável.",
+    "quebras": "\"Casa da Amizade\" com espaços que não quebram, para o nome não partir no meio (revisão de 08/11)."
+  },
+  "tempos": {
+    "gancho": 4.833,
+    "avaliacao": 23.09,
+    "projeto": 2.567,
+    "fecho": 5,
+    "total": 35.49,
+    "capa": 4.553
+  },
+  "leitura": {
+    "caracteresPorSegundo": 15,
+    "inicioVarredura": 5.163,
+    "fimVarredura": 25.369,
+    "saida": 27.703,
+    "regraSomada": 20,
+    "paginas": [
+      {
+        "entra": 4.813,
+        "varre": 5.163,
+        "fim": 10.963,
+        "sai": 12.163,
+        "caracteres": 87
+      },
+      {
+        "entra": 12.383,
+        "varre": 12.733,
+        "fim": 16.866,
+        "sai": 18.066,
+        "caracteres": 62
+      },
+      {
+        "entra": 18.286,
+        "varre": 18.636,
+        "fim": 25.369,
+        "sai": 27.703,
+        "caracteres": 101
+      }
+    ]
+  },
+  "trechos": [
+    "(…) Buscamos algumas empresas, mas elas não conseguiram atender as nossas expectativas.",
+    "Ao chegar a BUMAVIT fomos muito bem acolhidos e compreendidos.",
+    "(…) Já contratamos a empresa para um outro site que com certeza será igualmente um sucesso. Gratidão!"
+  ],
+  "frases": [
+    {
+      "frase": "(…) Buscamos algumas empresas, mas elas não conseguiram atender as nossas expectativas.",
+      "caracteres": 87,
+      "pagina": 1,
+      "acendeEm": 5.163,
+      "regra": 6.3
+    },
+    {
+      "frase": "Ao chegar a BUMAVIT fomos muito bem acolhidos e compreendidos.",
+      "caracteres": 62,
+      "pagina": 2,
+      "acendeEm": 12.733,
+      "regra": 4.633
+    },
+    {
+      "frase": "(…) Já contratamos a empresa para um outro site que com certeza será igualmente um sucesso.",
+      "caracteres": 91,
+      "pagina": 3,
+      "acendeEm": 18.636,
+      "regra": 6.567
+    },
+    {
+      "frase": "Gratidão!",
+      "caracteres": 9,
+      "pagina": 3,
+      "acendeEm": 24.569,
+      "regra": 2.5
+    }
+  ],
+  "video": {
+    "arquivo": "../../ig/assets/cnacab/cnacab-site-celular.mp4",
+    "cortes": [
+      [
+        1.6,
+        2.4
+      ],
+      [
+        11.4,
+        21.6
+      ],
+      [
+        23.4,
+        28.4
+      ],
+      [
+        29,
+        31.8
+      ],
+      [
+        38.6,
+        43.4
+      ]
+    ],
+    "velocidade": 1,
+    "quadros": 708,
+    "entra": 0.9
+  },
+  "tamanhos": {
+    "gancho": 68,
+    "avaliacao": 40,
+    "projeto": 84
+  },
+  "zona": {
+    "x0": 65,
+    "x1": 1015,
+    "y0": 285,
+    "y1": 1248
+  },
+  "medidas": [
+    {
+      "cena": "gancho",
+      "t": 4.433,
+      "el": "rotulo",
+      "x0": 100,
+      "x1": 657,
+      "y0": 468,
+      "y1": 502,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "gancho",
+      "t": 4.433,
+      "el": "estrelas",
+      "x0": 100,
+      "x1": 584,
+      "y0": 530,
+      "y1": 611,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "gancho",
+      "t": 4.433,
+      "el": "aspas",
+      "x0": 86,
+      "x1": 265,
+      "y0": 622,
+      "y1": 772,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "gancho",
+      "t": 4.433,
+      "el": "gancho-texto",
+      "x0": 100,
+      "x1": 980,
+      "y0": 820,
+      "y1": 1032,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "gancho",
+      "t": 4.433,
+      "el": "assina",
+      "x0": 100,
+      "x1": 980,
+      "y0": 1078,
+      "y1": 1230,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 27.603,
+      "el": "rotulo",
+      "x0": 100,
+      "x1": 657,
+      "y0": 285,
+      "y1": 319,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 27.603,
+      "el": "estrelas",
+      "x0": 685,
+      "x1": 915,
+      "y0": 285,
+      "y1": 324,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 27.603,
+      "el": "aspas",
+      "x0": 86,
+      "x1": 176,
+      "y0": 340,
+      "y1": 415,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 27.603,
+      "el": "av-texto",
+      "x0": 100,
+      "x1": 980,
+      "y0": 455,
+      "y1": 611,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "avaliacao",
+      "t": 27.603,
+      "el": "av-assina",
+      "x0": 100,
+      "x1": 980,
+      "y0": 651,
+      "y1": 759,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "projeto",
+      "t": 30.19,
+      "el": "p-rotulo",
+      "x0": 100,
+      "x1": 980,
+      "y0": 448,
+      "y1": 482,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "projeto",
+      "t": 30.19,
+      "el": "p-linha",
+      "x0": 100,
+      "x1": 980,
+      "y0": 508,
+      "y1": 596,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "fecho",
+      "t": 35.39,
+      "el": "caixa",
+      "x0": 75,
+      "x1": 1005,
+      "y0": 640,
+      "y1": 809,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "fecho",
+      "t": 35.39,
+      "el": "f-tag",
+      "x0": 203,
+      "x1": 877,
+      "y0": 846,
+      "y1": 876,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "fecho",
+      "t": 35.39,
+      "el": "t",
+      "x0": 218,
+      "x1": 863,
+      "y0": 948,
+      "y1": 1017,
+      "estouro": false,
+      "fora": false
+    },
+    {
+      "cena": "fecho",
+      "t": 35.39,
+      "el": "seta",
+      "x0": 504,
+      "x1": 576,
+      "y0": 1039,
+      "y1": 1111,
+      "estouro": false,
+      "fora": false
+    }
+  ],
+  "aparelho": [
+    {
+      "u": 1.6,
+      "x0": 361,
+      "x1": 741,
+      "y0": 824,
+      "y1": 1605,
+      "fora": false
+    },
+    {
+      "u": 12.739,
+      "x0": 361,
+      "x1": 750,
+      "y0": 831,
+      "y1": 1635,
+      "fora": false
+    },
+    {
+      "u": 24.477,
+      "x0": 357,
+      "x1": 751,
+      "y0": 819,
+      "y1": 1632,
+      "fora": false
+    }
+  ],
+  "check": {
+    "ok": true,
+    "achados": [
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"chao\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"marca-rotulo\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"marca-estrelas\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"marca-aspas\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"gancho\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"avaliacao\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"projeto\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"aparelho-cena\"> is a timeline element that contains nested <canvas id=\"aparelho\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "lint",
+        "nivel": "warning",
+        "codigo": "nested_structure_needs_subcomposition",
+        "msg": "<div id=\"fecho\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions."
+      },
+      {
+        "secao": "runtime",
+        "nivel": "warning",
+        "codigo": "console_warning",
+        "msg": "[.WebGL-0x1ad400112000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+      },
+      {
+        "secao": "runtime",
+        "nivel": "warning",
+        "codigo": "console_warning",
+        "msg": "[.WebGL-0x1ad400112000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+      },
+      {
+        "secao": "runtime",
+        "nivel": "warning",
+        "codigo": "console_warning",
+        "msg": "[.WebGL-0x3b2c0012a600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+      },
+      {
+        "secao": "runtime",
+        "nivel": "warning",
+        "codigo": "console_warning",
+        "msg": "[.WebGL-0x3b2c0012a600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+      },
+      {
+        "secao": "runtime",
+        "nivel": "warning",
+        "codigo": "console_warning",
+        "msg": "[.WebGL-0x1ad400112000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+      },
+      {
+        "secao": "runtime",
+        "nivel": "warning",
+        "codigo": "console_warning",
+        "msg": "[.WebGL-0x1ad400112000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+      },
+      {
+        "secao": "runtime",
+        "nivel": "warning",
+        "codigo": "console_warning",
+        "msg": "[.WebGL-0x3b2c0012a600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+      },
+      {
+        "secao": "runtime",
+        "nivel": "warning",
+        "codigo": "console_warning",
+        "msg": "[.WebGL-0x3b2c0012a600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+      },
+      {
+        "secao": "craft",
+        "nivel": "warning",
+        "codigo": "film_silent",
+        "msg": "This 35 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md."
+      }
+    ]
+  },
+  "scan": {
+    "frames": 1065,
+    "fps": 30,
+    "maxRun": 10,
+    "runs": [
+      {
+        "from": 0.03,
+        "to": 0.17,
+        "frames": 4
+      },
+      {
+        "from": 0.6,
+        "to": 0.67,
+        "frames": 2
+      },
+      {
+        "from": 1.13,
+        "to": 1.27,
+        "frames": 4
+      },
+      {
+        "from": 30.27,
+        "to": 30.33,
+        "frames": 2
+      },
+      {
+        "from": 31.23,
+        "to": 31.3,
+        "frames": 2
+      },
+      {
+        "from": 31.67,
+        "to": 32,
+        "frames": 10
+      },
+      {
+        "from": 32.67,
+        "to": 32.73,
+        "frames": 2
+      },
+      {
+        "from": 33.43,
+        "to": 33.5,
+        "frames": 2
+      },
+      {
+        "from": 34.17,
+        "to": 34.23,
+        "frames": 2
+      },
+      {
+        "from": 34.93,
+        "to": 35,
+        "frames": 2
+      }
+    ],
+    "noText": [
+      {
+        "from": 30.47,
+        "to": 30.53,
+        "s": 0.07
+      }
+    ]
+  },
+  "mp4": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "35.500000",
+      "size": "13960056"
+    }
+  }
+}

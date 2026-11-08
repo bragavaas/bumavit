@@ -36,7 +36,7 @@ const ACCENT = cssVar('--accent', '#ff7a29');
    verdadeiro e suficiente enquanto o endereco nao existe. */
 const BUSINESS = {
   name: 'Bumavit',
-  telephone: '+55-21-99723-5420',
+  telephone: '+55-21-99482-2884',
   email: 'contato@bumavit.com.br',
   region: 'RJ',
   country: 'BR',

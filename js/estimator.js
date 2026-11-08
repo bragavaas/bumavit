@@ -13,7 +13,7 @@
   'use strict';
 
   var LANG = window.__LANG || 'pt';
-  var WHATSAPP = '5521997235420';
+  var WHATSAPP = '5521994822884';
   var RATE = 90;                  // R$/hora
   /* Mesmo endpoint Formspree do formulário de contato da home. */
   var FORM_ENDPOINT = 'https://formspree.io/f/mbdvvyro';

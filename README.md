@@ -163,7 +163,7 @@ Crie uma tarefa que execute:
 ## Configuração pendente (troque os placeholders)
 
 - ~~Formulário~~: configurado (Formspree `mbdvvyro`, entrega em bragavaas@gmail.com)
-- ~~WhatsApp~~: configurado (+55 21 99723-5420) — links `wa.me` em `index.html` e `WHATSAPP` em `js/estimator.js`
+- ~~WhatsApp~~: configurado (+55 21 99482-2884) — links `wa.me` em `index.html` e `WHATSAPP` em `js/estimator.js`
 - **Google Analytics**: descomente o bloco GA4 no `<head>` de `index.html` e insira seu
   Measurement ID
 - **Estimador**: preços calculados por horas × `RATE` (R$90/h). Ajuste `RATE`, as horas/dias

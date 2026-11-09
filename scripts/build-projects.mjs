@@ -148,7 +148,9 @@ const projects = [
       name: 'Jonathas Nascimento',
       role: 'Hera Brand'
     },
-    link: 'https://herabrand.pt/',
+    /* link: 'https://herabrand.pt/' retirado em 09/11/2026: a loja está fora do ar (decisão do fundador: sem botão
+       até o site voltar). */
+    link: null,
     showcase: {
       laptop: { src: '../img/projetos/hera-brand-laptop.webp', w: 1600, h: 973 },
       alt: 'Loja virtual da Hera Brand exibida em um notebook'

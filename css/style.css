@@ -1799,6 +1799,14 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   .devstage__laptop { width: 96%; }
   .devstage__phone { width: 30%; right: 0; bottom: -12%; transform: none; }
 }
+/* Palco de um aparelho só (o celular em 3D da CNACAB): a imagem já traz a sombra, o tamanho é o de um celular. */
+.devstage--solo .devstage__laptop { width: min(34%, 380px); filter: none; }
+@media (max-width: 720px) {
+  .devstage--solo .devstage__laptop { width: 66%; }
+}
+/* Avaliação do Google nas páginas de projeto: o cartão das vozes, sem o salto do hover. */
+.p-quote__card { max-width: 46rem; }
+.p-quote__card:hover { transform: none; }
 .p-section {
   display: grid;
   grid-template-columns: 1fr 2fr;

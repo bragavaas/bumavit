@@ -9,7 +9,7 @@
 - [Manutenção de sites](https://bumavit.com.br/manutencao-de-sites/): plano mensal com atualização de conteúdo, backup, segurança e correções; vale para sites feitos por outras empresas.
 - [Estimador de orçamento](https://bumavit.com.br/estimador.html): monte o projeto e receba uma faixa de orçamento e prazo na hora.
 - [Sobre o estúdio](https://bumavit.com.br/sobre.html)
-- Projetos: [COCBAN](https://bumavit.com.br/projetos/cocban.html), [Yacht Day](https://bumavit.com.br/projetos/yacht-day.html), [Fintech SaaS](https://bumavit.com.br/projetos/fintech.html), [E-commerce de moda](https://bumavit.com.br/projetos/ecommerce.html)
+- Projetos: [COCBAN](https://bumavit.com.br/projetos/cocban.html), [Yacht Day](https://bumavit.com.br/projetos/yacht-day.html), [Hera Brand](https://bumavit.com.br/projetos/hera-brand.html), [CNACAB](https://bumavit.com.br/projetos/cnacab.html)
 - [Política de privacidade](https://bumavit.com.br/privacidade.html)
 
 ## Blog

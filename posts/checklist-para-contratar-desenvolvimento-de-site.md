@@ -186,4 +186,4 @@ Para os itens de propriedade, uma conversa direta funciona na maioria dos casos.
 
 Se quiser um ponto de partida antes de entrar em contato com qualquer fornecedor, o estimador da Bumavit devolve uma faixa de preço e de prazo a partir de três respostas: [monte o projeto](https://bumavit.com.br/estimador.html).
 
-Para lojas virtuais, o checklist se aplica com os mesmos critérios, com alguns itens adicionais no escopo, como o fluxo de checkout e as integrações de pagamento. Veja [como são nossos projetos de e-commerce](https://bumavit.com.br/projetos/ecommerce.html).
+Para lojas virtuais, o checklist se aplica com os mesmos critérios, com alguns itens adicionais no escopo, como o fluxo de checkout e as integrações de pagamento. Veja um projeto de loja virtual nosso: a [Hera Brand](https://bumavit.com.br/projetos/hera-brand.html).

@@ -81,7 +81,7 @@ Em todos esses casos, tentar adaptar uma plataforma padrão ao que você precisa
 
 Uma forma de perceber isso cedo: se você precisa de uma pessoa dedicada a executar manualmente o que a plataforma não automatiza (sincronizar estoque, confirmar pedido a pedido, organizar kits que o sistema não reconhece), esse custo operacional vai crescendo enquanto a loja cresce. Em algum ponto, esse custo mensal supera o que teria custado uma loja construída para o seu processo.
 
-Veja um exemplo de loja virtual sob medida no [portfólio de e-commerce da Bumavit](https://bumavit.com.br/projetos/ecommerce.html).
+Veja um exemplo de loja virtual feita pela Bumavit: a [Hera Brand](https://bumavit.com.br/projetos/hera-brand.html).
 
 ## O que perguntar antes de contratar uma agência
 

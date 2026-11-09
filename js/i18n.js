@@ -135,10 +135,8 @@
       '#projetos .section__title': 'Selected work',
       '.work__card:nth-child(1) .work__info p': 'Yacht booking website · Toronto, Canada',
       '.work__card:nth-child(2) .work__info p': 'Credit union · Juiz de Fora, Brazil',
-      '.work__card:nth-child(3) .work__info h3': 'Confidential project',
-      '.work__card:nth-child(3) .work__info p': 'Custom management dashboard for a fintech',
-      '.work__card:nth-child(4) .work__info h3': 'Confidential project',
-      '.work__card:nth-child(4) .work__info p': 'Fashion online store with a simpler checkout',
+      '.work__card:nth-child(3) .work__info p': 'Women’s fashion online store · Portugal',
+      '.work__card:nth-child(4) .work__info p': 'National network of volunteer associations · Brazil',
 
       /* --- processo --- */
       '.process__panel--intro .section__label': '( Process )',
@@ -289,10 +287,8 @@
       '#projetos .section__title': 'Trabajos seleccionados',
       '.work__card:nth-child(1) .work__info p': 'Sitio de reservas de yates · Toronto, Canadá',
       '.work__card:nth-child(2) .work__info p': 'Cooperativa de crédito · Juiz de Fora, Brasil',
-      '.work__card:nth-child(3) .work__info h3': 'Proyecto confidencial',
-      '.work__card:nth-child(3) .work__info p': 'Panel de gestión a medida para una fintech',
-      '.work__card:nth-child(4) .work__info h3': 'Proyecto confidencial',
-      '.work__card:nth-child(4) .work__info p': 'Tienda online de moda con un checkout más simple',
+      '.work__card:nth-child(3) .work__info p': 'Tienda online de moda femenina · Portugal',
+      '.work__card:nth-child(4) .work__info p': 'Red nacional de asociaciones voluntarias · Brasil',
 
       '.process__panel--intro .section__label': '( Proceso )',
       '.process__heading': { html: 'Cómo sucede<br>el proyecto<em>→</em>' },

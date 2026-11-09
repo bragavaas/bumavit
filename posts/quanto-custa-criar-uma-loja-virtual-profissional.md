@@ -139,7 +139,7 @@ Quem começa bem na plataforma certa e cresce é exatamente quem volta com o pro
 
 O caminho certo depende do momento da operação. Para identificar qual dos três modelos se aplica ao seu caso, e ter uma faixa de orçamento inicial sem compromisso, o [estimador de projetos](https://bumavit.com.br/estimador.html) chega a uma referência em três perguntas.
 
-Para entender quando o sob medida se paga com os números reais da sua operação, faz sentido conversar antes de tomar qualquer decisão. Um exemplo de loja virtual desenvolvida pela Bumavit está no [portfólio de e-commerce](https://bumavit.com.br/projetos/ecommerce.html).
+Para entender quando o sob medida se paga com os números reais da sua operação, faz sentido conversar antes de tomar qualquer decisão. Um exemplo de loja virtual desenvolvida pela Bumavit é a da [Hera Brand](https://bumavit.com.br/projetos/hera-brand.html), marca de moda feminina de Portugal.
 
 Se você já está comparando propostas, o post [como avaliar uma proposta de criação de site](https://bumavit.com.br/blog/como-avaliar-proposta-de-criacao-de-site/) explica o que verificar antes de assinar qualquer contrato: os princípios se aplicam igualmente a projetos de e-commerce.
 

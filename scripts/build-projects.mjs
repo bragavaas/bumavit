@@ -211,7 +211,7 @@ const projects = [
       name: 'Cecília Lopes',
       role: 'Presidente da Comissão de Divulgação e Comunicação, CNACAB'
     },
-    link: 'https://casadaamizadebrasil.org.br/',
+    link: 'https://casadaamizadedobrasil.org.br/',
     showcase: {
       solo: true,
       laptop: { src: '../img/projetos/cnacab-phone.webp', w: 946, h: 1420 },

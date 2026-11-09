@@ -194,7 +194,7 @@ Três aberturas que funcionam:
 
 O `posts/README.md` (revisado em 23/10/2026) diz o mesmo: link absoluto com `https://bumavit.com.br`, canônica em `/blog/<slug>/` com barra final. Um link relativo como `../sobre.html` resolveria para `/blog/sobre.html`, que não existe. Todo link interno do post piloto é absoluto e os cinco respondem 200.
 
-**Destinos que existem hoje** (conferidos em 30/10/2026 no `staticPages` do gerador e no ar): `/estimador.html`, `/sobre.html`, `/projetos/{cocban,ecommerce,fintech,yacht-day}.html`, `/criacao-de-sites-rj/`, `/manutencao-de-sites/`, `/blog/`, `/blog/<slug>/` dos posts publicados. Três posts estão em `draft: true` (`loja-virtual-sob-medida`, `site-institucional-ou-landing-page`, `site-para-clinica-medica`): linkar para eles antes de publicarem dá 404.
+**Destinos que existem hoje** (conferidos em 30/10/2026 no `staticPages` do gerador e no ar): `/estimador.html`, `/sobre.html`, `/projetos/{cocban,hera-brand,cnacab,yacht-day}.html` (as duas confidenciais viraram redirecionamento em 09/11/2026), `/criacao-de-sites-rj/`, `/manutencao-de-sites/`, `/blog/`, `/blog/<slug>/` dos posts publicados. Três posts estão em `draft: true` (`loja-virtual-sob-medida`, `site-institucional-ou-landing-page`, `site-para-clinica-medica`): linkar para eles antes de publicarem dá 404.
 
 **Nunca invente um caminho.** Se o destino que você quer não está na lista acima nem no calendário, ele não existe. E um link para 404 num post no ar é um erro que o leitor vê.
 

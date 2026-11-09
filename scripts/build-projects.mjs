@@ -120,116 +120,129 @@ const projects = [
     }
   },
   {
-    slug: 'fintech',
-    title: 'Fintech SaaS',
-    tag: 'Dashboard SaaS para fintech em crescimento',
+    slug: 'hera-brand',
+    title: 'Hera Brand',
+    tag: 'Loja virtual de moda feminina · Portugal',
     mediaClass: 'cover--ink',
-    mono: 'F',
-    nda: true,
+    mono: 'H',
+    nda: false,
     meta: {
-      Cliente: 'Confidencial (NDA)',
+      Cliente: 'Hera Brand',
       Ano: '2025',
-      Setor: 'Serviços financeiros',
-      'Serviços': 'Produto digital, UI/UX, Desenvolvimento'
+      Setor: 'Moda feminina',
+      'Serviços': 'Web design, Desenvolvimento, Loja virtual'
     },
+    /* Fontes (09/11/2026): post 8 do Instagram (CLA-113, legenda e "2025"), avaliação do Google
+       de Jonathas Nascimento (texto sem edição, liberada pelo fundador em 08/11/2026) e o mockup
+       do notebook feito da captura de herabrand.pt enviada pelo fundador (26/09/2026). */
     challenge: [
-      'Uma fintech em plena expansão operava processos críticos em planilhas e ferramentas desconectadas. Cada novo cliente aumentava o retrabalho e o risco.',
-      'O time precisava de um painel único: visão em tempo real da operação, com segurança e trilha de auditoria.'
+      'A Hera Brand é uma marca de moda feminina de Portugal. A loja virtual precisava mostrar as coleções com o cuidado da marca e levar a cliente até a compra.',
+      'Numa loja de moda, o que mais derruba a venda costuma não ser a vitrine: é o número de passos entre o “quero” e o “comprei”.'
     ],
     solution: [
-      'Desenhamos e desenvolvemos um dashboard SaaS modular: dados consolidados, fluxos de aprovação e relatórios que antes levavam dias passaram a sair em minutos.',
-      'A interface prioriza densidade de informação sem sacrificar clareza: cada tela responde uma pergunta do negócio. Por respeito ao acordo de confidencialidade, os detalhes visuais não são públicos.'
+      'Fizemos a loja do design ao lançamento. A regra que guiou cada tela foi tirar passos do caminho entre ver a peça e concluir a compra.',
+      'O cliente está em Portugal; o projeto foi feito do Rio de Janeiro, inteiro a distância.'
     ],
-    stats: [
-      ['-40%', 'Tempo gasto por tarefa no painel'],
-      ['99,9%', 'Disponibilidade da plataforma'],
-      ['12', 'Módulos integrados em produção']
-    ],
-    link: null,
+    quote: {
+      text: 'Já contei com a BUMAVIT para o desenvolvimento de alguns projetos. Excelentes profissionais. Continuo recorrendo a eles sempre que preciso de qualquer serviço na parte de Web.',
+      name: 'Jonathas Nascimento',
+      role: 'Hera Brand'
+    },
+    link: 'https://herabrand.pt/',
+    showcase: {
+      laptop: { src: '../img/projetos/hera-brand-laptop.webp', w: 1600, h: 973 },
+      alt: 'Loja virtual da Hera Brand exibida em um notebook'
+    },
     t: {
       en: {
-        tag: 'SaaS dashboard for a fast-growing fintech',
-        metaValues: ['Confidential (NDA)', '2025', 'Financial services', 'Digital product, UI/UX, Development'],
+        tag: 'Women’s fashion online store · Portugal',
+        metaValues: ['Hera Brand', '2025', 'Women’s fashion', 'Web design, Development, Online store'],
         challenge: [
-          'A fast-expanding fintech ran critical processes on spreadsheets and disconnected tools. Every new client meant more rework and more risk.',
-          'The team needed a single dashboard: a real-time view of the operation, with security and an audit trail.'
+          'Hera Brand is a women’s fashion brand from Portugal. Its online store had to show the collections with the brand’s care and take the customer all the way to the purchase.',
+          'In a fashion store, what loses the sale is rarely the shop window: it is the number of steps between “I want it” and “I bought it”.'
         ],
         solution: [
-          'We designed and built a modular SaaS dashboard: consolidated data, approval flows, and reports that used to take days now ship in minutes.',
-          'The interface favors information density without sacrificing clarity: every screen answers a business question. Out of respect for the NDA, visual details are not public.'
-        ],
-        stats: [['-40%', 'Time spent per task in the dashboard'], ['99.9%', 'Platform availability'], ['12', 'Integrated modules in production']]
+          'We built the store from design to launch. One rule guided every screen: take steps out of the way between seeing a piece and completing the purchase.',
+          'The client is in Portugal; the project was built from Rio de Janeiro, entirely remotely.'
+        ]
       },
       es: {
-        tag: 'Dashboard SaaS para una fintech en crecimiento',
-        metaValues: ['Confidencial (NDA)', '2025', 'Servicios financieros', 'Producto digital, UI/UX, Desarrollo'],
+        tag: 'Tienda online de moda femenina · Portugal',
+        metaValues: ['Hera Brand', '2025', 'Moda femenina', 'Diseño web, Desarrollo, Tienda online'],
         challenge: [
-          'Una fintech en plena expansión operaba procesos críticos en hojas de cálculo y herramientas desconectadas. Cada nuevo cliente aumentaba el retrabajo y el riesgo.',
-          'El equipo necesitaba un panel único: visión en tiempo real de la operación, con seguridad y trazabilidad de auditoría.'
+          'Hera Brand es una marca de moda femenina de Portugal. La tienda online tenía que mostrar las colecciones con el cuidado de la marca y llevar a la clienta hasta la compra.',
+          'En una tienda de moda, lo que más hace perder la venta no suele ser el escaparate: es el número de pasos entre el “lo quiero” y el “lo compré”.'
         ],
         solution: [
-          'Diseñamos y desarrollamos un dashboard SaaS modular: datos consolidados, flujos de aprobación e informes que antes tomaban días y ahora salen en minutos.',
-          'La interfaz prioriza la densidad de información sin sacrificar claridad: cada pantalla responde una pregunta del negocio. Por respeto al acuerdo de confidencialidad, los detalles visuales no son públicos.'
-        ],
-        stats: [['-40%', 'Tiempo por tarea en el panel'], ['99,9%', 'Disponibilidad de la plataforma'], ['12', 'Módulos integrados en producción']]
+          'Hicimos la tienda del diseño al lanzamiento. La regla que guió cada pantalla fue quitar pasos del camino entre ver la prenda y completar la compra.',
+          'El cliente está en Portugal; el proyecto se hizo desde Río de Janeiro, todo a distancia.'
+        ]
       }
     }
   },
   {
-    slug: 'ecommerce',
-    title: 'E-commerce de moda',
-    tag: 'Loja virtual com checkout otimizado para conversão',
+    slug: 'cnacab',
+    title: 'CNACAB',
+    tag: 'Rede nacional de associações voluntárias · Brasil',
     mediaClass: 'cover--cyan',
-    mono: 'E',
-    nda: true,
+    mono: 'C',
+    nda: false,
     meta: {
-      Cliente: 'Confidencial (NDA)',
-      Ano: '2025',
-      Setor: 'Moda & varejo',
-      'Serviços': 'E-commerce, CRO, Desenvolvimento'
+      Cliente: 'Coordenadoria Nacional das Associações Casa da Amizade do Brasil',
+      Ano: '2026',
+      Setor: 'Terceiro setor',
+      'Serviços': 'Site institucional, Busca de associações, Manutenção'
     },
+    /* Fontes (09/11/2026): avaliação do Google de Cecília Lopes (texto sem edição, cargo corrigido
+       pelo fundador em 08/11/2026), notas de construção do site (menu, busca, barra fixa do celular),
+       gravação de tela do site no celular enviada pelo fundador em 08/11/2026 (o celular em 3D sai
+       de um quadro dela, sem retoque) e o plano de manutenção (fundador, 09/11/2026). */
     challenge: [
-      'A marca vendia bem nas redes sociais, mas perdia o cliente no site: páginas lentas, checkout longo e carrinho abandonado na etapa de frete.',
-      'O objetivo era claro: transformar audiência em receita sem depender de desconto.'
+      'A Coordenadoria Nacional reúne as Associações Casa da Amizade do país, que trabalham com educação, meio ambiente e apoio a mulheres. Fazia alguns anos que a organização tentava manter um site que mostrasse esse trabalho, e as empresas procuradas antes não tinham atendido ao que ela esperava.',
+      'O site também tinha dois públicos: quem quer encontrar uma Casa da Amizade perto de onde mora e a associada que procura as publicações.'
     ],
     solution: [
-      'Reconstruímos a loja com foco em velocidade e fricção zero: páginas de produto que carregam instantaneamente, checkout enxuto e frete calculado antes do último passo.',
-      'Testes A/B contínuos guiaram cada decisão de interface: o que não aumenta conversão, sai. Detalhes da marca permanecem sob acordo de confidencialidade.'
+      'Construímos o site em WordPress com Elementor. A página inicial segue o que a visitante procura: a rede, os programas nacionais, a busca das Casas, as honrarias, as publicações e o contato.',
+      'A busca encontra a Casa pelo nome da cidade, com ou sem acento, ou pela coordenadoria regional. No celular, uma barra fixa deixa os dois caminhos sempre à mão: encontrar uma Casa e a Área da Associada.',
+      'Depois do lançamento, o site continua com a Bumavit no <a href="/manutencao-de-sites/" data-hover>plano de manutenção</a>.'
     ],
-    stats: [
-      ['+35%', 'Taxa de conversão no checkout'],
-      ['-28%', 'Abandono de carrinho'],
-      ['3×', 'Mais recompra em 90 dias']
-    ],
-    link: null,
+    quote: {
+      text: 'Nossa organização vinha há alguns anos com dificuldades para manter um site que expressasse o trabalho que fazemos. Buscamos algumas empresas, mas elas não conseguiram atender as nossas expectativas. Ao chegar a BUMAVIT fomos muito bem acolhidos e compreendidos. Nosso site atual corresponde totalmente ao que queremos e só temos a agradecer pelo cumprimento do prazo, facilidade de comunicação com o criador e respeito a nossa missão e princípios. Já contratamos a empresa para um outro site que com certeza será igualmente um sucesso. Gratidão!',
+      name: 'Cecília Lopes',
+      role: 'Presidente da Comissão de Divulgação e Comunicação, CNACAB'
+    },
+    link: 'https://casadaamizadedobrasil.org.br/',
+    showcase: {
+      solo: true,
+      laptop: { src: '../img/projetos/cnacab-phone.webp', w: 946, h: 1420 },
+      alt: 'Página inicial do site da CNACAB exibida em um celular'
+    },
     t: {
       en: {
-        title: 'Fashion e-commerce',
-        tag: 'Online store with a conversion-optimized checkout',
-        metaValues: ['Confidential (NDA)', '2025', 'Fashion & retail', 'E-commerce, CRO, Development'],
+        tag: 'National network of volunteer associations · Brazil',
+        metaValues: ['Coordenadoria Nacional das Associações Casa da Amizade do Brasil', '2026', 'Non-profit', 'Institutional website, Association search, Maintenance'],
         challenge: [
-          'The brand sold well on social media but lost customers on the website: slow pages, a long checkout and carts abandoned at the shipping step.',
-          'The goal was clear: turn audience into revenue without leaning on discounts.'
+          'The national coordination brings together the Casa da Amizade associations across Brazil, which work in education, the environment and support for women. For a few years the organization had been trying to keep a website that showed this work, and the companies it had tried before had not met its expectations.',
+          'The site also had two audiences: people looking for a Casa da Amizade near where they live, and members looking for the publications.'
         ],
         solution: [
-          'We rebuilt the store around speed and zero friction: product pages that load instantly, a lean checkout, and shipping calculated before the last step.',
-          'Continuous A/B testing guided every interface decision: whatever doesn’t lift conversion gets cut. Brand details remain under NDA.'
-        ],
-        stats: [['+35%', 'Checkout conversion rate'], ['-28%', 'Cart abandonment'], ['3×', 'More repeat purchases in 90 days']]
+          'We built the site on WordPress with Elementor. The home page follows what visitors look for: the network, the national programs, the search for local associations, the honors, the publications and the contact.',
+          'The search finds an association by city name, with or without accents, or by regional coordination. On mobile, a fixed bar keeps both paths at hand: finding an association and the members’ area.',
+          'After launch, the site stays with Bumavit on the maintenance plan.'
+        ]
       },
       es: {
-        title: 'E-commerce de moda',
-        tag: 'Tienda online con checkout optimizado para conversión',
-        metaValues: ['Confidencial (NDA)', '2025', 'Moda y retail', 'E-commerce, CRO, Desarrollo'],
+        tag: 'Red nacional de asociaciones voluntarias · Brasil',
+        metaValues: ['Coordenadoria Nacional das Associações Casa da Amizade do Brasil', '2026', 'Tercer sector', 'Sitio institucional, Búsqueda de asociaciones, Mantenimiento'],
         challenge: [
-          'La marca vendía bien en redes sociales, pero perdía al cliente en el sitio: páginas lentas, checkout largo y carritos abandonados en el paso del envío.',
-          'El objetivo era claro: transformar audiencia en ingresos sin depender de descuentos.'
+          'La coordinación nacional reúne a las asociaciones Casa da Amizade de todo Brasil, que trabajan en educación, medio ambiente y apoyo a mujeres. Hacía algunos años que la organización intentaba mantener un sitio que mostrara ese trabajo, y las empresas consultadas antes no habían cumplido lo que esperaba.',
+          'El sitio también tenía dos públicos: quien quiere encontrar una Casa da Amizade cerca de donde vive y la asociada que busca las publicaciones.'
         ],
         solution: [
-          'Reconstruimos la tienda con foco en velocidad y cero fricción: páginas de producto que cargan al instante, checkout ágil y envío calculado antes del último paso.',
-          'Tests A/B continuos guiaron cada decisión de interfaz: lo que no aumenta la conversión, se elimina. Los detalles de la marca permanecen bajo NDA.'
-        ],
-        stats: [['+35%', 'Tasa de conversión en el checkout'], ['-28%', 'Abandono de carrito'], ['3×', 'Más recompra en 90 días']]
+          'Construimos el sitio en WordPress con Elementor. La página de inicio sigue lo que busca la visitante: la red, los programas nacionales, la búsqueda de las Casas, los honores, las publicaciones y el contacto.',
+          'La búsqueda encuentra la Casa por el nombre de la ciudad, con o sin tilde, o por la coordinación regional. En el celular, una barra fija deja los dos caminos siempre a mano: encontrar una Casa y el Área de la Asociada.',
+          'Después del lanzamiento, el sitio sigue con Bumavit en el plan de mantenimiento.'
+        ]
       }
     }
   }
@@ -241,13 +254,15 @@ const LABELS = {
     projLabel: '( Project )',
     metaLabels: ['Client', 'Year', 'Industry', 'Services'],
     challengeTitle: 'The challenge',
-    solutionTitle: 'The solution'
+    solutionTitle: 'The solution',
+    quoteTitle: 'Google review'
   },
   es: {
     projLabel: '( Proyecto )',
     metaLabels: ['Cliente', 'Año', 'Sector', 'Servicios'],
     challengeTitle: 'El desafío',
-    solutionTitle: 'La solución'
+    solutionTitle: 'La solución',
+    quoteTitle: 'Reseña en Google'
   }
 };
 
@@ -273,6 +288,8 @@ function pageDict(p, next) {
     t.solution.forEach((txt, i) => {
       d[`section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(${i + 1})`] = txt;
     });
+    /* A avaliação fica em português nos três idiomas: é o texto do cliente, sem edição. */
+    if (p.quote) d['section.p-quote .p-section__label'] = L.quoteTitle;
     (t.stats || []).forEach(([num, desc], i) => {
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__num`] = num;
       d[`.p-stats .stats__item:nth-child(${i + 1}) .stats__desc`] = desc;
@@ -382,15 +399,30 @@ function page(p, next) {
       <a class="btn-pill btn-pill--accent" href="${p.link}" target="_blank" rel="noopener" data-hover data-magnetic><span>Visitar site ↗</span></a>
     </section>` : '';
 
+  /* Avaliação do Google: texto sem edição e nome como aparece lá (regra do fundador, 08/11/2026). */
+  const quote = p.quote ? `
+    <section class="p-section p-quote section">
+      <h2 class="p-section__label" data-reveal>Avaliação no Google</h2>
+      <div class="p-section__body" data-reveal>
+        <figure class="voices__card p-quote__card">
+          <blockquote>${p.quote.text}</blockquote>
+          <figcaption><strong>${p.quote.name}</strong><span>${p.quote.role}</span></figcaption>
+        </figure>
+      </div>
+    </section>
+` : '';
+
   const ndaBadge = p.nda ? `\n        <span class="p-nda" data-reveal>Projeto sob NDA</span>` : '';
 
   /* Banner: palco 2.5D quando o projeto tem mockups, senão o gradiente padrão.
      As <img> internas são decorativas (alt vazio); o rótulo fica no contêiner. */
+  /* showcase.solo: um aparelho só, no centro do palco (o celular da CNACAB); o celular de apoio é opcional. */
+  const phoneImg = p.showcase && p.showcase.phone ? `
+          <img class="devstage__phone" src="${p.showcase.phone.src}" alt="" width="${p.showcase.phone.w}" height="${p.showcase.phone.h}" decoding="async">` : '';
   const banner = p.showcase ? `
-      <div class="devstage" id="devstage" data-reveal role="img" aria-label="${esc(p.showcase.alt)}">
+      <div class="devstage${p.showcase.solo ? ' devstage--solo' : ''}" id="devstage" data-reveal role="img" aria-label="${esc(p.showcase.alt)}">
         <div class="devstage__scene" id="devstageScene">
-          <img class="devstage__laptop" src="${p.showcase.laptop.src}" alt="" width="${p.showcase.laptop.w}" height="${p.showcase.laptop.h}" decoding="async">
-          <img class="devstage__phone" src="${p.showcase.phone.src}" alt="" width="${p.showcase.phone.w}" height="${p.showcase.phone.h}" decoding="async">
+          <img class="devstage__laptop" src="${p.showcase.laptop.src}" alt="" width="${p.showcase.laptop.w}" height="${p.showcase.laptop.h}" decoding="async">${phoneImg}
         </div>
       </div>` : `
       <div class="work__media p-banner ${p.mediaClass}" data-reveal>
@@ -436,7 +468,7 @@ function page(p, next) {
   </script>
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css?v=9">
+  <link rel="stylesheet" href="../css/style.css?v=10">
 </head>
 <body>
 
@@ -501,7 +533,7 @@ ${banner}
           ${paras(p.solution)}
       </div>
     </section>
-${statItems ? `
+${quote}${statItems ? `
     <section class="section">
       <div class="p-stats">${statItems}
       </div>

@@ -733,8 +733,8 @@ const staticPages = [
   ['manutencao-de-sites/', '0.8'],
   ['projetos/yacht-day.html', '0.7'],
   ['projetos/cocban.html', '0.7'],
-  ['projetos/fintech.html', '0.6'],
-  ['projetos/ecommerce.html', '0.6'],
+  ['projetos/hera-brand.html', '0.6'],
+  ['projetos/cnacab.html', '0.6'],
   ['blog/', '0.8'],
   ['privacidade.html', '0.3']
 ];

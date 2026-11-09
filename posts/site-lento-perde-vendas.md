@@ -86,6 +86,6 @@ Para uma loja virtual, o preço base vai de R$ 3.240 a R$ 4.590, também sem ext
 
 Em ambos os casos, o site entregue já parte com as boas práticas de velocidade aplicadas: imagens otimizadas, código limpo, hospedagem dimensionada para o porte do negócio.
 
-Se você quer ver como isso fica na prática, o [projeto de e-commerce](https://bumavit.com.br/projetos/ecommerce.html) e o [projeto de site institucional](https://bumavit.com.br/projetos/cocban.html) mostram o resultado antes e depois do processo.
+Se você quer ver como isso fica na prática, a [loja virtual da Hera Brand](https://bumavit.com.br/projetos/hera-brand.html) e o [site institucional da COCBAN](https://bumavit.com.br/projetos/cocban.html) são dois projetos nossos em produção.
 
 Para saber quanto ficaria o seu caso específico, use o [estimador de projetos](https://bumavit.com.br/estimador.html): o resultado sai na hora, sem precisar falar com ninguém.

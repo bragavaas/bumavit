@@ -735,6 +735,7 @@ const staticPages = [
   ['projetos/cocban.html', '0.7'],
   ['projetos/hera-brand.html', '0.6'],
   ['projetos/cnacab.html', '0.6'],
+  ['projetos/abmasto.html', '0.6'],
   ['blog/', '0.8'],
   ['privacidade.html', '0.3']
 ];

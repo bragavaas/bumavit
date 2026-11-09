@@ -137,6 +137,7 @@
       '.work__card:nth-child(2) .work__info p': 'Credit union · Juiz de Fora, Brazil',
       '.work__card:nth-child(3) .work__info p': 'Women’s fashion online store · Portugal',
       '.work__card:nth-child(4) .work__info p': 'National network of volunteer associations · Brazil',
+      '.work__card:nth-child(5) .work__info p': 'Medical academy · Rio de Janeiro, Brazil',
 
       /* --- processo --- */
       '.process__panel--intro .section__label': '( Process )',
@@ -289,6 +290,7 @@
       '.work__card:nth-child(2) .work__info p': 'Cooperativa de crédito · Juiz de Fora, Brasil',
       '.work__card:nth-child(3) .work__info p': 'Tienda online de moda femenina · Portugal',
       '.work__card:nth-child(4) .work__info p': 'Red nacional de asociaciones voluntarias · Brasil',
+      '.work__card:nth-child(5) .work__info p': 'Academia médica · Río de Janeiro, Brasil',
 
       '.process__panel--intro .section__label': '( Proceso )',
       '.process__heading': { html: 'Cómo sucede<br>el proyecto<em>→</em>' },

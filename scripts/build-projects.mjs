@@ -244,6 +244,68 @@ const projects = [
           'Después del lanzamiento, el sitio sigue con Bumavit en el plan de mantenimiento.'
         ]
       }
+    }  },
+  {
+    slug: 'abmasto',
+    title: 'ABMasto',
+    tag: 'Academia médica · Rio de Janeiro, RJ',
+    mediaClass: 'cover--ink',
+    mono: 'A',
+    nda: false,
+    meta: {
+      Cliente: 'Academia Brasileira de Mastologia',
+      Ano: '2023',
+      Setor: 'Medicina e memória institucional',
+      'Serviços': 'Site institucional, Acervo e notícias, Manutenção'
+    },
+    /* Fontes (09/11/2026): o próprio site abmasto.com (página inicial e "A História da ABMasto": fundação em
+       1 de agosto de 2020, memorialismo entre os mastologistas, membro da FBAM; menu com Institucional, Acadêmicos,
+       Acervo, Prêmios e Revista; rodapé de 2023) e o fundador (nome por extenso Academia Brasileira de Mastologia,
+       site construído pela Bumavit em 2023, hoje no plano de manutenção; eleições online e revista fora da página).
+       O celular em 3D sai de uma captura real da página inicial em 09/11/2026, sem retoque.
+       O primeiro parágrafo do desafio aguarda as linhas do fundador sobre o que a Academia precisava em 2023. */
+    challenge: [
+      'A Academia Brasileira de Mastologia foi fundada em 1 de agosto de 2020, em plena pandemia, para preservar a memória dos mastologistas brasileiros: a história da especialidade, seus pioneiros e seus prêmios. É membro da Federação Brasileira de Academias de Medicina.',
+      'Em 2023, a Academia precisava de um site que reunisse num só lugar o que até então estava disperso: a história e os símbolos da instituição, os acadêmicos, o acervo, os prêmios e as notícias para os membros.'
+    ],
+    solution: [
+      'Construímos o site em WordPress. O menu segue a estrutura da Academia: Institucional (história, palavra do presidente, bandeira, brasão e medalhão), Acadêmicos, Acervo (Biblioteca Mastológica Brasileira e Museu), Prêmios e Revista da Academia.',
+      'A página inicial traz os comunicados e as últimas notícias, com inscrição por e-mail para quem quer receber as atualizações, e a busca encontra qualquer página do site.',
+      'Desde o lançamento, o site continua com a Bumavit no <a href="/manutencao-de-sites/" data-hover>plano de manutenção</a>: atualizações, backups e as publicações da Academia.'
+    ],
+    link: 'https://abmasto.com/',
+    showcase: {
+      solo: true,
+      laptop: { src: '../img/projetos/abmasto-phone.webp', w: 946, h: 1420 },
+      alt: 'Página inicial do site da ABMasto exibida em um celular'
+    },
+    t: {
+      en: {
+        tag: 'Medical academy · Rio de Janeiro, Brazil',
+        metaValues: ['Academia Brasileira de Mastologia', '2023', 'Medicine and institutional memory', 'Institutional website, Archive and news, Maintenance'],
+        challenge: [
+          'The Brazilian Academy of Mastology was founded on 1 August 2020, in the middle of the pandemic, to preserve the memory of Brazilian breast specialists: the history of the specialty, its pioneers and its awards. It is a member of the Brazilian Federation of Medical Academies.',
+          'In 2023 the Academy needed a website that gathered in one place what had been scattered until then: the institution’s history and symbols, its members, the archive, the awards and the news for members.'
+        ],
+        solution: [
+          'We built the site on WordPress. The menu follows the Academy’s structure: Institutional (history, the president’s word, flag, coat of arms and medallion), Members, Archive (Brazilian Mastology Library and Museum), Awards and the Academy’s Journal.',
+          'The home page carries the announcements and the latest news, with an e-mail sign-up for those who want the updates, and the search finds any page on the site.',
+          'Since launch, the site has stayed with Bumavit on the maintenance plan: updates, backups and the Academy’s publications.'
+        ]
+      },
+      es: {
+        tag: 'Academia médica · Río de Janeiro, Brasil',
+        metaValues: ['Academia Brasileira de Mastologia', '2023', 'Medicina y memoria institucional', 'Sitio institucional, Acervo y noticias, Mantenimiento'],
+        challenge: [
+          'La Academia Brasileña de Mastología fue fundada el 1 de agosto de 2020, en plena pandemia, para preservar la memoria de los mastólogos brasileños: la historia de la especialidad, sus pioneros y sus premios. Es miembro de la Federación Brasileña de Academias de Medicina.',
+          'En 2023, la Academia necesitaba un sitio que reuniera en un solo lugar lo que hasta entonces estaba disperso: la historia y los símbolos de la institución, los académicos, el acervo, los premios y las noticias para los miembros.'
+        ],
+        solution: [
+          'Construimos el sitio en WordPress. El menú sigue la estructura de la Academia: Institucional (historia, palabra del presidente, bandera, escudo y medallón), Académicos, Acervo (Biblioteca Mastológica Brasileña y Museo), Premios y Revista de la Academia.',
+          'La página de inicio trae los comunicados y las últimas noticias, con inscripción por correo para quien quiere recibir las actualizaciones, y la búsqueda encuentra cualquier página del sitio.',
+          'Desde el lanzamiento, el sitio sigue con Bumavit en el plan de mantenimiento: actualizaciones, copias de seguridad y las publicaciones de la Academia.'
+        ]
+      }
     }
   }
 ];

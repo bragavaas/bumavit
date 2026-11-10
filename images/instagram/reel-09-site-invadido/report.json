@@ -1,72 +1,78 @@
 {
   "slug": "reel-09-site-invadido",
-  "generated": "2026-10-31T12:53:06.213Z",
+  "generated": "2026-11-10T22:09:00.248Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
-  "duration": 44.6,
+  "duration": 62,
   "fonts": "ok",
   "lines": null,
   "drawings": [],
   "readTimes": [
     {
-      "text": "Já abriu o seu próprio site e caiu numa *casa de apostas*?",
-      "chars": 56,
-      "legible": 4.25,
-      "need": 4.233
+      "text": "Já pensou entrar no seu site e ser redirecionado pra uma *casa de apostas*?",
+      "chars": 73,
+      "legible": 5.95,
+      "need": 5.367
     },
     {
-      "text": "Eu sou o André, faço sites aqui na *Bumavit*.",
-      "chars": 43,
-      "legible": 3.69,
-      "need": 3.367
+      "text": "Ou você percebe um conteúdo que *não deveria estar ali*.",
+      "chars": 54,
+      "legible": 6.66,
+      "need": 4.1
     },
     {
-      "text": "Quem cuida é quem programa. *Sou eu*.",
-      "chars": 35,
-      "legible": 3.14,
-      "need": 2.833
+      "text": "Isso é muito mais comum do que você imagina. Não deveria, *mas acontece*.",
+      "chars": 71,
+      "legible": 5.67,
+      "need": 5.233
     },
     {
-      "text": "Ou um texto estranho no meio da sua *página*.",
-      "chars": 43,
-      "legible": 3.69,
-      "need": 3.367
+      "text": "Imagina o seguinte cenário: seu cliente entra na sua página.",
+      "chars": 60,
+      "legible": 4.55,
+      "need": 4.5
     },
     {
-      "text": "O cliente abre, vê, e fecha. *Não volta*.",
-      "chars": 39,
-      "legible": 3.39,
-      "need": 3.1
-    },
-    {
-      "text": "Vale para sites que não foram *feitos pela Bumavit*.",
-      "chars": 50,
-      "legible": 3.93,
-      "need": 3.833
-    },
-    {
-      "text": "Carro, casa, site. Tudo precisa de *manutenção*.",
+      "text": "Percebe um conteúdo que *não deveria estar ali*.",
       "chars": 46,
-      "legible": 3.64,
+      "legible": 3.97,
       "need": 3.567
     },
     {
-      "text": "Site é cartão de visita. Invadido, fala *contra você*.",
-      "chars": 52,
-      "legible": 4.12,
-      "need": 3.967
+      "text": "Carro, casa, site: tudo precisa de *manutenção*.",
+      "chars": 46,
+      "legible": 3.86,
+      "need": 3.567
     },
     {
-      "text": "Atualização, backup, *segurança*. Todo mês.",
-      "chars": 41,
-      "legible": 3.36,
-      "need": 3.233
+      "text": "Acaba falando contra *sua empresa*. E não se esqueça:",
+      "chars": 51,
+      "legible": 3.9,
+      "need": 3.9
     },
     {
-      "text": "Cuide antes de o cliente *ver*.",
-      "chars": 52,
+      "text": "Cuide antes que seu cliente *perceba*.",
+      "chars": 36,
+      "legible": 3.12,
+      "need": 2.9
+    },
+    {
+      "text": "E ele vai sair da sua página. *Dificilmente vai voltar*.",
+      "chars": 54,
+      "legible": 4.37,
+      "need": 4.1
+    },
+    {
+      "text": "É o seu cartão de negócios digital. Invadido, fala *contra você*.",
+      "chars": 63,
+      "legible": 7.7,
+      "need": 4.7
+    },
+    {
+      "text": "Quem *cuida* do seu site?",
+      "chars": 46,
       "legible": 4.28,
-      "need": 3.967
+      "need": 3.567
     }
   ],
   "problems": [],
@@ -80,74 +86,68 @@
   "keyframes": [
     {
       "scene": 1,
-      "t": 4.3,
+      "t": 6,
       "file": "reel-09-site-invadido-k01.jpg",
       "guides": "reel-09-site-invadido-k01-guias.jpg"
     },
     {
       "scene": 2,
-      "t": 8.65,
+      "t": 9.87,
       "file": "reel-09-site-invadido-k02.jpg",
       "guides": "reel-09-site-invadido-k02-guias.jpg"
     },
     {
       "scene": 3,
-      "t": 17.2,
+      "t": 29.470000000000002,
       "file": "reel-09-site-invadido-k03.jpg",
       "guides": "reel-09-site-invadido-k03-guias.jpg"
     },
     {
       "scene": 4,
-      "t": 21.5,
+      "t": 34.98,
       "file": "reel-09-site-invadido-k04.jpg",
       "guides": "reel-09-site-invadido-k04-guias.jpg"
     },
     {
       "scene": 5,
-      "t": 26.7,
+      "t": 39.449999999999996,
       "file": "reel-09-site-invadido-k05.jpg",
       "guides": "reel-09-site-invadido-k05-guias.jpg"
     },
     {
       "scene": 6,
-      "t": 30.900000000000002,
+      "t": 48.349999999999994,
       "file": "reel-09-site-invadido-k06.jpg",
       "guides": "reel-09-site-invadido-k06-guias.jpg"
     },
     {
       "scene": 7,
-      "t": 33.4,
+      "t": 56.5,
       "file": "reel-09-site-invadido-k07.jpg",
       "guides": "reel-09-site-invadido-k07-guias.jpg"
     },
     {
       "scene": 8,
-      "t": 39.099999999999994,
+      "t": 61.9,
       "file": "reel-09-site-invadido-k08.jpg",
       "guides": "reel-09-site-invadido-k08-guias.jpg"
-    },
-    {
-      "scene": 9,
-      "t": 44.5,
-      "file": "reel-09-site-invadido-k09.jpg",
-      "guides": "reel-09-site-invadido-k09-guias.jpg"
     }
   ],
   "cover": "reel-09-site-invadido-capa.jpg",
   "video": {
     "file": "reel-09-site-invadido.mp4",
-    "bytes": 14474567,
+    "bytes": 45176629,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 44.6,
+    "duration": 62,
     "audio": true
   },
   "music": {
-    "clip": "trilha-cuidado.m4a",
+    "clip": "trilha-cuidado-64.m4a",
     "gain": -17,
     "fadeIn": 1.2,
     "fadeOut": 3

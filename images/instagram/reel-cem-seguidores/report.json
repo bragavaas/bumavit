@@ -1,0 +1,83 @@
+{
+  "slug": "reel-cem-seguidores",
+  "generated": "2026-11-11T00:39:09.900Z",
+  "engine": "templates/ig-reel.html",
+  "fps": 30,
+  "duration": 25,
+  "fonts": "ok",
+  "lines": null,
+  "drawings": [],
+  "readTimes": [
+    {
+      "text": "Faltava *um*.",
+      "chars": 11,
+      "legible": 2.65,
+      "need": 2.5
+    },
+    {
+      "text": "*100* seguidores.",
+      "chars": 15,
+      "legible": 2.6,
+      "need": 2.5
+    },
+    {
+      "text": "Pronto. De volta ao trabalho.",
+      "chars": 29,
+      "legible": 3.4,
+      "need": 2.5
+    },
+    {
+      "text": "Obrigado por acompanhar desde o *começo*.",
+      "chars": 64,
+      "legible": 4.98,
+      "need": 4.767
+    }
+  ],
+  "problems": [],
+  "keyframes": [
+    {
+      "scene": 1,
+      "t": 8.97,
+      "file": "reel-cem-seguidores-k01.jpg",
+      "guides": "reel-cem-seguidores-k01-guias.jpg"
+    },
+    {
+      "scene": 2,
+      "t": 12.8,
+      "file": "reel-cem-seguidores-k02.jpg",
+      "guides": "reel-cem-seguidores-k02-guias.jpg"
+    },
+    {
+      "scene": 3,
+      "t": 18.8,
+      "file": "reel-cem-seguidores-k03.jpg",
+      "guides": "reel-cem-seguidores-k03-guias.jpg"
+    },
+    {
+      "scene": 4,
+      "t": 24.9,
+      "file": "reel-cem-seguidores-k04.jpg",
+      "guides": "reel-cem-seguidores-k04-guias.jpg"
+    }
+  ],
+  "cover": "reel-cem-seguidores-capa.jpg",
+  "video": {
+    "file": "reel-cem-seguidores.mp4",
+    "bytes": 12226150,
+    "codec": "h264",
+    "pix": "yuv420p",
+    "color": "tv, bt709, progressive",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 25,
+    "audio": true
+  },
+  "music": {
+    "clip": "som-cem.m4a",
+    "gain": -2,
+    "fadeIn": 0.05,
+    "fadeOut": 1.5
+  },
+  "sheet": "reel-cem-seguidores-prancha.jpg"
+}

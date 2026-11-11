@@ -1,9 +1,9 @@
 {
   "slug": "reel-cem-seguidores",
-  "generated": "2026-11-11T00:39:09.900Z",
+  "generated": "2026-11-11T01:15:41.459Z",
   "engine": "templates/ig-reel.html",
   "fps": 30,
-  "duration": 25,
+  "duration": 25.83,
   "fonts": "ok",
   "lines": null,
   "drawings": [],
@@ -17,13 +17,13 @@
     {
       "text": "*100* seguidores.",
       "chars": 15,
-      "legible": 2.6,
+      "legible": 2.65,
       "need": 2.5
     },
     {
       "text": "Pronto. De volta ao trabalho.",
       "chars": 29,
-      "legible": 3.4,
+      "legible": 4.23,
       "need": 2.5
     },
     {
@@ -37,25 +37,25 @@
   "keyframes": [
     {
       "scene": 1,
-      "t": 8.97,
+      "t": 9.3,
       "file": "reel-cem-seguidores-k01.jpg",
       "guides": "reel-cem-seguidores-k01-guias.jpg"
     },
     {
       "scene": 2,
-      "t": 12.8,
+      "t": 13,
       "file": "reel-cem-seguidores-k02.jpg",
       "guides": "reel-cem-seguidores-k02-guias.jpg"
     },
     {
       "scene": 3,
-      "t": 18.8,
+      "t": 19.63,
       "file": "reel-cem-seguidores-k03.jpg",
       "guides": "reel-cem-seguidores-k03-guias.jpg"
     },
     {
       "scene": 4,
-      "t": 24.9,
+      "t": 25.729999999999997,
       "file": "reel-cem-seguidores-k04.jpg",
       "guides": "reel-cem-seguidores-k04-guias.jpg"
     }
@@ -63,21 +63,21 @@
   "cover": "reel-cem-seguidores-capa.jpg",
   "video": {
     "file": "reel-cem-seguidores.mp4",
-    "bytes": 12226150,
+    "bytes": 13135945,
     "codec": "h264",
     "pix": "yuv420p",
     "color": "tv, bt709, progressive",
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 25,
+    "duration": 25.83,
     "audio": true
   },
   "music": {
-    "clip": "som-cem.m4a",
-    "gain": -2,
-    "fadeIn": 0.05,
-    "fadeOut": 1.5
+    "clip": "som-andre.m4a",
+    "gain": 0,
+    "fadeIn": 0.01,
+    "fadeOut": 0.01
   },
   "sheet": "reel-cem-seguidores-prancha.jpg"
 }

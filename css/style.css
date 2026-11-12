@@ -761,6 +761,7 @@ body.menu-open .nav__burger span:last-child { transform: translateY(-4px) rotate
 .cta__btn:hover::before { transform: translateY(0); }
 .cta__btn-arrow { transition: transform 0.4s var(--ease-out); }
 .cta__btn:hover .cta__btn-arrow { transform: translate(4px, -4px) rotate(45deg); }
+.cta__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
 .cta__note {
   margin-top: 2rem;
   color: var(--muted);
@@ -1092,71 +1093,6 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   line-height: 1.7;
 }
 
-/* ============================================================
-   Formulário de contato (lead)
-   ============================================================ */
-.lead {
-  max-width: 44rem;
-  margin: 0 auto;
-  text-align: left;
-}
-.lead__row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
-}
-.lead__field { display: block; margin-bottom: 1.2rem; }
-.lead__field span {
-  display: block;
-  font-size: 0.78rem; font-weight: 700;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.5rem;
-}
-.lead__field input,
-.lead__field select,
-.lead__field textarea {
-  width: 100%;
-  font: inherit;
-  color: var(--paper);
-  background: var(--ink-2);
-  border: 1px solid var(--faint);
-  border-radius: 10px;
-  padding: 0.85em 1em;
-  transition: border-color 0.3s, background-color 0.3s;
-  -webkit-appearance: none;
-  appearance: none;
-}
-.lead__field select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23ff7a29' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 1em center;
-}
-.lead__field select:invalid { color: var(--muted); }
-.lead__field option { background: var(--ink-2); color: var(--paper); }
-.lead__field textarea { resize: vertical; min-height: 7rem; }
-.lead__field input::placeholder, .lead__field textarea::placeholder { color: rgba(239, 237, 230, 0.35); }
-.lead__field input:focus, .lead__field select:focus, .lead__field textarea:focus {
-  outline: none;
-  border-color: var(--accent);
-  background: var(--ink);
-}
-.lead__actions {
-  display: flex; align-items: center; justify-content: center;
-  gap: 1rem; flex-wrap: wrap;
-  margin-top: 0.6rem;
-}
-.lead__submit { min-width: 13rem; }
-.lead__submit[disabled] { opacity: 0.6; pointer-events: none; }
-.lead__status {
-  text-align: center;
-  margin-top: 1.2rem;
-  font-size: 0.92rem;
-  min-height: 1.4em;
-  color: var(--muted);
-}
-.lead__status.is-ok { color: var(--accent); }
-.lead__status.is-error { color: #ff7a6b; }
 .cta__mail { color: var(--paper); border-bottom: 1px solid var(--accent); }
 
 /* ============================================================
@@ -1491,33 +1427,16 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
 .est__back[hidden] { visibility: hidden; display: inline; }
 .est__next[disabled] { opacity: 0.4; pointer-events: none; }
 
-/* seletor e-mail / WhatsApp */
-.est__toggle {
-  display: inline-flex;
-  gap: 0.25rem;
-  padding: 0.25rem;
-  margin-bottom: 1.4rem;
-  background: var(--ink-2);
-  border: 1px solid var(--faint);
-  border-radius: 100px;
-}
-.est__toggle-btn {
-  padding: 0.5em 1.4em;
-  border-radius: 100px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--muted);
-  transition: color 0.25s, background-color 0.25s;
-}
-.est__toggle-btn:hover { color: var(--paper); }
-.est__toggle-btn.is-active {
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 700;
-}
-
-/* campos de texto (nome / e-mail / telefone) */
+/* campos de texto (nome / WhatsApp) */
 .est__field { margin: 2.2rem 0 0.6rem; max-width: 30rem; }
+.est__field + .est__field { margin-top: 1.2rem; }
+.est__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.82rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--muted);
+}
 .est__input {
   width: 100%;
   padding: 1rem 1.2rem;
@@ -1637,24 +1556,20 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   margin: 0 auto 0.8rem;
 }
 /* Aviso de privacidade (LGPD): discreto, mas sempre visível junto ao resultado
-   e ao formulário — é onde o dado pessoal é efetivamente enviado. */
-.est__privacy,
-.lead__privacy {
+   do estimador, que é onde o dado pessoal é enviado. */
+.est__privacy {
   color: var(--muted);
   font-size: 0.78rem;
   max-width: 52ch;
   margin: 0 auto 2rem;
 }
-.lead__privacy { margin: 1rem 0 0; }
 .est__privacy a,
-.lead__privacy a,
 .footer__privacy {
   color: var(--paper);
   border-bottom: 1px solid var(--accent);
   transition: color 0.3s;
 }
 .est__privacy a:hover,
-.lead__privacy a:hover,
 .footer__privacy:hover { color: var(--accent); }
 .footer__privacy { font-size: 0.85rem; }
 .est__ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
@@ -1707,7 +1622,6 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   .bnav { grid-template-columns: 1fr; }
   .bnav__card--next { text-align: left; }
   .bnav__card--empty { display: none; }
-  .lead__row { grid-template-columns: 1fr; gap: 0; }
   .blog-card { grid-template-columns: 1fr auto; }
   .blog-card__date { grid-column: 1 / -1; }
   .blog-card p { grid-column: 1; }

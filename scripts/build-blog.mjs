@@ -297,7 +297,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   </script>
   <link rel="preload" href="${base}fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="${base}fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="${base}css/style.css?v=9">${extraHead}
+  <link rel="stylesheet" href="${base}css/style.css?v=13">${extraHead}
 </head>
 <body>
 
@@ -320,7 +320,7 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
     </button>
   </header>
 
-  <a href="/#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
+  <a href="/estimador.html" class="fab" id="fab" data-hover><span>Montar meu projeto</span></a>
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
@@ -355,7 +355,7 @@ ${content}
   <script src="${base}vendor/gsap.min.js"></script>
   <script src="${base}vendor/ScrollTrigger.min.js"></script>
   <script src="${base}vendor/lenis.min.js"></script>
-  <script src="${base}js/i18n.js?v=6" defer></script>
+  <script src="${base}js/i18n.js?v=13" defer></script>
   <script src="${base}js/page.js?v=4" defer></script>
   <script src="${base}js/analytics.js" defer></script>
 </body>

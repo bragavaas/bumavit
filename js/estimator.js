@@ -110,21 +110,13 @@
     pt: {
       stepOf: function (a, b) { return 'Passo ' + a + ' de ' + b; },
       from: function (v) { return 'A partir de R$ ' + v; },
-      nameStep: {
-        q: 'Antes de começar, como podemos te chamar?',
-        hint: 'Só o primeiro nome já está ótimo.',
-        placeholder: 'Seu nome',
-        error: 'Escreva seu nome para continuar.'
-      },
       contactStep: {
-        q: function (n) { return n ? 'Pra onde mandamos sua estimativa, ' + n + '?' : 'Pra onde mandamos sua estimativa?'; },
-        methods: [{ id: 'email', name: 'E-mail' }, { id: 'phone', name: 'WhatsApp' }],
-        hint: {
-          email: 'Enviamos o resumo do seu projeto por e-mail, para você guardar e comparar com calma. Nada de spam.',
-          phone: 'Mandamos o resumo do seu projeto no WhatsApp. Sem disparo automático, sem spam.'
-        },
-        placeholder: { email: 'voce@empresa.com.br', phone: '(21) 99999-9999' },
-        error: { email: 'Digite um e-mail válido.', phone: 'Digite um telefone válido, com DDD.' }
+        q: 'Pra onde mandamos sua estimativa?',
+        hint: 'Seu nome e seu WhatsApp. A faixa de orçamento aparece logo em seguida, e o resumo do projeto chega no seu WhatsApp. Sem disparo automático, sem spam.',
+        nameLabel: 'Nome', phoneLabel: 'WhatsApp',
+        placeholder: { name: 'Seu nome', phone: '(21) 99999-9999' },
+        error: { name: 'Escreva seu nome.', phone: 'Digite um WhatsApp válido, com DDD.' },
+        submit: 'Ver minha estimativa →'
       },
       budgetStep: {
         q: 'Quanto você pensa em gastar no projeto?',
@@ -216,11 +208,10 @@
       },
       disclaimer: 'Estimativa automática para referência. A proposta final, com escopo e valores fechados, sai depois de uma conversa gratuita de descoberta.',
       privacyNote: 'Seus dados são usados apenas para responder esta estimativa, conforme a <a href="/privacidade.html">Política de Privacidade</a>.',
-      ctaWhats: 'Enviar pelo WhatsApp',
-      ctaMail: 'Enviar por e-mail',
+      ctaWhats: 'Falar com a Bumavit no WhatsApp',
       restart: 'Recomeçar',
       handoffIntro: 'Olá, Bumavit. Montei meu projeto no site:',
-      handoffName: 'Nome', handoffEmail: 'E-mail', handoffPhone: 'WhatsApp', handoffBudget: 'Faixa de orçamento',
+      handoffName: 'Nome', handoffPhone: 'WhatsApp', handoffBudget: 'Faixa de orçamento',
       handoffType: 'Tipo', handoffPages: 'Páginas', handoffFeatures: 'Funcionalidades',
       handoffDeadline: 'Prazo', handoffEstimate: 'Estimativa apresentada',
       handoffExtra: function (n) { return n > 0 ? ' (' + n + ' adicionais)' : ''; },
@@ -229,21 +220,13 @@
     en: {
       stepOf: function (a, b) { return 'Step ' + a + ' of ' + b; },
       from: function (v) { return 'From R$ ' + v; },
-      nameStep: {
-        q: 'Before we start, what should we call you?',
-        hint: 'First name is plenty.',
-        placeholder: 'Your name',
-        error: 'Please enter your name to continue.'
-      },
       contactStep: {
-        q: function (n) { return n ? 'Where should we send your estimate, ' + n + '?' : 'Where should we send your estimate?'; },
-        methods: [{ id: 'email', name: 'E-mail' }, { id: 'phone', name: 'WhatsApp' }],
-        hint: {
-          email: 'We e-mail you the summary of your project so you can keep it and compare at your own pace. No spam.',
-          phone: 'We send your project summary on WhatsApp. No automated blasts, no spam.'
-        },
-        placeholder: { email: 'you@company.com', phone: '+55 21 99999-9999' },
-        error: { email: 'Please enter a valid e-mail.', phone: 'Please enter a valid phone number.' }
+        q: 'Where should we send your estimate?',
+        hint: 'Your name and WhatsApp. The price range shows up right after, and the project summary arrives on your WhatsApp. No automated blasts, no spam.',
+        nameLabel: 'Name', phoneLabel: 'WhatsApp',
+        placeholder: { name: 'Your name', phone: '+55 21 99999-9999' },
+        error: { name: 'Please enter your name.', phone: 'Please enter a valid WhatsApp number.' },
+        submit: 'See my estimate →'
       },
       budgetStep: {
         q: 'How much are you planning to spend on the project?',
@@ -335,11 +318,10 @@
       },
       disclaimer: 'Automatic estimate for reference only. The final proposal, with fixed scope and pricing, comes after a free discovery call.',
       privacyNote: 'Your data is used only to answer this estimate, per our <a href="/privacidade.html">Privacy Policy</a>.',
-      ctaWhats: 'Send via WhatsApp',
-      ctaMail: 'Send by e-mail',
+      ctaWhats: 'Talk to Bumavit on WhatsApp',
       restart: 'Start over',
       handoffIntro: 'Hi Bumavit, I configured my project on the website:',
-      handoffName: 'Name', handoffEmail: 'E-mail', handoffPhone: 'WhatsApp', handoffBudget: 'Budget range',
+      handoffName: 'Name', handoffPhone: 'WhatsApp', handoffBudget: 'Budget range',
       handoffType: 'Type', handoffPages: 'Pages', handoffFeatures: 'Features',
       handoffDeadline: 'Timeline', handoffEstimate: 'Estimate shown',
       handoffExtra: function (n) { return n > 0 ? ' (' + n + ' extra)' : ''; },
@@ -348,21 +330,13 @@
     es: {
       stepOf: function (a, b) { return 'Paso ' + a + ' de ' + b; },
       from: function (v) { return 'Desde R$ ' + v; },
-      nameStep: {
-        q: 'Antes de empezar, ¿cómo te llamamos?',
-        hint: 'Con el primer nombre ya basta.',
-        placeholder: 'Tu nombre',
-        error: 'Escribe tu nombre para continuar.'
-      },
       contactStep: {
-        q: function (n) { return n ? '¿A dónde enviamos tu estimación, ' + n + '?' : '¿A dónde enviamos tu estimación?'; },
-        methods: [{ id: 'email', name: 'Correo' }, { id: 'phone', name: 'WhatsApp' }],
-        hint: {
-          email: 'Te enviamos el resumen de tu proyecto por correo, para que lo guardes y lo compares con calma. Nada de spam.',
-          phone: 'Te enviamos el resumen de tu proyecto por WhatsApp. Sin envíos automáticos, sin spam.'
-        },
-        placeholder: { email: 'tu@empresa.com', phone: '+55 21 99999-9999' },
-        error: { email: 'Escribe un correo válido.', phone: 'Escribe un teléfono válido.' }
+        q: '¿A dónde enviamos tu estimación?',
+        hint: 'Tu nombre y tu WhatsApp. El rango de presupuesto aparece enseguida, y el resumen del proyecto llega a tu WhatsApp. Sin envíos automáticos, sin spam.',
+        nameLabel: 'Nombre', phoneLabel: 'WhatsApp',
+        placeholder: { name: 'Tu nombre', phone: '+55 21 99999-9999' },
+        error: { name: 'Escribe tu nombre.', phone: 'Escribe un WhatsApp válido.' },
+        submit: 'Ver mi estimación →'
       },
       budgetStep: {
         q: '¿Cuánto piensas gastar en el proyecto?',
@@ -454,11 +428,10 @@
       },
       disclaimer: 'Estimación automática solo de referencia. La propuesta final, con alcance y valores cerrados, llega después de una llamada de descubrimiento gratuita.',
       privacyNote: 'Tus datos se usan solo para responder esta estimación, según nuestra <a href="/privacidade.html">Política de Privacidad</a>.',
-      ctaWhats: 'Enviar por WhatsApp',
-      ctaMail: 'Enviar por correo',
+      ctaWhats: 'Hablar con Bumavit por WhatsApp',
       restart: 'Empezar de nuevo',
       handoffIntro: 'Hola, Bumavit. Configuré mi proyecto en el sitio:',
-      handoffName: 'Nombre', handoffEmail: 'Correo', handoffPhone: 'WhatsApp', handoffBudget: 'Rango de presupuesto',
+      handoffName: 'Nombre', handoffPhone: 'WhatsApp', handoffBudget: 'Rango de presupuesto',
       handoffType: 'Tipo', handoffPages: 'Páginas', handoffFeatures: 'Funcionalidades',
       handoffDeadline: 'Plazo', handoffEstimate: 'Estimación mostrada',
       handoffExtra: function (n) { return n > 0 ? ' (' + n + ' adicionales)' : ''; },
@@ -472,37 +445,37 @@
 
   function initialState() {
     return {
-      idx: 0, name: '', contact: 'email', email: '', phone: '',
+      idx: 0, name: '', phone: '',
       type: null, pages: PAGES_INCLUDED, features: [], budget: null, deadline: null
     };
   }
   var state = initialState();
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Sequência de passos depende do tipo (site ganha o passo de páginas) */
+  /* Sequência de passos depende do tipo (site ganha o passo de páginas).
+     Começa pelo projeto e termina no contato: nome e WhatsApp vêm juntos,
+     logo antes da faixa de preço (decisão do fundador, 12/11). */
   function sequence() {
-    return state.type === 'site'
-      ? ['name', 'type', 'pages', 'features', 'contact', 'budget', 'deadline']
-      : ['name', 'type', 'features', 'contact', 'budget', 'deadline'];
+    /* Antes de escolher o tipo, conta o caminho mais longo (o do site), para o
+       "Passo 1 de N" não crescer no meio. */
+    return state.type === 'site' || !state.type
+      ? ['type', 'pages', 'features', 'budget', 'deadline', 'contact']
+      : ['type', 'features', 'budget', 'deadline', 'contact'];
   }
 
-  /* Nome e e-mail vêm do usuário e entram via innerHTML: escapar sempre. */
+  /* Nome e WhatsApp vêm do usuário e entram via innerHTML: escapar sempre. */
   function esc(s) {
     return String(s == null ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
   }
-  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(v).trim()); }
   /* Aceita formatos locais e internacionais: só conta dígitos.
      10 = fixo com DDD, 11 = celular com DDD, 15 = máximo do padrão E.164. */
   function validPhone(v) {
     var digits = String(v).replace(/\D/g, '');
     return digits.length >= 10 && digits.length <= 15;
   }
-  function contactValue() { return state.contact === 'email' ? state.email : state.phone; }
-  function contactValid() {
-    return state.contact === 'email' ? validEmail(state.email) : validPhone(state.phone);
-  }
+  function contactValid() { return state.name.trim().length > 0 && validPhone(state.phone); }
   function safeName() { return esc(state.name.trim()); }
 
   function fmt(n) { return n.toLocaleString(LOCALES[LANG] || 'pt-BR'); }
@@ -586,7 +559,7 @@
       _subject: 'Lead do estimador · ' + state.name.trim() + ' · ' + typeName(state.type),
       origem: 'Estimador do site',
       nome: state.name.trim(),
-      contato: (state.contact === 'email' ? 'E-mail: ' : 'WhatsApp: ') + contactValue().trim(),
+      contato: 'WhatsApp: ' + state.phone.trim(),
       tipo: typeName(state.type),
       funcionalidades: state.features.length ? state.features.map(featureName).join(', ') : t.none,
       faixa_investimento: budgetName(state.budget),
@@ -618,7 +591,7 @@
       : t.none;
     var lines = [t.handoffIntro,
       '• ' + t.handoffName + ': ' + state.name.trim(),
-      '• ' + (state.contact === 'email' ? t.handoffEmail : t.handoffPhone) + ': ' + contactValue().trim(),
+      '• ' + t.handoffPhone + ': ' + state.phone.trim(),
       '• ' + t.handoffType + ': ' + typeName(state.type)];
     if (state.type === 'site') {
       lines.push('• ' + t.handoffPages + ': ' + state.pages + t.handoffExtra(state.pages - PAGES_INCLUDED));
@@ -632,7 +605,6 @@
 
   function canAdvance() {
     var key = sequence()[state.idx];
-    if (key === 'name') return state.name.trim().length > 0;
     if (key === 'contact') return contactValid();
     if (key === 'type') return !!state.type;
     if (key === 'budget') return !!state.budget;
@@ -666,8 +638,6 @@
       if (state.type === 'site') chips.push(t.pagesChip(state.pages));
       chips = chips.concat(state.features.map(featureName), [deadlineName(state.deadline)]);
       var waHref = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(handoffText());
-      var mailHref = 'mailto:contato@bumavit.com.br?subject=' + encodeURIComponent('Projeto · ' + typeName(state.type)) +
-        '&body=' + encodeURIComponent(handoffText());
 
       submitLead(e);
       if (lastTrackedStep !== 'result') {
@@ -676,7 +646,7 @@
           project_type: state.type,
           budget: state.budget,
           deadline: state.deadline,
-          contact_method: state.contact,
+          contact_method: 'whatsapp',
           estimate_low: e.lo,
           estimate_high: e.hi,
           budget_fit: fit || 'unknown'
@@ -695,37 +665,25 @@
         '<p class="est__privacy">' + t.privacyNote + '</p>' +
         '<div class="est__ctas">' +
         '<a class="btn-pill btn-pill--accent" href="' + waHref + '" target="_blank" rel="noopener" data-hover><span>' + t.ctaWhats + '</span></a>' +
-        '<a class="btn-pill" href="' + mailHref + '" data-hover><span>' + t.ctaMail + '</span></a>' +
         '</div>' +
         '<button type="button" class="est__restart" data-act="restart" data-hover>' + t.restart + '</button>' +
         '</div>';
-    } else if (key === 'name') {
-      html += '<h2 class="est__question">' + t.nameStep.q + '</h2>' +
-        '<p class="est__hint">' + t.nameStep.hint + '</p>' +
-        '<div class="est__field">' +
-        '<input type="text" id="estInput" class="est__input"' +
-        ' value="' + esc(state.name) + '" placeholder="' + esc(t.nameStep.placeholder) + '"' +
-        ' autocomplete="given-name" aria-label="' + esc(t.nameStep.placeholder) + '">' +
-        '<p class="est__error" id="estError" hidden>' + esc(t.nameStep.error) + '</p>' +
-        '</div>' + navButtons(state.idx > 0);
     } else if (key === 'contact') {
-      var method = state.contact;
       var cs = t.contactStep;
-      html += '<h2 class="est__question">' + cs.q(safeName()) + '</h2>' +
-        '<div class="est__toggle" role="group">';
-      cs.methods.forEach(function (m) {
-        html += '<button type="button" class="est__toggle-btn' + (method === m.id ? ' is-active' : '') + '"' +
-          ' data-contact="' + m.id + '" aria-pressed="' + (method === m.id) + '" data-hover>' + m.name + '</button>';
-      });
-      html += '</div>' +
-        '<p class="est__hint">' + cs.hint[method] + '</p>' +
+      html += '<h2 class="est__question">' + cs.q + '</h2>' +
+        '<p class="est__hint">' + cs.hint + '</p>' +
         '<div class="est__field">' +
-        '<input type="' + (method === 'email' ? 'email' : 'tel') + '" id="estInput" class="est__input"' +
-        ' value="' + esc(contactValue()) + '" placeholder="' + esc(cs.placeholder[method]) + '"' +
-        ' autocomplete="' + (method === 'email' ? 'email' : 'tel') + '"' +
-        ' aria-label="' + esc(cs.placeholder[method]) + '">' +
-        '<p class="est__error" id="estError" hidden>' + esc(cs.error[method]) + '</p>' +
-        '</div>' + navButtons(true);
+        '<label class="est__label" for="estName">' + cs.nameLabel + '</label>' +
+        '<input type="text" id="estName" class="est__input" data-field="name"' +
+        ' value="' + esc(state.name) + '" placeholder="' + esc(cs.placeholder.name) + '" autocomplete="given-name">' +
+        '<p class="est__error" data-error="name" hidden>' + esc(cs.error.name) + '</p>' +
+        '</div>' +
+        '<div class="est__field">' +
+        '<label class="est__label" for="estPhone">' + cs.phoneLabel + '</label>' +
+        '<input type="tel" id="estPhone" class="est__input" data-field="phone"' +
+        ' value="' + esc(state.phone) + '" placeholder="' + esc(cs.placeholder.phone) + '" autocomplete="tel" inputmode="tel">' +
+        '<p class="est__error" data-error="phone" hidden>' + esc(cs.error.phone) + '</p>' +
+        '</div>' + navButtons(true, cs.submit);
     } else if (key === 'type') {
       html += '<h2 class="est__question">' + t.typeStep.q(safeName()) + '</h2>' +
         '<p class="est__hint">' + t.typeStep.hint + '</p>' +
@@ -737,7 +695,7 @@
           '<span class="est__opt-desc">' + o.desc + ' · ' + t.from(fmt(fromPrice)) + '</span>' +
           '</button>';
       });
-      html += '</div>' + navButtons(true);
+      html += '</div>' + navButtons(state.idx > 0);
     } else if (key === 'budget') {
       html += '<h2 class="est__question">' + t.budgetStep.q + '</h2>' +
         '<p class="est__hint">' + t.budgetStep.hint + '</p>' +
@@ -795,23 +753,35 @@
       });
     }
 
-    var input = document.getElementById('estInput');
-    if (input) {
-      var field = key === 'name' ? 'name' : state.contact; // 'name', 'email' ou 'phone'
+    var inputs = root.querySelectorAll('[data-field]');
+    if (inputs.length) {
       var nextBtn = root.querySelector('.est__next');
-      var errorEl = document.getElementById('estError');
-      input.addEventListener('input', function () {
-        state[field] = input.value;
-        if (errorEl) errorEl.hidden = true;
-        if (nextBtn) nextBtn.disabled = !canAdvance();
+      var showErrors = function () {
+        root.querySelector('[data-error="name"]').hidden = state.name.trim().length > 0;
+        root.querySelector('[data-error="phone"]').hidden = validPhone(state.phone);
+      };
+      inputs.forEach(function (input) {
+        var field = input.getAttribute('data-field'); // 'name' ou 'phone'
+        var err = root.querySelector('[data-error="' + field + '"]');
+        input.addEventListener('input', function () {
+          state[field] = input.value;
+          err.hidden = true;
+          if (nextBtn) nextBtn.disabled = !canAdvance();
+        });
+        /* Telefone incompleto: avisa ao sair do campo, sem esperar o Enter. */
+        if (field === 'phone') {
+          input.addEventListener('blur', function () {
+            if (input.value.trim()) err.hidden = validPhone(state.phone);
+          });
+        }
+        input.addEventListener('keydown', function (ev) {
+          if (ev.key !== 'Enter') return;
+          ev.preventDefault();
+          if (canAdvance()) { state.idx++; render(true); }
+          else showErrors();
+        });
       });
-      input.addEventListener('keydown', function (ev) {
-        if (ev.key !== 'Enter') return;
-        ev.preventDefault();
-        if (canAdvance()) { state.idx++; render(true); }
-        else if (errorEl) errorEl.hidden = false;
-      });
-      if (!reducedMotion) input.focus({ preventScroll: true });
+      if (!reducedMotion) inputs[0].focus({ preventScroll: true });
     }
 
     if (animate && !reducedMotion && window.gsap) {
@@ -821,27 +791,21 @@
     }
   }
 
-  function navButtons(showBack) {
+  function navButtons(showBack, nextLabel) {
     return '<div class="est__nav">' +
       '<button type="button" class="est__back" data-act="back"' + (showBack ? '' : ' hidden') + ' data-hover>' + t.back + '</button>' +
-      '<button type="button" class="btn-pill btn-pill--accent est__next" data-act="next" ' + (canAdvance() ? '' : 'disabled') + ' data-hover><span>' + t.next + '</span></button>' +
+      '<button type="button" class="btn-pill btn-pill--accent est__next" data-act="next" ' + (canAdvance() ? '' : 'disabled') + ' data-hover><span>' + (nextLabel || t.next) + '</span></button>' +
       '</div>';
   }
 
   root.addEventListener('click', function (e) {
     var opt = e.target.closest('[data-opt]');
     var act = e.target.closest('[data-act]');
-    var contactBtn = e.target.closest('[data-contact]');
     var cta = e.target.closest('.est__ctas a');
     var key = sequence()[state.idx];
 
     if (cta) { // deixa o link seguir; só registra o clique
-      track('estimator_cta', { method: cta.href.indexOf('wa.me') !== -1 ? 'whatsapp' : 'email' });
-      return;
-    }
-    if (contactBtn) {
-      var m = contactBtn.getAttribute('data-contact');
-      if (state.contact !== m) { state.contact = m; render(false); }
+      track('estimator_cta', { method: 'whatsapp' });
       return;
     }
     if (opt) {

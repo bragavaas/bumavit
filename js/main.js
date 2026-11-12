@@ -10,17 +10,12 @@
   /* ============ Reduced motion: static, accessible page ============ */
   if (reducedMotion) {
     document.body.classList.add('reduced-motion');
-    document.body.classList.remove('is-loading');
-    var pre = document.getElementById('preloader');
-    if (pre) pre.style.display = 'none';
-    gsap.set('.preloader__char', { y: 0 });
     document.querySelectorAll('[data-count]').forEach(function (el) {
       el.textContent = el.dataset.count + (el.dataset.suffix || '');
     });
     document.querySelectorAll('.manifesto__text').forEach(function (el) { el.style.opacity = 1; });
     bindMenu(null);
     bindAnchors(null);
-    bindLeadForm();
     return; // no scroll-driven motion at all (FAQ usa <details> nativo)
   }
 
@@ -63,35 +58,9 @@
   var manifesto = document.getElementById('manifestoText');
   if (manifesto) splitWords(manifesto, false, 'm-word');
 
-  /* ============ Preloader → hero intro ============ */
-
-  var heroIntro = gsap.timeline({ paused: true });
-  heroIntro
-    .to('.h2-copy [data-reveal]', { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.08 })
-    .to('.h2-stage', { opacity: 1, y: 0, duration: 1.1, ease: 'power3.out' }, 0.15)
-    .set('.hero [data-reveal]', { willChange: 'auto' });
-
-  var counter = { v: 0 };
-  var countEl = document.getElementById('preCount');
-
-  gsap.timeline({
-    onComplete: function () {
-      document.body.classList.remove('is-loading');
-      var p = document.getElementById('preloader');
-      if (p) p.style.display = 'none';
-      heroIntro.play();
-      ScrollTrigger.refresh();
-    }
-  })
-    .to('.preloader__char', { y: 0, duration: 0.9, ease: 'power4.out', stagger: 0.05 })
-    .to(counter, {
-      v: 100,
-      duration: 1.4,
-      ease: 'power2.inOut',
-      onUpdate: function () { if (countEl) countEl.textContent = Math.round(counter.v); }
-    }, '-=0.5')
-    .to('.preloader__char', { y: '-110%', duration: 0.7, ease: 'power4.in', stagger: 0.04 }, '+=0.15')
-    .to('#preloader', { yPercent: -100, duration: 0.9, ease: 'power4.inOut' }, '-=0.25');
+  /* Hero: a entrada do texto e do palco é CSS (animation hero-in em
+     style.css), para não esperar o GSAP baixar. Sem preloader: a foto do
+     hero é o LCP no celular e nada pode cobri-la. */
 
   /* ============ FAB: escondido enquanto o hero está na tela (o hero já tem o CTA) ============ */
   var fab = document.getElementById('fab');
@@ -278,18 +247,6 @@
     });
   }
 
-  /* ============ Formulário: entrada ============ */
-  var leadForm = document.getElementById('leadForm');
-  if (leadForm) {
-    gsap.from(leadForm, {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: 'power3.out',
-      scrollTrigger: { trigger: leadForm, start: 'top 88%' }
-    });
-  }
-
   /* ============ Footer wordmark slide ============ */
   gsap.from('.footer__wordmark', {
     yPercent: 40,
@@ -351,7 +308,6 @@
   /* ============ Menu + anchors + formulário ============ */
   bindMenu(lenis);
   bindAnchors(lenis);
-  bindLeadForm();
 
   /* ---------------------------------------------------------- */
 
@@ -416,75 +372,5 @@
         else window.scrollTo(0, 0);
       });
     }
-  }
-
-  function bindLeadForm() {
-    var form = document.getElementById('leadForm');
-    if (!form) return;
-    var status = document.getElementById('leadStatus');
-    var submitBtn = form.querySelector('.lead__submit');
-    // strings traduzidas pelo i18n.js (fallback pt-BR)
-    var STR = window.__STR || {
-      formSending: 'Enviando…',
-      formOk: 'Mensagem enviada. Respondemos em até 24h. ✦',
-      formError: 'Algo deu errado. Tente de novo ou chame no WhatsApp.',
-      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail.',
-      formLeaveConfirm: 'Você já preencheu o formulário. Quer sair mesmo e continuar por aqui? Se preferir, clique em "Enviar mensagem" para não perder o que digitou.'
-    };
-
-    function setStatus(msg, cls) {
-      status.textContent = msg;
-      status.className = 'lead__status' + (cls ? ' ' + cls : '');
-    }
-
-    // Campos reais do form (ignora o próprio botão de submit e os outros CTAs).
-    function formHasInput() {
-      var fields = form.querySelectorAll('input, textarea, select');
-      for (var i = 0; i < fields.length; i++) {
-        var el = fields[i];
-        if (el.type === 'submit' || el.type === 'button') continue;
-        if ((el.value || '').trim() !== '') return true;
-      }
-      return false;
-    }
-
-    // "Chamar no WhatsApp" e "Monte seu projeto" dentro do form levam para fora
-    // da página; se o usuário já escreveu algo, confirma antes de tirá-lo do form.
-    var leaveLinks = form.querySelectorAll('.lead__actions a[href]');
-    for (var li = 0; li < leaveLinks.length; li++) {
-      leaveLinks[li].addEventListener('click', function (e) {
-        if (formHasInput() && !window.confirm(STR.formLeaveConfirm)) {
-          e.preventDefault();
-        }
-      });
-    }
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-
-      if (form.action.indexOf('SEU_FORM_ID') !== -1) {
-        setStatus(STR.formUnconfigured, 'is-error');
-        return;
-      }
-
-      submitBtn.disabled = true;
-      setStatus(STR.formSending);
-
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(function (r) {
-        if (!r.ok) throw new Error('HTTP ' + r.status);
-        form.reset();
-        setStatus(STR.formOk, 'is-ok');
-        if (window.gtag) { gtag('event', 'form_submit'); }
-      }).catch(function () {
-        setStatus(STR.formError, 'is-error');
-      }).finally(function () {
-        submitBtn.disabled = false;
-      });
-    });
   }
 })();

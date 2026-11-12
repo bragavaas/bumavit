@@ -14,31 +14,6 @@
   try { LANG = localStorage.getItem(KEY) || 'pt'; } catch (e) {}
   if (['pt', 'en', 'es'].indexOf(LANG) === -1) LANG = 'pt';
 
-  /* ---------- Strings usadas pelo JS (formulário etc.) ---------- */
-  var STR = {
-    pt: {
-      formSending: 'Enviando…',
-      formOk: 'Mensagem enviada. Respondemos em até 24h. ✦',
-      formError: 'Algo deu errado. Tente de novo ou chame no WhatsApp.',
-      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail.',
-      formLeaveConfirm: 'Você já preencheu o formulário. Quer sair mesmo e continuar por aqui? Se preferir, clique em "Enviar mensagem" para não perder o que digitou.'
-    },
-    en: {
-      formSending: 'Sending…',
-      formOk: 'Message sent. We reply within 24h. ✦',
-      formError: 'Something went wrong. Try again or ping us on WhatsApp.',
-      formUnconfigured: 'The form isn’t configured yet. For now, reach us on WhatsApp or by e-mail.',
-      formLeaveConfirm: 'You already filled in the form. Leave and continue here anyway? If you prefer, click "Send message" so you don’t lose what you typed.'
-    },
-    es: {
-      formSending: 'Enviando…',
-      formOk: 'Mensaje enviado. Respondemos en hasta 24h. ✦',
-      formError: 'Algo salió mal. Inténtalo de nuevo o escríbenos por WhatsApp.',
-      formUnconfigured: 'El formulario aún no está configurado. Por ahora, escríbenos por WhatsApp o por correo.',
-      formLeaveConfirm: 'Ya completaste el formulario. ¿Quieres salir e ir por ahí de todas formas? Si prefieres, haz clic en "Enviar mensaje" para no perder lo que escribiste.'
-    }
-  };
-  window.__STR = STR[LANG];
   window.__LANG = LANG;
 
   /* ---------- Dicionário comum + página principal ---------- */
@@ -52,7 +27,7 @@
       '.nav__links a[href$="#projetos"]': 'Work',
       '.nav__links a[href$="#processo"]': 'Process',
       '.nav__links a[href$="estimador.html"]': 'Estimator',
-      '.fab span': 'Let’s talk',
+      '.fab span': 'Build my project',
       '.menu__links a[href$="#estudio"]': { text: 'Studio' },
       '.menu__links a[href$="#servicos"]': { text: 'Services' },
       '.menu__links a[href$="#projetos"]': { text: 'Work' },
@@ -78,7 +53,6 @@
       '.footer__services a[href$="manutencao-de-sites/"]': 'Website maintenance',
       '.footer__services a[href$="estimador.html"]': 'Budget estimator',
       '.footer__col a[href$="#contato"]': 'Contact',
-      '.lead__estimator span': 'Build your project →',
       '.footer__col--info h3': 'Base',
       '.footer__col--info p': { html: 'Brazil, serving<br>clients worldwide.' },
       '.footer__bottom p:first-child': '© 2026 Bumavit. All rights reserved.',
@@ -91,9 +65,11 @@
       '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Rio de Janeiro' },
       '.h2-title': { html: 'You need a website and want to <em>hire the right people</em>.' },
       '.h2-sub': 'At Bumavit, you know the price, what’s included and who looks after the site afterwards, before you sign. Custom websites, online stores and apps.',
-      '.h2-cta .btn-pill span': 'Talk about my project →',
-      '.h2-cta__note': { html: '<b>We reply within 24h.</b> No bots, no queue.' },
-      '.h2-alt': { html: 'Want a price range first? <a href="estimador.html" data-hover>Try the estimator →</a>' },
+      '.h2-cta .btn-pill span': 'See what my project costs →',
+      '.h2-cta__note': { html: '<b>Takes 1 minute.</b> The price range shows up right away.' },
+      '.h2-alt': { html: 'Rather talk first? <a href="https://wa.me/5521994822884?text=Ol%C3%A1%2C%20Bumavit.%20Tenho%20uma%20ideia%20de%20projeto." target="_blank" rel="noopener" data-hover>Message us on WhatsApp →</a>' },
+      '.cta__actions .btn-pill--solid span': 'Build your project →',
+      '.cta__actions a[href*="wa.me"] span': 'Chat on WhatsApp',
       '.h2-proof': { attr: { 'aria-label': '+120% search traffic in 6 months, Yacht Day, Toronto. See the project' } },
       '.h2-proof__desc': 'search traffic in 6 months',
       '#devstage': { attr: { 'aria-label': 'Yacht Day website shown on a laptop and a phone' } },
@@ -185,12 +161,8 @@
       '#contato .section__label': '( Contact )',
       '.cta__line:nth-child(1)': 'Got an idea?',
       '.cta__line:nth-child(2)': 'Let’s make it real.',
-      '.lead__row .lead__field:nth-child(1) span': 'Your name',
-      '.lead__row .lead__field:nth-child(2) span': 'Your e-mail',
       'input[name="nome"]': { attr: { placeholder: 'What should we call you?' } },
       'input[name="email"]': { attr: { placeholder: 'you@company.com' } },
-      'form.lead > .lead__field:nth-of-type(1) > span': 'Project type',
-      'form.lead > .lead__field:nth-of-type(2) > span': 'Tell us the idea',
       'select[name="tipo"] option:nth-child(1)': 'Select…',
       'select[name="tipo"] option:nth-child(2)': 'Institutional website',
       'select[name="tipo"] option:nth-child(3)': 'Online store',
@@ -199,8 +171,6 @@
       'select[name="tipo"] option:nth-child(6)': 'SEO & Performance',
       'select[name="tipo"] option:nth-child(7)': 'Other',
       'textarea[name="mensagem"]': { attr: { placeholder: 'What do you want to build?' } },
-      '.lead__submit span': 'Send message',
-      '.lead__actions a.btn-pill span': 'Chat on WhatsApp',
       '.cta__note': { html: 'Or write to <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>. We reply within 24h, in Portuguese, English or Spanish.' },
 
       /* --- páginas internas (comuns) --- */
@@ -224,7 +194,7 @@
       '.nav__links a[href$="#projetos"]': 'Proyectos',
       '.nav__links a[href$="#processo"]': 'Proceso',
       '.nav__links a[href$="estimador.html"]': 'Estimador',
-      '.fab span': 'Hablemos',
+      '.fab span': 'Arma mi proyecto',
       '.menu__links a[href$="#estudio"]': { text: 'Estudio' },
       '.menu__links a[href$="#servicos"]': { text: 'Servicios' },
       '.menu__links a[href$="#projetos"]': { text: 'Proyectos' },
@@ -238,7 +208,6 @@
       '.footer__col a[href$="sobre.html"]': 'Nosotros',
       '.footer__col a[href$="estimador.html"]': 'Estimador',
       '.footer__col a[href$="#contato"]': 'Contacto',
-      '.lead__estimator span': 'Arma tu proyecto →',
       '.footer__col--info p': { html: 'Brasil, atendiendo<br>clientes en todo el mundo.' },
       '.footer__bottom p:first-child': '© 2026 Bumavit. Todos los derechos reservados.',
       '.footer__bottom p:nth-of-type(2)': 'Hecho en Brasil, con café.',
@@ -249,9 +218,11 @@
       '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Rio de Janeiro' },
       '.h2-title': { html: 'Necesitas un sitio web y <em>no quieres equivocarte</em> al contratar.' },
       '.h2-sub': 'En Bumavit, antes de firmar, sabes cuánto cuesta, qué incluye y quién se ocupa del sitio después. Sitios web, tiendas online y aplicaciones a medida.',
-      '.h2-cta .btn-pill span': 'Hablar sobre mi proyecto →',
-      '.h2-cta__note': { html: '<b>Respondemos en menos de 24 h.</b> Sin bots, sin esperas.' },
-      '.h2-alt': { html: '¿Prefieres ver un rango de precio antes? <a href="estimador.html" data-hover>Usa el estimador →</a>' },
+      '.h2-cta .btn-pill span': 'Ver cuánto cuesta mi proyecto →',
+      '.h2-cta__note': { html: '<b>Toma 1 minuto.</b> El rango de precio aparece al instante.' },
+      '.h2-alt': { html: '¿Prefieres conversar antes? <a href="https://wa.me/5521994822884?text=Ol%C3%A1%2C%20Bumavit.%20Tenho%20uma%20ideia%20de%20projeto." target="_blank" rel="noopener" data-hover>Escríbenos por WhatsApp →</a>' },
+      '.cta__actions .btn-pill--solid span': 'Arma tu proyecto →',
+      '.cta__actions a[href*="wa.me"] span': 'Escribir por WhatsApp',
       '.h2-proof': { attr: { 'aria-label': '+120% de visitas desde búsquedas en 6 meses, Yacht Day, Toronto. Ver el proyecto' } },
       '.h2-proof__desc': 'de visitas desde búsquedas en 6 meses',
       '#devstage': { attr: { 'aria-label': 'Sitio de Yacht Day en una laptop y un celular' } },
@@ -336,12 +307,8 @@
       '#contato .section__label': '( Contacto )',
       '.cta__line:nth-child(1)': '¿Tienes una idea?',
       '.cta__line:nth-child(2)': 'Hagámosla realidad.',
-      '.lead__row .lead__field:nth-child(1) span': 'Tu nombre',
-      '.lead__row .lead__field:nth-child(2) span': 'Tu correo',
       'input[name="nome"]': { attr: { placeholder: '¿Cómo te llamamos?' } },
       'input[name="email"]': { attr: { placeholder: 'tu@empresa.com' } },
-      'form.lead > .lead__field:nth-of-type(1) > span': 'Tipo de proyecto',
-      'form.lead > .lead__field:nth-of-type(2) > span': 'Cuéntanos la idea',
       'select[name="tipo"] option:nth-child(1)': 'Selecciona…',
       'select[name="tipo"] option:nth-child(2)': 'Sitio institucional',
       'select[name="tipo"] option:nth-child(3)': 'Tienda online',
@@ -350,8 +317,6 @@
       'select[name="tipo"] option:nth-child(6)': 'SEO y Performance',
       'select[name="tipo"] option:nth-child(7)': 'Otro',
       'textarea[name="mensagem"]': { attr: { placeholder: '¿Qué quieres construir?' } },
-      '.lead__submit span': 'Enviar mensaje',
-      '.lead__actions a.btn-pill span': 'Escribir por WhatsApp',
       '.cta__note': { html: 'O escribe a <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>. Respondemos en hasta 24h, en portugués, inglés o español.' },
 
       '.footer__bottom a[href="/#projetos"]': '← Todos los proyectos',

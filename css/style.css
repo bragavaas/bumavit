@@ -74,7 +74,6 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
-body.is-loading { overflow: hidden; }
 body.menu-open { overflow: hidden; }
 
 ::selection { background: var(--accent); color: var(--accent-ink); }
@@ -134,37 +133,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   70% { transform: translate(9%, 4%); }
   90% { transform: translate(-1%, 7%); }
 }
-
-/* ---------- Preloader ---------- */
-.preloader {
-  position: fixed; inset: 0;
-  z-index: 10000;
-  background: var(--ink);
-  display: flex; align-items: center; justify-content: center;
-}
-.preloader__logo {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2rem, 8vw, 5.5rem);
-  letter-spacing: 0.02em;
-  overflow: hidden;
-  display: flex;
-}
-.preloader__char {
-  display: inline-block;
-  transform: translateY(110%);
-}
-.preloader__char--accent { color: var(--accent); font-size: 0.5em; align-self: flex-start; margin-top: 0.35em; }
-.preloader__count {
-  position: absolute;
-  bottom: var(--pad); right: var(--pad);
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  color: rgba(239, 237, 230, 0.78); /* contraste AA mesmo durante a animação */
-  font-variant-numeric: tabular-nums;
-}
-.preloader__count::after { content: '%'; color: var(--accent); }
 
 /* ---------- Custom cursor ---------- */
 .cursor, .cursor-dot { display: none; }
@@ -824,6 +792,18 @@ body.menu-open .nav__burger span:last-child { transform: translateY(-4px) rotate
 /* ---------- Reveal defaults (JS animates in) ---------- */
 [data-reveal] { opacity: 0; transform: translateY(28px); will-change: transform, opacity; }
 .no-js [data-reveal], .reduced-motion [data-reveal] { opacity: 1; transform: none; }
+/* Hero da home: entra só com CSS, sem depender do JS (o texto aparece com
+   a primeira pintura). O resto da página continua no ScrollTrigger. */
+.hero [data-reveal] { will-change: auto; animation: hero-in 0.8s var(--ease-out) both; }
+.h2-copy [data-reveal]:nth-child(2) { animation-delay: 0.07s; }
+.h2-copy [data-reveal]:nth-child(3) { animation-delay: 0.14s; }
+.h2-copy [data-reveal]:nth-child(4) { animation-delay: 0.21s; }
+.h2-copy [data-reveal]:nth-child(5) { animation-delay: 0.28s; }
+.hero .h2-stage { animation-duration: 1s; animation-delay: 0.15s; }
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
 
 /* ============================================================
    Responsive
@@ -2133,6 +2113,7 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
 .reduced-motion .manifesto__text .m-word { opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero [data-reveal] { animation: none; opacity: 1; transform: none; }
   .grain, .hero__dot, .devstage__laptop, .devstage__phone { animation: none !important; }
   * { transition-duration: 0.01ms !important; }
 }

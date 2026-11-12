@@ -45,15 +45,14 @@
   gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
   gsap.ticker.lagSmoothing(0);
 
-  /* ---- Entrance: title + hero reveals ---- */
-  document.querySelectorAll('[data-split]').forEach(splitWords);
-
-  var intro = gsap.timeline({ delay: 0.15 });
-  intro
-    .to('.p-hero__title .word > span', { y: 0, duration: 1.05, ease: 'power4.out', stagger: 0.07 })
-    .to('.p-hero [data-reveal]', {
-      opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.08
-    }, '-=0.65');
+  /* ---- Entrada do topo ----
+     O título e os [data-reveal] do .p-hero entram só com CSS (hero-in em
+     style.css): o título é o LCP destas páginas, e quebrá-lo em palavras para
+     animar fazia o navegador contá-lo como pintado só no fim da animação.
+     Os títulos mais abaixo continuam divididos e animados na rolagem. */
+  document.querySelectorAll('[data-split]').forEach(function (el) {
+    if (!el.closest('.p-hero')) splitWords(el);
+  });
 
   /* ---- Scroll reveals (fora do hero) ---- */
   document.querySelectorAll('[data-reveal]').forEach(function (el) {

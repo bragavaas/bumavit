@@ -114,7 +114,7 @@
       '.work__card:nth-child(2) .work__info p': 'Yacht booking website · Toronto, Canada',
       '.work__card:nth-child(3) .work__info p': 'Women’s fashion online store · Portugal',
       '.work__card:nth-child(4) .work__info p': 'National network of volunteer associations · Brazil',
-      '.work__card:nth-child(5) .work__info p': 'Architecture and interiors · Ontario, Canada · with L. Socio',
+      '.work__card:nth-child(5) .work__info p': 'Architecture and interiors · Ontario, Canada · in partnership with L. Socio',
       '.work__card:nth-child(6) .work__info p': 'Digital marketing consultancy · Halifax, Canada',
 
       /* --- processo --- */
@@ -264,7 +264,7 @@
       '.work__card:nth-child(2) .work__info p': 'Sitio de reservas de yates · Toronto, Canadá',
       '.work__card:nth-child(3) .work__info p': 'Tienda online de moda femenina · Portugal',
       '.work__card:nth-child(4) .work__info p': 'Red nacional de asociaciones voluntarias · Brasil',
-      '.work__card:nth-child(5) .work__info p': 'Arquitectura e interiorismo · Ontario, Canadá · con L. Socio',
+      '.work__card:nth-child(5) .work__info p': 'Arquitectura e interiorismo · Ontario, Canadá · en alianza con L. Socio',
       '.work__card:nth-child(6) .work__info p': 'Consultoría de marketing digital · Halifax, Canadá',
 
       '.process__panel--intro .section__label': '( Proceso )',

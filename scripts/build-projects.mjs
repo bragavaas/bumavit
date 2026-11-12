@@ -90,8 +90,9 @@ const projects = [
       ['2×', 'Mais reservas online']
     ],
     link: 'https://yachtday.ca/',
-    /* Projeto intermediado e feito junto com a agência do Lucas (fundador, 12/11). */
-    partner: { name: 'L. Socio Marketing Agency', url: 'https://lsocio.com/' },
+    /* Site feito pela Bumavit para a L. Socio, que autorizou o portfólio com o nome
+       dela junto (fundador, 12/11/2026). Nome como o site da L. Socio se apresenta. */
+    partner: { name: 'L. Socio Digital Marketing', url: 'https://lsocio.com/' },
     /* Palco 2.5D no lugar do banner gradiente: mockups com fundo transparente
        em img/projetos/ (WebP ~150KB no total). O tilt vive em js/page.js. */
     showcase: {
@@ -372,7 +373,7 @@ const projects = [
 const LABELS = {
   en: {
     projLabel: '( Project )',
-    partnerLead: 'Project in collaboration with',
+    partnerLead: 'In partnership with',
     metaLabels: ['Client', 'Year', 'Industry', 'Services'],
     challengeTitle: 'The challenge',
     solutionTitle: 'The solution',
@@ -380,7 +381,7 @@ const LABELS = {
   },
   es: {
     projLabel: '( Proyecto )',
-    partnerLead: 'Proyecto en colaboración con',
+    partnerLead: 'En alianza con',
     metaLabels: ['Cliente', 'Año', 'Sector', 'Servicios'],
     challengeTitle: 'El desafío',
     solutionTitle: 'La solución',
@@ -636,7 +637,7 @@ function page(p, next) {
       <p class="section__label" data-reveal>( Projeto )</p>${ndaBadge}
       <h1 class="p-hero__title" data-split>${esc(p.title)}</h1>
       <p class="p-hero__tag" data-reveal>${esc(p.tag)}</p>${p.partner ? `
-      <p class="p-partner" data-reveal>Projeto em colaboração com <a href="${p.partner.url}" target="_blank" rel="noopener" data-hover>${p.partner.name}</a></p>` : ''}
+      <p class="p-partner" data-reveal>Em parceria com <a href="${p.partner.url}" target="_blank" rel="noopener" data-hover>${p.partner.name}</a></p>` : ''}
 
       <dl class="p-meta">${metaItems}
       </dl>

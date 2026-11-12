@@ -85,6 +85,7 @@
       '.footer__bottom p:nth-of-type(2)': 'Made in Brazil, with coffee.',
       '.footer__top-btn': 'Back to top ↑',
       '[data-cursor="Ver projeto"]': { attr: { 'data-cursor': 'View project' } },
+      '[data-cursor="Ver site"]': { attr: { 'data-cursor': 'Visit site' } },
 
       /* --- hero --- */
       '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Rio de Janeiro' },
@@ -137,6 +138,8 @@
       '.work__card:nth-child(2) .work__info p': 'Women’s fashion online store · Portugal',
       '.work__card:nth-child(3) .work__info p': 'National network of volunteer associations · Brazil',
       '.work__card:nth-child(4) .work__info p': 'Medical academy · Rio de Janeiro, Brazil',
+      '.work__card:nth-child(5) .work__info p': 'In collaboration with L. Socio Marketing Agency',
+      '.work__card:nth-child(6) .work__info p': 'Marketing agency website',
 
       /* --- processo --- */
       '.process__panel--intro .section__label': '( Process )',
@@ -241,6 +244,7 @@
       '.footer__bottom p:nth-of-type(2)': 'Hecho en Brasil, con café.',
       '.footer__top-btn': 'Volver arriba ↑',
       '[data-cursor="Ver projeto"]': { attr: { 'data-cursor': 'Ver proyecto' } },
+      '[data-cursor="Ver site"]': { attr: { 'data-cursor': 'Ver sitio' } },
 
       '.hero__eyebrow': { html: '<span class="hero__dot"></span> Software house · Rio de Janeiro' },
       '.h2-title': { html: 'Necesitas un sitio web y <em>no quieres equivocarte</em> al contratar.' },
@@ -289,6 +293,8 @@
       '.work__card:nth-child(2) .work__info p': 'Tienda online de moda femenina · Portugal',
       '.work__card:nth-child(3) .work__info p': 'Red nacional de asociaciones voluntarias · Brasil',
       '.work__card:nth-child(4) .work__info p': 'Academia médica · Río de Janeiro, Brasil',
+      '.work__card:nth-child(5) .work__info p': 'En colaboración con L. Socio Marketing Agency',
+      '.work__card:nth-child(6) .work__info p': 'Sitio de la agencia de marketing',
 
       '.process__panel--intro .section__label': '( Proceso )',
       '.process__heading': { html: 'Cómo sucede<br>el proyecto<em>→</em>' },

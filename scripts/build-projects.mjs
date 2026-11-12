@@ -34,6 +34,8 @@ const projects = [
       ['2×', 'Mais reservas online']
     ],
     link: 'https://yachtday.ca/',
+    /* Projeto intermediado e feito junto com a agência do Lucas (fundador, 12/11). */
+    partner: { name: 'L. Socio Marketing Agency', url: 'https://lsocio.com/' },
     /* Palco 2.5D no lugar do banner gradiente: mockups com fundo transparente
        em img/projetos/ (WebP ~150KB no total). O tilt vive em js/page.js. */
     showcase: {
@@ -314,6 +316,7 @@ const projects = [
 const LABELS = {
   en: {
     projLabel: '( Project )',
+    partnerLead: 'Project in collaboration with',
     metaLabels: ['Client', 'Year', 'Industry', 'Services'],
     challengeTitle: 'The challenge',
     solutionTitle: 'The solution',
@@ -321,6 +324,7 @@ const LABELS = {
   },
   es: {
     projLabel: '( Proyecto )',
+    partnerLead: 'Proyecto en colaboración con',
     metaLabels: ['Cliente', 'Año', 'Sector', 'Servicios'],
     challengeTitle: 'El desafío',
     solutionTitle: 'La solución',
@@ -338,6 +342,7 @@ function pageDict(p, next) {
     d['.p-hero .section__label'] = L.projLabel;
     if (t.title) d['.p-hero__title'] = t.title;
     d['.p-hero__tag'] = t.tag;
+    if (p.partner) d['.p-partner'] = { html: `${L.partnerLead} <a href="${p.partner.url}" target="_blank" rel="noopener" data-hover>${p.partner.name}</a>` };
     t.metaValues.forEach((v, i) => {
       d[`.p-meta__item:nth-child(${i + 1}) dt`] = L.metaLabels[i];
       d[`.p-meta__item:nth-child(${i + 1}) dd`] = v;
@@ -530,7 +535,7 @@ function page(p, next) {
   </script>
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css?v=10">
+  <link rel="stylesheet" href="../css/style.css?v=13">
 </head>
 <body>
 
@@ -574,7 +579,8 @@ function page(p, next) {
     <section class="p-hero section">
       <p class="section__label" data-reveal>( Projeto )</p>${ndaBadge}
       <h1 class="p-hero__title" data-split>${esc(p.title)}</h1>
-      <p class="p-hero__tag" data-reveal>${esc(p.tag)}</p>
+      <p class="p-hero__tag" data-reveal>${esc(p.tag)}</p>${p.partner ? `
+      <p class="p-partner" data-reveal>Projeto em colaboração com <a href="${p.partner.url}" target="_blank" rel="noopener" data-hover>${p.partner.name}</a></p>` : ''}
 
       <dl class="p-meta">${metaItems}
       </dl>

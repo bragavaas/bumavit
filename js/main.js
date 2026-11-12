@@ -10,10 +10,6 @@
   /* ============ Reduced motion: static, accessible page ============ */
   if (reducedMotion) {
     document.body.classList.add('reduced-motion');
-    document.body.classList.remove('is-loading');
-    var pre = document.getElementById('preloader');
-    if (pre) pre.style.display = 'none';
-    gsap.set('.preloader__char', { y: 0 });
     document.querySelectorAll('[data-count]').forEach(function (el) {
       el.textContent = el.dataset.count + (el.dataset.suffix || '');
     });
@@ -63,35 +59,9 @@
   var manifesto = document.getElementById('manifestoText');
   if (manifesto) splitWords(manifesto, false, 'm-word');
 
-  /* ============ Preloader → hero intro ============ */
-
-  var heroIntro = gsap.timeline({ paused: true });
-  heroIntro
-    .to('.h2-copy [data-reveal]', { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.08 })
-    .to('.h2-stage', { opacity: 1, y: 0, duration: 1.1, ease: 'power3.out' }, 0.15)
-    .set('.hero [data-reveal]', { willChange: 'auto' });
-
-  var counter = { v: 0 };
-  var countEl = document.getElementById('preCount');
-
-  gsap.timeline({
-    onComplete: function () {
-      document.body.classList.remove('is-loading');
-      var p = document.getElementById('preloader');
-      if (p) p.style.display = 'none';
-      heroIntro.play();
-      ScrollTrigger.refresh();
-    }
-  })
-    .to('.preloader__char', { y: 0, duration: 0.9, ease: 'power4.out', stagger: 0.05 })
-    .to(counter, {
-      v: 100,
-      duration: 1.4,
-      ease: 'power2.inOut',
-      onUpdate: function () { if (countEl) countEl.textContent = Math.round(counter.v); }
-    }, '-=0.5')
-    .to('.preloader__char', { y: '-110%', duration: 0.7, ease: 'power4.in', stagger: 0.04 }, '+=0.15')
-    .to('#preloader', { yPercent: -100, duration: 0.9, ease: 'power4.inOut' }, '-=0.25');
+  /* Hero: a entrada do texto e do palco é CSS (animation hero-in em
+     style.css), para não esperar o GSAP baixar. Sem preloader: a foto do
+     hero é o LCP no celular e nada pode cobri-la. */
 
   /* ============ FAB: escondido enquanto o hero está na tela (o hero já tem o CTA) ============ */
   var fab = document.getElementById('fab');

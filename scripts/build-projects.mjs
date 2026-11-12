@@ -530,7 +530,7 @@ function page(p, next) {
   </script>
   <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css?v=10">
+  <link rel="stylesheet" href="../css/style.css?v=13">
 </head>
 <body>
 
@@ -553,7 +553,7 @@ function page(p, next) {
     </button>
   </header>
 
-  <a href="/#contato" class="fab" id="fab" data-hover><span>Vamos conversar</span></a>
+  <a href="/estimador.html" class="fab" id="fab" data-hover><span>Montar meu projeto</span></a>
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Menu">
@@ -622,7 +622,7 @@ ${quote}${statItems ? `
   <script src="../vendor/gsap.min.js"></script>
   <script src="../vendor/ScrollTrigger.min.js"></script>
   <script src="../vendor/lenis.min.js"></script>
-  <script src="../js/i18n.js?v=6" defer></script>
+  <script src="../js/i18n.js?v=13" defer></script>
   <script src="../js/page.js?v=4" defer></script>
   <script src="../js/analytics.js" defer></script>
 </body>

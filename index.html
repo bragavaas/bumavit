@@ -137,7 +137,7 @@
   </header>
 
   <!-- CTA flutuante -->
-  <a href="#contato" class="fab" id="fab" data-scroll data-hover data-magnetic><span>Vamos conversar</span></a>
+  <a href="estimador.html" class="fab" id="fab" data-hover data-magnetic><span>Montar meu projeto</span></a>
 
   <!-- Fullscreen menu (mobile / burger) -->
   <div class="menu" id="menu" aria-hidden="true">
@@ -174,10 +174,10 @@
           <h1 class="h2-title" data-reveal>Você precisa de um site e <em>não quer errar</em> em quem contratar.</h1>
           <p class="h2-sub" data-reveal>Aqui na Bumavit, antes de assinar, você sabe quanto custa, o que está incluso e quem cuida do site depois. Sites, lojas virtuais e aplicativos sob medida.</p>
           <div class="h2-cta" data-reveal>
-            <a href="#contato" class="btn-pill btn-pill--solid" data-hover><span>Falar sobre meu projeto →</span></a>
-            <span class="h2-cta__note"><b>Resposta em até 24h.</b> Sem robô, sem fila.</span>
+            <a href="estimador.html" class="btn-pill btn-pill--solid" data-hover><span>Ver quanto custa meu projeto →</span></a>
+            <span class="h2-cta__note"><b>Leva 1 minuto.</b> A faixa de preço aparece na hora.</span>
           </div>
-          <p class="h2-alt" data-reveal>Prefere ver uma faixa de preço antes? <a href="estimador.html" data-hover>Use o estimador →</a></p>
+          <p class="h2-alt" data-reveal>Prefere conversar antes? <a href="https://wa.me/5521994822884?text=Ol%C3%A1%2C%20Bumavit.%20Tenho%20uma%20ideia%20de%20projeto." target="_blank" rel="noopener" data-hover>Chame no WhatsApp →</a></p>
         </div>
 
         <div class="h2-stage" data-reveal>
@@ -425,41 +425,10 @@
         <span class="cta__line" data-split>Tem uma ideia?</span>
         <span class="cta__line cta__line--accent" data-split>Vamos tirar do papel.</span>
       </h2>
-      <form class="lead" id="leadForm" action="https://formspree.io/f/mbdvvyro" method="POST" novalidate>
-        <div class="lead__row">
-          <label class="lead__field">
-            <span>Seu nome</span>
-            <input type="text" name="nome" required autocomplete="name" placeholder="Como te chamamos?">
-          </label>
-          <label class="lead__field">
-            <span>Seu e-mail</span>
-            <input type="email" name="email" required autocomplete="email" placeholder="voce@empresa.com.br">
-          </label>
-        </div>
-        <label class="lead__field">
-          <span>Tipo de projeto</span>
-          <select name="tipo" required>
-            <option value="" selected disabled>Selecione…</option>
-            <option>Site institucional</option>
-            <option>Loja virtual</option>
-            <option>Aplicativo</option>
-            <option>Sistema sob medida</option>
-            <option>SEO &amp; Performance</option>
-            <option>Outro</option>
-          </select>
-        </label>
-        <label class="lead__field">
-          <span>Conte a ideia</span>
-          <textarea name="mensagem" rows="4" required placeholder="O que você quer construir?"></textarea>
-        </label>
-        <div class="lead__actions">
-          <button type="submit" class="btn-pill btn-pill--accent lead__submit" data-hover data-magnetic><span>Enviar mensagem</span></button>
-          <a class="btn-pill" href="https://wa.me/5521994822884?text=Ol%C3%A1%2C%20Bumavit.%20Tenho%20uma%20ideia%20de%20projeto." target="_blank" rel="noopener" data-hover><span>Chamar no WhatsApp</span></a>
-          <a class="btn-pill lead__estimator" href="estimador.html" data-hover><span>Monte seu projeto →</span></a>
-        </div>
-        <p class="lead__privacy">Ao enviar, você concorda com o tratamento dos seus dados conforme a nossa <a href="privacidade.html" data-hover>Política de Privacidade</a>.</p>
-        <p class="lead__status" id="leadStatus" role="status" aria-live="polite"></p>
-      </form>
+      <div class="cta__actions" data-reveal>
+        <a class="btn-pill btn-pill--solid" href="estimador.html" data-hover data-magnetic><span>Monte seu projeto →</span></a>
+        <a class="btn-pill" href="https://wa.me/5521994822884?text=Ol%C3%A1%2C%20Bumavit.%20Tenho%20uma%20ideia%20de%20projeto." target="_blank" rel="noopener" data-hover><span>Chamar no WhatsApp</span></a>
+      </div>
 
       <p class="cta__note" data-reveal>Ou escreva para <a class="cta__mail" href="mailto:contato@bumavit.com.br" data-hover>contato@bumavit.com.br</a>. Respondemos em até 24h, em português, inglês ou espanhol.</p>
     </section>
@@ -505,7 +474,7 @@
   <script src="vendor/gsap.min.js" defer></script>
   <script src="vendor/ScrollTrigger.min.js" defer></script>
   <script src="vendor/lenis.min.js" defer></script>
-  <script src="js/i18n.js?v=12" defer></script>
+  <script src="js/i18n.js?v=13" defer></script>
   <script src="js/main.js?v=9" defer></script>
   <script src="js/analytics.js" defer></script>
 </body>

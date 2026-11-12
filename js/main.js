@@ -16,7 +16,6 @@
     document.querySelectorAll('.manifesto__text').forEach(function (el) { el.style.opacity = 1; });
     bindMenu(null);
     bindAnchors(null);
-    bindLeadForm();
     return; // no scroll-driven motion at all (FAQ usa <details> nativo)
   }
 
@@ -248,18 +247,6 @@
     });
   }
 
-  /* ============ Formulário: entrada ============ */
-  var leadForm = document.getElementById('leadForm');
-  if (leadForm) {
-    gsap.from(leadForm, {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: 'power3.out',
-      scrollTrigger: { trigger: leadForm, start: 'top 88%' }
-    });
-  }
-
   /* ============ Footer wordmark slide ============ */
   gsap.from('.footer__wordmark', {
     yPercent: 40,
@@ -321,7 +308,6 @@
   /* ============ Menu + anchors + formulário ============ */
   bindMenu(lenis);
   bindAnchors(lenis);
-  bindLeadForm();
 
   /* ---------------------------------------------------------- */
 
@@ -386,75 +372,5 @@
         else window.scrollTo(0, 0);
       });
     }
-  }
-
-  function bindLeadForm() {
-    var form = document.getElementById('leadForm');
-    if (!form) return;
-    var status = document.getElementById('leadStatus');
-    var submitBtn = form.querySelector('.lead__submit');
-    // strings traduzidas pelo i18n.js (fallback pt-BR)
-    var STR = window.__STR || {
-      formSending: 'Enviando…',
-      formOk: 'Mensagem enviada. Respondemos em até 24h. ✦',
-      formError: 'Algo deu errado. Tente de novo ou chame no WhatsApp.',
-      formUnconfigured: 'Formulário ainda não configurado. Por enquanto, chame no WhatsApp ou envie um e-mail.',
-      formLeaveConfirm: 'Você já preencheu o formulário. Quer sair mesmo e continuar por aqui? Se preferir, clique em "Enviar mensagem" para não perder o que digitou.'
-    };
-
-    function setStatus(msg, cls) {
-      status.textContent = msg;
-      status.className = 'lead__status' + (cls ? ' ' + cls : '');
-    }
-
-    // Campos reais do form (ignora o próprio botão de submit e os outros CTAs).
-    function formHasInput() {
-      var fields = form.querySelectorAll('input, textarea, select');
-      for (var i = 0; i < fields.length; i++) {
-        var el = fields[i];
-        if (el.type === 'submit' || el.type === 'button') continue;
-        if ((el.value || '').trim() !== '') return true;
-      }
-      return false;
-    }
-
-    // "Chamar no WhatsApp" e "Monte seu projeto" dentro do form levam para fora
-    // da página; se o usuário já escreveu algo, confirma antes de tirá-lo do form.
-    var leaveLinks = form.querySelectorAll('.lead__actions a[href]');
-    for (var li = 0; li < leaveLinks.length; li++) {
-      leaveLinks[li].addEventListener('click', function (e) {
-        if (formHasInput() && !window.confirm(STR.formLeaveConfirm)) {
-          e.preventDefault();
-        }
-      });
-    }
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-
-      if (form.action.indexOf('SEU_FORM_ID') !== -1) {
-        setStatus(STR.formUnconfigured, 'is-error');
-        return;
-      }
-
-      submitBtn.disabled = true;
-      setStatus(STR.formSending);
-
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(function (r) {
-        if (!r.ok) throw new Error('HTTP ' + r.status);
-        form.reset();
-        setStatus(STR.formOk, 'is-ok');
-        if (window.gtag) { gtag('event', 'form_submit'); }
-      }).catch(function () {
-        setStatus(STR.formError, 'is-error');
-      }).finally(function () {
-        submitBtn.disabled = false;
-      });
-    });
   }
 })();

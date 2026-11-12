@@ -8,6 +8,62 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 const projects = [
   {
+    slug: 'allergyvax',
+    title: 'AllergyVax',
+    tag: 'Plataforma de imunoterapia · Juiz de Fora, MG',
+    mediaClass: 'cover--rust',
+    mono: 'A',
+    /* Cliente não nomeado e sistema fechado, só para médicos, com login: sem
+       link e sem telas. Escopo da Bumavit: a evolução da plataforma, que já
+       existia (fundador, 12/11/2026). */
+    nda: true,
+    status: 'andamento',
+    meta: {
+      Cliente: 'Confidencial',
+      Ano: '2026',
+      Setor: 'Saúde',
+      'Serviços': 'Evolução do sistema, Banco de dados, Testes automáticos'
+    },
+    challenge: [
+      'O AllergyVax é uma plataforma para acompanhar a imunoterapia com alérgenos, a “vacina para alergia”, nas formas subcutânea e sublingual. Médicos, equipes, clínicas e pacientes usam o mesmo ambiente, do planejamento do tratamento ao acompanhamento dos resultados. Funciona no navegador, pode ser instalado no celular como aplicativo e está em português, espanhol e inglês.',
+      'O médico cadastra os pacientes, monta a composição dos extratos, registra aplicações e reações e acompanha a adesão em painéis, com avisos por e-mail sobre aplicações próximas e atrasadas. O paciente tem um guia do tratamento, lembretes das doses sublinguais, questionários de controle da asma e da rinite e uma caixa de mensagens. A plataforma já estava em uso quando chegamos: o trabalho era fazer o sistema evoluir sem parar quem depende dele.'
+    ],
+    solution: [
+      'Trocamos a base de dados, e todo o sistema passou a funcionar sobre a nova, mais segura. O paciente ganhou entrada com e-mail e senha, com o e-mail confirmado por um código, e o código de acesso antigo continua valendo.',
+      'O questionário de controle da asma (ACT) passou ao formato oficial: o paciente responde o teste original e registra o resultado no aplicativo. A caixa de mensagens ficou mais prática, com arquivamento de todas as mensagens de uma vez e um aviso de mensagens novas mais preciso.',
+      'Cada mudança agora passa por testes automáticos e por revisão antes de chegar aos usuários, e só é publicada em horários planejados. Por ser um sistema de uso médico, fechado e com login, as telas não são públicas.'
+    ],
+    link: null,
+    t: {
+      en: {
+        tag: 'Immunotherapy platform · Juiz de Fora, Brazil',
+        metaValues: ['Confidential', '2026', 'Healthcare', 'System evolution, Database, Automated tests'],
+        challenge: [
+          'AllergyVax is a platform for following allergen immunotherapy, the “allergy vaccine”, in its subcutaneous and sublingual forms. Doctors, staff, clinics and patients share the same environment, from treatment planning to tracking results. It runs in the browser, can be installed on a phone as an app, and is available in Portuguese, Spanish and English.',
+          'Doctors register patients, compose the allergen extracts, log doses and reactions and follow adherence on dashboards, with e-mail alerts for upcoming and late doses. Patients get a step-by-step treatment guide, reminders for sublingual doses, asthma and rhinitis control questionnaires and an in-app inbox. The platform was already in use when we joined: the job was to evolve the system without stopping the people who rely on it.'
+        ],
+        solution: [
+          'We replaced the database, and the whole system now runs on the new, more secure one. Patients gained e-mail and password sign-in, with the e-mail confirmed by a code, and the old access code still works.',
+          'The asthma control questionnaire (ACT) moved to the official format: patients answer the original test and log the result in the app. The inbox became easier to use, with an archive-all option and a more accurate new-message alert.',
+          'Every change now goes through automated tests and review before reaching users, and is only released at planned times. Because it is a closed medical system with sign-in, its screens are not public.'
+        ]
+      },
+      es: {
+        tag: 'Plataforma de inmunoterapia · Juiz de Fora, Brasil',
+        metaValues: ['Confidencial', '2026', 'Salud', 'Evolución del sistema, Base de datos, Pruebas automáticas'],
+        challenge: [
+          'AllergyVax es una plataforma para acompañar la inmunoterapia con alérgenos, la “vacuna para la alergia”, en sus formas subcutánea y sublingual. Médicos, equipos, clínicas y pacientes usan el mismo entorno, desde la planificación del tratamiento hasta el seguimiento de los resultados. Funciona en el navegador, se puede instalar en el celular como aplicación y está en portugués, español e inglés.',
+          'El médico registra a los pacientes, arma la composición de los extractos, registra aplicaciones y reacciones y sigue la adherencia en paneles, con avisos por correo sobre aplicaciones próximas y atrasadas. El paciente tiene una guía del tratamiento, recordatorios de las dosis sublinguales, cuestionarios de control del asma y de la rinitis y una bandeja de mensajes. La plataforma ya estaba en uso cuando llegamos: el trabajo era hacer evolucionar el sistema sin detener a quienes dependen de él.'
+        ],
+        solution: [
+          'Cambiamos la base de datos, y todo el sistema pasó a funcionar sobre la nueva, más segura. El paciente ganó acceso con correo y contraseña, con el correo confirmado por un código, y el código de acceso anterior sigue funcionando.',
+          'El cuestionario de control del asma (ACT) pasó al formato oficial: el paciente responde el test original y registra el resultado en la aplicación. La bandeja de mensajes quedó más práctica, con archivado de todos los mensajes de una vez y un aviso de mensajes nuevos más preciso.',
+          'Cada cambio ahora pasa por pruebas automáticas y por revisión antes de llegar a los usuarios, y solo se publica en horarios planificados. Por ser un sistema de uso médico, cerrado y con acceso por login, sus pantallas no son públicas.'
+        ]
+      }
+    }
+  },
+  {
     slug: 'yacht-day',
     title: 'Yacht Day',
     tag: 'Plataforma de reservas de iates · Toronto, Canadá',
@@ -423,7 +479,7 @@ function projectCard(p) {
     `<tspan x="${PX}" dy="${i === 0 ? 0 : 34}">${cardEsc(l)}</tspan>`).join('');
 
   const selo = p.status === 'andamento' ? 'PROJETO EM ANDAMENTO'
-             : p.nda ? 'PROJETO SOB NDA'
+             : p.nda ? 'CLIENTE CONFIDENCIAL'
              : 'PROJETO';
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
@@ -479,7 +535,7 @@ function page(p, next) {
     </section>
 ` : '';
 
-  const ndaBadge = p.nda ? `\n        <span class="p-nda" data-reveal>Projeto sob NDA</span>` : '';
+  const ndaBadge = p.nda ? `\n        <span class="p-nda" data-reveal>Cliente confidencial</span>` : '';
 
   /* Banner: palco 2.5D quando o projeto tem mockups, senão o gradiente padrão.
      As <img> internas são decorativas (alt vazio); o rótulo fica no contêiner. */

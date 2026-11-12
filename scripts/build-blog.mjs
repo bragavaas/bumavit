@@ -287,17 +287,26 @@ function shell({ title, desc, canonical, content, extraHead = '', pageI18n = nul
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-M6TK6TCC9R');
+    /* gtag.js só depois do load: fora do caminho da primeira pintura. A fila
+       do dataLayer guarda os eventos até o script chegar. */
+    window.addEventListener('load', function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R';
+      document.head.appendChild(s);
+    });
   </script>
-  <link rel="preload" href="${base}fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="${base}fonts/ClashDisplay-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="${base}fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="${base}css/style.css?v=13">${extraHead}
+  <link rel="preload" href="${base}fonts/Satoshi-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="${base}fonts/Satoshi-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="${base}css/style.css?v=16">${extraHead}
 </head>
 <body>
 
@@ -352,11 +361,11 @@ ${content}
   </footer>
 
   <script>window.__pageI18n = ${JSON.stringify(pageI18n || {})};</script>
-  <script src="${base}vendor/gsap.min.js"></script>
-  <script src="${base}vendor/ScrollTrigger.min.js"></script>
-  <script src="${base}vendor/lenis.min.js"></script>
+  <script src="${base}vendor/gsap.min.js" defer></script>
+  <script src="${base}vendor/ScrollTrigger.min.js" defer></script>
+  <script src="${base}vendor/lenis.min.js" defer></script>
   <script src="${base}js/i18n.js?v=13" defer></script>
-  <script src="${base}js/page.js?v=4" defer></script>
+  <script src="${base}js/page.js?v=5" defer></script>
   <script src="${base}js/analytics.js" defer></script>
 </body>
 </html>

@@ -96,8 +96,10 @@ const projects = [
     /* Palco 2.5D no lugar do banner gradiente: mockups com fundo transparente
        em img/projetos/ (WebP ~150KB no total). O tilt vive em js/page.js. */
     showcase: {
-      laptop: { src: '../img/projetos/yacht-day-laptop.webp', w: 1600, h: 973 },
-      phone:  { src: '../img/projetos/yacht-day-phone.webp',  w: 960,  h: 1200 },
+      laptop: { src: '../img/projetos/yacht-day-laptop.webp', w: 1600, h: 973,
+                srcset: '../img/projetos/yacht-day-laptop-800.webp 800w, ../img/projetos/yacht-day-laptop.webp 1600w', sizes: '(max-width: 900px) 90vw, 920px' },
+      phone:  { src: '../img/projetos/yacht-day-phone.webp',  w: 960,  h: 1200,
+                srcset: '../img/projetos/yacht-day-phone-320.webp 320w, ../img/projetos/yacht-day-phone-480.webp 480w, ../img/projetos/yacht-day-phone.webp 960w', sizes: '(max-width: 900px) 28vw, 275px' },
       alt: 'Site da Yacht Day exibido em um notebook e em um celular'
     },
     t: {
@@ -209,7 +211,8 @@ const projects = [
     },
     link: 'https://herabrand.pt/',
     showcase: {
-      laptop: { src: '../img/projetos/hera-brand-laptop.webp', w: 1600, h: 973 },
+      laptop: { src: '../img/projetos/hera-brand-laptop.webp', w: 1600, h: 973,
+                srcset: '../img/projetos/hera-brand-laptop-800.webp 800w, ../img/projetos/hera-brand-laptop.webp 1600w', sizes: '(max-width: 900px) 90vw, 920px' },
       alt: 'Loja virtual da Hera Brand exibida em um notebook'
     },
     t: {
@@ -273,7 +276,8 @@ const projects = [
     link: 'https://casadaamizadedobrasil.org.br/',
     showcase: {
       solo: true,
-      laptop: { src: '../img/projetos/cnacab-phone.webp', w: 946, h: 1420 },
+      laptop: { src: '../img/projetos/cnacab-phone.webp', w: 946, h: 1420,
+                srcset: '../img/projetos/cnacab-phone-480.webp 480w, ../img/projetos/cnacab-phone.webp 946w', sizes: '(max-width: 900px) 60vw, 380px' },
       alt: 'Página inicial do site da CNACAB exibida em um celular'
     },
     t: {
@@ -335,7 +339,8 @@ const projects = [
     link: 'https://abmasto.com/',
     showcase: {
       solo: true,
-      laptop: { src: '../img/projetos/abmasto-phone.webp', w: 946, h: 1420 },
+      laptop: { src: '../img/projetos/abmasto-phone.webp', w: 946, h: 1420,
+                srcset: '../img/projetos/abmasto-phone-480.webp 480w, ../img/projetos/abmasto-phone.webp 946w', sizes: '(max-width: 900px) 60vw, 380px' },
       alt: 'Página inicial do site da ABMasto exibida em um celular'
     },
     t: {
@@ -502,6 +507,8 @@ function projectCard(p) {
 }
 
 const esc = (s) => s; // conteúdo controlado localmente
+/* srcset/sizes opcionais dos mockups: o celular baixa a versão menor. */
+const imgSet = (im) => im.srcset ? ` srcset="${im.srcset}" sizes="${im.sizes}"` : '';
 
 function page(p, next) {
   const metaItems = Object.entries(p.meta).map(([k, v]) => `
@@ -542,11 +549,11 @@ function page(p, next) {
      As <img> internas são decorativas (alt vazio); o rótulo fica no contêiner. */
   /* showcase.solo: um aparelho só, no centro do palco (o celular da CNACAB); o celular de apoio é opcional. */
   const phoneImg = p.showcase && p.showcase.phone ? `
-          <img class="devstage__phone" src="${p.showcase.phone.src}" alt="" width="${p.showcase.phone.w}" height="${p.showcase.phone.h}" decoding="async">` : '';
+          <img class="devstage__phone" src="${p.showcase.phone.src}"${imgSet(p.showcase.phone)} alt="" width="${p.showcase.phone.w}" height="${p.showcase.phone.h}" decoding="async">` : '';
   const banner = p.showcase ? `
       <div class="devstage${p.showcase.solo ? ' devstage--solo' : ''}" id="devstage" data-reveal role="img" aria-label="${esc(p.showcase.alt)}">
         <div class="devstage__scene" id="devstageScene">
-          <img class="devstage__laptop" src="${p.showcase.laptop.src}" alt="" width="${p.showcase.laptop.w}" height="${p.showcase.laptop.h}" decoding="async">${phoneImg}
+          <img class="devstage__laptop" src="${p.showcase.laptop.src}"${imgSet(p.showcase.laptop)} alt="" width="${p.showcase.laptop.w}" height="${p.showcase.laptop.h}" decoding="async">${phoneImg}
         </div>
       </div>` : `
       <div class="work__media p-banner ${p.mediaClass}" data-reveal>
@@ -582,17 +589,26 @@ function page(p, next) {
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-M6TK6TCC9R');
+    /* gtag.js só depois do load: fora do caminho da primeira pintura. A fila
+       do dataLayer guarda os eventos até o script chegar. */
+    window.addEventListener('load', function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R';
+      document.head.appendChild(s);
+    });
   </script>
-  <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/ClashDisplay-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css?v=14">
+  <link rel="preload" href="../fonts/Satoshi-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/Satoshi-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/style.css?v=16">
 </head>
 <body>
 
@@ -682,11 +698,11 @@ ${quote}${statItems ? `
   </footer>
 
   <script>window.__pageI18n = ${JSON.stringify(pageDict(p, next))};</script>
-  <script src="../vendor/gsap.min.js"></script>
-  <script src="../vendor/ScrollTrigger.min.js"></script>
-  <script src="../vendor/lenis.min.js"></script>
+  <script src="../vendor/gsap.min.js" defer></script>
+  <script src="../vendor/ScrollTrigger.min.js" defer></script>
+  <script src="../vendor/lenis.min.js" defer></script>
   <script src="../js/i18n.js?v=15" defer></script>
-  <script src="../js/page.js?v=4" defer></script>
+  <script src="../js/page.js?v=5" defer></script>
   <script src="../js/analytics.js" defer></script>
 </body>
 </html>

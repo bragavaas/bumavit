@@ -803,6 +803,16 @@ body.menu-open .nav__burger span:last-child { transform: translateY(-4px) rotate
 .h2-copy [data-reveal]:nth-child(4) { animation-delay: 0.21s; }
 .h2-copy [data-reveal]:nth-child(5) { animation-delay: 0.28s; }
 .hero .h2-stage { animation-duration: 1s; animation-delay: 0.15s; }
+/* Páginas internas: o título e o resto do topo (.p-hero) entram do mesmo jeito,
+   sem esperar o JS. O título não é mais dividido em palavras (js/page.js). */
+.p-hero [data-reveal] { will-change: auto; animation: hero-in 0.8s var(--ease-out) 0.12s both; }
+/* O título só sobe, sem fade: com opacity 0 no primeiro quadro o navegador
+   deixa de contá-lo como LCP e escolhe um elemento que aparece depois. */
+.p-hero__title { animation: hero-title-in 0.9s var(--ease-out) both; }
+@keyframes hero-title-in {
+  from { transform: translateY(28px); }
+  to { transform: none; }
+}
 @keyframes hero-in {
   from { opacity: 0; transform: translateY(28px); }
   to { opacity: 1; transform: none; }
@@ -1329,6 +1339,10 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
    Estimador ("Monte seu projeto")
    ============================================================ */
 .est { max-width: 56rem; margin: 0 auto; }
+/* O estimador é montado pelo JS depois da primeira pintura: a altura do
+   primeiro passo fica reservada para o rodapé não pular (CLS). */
+#estimator:empty { min-height: 535px; }
+@media (max-width: 900px) { #estimator:empty { min-height: 800px; } }
 .est__progress {
   display: flex; align-items: center; gap: 0.8rem;
   margin-bottom: clamp(2rem, 5vh, 3.5rem);
@@ -2123,7 +2137,7 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
 .reduced-motion .manifesto__text .m-word { opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero [data-reveal] { animation: none; opacity: 1; transform: none; }
+  .hero [data-reveal], .p-hero__title, .p-hero [data-reveal] { animation: none; opacity: 1; transform: none; }
   .grain, .hero__dot, .devstage__laptop, .devstage__phone { animation: none !important; }
   * { transition-duration: 0.01ms !important; }
 }

@@ -24,17 +24,26 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-M6TK6TCC9R');
+    /* gtag.js só depois do load: fora do caminho da primeira pintura. A fila
+       do dataLayer guarda os eventos até o script chegar. */
+    window.addEventListener('load', function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R';
+      document.head.appendChild(s);
+    });
   </script>
-  <link rel="preload" href="fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ClashDisplay-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="preload" href="fonts/Satoshi-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Satoshi-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=16">
 </head>
 <body>
 
@@ -127,7 +136,7 @@
 
     <section class="p-section p-person section">
       <figure class="p-person__photo" data-reveal>
-        <img src="img/andre/andre-vasco.webp" alt="André Vasco, desenvolvedor à frente da Bumavit" width="1254" height="1168" loading="lazy" decoding="async">
+        <img src="img/andre/andre-vasco.webp" srcset="img/andre/andre-vasco-640.webp 640w, img/andre/andre-vasco.webp 1254w" sizes="(max-width: 900px) 300px, 420px" alt="André Vasco, desenvolvedor à frente da Bumavit" width="1254" height="1168" loading="lazy" decoding="async">
       </figure>
       <div class="p-person__text">
         <h2 class="p-section__label" data-reveal>Quem atende você</h2>
@@ -216,11 +225,11 @@
     }
   };
   </script>
-  <script src="vendor/gsap.min.js"></script>
-  <script src="vendor/ScrollTrigger.min.js"></script>
-  <script src="vendor/lenis.min.js"></script>
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="vendor/lenis.min.js" defer></script>
   <script src="js/i18n.js?v=13" defer></script>
-  <script src="js/page.js?v=4" defer></script>
+  <script src="js/page.js?v=5" defer></script>
   <script src="js/analytics.js" defer></script>
 </body>
 </html>

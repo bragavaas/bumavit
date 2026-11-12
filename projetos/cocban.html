@@ -27,17 +27,26 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-M6TK6TCC9R');
+    /* gtag.js só depois do load: fora do caminho da primeira pintura. A fila
+       do dataLayer guarda os eventos até o script chegar. */
+    window.addEventListener('load', function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R';
+      document.head.appendChild(s);
+    });
   </script>
-  <link rel="preload" href="../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/ClashDisplay-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/style.css?v=14">
+  <link rel="preload" href="../fonts/Satoshi-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/Satoshi-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/style.css?v=16">
 </head>
 <body>
 
@@ -145,11 +154,11 @@
   </footer>
 
   <script>window.__pageI18n = {"en":{".p-hero .section__label":"( Project )",".p-hero__tag":"Credit union · Juiz de Fora, Brazil",".p-meta__item:nth-child(1) dt":"Client",".p-meta__item:nth-child(1) dd":"COCBAN",".p-meta__item:nth-child(2) dt":"Year",".p-meta__item:nth-child(2) dd":"2024",".p-meta__item:nth-child(3) dt":"Industry",".p-meta__item:nth-child(3) dd":"Credit union",".p-meta__item:nth-child(4) dt":"Services",".p-meta__item:nth-child(4) dd":"Institutional website, SEO, Performance","section.p-section:nth-of-type(2) .p-section__label":"The challenge","section.p-section:nth-of-type(3) .p-section__label":"The solution","section.p-section:nth-of-type(2) .p-section__body p:nth-of-type(1)":"COCBAN is the Cooperativa de Economia e Crédito Mútuo dos Bancários de Juiz de Fora, a credit union founded in 2000 that serves bank workers and their dependents in the Zona da Mata region of Minas Gerais. The site had to do two things at once.","section.p-section:nth-of-type(2) .p-section__body p:nth-of-type(2)":"First, let a member simulate a loan in a few clicks. Second, publish what the Brazilian Central Bank requires from a credit union: an ombudsman channel, a whistleblowing channel, financial statements and governance disclosures. The risk in a project like this is building a dead archive: a site that checks every compliance box but never brings in a loan request.","section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(1)":"We built the site on WordPress with Elementor, with an architecture that keeps the two flows separate. Navigation routes members straight to the simulator. The compliance pages, ombudsman channel with a toll-free number, whistleblowing channel, financial statements and governance disclosures, each sit in the right place and stay current without constant rework.","section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(2)":"A cooperative with more than two decades of history has a track record to show. We brought that into the site without weighing it down: members looking for credit find the simulator, and members who need transparency find the documents.",".next__title":"Hera Brand"},"es":{".p-hero .section__label":"( Proyecto )",".p-hero__tag":"Cooperativa de crédito · Juiz de Fora, Brasil",".p-meta__item:nth-child(1) dt":"Cliente",".p-meta__item:nth-child(1) dd":"COCBAN",".p-meta__item:nth-child(2) dt":"Año",".p-meta__item:nth-child(2) dd":"2024",".p-meta__item:nth-child(3) dt":"Sector",".p-meta__item:nth-child(3) dd":"Cooperativa de crédito",".p-meta__item:nth-child(4) dt":"Servicios",".p-meta__item:nth-child(4) dd":"Sitio institucional, SEO, Performance","section.p-section:nth-of-type(2) .p-section__label":"El desafío","section.p-section:nth-of-type(3) .p-section__label":"La solución","section.p-section:nth-of-type(2) .p-section__body p:nth-of-type(1)":"COCBAN es la Cooperativa de Economía y Crédito Mutuo de los Bancarios de Juiz de Fora, fundada en 2000, que atiende a trabajadores bancarios y sus dependientes en la región de la Zona da Mata, en Minas Gerais. El sitio tenía que cumplir dos funciones al mismo tiempo.","section.p-section:nth-of-type(2) .p-section__body p:nth-of-type(2)":"La primera: permitir que el cooperado simule un préstamo en pocos clics. La segunda: publicar lo que el Banco Central de Brasil exige a una cooperativa de crédito, como defensoría, canal de denuncias, estados financieros y gobernanza. El riesgo en un proyecto así es construir un archivo muerto: un sitio que completa la lista de conformidad pero nunca genera una solicitud de crédito.","section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(1)":"Construimos el sitio en WordPress con Elementor, con una arquitectura que mantiene los dos flujos separados. La navegación lleva al cooperado directamente al simulador. Las páginas de conformidad, defensoría con número gratuito, canal de denuncias, estados financieros y gobernanza, quedan cada una en su lugar y se mantienen al día sin retrabajo constante.","section.p-section:nth-of-type(3) .p-section__body p:nth-of-type(2)":"Una cooperativa con más de dos décadas tiene historia y rendición de cuentas que mostrar. Integramos eso al sitio sin que pesara: quien busca crédito encuentra el simulador, y quien necesita transparencia encuentra los documentos.",".next__title":"Hera Brand"}};</script>
-  <script src="../vendor/gsap.min.js"></script>
-  <script src="../vendor/ScrollTrigger.min.js"></script>
-  <script src="../vendor/lenis.min.js"></script>
+  <script src="../vendor/gsap.min.js" defer></script>
+  <script src="../vendor/ScrollTrigger.min.js" defer></script>
+  <script src="../vendor/lenis.min.js" defer></script>
   <script src="../js/i18n.js?v=15" defer></script>
-  <script src="../js/page.js?v=4" defer></script>
+  <script src="../js/page.js?v=5" defer></script>
   <script src="../js/analytics.js" defer></script>
 </body>
 </html>

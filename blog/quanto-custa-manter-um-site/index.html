@@ -28,17 +28,26 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-M6TK6TCC9R');
+    /* gtag.js só depois do load: fora do caminho da primeira pintura. A fila
+       do dataLayer guarda os eventos até o script chegar. */
+    window.addEventListener('load', function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-M6TK6TCC9R';
+      document.head.appendChild(s);
+    });
   </script>
-  <link rel="preload" href="../../fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../fonts/ClashDisplay-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../../css/style.css?v=13">
+  <link rel="preload" href="../../fonts/Satoshi-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../fonts/Satoshi-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../css/style.css?v=16">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -266,11 +275,11 @@
   </footer>
 
   <script>window.__pageI18n = {"en":{".bshare__label":"Share",".bnav__label--prev":"← Previous",".bnav__label--next":"Next →",".brelated__title":"Read next",".bcat[data-c=\"negocios\"]":"Business",".bmin[data-min=\"7\"]":"7 min read",".article__cta h3":"Want this working for your business?",".article__cta .btn-pill span":"Talk to Bumavit",".bmin[data-min=\"5\"]":"5 min read",".bmin[data-min=\"6\"]":"6 min read"},"es":{".bshare__label":"Compartir",".bnav__label--prev":"← Anterior",".bnav__label--next":"Siguiente →",".brelated__title":"Lee también",".bcat[data-c=\"negocios\"]":"Negocios",".bmin[data-min=\"7\"]":"7 min de lectura",".article__cta h3":"¿Quieres aplicarlo en tu negocio?",".article__cta .btn-pill span":"Habla con Bumavit",".bmin[data-min=\"5\"]":"5 min de lectura",".bmin[data-min=\"6\"]":"6 min de lectura"}};</script>
-  <script src="../../vendor/gsap.min.js"></script>
-  <script src="../../vendor/ScrollTrigger.min.js"></script>
-  <script src="../../vendor/lenis.min.js"></script>
+  <script src="../../vendor/gsap.min.js" defer></script>
+  <script src="../../vendor/ScrollTrigger.min.js" defer></script>
+  <script src="../../vendor/lenis.min.js" defer></script>
   <script src="../../js/i18n.js?v=13" defer></script>
-  <script src="../../js/page.js?v=4" defer></script>
+  <script src="../../js/page.js?v=5" defer></script>
   <script src="../../js/analytics.js" defer></script>
 </body>
 </html>

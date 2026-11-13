@@ -84,11 +84,7 @@ const projects = [
       'Projetamos uma plataforma rápida e visual, com catálogo de embarcações, disponibilidade clara e um fluxo de reserva que resolve tudo em poucos cliques.',
       'Por trás da vitrine, uma estratégia de SEO local posicionou a marca nas buscas por aluguel de iates na região de Toronto, com conteúdo, dados estruturados e performance no verde.'
     ],
-    stats: [
-      ['+120%', 'Tráfego orgânico em 6 meses'],
-      ['Top 3', 'Nas buscas locais em Toronto'],
-      ['2×', 'Mais reservas online']
-    ],
+    // 13/11/2026: os números (+120% de tráfego, Top 3, 2× reservas) saíram por decisão do André: não há fonte para eles
     link: 'https://yachtday.ca/',
     /* Site feito pela Bumavit para a L. Socio, que autorizou o portfólio com o nome
        dela junto (fundador, 12/11/2026). Nome como o site da L. Socio se apresenta. */
@@ -113,8 +109,7 @@ const projects = [
         solution: [
           'We designed a fast, visual platform with a vessel catalog, clear availability and a booking flow that gets everything done in a few clicks.',
           'Behind the storefront, a local SEO strategy positioned the brand for yacht rental searches across the Toronto area: content, structured data and performance in the green.'
-        ],
-        stats: [['+120%', 'Organic traffic in 6 months'], ['Top 3', 'In Toronto local searches'], ['2×', 'More online bookings']]
+        ]
       },
       es: {
         tag: 'Plataforma de reservas de yates · Toronto, Canadá',
@@ -126,8 +121,7 @@ const projects = [
         solution: [
           'Diseñamos una plataforma rápida y visual, con catálogo de embarcaciones, disponibilidad clara y un flujo de reserva que resuelve todo en pocos clics.',
           'Detrás del escaparate, una estrategia de SEO local posicionó la marca en las búsquedas de alquiler de yates en la región de Toronto, con contenido, datos estructurados y performance en verde.'
-        ],
-        stats: [['+120%', 'Tráfico orgánico en 6 meses'], ['Top 3', 'En búsquedas locales de Toronto'], ['2×', 'Más reservas online']]
+        ]
       }
     }
   },

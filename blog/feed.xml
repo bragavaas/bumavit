@@ -6,7 +6,15 @@
     <atom:link href="https://bumavit.com.br/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Insights sobre desenvolvimento web, SEO, performance e geração de leads.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 12 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Site da clínica lento no celular: o que pesa e como testar</title>
+      <link>https://bumavit.com.br/blog/site-da-clinica-lento-no-celular/</link>
+      <guid>https://bumavit.com.br/blog/site-da-clinica-lento-no-celular/</guid>
+      <pubDate>Sat, 14 Nov 2026 12:00:00 GMT</pubDate>
+      <description>Site da clínica lento no celular: medimos 97 sites de clínicas odontológicas do Rio e 43 eram lentos. O que pesa, e como testar o seu em cinco minutos.</description>
+      <category>Performance</category>
+    </item>
     <item>
       <title>Vale a pena criar um site grátis para empresa?</title>
       <link>https://bumavit.com.br/blog/vale-a-pena-site-gratis-para-empresa/</link>

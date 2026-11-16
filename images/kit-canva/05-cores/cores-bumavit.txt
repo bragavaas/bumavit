@@ -1,0 +1,10 @@
+#0B0B0D  Tinta (fundo)
+#121216  Tinta 2 (superfície)
+#EFEDE6  Papel (texto)
+#FF7A29  Tangerina (destaque)
+#2E1503  Tinta da tangerina (texto sobre laranja)
+#38BDF8  Ciano (apoio)
+#075985  Ciano escuro 1 (fundo ciano)
+#0C2F45  Ciano escuro 2
+#9A3F12  Ferrugem 1 (fundo ferrugem)
+#45200A  Ferrugem 2

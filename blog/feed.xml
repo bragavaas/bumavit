@@ -6,7 +6,15 @@
     <atom:link href="https://bumavit.com.br/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Insights sobre desenvolvimento web, SEO, performance e geração de leads.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 14 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Site não seguro: o que é e como resolver</title>
+      <link>https://bumavit.com.br/blog/site-nao-seguro-como-resolver/</link>
+      <guid>https://bumavit.com.br/blog/site-nao-seguro-como-resolver/</guid>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
+      <description>Seu site aparece como não seguro? São três causas: sem HTTPS, certificado vencido ou conteúdo misto. Como achar a sua e o que pedir a quem cuida do site.</description>
+      <category>Performance</category>
+    </item>
     <item>
       <title>Site da clínica lento no celular: o que pesa e como testar</title>
       <link>https://bumavit.com.br/blog/site-da-clinica-lento-no-celular/</link>

@@ -55,8 +55,12 @@ em `AAAA-MM-DD`, se a categoria não existir ou se dois posts tiverem o mesmo
 `## H2`, `### H3`, parágrafos, `**negrito**`, `*itálico*`, `[link](url)`,
 listas com `-` e listas numeradas.
 
-Não há suporte a tabela, imagem inline, citação ou bloco de código. Se precisar
-de um deles, peça: é mudança no gerador, não no seu texto.
+Imagem: `![legenda visível](/images/blog/<slug>/arquivo.jpg)` sozinha num bloco
+vira uma figura com a legenda embaixo. Use 1200x750, JPEG, e guarde em
+`images/blog/<slug>/`. Nada de imagem gerada por IA nem de site de terceiros.
+
+Não há suporte a tabela, citação ou bloco de código. Se precisar de um deles,
+peça: é mudança no gerador, não no seu texto.
 
 Separe todo bloco por **uma linha em branco**. Parágrafo colado no `##` vira
 parte do parágrafo anterior.

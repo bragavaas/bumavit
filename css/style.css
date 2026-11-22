@@ -2141,3 +2141,8 @@ body.menu-open .fab { transform: translateY(180%); opacity: 0; pointer-events: n
   .grain, .hero__dot, .devstage__laptop, .devstage__phone { animation: none !important; }
   * { transition-duration: 0.01ms !important; }
 }
+
+/* Imagem no corpo do artigo (![legenda](src) sozinha num bloco) */
+.bpost__body .bfig { margin: 2.4em 0; }
+.bpost__body .bfig img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--faint, rgba(239,237,230,.14)); }
+.bpost__body .bfig figcaption { margin-top: .7em; font-size: .88em; color: var(--muted, rgba(239,237,230,.55)); }

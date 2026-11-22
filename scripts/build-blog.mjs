@@ -94,7 +94,12 @@ function mdToHtml(md) {
   for (const block of blocks) {
     const lines = block.split(/\r?\n/).filter((l) => l.trim());
     if (!lines.length) continue;
-    if (lines[0].startsWith('### ')) {
+    const fig = lines.length === 1 && lines[0].trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
+    if (fig) {
+      // Imagem: ![legenda](/images/blog/slug/arquivo.jpg) sozinha num bloco vira <figure> com a legenda visível (fundador, 22/11/2026).
+      const alt = fig[1].replace(/"/g, '&quot;');
+      out.push(`<figure class="bfig"><img src="${fig[2]}" alt="${alt}" width="1200" height="750" loading="lazy" decoding="async"><figcaption>${inline(fig[1])}</figcaption></figure>`);
+    } else if (lines[0].startsWith('### ')) {
       out.push('<h3>' + inline(lines[0].slice(4)) + '</h3>');
       const rest = lines.slice(1).join(' ');
       if (rest) out.push('<p>' + inline(rest) + '</p>');

@@ -6,7 +6,15 @@
     <atom:link href="https://bumavit.com.br/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Insights sobre desenvolvimento web, SEO, performance e geração de leads.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 21 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Seu site está pronto para 2027? Cinco sinais de que não</title>
+      <link>https://bumavit.com.br/blog/site-pronto-para-2027/</link>
+      <guid>https://bumavit.com.br/blog/site-pronto-para-2027/</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 GMT</pubDate>
+      <description>Seu site foi feito há dois ou três anos e ninguém mexeu mais? Cinco sinais de que ele não está pronto para 2027, cada um com um teste de poucos minutos.</description>
+      <category>Performance</category>
+    </item>
     <item>
       <title>Site não seguro: o que é e como resolver</title>
       <link>https://bumavit.com.br/blog/site-nao-seguro-como-resolver/</link>
